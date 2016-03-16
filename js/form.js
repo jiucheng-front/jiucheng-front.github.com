@@ -4,13 +4,9 @@
 $(function(){
     //点击登录按钮
     $(".login").click(function(){
-        $(".big_form").css({
-            display:"block"
-        })
+        $(".big_form").show(500);
     });
     $(".close").click(function(){
-        $(".big_form").css({
-            display:"none"
-        })
+        $(".big_form").hide(1000);
     });
 });
