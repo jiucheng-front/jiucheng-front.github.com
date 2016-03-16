@@ -36,7 +36,7 @@
 #Tips,#Notes{font-size:11px;}
 #Tips{display:inline;float:right;margin-top:20px;color:#d45252;}
 /*ul*/
-#myForm ul{width:100%;}
+#myForm ul{width:100%;margin-top: -50px;}
 /*li*/
 #myForm li{padding:0.8em;position:relative;border-bottom:1px dashed #eee}
 #myForm li:first-child,#myForm li:last-child{border-bottom:1px solid #666}
