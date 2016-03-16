@@ -1,0 +1,17 @@
+*{
+    list-style: none;
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+ul,ol,dl{padding: 0;margin: 0;}
+#header nav li.login{
+    float: left;
+    margin-left: 0;
+}
+/********/
+.poem li,#title h2{
+    text-align: center;
+}
