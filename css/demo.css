@@ -15,3 +15,137 @@ ul,ol,dl{padding: 0;margin: 0;}
 .poem li,#title h2{
     text-align: center;
 }
+/*中间*/
+.main ul{
+    overflow: hidden;
+    height: 160px;
+}
+.main ul li img{
+    width: 162px;
+    height: 160px;
+    float: left;
+    transition: 0.3s;
+    -o-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+}
+.main{
+    width: 100%;
+    overflow:hidden;
+    margin: 0 auto;
+}
+.main ul li{
+    float: left;
+    width: 162px;
+    height: 160px;
+    position: relative;
+    overflow: hidden;
+}
+.main ul li:hover img{
+    cursor: pointer;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+.blue,.red{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top:0;
+    opacity: 0.75;
+    filter: Alpha(Opacity=75);
+    cursor: pointer;
+}
+.blue{
+    background: #813e92;
+}
+.red{
+    background: #d32e5f;
+}
+.will_show{
+    display: none;
+}
+/*作品展示*/
+.what{
+    width:100%;
+    overflow:hidden;
+    margin: 10px auto;
+    background: #d73e2b;
+}
+.what dl{
+    float: left;
+    color:#000;
+    width: 162px;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    position:relative;
+}
+.mask{
+    width:162px;
+    height:175px;
+    position:absolute;
+    left:0;
+    top:0;
+}
+.big{
+    position: relative;
+    width:100%;
+    height:100%;
+}
+.big:hover{
+    cursor:pointer;
+}
+.big span{
+    position: absolute;
+    background: #fff;
+}
+.top1{
+    width: 0;
+    height: 2px;
+    left:0;
+    top:0;
+}
+.top2{
+    width: 2px;
+    height: 0;
+    right:0;
+    top:0;
+}
+.top3{
+    width:0;
+    height:2px;
+    right:0;
+    bottom: 0;
+}
+.top4{
+    width:2px;
+    height:0;
+    left:0;
+    bottom: 0;
+}
+.top5{
+    right: 0;
+    top: 0;
+    height: 2px;
+    width: 0;
+}
+.top6{
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 0;
+}
+.top7{
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+}
+.top8{
+    right: 0;
+    bottom:0;
+    width: 2px;
+    height: 0;
+}
