@@ -4,14 +4,9 @@
 $(function(){
     //点击登录按钮
     $(".login").click(function(){
-        $(".big_form").css({
-            display:"block"
-        });
-        console.log("aaa");
+        $(".big_form").addClass("selected");
     });
     $(".close").click(function(){
-        $(".big_form").css({
-            display:"none"
-        })
+        $(".big_form").removeClass("selected");
     });
 });
