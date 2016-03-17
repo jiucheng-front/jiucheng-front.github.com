@@ -159,3 +159,7 @@ div[id^="a"]{position:absolute;
     -ms-transform:rotate(330deg);
 
 }
+@media screen and (max-width:767px) {
+    .main{width: 100%;}
+    .small_game,.small_clock{width: 100%;}
+}
