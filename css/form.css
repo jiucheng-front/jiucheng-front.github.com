@@ -10,6 +10,7 @@
     opacity: 0.9;
     display: none;
 }
+div.selected{display: block}
 /********关闭按钮*****/
 .close{
     float: right;
