@@ -10,9 +10,6 @@
     opacity: 0.9;
     display: none;
 }
-.wrapper section div.selected{
-    display:block;
-}
 /********关闭按钮*****/
 .close{
     float: right;
@@ -27,25 +24,25 @@
 }
 /*style*/
 #myForm{
-    width: 500px;
-    height: 500px;
+    width: 80%;
+    height: 80%;
     margin: 0 auto;
-    margin-top: 6em;
+    margin-top: 5em;
 }
 #myForm h2,#myForm label{font-family: Georgia, Times, "Times New Roman", serif;display:inline}
 #Tips,#Notes{font-size:11px;}
 #Tips{display:inline;float:right;margin-top:20px;color:#d45252;}
 /*ul*/
-#myForm ul{width:100%;margin-top: -50px;}
+#myForm ul{width:100%;}
 /*li*/
 #myForm li{padding:0.8em;position:relative;border-bottom:1px dashed #eee}
 #myForm li:first-child,#myForm li:last-child{border-bottom:1px solid #666}
 /*label*/
-#myForm label{width: 150px;margin-top: 3px;display: inline-block;float: left;padding: 3px;}
+#myForm label{width: 20%;margin-top: 3px;display: inline-block;float: left;padding: 3px;position: relative}
 /*input*/
-#myForm input{height: 20px;width: 220px;padding: 5px 8px;}
+#myForm input{height: 20px;width: 60%;padding: 5px 8px;position: relative}
 /*textarea*/
-#myForm textarea{width:300px;padding:8px;}
+#myForm textarea{width:60%;padding:8px;}
 
 /*Notes*/
 .Notes{background: #d45252;
@@ -63,7 +60,7 @@
     border: 1px solid #aaa;
     box-shadow: 0px 0px 3px #ccc;
     border-radius: 2px;
-    padding-right: 30px;
+    padding-right: 5%;
     -moz-transition: padding 0.25s;
     -webkit-transition: padding 0.25s;
     -o-transition: padding 0.25s;
@@ -71,10 +68,9 @@
 }
 #myForm input:focus,#myForm textarea:focus {
     background: #fff;
-    border: 1px solid #555;
+    border: 1px solid #b03535;
     box-shadow: 0 0 3px #aaa;
-    padding-right: 70px;
-    border-color: #b03535;
+    padding-right: 10%;
 }
 /*border-color*/
 #myForm input:required,#myForm textarea:required{
@@ -84,7 +80,7 @@
 #myForm input:focus,#myForm textarea:focus {border-color: #b03535;box-shadow: 0 0 5px #d45252;}
 /****button*****/
 button.submit {
-    margin-left:155px;
+    margin-left: 3em;;
     background-color: #68b12f;
     background: -webkit-gradient(linear, left top, left bottom, from(#68b12f), to(#50911e));
     background: -webkit-linear-gradient(top, #68b12f, #50911e);
@@ -121,4 +117,10 @@ button.submit:active {
     -moz-box-shadow: 0 0 10px 5px #356b0b inset;
     -ms-box-shadow: 0 0 10px 5px #356b0b inset;
     -o-box-shadow: 0 0 10px 5px #356b0b inset;
+}
+/*手机端*/
+@media screen and (max-width:767px){
+    #myForm ul li label{width:100%}
+    #myForm input{height: 1.2em;width: 100%;padding: 5px 8px;}
+    #myForm textarea{width:100%}
 }
