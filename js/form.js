@@ -4,14 +4,10 @@
 $(function(){
     //点击联系我按钮
     $(".login").click(function(){
-        $(".big_form").css({
-            display:"block"
-        })
+        $(".big_form").addClass("selected");
     });
     $(".close").click(function(){
-        $(".big_form").css({
-            display:"none"
-        })
+        $(".big_form").removeClass("selected");
     });
 });
 /**
