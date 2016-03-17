@@ -16,13 +16,13 @@ ul,ol,dl{padding: 0;margin: 0;}
     text-align: center;
 }
 /*中间*/
-.main ul{
-    overflow: hidden;
-    height: 160px;
-}
+/*.main ul{*/
+    /*!*overflow: hidden;*!*/
+    /*height: 160px;*/
+/*}*/
 .main ul li img{
-    width: 162px;
-    height: 160px;
+    width: 100%;
+    /*height: 160px;*/
     float: left;
     transition: 0.3s;
     -o-transition: 0.3s;
@@ -36,8 +36,8 @@ ul,ol,dl{padding: 0;margin: 0;}
 }
 .main ul li{
     float: left;
-    width: 162px;
-    height: 160px;
+    width: 25%;
+    /*height: 160px;*/
     position: relative;
     overflow: hidden;
 }
@@ -67,6 +67,7 @@ ul,ol,dl{padding: 0;margin: 0;}
 .will_show{
     display: none;
 }
+
 /*作品展示*/
 .what{
     width:100%;
@@ -77,14 +78,14 @@ ul,ol,dl{padding: 0;margin: 0;}
 .what dl{
     float: left;
     color:#000;
-    width: 162px;
+    width: 25%;
     text-align: center;
     padding: 20px 0 20px 0;
     position:relative;
 }
 .mask{
-    width:162px;
-    height:175px;
+    width:100%;
+    height:100%;
     position:absolute;
     left:0;
     top:0;
@@ -148,4 +149,9 @@ ul,ol,dl{padding: 0;margin: 0;}
     bottom:0;
     width: 2px;
     height: 0;
+}
+/*手机端*/
+@media screen and (max-width:767px){
+    .main ul li.list{width:50%}
+    .what dl{width: 50%}
 }
