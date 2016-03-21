@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+  <title>INTEL官网</title>
+  <!--<link href="css/bootstrap.css" rel="stylesheet">-->
+  <link href="css/intel.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+  <style>
+.main{background-color:#0062A9;color:white;padding-bottom: 20px;}
+    /*.navbar{background-color: #0171C5;}*/
+    /*遮罩层*/
+    .masked{position:relative;}
+    .masked .mask{
+      position:absolute;
+      left:0;
+      right:0;
+      top:50%;
+      bottom:0;
+      background:rgba(0,0,0,.5);
+      color:#fff;
+      transition:top 0.25s linear;
+    }
+    .masked .mask:hover{
+      top:0;
+    }
+    .masking-parent{
+      background: #0071c5;
+      position: relative;
+    }
+    @media screen and (min-width:768px){
+      .masking-text{
+        position: absolute;
+        bottom: 0;
+        color: #fff;
+      }
+    }
+    .navbar{margin-bottom:0;}
+    body{margin-top: 50px;}
+    .main>.container>.row{margin-top: 30px;}
+    .masking-text h3,    .masking-text p{
+      margin-left: 15px;
+    }
+.masking-text a {
+  margin-left: 15px;
+  background: #01AEF1;
+  padding: 3px 10px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+  </style>
+</head>
+<body>
+<!--导航-->
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a href="#" class="navbar-brand">
+        <img src="img/logo3.png" style="margin-top: -9px" alt="">
+      </a>
+      <button data-target="#my1" type="button" class="navbar-toggle" data-toggle="collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <!--折叠部分-->
+    <div class="collapse navbar-collapse" id="my1">
+      <!--折叠导航-->
+      <ul class="nav navbar-nav">
+        <li class="active">
+          <a href="#" data-toggle="dropdown">菜单<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">A</a></li>
+            <li><a href="#">B</a></li>
+            <li><a href="#">C</a></li>
+            <li class="divider"></li>
+            <li><a href="#">D</a></li>
+          </ul>
+        </li>
+      </ul>
+      <!--登录-->
+      <ul class="nav navbar-nav navbar-right" id="mylogin">
+        <li>
+          <a href="#" data-toggle="dropdown">登录</a>
+          <form action="" class="dropdown-menu" style="width: 400px;padding:20px;background-color:#fff;">
+            <ul class="list-unstyled">
+              <li><h3>登录</h3></li>
+              <li>
+                <label for="user">用户名：</label>
+                <input type="text" id="user" name="user" placeholder="输入用户名">
+              </li>
+              <li>
+                <label for="pwd">用户名：</label>
+                <input type="password" id="pwd" name="pwd" placeholder="输入密码">
+              </li>
+              <li>
+                <input type="button" class="btn btn-info btn-xs" value="提交">
+                <input type="button" class="btn btn-danger btn-xs" value="重置">
+              </li>
+            </ul>
+          </form>
+        </li>
+      </ul>
+      <a href="#" class="navbar-link navbar-text navbar-right">China(简体中文) <span class="glyphicon glyphicon-globe"></span></a>
+      <form class="navbar-form navbar-right" action="">
+        <!--输入框中的反馈图标：feedback-->
+        <div class="form-group has-feedback">
+          <!--screen reader only-->
+          <label class="sr-only" for="kw">搜索：</label>
+          <input id="kw" class="form-control" type="text" placeholder="search">
+          <span class="glyphicon glyphicon-search form-control-feedback"></span>
+        </div>
+      </form>
+      <a href="#" class="navbar-link navbar-text navbar-right">查找内容&nbsp;|&nbsp;</a>
+    </div>
+  </div>
+</div>
+<!--主体内容-->
+<!--主体内容上-->
+<div class="main">
+  <div class="container">
+    <h2>欢迎来到因特尔®&copy;</h2>
+    <div class="row">
+      <!--中间大图-->
+      <div class="col-md-8 col-sm-12">
+        <div class="masking-parent">
+          <img class="img-responsive" src="img/intel.web.864.486.1.jpg" alt="">
+          <div class="masking-text">
+            <h3>五代酷睿芯，强劲新体验</h3>
+            <p>第五代智能英特尔®酷睿处理器锋芒登场，革命性突破的领先技术，彻底颠覆传统PC使用体验，带您进入全新数字世界</p>
+            <a href="">立即探索第五代智能因特尔®酷睿处理器》</a>
+          </div>
+        </div>
+      </div>
+      <!--右边两行-->
+      <div class="col-md-4 col-sm-12">
+        <div class="row">
+          <!--右上-->
+          <div class="col-md-12 col-sm-6 col-xs-12">
+            <div class="masked">
+              <img width="100%" class="img-responsive" src="img/intel.web.368.207.1.jpg" alt="">
+              <div class="mask">
+                <h5>解密2合1电脑</h5>
+                <p>搭载因特尔处理器的2合1电脑，助你高效工作的提示带给你灵活可触的平板体验.<a href="#">了解更多</a></p>
+              </div>
+            </div>
+          </div>
+          <!--右下-->
+          <div class="col-md-12 col-sm-6 col-xs-12">
+            <div class="row" style="background:#0171C5;padding:20px 0;box-shadow:5px 5px 2px #005596;margin-top:20px;">
+              <div class="col-xs-4">
+                <img src="img/intel.web.81.108.png" alt="">
+              </div>
+              <div class="col-xs-8">
+                <ul class="list-unstyled" style="border-left:2px solid blue;">
+                  <li><a href="" style="color:white;text-decoration: none;margin-left: 20px;">英特尔®酷睿M处理器></a></li>
+                  <li><a href="" style="color:white;text-decoration: none;margin-left: 20px;">"才貌"创全的家用一体机></a></li>
+                  <li><a href="" style="color:white;text-decoration: none;margin-left: 20px;">英特尔®凌动处理器></a></li>
+                  <li><a href="" style="color:white;text-decoration: none;margin-left: 20px;">2015台北国际电影展></a></li>
+                  <li><a href="" style="color:white;text-decoration: none;margin-left: 20px;">《风暴英雄》游戏道具兑换></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8 col-md-push-4 col-sm-12">
+        <div class="masking-parent">
+          <img class="img-responsive" src="img/intel.web.864.486.2.jpg" alt="">
+          <div class="masking-text">
+            <h3>IT的最佳拍档</h3>
+            <p>在英特尔IT中心，您可以获取各种案例和产品解决方案</p>
+            <a href="">了解更多></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-md-pull-8 col-sm-12">
+        <div class="row">
+          <div class="col-md-12 col-sm-6">
+            <ul class="list-unstyled" style="display: block;box-shadow: 5px 5px 2px #005596;background: #0171C5;">
+              <li style="line-height: 25px;margin: 10px">
+                <a href="" style="color:white;">升级办公室利器</a>
+              </li>
+              <li style="line-height: 25px;margin: 10px">
+                <a href="" style="color:white;">大数据</a>
+              </li>
+              <li style="line-height: 25px;margin: 10px">
+                <a href="" style="color:white;">云计算和云服务</a>
+              </li>
+              <li style="line-height: 25px;margin: 10px">
+                <a href="" style="color:white;">数据中心芯可能</a>
+              </li>
+              <li style="line-height: 25px;margin: 10px">
+                <a href="" style="color:white;">IT极限挑战</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-12 col-sm-6">
+            <div class="masked" style="box-shadow: 5px 5px 2px #005596;">
+              <img width="100%" class="img-responsive" src="img/intel.web.368.207.2.jpg" alt="">
+              <div class="mask">
+                <h5>马上订阅英特尔IT中心精选资源</h5>
+                <p>搭载因特尔处理器的2合1电脑，助你高效工作的提示带给你灵活可触的平板体验.<a href="#">了解更多</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8 col-sm-12">
+        <div class="masking-parent">
+          <img class="img-responsive" src="img/intel.web.864.486.3.jpg" alt="">
+          <div class="masking-text">
+            <h3>灵活高效，迅速响应，真正的业务优势</h3>
+            <p>英特尔®志强处理器E7&nbsp;&nbsp;v3家族稳定可靠，提升数据中心数据</p>
+			<a href="">了解更多></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <div class="row">
+          <div class="col-md-12 col-sm-6">
+            <ul class="list-unstyled" style="display: block;box-shadow: 5px 5px 2px #005596;background: #0171C5;">
+              <li style="line-height: 25px;margin: 10px">
+                <a href="" style="color:white;">英特尔®志强处理器D产品家族></a>
+              </li>
+              <li style="line-height: 25px;margin: 10px">
+                <a href="" style="color:white;">神奇的实感技术></a>
+              </li>
+              <li style="line-height: 25px;margin: 10px">
+                <a href="" style="color:white;">英特尔社交网路></a>
+              </li>
+              <li style="line-height: 25px;margin: 10px">
+                <a href="" style="color:white;">英特尔视频专区></a>
+              </li>
+              <li style="line-height: 25px;margin: 10px">
+                <a href="" style="color:white;">英特尔新闻发布室></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-12 col-sm-6">
+            <div class="masked" style="box-shadow: 5px 5px 2px #005596;">
+              <img width="100%" class="img-responsive" src="img/intel.web.368.207.3.jpg" alt="">
+              <div class="mask">
+                <h5>英特尔产品中心</h5>
+                <p>搭载因特尔处理器的2合1电脑，助你高效工作的提示带给你灵活可触的平板体验.<a href="#">了解更多</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--页脚-->
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <div class="row">
+          <div class="col-xs-6">
+            <ul class="list-unstyled">
+          <h3>关于英特尔</h3>
+          <li><a href="#">公司信息</a></li>
+          <li><a href="#">投资者关系</a></li>
+          <li><a href="#">联系我们</a></li>
+          <li class="divider"></li>
+          <li><a href="#">新闻发布会</a></li>
+          <li><a href="#">网站地图</a></li>
+          <li><a href="#">工作</a></li>
+        </ul>
+          </div>
+          <div class="col-xs-6">
+            <ul class="list-unstyled">
+          <h3>支持</h3>
+          <li><a href="#">支持主页</a></li>
+          <li><a href="#">下载中心</a></li>
+          <li><a href="#">产品规范(ARK)</a></li>
+          <li class="divider"></li>
+          <li><a href="#">保修支持</a></li>
+        </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="row">
+          <div class="col-xs-6">
+            <ul class="list-unstyled">
+          <h3>法律声明</h3>
+          <li><a href="#">使用条款</a></li>
+          <li><a href="#">商标</a></li>
+          <li><a href="#">隐私条款</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Cookie</a></li>
+        </ul>
+          </div>
+          <div class="col-xs-6">
+            <ul class="list-unstyled">
+          <h3>社交</h3>
+          <li><a href="#">英特尔社区</a></li>
+          <li><a href="#">英特尔中国微博</a></li>
+          <li><a href="#">英特尔芯品汇微博</a></li>
+          <li class="divider"></li>
+          <li><a href="#">英特尔商用频道微博</a></li>
+        </ul>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+<script>
+  (function () {
+    var s = document.createElement("script");
+    s.onload = function () {
+      bootlint.showLintReportForCurrentDocument([]);
+    };
+    s.src = "js/bootlint.js";
+    document.body.appendChild(s);
+  })();
+</script>
+</html>
