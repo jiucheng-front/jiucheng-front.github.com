@@ -1,0 +1,11 @@
+body {
+  margin-top: 50px;
+  font-family: "Microsoft YaHei";
+}
+.navbar {
+  background: #e4393c;
+  min-height: 50px;
+}
+.danger {
+  color: #e4393c;
+}
