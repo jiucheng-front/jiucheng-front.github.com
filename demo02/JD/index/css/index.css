@@ -66,13 +66,13 @@ div.sub_cate_box {
 	border-right:none;
 }
 #slider_box .ad span a {
-	background-image:url(../images/index/ad-arraw.png);
+	background-image:url(../images/ad-arraw.png);
 	background-repeat:no-repeat;
 	width:25px;
 	height:35px;
 }
 #slider_box .ad span a:hover {
-	background-image:url(../images/index/ad-arraw-hover.png);
+	background-image:url(../images/ad-arraw-hover.png);
 }
 #slider_box .preview a, #slider_box .preview a:hover {
 	float:left;
@@ -146,7 +146,7 @@ div.sub_cate_box {
 	text-align:center;
 }
 #virtuals ul li s {
-	background:url(../images/index/virtuals-20140606.png) no-repeat;
+	background:url(../images/virtuals-20140606.png) no-repeat;
 	display:block;
 	width:40px;
 	height:40px;
@@ -174,7 +174,7 @@ div.sub_cate_box {
 	background-position:-190px -45px;
 }
 #virtuals ul li i {
-	background:url(../images/index/virtuals_arraw.gif) no-repeat center center;
+	background:url(../images/virtuals_arraw.gif) no-repeat center center;
 	width:20px;
 	height:15px;
 	display:block;
@@ -272,28 +272,28 @@ div.sub_cate_box {
     	background-position:-10px 0px;
 }
 li.pinpaijie {
-	background-image:url(../images/index/show_01.jpg);
+	background-image:url(../images/show_01.jpg);
 }
 li.dijia {
-	background-image:url(../images/index/show_02.jpg);
+	background-image:url(../images/show_02.jpg);
 }
 li.haodongxi {
-	background-image:url(../images/index/show_03.jpg);
+	background-image:url(../images/show_03.jpg);
 }
 li.tuangou {
-	background-image:url(../images/index/show_04.png);
+	background-image:url(../images/show_04.png);
 }
 li.shoufa {
-	background-image:url(../images/index/show_05.jpg);
+	background-image:url(../images/show_05.jpg);
 }
 li.youhuiquan {
-	background-image:url(../images/index/show_06.jpg);
+	background-image:url(../images/show_06.jpg);
 }
 li.yushou {
-	background-image:url(../images/index/show_07.jpg);
+	background-image:url(../images/show_07.jpg);
 }
 li.jinrong {
-	background-image:url(../images/index/show_08.jpg);
+	background-image:url(../images/show_08.jpg);
 }
 
 /*团购*/
@@ -377,7 +377,7 @@ div.floor>header>span {
 	width:26px;
 	height:28px;
 	float:left;
-	background-image:url(../images/index/index_iconlist_01.png);
+	background-image:url(../images/index_iconlist_01.png);
 	background-repeat:no-repeat;
 	background-position:0px 2px;
 	font-size:18px;
@@ -421,7 +421,7 @@ div.floor ul.tab li a {
 div.floor ul.tab li a:hover {
 	border-bottom-color:#e4393c;
 	text-decoration:none;
-	background:url(../images/index/tab_arraw.png) center bottom no-repeat;
+	background:url(../images/tab_arraw.png) center bottom no-repeat;
 }
 div.floor ul.link {
 	width:211px;
@@ -435,7 +435,7 @@ div.floor ul.link li {
 	padding-top:2px;
 	margin-left:10px;
 	padding-right:15px;
-	background:url(../images/index/link_arraw.png) no-repeat right 1px;
+	background:url(../images/link_arraw.png) no-repeat right 1px;
 }
 div.floor ul.link li a {
 	color:#005ea7;
@@ -664,7 +664,7 @@ div.floor>aside.floor_right>a> img {
 #content_other  div.order input {
 	width:214px;
 	height:23px;
-	background:url(../images/index/email.gif) no-repeat 5px 5px;
+	background:url(../images/email.gif) no-repeat 5px 5px;
 	border:1px solid #676767;
 	border-bottom-color:#eaeaea;
 	border-right-color:#eaeaea;
