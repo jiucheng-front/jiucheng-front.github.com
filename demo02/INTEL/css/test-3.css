@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+/*导航条相关样式*/
+.alert {
+  color: #e4393c;
+  border: 50px "solid" #e4393c;
+  font-family: "SimHei";
+}
+.well {
+  min-height: 50px;
+}
+/*/less特性：2超级变量*/
+h1 {
+  font-size: 36px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-top: 2px;
+  border-right: 2px;
+  border-bottom: 4px;
+  corlor: #f00;
+}
+h2 {
+  font-size: 28px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+h3 {
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+/*嵌套规则*/
+#navbar h1 {
+  font-weight: bold;
+  font-size: 26px;
+}
+#navbar p {
+  font-size: 12px;
+}
+#navbar p a {
+  text-decoration: none;
+  color: #ff0400;
+}
+#navbar p a:hover {
+  border-width: 1px;
+}
+#navbar > ul {
+  list-style-type: none;
+}
+/*使用颜色函数创建一个网站的五级主题色*/
+.box {
+  border: 2px solid #e4393c;
+  background: #f09394;
+  corlor: #470a0b;
+}
+/*....*/
+.col {
+  width: 97px;
+}

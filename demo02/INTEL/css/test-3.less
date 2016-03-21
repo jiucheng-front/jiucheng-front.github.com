@@ -1,0 +1,72 @@
+body{
+  margin:0;
+  padding:0;
+}
+/*导航条相关样式*/
+//less特性：1变量
+@jd-red:#e4393c;
+@nav-height:50px;
+@half-opacity:.5;
+@std-font:"SimHei";
+@std-border:"solid";
+.alert{
+  color:@jd-red;
+  border:@nav-height @std-border @jd-red;
+  font-family: @std-font;
+}
+.well{
+  min-height: @nav-height;
+}
+/*/less特性：2超级变量*/
+.std-margin(){
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.bordered(@bt,@bb){
+  border-top: @bt;
+  border-right: 2px;
+  border-bottom:@bb;
+  corlor:#f00;
+}
+h1{
+  font-size: 36px;
+  .std-margin;
+  .bordered(2px,4px)
+}
+h2{
+  font-size: 28px;
+  .std-margin;
+}
+h3{
+  font-size: 24px;
+  .std-margin;
+}
+/*嵌套规则*/
+#navbar{
+  h1{
+    font-weight: bold;
+    font-size:26px;
+  }
+  p{font-size: 12px;
+    a{text-decoration: none;
+      color:hsl(90%,100%,50%);
+      &:hover{border-width: 1px;}
+    }
+  }
+  >ul{list-style-type:none;}
+}
+/*使用颜色函数创建一个网站的五级主题色*/
+@red-std:#e4393c;
+@red-light:lighten(@red-std,20%);
+@red-lighter:lighten(@red-std,40%);
+@red-dark:darken(@red-std,20%);
+@red-darker:darken(@red-std,40%);
+.box{
+  border:2px solid @red-std;
+  background: @red-light;
+  corlor:@red-darker;
+}
+/*....*/
+@lg-container-width:1170px;
+@lg-col-width:floor(@lg-container-width/12);
+.col{width:@lg-col-width}
