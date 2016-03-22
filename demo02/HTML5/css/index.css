@@ -1,0 +1,21 @@
+*{margin: 0;padding: 0;list-style: none;outline: none;border: none;}
+.main{
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+}
+.middle{
+	border: 1px solid blue;
+}
+.bottom{
+	border: 1px dotted red;
+}
+.middle,.bottom{
+	height: 200px;
+	width: 100%;
+	cursor: pointer;
+}
+@media screen and (max-width:767px){
+    .main{width:100%}
+}
