@@ -43,6 +43,9 @@ body{
 }
 .demo_list a{margin-left: 2em;color: #EBEBEB;}
 /*各种色彩*/
+.tp0{
+    background-color: #FF1C2E;
+}
 .tp1{
     background-color: #9A54B7;
 }
