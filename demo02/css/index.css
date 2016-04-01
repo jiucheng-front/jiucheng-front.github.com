@@ -20,7 +20,7 @@ body{
     position: relative;
 }
 .cate_box li{
-    line-height: 3em;
+    line-height: 2em;
     width: 100%;
     cursor: pointer;
     position: relative;
