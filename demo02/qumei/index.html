@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/form.css"/>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li class="forleft">
+                <a href="">
+                    Home
+                </a>
+            </li>
+            <li class="forleft">
+                <a href="">
+                    ABOUT
+                </a>
+            </li>
+            <li class="forleft">
+                <a href="">
+                    WORKS
+                </a>
+            </li>
+            <li class="logo">
+                <a href="">
+                    <img src="img/logo.png" alt="">
+                </a>
+            </li>
+            <li class="forleft">
+                <a href="">
+                    LIFESTYLE
+                </a>
+            </li>
+            <li class="forleft">
+                <a href="">
+                    CAREER
+                </a>
+            </li>
+            <li class="forleft">
+                <span class="login">LOGIN</span>
+            </li>
+        </ul>
+    </div>
+    <div class="main">
+        <ul>
+            <li class="list">
+                <img src="img/design1.jpg" alt=""/>
+                <div class="blue will_show"></div>
+            </li>
+            <li class="list">
+                <img src="img/design2.jpg" alt=""/>
+                <div class="red will_show"></div>
+            </li>
+            <li class="list">
+                <img src="img/design3.jpg" alt=""/>
+                <div class="blue will_show"></div>
+            </li>
+            <li class="list">
+                <img src="img/design4.jpg" alt=""/>
+                <div class="red will_show"></div>
+            </li>
+            <li class="list">
+                <img src="img/design5.jpg" alt=""/>
+                <div class="red will_show"></div>
+            </li>
+            <li class="list">
+                <img src="img/design6.jpg" alt=""/>
+                <div class="blue will_show"></div>
+            </li>
+            <li class="list">
+                <img src="img/design7.jpg" alt=""/>
+                <div class="red will_show"></div>
+            </li>
+            <li class="list">
+                <img src="img/design8.jpg" alt=""/>
+                <div class="blue will_show"></div>
+            </li>
+        </ul>
+    </div>
+    <div class="what">
+        <dl>
+            <dt>
+                <img src="img/what_icon01.png" alt=""/>
+            </dt>
+            <dd>网页设计 <br/>
+                WEB DESIGN
+            </dd>
+            <dd class="mask">
+                <div class="big">
+                    <span class="top1"></span>
+                    <span class="top2"></span>
+                    <span class="left"></span>
+                    <span class="right"></span>
+                    <span class="b1"></span>
+                </div>
+            </dd>
+        </dl>
+        <dl>
+            <dt>
+                <img src="img/what_icon02.png" alt=""/>
+            </dt>
+            <dd>移动客户端/软件/图标 <br/>
+                APP DEVELOPMENT
+            </dd>
+            <dd class="mask">
+                <div class="big">
+                    <span class="top1"></span>
+                    <span class="top2"></span>
+                    <span class="left"></span>
+                    <span class="right"></span>
+                    <span class="b1"></span>
+                </div>
+            </dd>
+        </dl>
+        <dl>
+            <dt>
+                <img src="img/what_icon03.png" alt=""/>
+            </dt>
+            <dd>软件界面设计<br/>
+                UI DESIGN
+            </dd>
+            <dd class="mask">
+                <div class="big">
+                    <span class="top1"></span>
+                    <span class="top2"></span>
+                    <span class="left"></span>
+                    <span class="right"></span>
+                    <span class="b1"></span>
+                </div>
+            </dd>
+        </dl>
+        <dl>
+            <dt>
+                <img src="img/what_icon04.png" alt=""/>
+            </dt>
+            <dd>平面设计 <br/>
+                GRAPHIC DESIGN
+            </dd>
+            <dd class="mask">
+                <div class="big">
+                    <span class="top1"></span>
+                    <span class="top2"></span>
+                    <span class="left"></span>
+                    <span class="right"></span>
+                    <span class="b1"></span>
+                </div>
+            </dd>
+        </dl>
+    </div>
+    <div class="big_form">
+        <span class="close">X</span>
+        <form id="myForm" action="#" method="post" name="myForm">
+            <ul>
+                <li>
+                    <h2>用户注册</h2>
+                    <span id="Tips">*必须认真填写*</span>
+                </li>
+                <li>
+                    <label for="name">用户名:</label>
+                    <input type="text" placeholder="Super_walker" required>
+                </li>
+                <li>
+                    <label for="password">密码:</label>
+                    <input type="password" placeholder="bluehawk***" required>
+                    <span class="Notes">请输入用户密码！</span>
+                </li>
+                <li>
+                    <label for="email">邮箱:</label>
+                    <input type="text" placeholder="super_vipboy@163.com" required>
+                    <span class="Notes">例如： "name@something.com"</span>
+                </li>
+                <li>
+                    <label for="website">个人网站:</label>
+                    <input type="url" placeholder="http://www.cnblogs.com/-walker/" pattern="(http|https)://.+" required>
+                    <span class="Notes">例如： "http://someaddress.com"</span>
+                </li>
+                <li>
+                    <label for="message">个人信息:</label>
+                    <textarea name="message" cols="40" rows="6" required></textarea>
+                </li>
+                <li>
+                    <button class="submit" type="submit">注册</button>
+                </li>
+            </ul>
+        </form>
+    </div>
+</body>
+</html>

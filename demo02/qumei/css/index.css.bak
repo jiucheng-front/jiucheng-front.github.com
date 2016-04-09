@@ -1,0 +1,164 @@
+*{margin: 0;padding: 0;list-style: none;text-decoration: none}
+body{
+    background: #d73e2b;
+    position: relative;
+}
+/*******导航*****/
+.logo img{
+    border: none;
+}
+.nav{
+    width: 100%;
+    height: 70px;
+    background: #fff;
+    overflow: hidden;
+    position: relative;
+}
+.nav ul{
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.nav ul li{
+    float: left;
+    line-height: 70px;
+    vertical-align: middle;
+    text-align: center;
+}
+.forleft{
+    width: 150px;
+    border: 2px solid #fff;
+}
+.forleft a{
+    color: #000;
+    font-weight: bold;
+}
+.logo{
+    margin: 0 10px;
+}
+.forleft:hover{
+    border: 2px solid #d73e2b;
+    cursor: pointer;
+}
+.login{
+    background: #d73e2b;
+    padding: 10px;
+    font-weight: bold;
+}
+/****************/
+
+.main ul li img{
+    width: 250px;
+    height: 210px;
+    float: left;
+    transition: 0.3s;
+    -o-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+}
+.main{
+    width: 1000px;
+    overflow:hidden;
+    margin: 0px auto;
+}
+.main ul li{
+    float: left;
+    width: 250px;
+    height: 210px;
+    position: relative;
+    overflow: hidden;
+}
+.main ul li:hover img{
+    cursor: pointer;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+.blue,.red{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top:0;
+    opacity: 0.75;
+	filter: Alpha(Opacity=75);
+    cursor: pointer;
+}
+.blue{
+    background: #813e92;
+}
+.red{
+    background: #d32e5f;
+}
+.will_show{
+    display: none;
+}
+/********中部***/
+.what{
+    width: 1000px;
+    overflow:hidden;
+    margin: 10px auto;
+    background: #d73e2b;
+}
+.what dl{
+    float: left;
+    color:#000;
+    width: 248px;
+    text-align: center;
+    padding: 30px 0 70px 0;
+    position:relative;
+}
+.what dl dt{
+    margin-bottom: 24px;
+}
+.mask{
+    width:250px;
+    height:250px;
+    position:absolute;
+    left:0;
+    top:0;
+}
+.big{
+    position: relative;
+    width:100%;
+    height:100%;
+	z-index:999;
+}
+.big:hover{
+    cursor:pointer;
+}
+.big span{
+    position: absolute;
+    background: #fff;
+}
+.top1{
+    width: 0;
+    height: 2px;
+    left:0;
+    top:0;
+}
+.top2{
+    width: 0;
+    height: 2px;
+    right:0;
+    top:0;
+}
+.left{
+    width:2px;
+    height:0;
+    left:0;
+    bottom: 0;
+}
+.right{
+    width:2px;
+    height:0;
+    right:0;
+    bottom: 0;
+}
+.b1{
+    height:2px;
+    width:0;
+    left:50%;
+    bottom:0;
+}
