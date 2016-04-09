@@ -3,8 +3,12 @@
  */
 $(function(){
     $(".tp").hover(function(){
-        $(this).find(".demo_list").slideDown(500);
+    	var bg=$(this).css('background-color');
+    	$(this).find(".demo_list").css({
+    		'background-color':bg
+    	});
+        $(this).find(".demo_list").show(500);
     },function(){
-        $(this).find(".demo_list").slideUp(500);
+        $(this).find(".demo_list").hide(500);
     });
 });

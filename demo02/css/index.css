@@ -17,15 +17,13 @@ body{
 }
 .cate_box{
     width: 40%;
-    position: relative;
 }
 .cate_box li{
     line-height: 2em;
     width: 100%;
     cursor: pointer;
-    position: relative;
 }
-.tp{
+.tp,.demo_list{
     box-shadow: 0 0 0.8em;
 }
 .tp>a{
@@ -34,10 +32,12 @@ body{
     position: relative;
 }
 .demo_list{
-    position: relative;
-    left: 0;
+    background: #8F3CAE;
+    position: absolute;
+    left: 40%;
     top: 0;
-    width: 100%;
+    width: 60%;
+    height: 100%;
     z-index: 10;
     display: none;
 }
@@ -70,9 +70,9 @@ body{
 @media screen and (max-width:767px){
     .main{width: 100%}
     .cate_box{
-        width: 100%;
+        width: 40%;
     }
-    .cate_box li{
-        width: 100%;
+    .demo_list{
+        width: 60%;
     }
 }
