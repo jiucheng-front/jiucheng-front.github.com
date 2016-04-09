@@ -1,0 +1,118 @@
+<div id="detail" data-role="page" ng-controller="detailCtrl">
+    <!--顶部-->
+    <div data-role="header" data-position="fixed">
+        <h1 class="nav_header"><span>公司详情</span></h1>
+        <a href="../index.html" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-corner-all"></a>
+        <a href="" class="ui-btn ui-icon-action ui-btn-icon-notext ui-btn-corner-all"></a>
+    </div>
+    <!--中间-->
+    <div class="ui-content">
+        <div class="detail_parent">
+        <!-- 职位名称 -->
+            <div class="detail_head top">
+                <ul>
+                    <li><h3 class="will_green">前端开发</h3></li>
+                    <li><p class="price what_time"><span class="red">￥8k-9k</span>&nbsp;&nbsp;<span>Web前端</span></p></li>
+                    <li>
+                        <p class="price what_time">
+                            <span>上海</span>&nbsp;&nbsp;<span>5-10年</span>&nbsp;&nbsp;<span>本科</span>
+                        </p>
+                    </li>
+                    <li class="have_border what_height">
+                        <span class="what_tips price">HTML5</span>
+                        <span class="what_tips price">CSS</span>
+                        <span class="what_tips price">Javascript</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- 公司领导 -->
+            <div class="detail_people top">
+                <ul>
+                    <li class="who_ceo">
+                            <img src="../img/xingchi.png" alt="" class="left">
+                            <div class="right">
+                                <h3>周星星</h3>
+                                <p class="what_time detail_top">
+                                    <span class="what_name">CTO</span>&nbsp;|&nbsp;<span class="what_c">爱奇艺</span>&nbsp;|&nbsp;<span
+                                        class="what_job">移动互联网</span>
+                                </p>
+                            </div>
+                        </li>
+                </ul>
+            </div>
+            <!-- 职位描述 -->
+            <div class="detail_job top detail_head">
+                <ul>
+                    <li><h3 class="will_green">职位描述</h3></li>
+                    <li class="have_border">
+                        <div class="what_msg class="price"">
+                                <h5>岗位职责</h5>
+                                <p class="price">
+                                    1、负责公司相关系统的前端开发工作, 完美重现视觉效果图，并保证各个浏览器和终端设备的兼容性；<br>
+                                    2、负责用web标准规范页面代码，优化页面下载速度，提高用户体验；<br>
+                                </p>
+                                <div ng-show="isShow" class="will_show price"> 
+                                    3、负责根据网页效果图制作静态页面、前端交互功能的实现、制定交互方式等；<br>
+                                    4、负责在效果图或交互原型的基础上完成前端开发，并实现与后台交互的传递；<br>
+                                    5、负责根据需求，分析并给出最优的前端技术解决方案；<br>
+                                    6、负责了解产品设计逻辑及交互设计方案可行性评估。<br>                                                                                        
+                                    <h5>任职要求：</h5>
+                                        <p>
+                                        1、大专及以上学历，计算机、数学等相关专业学历优先，2年以上同岗工作经历；<br>
+                                        2、精通web前端技术,包括XHTML/XML/CSS/Javascript以及开源JS库JQuery或其他JS开发框架，熟悉Ajax；<br>
+                                        3、深刻理解Web标准，对可用性、可访问性等相关知识有实际的了解和实践经验；<br>
+                                        4、会HTML5；<br>
+                                        5、有对应web app开发经验和作品者优先；<br>
+                                        6、具有面向对象的开发和设计能力及良好的学习能力和团队合作意识以及强烈的工作责任心。<br>
+                                        7、工作态度积极，善于沟通和表达自己专业的想法；<br>
+                                        8、对用户体验、交互操作流程及用户需求有一定理解。<br>
+                                        9、经验特别丰富者，待遇可另外面议<br>
+                                    </p>
+                                </div> 
+                        </div>
+                    </li>
+                    <li ng-click="load()" class="have_border what_height what_align">
+                        <span ng-hide="isShow" class="will_btn">显示全部</span>
+                        <span ng-show="isShow" class="will_btn">收起</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- 团队介绍 -->
+            <div class="detail_info top">
+                <ul>
+                    <li><h3 class="will_green">团队介绍</h3></li>
+                    <li class="have_border">
+                        <div class="price info_mesg">
+                            上海群天健康科技有限公司成立于2009年，总部设在上海，注册资金1000万元人民币。群天健康公司下属心巢网络科技有限公司、益众生健康管理研究院、生命管理动漫研究所、益众生心理研究所、健康睡眠管理中心、远程心电传输中心，中医治未病研究中心。
+                        </div>
+                    </li>
+                    <li class="what_pay">
+                        <span class="what_tips waht_pick">股票期权</span>
+                        <span class="what_tips waht_pick">地铁周边</span>
+                        <span class="what_tips waht_pick">年终奖金</span>
+                        <span class="what_tips waht_pick">领导nice</span>
+                        <span class="what_tips waht_pick">团队气氛好</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- 公司介绍 -->
+            <div class="detail_company top">
+                <ul>
+                    <li class="have_border"><span>500-900</span>人</li>
+                    <li class="have_border"><span>http://www.sina.com</span></li>
+                    <li class="have_border"><span>反甲信息科技有限公司</span></li>
+                    <li class="have_border"><span>金沙江路787号502室</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--底部-->
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="" class="ui-btn ui-icon-check ui-btn-icon-left">收藏</a></li>
+                <li><a href="" class="ui-btn ui-icon-comment ui-btn-icon-left">立即沟通</a></li>
+            </ul>
+        </div>
+    </div>
+</div>

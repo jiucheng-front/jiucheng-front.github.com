@@ -1,0 +1,216 @@
+*{margin:0;padding: 0;list-style: none;box-sizing: border-box;border:none;}
+.nav_header{
+    background: #009F85;
+    margin: 0;
+    color: #fff;
+}
+#start .dish-img-sm{
+    top:1.5em;
+    left:0.8em;
+}
+#start #ui-btn-active{background-color: #00BD9B}
+/*html body #start .ui-grid-c .ui-block-a .ui-btn.ui-btn-active{background-color: #00BD9B}*/
+/*中间*/
+.parent{
+    text-decoration: none;
+    margin-top: 1em;
+    float: left;
+    width: 100%;
+}
+.top{
+    border: 1px solid #ddd;
+    border-radius: .4em;
+    -webkit-border-radius:.4em;
+    box-shadow:0 0 12px #ddd;
+    -moz-box-shadow:0 0 .8em #ddd;
+    -webkit-box-shadow:0 0 .8em #ddd;
+    background: #F6F6F6;
+    color: #999;
+    overflow: hidden;
+}
+.will_green{
+    color:#00BD9B;
+    margin-top: .8em;
+    margin-bottom: .8em;
+    margin-left:.8em;
+}
+
+.price{
+    margin-left: .8em;
+    font-size: .8em;
+}
+.price .red{
+    color: #E4393C;
+    font-size: .9em;
+}
+.top ul li{
+    position: relative;
+}
+.top:hover{
+    background-color: #e8e8e8;
+}
+.first{
+    overflow: hidden;
+    width: 98%;
+    margin: 0 auto;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.left,.right{
+    float: left;
+}
+.left{
+    width: 5em;
+    height: 5em;
+    margin: .8em;
+    border-radius: 50%;
+}
+.right{
+    font-size: .7em;
+    margin-left: 1em;
+    margin-top: 2em;
+}
+.will_right{
+    float: right;
+    font-size: .7em;
+    margin-right: .8em;
+}
+.what_time{
+    height: 1.8em;
+    line-height: 1.8em;
+}
+/**/
+.ui-content{
+    position: relative;
+}
+.page_one{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    left:0;
+    top: 0;
+}
+.page_two,.page_three{
+    width: 97%;
+    position: absolute;
+    left: 100%;
+    top: 1em;
+}
+@media screen and (max-width:767px){
+    .ui-content{
+        position: relative;
+    }
+    .page_two,.page_three{
+        position: absolute;
+        /*margin-right: 5em;*/
+        width: 92%;
+    }
+}
+/*detail*/
+.detail_head{
+    padding: 1em;
+}
+.who_ceo{
+    overflow: hidden;
+    width: 98%;
+    margin: 0 auto;
+}
+.detail_people,.detail_top,.detail_job,.detail_info,.detail_company{
+    width: 100%;
+    float: left;
+    margin-top:1em;
+}
+.what_tips{
+    padding:.4em .7em;
+    background-color: #00BD9B;
+    color: #fff;
+    -webkit-border-radius:.4em;
+    border-radius:.4em;
+}
+.what_height{
+    height: 2em;
+    line-height: 2em;
+}
+.have_border{
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    border-top: 1px solid #ddd;
+}
+.what_msg{
+    width: 95%;
+    margin: 0 auto;
+    padding: .5em;
+    overflow: hidden;
+}
+.what_align{text-align: center;}
+.what_align:hover{
+    cursor: pointer;
+}
+.will_btn{
+    
+    font-size: .8em;
+    font-color:#00BD9B;
+}
+.detail_info li{
+    margin:.8em;
+}
+.info_mesg{
+    width: 95%;
+    padding: .5em;
+    margin:0 auto;
+}
+.what_pay{
+    position: relative;
+    overflow: hidden;
+}
+.waht_pick{
+    font-size: .7em;
+    margin: .5em;
+    float: left;
+}
+.detail_company ul li{
+    height: 2em;
+    line-height: 2em;
+    font-size: .9em;
+    padding-left: 2em; 
+}
+/*comany*/
+.will_left{
+    float: left;
+    overflow: hidden;
+}
+.company,.company_img,.company_info{
+    width: 100%;
+    overflow: hidden;
+}
+.company{
+    padding-bottom: 1em;
+    margin-top: 1em;
+}
+.company_img img{
+    width: 100%;
+    height:10em;
+}
+.company_log img{
+    width: 3em;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    height: 3em;
+    margin-top: 1em;
+}
+.company_info{
+    margin-top:1em;
+}
+.company_info div{
+    font-size: .9em;
+    color:#999;
+    margin-left: 1em;
+}
+.msg_color{
+    color: #00BD9B;
+}
+.company_msg ul li{
+    height: 1.5em;
+    line-height: 1.5em;
+}
