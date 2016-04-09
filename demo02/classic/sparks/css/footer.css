@@ -1,0 +1,10 @@
+#address{z-index: 99;bottom: 0;width: 95%; background: #a5a5a5;min-height: 45px;line-height: 22px;font-size: 12px; padding: 0 0px 0 5%;color: #fff;overflow: hidden;}
+#address span{float: left;}
+#address a{float: right;margin:9px 20px 0 0;}
+@media screen and (max-width: 1300px){
+	#address{position: fixed;}
+}
+@media screen and (max-width: 640px) {
+	#address {line-height: 20px;padding: 0 10px 0 5px;width: 100%;}
+	#address span{display: none;}
+}

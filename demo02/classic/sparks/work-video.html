@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+
+<html class="no-js">
+	<!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>Sparks</title>
+		<meta name="description" content="">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" href="css/work.css">
+		<link rel="stylesheet" href="css/footer.css">
+		<!--[if lt IE 9]>
+		<link rel="stylesheet" href="css/head_for_ie.css">
+		<![endif]-->
+
+
+	</head>
+	<body>
+		<div id="loading">
+			<img src="images/loading2.gif"/>
+		</div>
+		<div id="container" class="wrapper" style="">
+
+			<div class="nav">
+				<h1><img src="images/logo.png"/></h1>
+				<a id="mobilenav" class="navbtn" href="javascript:void(0);"></a>
+				<ul>
+					<div class="whitebg"></div>
+					<li class="forleft">
+						<a href="index.html">
+							Home
+						</a>
+					</li>
+					<li class="forleft">
+						<a href="index.html#creative">
+							ABOUT
+						</a>
+					</li>
+					<li class="forleft">
+						<a href="allworks.html">
+							WORKS
+						</a>
+					</li>
+					<li class="indexnav current">
+						<a href="index.html">
+							<img src="images/logo.png" alt="">
+						</a>
+					</li>
+					<li class="forright">
+						<a href="lifestyle.html">
+							LIFESTYLE
+						</a>
+					</li>
+					<li class="forright">
+						<a href="career.html">
+							CAREER
+						</a>
+					</li>
+					<li class="forright">
+						<a href="index.html#contact">
+							CONTACT US
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="wrapper">
+				<!-- work -->
+				<div class="workinfo">
+					<!-- work内页 -->
+
+					<div class="workslide_box">
+						<a href="javascript:void(0);" class="prev">
+							<img src="images/slide/slide-left.png" alt="">
+						</a>
+						<a href="javascript:void(0);" class="next">
+							<img src="images/slide/slide-right.png" alt="">
+						</a>
+						<a href="allworks.html" class="closebtn">
+							<img src="images/slide/closebtn.png" alt="">
+						</a>
+
+						<div class="workslide_design_content" >
+							<div class="slide_wrap">
+								<!-- 滑动左边文字 -->
+								<div class="work_left">
+									<div class="breadtab">
+										<a href="allworks.html">
+											WORKS
+										</a>
+									</div>
+									<h3 class="workname"></h3>
+									<p class="black workdate">
+									</p>
+									<ul id="dep">
+									</ul>
+								</div>
+								<!-- 滑动右边视频 -->
+								<div class="work_right_video">
+									<video id="videomethod"  class="digitalvideo" controls="" preload name="media" width="100%" height="100%" poster="video/digital/3.jpg">
+										<source type="video/mp4">
+									</video>
+									<div id="mediaplayer">JW Player goes here</div>
+									<style>
+									#mediaplayer_wrapper{width: 796px !important;height: 450px !important; }
+									</style>
+									<!-- <div class="workimg">
+										<div class="bg"></div>
+										<img src="video/digital/3.jpg"/>
+										<p>
+											您的浏览器不支持视频格式，请使用高级浏览器以获得最好的页面效果
+										</p>
+									</div> -->
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="address">
+					<span>5F, 620 Hua shan Road, Olive L.V.O. Building, Shanghai China 200040 <br>Phone (86-21) 2203 8600 Fax (86-21) 6248 6291 Copyright © Sparks </span>
+					<a href="#">
+						<img src="images/icon-in.png" alt="">
+					</a>
+					<a href="#">
+						<img src="images/icon-weibo.png" alt="">
+					</a>
+					<a href="#">
+						<img src="images/icon-weixin.png" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-1.9.0.min.js"></script>
+		<script src="js/jwplayer.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/function.js"></script>
+		<script src="js/work-data.js"></script>
+		<script src="js/work-slide.js"></script>
+
+		<script>
+			$(function(){
+			    function findInUrl(str) {
+				     url = location.href;
+				     return url.indexOf(str) == -1 ? false : true;
+			    }
+			    //获取url参数
+				    function queryString(key) {
+				     return (document.location.search.match(new RegExp("(?:^\\?|&)"+key+"=(.*?)(?=&|$)"))||['',null])[1];
+			    }
+			    vid = queryString('videoID');
+				var descriptionData = videoObj[vid][1];
+				var videoInfo = videoObj[vid][2][0];
+					$(".work_right").append('<img src="'+videoInfo+'" alt="">');
+				for (var i = 0; i < descriptionData.length; i++) {
+					var liName = $("<li>" + descriptionData[i] + "</li>");
+					$("#dep").append(liName);
+				};
+				$("#currenttitle").html(videoObj[vid][0][0].workname);
+				$(".workdate").html(videoObj[vid][0][0].workdate);
+				$(".workname").html(videoObj[vid][0][0].workname);
+
+				if (/Android|webOS|iPhone|iPod|iPad|IEMobile|BlackBerry/i.test(navigator.userAgent)) {
+					$("#mediaplayer").css('z-index', '-99');
+				}
+				$("#videomethod").attr({
+					'src': videoInfo + '.mp4',
+					'poster': videoInfo + '.jpg'
+				});
+				jwplayer("mediaplayer").setup({
+					flashplayer : "video/player.swf",
+					file : videoInfo + '.mp4'
+				});
+				$(".next").click(function(event) {
+					if (vid < 6) {
+						++vid;
+					}else{
+						vid = 0;
+					}
+					url = location.href;
+					location.href = "work-video.html?videoID="+ vid;
+				});
+				$(".prev").click(function(event) {
+					if (vid > 0) {
+						--vid;
+					}else{
+						vid = 6;
+					}
+					url = location.href;
+					location.href = "work-video.html?videoID="+ vid;
+				});
+				
+
+			});
+		</script>
+
+	</body>
+</html>

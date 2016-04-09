@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+
+<html class="no-js">
+	<!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>Sparks</title>
+		<meta name="description" content="">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" href="css/work.css">
+		<link rel="stylesheet" href="css/footer.css">
+		<!--[if lt IE 9]>
+		<link rel="stylesheet" href="css/head_for_ie.css">
+		<![endif]-->
+	</head>
+	<body>
+		<div id="loading">
+			<img src="images/loading2.gif"/>
+		</div>
+		<div id="container" class="wrapper" style="">
+			<div class="nav">
+				<h1><img src="images/logo.png"/></h1>				
+				<a id="mobilenav" class="navbtn" href="javascript:void(0);"></a>
+				<ul>
+					<div class="whitebg"></div>
+					<li class="forleft">
+						<a href="index.html">
+							Home
+						</a>
+					</li>
+					<li class="forleft">
+						<a href="index.html#creative">
+							ABOUT
+						</a>
+					</li>
+					<li class="forleft">
+						<a href="allworks.html">
+							WORKS
+						</a>
+					</li>
+					<li class="indexnav current">
+						<a href="index.html">
+							<img src="images/logo.png" alt="">
+						</a>
+					</li>
+					<li class="forright">
+						<a href="lifestyle.html">
+							LIFESTYLE
+						</a>
+					</li>
+					<li class="forright">
+						<a href="career.html">
+							CAREER
+						</a>
+					</li>
+					<li class="forright">
+						<a href="index.html#contact">
+							CONTACT US
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="wrapper">
+				<!-- work -->
+				<div class="workinfo">
+					<!-- work导航 -->
+					<div class="work_nav">
+						<div class="work_nav_bg"></div>
+						<ul>
+							<li>
+								<a href="javascript:void(0);">Design</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">Digital</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">Display</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">All Works</a>
+							</li>
+						</ul>
+					</div>
+					<!-- work内容 -->
+					<div class="work_warpper">
+
+					</div>
+				</div>
+				<div id="address">
+					<span>5F, 620 Hua shan Road, Olive L.V.O. Building, Shanghai China 200040 <br>Phone (86-21) 2203 8600 Fax (86-21) 6248 6291 Copyright © Sparks </span>
+					<a href="#">
+						<img src="images/icon-in.png" alt="">
+					</a>
+					<a href="#">
+						<img src="images/icon-weibo.png" alt="">
+					</a>
+					<a href="#">
+						<img src="images/icon-weixin.png" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/jquery-1.9.0.min.js"></script>
+		<script src="js/jquery.mousewheel.min.js"></script>
+		<script src="js/jquery-career-select.js"></script>
+		<script src="js/function.js"></script>
+		<script src="js/work-data.js"></script>
+		<script src="js/work.js"></script>
+
+		<script>
+			$(function(){
+				function init(){
+					var minheight = $(document).height()- 136;
+					$(".work_warpper").css('min-height',minheight);
+				}
+				init();
+				$(window).resize(function(event) {
+					init();
+				});
+			});
+		</script>
+	</body>
+</html>

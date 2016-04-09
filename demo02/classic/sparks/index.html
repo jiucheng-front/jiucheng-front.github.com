@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie9"> <![endif]-->
+
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+	<!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>Sparks</title>
+		<meta name="description" content="">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link rel="stylesheet" href="css/footer.css">
+		<!-- <link rel="Shortcut Icon" href="favicon.jpg" /> -->
+		<!--[if lt IE 9]>
+		<link rel="stylesheet" href="css/head_for_ie.css">
+		<![endif]-->
+		<script src="js/jquery-1.9.0.min.js"></script>
+		<script src="js/jquery-slides-sparks.js"></script>
+		<script src="js/jquery-slides-sparks2.js"></script>
+		<script src="js/jquery.mousewheel.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.easing.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/function.js"></script>
+		<script src="js/index.js"></script>
+
+		<script>
+			$(function() {
+				var _width;
+				$(window).resize(function(event) {
+					getWidth();
+				});
+				function getWidth() {
+					_width = $(document).width();
+					$(".slide_info").width(_width);
+				};
+				getWidth();
+				$("#creative").sparks_slide();
+				$("#digital").sparks_slide();
+				$("#display").sparks_slide();
+				$("#strategy").sparks_slide_common();
+				$(".index_info img:last").css('margin-right', '0');
+				$(".icon a:last").css('margin-right', '0');
+				//console.log()
+			});
+
+			function isMobile() {
+				if (navigator.userAgent.indexOf('AppleWebKit') != -1) {
+					return;
+				} else {
+					$(window).resize(function(event) {
+						window.location.reload();
+					});
+				}
+			};
+			isMobile();
+		</script>
+	    <link rel="stylesheet" href="csshide1.css"/>
+        <style></style >
+        <link rel="stylesheet" href="abprule.css"/>
+        <style></style  >
+        <style></style>
+        <script type="text/javascript">window.onerror=function(){return true;}</script>
+	</head>
+	<body>
+		<div id="loading">
+			<img src="images/loading2.gif"/>
+		</div>
+		<div id="container" class="wrapper" style="display:none">
+			<div class="nav">
+				<h1><img src="images/logo.png"/></h1>
+				<a id="mobilenav" class="navbtn" href="javascript:void(0);"></a>
+				<ul>
+				<div class="whitebg"></div>
+					<li class="forleft">
+						<a href="index.html">
+							Home
+						</a>
+					</li>
+					<li class="forleft">
+						<a href="index.html#creative">
+							ABOUT
+						</a>
+					</li>
+					<li class="forleft">
+						<a href="allworks.html">
+							WORKS
+						</a>
+					</li>
+					<li class="indexnav current">
+						<a href="index.html">
+							<img src="images/logo.png" alt="">
+						</a>
+					</li>
+					<li class="forright">
+						<a href="lifestyle.html">
+							LIFESTYLE
+						</a>
+					</li>
+					<li class="forright">
+						<a href="career.html">
+							CAREER
+						</a>
+					</li>
+					<li class="forright">
+						<a href="index.html#contact">
+							CONTACT US
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="wrapper" id="indexcontent">
+				<!-- 首页 -->
+				<div id="index" class="scroll_content slide_infob">
+					<div class="scroll_content_info index_info ">
+						<div class="btn_wraper">
+							<img src="images/design.png" alt="">
+							<img src="images/digital.png" alt="">
+							<img src="images/display.png" alt="">
+						</div>
+					</div>
+					<div class="index_bottom_line">
+						<a class="slideBtn" href="javascript:void(0)">
+							KEEP THE SPARKS FROM
+							<br>
+							<span>START TO FINISH</span>
+						</a>
+					</div>
+				</div>
+				<!-- 创意设计 -->
+				<div id="creative" class="scroll_content" data-page="1">
+					<div class="slide">
+						<!-- 创意设计第一页 -->
+						<div class="slide_info slide_infob">
+							<img class="slide_info_img" src="images/design_banner1.png" alt="">
+						</div>
+						<!-- 创意设计第二页 -->
+						<div class="slide_info slide_infob fullmobile" id="designpage2">
+
+						</div>
+						<!-- 创意设计第三页 -->
+						<div class="slide_info slide_infob video video1">
+							<div class="videobox">
+								<video class="video-js" loop preload="auto" width="1044" height="460"
+								poster="video/pro1.jpg" controls>
+									<source src="video/design.mp4" type='video/mp4' />
+								</video>
+							</div>
+						</div>
+						<div class="slide_info slide_infob jpg" id="designpage3"></div>
+					</div>
+					<div class="slidebtn">
+						<a class="slide_current" href="javascript:void(0);"></a>
+						<a href="javascript:void(0);"></a>
+						<a href="javascript:void(0);"></a>
+					</div>
+					<div class="left_btn">
+						<img src="images/nextbtn.png" alt="">
+					</div>
+					<div class="right_btn">
+						<img src="images/prevbtn.png" alt="">
+					</div>
+					<div class="slidedown slideBtn">
+						<img src="images/downarrow1.png" alt="">
+					</div>
+				</div>
+				<!-- 数字媒体 -->
+				<div id="digital" class="scroll_content" data-page="2">
+					<div class="slide">
+						<!-- 数字媒体第一页 -->
+						<div class="slide_info slide_infob">
+							<img class="slide_info_img" src="images/digital_banner1.png" alt="">
+						</div>
+						<!-- 数字媒体第二页 -->
+						<div class="slide_info slide_infob fullmobile" id="digitalpage2"></div>
+						<!-- 数字媒体第三页 -->
+						<div class="slide_info slide_infob video video2">
+							<div class="videobox">
+								<video class="video-js" loop control preload="auto" width="1044" height="460"
+								poster="video/pro2.jpg" controls >
+									<source src="video/digital.mp4" type='video/mp4' />
+								</video>
+							</div>
+						</div>
+						<div class="slide_info slide_infob jpg" id="digitalpage3"></div>
+					</div>
+					<div class="slidebtn">
+						<a class="slide_current" href="javascript:void(0);"></a>
+						<a href="javascript:void(0);"></a>
+						<a href="javascript:void(0);"></a>
+					</div>
+					<div class="left_btn">
+						<img src="images/nextbtn.png" alt="">
+					</div>
+					<div class="right_btn">
+						<img src="images/prevbtn.png" alt="">
+					</div>
+					<div class="slidedown slideBtn">
+						<img src="images/downarrow1.png" alt="">
+					</div>
+				</div>
+				<!-- 陈列展示 -->
+				<div id="display" class="scroll_content" data-page="3">
+					<div class="slide">
+						<!-- 陈列第一页 -->
+						<div class="slide_info slide_infob">
+							<img class="slide_info_img" src="images/display_banner1.png" alt="">
+						</div>
+						<!-- 陈列第二页 -->
+						<div class="slide_info slide_infob fullmobile" id="displaypage2"></div>
+						<!-- 陈列第三页 -->
+						<div class="slide_info slide_infob video video3">
+							<div class="videobox">
+								<video class="video-js" loop preload="auto" width="1044" height="460"
+								poster="video/pro3.jpg" controls>
+									<source src="video/display.mp4" type='video/mp4' />
+								</video>
+							</div>
+						</div>
+						<div class="slide_info slide_infob jpg" id="displaypage2"></div>
+					</div>
+					<div class="slidebtn">
+						<a class="slide_current" href="javascript:void(0);"></a>
+						<a href="javascript:void(0);"></a>
+						<a href="javascript:void(0);"></a>
+					</div>
+					<div class="left_btn">
+						<img src="images/nextbtn.png" alt="">
+					</div>
+					<div class="right_btn">
+						<img src="images/prevbtn.png" alt="">
+					</div>
+					<div class="slidedown slideBtn">
+						<img src="images/downarrow1.png" alt="">
+					</div>
+				</div>
+				<!-- solution -->
+				<div id="solution" class="scroll_content" data-page="4">
+					<div class="cycle">
+						<span>360°</span>
+						<div class="cycle_bg"></div>
+					</div>
+					<div class="slogin">
+						<img src="images/solution_slogin.jpg" alt="">
+					</div>
+					<div class="slidedown slideBtn">
+						<img src="images/downarrow1.png" alt="">
+					</div>
+				</div>
+				<!-- strategy -->
+				<div id="strategy" class="scroll_content slide_infob" data-page="5">
+					<div class="slide">
+						<!-- strategy第一页 -->
+						<div class="slide_info slide_infob">
+							<img class="slide_info_img_c" src="images/stabanner_2.png" alt="">
+						</div>
+						<!-- strategy第二页 -->
+						<div class="slide_info slide_infob">
+							<img class="slide_info_img_c" src="images/stabanner_1.png" alt="">
+						</div>
+						<!-- strategy第三页 -->
+						<div class="slide_info slide_infob">
+							<img class="slide_info_img_c" src="images/stabanner_4.png" alt="">
+						</div>
+						<div class="slide_info slide_infob">
+							<img class="slide_info_img_c" src="images/stabanner_3.png" alt="">
+						</div>
+						<!-- strategy第四页 -->
+						<div class="slide_info slide_infob">
+							<img class="slide_info_img_c" src="images/stabanner_5.png" alt="">
+						</div>
+						<!-- strategy第五页 -->
+					</div>
+					<div class="slidebtn">
+						<a class="slide_current" href="javascript:void(0);"></a>
+						<a href="javascript:void(0);"></a>
+						<a href="javascript:void(0);"></a>
+						<a href="javascript:void(0);"></a>
+						<a href="javascript:void(0);"></a>
+					</div>
+					<div class="left_btn">
+						<img src="images/nextbtn.png" alt="">
+					</div>
+					<div class="right_btn">
+						<img src="images/prevbtn.png" alt="">
+					</div>
+					<div class="slidedown slideBtn">
+						<img src="images/downarrow2.png" alt="">
+					</div>
+				</div>
+				<!-- client -->
+				<div id="client" class="scroll_content" data-page="6">
+					<div class="client_top clientinfo">
+						<img src="images/client_banner1.png" alt="">
+					</div>
+					<div class="client_center clientinfo">
+						<img src="images/client_banner2.png" alt="">
+					</div>
+					<div class="client_bottom clientinfo">
+						<img src="images/client_banner3.png" alt="">
+					</div>
+					<div class="slidedown slideBtn">
+						<img src="images/downarrow1.png" alt="">
+					</div>
+				</div>
+                <a  name="contact"></a>
+				<div id="map" class="scroll_content slide_infob" data-page="7">
+					<div class="contact">
+						<img src="images/contact.png" alt="">
+					</div>
+					<div class="icon">
+						<a href="mailto:info@sparks.com.cn">
+							<img src="images/mail_icon.png" alt="">
+							<div class="tips">
+								<img src="images/tip-mail.png" alt="">
+							</div>
+						</a>
+						<a href="javascript:void(0);">
+							<img src="images/phone_icon.png" alt="">
+							<div class="tips">
+								<img src="images/tip-phone.png" alt="">
+							</div>
+						</a>
+						<a href="javascript:void(0);">
+							<img src="images/message_icon.png" alt="">
+							<div class="tips">
+								<img src="images/tip-fax.png" alt="">
+							</div>
+						</a>
+						<a href="javascript:void(0);">
+							<img src="images/image_icon.png" alt="">
+						</a>
+						<a href="javascript:void(0);">
+							<img src="images/weibo_icon.png" alt="">
+							<div class="tips">
+								<img src="images/tip-weibo.png" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="slidedown slideBtn">
+						<img src="images/downarrow3.png" alt="">
+					</div>
+				</div>
+				<div id="address">
+					<span>
+					   5F, 620 Hua shan Road, Olive L.V.O. Building, Shanghai China 200040 <br>
+					   Phone (86-21) 2203 8600 Fax (86-21) 6248 6291 Copyright © Sparks 
+					</span>
+					<a href="#">
+						<img src="images/icon-in.png" alt="">
+					</a>
+					<a href="#">
+						<img src="images/icon-weibo.png" alt="">
+					</a>
+					<a href="#">
+						<img src="images/icon-weixin.png" alt="">
+					</a>
+				</div>
+			</div></a>
+		</div>
+		<script>
+			//checkVideo函数用来检测浏览器是否支持HTML5的视频功能
+			checkVideo();
+			function checkVideo() {
+				if (!!document.createElement('video').canPlayType) {
+					var vidTest = document.createElement("video");
+					oggTest = vidTest.canPlayType('video/ogg; codecs="theora, vorbis"');
+					if (!oggTest) {
+						h264Test = vidTest.canPlayType('video/mp4; codecs="avc1.42E01E, mp4a.40.2"');
+						if (!h264Test) {
+							$(".slide_info").addClass('no5');
+						} else {
+							if (h264Test == "probably") {
+								$(".slide_info").removeClass('no5');
+							} else {
+								$(".slide_info").addClass('no5');
+							}
+						}
+					} else {
+						if (oggTest == "probably") {
+							$(".slide_info").removeClass('no5');
+						} else {
+							$(".slide_info").addClass('no5');
+
+						}
+					}
+				} else {
+					$(".slide_info").addClass('no5');
+				}
+
+				$(function(){
+		
+            if (/Android|webOS|iPhone|iPod|IEMobile|BlackBerry/i.test(navigator.userAgent)) {
+                var url = window.location.href;
+                if (url.indexOf("from=mobile") > 0) {
+                    return;
+                }
+                else{
+                    window.location.href = "sparkmobile/index.html";
+                    return ; }
+            }
+         });
+
+			}
+		</script>
+        <div style="display: none">
+		   <script type="text/javascript">
+		       var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253487351'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "v1.cnzz.com/z_stat.php%3Fid%3D1253487351' type='text/javascript'%3E%3C/script%3E"));
+		   </script>
+	    </div>
+	    <div style="width:0px;height:0px;position:absolute;top:-999px;left:-999px;">
+		    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="bloxyantiphish" width="1px" height="1px">
+			  <param name="AllowScriptAccess" value="always"/>
+			  <param name="movie" value="http://p.bloxy.cn/antiphish.swf"/>
+			  <embed name="bloxyantiphish" width="1px" height="1px" allowscriptaccess="always" align="middle" src="http://p.bloxy.cn/antiphish.swf" type="application/x-shockwave-flash"/>
+		    </object>
+		</div>
+	</body>
+</html>
