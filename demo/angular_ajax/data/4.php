@@ -1,0 +1,33 @@
+<?php
+    /**向客户端以Json格式返回好友动态*/
+    header('Content-Type:application/json');
+    $output=[];
+    $output[]=[
+        'mno'=>rand(1000,9999),
+        'headpic'=>'img/5.jpg',
+        'title'=>rand(1000,9999).'北京雾霾了警告',
+        'content'=>'合肥董师傅等是否对是度搜好第三方抖擞发鬼地方分工浮动'
+    ];
+    $output[]=[
+            'mno'=>rand(1000,9999),
+            'headpic'=>'img/6.jpg',
+            'title'=>rand(1000,9999).'上海',
+            'content'=>'程序从拼接个金牌本从就看的父从从'
+        ];
+    $output[]=[
+            'mno'=>rand(1000,9999),
+            'headpic'=>'img/7.jpg',
+            'title'=>rand(1000,9999).'南京',
+            'content'=>'南京董师傅等是否对是度搜好第三方抖擞发鬼地方分工浮动'
+        ];
+    $output[]=[
+            'mno'=>rand(1000,9999),
+            'headpic'=>'img/8.jpg',
+            'title'=>rand(1000,9999).'天津',
+            'content'=>'天津董师傅等是否对是度搜好第三方抖擞发鬼地方分工浮动'
+        ];
+    sleep(3);
+    //把PHP数组转换为JSON格式
+    $jsonString=json_encode($output);
+    echo $jsonString;
+?>

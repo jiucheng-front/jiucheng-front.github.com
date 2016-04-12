@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myModule4">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <title>员工信息</title>
+  <style>
+    img{
+      width:100px;
+      height:100px;
+    }
+    .loading{
+      width:20px;
+      height:15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container" ng-controller="myCtrl4">
+    <h3>员工信息</h3>
+    <div ng-repeat="e in empList" class="media">
+      <div class="media-left">
+        <a href="">
+          <img ng-src="{{e.photo}}" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">{{e.ename|uppercase}}</h4>
+        <p>工资：{{e.salary|currency:'￥'}}</p>
+        <p>生日：{{e.birthday|date:'yyyy-MM-dd HH:mm:ss'}}</p>
+      </div>
+    </div>
+    <hr>
+    <button ng-click="load()" ng-disabled="isLoading" class="btn btn-success btn-block">
+      <span ng-hide="isLoading">加载更多</span>
+      <img ng-show="isLoading" src="img/loading.gif" alt="" class="loading">
+    </button>
+  </div>
+</body>
+<script src="js/angular.js"></script>
+<script>
+  angular.module('myModule4',['ng']).
+    controller('myCtrl4',function($scope,$http){
+      $scope.empList=[];
+      $scope.isLoading=false;
+      $scope.load=function(){
+        $scope.isLoading=true;
+        $http.get('data/5.php').success(function(data){
+          console.log(data);
+            //$scope.msgList=data;
+          $scope.empList=$scope.empList.concat(data);
+          $scope.isLoading=false;
+        })
+      }
+  });
+    
+</script>
+</html>
