@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>jQuery中的Ajax实现二级联动</title>
+  <meta charset="utf-8" />
+  <script src="jquery-1.11.3.js"></script>
+ </head>
+
+ <body>
+  <select id="province">
+	<option>请选择</option>
+  </select>
+  <select id="city">
+	<option>请选择</option>
+  </select>
+  <script>
+	// 1. 页面加载时,执行Ajax请求 - $.get()
+	//$(document).ready(function(){});
+	$(function(){
+		$.get("province.php",function(data){
+			for(var i=0;i<data.length;i++){
+				$("#province").append($("<option>"+data[i]+"</option>"));
+			}
+		},"json");
+	});
+	// 2. 当用户选择省份时,执行Ajax请求 - $.post()
+	$("#province").change(function(){
+		// 清空
+		$("#city").empty().append($("<option>请选择</option>"));
+		var proValue = {"province":$("#province").val()};	
+		$.post("city.php",proValue,function(data){
+			for(var i=0;i<data.length;i++){
+				$("#city").append($("<option>"+data[i]+"</option>"));
+			}
+		},"json");
+	});
+  </script>
+ </body>
+</html>
