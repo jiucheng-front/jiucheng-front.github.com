@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Ajax实现二级联动三</title>
+  <meta charset="utf-8" />
+ </head>
+
+ <body>
+  <select id="province">
+	<option>请选择</option>
+  </select>
+  <select id="city">
+	<option>请选择</option>
+  </select>
+  <script>
+	var xhr = getXhr();
+	// 第一次执行Ajax异步请求 - 省份
+	window.onload = function(){
+		xhr.open("get","finaly.php?state=1");
+		xhr.send(null);
+		xhr.onreadystatechange = function(){
+		if(xhr.readyState==4&&xhr.status==200){
+				var data = xhr.responseText;
+				// 将字符串转换为数组
+				var provinces = data.split(",");
+				// 遍历数组
+				for(var i=0;i<provinces.length;i++){
+					// 创建option元素添加到id为province元素上
+					var option = document.createElement("option");
+					var text = document.createTextNode(provinces[i]);
+					option.appendChild(text);
+					var province = document.getElementById("province");
+					province.appendChild(option);
+				}
+			}	
+		}
+	}
+	// 第二次执行Ajax异步请求 - 城市
+	var province=document.getElementById("province");
+	province.onchange = function(){
+		var city = document.getElementById("city");
+		var opts = city.getElementsByTagName("option");
+		for(var z=opts.length-1;z>0;z--){
+			city.removeChild(opts[z]);
+		}
+		if(province.value != "请选择"){
+			xhr.open("post","finaly.php");
+			xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+			xhr.send("state=2&province="+province.value);
+			xhr.onreadystatechange = function(){
+				if(xhr.readyState==4&&xhr.status==200){
+					var data = xhr.responseText;
+					var cities = data.split(",");
+					for(var i=0;i<cities.length;i++){
+						var option = document.createElement("option");
+						var text = document.createTextNode(cities[i]);
+						option.appendChild(text);
+						
+						city.appendChild(option);
+					}
+				}
+			}
+		}
+
+	}
+
+	function getXhr(){
+		var xhr = null;
+		if(window.XMLHttpRequest){
+			xhr = new XMLHttpRequest();
+		}else{
+			xhr = new ActiveXObject("Microsoft.XMLHttp");
+		}
+		return xhr;
+	}
+  </script>
+ </body>
+</html>
