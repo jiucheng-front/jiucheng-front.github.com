@@ -1,5 +1,6 @@
 <?php
     /**向客户端以Json格式返回好友动态，员工列表*/
+    header("Content-type:text/html;charset=utf-8");
     header('Content-Type:application/json');
     $output=[];
     $output[]=[
