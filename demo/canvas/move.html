@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>实心圆跟随鼠标运动</title>
+  <meta charset="utf-8" />
+ </head>
+
+ <body>
+  <canvas id="canvas" width="300px" height="400px" style="background:pink"></canvas>
+  <script>
+	var canvas = document.getElementById("canvas");
+	var context = canvas.getContext("2d");
+	var x = 100,y = 100;
+	// 绘制图片 - 当前画布的背景图片
+	var myimg = new Image();
+	myimg.src = "bg.jpg";
+	setInterval(function(){
+		context.drawImage(myimg,0,0);
+		// 绘制圆形
+		context.beginPath();
+		context.arc(x,y,30,0,Math.PI*2);
+		context.fill();
+	},10);
+	canvas.onmousemove = function(event){
+		x = event.offsetX;
+		y = event.offsetY;
+	}
+  </script>
+ </body>
+</html>
