@@ -1,0 +1,346 @@
+@charset "utf-8";
+*{margin:0;padding:0}
+body{background-color:#2C3C53;}
+ul{list-style-type:none}
+div{width:800px;height:120px;margin:50px auto;}
+li{position:relative}
+/************************************************V1*************************************************************/
+#img1{position:absolute;left:220px}
+#img2{position:absolute;left:340px}
+#img3{position:absolute;left:460px}
+/*动画1*********************************infinite是动画播放次数中的取值无限次*/
+@-webkit-keyframes move1{
+	from{left:-395px}
+	to{left:220px}
+}
+@-moz-keyframes move1{
+	from{left:-395px}
+	to{left:220px}
+}
+@-o-keyframes move1{
+	from{left:-395px}
+	to{left:220px}
+}
+@keyframes move1{
+	from{left:-395px}
+	to{left:220px}
+}
+#img1{
+	-webkit-animation:move1 4s linear;	
+	-moz-animation:move1 4s linear;	
+	-o-animation:move1 4s linear;	
+	-ms-animation:move1 4s linear;	
+	animation:move1 4s linear;	
+}
+/*动画2*/
+@-webkit-keyframes move2{
+	from{left:-395px}
+	to{left:340px}
+}
+@-moz-keyframes move2{
+	from{left:-395px}
+	to{left:340px}
+}
+@-o-keyframes move2{
+	from{left:-395px}
+	to{left:340px}
+}
+@keyframes move2{
+	from{left:-395px}
+	to{left:340px}
+}
+#img2{
+	-webkit-animation:move2 4.779s linear;
+	-moz-animation:move2 4.779s linear;
+	-o-animation:move2 4.779s linear;
+	-ms-animation:move2 4.779s linear;
+	animation:move2 4.779s linear;
+}
+/*动画3*/
+@-webkit-keyframes move3{
+	from{left:-395px}
+	to{left:460px}
+}
+@-moz-keyframes move3{
+	from{left:-395px}
+	to{left:460px}
+}
+@-o-keyframes move3{
+	from{left:-395px}
+	to{left:460px}
+}
+@keyframes move3{
+	from{left:-395px}
+	to{left:460px}
+}
+#img3{
+	-webkit-animation:move3 5.558s linear;
+	-moz-animation:move3 5.558s linear;
+	-o-animation:move3 5.558s linear;
+	-ms-animation:move3 5.558s linear;
+	animation:move3 5.558s linear;
+}
+/**************************************************V2****************************************************************/
+#intro ul li{width:120px;}
+#intro ul li b{width:120px;height:120px;position:absolute}
+#intro li.one b{background-image:url(images/xueyou.png);}
+#intro li.two b{background-image:url(images/dehua.png);}
+#intro li.three b{background-image:url(images/xingchi.png);}
+#intro li.one{left:220px;}
+#intro li.two{left:340px;}
+#intro li.three{left:460px;}
+/*公用动画*/
+@-webkit-keyframes remove{
+	from{transform:rotate(0deg)}
+	to{transform:rotate(720deg)}
+}
+@-moz-keyframes remove{
+	from{transform:rotate(0deg)}
+	to{transform:rotate(720deg)}
+}
+@-o-keyframes remove{
+	from{transform:rotate(0deg)}
+	to{transform:rotate(720deg)}
+}
+@keyframes remove{
+	from{transform:rotate(0deg)}
+	to{transform:rotate(720deg)}
+}
+/*动画1*/
+@-webkit-keyframes go1{
+	from{left:-413.6px}
+	to{left:220px}
+}
+@-moz-keyframes go1{
+	from{left:-413.6px}
+	to{left:220px}
+}
+@-o-keyframes go1{
+	from{left:-413.6px}
+	to{left:220px}
+}
+@keyframes go1{
+	from{left:-413.6px}
+	to{left:220px}
+}
+#intro li.one{
+	-webkit-animation:go1 2.9011s linear;
+	-moz-animation:go1 2.9011s linear;
+	-o-animation:go1 2.9011s linear;
+	-ms-animation:go1 2.9011s linear;
+	animation:go1 2.9011s linear;
+}
+#intro li.one b{
+	-webkit-animation:remove 4s linear infinite alternate;
+	-moz-animation:remove 4s linear infinite alternate;
+	-o-animation:remove 4s linear infinite alternate;
+	-ms-animation:remove 4s linear infinite alternate;
+	animation:remove 4s linear infinite alternate;
+}
+/*动画2*/
+@-webkit-keyframes go2{
+	from{left:-413.6px}
+	to{left:340px}
+}
+@-moz-keyframes go2{
+	from{left:-413.6px}
+	to{left:340px}
+}
+@-o-keyframes go2{
+	from{left:-413.6px}
+	to{left:340px}
+}
+@keyframes go2{
+	from{left:-413.6px}
+	to{left:340px}
+}
+#intro li.two{
+	-webkit-animation:go2 3.4505s linear;
+	-moz-animation:go2 3.4505s linear;
+	-o-animation:go2 3.4505s linear;
+	-ms-animation:go2 3.4505s linear;
+	animation:go2 3.4505s linear;
+}
+#intro li.two b{
+	-webkit-animation:remove 4s linear infinite alternate;
+	-moz-animation:remove 4s linear infinite alternate;
+	-o-animation:remove 4s linear infinite alternate;
+	-ms-animation:remove 4s linear infinite alternate;
+	animation:remove 4s linear infinite alternate;
+}
+/*动画3*/
+@-webkit-keyframes go3{
+	from{left:-413.6px}
+	to{left:460px}
+}
+@-moz-keyframes go3{
+	from{left:-413.6px}
+	to{left:460px}
+}
+@-o-keyframes go3{
+	from{left:-413.6px}
+	to{left:460px}
+}
+@keyframes go3{
+	from{left:-413.6px}
+	to{left:460px}
+}
+#intro ul li.three{
+	-webkit-animation:go3 4s linear;
+	-moz-animation:go3 4s linear;
+	-o-animation:go3 4s linear;
+	-ms-animation:go3 4s linear;
+	animation:go3 4s linear;
+}
+#intro ul li.three b{
+	-webkit-animation:remove 4s linear infinite alternate;
+	-moz-animation:remove 4s linear infinite alternate;
+	-o-animation:remove 4s linear infinite alternate;
+	-ms-animation:remove 4s linear infinite alternate;
+	animation:remove 4s linear infinite alternate;
+}
+/****************************************************v3*************************************************************/
+#every ul li{width:120px;}
+#every ul li b{width:120px;height:120px;position:absolute}
+#every li.first b{background-image:url(images/xueyou.png);}
+#every li.second b{background-image:url(images/dehua.png);}
+#every li.third b{background-image:url(images/xingchi.png);}
+#every li.first{left:220px;}
+#every li.second{left:340px;}
+#every li.third{right:-460px;}
+/**动画**/
+@-webkit-keyframes left_rotate{
+	from{transform:rotate(0deg)}
+	to{transform:rotate(720deg)}
+}
+@-moz-keyframes left_rotate{
+	from{transform:rotate(0deg)}
+	to{transform:rotate(720deg)}
+}
+@-o-keyframes left_rotate{
+	from{transform:rotate(0deg)}
+	to{transform:rotate(720deg)}
+}
+@keyframes left_rotate{
+	from{transform:rotate(0deg)}
+	to{transform:rotate(720deg)}
+}
+@-webkit-keyframes left{
+	from{left:-273.5px}
+	to{left:220px}
+}
+@-moz-keyframes left{
+	from{left:-273.5px}
+	to{left:220px}
+}
+@-o-keyframes left{
+	from{left:-273.5px}
+	to{left:220px}
+}
+@keyframes left{
+	from{left:-273.5px}
+	to{left:220px}
+}
+#every li.first{
+	-webkit-animation:left 4s linear infinite alternate;;
+	-moz-animation:left 4s linear infinite alternate;;
+	-o-animation:left 4s linear infinite alternate;;
+	-ms-animation:left 4s linear infinite alternate;;
+	animation:left 4s linear infinite alternate;;
+}
+#every li.first b{
+	-webkit-animation:left_rotate 4s linear;
+	-moz-animation:left_rotate 4s linear;
+	-o-animation:left_rotate 4s linear;
+	-ms-animation:left_rotate 4s linear;
+	animation:left_rotate 4s linear;
+}
+
+
+
+
+
+@-webkit-keyframes right_rotate{
+	from{transform:rotate(0deg)}
+	to{transform:rotate(-720deg)}
+}
+@-moz-keyframes right_rotate{
+	from{transform:rotate(0deg)}
+	to{transform:rotate(-720deg)}
+}
+@-o-keyframes right_rotate{
+	from{transform:rotate(0deg)}
+	to{transform:rotate(-720deg)}
+}
+@keyframes right_rotate{
+	from{transform:rotate(0deg)}
+	to{transform:rotate(-720deg)}
+}
+@-webkit-keyframes right{
+	from{right:-953.5px}
+	to{right:-460px}
+}
+@-moz-keyframes right{
+	from{right:-953.5px}
+	to{right:-460px}
+}
+@-o-keyframes right{
+	from{right:-953.5px}
+	to{right:-460px}
+}
+@keyframes right{
+	from{right:-953.5px}
+	to{right:-460px}
+}
+#every li.third{
+	-webkit-animation:right 4s linear infinite alternate;
+	-moz-animation:right 4s linear infinite alternate;
+	-o-animation:right 4s linear infinite alternate;
+	-ms-animation:right 4s linear infinite alternate;
+	animation:right 4s linear infinite alternate;
+}
+#every li.third b{
+	-webkit-animation:right_rotate 4s linear;
+	-moz-animation:right_rotate 4s linear;
+	-o-animation:right_rotate 4s linear;
+	-ms-animation:right_rotate 4s linear;
+	animation:right_rotate 4s linear;
+}
+
+
+/*********************************************************************/
+#only{width:120px;height:120px;position:relative}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
