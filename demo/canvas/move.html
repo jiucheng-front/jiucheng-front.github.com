@@ -3,10 +3,19 @@
  <head>
   <title>实心圆跟随鼠标运动</title>
   <meta charset="utf-8" />
+  <style>
+	
+	/*方法二*/
+	body{
+	    display: flex;
+	    align-items: center;/****水平居中****/
+	    justify-content: center;/*垂直居中*/
+	}
+  </style>
  </head>
-
+	
  <body>
-  <canvas id="canvas" width="300px" height="400px" style="background:pink"></canvas>
+  <canvas id="canvas" width="300px" height="400px" style="background:green;"></canvas>
   <script>
 	var canvas = document.getElementById("canvas");
 	var context = canvas.getContext("2d");
