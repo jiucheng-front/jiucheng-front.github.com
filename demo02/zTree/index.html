@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>2-zTree带功能</title>
+	<script src="scripts/jquery-1.11.3.js"></script>
+		<!--zTree插件的js文件-->
+	<script src="ztrees/jquery.ztree.all-3.5.js"></script>
+		<!--引入ul样式-->
+	<link rel="stylesheet" href="zTreeStyle/zTreeStyle.css" type="text/css">
+ </head>
+ <body>
+	<table border="0" height="100%" align="left">
+		<tr>
+			<td width="260px" align="left" valign="top" style="border-right: #999999 1px dashed">
+				<ul id="treeDemo" class="ztree"></ul>
+			</td>
+			<td width="770px" align="left" valign="top">
+				<iframe id="testIframe" name="testIframe" frameborder="0" scrolling="auto" width=100%  height=600px src="a.html"></iframe>		
+			</td>
+		</tr>
+	</table>
+ </body>
+ <script>
+		var setting={
+			view: {
+			dblClickExpand: false,
+			showLine: true,
+			selectedMulti: false
+			},
+			data:{
+				simpleData:{
+					enable:true,
+					idKey:"id",
+					pIdKey:"pId",
+					rootPid:0
+				}
+			},
+			callback:{
+				beforeClick:function(treeId,treeNode){
+					var zTree = $.fn.zTree.getZTreeObj("treeDemo");
+					if(treeNode.isParent){
+						zTree.expandNode(treeNode);
+						return false;
+					}else{
+						$("#testIframe").attr("src",treeNode.file);
+						return true;
+					}
+				}
+			}
+		};
+		var zNodes=[
+			{id:1,pId:0,name:"一级菜单1",open:true},
+			{id:11,pId:1,name:"二级菜单1",file:"a.html"},
+			{id:12,pId:1,name:"二级菜单2",file:"b.html"},
+			{id:13,pId:1,name:"二级菜单3",file:"c.html"},
+
+			{id:2,pId:0,name:"一级菜单2"},
+			{id:21,pId:2,name:"二级菜单21",open:true},
+			{id:211,pId:21,name:"三级菜单211"},
+			{id:212,pId:21,name:"三级菜单212"},
+
+			{id:3,pId:3,name:"一级菜单3无子节点",isParent:true}
+		];
+		$.fn.zTree.init($("#treeDemo"),setting,zNodes);
+	</script>
+</html>
