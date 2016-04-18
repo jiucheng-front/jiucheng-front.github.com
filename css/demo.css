@@ -150,8 +150,29 @@ ul,ol,dl{padding: 0;margin: 0;}
     width: 2px;
     height: 0;
 }
+/*改版*/
+#header nav li.will_show{
+    display: none;
+    float: right;
+}
+#header nav{
+    overflow:hidden;
+}
+#header nav li.myblog{
+    width: 100%;
+}
+#header nav li.myblog a{
+    width:20%;
+}
 /*手机端*/
 @media screen and (max-width:767px){
     .main ul li.list{width:50%}
     .what dl{width: 50%}
+    /**/
+    #header nav li.myblog{display: none;}
+    #header nav li.will_show{
+        display: block;
+        float: right;
+    }
 }
+/*改版*/
