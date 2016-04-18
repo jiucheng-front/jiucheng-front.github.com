@@ -9,6 +9,7 @@
     background: #555;
     opacity: 0.9;
     display: none;
+    z-index: 999;
 }
 div.selected{display: block}
 /********关闭按钮*****/
