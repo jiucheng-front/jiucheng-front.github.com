@@ -34,9 +34,12 @@
     width: 1.2em;
     height: 1.2em;
 	margin-top:.8em;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
     border-radius: 50%;
     background: #909090;
     cursor: pointer;
     text-align: center;
 	color:#909090;
+    behavior: url(ie-css3.htc);
 }
