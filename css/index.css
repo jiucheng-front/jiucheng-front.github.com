@@ -1,0 +1,42 @@
+/*************初始化************/
+*{margin:0;padding: 0;border: none;list-style: none}
+/*********轮播左右居中*************/
+.baner{
+    width: 100%;
+    height: 10em;
+    margin: 0 auto;
+    position: relative;
+}
+.baner a{
+    position: absolute;
+    width: 100%;
+}
+.baner a img{
+    width: 100%;
+    height: 10em;
+
+}
+/***********左边小图标************/
+.baner ul li.selected{
+    background: #f97157;
+	width: 1.5em;
+    height: 1.5em;
+	margin-left:-.1em;
+	color:#f97157;
+}
+.baner ul{
+    position: absolute;
+    z-index: 99;
+    top: .8em;
+    left: .7em;
+}
+.baner ul li{
+    width: 1.2em;
+    height: 1.2em;
+	margin-top:.8em;
+    border-radius: 50%;
+    background: #909090;
+    cursor: pointer;
+    text-align: center;
+	color:#909090;
+}
