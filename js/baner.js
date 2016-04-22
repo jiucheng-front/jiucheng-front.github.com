@@ -38,3 +38,13 @@ function autoMove(){
 	/*****给li执行匹配的事件*****/
     $(".baner ul li").eq(n).trigger("click");
 }
+// 移动端按钮切换
+$(function(){
+    $(".show_btn").click(function(){
+        if($(".will_change").css('display')=="block"){
+            $(".will_change").fadeOut(1000);
+        }else{
+            $(".will_change").fadeIn(500);
+        }
+    })
+})
