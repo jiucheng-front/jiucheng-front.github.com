@@ -1,0 +1,534 @@
+*{
+    text-decoration: none;
+    outline:none;
+    border: none;
+    margin:0;
+    padding:0;
+    list-style: none;
+    box-sizing: border-box;
+    color: rgb(50,50,55);
+}
+body{
+    font-size: 1em;
+    font-family: graphik-light,HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+/*导航*/
+.will_left{
+    float: left;
+}
+.will_right{
+    float: right;
+}
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.navbar{
+    box-sizing: border-box;
+    height: 100%;
+    line-height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgba(255,255,255,0);
+}
+.nav_brand{
+    width: 20%;
+    height: 56px;
+    padding: 10px;
+    display: block;
+    margin-top: .15%;
+}
+.nav_brand img{
+    width: 100%;
+    height: 100%;
+}
+.nav_parent{
+    height: 100%;
+    width: 80%;
+    padding: 1.5em 0;
+}
+.nav_parent>li{
+    position: relative;
+}
+a.nav_btn,.nav_parent li a{
+    padding: .6em;
+    font-weight: 600;
+    font-style: normal;
+    -webkit-transition: all .5s linear;
+    -moz-transition: all .5s linear;
+    -o-transition: all .5s linear;
+    -ms-transition: all .5s linear;
+    transition: all .3s linear;
+}
+.nav_parent>li>a:hover,.nav_parent>li>a.will_blue{
+    cursor: pointer;
+    color:#00d7ff;
+    border-top: 2px solid #00d7ff;
+}
+a.nav_btn{
+    display: none;
+    margin-right: 2%;
+}
+a.nav_btn span{
+    display:block;
+    width:21px;
+    height:2px;
+    margin:4px 0;
+    background-color: #000;
+}
+/**/
+.will_list{
+    width: 100%;
+    font-size: .8em;
+    position: absolute;
+    left: 0;
+    top: 2em;
+    z-index: 999;
+    opacity: .9;
+    display: none;
+    padding: 1em 0;
+    background: rgba(231,236,240,.7);
+}
+.will_list ul li{
+    height: 2.3em;
+    line-height: 2.3em;
+    text-align: center;
+}
+.will_list ul li a:hover{
+    color:#00d7ff;
+}
+/*section*/
+section{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 600px;
+    overflow: hidden;
+}
+.main_parent_left,.main_parent_right{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    zoom: 1;
+}
+.main_parent_left{
+    left: 0;
+    top: 0;
+    /*display: none;*/
+}
+.main_parent_right{
+    display: none;
+}
+.main{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url("../img/meetgogoro_hero_open_l.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover!important;
+    z-index: 10;
+}
+@media screen and (min-width:768px){
+    .main_right{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-image: url("../img/meetgogoro_hero_01s_m.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover!important;
+    }
+    .right_btn{
+        bottom: 4em;
+    }
+}
+.main_msg,.right_btn{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+}
+.main_msg{
+    top:20%;
+}
+.main_msg h2{
+    font-family:graphik-extra-light,HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    font-size: 3em;
+    font-weight: 100;
+    margin-bottom: .2em;
+}
+.main_msg p{
+    font-size: 1em;
+    font-weight: 100;
+    margin-bottom: 3em;
+    font-style: inherit;
+}
+.btn,.main_right_btn{
+    padding: 12px 20px; 
+    font-size: 1em;
+    font-weight: bold;
+    font-style: italic;
+    border-radius: 2em;
+    behavior: url(ie-css3.htc);
+    cursor: pointer;
+    text-transform: uppercase;
+    -webkit-transition: all .5s linear;
+    -moz-transition: all .5s linear;
+    -o-transition: all .5s linear;
+    -ms-transition: all .5s linear;
+    transition: all .5s linear;
+}
+.btn{
+    background-color: rgb(50, 50, 55);;
+    border: 2px solid rgb(50, 50, 55);
+    color: rgb(255,255,255);
+}
+.btn:hover{
+    background-color: #fff;
+    color:#323237;
+}
+/*learn more*/
+.main_right_btn{
+    background-color:#fff;
+    border: 2px solid #323237;
+    color:#323237;
+}
+.main_right_btn:hover{
+    background-color: #323237;
+    color: #fff;
+}
+/*滑动按钮*/
+.section_btn{
+    display: block;
+    text-align: center;
+    position: absolute;
+    bottom: 2em;
+    width: 100%;
+    z-index: 999;
+}
+.section_btn li{
+    cursor: pointer;
+    display: inline-block;
+    padding: .7em;
+    border-radius: 50%;
+    behavior: url(ie-css3.htc);
+    background: #323237;
+    margin-left: 1em;
+}
+.section_btn li.selected{
+    background-color: #00d7ff;
+}
+/*底部介绍*/
+footer{
+    width:100%;
+    position: relative;
+    margin-top:2em;
+    vertical-align: middle;
+}
+.footer{
+    width:80%;
+    margin:0 auto;
+    overflow: hidden;
+    font-family: Graphik-light,xingothic-w3,'Microsoft JhengHei',STHeiti;
+    font-weight: 300;
+    font-size: .6em;
+}
+.footer a{
+    display:inline-block;   
+    padding:0 .2em;
+    cursor:pointer;
+}
+.footer a:hover{
+    color: #00d7ff;
+}
+.footer_right{
+    text-align: right;
+}
+.Language{
+    padding:.5em .3em;
+    background-color: rgba(0,215,255,.8);
+    cursor: pointer;
+}
+/*手机端样式*/
+/*浅色*/
+.mobile_top{
+    background-color:rgba(241,243,242,.9);
+}
+.mobile_top li{
+    border-bottom:1px solid #E5E7E6;
+}
+.mobile_top li a{
+    font-family: Graphik-light,xingothic-w3,'Microsoft JhengHei',STHeiti;
+    font-weight: 300;
+    font-size:1em;
+    text-align:center;
+    display: block;
+    padding:1em 0;
+    cursor:pointer;
+}
+.mobile_top li a:hover{
+    color: #00d7ff;
+}
+/*暗色*/
+.mobile_middle{
+    background-color:#3D3C42;
+    height:200px;  
+}
+.mobile_middle ul{
+    width:100%;
+    margin:0 auto;
+    padding:1em 0;
+}
+.mobile_middle li{
+    position: relative;
+    width: 50%;
+}
+.mobile_middle li a{
+    font-weight: bold;
+    display: block;
+    color:#B8BCBF;
+    text-align:center;
+    padding:1em 0;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+.mobile_middle li a:hover{
+    cursor: pointer;
+    color: #fff;
+}
+/**/
+.secect_language{
+    position:relative;
+    width: 160px;
+    margin:0 auto;
+    background-color:#646368;
+    border-radius:1em;
+    behavior: url(ie-css3.htc);
+}
+.secect_language span.language_btn{
+    color: #B8BCBF;
+    cursor: pointer;
+    display: block;
+    padding:1em;
+    margin: 0 auto;
+}
+.secect_language ul li{
+    width: 100%;
+}
+.secect_language ul li a{
+    display: block;
+}
+ul.language_list{
+    display: none;
+    position: absolute;
+    z-index: 20;
+    top:2.2em;
+    padding:.5em 0;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    background-color:#646368;
+}
+.language_list li a{
+    padding: .5em 0;
+}
+/*深色*/
+.mobile_bottom{
+    background-color:#323237;
+    padding-bottom: 5em;
+}
+.footer_top{
+    text-align: center;
+    padding: 3em;
+}
+.footer_top a{
+    padding: 1em 1.5em;
+    background-color: rgb(222,252,47);
+    font-family: graphik-black-italic,HelveticaNeue,"Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    letter-spacing: 2px;
+    border-radius: 2em;
+    behavior: url(ie-css3.htc);
+    cursor: pointer;
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+    -ms-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+}
+.footer_top a:hover{
+    background-color: rgb(185,214,13);
+}
+.footer_middle{
+    margin:1.5em 0;
+}
+.footer_middle ul{
+    display: table;
+    text-align: center;
+    margin: 0 auto;
+}
+.footer_middle ul li{
+    display: inline-block;
+    margin-left:5px;
+    margin-right:5px;
+    cursor: pointer;
+}
+.footer_middle ul li a i{
+    display: block;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    behavior: url(ie-css3.htc);
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -ms-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+}
+.btn_one{
+    background-image: url(../img/facebook-off.png);
+}
+.btn_one:hover{
+    background-image:url(../img/facebook-on-sm.png);
+}
+.btn_two{
+    background-image: url(../img/youtube-off.png);
+}
+.btn_two:hover{
+    background-image:url(../img/youtube-on-sm.png);
+}
+.btn_three{
+    background-image: url(../img/linkedin-off.png);
+}
+.btn_three:hover{
+    background-image:url(../img/linkedin-on-sm.png);
+}
+.btn_four{
+    background-image: url(../img/twitter-off.png);
+}
+.btn_four:hover{
+    background-image:url(../img/twitter-on-sm.png);
+}
+.btn_five{
+    background-image: url(../img/blog-off.png);
+}
+.btn_five:hover{
+    background-image:url(../img/blog-on-sm.png);
+}
+.btn_six{
+    background-image: url(../img/hashtag-off.png);
+}
+.btn_six:hover{
+    background-image:url(../img/hashtag-on-sm.png);
+}
+.btn_seven{
+    background-image: url(../img/insta-off.png);
+}
+.btn_seven:hover{
+    background-image:url(../img/insta-on-sm.png);
+}
+.footer_bottom p,.bottom_last p{
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    color: rgb(143, 144, 145);
+    display: block;
+    font-family: graphik-light, xingothic-w3, 'Microsoft JhengHei', STHeiti;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 16.56px;   
+    text-align: center;
+    visibility: visible;
+}
+.footer_bottom p{
+    margin: 2em;
+}
+.footer_bottom p a,.bottom_last p a{
+    color: #b9bcbf;
+    padding-bottom:1px;
+    border-bottom:1px solid #b9bcbf;
+}
+.footer_bottom p a:hover,.bottom_last p a:hover{
+    color: #00d7ff;
+    border-bottom:1px solid #00d7ff;
+}
+.bottom_log{text-align: center;}
+.bottom_log img{
+    width:60px;
+    height: 15px;
+}
+/*PC端隐藏*/
+.mobile_parent{
+    display: none;
+}
+@media screen and (max-width: 767px){
+    .navbar{
+        height: 52px;
+        width: 100%;
+        padding-left: 3%;
+        background-color: rgba(225,255,50,.8);
+        background-color: rgb(225,255,50);
+        filter:alpha(opacity=.9)
+    }
+    .nav_brand{
+        width: 75px;
+        height: 42px;
+    }
+    a.nav_btn{
+        display: block;
+        margin-top: .5em;
+        font-weight: bold;
+    }
+    a.nav_btn:hover span{
+        cursor: pointer;
+        background-color:#00d7ff;
+    }
+    .nav_parent{
+        display: none;
+    }
+    .main{
+        background-image: url("../img/meetgogoro_hero_open_fallback_port.jpg");
+    }
+    .main_right{
+        background-image: url("../img/allYou_1018_fallback_port.jpg");
+        height: 305px;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 4em;
+        right: 0;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover!important;
+    }
+    .main_msg h2{
+        font-size:2em;
+    }
+    .main_msg p{
+        font-size: .8em;
+    }
+    .right_btn{
+        bottom: 0;
+    }
+    /*底部*/
+    footer{display: none;}
+    .mobile_parent{
+        display: block;
+    }
+}
