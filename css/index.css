@@ -19,9 +19,6 @@
 /***********左边小图标************/
 .baner ul li.selected{
     background: #f97157;
-	width: 1.5em;
-    height: 1.5em;
-	margin-left:-.1em;
 	color:#f97157;
 }
 .baner ul{
