@@ -52,9 +52,9 @@ function moveDown(){
 }
 function init(){
 	// 动态获取并设置body的高度
-	document.body.style.height=window.innerHeight+"px";
+	document.body.style.height=document.documentElement.clientHeight+"px";
 	// 每500毫秒创建一个移动对象并执行移动函数
 	var t=setInterval(function(){
 		moveDown();
-	},100);
+	},500);
 }
