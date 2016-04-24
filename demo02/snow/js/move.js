@@ -1,3 +1,6 @@
+/*
+	creatBy jiucheng 2016-4-24
+*/ 
 window.onload=function(){
 	init();
 }
