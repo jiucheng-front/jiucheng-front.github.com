@@ -56,5 +56,5 @@ function init(){
 	// 每500毫秒创建一个移动对象并执行移动函数
 	var t=setInterval(function(){
 		moveDown();
-	},500);
+	},100);
 }
