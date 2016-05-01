@@ -1,0 +1,85 @@
+*{
+    list-style: none;
+    border:none;
+    text-decoration: none;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+h3{
+    text-align: center;
+    color: dimgrey;
+}
+.baner_parent{
+    width: 1000px;
+    margin:0 auto;
+}
+.will_left{
+    float: left;
+}
+.will_right{
+    float: right;
+}
+.btn_left ul li{
+    text-align: center;
+    width: 160px;
+    height:98px;
+    background-color: darkgrey;
+    padding: 13px 0;
+    cursor: pointer;
+    -webkit-transition:all .5s ease-out;
+    -moz-transition:all .5s ease-out;
+    -o-transition:all .5s ease-out;
+    -ms-transition:all .5s ease-out;
+    transition:all .5s ease-out;
+}
+.btn_left ul li.selected{
+    background-color: cornflowerblue;
+}
+.btn_left ul li:not(:nth-child(4)){
+    border-bottom: 1px solid dimgrey;
+}
+.btn_left ul li img{
+    width: 50px;
+    height: 50px;
+}
+.btn_left ul li span{
+    display:block;
+}
+.banner_right,.banner_lists img{
+    width: 800px;
+    height: 391px;
+    position: relative;
+}
+.banner_lists{
+    position: absolute;
+    height: 391px;
+}
+.banner_lists:not(:nth-child(1)){
+    display: none;
+}
+.banner_lists ul{
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.btn{
+    height: 33px;
+    width: 200px;
+    border-right: 1px solid #000;
+    margin-top: -3px;
+    text-align: center;
+    line-height: 33px;
+    background-color: darkgrey;
+    opacity: .8;
+    cursor: pointer;
+    -webkit-transition:all .5s ease-out;
+    -moz-transition:all .5s ease-out;
+    -o-transition:all .5s ease-out;
+    -ms-transition:all .5s ease-out;
+    transition:all .5s ease-out;
+}
+.btn:hover,.btn.selected{
+    background-color: cornflowerblue;
+}
