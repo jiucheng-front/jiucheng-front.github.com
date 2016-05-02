@@ -58,8 +58,8 @@ window.onload=function(){
     		hoverbtns[i].onmouseover=function(){
     			removeAll(hoverbtns);
 	 			addClass(this,"selected");
-    			// var imgSrc=array[this.index][this.index];
-    			img.src=array[this.index][this.index];
+    			var imgSrc=array[sum][this.index];
+    			img.src=array[sum][this.index];
     		}
     	}
 	}
