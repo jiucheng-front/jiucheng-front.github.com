@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>使用百度地图位置定位</title>
+  <meta charset="utf-8" />
+  <script src="http://api.map.baidu.com/api?v=2.0&ak=HbUVYMUg6PwbOnXkztdgSQlQ"></script>
+  <style type="text/css">
+          body, html,#allmap {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            margin:0;
+            font-family:"微软雅黑";
+          }
+    </style>
+ </head>
+ <body>
+  <div id="allmap"></div>
+  <script>
+    var map = new BMap.Map("allmap");
+    map.centerAndZoom("上海",12);
+    /*
+     * 使用浏览器定义 - 得到当前位置的经度和纬度
+     * Geolocation类
+     * * 作用 - 返回用户当前的位置
+     * * 问题 - 依靠浏览器来实现当前位置定位的功能
+     * * 构造器 - Geolocation()
+     * * 方法
+     *   * getCurrentPosition(callback)方法
+     *     * 作用 - 返回用户当前位置
+     *     * 参数callback
+     *       * 定位成功,该回调函数具有一个GeolocationResult参数
+     * GeolocationResult类
+     * * 作用 - 返回当前位置的经度和纬度
+     * * 属性
+     *   * point - 当前位置坐标值(经度和纬度)
+     */
+    /*
+    var local = new BMap.Geolocation();
+    local.getCurrentPosition(function(result){
+        // result.point获取的坐标值 - 不准确
+        console.log(result.point.lng);
+        console.log(result.point.lat);
+    });
+    */
+    /*
+     * 使用地址解析方式 - 到当前位置的经度和纬度
+     * Geocoder类
+     * * 作用 - 用于获取用户的地址解析
+     * * 构造器 - Geocoder()
+     * * 方法
+     *   * getPoint(address,callback,city)方法
+     *     * 作用 - 对指定的地址进行解析
+     *     * 参数
+     *       * address - 设置解析的地址内容
+     *       * callback - 回调函数
+     *         * 地址定位成功,具有Point参数
+     *       * city - 当前中心城市
+     */
+     // 创建比例尺控件对象
+    var scale = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT});
+    // 将比例尺控件添加到百度地图中
+    map.addControl(scale);
+    // 
+    /*
+     * Control类 - 控件类
+     * NavigationControl类 - 表示地图的平移缩放控件
+     * * 构造器 - NavigationControl()
+     * Map对象移除控件 - removeControl()
+     */
+    var nav = new BMap.NavigationControl();
+    map.addControl(nav);
+    // 设定目标提醒位置
+    var geo = new BMap.Geocoder();
+    geo.getPoint("上海市厦门路115号",function(point){
+        /*
+        console.log(point.lng);
+        console.log(point.lat);
+        */
+        var marker = new BMap.Marker(point);
+        map.centerAndZoom(point,17);
+        map.addOverlay(marker);
+        /*
+         * 鼠标点击标注,打开信息窗口
+         * InfoWindow类 - 信息窗口
+         * * 构造器 - InfoWindow(addr,options)
+         *   * addr - 设置的地址
+         *   * options - 设置信息窗口的设置
+         */
+        var opts = {
+            width : 200,
+            height: 100,
+            title : "捷达五金商城"
+        }
+        // 创建信息窗口对象
+        var info = new BMap.InfoWindow("地址:厦门路115号.",opts);
+        // 为标注绑定click事件
+        marker.addEventListener("click",function(){
+            // 打开信息窗口
+            map.openInfoWindow(info,point);
+        });
+    },"上海市");
+  </script>
+ </body>
+</html>
