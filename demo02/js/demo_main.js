@@ -7,8 +7,8 @@ $(function(){
     	$(this).find(".demo_list").css({
     		'background-color':bg
     	});
-        $(this).find(".demo_list").show(500);
+        $(this).find(".demo_list").fadeIn(500);
     },function(){
-        $(this).find(".demo_list").hide(500);
+        $(this).find(".demo_list").fadeOut(500);
     });
 });
