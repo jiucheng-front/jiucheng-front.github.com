@@ -1,0 +1,120 @@
+/* koringz.github.io
+*
+* $author koringz
+* $data 2015-09-25
+* $version 0.1
+*
+*
+* $author koringz
+* $data 2015-12-25
+* $version 0.2
+*
+* $author koringz
+* $data 2015-12-28
+* $version 0.3
+*
+*/
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000
+}
+.container {
+  position: absolute;
+  top: 50%;
+  margin-top: -150px;
+  font-size: 0;
+  width: 100%;
+  /*background-color: #247578*/
+}
+.container .content {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  justify-content: center;
+  white-space: nowrap;
+  width: 900px;
+  max-width: 900px;
+  height: 300px;
+  line-height: 300px;
+  overflow: hidden;
+  z-index: 100;
+}
+.container .content .grid {
+  position: absolute; 
+  display: inline-block; 
+  width: 7200px; 
+  left: 0;
+  height: 290px; 
+  overflow: hidden;
+  z-index: 98;
+  /*background-color: #881114;*/
+}
+.container .content .next_grid {
+  width: 1200px;
+  /* 固定盒子宽度 */
+  height: 300px;
+  /*background-color: #881114;*/
+}
+.container .content a {
+  display: inline-block;
+  height: 300px;
+  line-height: 100%;
+  width: 900px;
+  vertical-align: middle;
+}
+.container .content a img{
+  margin-top: 10px;
+  font-size: 100%;
+  width:100%
+}
+.container .content a span {
+  display: none;
+  position: absolute;
+  margin-top: 22px;
+  margin-left: 22px;
+  height: 38px;
+  width: 38px;
+  background-color: #2ee;
+  opacity: .4;
+  border-radius: 50%;
+  border-style: solid;
+}
+/*button*/
+.container span.Left,
+.container span.Right {
+  display: block;
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  font-weight: bolder;
+  text-align: center;
+  border-style: none;
+}
+.container .Left,
+.container .Right {
+  margin-top: -140px;
+  min-height: 280px;
+  line-height: 280px;
+  cursor: pointer;
+  font-size: 28px;
+  color: #BBB;
+  z-index: 99;
+  outline: none;
+  -moz-user-select:none;
+  -webkit-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+  background-color:#131D1C
+}
+.container .Left {
+  left: 50%;
+  margin-left: -450px;
+  box-shadow: -1px 0px 10px #2F4E4D
+}
+.container .Right {
+  right: 50%;
+  margin-right: -450px;
+  box-shadow: 1px 0px 10px #2F4E4D
+}
+/*网格的div的宽带要大于包含网格的div宽带*/

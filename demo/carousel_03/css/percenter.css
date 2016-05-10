@@ -1,0 +1,36 @@
+.container {
+	width: 100%;
+	overflow-x:hidden 
+}
+.percenter{
+	width: 200%;
+	height: 300px;
+	overflow: hidden;
+}
+
+.content.content_perc{
+	position: absolute;
+	width: 600px;
+	overflow: hidden;
+	background-color: #2c2
+}
+.content_perc1{
+	left: 50%;
+	margin-left: -300px;
+}
+.content_perc2{
+	left: 150%;
+	margin-left: -300px;
+}
+
+
+
+
+
+.nextPage{
+	position: absolute;
+	bottom: 0;
+	right: 50px;
+	font-size: 30px;
+	color: #2ff;
+}
