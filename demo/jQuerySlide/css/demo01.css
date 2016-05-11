@@ -1,0 +1,37 @@
+*{
+    list-style: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #999;
+}
+.slideBox{
+    width: 400px;
+    margin: 0 auto;
+    border: 1px solid #999;
+}
+.hd{
+    height: 32px;
+    line-height: 32px;
+    background-color: #ddd;
+}
+.hd ul li{
+    display: inline-block;
+    margin-left: 20px;
+    cursor: pointer;
+    padding: 0 20px;
+    height: 30px;
+    border: 1px solid #ddd;
+}
+.hd ul li.on{ height:30px;background:#fff; border:1px solid #ddd; border-bottom:2px solid #fff; }
+.bd{
+    padding: 30px;
+
+}
+.bd ul li{
+    height: 25px;
+    line-height: 25px;
+}

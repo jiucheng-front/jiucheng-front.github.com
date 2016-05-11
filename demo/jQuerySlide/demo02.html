@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>焦点幻灯</title>
+    <link rel="stylesheet" href="css/demo02.css">
+    <script src="js/jquery1.42.min.js"></script>
+    <script src="js/jquery.SuperSlide.2.1.1.js"></script>
+</head>
+<body>
+    <div id="slideBox" class="slideBox">
+        <div class="hd">
+            <ul><li>1</li><li>2</li><li>3</li><li>4</li></ul>
+        </div>
+        <div class="bd">
+            <ul>
+                <li><a href="javascript:;" target="_blank"><img src="img/baner01.jpg" /></a></li>
+                <li><a href="javascript:;" target="_blank"><img src="img/baner02.jpg" /></a></li>
+                <li><a href="javascript:;" target="_blank"><img src="img/baner03.jpg" /></a></li>
+                <li><a href="javascript:;" target="_blank"><img src="img/baner04.jpg" /></a></li>
+            </ul>
+        </div>
+        <!-- 下面是前/后按钮代码，如果不需要删除即可 -->
+        <a class="prev" href="javascript:void(0)"></a>
+        <a class="next" href="javascript:void(0)"></a>
+    </div>
+</body>
+    <script>
+        jQuery(".slideBox").slide({mainCell:".bd ul",autoPlay:true});
+    </script>
+</html>
