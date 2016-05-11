@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    list-style: none;
+    outline: none;
+}
+.baner_parent,.adv{
+    position: relative;
+    width: 800px;
+    height: 350px;
+    margin: 0 auto;
+}
+.baner_parent a{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.baner_parent a img{
+    display: block;
+}
+.adv ul{
+    position: absolute;
+    z-index: 9999;
+    list-style: none;
+    top: 310px;
+    right: 20px;
+}
+.adv ul li{
+    float: left;
+    width: 22px;
+    height: 22px;
+    background-color: #999;
+    margin-left: 15px;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+}
+.adv ul li.on{
+    background-color: #f1a417;
+}
