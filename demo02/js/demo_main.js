@@ -5,10 +5,12 @@ $(function(){
     $(".tp").hover(function(){
     	var bg=$(this).css('background-color');
     	$(this).find(".demo_list").css({
-    		'background-color':bg
+    		'background-color':bg,
+    		'display':"block"
     	});
-        $(this).find(".demo_list").fadeIn(500);
     },function(){
-        $(this).find(".demo_list").fadeOut(500);
+        $(this).find(".demo_list").css({
+    		'display':"none"
+    	});
     });
 });
