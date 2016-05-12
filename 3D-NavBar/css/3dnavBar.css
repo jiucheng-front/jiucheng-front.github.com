@@ -1,0 +1,75 @@
+*{
+     list-style: none;
+     margin: 0;
+     padding: 0;
+ }
+.block-menu{
+    background:#AA7A53;
+    height:50px;
+    overflow:hidden;
+    padding-left:40px;
+}
+.block-menu li{
+    float: left;
+    margin-left: 15px;
+}
+.block-menu li a{
+    color:#fff;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-size:16px;
+    line-height:20px;
+    font-weight:bold;
+    font-family: Arial, sans-serif;
+    display:block;
+    padding:15px 10px;
+}
+.three-d-box,.front,.back{
+    width: 100%;
+    display: block;
+    height:50px;
+    position:absolute;
+    top:0;
+    left:0;
+    text-align: center;
+    line-height: 50px;
+    background:#AA7A53;
+}
+.three-d{
+    perspective:200px;
+    position:relative;
+}
+.three-d-box{
+    -webkit-transform-style:preserve-3d;
+    transform-style:preserve-3d;
+    -webkit-transform:translateZ(-25px);
+    -moz-transform:translateZ(-25px);
+    -o-transform:translateZ(-25px);
+    -ms-transform:translateZ(-25px);
+    transform:translateZ(-25px);
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+.front{
+    -webkit-transform:rotateX(0deg) translateZ(25px);
+    -moz-transform:rotateX(0deg) translateZ(25px);
+    -o-transform:rotateX(0deg) translateZ(25px);
+    -ms-transform:rotateX(0deg) translateZ(25px);
+    transform:rotateX(0deg) translateZ(25px);
+}
+.back{
+    -webkit-transform:rotateX(-90deg) translateZ(25px);
+    -moz-transform:rotateX(-90deg) translateZ(25px);
+    -o-transform:rotateX(-90deg) translateZ(25px);
+    -ms-transform:rotateX(-90deg) translateZ(25px);
+    transform:rotateX(-90deg) translateZ(25px);
+}
+.three-d:hover .three-d-box{
+    -webkit-transform: translateZ(-25px) rotateX(90deg);
+    -moz-transform: translateZ(-25px) rotateX(90deg);
+    -o-transform: translateZ(-25px) rotateX(90deg);
+    -ms-transform: translateZ(-25px) rotateX(90deg);
+    transform: translateZ(-25px) rotateX(90deg);
+}
