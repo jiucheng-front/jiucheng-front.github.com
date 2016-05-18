@@ -1,0 +1,135 @@
+*{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	border: none;
+	box-sizing: border-box;
+}
+.main{
+	width: 150px;
+	height: 150px;
+	margin: 0 auto;
+	position: relative;
+}
+.cube, .cube li {
+    position: absolute;
+    display: block;
+}
+.cube {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    /*margin: -50px 0;*/
+    -webkit-transform-origin: 50px 50px;
+    transform-origin: 50px 50px;
+    -webkit-transform: rotateX(-33.5deg) rotateY(45deg);
+    transform: rotateX(-33.5deg) rotateY(45deg);
+    -webkit-transform-style: preserve-3d;
+     transform-style: preserve-3d; 
+     -webkit-animation: willRotate 3s ease-in-out infinite 2s; 
+     animation: willRotate 3s ease-in-out infinite alternate; 
+     /*animation: name duration timing-function delay iteration-count direction;*/
+	    /*name	规定需要绑定到选择器的 keyframe 名称。。*/
+	   	/*duration	规定完成动画所花费的时间，以秒或毫秒计。*/
+	  	/*timing-function	规定动画的速度曲线。*/
+	 	/*delay	规定在动画开始之前的延迟。*/
+		/*iteration-count	规定动画应该播放的次数。*/
+		/*direction	规定是否应该轮流反向播放动画。*/
+    top: 50%;
+    /*left: 50%;*/
+}
+
+.cube .back, .cube .front, .cube .left, .cube .right, .cube .top {
+    background: radial-gradient(transparent 30%,rgba(126,17,91,.2) 100%);
+}
+.cube li {
+    width: 100px;
+    height: 100px;
+     transition: -webkit-transform 1s ease-in-out; 
+     transition: transform 1s ease-in-out; 
+}
+.cube .front {
+    -webkit-transform: translateZ(50px);
+     transform: translateZ(50px); 
+}
+.cube .back {
+    -webkit-transform:translateZ(-50px);
+    transform:translateZ(-50px);
+}
+.cube .right {
+    -webkit-transform: rotateY(90deg) translateZ(50px);
+    transform: rotateY(90deg) translateZ(50px);
+}
+.cube .left {
+    -webkit-transform: rotateY(90deg) translateZ(-50px);
+    transform: rotateY(90deg) translateZ(-50px);
+}
+.cube .top {
+    -webkit-transform: rotateX(90deg) translateZ(50px);
+    transform: rotateX(90deg) translateZ(50px);
+}
+.cube .bottom{
+    -webkit-transform: rotateX(90deg) translateZ(-50px);
+    transform: rotateX(90deg) translateZ(-50px);
+}
+.cube .floor {
+    box-shadow: -300px 0 50px rgba(0,0,0,.3);
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+    width: 110px;
+    height: 110px;
+    left: 295px;
+    background-color: transparent;
+    -webkit-transform: rotateX(90deg) translateZ(-60px);
+    transform: rotateX(90deg) translateZ(-60px);
+}
+.cube li span {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 75pt;
+    height: 75pt;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-color: rgba(132,229,132,.5);
+     transition: -webkit-transform 1s ease-in-out; 
+     transition: transform 1s ease-in-out; 
+}
+@-webkit-keyframes willRotate{
+	0%{
+		transform:rotateX(-33.5deg) rotateY(45deg);
+		zoom:1;
+	}
+	50%{
+		transform:rotateX(-33.5deg) rotateY(180deg);
+		zoom:2;
+	}
+	100%{
+		transform:rotateX(-33.5deg) rotateY(360deg);
+		zoom:1;
+	}
+}
+@keyframes willRotate{
+	0%{
+		transform:rotateX(-33.5deg) rotateY(45deg);
+		zoom:1;
+	}
+	50%{
+		transform:rotateX(-33.5deg) rotateY(180deg);
+		zoom:2;
+	}
+	100%{
+		transform:rotateX(-33.5deg) rotateY(360deg);
+		zoom:1;
+	}
+}
+
+
+
+
+
+
+
+
+
+
