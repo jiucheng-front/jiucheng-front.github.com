@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript">
+                window.onload=function(){
+                    var btn=document.getElementById('editer');
+                    var obj=document.getElementById('msg');
+                    var allMsg=document.getElementById('allMsg');
+                    var arr=[];
+                    btn.onkeydown = function (event){
+                        var event = event || window.event;
+                        obj.innerHTML = event.keyCode;
+                        // return false
+                        arr.push(event.keyCode);
+                        allMsg.innerHTML =arr;
+                        // console.log(arr);
+                    }
+                }
+</script>
+<style>
+    pre{
+        color: green;
+    }
+    #msg{
+        color: red;
+    }
+</style>
+</head>
+<body>
+        <div class="main">
+            <h4>本文来自:http://fgm.cc/learn/</h4>
+            <pre>
+                    &lt;script type="text/javascript"&gt;
+                        window.onload=function(){
+                            var btn=document.getElementById('editer');
+                            var obj=document.getElementById('msg');
+                            var allMsg=document.getElementById('allMsg');
+                            var arr=[];
+                            btn.onkeydown = function (event){
+                                var event = event || window.event;
+                                obj.innerHTML = event.keyCode;
+                                arr.push(event.keyCode);
+                                allMsg.innerHTML =arr;
+                            }
+                        }
+                    &lt;/script&gt;
+                    </pre>
+                    <p>这里将显示您按下键的 keyCode：<span id="msg"></span></p>
+                    <p>总：<span  id='allMsg'></span></p>
+                    <input type="password" id='editer' maxlength='8'>
+        </div>
+    <script>    
+            // 求解一筐鸡蛋： 1个1个拿，正好拿完。 2个2个拿，还剩1个。 3个3个拿，正好拿完。 4个4个拿，还剩1个。 5个5个拿，还剩4个。 6个6个拿，还剩3个。 7个7个拿，正好拿完。 8个8个拿，还剩1个。 9个9个拿，正好拿完。 问筐里有多少鸡蛋？ 求高人解答？？？？  
+            for (var i = 0; i < 10000; i++) {
+                if ((i%1==0)&&(i%2==1)&&(i%3==0)&&(i%4==1)&&(i%5==4)&&(i%6==3)&&(i%7==0)&&(i%8==1)&&(i%9==0)) {
+                    console.log(i);  
+                } 
+            }
+            console.log(2%2==0);
+            console.log(2%2==1);
+    </script>
+</body>
+</html>
