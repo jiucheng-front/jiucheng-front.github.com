@@ -1,0 +1,6 @@
+body,html{width:100%;height:100%;background:black;}
+	#wrap{margin:0px auto;width:360px;height:640px;transform-style:preserve-3d;transform:perspective(9000px) rotateX(-20deg) rotateY(0deg);position:relative;transition:transform 1s}
+	#wrap div{position:absolute;top:0;left:0;width:360px;height:640px;background-size:cover;transition:opacity 0.5s;}
+	#left{position:absolute;top:0;bottom:0;left:0;margin:auto;width:140px;height:60px;background:rgba(255,255,255,.7);line-height:60px;font-size:20px;text-align:center;color:#9F9;font-weight:bold;border-radius:10px;}
+	#right{position:absolute;top:0;bottom:0;right:0;margin:auto;width:140px;height:60px;background:rgba(255,255,255,.7);line-height:60px;font-size:20px;text-align:center;color:#9F9;font-weight:bold;border-radius:10px;}
+	#left:hover,#right:hover{color:red;transition:color .5s,box-shadow .5s;box-shadow:0 0 15px 0#fff;cursor:pointer;}

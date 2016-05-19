@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+	*{margin:0;padding:0}
+	div{width:200px;background:#cccccc;border:3px dashed #cc3333;height:260px}
+	li{height:50px;width:200px;border:1px solid blue;line-height:50px;text-align:center;font-size:20px;color:#cc3366}
+  </style>
+ </head>
+ <body>
+ <div id='div'>
+	<ul>
+		<li>第一个LI</li>
+		<li>第二个LI</li>
+		<li>第三个LI</li>
+		<li>第四个LI</li>
+		<li>第五个LI</li>
+	</ul>
+ </div>
+ <input type='button' class='btn1' value='删除一个li'></input>
+ <input type='button' class='btn2' value='清空li'></input>
+ <input type='button' class='btn3' value='删除div'></input>
+ <input type='button' class='btn4' value='还原'></input>
+ <script src='jquery-1.11.1.min.js'></script>
+  <script>
+	$(function(){
+		$('.btn1').click(function(){
+			$('ul li').get(0).remove();
+		})
+		$('.btn2').click(function(){
+			$('ul').empty();
+		})
+		$('.btn3').click(function(){
+			$('ul').unwrap();
+		})
+		$('.btn4').click(function(){
+			window.location.reload()
+		})
+	})
+  </script>
+ </body>
+</html>

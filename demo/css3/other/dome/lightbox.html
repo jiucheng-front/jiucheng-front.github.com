@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="gb2312">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <link rel="stylesheet" href="" />
+  <title>Document</title>
+  <style>
+	*{margin:0;padding:0}
+	.lightBox_wrap{position:fixed;background:rgba(0,0,0,.8);left:0;top:0;display:none}
+	.lightBox_ul li.cond{width:100%;position:relative;}
+	.lightBox_ul li.cond img{position:absolute;right:0;left:0;top:0;bottom:0;margin:auto}
+	span.lightBox_span{padding:20px;background:rgba(255,255,255,.8);border-radius:5px;text-align:center;line-height:100%;position:absolute;z-index:999;font-size:50px;font-weight:bold}
+	.lightBox_wrap img{max-height:100%;max-width:80%}
+	.lightBox_wrap p{position:absolute;width:100%;bottom:20%;font-size:45px;text-align:center;color:#fff;font-weight:bold}
+	ul.lightBox_ul{list-style:none;position:absolute;left:0;top:0}
+	ul.lightBox_ul li{float:left;}
+  </style>
+ </head>
+ <body>
+
+	<img class="lightBox_img" src="img2/1.jpg" />
+	<img class="lightBox_img" src="img2/2.jpg" />
+	<img class="lightBox_img" src="img2/3.jpg" />
+	<img class="lightBox_img" src="img2/4.jpg" />
+	<img class="lightBox_img" src="img2/5.jpg" />
+	<img class="lightBox_img" src="img2/6.jpg" />
+	<img class="lightBox_img" src="img2/7.jpg" />
+	<img class="lightBox_img" src="img2/8.jpg" />
+	<img class="lightBox_img" src="img2/9.jpg" />
+	<script src="js/jquery-1.12.1.min.js"></script>
+	<script src="js/lightBox_img.js"></script>
+	<script>
+		new LightBox_img("lightBox_img");
+	</script>
+
+ </body>
+</html>

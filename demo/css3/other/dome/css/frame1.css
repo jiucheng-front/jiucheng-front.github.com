@@ -1,0 +1,8 @@
+*{margin:0;padding:0;list-style:none;}
+#wrap ul li{height:125px;width:125px;position:absolute;box-shadow:0 0 5px red;}
+#wrap ul li img{margin:5px;width:115px;height:115px}
+#wrap{height:600px;width:900px;margin:auto;}
+body{display:relative;width:100%;height:100%;background:black;}
+#wrap .left,#wrap .right{width:32px;height:63px;margin-top:250px;cursor:pointer;display:none}
+#wrap .left{float:left;background:url(../img/pre.png) no-repeat;}
+#wrap .right{float:right;background:url(../img/next.png) no-repeat;}
