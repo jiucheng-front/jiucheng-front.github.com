@@ -5,7 +5,7 @@
  require.config({
  	paths:{
  		"jQuery":["http://cdn.bootcss.com/jquery/1.11.3/jquery.min","jquery-1.11.3"],
- 		"willRotate":"list/willRotate"
+ 		"willRotate":"list/willRotate.min"
  	},
  	shim:{
  		"willRotate":["jQuery"]
