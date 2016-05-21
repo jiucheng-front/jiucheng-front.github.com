@@ -22,10 +22,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/DEMOLIST/BS/index.html">
+        <entry file="file://$PROJECT_DIR$/DEMOLIST/NG/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.49731663">
-              <caret line="12" column="52" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
+            <state vertical-scroll-proportion="0.37209302">
+              <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -58,6 +58,7 @@
         <option value="$PROJECT_DIR$/DEMOLIST/JQ/index.html" />
         <option value="$PROJECT_DIR$/DEMOLIST/JS/index.html" />
         <option value="$PROJECT_DIR$/DEMOLIST/BS/index.html" />
+        <option value="$PROJECT_DIR$/DEMOLIST/NG/index.html" />
       </list>
     </option>
   </component>
@@ -145,7 +146,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="BS" />
+              <option name="myItemId" value="NG" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wjf444128852.github.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wjf444128852.github.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DEMOLIST" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JS" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -160,11 +179,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\github\wjf444128852.github.com\DEMOLIST\NG" />
       <recent name="E:\github\wjf444128852.github.com\DEMOLIST\JS" />
       <recent name="E:\github\wjf444128852.github.com\DEMOLIST\JQM" />
       <recent name="E:\github\wjf444128852.github.com\DEMOLIST\JQ" />
       <recent name="E:\github\wjf444128852.github.com\DEMOLIST\EXT" />
-      <recent name="E:\github\wjf444128852.github.com\DEMOLIST\EMBER" />
     </key>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -364,7 +383,15 @@
     <entry file="file://$PROJECT_DIR$/DEMOLIST/BS/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.49731663">
-          <caret line="12" column="52" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
+          <caret line="12" column="87" selection-start-line="12" selection-start-column="87" selection-end-line="12" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DEMOLIST/NG/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37209302">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
           <folding />
         </state>
       </provider>
