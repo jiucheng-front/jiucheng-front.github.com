@@ -132,4 +132,11 @@
      $(document).bind("contextmenu",function(e){
          return false;
      });
+     //5、页面跳转
+     // $(".container").click(function(){
+     //    var url=$(this).text();
+     //     if(url!=="NULL"){
+     //        window.open("DEMOLIST/"+url,"target" );//新窗口打开当前点击的网页
+     //     }
+     // });
  });
