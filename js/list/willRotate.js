@@ -132,7 +132,7 @@
      $(".container").click(function(){
         var url=$(this).text();
          if(url!=="NULL"){
-            window.open("DEMO/"+url,"target" );//新窗口打开当前点击的网页
+            window.open("DEMOLIST/"+url,"target" );//新窗口打开当前点击的网页
          }
      });
     //5、禁止右键
