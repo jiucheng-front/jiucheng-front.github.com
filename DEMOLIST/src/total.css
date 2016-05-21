@@ -33,6 +33,9 @@ body{
     padding:10px 30px;
     color: #3ECD67;
     -webkit-transition: all .4s ease-out;
+    -moz-transition: all .4s ease-out;
+    -o-transition: all .4s ease-out;
+    -ms-transition: all .4s ease-out;
     transition: all .4s ease-out;
     text-align: center;
     text-transform: uppercase;
@@ -47,17 +50,58 @@ body{
 /*动画*/
 @keyframes flip {
     0% {
-        transform: rotateX(90deg);
+        -webkit-transform: rotateX(90deg) rotateY(15deg);
+        -moz-transform: rotateX(90deg) rotateY(15deg);
+        -o-transform: rotateX(90deg) rotateY(15deg);
+        -ms-transform: rotateX(90deg) rotateY(15deg);
+        transform: rotateX(90deg) rotateY(15deg);
     }
     100% {
-        transform: rotateX(-40deg);
+        -webkit-transform: rotateX(-40deg) rotateY(15deg);
+        -moz-transform: rotateX(-40deg) rotateY(15deg);
+        -o-transform: rotateX(-40deg) rotateY(15deg);
+        -ms-transform: rotateX(-40deg) rotateY(15deg);
+        transform: rotateX(-40deg) rotateY(15deg);
+    }
+}
+@-webkit-keyframes flip {
+    0% {
+        -webkit-transform: rotateX(90deg) rotateY(15deg);
+        transform: rotateX(90deg) rotateY(15deg);
+    }
+    100% {
+        -webkit-transform: rotateX(-40deg) rotateY(15deg);
+        transform: rotateX(-40deg) rotateY(15deg);
+    }
+}
+@-moz-keyframes flip {
+    0% {
+        -moz-transform: rotateX(90deg) rotateY(15deg);
+        transform: rotateX(90deg) rotateY(15deg);
+    }
+    100% {
+        -moz-transform: rotateX(-40deg) rotateY(15deg);
+        transform: rotateX(-40deg) rotateY(15deg);
+    }
+}
+@-o-keyframes flip {
+    0% {
+        -o-transform: rotateX(90deg) rotateY(15deg);
+        transform: rotateX(90deg) rotateY(15deg);
+    }
+    100% {
+        -o-transform: rotateX(-40deg) rotateY(15deg);
+        transform: rotateX(-40deg) rotateY(15deg);
     }
 }
 .top {
     position: absolute;
+    -webkit-transform: rotateX(90deg);
     transform: rotateX(90deg);
+    -webkit-transform-origin: 100% 100%;
     transform-origin: 100% 100%;
     /*animation-fill-mode : none | forwards | backwards | both;*/
     /*forwards停留在最后一帧*/
+    -webkit-animation: flip 1s 800ms forwards;
     animation: flip 1s 800ms forwards;
 }
