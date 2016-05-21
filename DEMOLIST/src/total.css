@@ -1,0 +1,63 @@
+*{
+    list-style: none;
+    border: none;
+    margin:0 auto;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    font-family: "Helvetica Neue", "SimHei", Helvetica, Arial, sans-serif;
+    background-color: #272822;
+    font-weight: bold;
+}
+/*ul*/
+.parent{
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+.parent li{
+    position: relative;
+    margin-top: 10px;
+    background-color: #002240;
+    border: 2px dotted #B7DEDF;
+    cursor: pointer;
+}
+.parent li a{
+    display: block;
+    padding:10px 30px;
+    color: #3ECD67;
+    -webkit-transition: all .4s ease-out;
+    transition: all .4s ease-out;
+    text-align: center;
+    text-transform: uppercase;
+}
+.parent li:hover{
+    border: 2px solid #B7DEDF;
+    cursor: pointer;
+}
+.parent li a:hover{
+    color:#CF5B56;
+}
+/*动画*/
+@keyframes flip {
+    0% {
+        transform: rotateX(90deg);
+    }
+    100% {
+        transform: rotateX(-40deg);
+    }
+}
+.top {
+    position: absolute;
+    transform: rotateX(90deg);
+    transform-origin: 100% 100%;
+    /*animation-fill-mode : none | forwards | backwards | both;*/
+    /*forwards停留在最后一帧*/
+    animation: flip 1s 800ms forwards;
+}
