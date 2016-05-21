@@ -17,9 +17,13 @@ body{
 }
 /*ul*/
 .parent{
+    width: 200px;
     position: absolute;
     top: 0;
-    left: 10px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
 }
 .parent li{
     position: relative;
@@ -104,4 +108,16 @@ body{
     /*forwards停留在最后一帧*/
     -webkit-animation: flip 1s 800ms forwards;
     animation: flip 1s 800ms forwards;
+}
+/*footer*/
+.footer{
+    height: 40px;
+    line-height: 40px;
+    color: #3ECD67;
+    left: 50%;
+    bottom:0;
+    text-align: center;
+}
+.footer span{
+    color:#DEDC1C;
 }

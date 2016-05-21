@@ -7,6 +7,9 @@ html,body{
 		    display: flex;
 		    align-items: center;/****水平居中****/
 		    justify-content: center;/*垂直居中*/
+			font-family: "Helvetica Neue", "SimHei", Helvetica, Arial, sans-serif;
+			background-color: #272822;
+			font-weight: bold;
 		}
 		.parent{
 			overflow: hidden;
