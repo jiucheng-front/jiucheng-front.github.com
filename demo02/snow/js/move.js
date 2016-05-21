@@ -56,8 +56,3 @@ window.onload=function(){
 		},100);
 	})()
 }
-
-// function init(){
-// 	// 动态获取并设置body的高度
-	
-// }
