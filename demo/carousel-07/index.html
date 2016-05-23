@@ -7,15 +7,21 @@
 <script src="js/jquery-1.4.4.min.js" type="text/javascript"></script>
 <script src="js/jq_scroll.js" type="text/javascript"></script>
 <script type="text/javascript">
-$(document).ready(function(){
-     $("#scrollDiv").Scroll({line:1,speed:500,timer:3000,up:"but_up",down:"but_down"});
-});
+    $(document).ready(function(){
+         $("#scrollDiv").Scroll({line:1,speed:500,timer:3000,up:"but_up",down:"but_down"});
+         /**
+            *$("elem").Scroll({line,speed,timer,up,down});
+            *elem:滚动DOM对象
+            *line：每次向上滚动的行数
+            *speed:滚动速度xx.ms
+            *timer:滚动停留时间
+            *up:向上滚动按钮id
+            *down:向下滚动按钮id
+         **/
+    });
 </script>
-
 </head>
-
 <body>
-
 <div class="scrollbox">
     <div id="scrollDiv">
         <ul>
@@ -26,11 +32,7 @@ $(document).ready(function(){
             <li><h3><a href="#" class="linktit">主题创业街亮相</a></h3> <div>目前已有包括咖啡厅、酒吧、餐厅、瑜伽室在内的8家商铺入驻该火车... </div></li>
         </ul>
     </div>
-    <div class="scroltit"><div class="updown" id="but_down">向上</div><div class="updown" id="but_up">向下</div></div>
+    <div class="scroltit"><div class="updown but_down" id="but_down">向上</div><div class="updown" id="but_up">向下</div></div>
 </div>
-<div style="text-align:center;">
-
-</div>
-
 </body>
 </html>
