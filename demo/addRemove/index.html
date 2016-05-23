@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>add/remove-className</title>
+    <link rel="stylesheet" href="css/demo.css">
+    <script src="js/demo.js"></script>
+</head>
+<body class="bg">
+    <div class="main">
+        <pre>
+                <h4>//1、ClassName切换,是否含有指定class</h4>
+                <span class="blue">function</span> <span class="green">hasClass</span><span class="yellow">(elem,cls)</span><span class="white">{</span>
+                    <span class="red">return</span> <span class="white">elem.</span><span class="blue">className.match</span><span class="white">(</span><span class=red>new</span> <span class="white">RegExp(</span><span class="yellow">'(</span><span class="purple">\\</span><span class="yellow">s|^)'</span><span class="red">+</span><span class="white">cls</span><span class="red">+</span><span class="yellow">'(</span><span class="purple">\\</span><span class="yellow">s|$)'</span><span class="white">));</span>
+                <span class="white">}</span>
+                <h4>// 2、没有就追加指定class</h4>
+                <span class="blue">function</span> <span class="green">addClass</span><span class="yellow">(elem,cls)</span><span class="white">{</span>
+                    <span class="red">if</span><span class="white">(</span><span class="red">!</span><span class="white">hasClass(elem,cls)){</span>
+                        <span class="white">elem.</span><span class="blue">className</span><span class="red">+=</span><span class="yellow">" "</span><span class="red">+</span><span class="white">cls;</span>
+                    <span class="white">}</span>
+                <span class="white">}</span>
+                <h4>// 3、有就移除指定class</h4>
+                <span class="blue">function</span> <span class="green">removeClass</span><span class="yellow">(elem,cls)</span><span class="white">{</span>
+                    <span class="red">if</span><span class="white">(hasClass(elem,cls)){</span>
+                        <span class="blue">var</span> <span class="white">reg</span><span class="red">=new</span> <span class="white">RegExp(</span><span class="yellow">'(</span><span class="purple">\\</span><span class="yellow">s|^)'</span><span class="red">+</span><span class="white">cls</span><span class="red">+</span><span class="yellow">'(</span><span class="purple">\\</span><span class="yellow">s|$)'</span><span class="white">);</span>
+                        <span class="white">elem.</span><span class="blue">className</span><span class="red">=</span><span class="white">elem.</span><span class="blue">className</span><span class="white">.</span><span class="blue">replace</span><span class="white">(reg,</span><span class="yellow">""</span><span class="white">);</span>
+                    <span class="white">}</span>
+                <span class="white">}</span>
+        </pre>
+    </div>
+    <div class="test">
+        <a href="javascript:;" class="addbtn">addClass</a>
+        <a href="javascript:;" class="removebtn">removeClass</a>
+    </div>
+</body>
+</html>

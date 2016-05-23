@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.bg{
+    background-color: #272822;  
+}
+.main{
+    border: 1px dashed green;
+    width: 600px;
+    margin: 0 auto;
+}
+h4{
+    color:#999;
+}
+.blue{
+    color:#66D9EF;
+}
+.green{
+    color: green;
+}
+.yellow{
+    color:#FD971F;
+}
+.red{
+    color:#F92665;
+}
+.white{
+    color:#fff;
+}
+.purple{
+    color:#9981FF;
+}
+.test{
+    width: 300px;
+    margin:30px auto;
+}
+.test a{
+    text-decoration: none;
+    color: #F92665;
+    padding: 5px 10px;
+    border: 1px solid #F92665;
+}
