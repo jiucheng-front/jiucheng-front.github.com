@@ -1,10 +1,10 @@
-body{ color:#333; font-size:13px;}
+body{ color:#333; font-size:13px;background-color: #272822}
 h3,ul,li{margin:0;padding:0; list-style:none;}
 .scrollbox{ width: 340px; margin: 0 auto; overflow: hidden; border: 1px solid #CFCFCF; padding: 10px; }
 #scrollDiv{width:340px;height:359px; overflow:hidden;}/*这里的高度和超出隐藏是必须的*/
 #scrollDiv li{height:90px; width:300px; padding:0 20px; overflow:hidden; vertical-align:bottom; zoom:1; border-bottom:#B7B7B7 dashed 1px;}
-#scrollDiv li h3{ height:24px; padding-top:13px; font-size:14px; color:#353535; line-height:24px; width:300px;}
-#scrollDiv li h3 a{color:#353535; text-decoration:none}#scrollDiv li h3 a:hover{ color:#F00}
+#scrollDiv li h3{ height:24px; padding-top:13px; font-size:14px; color:#fff; line-height:24px; width:300px;}
+#scrollDiv li h3 a{color:#fff; text-decoration:none}#scrollDiv li h3 a:hover{ color:#F00}
 #scrollDiv li div{ height:36px; width:300px; color:#416A7F; line-height:18px; overflow:hidden}
 #scrollDiv li div a{ color:#416A7F; text-decoration:none}
 
