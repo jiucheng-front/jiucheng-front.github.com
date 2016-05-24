@@ -121,9 +121,10 @@
     for(i=0;i<btn.length;i++){
         btn[i].index=i;    //不知道你有没有发现，循环里的方法去调用循环里的变量体i，会出现调到的不是i的变动值的问题。所以我先在循环外保存住
         btn[i].onmouseover=function(){
-            show(this.index);
             clearInterval(play); //这就是最后那句话追加的功能
+            show(this.index);
         }
+        
     }
 
     //自动轮播方法
