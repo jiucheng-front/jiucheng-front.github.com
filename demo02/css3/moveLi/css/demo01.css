@@ -1,0 +1,28 @@
+body{
+    font-family: "Helvetica Neue", "SimHei", Helvetica, Arial, sans-serif;
+    background-color: #272822;
+    color: #3ECD67;
+}
+.d1{
+    width: 30%;
+    margin: 0 auto;
+}
+@-webkit-keyframes itemFrame {
+    from { -webkit-transform: translateY(-80px); }
+    to { -webkit-transform: translate(0); }
+}
+@keyframes itemFrame {
+    from { -webkit-transform: translateY(-80px); }
+    to { -webkit-transform: translate(0); }
+}
+* { margin: 0; padding: 0; }
+#parent li {
+    list-style: none;
+    border: 1px solid #F92665;
+    margin: 10px;
+    padding: 10px;
+}
+.animateItem {
+    animation: itemFrame 1s ;
+    -webkit-animation: itemFrame 1s ;
+}
