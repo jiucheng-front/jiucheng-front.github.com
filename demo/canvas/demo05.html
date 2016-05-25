@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>path2D对象</title>
+</head>
+<body>
+    <canvas id="canvas" width="300" height="300"></canvas>
+    <div>
+        fillStyle = color <br>
+        设置图形的填充颜色。
+    </div>
+    <div>
+        strokeStyle = color <br>
+        设置图形轮廓的颜色。
+    </div>
+</body>
+<script>
+    function draw() {
+        var canvas = document.getElementById('canvas');
+        if (canvas.getContext){
+            var ctx = canvas.getContext('2d');
+            var rectangle = new Path2D();
+            rectangle.rect(10, 10, 50, 50);
+            var circle = new Path2D();
+            circle.moveTo(125, 35);
+            circle.arc(100, 35, 25, 0, 2 * Math.PI);
+            ctx.stroke(rectangle);
+            ctx.fill(circle);
+        }
+    }
+    draw();
+</script>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>全景照片</title>
+</head>
+<body>
+    <canvas id="canvas" width="800" height="200"></canvas>
+</body>
+<script>
+    //注：其实并没有让图片移动，只是在固定宽高的canvas内绘制一个大图片，只是每次绘制的图片的位置在++
+    var img = new Image();
+    // User Variables - customize these to change the image being scrolled, its
+    // direction, and the speed.
+    img.src = 'img/mozillademos.jpg';
+    var CanvasXSize = 800;
+    var CanvasYSize = 200;
+    var speed = 30; //lower is faster
+    var scale = 1.05;
+    var y = -4.5; //vertical offset
+    // Main program
+    var dx = 0.75;
+    var imgW;
+    var imgH;
+    var x = 0;
+    var clearX;
+    var clearY;
+    var ctx;
+    img.onload = function() {
+        console.log(img.width,img.height);//1024/198
+        imgW = img.width*scale;//1075.2
+        imgH = img.height*scale;//207.9
+        //1-1、如果图片的宽度大于canvas的宽度
+        if(imgW>CanvasXSize){
+            //将要绘制图片的x坐标为x=-275
+            x = CanvasXSize-imgW;// -275
+            //将要清除图片的x坐标为clearX=1075.2
+            clearX = imgW;//1075.2
+        }else{
+            // 1-2如果图片的宽度小于或者等于canvas的宽度,将要清除图片的x坐标为clearX=canvas的宽度800
+            clearX = CanvasXSize;//800
+        }
+        //2-1、如果图片的高度大于canvas的高度,将要清除图片的高度clearY就是图片的高度imgH=207
+        if (imgH > CanvasYSize) { clearY = imgH; } //207
+        //2-2、如果图片的高度小于canvas的高度，将要清除图片的高度就是clearY就是canvas的高度=200
+        else { clearY = CanvasYSize; }//200
+        //3、获取canvas对象
+        ctx = document.getElementById('canvas').getContext('2d');
+        //定时器不断绘制图片和移动图片
+        return setInterval(draw, speed);//30ms
+    };
+    function draw() {
+        //清除canvas
+        ctx.clearRect(0,0,clearX,clearY);
+        //1、如果图片宽度(如600px)小于canvas的宽度
+        if (imgW <= CanvasXSize) {
+            //1-1、将要绘制图片的x坐标动态+0.75,当x大于canvas的宽度时候x=0
+            if (x > (CanvasXSize)) { x = 0; }
+            //如果x动态递增且大于(CanvasXSize-imgW)=200，重新绘制一个图片x坐标就是(x-CanvasXSize+1=变化值负数递增)
+            if (x > (CanvasXSize-imgW)) { ctx.drawImage(img,x-CanvasXSize+1,y,imgW,imgH); }
+        }
+        //2、如果图片大于canvas的宽度
+        else {
+            //2-1、将要绘制图片的x坐标动态+0.75,当x大于canvas的宽度时候x=-275
+            if (x > (CanvasXSize)) { x = CanvasXSize-imgW; }
+            //2-2、x递增且大于CanvasXSize-imgW=-275时候重新绘制图片
+            if (x > (CanvasXSize-imgW)) { ctx.drawImage(img,x-imgW+1,y,imgW,imgH); }
+        }
+        //draw image
+        ctx.drawImage(img,x,y,imgW,imgH);
+        //amount to move
+        x += dx;//x=0+0.75
+    }
+</script>
+</html>

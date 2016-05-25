@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绘制多个圆形</title>
+</head>
+<body>
+<canvas id="canvas" width="300" height="300"></canvas>
+<div class="main">
+    arc(x, y, r, startAngle, endAngle, anticlockwise); <br>
+    x:圆心的x坐标值 <br>
+    y:圆心的y坐标值 <br>
+    r:圆的半径值 <br>
+    startAngle:圆的开始角度，0就是时钟的3点位置 <br>
+    endAngle: 圆的结束角度Math.PI*2就是完整圆形，Math.PI*2*(0-1)之间就是弧形<br>
+    anticlockwise:顺时针还是逆时针<br>
+</div>
+</body>
+<script>
+    function draw() {
+        var ctx = document.getElementById('canvas').getContext('2d');
+        for (var i=0;i<6;i++){
+            for (var j=0;j<6;j++){
+                ctx.strokeStyle = 'rgb(0,' + Math.floor(255-42.5*i) + ',' +
+                        Math.floor(255-42.5*j) + ')';
+                ctx.beginPath();
+                ctx.arc(12.5+j*25,12.5+i*25,10,0,Math.PI*2,true);
+                ctx.stroke();
+            }
+        }
+    }
+    draw();
+</script>
+</html>
