@@ -1,0 +1,95 @@
+
+ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #deddcd;
+    font: 14px/21px Arial,Helvetica,sans-serif;
+}
+
+#movieposters {
+    list-style: none;
+    width: 990px;
+    margin:0 auto;
+    height: 550px;
+}
+#movieposters li {
+    display: inline;
+    float: left;
+    perspective: 500;
+    -webkit-perspective: 500;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transition-property: perspective;
+    -webkit-transition-property: perspective;
+    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    margin-left: 10px;
+}
+#movieposters li:hover {
+    perspective: 1000;
+    -webkit-perspective: 1000;
+}
+#movieposters li img {
+    border: 10px solid #fcfafa;
+    transform: rotateY(30deg);
+    -webkit-transform: rotateY(30deg);
+    box-shadow: 0 3px 10px #888;
+    -webkit-box-shadow: 0 3px 10px #888;
+    -moz-box-shadow: 0 3px 10px #888;
+    -webkit-transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+}
+#movieposters li:hover img {
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+}
+.movieinfo {
+    border: 10px solid #fcfafa;
+    padding: 20px;
+    width: 200px;
+    height: 180px;
+    background-color: #deddcd;
+    margin: -195px 0 0 55px;
+    position: absolute;
+    box-shadow: 0 20px 40px #888;
+    -moz-box-shadow: 0 20px 40px #888;
+    -webkit-box-shadow: 0 20px 40px #888;
+    transform: translateZ(30px) rotateY(30deg);
+    -webkit-transform: translateZ(30px) rotateY(30deg);
+    -webkit-transition-property: transform, box-shadow, margin;
+    -webkit-transition-duration: 0.5s;
+}
+#movieposters li:hover .movieinfo {
+    transform: rotateY(0deg);
+    box-shadow: 0 5px 10px #888;
+    -webkit-transform: rotateY(0deg);
+    -webkit-box-shadow: 0 5px 10px #888;
+    margin: -175px 0 0 30px;
+}
+.movieinfo h3 {
+    color: #7a3f3a;
+    font-variant: small-caps;
+    font-family: Georgia,serif,Times;
+    text-align: center;
+    padding-bottom: 15px;
+}
+.movieinfo p {
+    padding-bottom: 15px;
+}
+.movieinfo a {
+    background-color: #7a3f3a;
+    padding: 5px 10px;
+    color: #eee;
+    text-decoration: none;
+    display: block;
+    width: 80px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+.movieinfo a:hover, .movieinfo a:focus {
+    background-color: #6a191f;
+    color: #fff;
+}
