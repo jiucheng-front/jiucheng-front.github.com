@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播</title>
+    <link rel="stylesheet" href="jscss/swiper-3.3.1.min.css">
+    <script src="jscss/swiper-3.3.1.min.js"></script>
+    <style>
+        .swiper-container {
+            width: 800px;
+            height: 350px;
+        }
+    </style>
+</head>
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/baner01.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/baner02.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/baner03.jpg" alt=""></div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <!-- 如果需要滚动条 -->
+        <!--<div class="swiper-scrollbar"></div>-->
+    </div>
+</body>
+    <script>
+        var mySwiper = new Swiper ('.swiper-container', {
+//            direction: 'vertical',
+            loop: true,
+            autoplay: 2000,
+            // 如果需要分页器
+            pagination: '.swiper-pagination',
+
+            // 如果需要前进后退按钮
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+
+            // 如果需要滚动条
+//            scrollbar: '.swiper-scrollbar',
+        });
+    </script>
+</html>

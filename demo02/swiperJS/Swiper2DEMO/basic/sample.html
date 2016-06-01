@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Swiper中文网基础演示(www.swiper.com.cn)</title>
+<link rel="stylesheet" href="css/idangerous.swiper.css">
+<script src="js/idangerous.swiper.min.js"></script>
+<style>
+* {
+	margin: 0;
+	padding: 0;
+}
+.blue-slide {
+	background: #4390EE;
+}
+.red-slide {
+	background: #CA4040;
+}
+.orange-slide {
+	background: #FF8604;
+}
+.swiper-slide {
+	line-height: 300px;
+	color: #fff;
+	font-size: 36px;
+	text-align: center;
+}
+	.swiper-container{
+		width: 800px;
+		height: 350px;
+	}
+</style>
+</head>
+<body>
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="../../img/baner01.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="../../img/baner02.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="../../img/baner03.jpg" alt=""></div>
+  </div>
+</div>
+<div>
+	<input type="checkbox" id="bt"> <br>
+	<a href="javascript:;" id="btn">aaa</a>
+</div>
+<script type="text/javascript">
+  var mySwiper = new Swiper('.swiper-container',{
+    loop: true,
+	  resizeReInit : true,
+	autoplay: 2000
+  });
+</script>
+</body>
+</html>
