@@ -1,0 +1,34 @@
+/**基于mobile-adaptive的CSS，字体大小分为四个档次0.2rem 0.24rem 0.28rem 0.32rem**/
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: Helvetica, STHeiTi, "Microsoft YaHei", sans-serif;
+    width: 100%;
+    height: 100%;
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+h1{
+    font-size: 0.32rem;
+}
+h2{
+    font-size: 0.28rem;
+}
+h3{
+    font-size: 0.24rem;
+}
+h4{
+    font-size: 0.2rem;
+}
