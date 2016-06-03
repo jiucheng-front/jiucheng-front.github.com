@@ -12,24 +12,27 @@ body{
     font-family: Helvetica, STHeiTi, "Microsoft YaHei", sans-serif;
     width: 100%;
     height: 100%;
+    background-color: #fff;
 }
 .container{
     position: relative;
     width: 100%;
-    max-width: 640px;
+    /*max-width: 640px;*/
     min-width: 320px;
     margin: 0 auto;
     border: 1px solid black;
 }
-h1{
-    font-size: 0.32rem;
+/*顶部2图片*/
+header,.header_banner{
+    overflow: hidden;
 }
-h2{
-    font-size: 0.28rem;
+header img,.header_banner img{
+    float: left;
+    width: 100%;
 }
-h3{
-    font-size: 0.24rem;
+.header_banner{
+    padding-top: 1px;
 }
-h4{
-    font-size: 0.2rem;
+@media screen and (min-width:767px){
+    .container{width:640px;}
 }
