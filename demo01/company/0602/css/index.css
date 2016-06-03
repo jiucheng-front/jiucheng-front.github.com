@@ -53,9 +53,8 @@ header img,.header_banner img{
 .nav_top ul li{
     background-color:#0064B4;
     text-align: center;
-    /*margin-left: .025rem;*/
     height: .6rem;
-    width: 24.6%;
+    width: 24.65%;
 }
 .hove_left{
     margin-left: .03rem;
@@ -185,6 +184,9 @@ header img,.header_banner img{
 .student ul li div{
     width: 70%;
 }
+.student ul li div p{
+    line-height: .4rem;
+}
 /*前中后*/
 .student_list{
     overflow: hidden;
@@ -293,7 +295,78 @@ header img,.header_banner img{
     margin: 0 auto;
     display: block;
     height: 1.19rem;
-    width: 97%;
+    width: 6.25rem;
     background-image: url(../img/total_bg_two.jpg);
     background-size: cover;
+}
+/*精确分析，对症治疗*/
+.detail_analyze{
+    background-color: #168BD4;
+    padding: .1rem 0;
+    margin-top: .2rem;
+}
+.analyze_title{
+    width: 3.4rem;
+    margin: 0 auto;
+    border: 1px solid #74B9E5;
+}
+.analyze_title h3,.analyze_title p{
+    color: #fff;
+    text-align: center;
+    padding: .05rem .05rem;
+}
+.analyze_title h3{
+    font-size: .3rem;
+}
+.analyze_title p{
+    font-size: .24rem;
+    background-color: #74B9E5;
+    text-transform:uppercase;
+}
+.analyze_list{
+    overflow: hidden;
+    width: 6.25rem;
+    margin: 0 auto;
+}
+.analyze_one table{
+    margin-top: .15rem;
+    border-collapse:collapse;
+    width: 100%;
+}
+.analyze_one table td{
+    border: 1px solid #92C5E6;
+    text-align: center;
+}
+.analyze_one table thead td{
+    background-color: #92C5E6;
+    color: #BC120D;
+    font-size:.24rem;
+    border-color: #C8E6F8;
+    padding: .1rem .3rem;
+}
+.analyze_one table thead td span{
+    font-size:.18rem;
+    color: #C8E0F1;
+}
+.analyze_one table tbody td{
+    color: #fff;
+    font-size: .22rem;
+    padding: .1rem .4rem;
+    cursor: pointer;
+}
+.analyze_one p{
+    width: 70%;
+    margin: .1rem auto;
+    background-color: #fff;
+    border-top-left-radius: .2rem;
+    border-top-right-radius: .2rem;
+    border-bottom-left-radius: .2rem;
+    border-bottom-right-radius: .2rem;
+}
+.analyze_one p a{
+    display: block;
+    color: #0062AD;
+    font-size: .22rem;
+    padding: .05rem .3rem;
+    cursor: pointer;
 }
