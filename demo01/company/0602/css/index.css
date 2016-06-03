@@ -18,10 +18,9 @@ body{
 .container{
     position: relative;
     width: 100%;
-    /*max-width: 640px;*/
     min-width: 320px;
     margin: 0 auto;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
 }
 .will_left{
     float: left;
@@ -67,4 +66,63 @@ header img,.header_banner img{
     display: block;
     line-height: .6rem;
     cursor: pointer;
+}
+/**/
+.message_header{
+    width: 50%;
+    margin:0 auto;
+    border: 1px solid #E6E6E6;
+}
+.message_top{
+    padding-top:.15rem;
+}
+.will_blue{
+    color: #0062AD;
+    font-size: .28rem;
+}
+.will_red{
+    color: #BC120D;
+}
+.message_header p{
+    font-size: .23rem;
+    padding:.05rem .05rem;
+    background-color:#E6E6E6;
+    color: #fff;
+}
+.message_header h3,.message_header p{
+    text-align: center;
+}
+.message_header h3{
+    padding:.1rem 0;
+}
+.message_middle p{
+    font-size: .2rem;
+    color: #6E6C6B;
+}
+.message_middle{
+    width: 90%;
+    margin: 0 auto;
+    padding: .15rem 0;
+}
+.message_middle p{
+    text-indent: .4rem;
+}
+.message_bottom{
+    padding: .13rem 0;
+    background-color: #0063B2;
+}
+.message_bottom h3{
+    font-size: .32rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: .1rem;
+}
+.message_bottom p{
+    text-align: center;
+    width: 85%;
+    margin: 0 auto;
+    padding: .05rem;
+    font-size: .18rem;
+    background-color: #4F92C9;
+    color: #fff;
 }
