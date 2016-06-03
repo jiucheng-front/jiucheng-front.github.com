@@ -53,9 +53,12 @@ header img,.header_banner img{
 .nav_top ul li{
     background-color:#0064B4;
     text-align: center;
-    margin-left: .025rem;
+    /*margin-left: .025rem;*/
     height: .6rem;
     width: 24.6%;
+}
+.hove_left{
+    margin-left: .03rem;
 }
 .nav_top ul li:nth-child(5),.nav_top ul li:nth-child(6),.nav_top ul li:nth-child(7),.nav_top ul li:nth-child(8){
     margin-top: .026rem;
@@ -196,15 +199,16 @@ header img,.header_banner img{
 }
 .list_one div{
     border-top: 1px solid #E6E6E6;
+    min-height: 1.5rem;
     padding: 0 .1rem;
 }
 .list_one img,.list_one div{
     float: left;
-    padding-bottom: .15rem;
 }
 .list_one img{
- width: 100%;
+    width: 100%;
     padding: .02rem;
+    background-color: #E7E7E7;
 }
 .list_one h4{
     font-size: .2rem;
@@ -214,7 +218,82 @@ header img,.header_banner img{
 .list_one p{
     font-size: .18rem;
     color: #504E4D;
+    line-height: .3rem;
 }
 .list_one:not(:nth-child(1)){
     margin-left: .3rem;
+}
+/*共用*/
+.total_parent{
+    padding: .04rem;
+    border: 1px solid #E4E4E4;
+    width: 98%;
+    margin: 0 auto;
+}
+.total_parent a{
+    display: block;
+}
+.total_title{
+    margin: 0 auto;
+    height: 1.25rem;
+    background-image: url(../img/title_bg_01.jpg);
+    background-size: cover;
+}
+.total_title:before{
+    content: "";
+    display: table;
+}
+.total_title h3{
+    text-align: center;
+    font-size: .32rem;
+    color: #BA100E;
+    margin-top: .15rem;
+}
+.total_title h3 span{
+    margin-left: .1rem;
+    font-size: .2rem;
+    color: #B99D30;
+}
+/*小梁*/
+.student_two{
+    background-color: #168BD4;
+    margin-top: .2rem;
+}
+.unoversity_title h1{
+    padding-left: .1rem;
+    font-size: .28rem;
+    color: #fff;
+}
+.student_two .unoversity_title hr,.student_two .student ul li,.student_two .list_one p,.student_two .list_one h4{
+    color: #fff;
+    border-color: #fff;
+}
+.bg_will_red{
+    background-color: #BC120D;
+    padding:.03rem .1rem;
+}
+.student_two .total_parent{
+    border: none;
+    width: 100%;
+}
+.more{
+    padding: .25rem 0;
+}
+.more a{
+    display: block;
+    height: .3rem;
+    width: 100%;
+    background-image: url(../img/bg_total.jpg);
+    font-size: .3rem;
+    background-size: cover;
+    text-align: center;
+    line-height: .3rem;
+}
+.detail a{
+    margin: 0 auto;
+    display: block;
+    height: 1.19rem;
+    width: 97%;
+    background-image: url(../img/total_bg_two.jpg);
+    background-size: cover;
 }
