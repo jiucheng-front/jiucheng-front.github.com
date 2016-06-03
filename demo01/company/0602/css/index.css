@@ -7,6 +7,7 @@
     border: none;
     outline: none;
     box-sizing: border-box;
+    text-decoration: none;
 }
 body{
     font-family: Helvetica, STHeiTi, "Microsoft YaHei", sans-serif;
@@ -22,6 +23,12 @@ body{
     margin: 0 auto;
     border: 1px solid black;
 }
+.will_left{
+    float: left;
+}
+.will_right{
+    float: right;
+}
 /*顶部2图片*/
 header,.header_banner{
     overflow: hidden;
@@ -35,4 +42,29 @@ header img,.header_banner img{
 }
 @media screen and (min-width:767px){
     .container{width:640px;}
+}
+/*导航列表*/
+.nav_top,.nav_top ul{
+    overflow: hidden;
+    width: 100%;
+}
+.nav_top ul{
+    padding-top: 1px;
+}
+.nav_top ul li{
+    background-color:#0064B4;
+    text-align: center;
+    margin-left: .025rem;
+    height: .6rem;
+    width: 24.5%;
+}
+.nav_top ul li:nth-child(5),.nav_top ul li:nth-child(6),.nav_top ul li:nth-child(7),.nav_top ul li:nth-child(8){
+    margin-top: .026rem;
+}
+.nav_top ul li a{
+    font-size: .22rem;
+    color: #fff;
+    display: block;
+    line-height: .6rem;
+    cursor: pointer;
 }

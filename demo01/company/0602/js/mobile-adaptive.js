@@ -13,7 +13,6 @@
                 docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
             }
         };
-
     if (!doc.addEventListener) return;
     win.addEventListener(resizeEvt, recalc, false);
     doc.addEventListener('DOMContentLoaded', recalc, false);
