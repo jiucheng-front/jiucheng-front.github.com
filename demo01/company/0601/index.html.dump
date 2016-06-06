@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <!-- saved from url=(0045)http://fashion.qq.com/zt2015/mrbk/index77.htm -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>ÃÀÀöÆæ¼££º·¨¹ú½¿ÔÏÊ« ÃÀÀöÎªÄãÓÃĞÄ_Ê±ÉĞÆµµÀ_ÌÚÑ¶Íø</title>
-<meta name="keywords" content="¶Ú»õ,»¤·ô,ÃÀÑúµ¥Æ·,ÌÚÑ¶,ÌÚÑ¶Ê±ÉĞ">
-<meta name="description" content="ÎÒÎªÁË°®¶ø´´Ôì½¿ÔÏÊ«£¬ÎÒ×ğÖØÅ®ĞÔµÄÃÀÀö¡£">
+<title>ç¾ä¸½å¥‡è¿¹ï¼šæ³•å›½å¨‡éŸµè¯— ç¾ä¸½ä¸ºä½ ç”¨å¿ƒ_æ—¶å°šé¢‘é“_è…¾è®¯ç½‘</title>
+<meta name="keywords" content="å›¤è´§,æŠ¤è‚¤,ç¾æ¼¾å•å“,è…¾è®¯,è…¾è®¯æ—¶å°š">
+<meta name="description" content="æˆ‘ä¸ºäº†çˆ±è€Œåˆ›é€ å¨‡éŸµè¯—ï¼Œæˆ‘å°Šé‡å¥³æ€§çš„ç¾ä¸½ã€‚">
 <meta name="viewport" content="width=1030">
 <link href="css/base.css" rel="stylesheet" type="text/css"/>
 <link href="css/jquery.range.css" rel="stylesheet"  type="text/css">
@@ -17,7 +17,7 @@
 	<video preload="auto" loop id="videoBg" class="videoBg" style="display:none"></video>
   <div style="position:absolute;left:-1111110px;top:-111110px;"><img src="images/zhuanfa.png"></div>
 	
-<!-- È«Õ¾Á÷Á¿Í³¼Æ´úÂë ¿ªÊ¼ -->
+<!-- å…¨ç«™æµé‡ç»Ÿè®¡ä»£ç  å¼€å§‹ -->
 <!--ol20130819--><!--pgv 20140225v1.0.3 by Austinjin--><script language="javascript"src="js/ping.js"></script>
 
 
@@ -26,20 +26,20 @@
 
 (function(){var _href=location.href,_search=location.search.toLowerCase().replace(/adtag=client\.qq\.\d+_\.0/,'from=tips'),arr=['aio','tips'],type='',from='',_arr=[];if(_href.search(/from=/)!==-1){_arr=_href.split('&');for(var j=0,len=_arr.length;j<len;j++){if(_arr[j].indexOf('qqcom_pgv_from=')>-1){from=_arr[j].indexOf('#')>-1?_arr[j].substring(5,_arr[i].indexOf('#')):_arr[j].substring(5)}}}if(window['ARTICLE_INFO']&&ARTICLE_INFO['catalog_full']){for(var i=0,len=arr.length;i<len;i++){if(_search.search(arr[i])!==-1){type=arr[i];addEvent(document,'click',function(e){_formFun(e,type)})}}newPgvDetail()}else{if(typeof(pgvMain)=='function'){if(typeof(whatCatalog)!='undefined'){pvCSTM=whatCatalog}pgvInfo="F."+from||'def';pgvMain({pgUserType:pgvInfo})}}function newPgvDetail(){var catalogPathR1=ARTICLE_INFO.catalog_full.toString().replace(/-/g,".");var catalogPath=catalogPathR1.toString().replace(/_/g,"-");if(ARTICLE_INFO.topic.name.length>0){var L="L.",Z="Z."+catalogPath+"."+ARTICLE_INFO.topic.name}else{var L="L."+catalogPath,Z="Z."}var W="W."+ARTICLE_INFO.type,M="M."+ARTICLE_INFO.tpl.type+ARTICLE_INFO.tpl.stype,P="P."+ARTICLE_INFO.site.toString().replace(/_/g,"-"),F="F."+from||'def',pgvInfo=L+"_"+Z+"_"+W+"_"+M+"_"+P+"_"+F;if(typeof(pgvMain)=='function'){if(typeof(pgvInfo)!='undefined'){pgvMain({pgUserType:pgvInfo})}}}function addEvent(node,type,listener){if(node.addEventListener){node.addEventListener(type,listener,false);return true}else if(node.attachEvent){node['e'+type+listener]=listener;node[type+listener]=function(){node['e'+type+listener](window.event)};node.attachEvent('on'+type,node[type+listener]);return true}return false}function _formFun(e,t){var e=window.event||e,target=e.srcElement||e.target,tag=target.tagName.toLowerCase(),href=target.href,str='',arr=[];if(tag=='img'){target=target.parentNode;tag=target.tagName.toLowerCase();href=target.href}if(href.indexOf('qqcom_pgv_from=')>-1)return;if(tag=='a'&&target.href.indexOf('qq.com')>-1){if(target.href.indexOf('?')==-1){str=href+'?qqcom_pgv_from='+t}else{arr=href.split('?');str=arr[0]+'?qqcom_pgv_from='+t+'&'+arr[1]}target.href=str}}})()</script><!--pgv 20140225v1.0.3 end-->
 
-<!-- ÊÓÆµÀ´Ô´ptag --><script src="js/ptag_1.1.js" async="true"></script>
+<!-- è§†é¢‘æ¥æºptag --><script src="js/ptag_1.1.js" async="true"></script>
 
 <!--[if !IE]>|xGv00|8c1fdc44d118845e49a64996e4f5ea29<![endif]--><!--[if !IE]>|xGv00|1a3a193a0249b0401b1fc3f77d548441<![endif]-->
-<!-- È«Õ¾Á÷Á¿Í³¼Æ´úÂë ½áÊø -->
+<!-- å…¨ç«™æµé‡ç»Ÿè®¡ä»£ç  ç»“æŸ -->
 <div class="bg_white clearfix" style="height:30px;">
   <style type="text/css">
 
-/*´øÒ»¼üµÇÂ¼È«Õ¾ÃÔÄãµ¼º½ v20130219 loginall @goldenchen*/
+/*å¸¦ä¸€é”®ç™»å½•å…¨ç«™è¿·ä½ å¯¼èˆª v20130219 loginall @goldenchen*/
 
 .mininav{width:100%;height:28px;background:#fdfdfd url(images/mininav.png) repeat-x top center;border-bottom:1px solid #ebebeb;}
 
 .mininavInner{width:1000px;height:28px;margin:0 auto!important;}
 
-.mininavInner a{color:#666;text-decoration:none;font-family:"ËÎÌå";}
+.mininavInner a{color:#666;text-decoration:none;font-family:"å®‹ä½“";}
 
 .mininavInner a:hover{color:#2d374b;}
 
@@ -57,7 +57,7 @@
 
 			<div class="fl">
 
-				<a href="http://www.qq.com/" target="_blank" id="qqindex">ÌÚÑ¶ÍøÊ×Ò³</a> | <a href="http://www.qq.com/map/" target="_blank" id="webmap">ÍøÕ¾µØÍ¼</a>
+				<a href="http://www.qq.com/" target="_blank" id="qqindex">è…¾è®¯ç½‘é¦–é¡µ</a> | <a href="http://www.qq.com/map/" target="_blank" id="webmap">ç½‘ç«™åœ°å›¾</a>
 
 			</div>
 
@@ -131,19 +131,19 @@ a.pengyouLogin:hover{background-position:right -200px;}
 
 .mininavRight .qqName{margin-right:12px;color:#666;float:left;}
 
-.mininavRight .weibo{font-family:Tahoma,"ËÎÌå";padding:0 7px;display:block;height:28px;float:left;text-indent:17px;}
+.mininavRight .weibo{font-family:Tahoma,"å®‹ä½“";padding:0 7px;display:block;height:28px;float:left;text-indent:17px;}
 
 .mininavRight .weibo:hover{color:#fff;background-color:#458fce;}
 
-.mininavRight .qzone{font-family:Tahoma,"ËÎÌå";padding:0 7px;display:block;height:28px;float:left;text-indent:22px;}
+.mininavRight .qzone{font-family:Tahoma,"å®‹ä½“";padding:0 7px;display:block;height:28px;float:left;text-indent:22px;}
 
 .mininavRight .qzone:hover{color:#fff;background-color:#458fce;}
 
-.mininavRight .mail{font-family:Tahoma,"ËÎÌå";padding:0 7px;display:block;height:28px;float:left;text-indent:19px;}
+.mininavRight .mail{font-family:Tahoma,"å®‹ä½“";padding:0 7px;display:block;height:28px;float:left;text-indent:19px;}
 
 .mininavRight .mail:hover{color:#fff;background-color:#458fce;}
 
-.mininavRight .pengyou{font-family:Tahoma,"ËÎÌå";padding:0 7px;display:block;height:28px;float:left;text-indent:20px;}
+.mininavRight .pengyou{font-family:Tahoma,"å®‹ä½“";padding:0 7px;display:block;height:28px;float:left;text-indent:20px;}
 
 .mininavRight .pengyou:hover{color:#fff;background-color:#458fce;}
 
@@ -229,13 +229,13 @@ a.pengyouLogin:hover{background-position:right -200px;}
 
 						<ul>
 
-							<li id="pengyouTitle">ÅóÓÑÍø:</li>
+							<li id="pengyouTitle">æœ‹å‹ç½‘:</li>
 
-							<li id="pengyouPassiveLi" class="undis"><a href="http://www.pengyou.com" target="_blank">ÎÒµÄ¶¯Ì¬ (<span id="pengyouPassiveNum"></span>)</a></li>
+							<li id="pengyouPassiveLi" class="undis"><a href="http://www.pengyou.com" target="_blank">æˆ‘çš„åŠ¨æ€ (<span id="pengyouPassiveNum"></span>)</a></li>
 
-							<li id="pengyouInitLi" class="undis"><a href="http://www.pengyou.com" target="_blank">ÅóÓÑ¶¯Ì¬ (<span id="pengyouInitNum"></span>)</a></li>
+							<li id="pengyouInitLi" class="undis"><a href="http://www.pengyou.com" target="_blank">æœ‹å‹åŠ¨æ€ (<span id="pengyouInitNum"></span>)</a></li>
 
-							<li id="pengyouAboutLi" class="undis"><a href="http://www.pengyou.com" target="_blank">ÎÒµÄ²ÎÓë (<span id="pengyouAboutNum"></span>)</a></li>
+							<li id="pengyouAboutLi" class="undis"><a href="http://www.pengyou.com" target="_blank">æˆ‘çš„å‚ä¸ (<span id="pengyouAboutNum"></span>)</a></li>
 
 						</ul>
 
@@ -265,15 +265,15 @@ a.pengyouLogin:hover{background-position:right -200px;}
 
 						<ul>
 
-							<li id="mailTitle">QQÓÊÏä:</li>
+							<li id="mailTitle">QQé‚®ç®±:</li>
 
-							<li id="inboxLi" class="undis"><a href="http://mail.qq.com" target="_blank">Î´¶ÁÓÊ¼ş (<span id="inboxNum"></span>)</a></li>
+							<li id="inboxLi" class="undis"><a href="http://mail.qq.com" target="_blank">æœªè¯»é‚®ä»¶ (<span id="inboxNum"></span>)</a></li>
 
-							<li id="bottleLi" class="undis"><a href="http://mail.qq.com" target="_blank">Æ¯Á÷Æ¿ (<span id="bottleNum"></span>)</a></li>
+							<li id="bottleLi" class="undis"><a href="http://mail.qq.com" target="_blank">æ¼‚æµç“¶ (<span id="bottleNum"></span>)</a></li>
 
-							<li id="gmailLi" class="undis"><a href="http://mail.qq.com" target="_blank">ÈºÓÊ¼ş (<span id="gmailNum"></span>)</a></li>
+							<li id="gmailLi" class="undis"><a href="http://mail.qq.com" target="_blank">ç¾¤é‚®ä»¶ (<span id="gmailNum"></span>)</a></li>
 
-							<li id="dmailLi" class="undis"><a href="http://mail.qq.com" target="_blank">ÎÄ¼ş¼Ğ (<span id="dmailNum"></span>)</a></li>
+							<li id="dmailLi" class="undis"><a href="http://mail.qq.com" target="_blank">æ–‡ä»¶å¤¹ (<span id="dmailNum"></span>)</a></li>
 
 						</ul>
 
@@ -301,13 +301,13 @@ a.pengyouLogin:hover{background-position:right -200px;}
 
 						<ul>
 
-							<li id="qzoneTitle">QQ¿Õ¼ä:</li>
+							<li id="qzoneTitle">QQç©ºé—´:</li>
 
-							<li id="passiveLi" class="undis"><a href="http://qzone.qq.com" target="_blank">ÎÒµÄ¶¯Ì¬ (<span id="passiveNum"></span>)</a></li>
+							<li id="passiveLi" class="undis"><a href="http://qzone.qq.com" target="_blank">æˆ‘çš„åŠ¨æ€ (<span id="passiveNum"></span>)</a></li>
 
-							<li id="InitLi" class="undis"><a href="http://qzone.qq.com" target="_blank">ºÃÓÑ¶¯Ì¬ (<span id="InitNum"></span>)</a></li>
+							<li id="InitLi" class="undis"><a href="http://qzone.qq.com" target="_blank">å¥½å‹åŠ¨æ€ (<span id="InitNum"></span>)</a></li>
 
-							<li id="AboutLi" class="undis"><a href="http://qzone.qq.com" target="_blank">ÎÒµÄ²ÎÓë (<span id="AboutNum"></span>)</a></li>
+							<li id="AboutLi" class="undis"><a href="http://qzone.qq.com" target="_blank">æˆ‘çš„å‚ä¸ (<span id="AboutNum"></span>)</a></li>
 
 						</ul>
 
@@ -335,13 +335,13 @@ a.pengyouLogin:hover{background-position:right -200px;}
 
 						<ul>
 
-							<li id="weiboTitle">ÌÚÑ¶Î¢²©:</li>
+							<li id="weiboTitle">è…¾è®¯å¾®åš:</li>
 
-							<li id="msgLi" class="undis"><a href="http://t.qq.com/messages/inbox?pref=qqcom.home.wbinbox" target="_blank">Ë½ĞÅ (<span id="msgNum"></span>)</a></li>
+							<li id="msgLi" class="undis"><a href="http://t.qq.com/messages/inbox?pref=qqcom.home.wbinbox" target="_blank">ç§ä¿¡ (<span id="msgNum"></span>)</a></li>
 
-							<li id="atLi" class="undis"><a href="http://t.qq.com/at?pref=qqcom.home.wbat" target="_blank">Ìáµ½ÎÒµÄ (<span id="atNum"></span>)</a></li>
+							<li id="atLi" class="undis"><a href="http://t.qq.com/at?pref=qqcom.home.wbat" target="_blank">æåˆ°æˆ‘çš„ (<span id="atNum"></span>)</a></li>
 
-							<li id="fansLi" class="undis"><a href="http://t.qq.com/follower.php?pref=qqcom.home.wbfollow" target="_blank">ĞÂÔöÌıÖÚ (<span id="fansNum"></span>)</a></li>
+							<li id="fansLi" class="undis"><a href="http://t.qq.com/follower.php?pref=qqcom.home.wbfollow" target="_blank">æ–°å¢å¬ä¼— (<span id="fansNum"></span>)</a></li>
 
 						</ul>
 
@@ -357,7 +357,7 @@ a.pengyouLogin:hover{background-position:right -200px;}
 
 		<div class="qqNameLayout fr">
 
-			<span class="qqName">ÄúºÃ£¬<span id="userName"></span> <span>[</span><a href="javascript:void(0);" id="loginOut" target="_self">ÍË³ö</a><span>]</span></span>|
+			<span class="qqName">æ‚¨å¥½ï¼Œ<span id="userName"></span> <span>[</span><a href="javascript:void(0);" id="loginOut" target="_self">é€€å‡º</a><span>]</span></span>|
 
 		</div>
 
@@ -389,21 +389,21 @@ document.domain="qq.com";
 
 function ptlogin2_onResize(width, height) {
 
-	//»ñµÃ¸¡¶¯Div¶ÔÏó
+	//è·å¾—æµ®åŠ¨Divå¯¹è±¡
 
 	login_wnd = document.getElementById("login_div");
 
 	if (login_wnd)  {
 
-		//ÖØĞÂÉèÖÃ´óĞ¡×¢Òâ£¬Ò»¶¨Òª¼Ópx£¬·ñÔòfirefoxÏÂÓĞÎÊÌâ
+		//é‡æ–°è®¾ç½®å¤§å°æ³¨æ„ï¼Œä¸€å®šè¦åŠ pxï¼Œå¦åˆ™firefoxä¸‹æœ‰é—®é¢˜
 
 		login_wnd.style.width = width + "px";
 
 		login_wnd.style.height = height + "px";
 
-		//×îºÃÖØĞÂµ÷ÕûµÇÂ¼¿òµÄÎ»ÖÃ£¬ Õâ¶ùÂÔ....
+		//æœ€å¥½é‡æ–°è°ƒæ•´ç™»å½•æ¡†çš„ä½ç½®ï¼Œ è¿™å„¿ç•¥....
 
-		//ÏÈÒş²Ø£¬ÔÚÏÔÊ¾£¬ÕâÑù¿ÉÒÔ±ÜÃâ¹ö¶¯ÌõµÄ³öÏÖ
+		//å…ˆéšè—ï¼Œåœ¨æ˜¾ç¤ºï¼Œè¿™æ ·å¯ä»¥é¿å…æ»šåŠ¨æ¡çš„å‡ºç°
 
 		login_wnd.style.visibility = "hidden"
 
@@ -439,7 +439,7 @@ function userLogin(){
 
 }
 
-/*Ò»¼üµÇÂ¼Êı¾İ*/
+/*ä¸€é”®ç™»å½•æ•°æ®*/
 
 function loginAll(obj){
 
@@ -537,7 +537,7 @@ function loginAll(obj){
 
 		}else{
 
-			document.getElementById("weiboTitle").innerHTML = "<a href='http://t.qq.com' target='_blank'>µã»÷²é¿´ÌÚÑ¶Î¢²©</a>";
+			document.getElementById("weiboTitle").innerHTML = "<a href='http://t.qq.com' target='_blank'>ç‚¹å‡»æŸ¥çœ‹è…¾è®¯å¾®åš</a>";
 
 		}
 
@@ -581,7 +581,7 @@ function loginAll(obj){
 
 		}else{
 
-			document.getElementById("qzoneTitle").innerHTML = "<a href='http://qzone.qq.com' target='_blank'>µã»÷²é¿´QQ¿Õ¼ä</a>";
+			document.getElementById("qzoneTitle").innerHTML = "<a href='http://qzone.qq.com' target='_blank'>ç‚¹å‡»æŸ¥çœ‹QQç©ºé—´</a>";
 
 		}
 
@@ -651,13 +651,13 @@ function loginAll(obj){
 
 			if(QMailInboxnum == "" && QMailBottlenum == "" && QMailGmailnum == "" && QMailDmailnum == ""){
 
-				document.getElementById("mailTitle").innerHTML = "<a href='http://mail.qq.com' target='_blank'>µã»÷²é¿´QQÓÊÏä</a>";
+				document.getElementById("mailTitle").innerHTML = "<a href='http://mail.qq.com' target='_blank'>ç‚¹å‡»æŸ¥çœ‹QQé‚®ç®±</a>";
 
 			}
 
 		}else{
 
-			document.getElementById("mailTitle").innerHTML = "<a href='http://mail.qq.com' target='_blank'>µã»÷²é¿´QQÓÊÏä</a>";
+			document.getElementById("mailTitle").innerHTML = "<a href='http://mail.qq.com' target='_blank'>ç‚¹å‡»æŸ¥çœ‹QQé‚®ç®±</a>";
 
 		}
 
@@ -703,7 +703,7 @@ function loginAll(obj){
 
 		}else{
 
-			document.getElementById("pengyouTitle").innerHTML = "<a href='http://www.pengyou.com' target='_blank'>µã»÷²é¿´ÅóÓÑÍø</a>";
+			document.getElementById("pengyouTitle").innerHTML = "<a href='http://www.pengyou.com' target='_blank'>ç‚¹å‡»æŸ¥çœ‹æœ‹å‹ç½‘</a>";
 
 		}
 
@@ -771,9 +771,9 @@ function loginAll(obj){
 
 			login.loginOut();
 
-			//MI &&¡¡MI.Login.logout();//´òÍ¨Î¢²©Ò»¼üµÇÂ¼
+			//MI &&ã€€MI.Login.logout();//æ‰“é€šå¾®åšä¸€é”®ç™»å½•
 
-			//ĞÂ°æÆÀÂÛadd
+			//æ–°ç‰ˆè¯„è®ºadd
 
 			if(window['ifr_cmt_status'] && document.getElementById('commentIframe')){
 
@@ -797,7 +797,7 @@ function loginAll(obj){
 
 
 
-	//ĞÂ°æÆÀÂÛadd
+	//æ–°ç‰ˆè¯„è®ºadd
 
 	if(window['ifr_cmt_status'] && document.getElementById('commentIframe')){
 
@@ -827,19 +827,19 @@ QQ.localData = {
 
 	 dataDom:null,
 
-	 initDom:function(){ //³õÊ¼»¯userData
+	 initDom:function(){ //åˆå§‹åŒ–userData
 
 		 if(!this.dataDom){
 
 			 try{
 
-				 this.dataDom = document.createElement('input');//ÕâÀïÊ¹ÓÃhiddenµÄinputÔªËØ
+				 this.dataDom = document.createElement('input');//è¿™é‡Œä½¿ç”¨hiddençš„inputå…ƒç´ 
 
 				 this.dataDom.type = 'hidden';
 
 				 this.dataDom.style.display = "none";
 
-				 this.dataDom.addBehavior('#default#userData');//ÕâÊÇuserDataµÄÓï·¨
+				 this.dataDom.addBehavior('#default#userData');//è¿™æ˜¯userDataçš„è¯­æ³•
 
 				 document.body.appendChild(this.dataDom);
 
@@ -847,7 +847,7 @@ QQ.localData = {
 
 				 exDate = exDate.getDate()+30;
 
-				 this.dataDom.expires = exDate.toUTCString();//Éè¶¨¹ıÆÚÊ±¼ä
+				 this.dataDom.expires = exDate.toUTCString();//è®¾å®šè¿‡æœŸæ—¶é—´
 
 			 }catch(ex){
 
@@ -1093,13 +1093,13 @@ window["login"] = {
 
 		*/
 
-		document.getElementById("weiboTitle").innerHTML = "ÌÚÑ¶Î¢²©:";
+		document.getElementById("weiboTitle").innerHTML = "è…¾è®¯å¾®åš:";
 
-		document.getElementById("qzoneTitle").innerHTML = "QQ¿Õ¼ä:";
+		document.getElementById("qzoneTitle").innerHTML = "QQç©ºé—´:";
 
-		document.getElementById("mailTitle").innerHTML = "QQÓÊÏä:";
+		document.getElementById("mailTitle").innerHTML = "QQé‚®ç®±:";
 
-		//document.getElementById("pengyouTitle").innerHTML = "ÅóÓÑÍø:";
+		//document.getElementById("pengyouTitle").innerHTML = "æœ‹å‹ç½‘:";
 
 
 
@@ -1133,7 +1133,7 @@ window["login"] = {
 
 		document.getElementById("loginAll").style.display = "none";
 
-		//¼ÓÔØ»Øµ÷
+		//åŠ è½½å›è°ƒ
 
 		if(login.cbArr.length > 0){
 
@@ -1145,7 +1145,7 @@ window["login"] = {
 
 		}
 
-		//µã»÷»Øµ÷
+		//ç‚¹å‡»å›è°ƒ
 
 		login.loginCheck();
 
@@ -1157,9 +1157,9 @@ window["login"] = {
 
 	},
 
-	cbArr : new Array(),//¼ÓÔØ»Øµ÷
+	cbArr : new Array(),//åŠ è½½å›è°ƒ
 
-	cbLogin : function(){},//µã»÷»Øµ÷
+	cbLogin : function(){},//ç‚¹å‡»å›è°ƒ
 
 	cleanCbLogin : function(){
 
@@ -1193,7 +1193,7 @@ function EA( node, type, listener ) {
 
 }
 
-//µÇÂ¼±¾µØ´æ´¢
+//ç™»å½•æœ¬åœ°å­˜å‚¨
 
 EA(window, "load", function(){
 
@@ -1231,13 +1231,13 @@ EA(window, "load", function(){
 
 <script type="text/javascript">
 
-//ÒÆ¶¯¶Ë×óÓÒ±ß¾à
+//ç§»åŠ¨ç«¯å·¦å³è¾¹è·
 
 if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){document.getElementsByTagName("body")[0].style.minWidth = "1028px";}
 
 </script><!--[if !IE]>|xGv00|391c10b45046351ab35a91ecc9e5bb6e<![endif]--><!--[if !IE]>|xGv00|63885e533c6b7dd990669f000661a4a2<![endif]-->
 </div>
-<!-- ×¨ÌâÄÚÈİ -->
+<!-- ä¸“é¢˜å†…å®¹ -->
 <div class="bodyWrap yahei">
     <div class="c_header w980 pr" style="">
        <span class="pa" style="left:-2000px; top:-2000px;"><img src="images/zhuanfa.png"></span>
@@ -1277,16 +1277,16 @@ if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SA
 
 
           			<div class="tittle_div tittle_line">
-                      <p><b>¡öµ­°ßĞ¡´ÉÆ¿ÔÚÖÚ¶àÃÀ°×¾«»ª²úÆ·ÖĞÓĞºÎÍ»ÆÆÓÅÊÆ£¿</b></p>
-                      <p><b>ÂêÀöº£Â×¡¤À³¶û£º</b>Æ¾½è20Äê¶ÔÑÇÖŞÅ®ĞÔ¼¡·ôµÄ×¨Òµ»¤Àí¾­ÑéºÍ×¨×¢ÓÚ¡°ñöÌıÅ®ĞÔĞÄÉù¡±µÄÀíÄî£¬½¿ÔÏÊ«ÑĞ·¢²¿ÃÅ²»¶ÏÖÂÁ¦ÓÚ¿ÆÑĞ³É¹ûµÄ×ª»¯Ó¦ÓÃ£¬Ğ¯ÊÖ¾ÓÀïÑĞ¾¿ËùÉîÈëºÏ×÷ÊıÔØ£¬ÖÂÁ¦ÓÚ×¨ÎªÑÇÖŞÅ®ĞÔÑĞ·¢µÄÇåÍ¸Èó°×ÏµÁĞÍÆ³öÈ«ĞÂÒ»¿îÃÀ°×¾«»ª¡£ÎÒÃÇÍ»ÆÆĞÔ·¢ÏÖÁËÉ«ËØ³Á×ÅÉú³É¹ı³ÌÖĞºÚÉ«ËØ´«µİÍøÂç£¨MELA EXO SYSTEM£©µÄÖØÒª×÷ÓÃ£¬ÒÔ¼°ÓÕ·¢É«ËØ³Á×ÅµÄºÚÉ«ËØĞÅÊ¹£¨EXOSOMES£©¡£»ùÓÚÕâ´ÎÍ»ÆÆĞÔÑĞ¾¿³É¹û£¬½¿ÔÏÊ«¿ÆÑĞÍÅ¶ÓÌ½Ë÷È«ĞÂÖ²Îï°ÂÃØ£¬»ñµÃĞÂ·¢ÏÖ£¬´ÓÉú³¤ÔÚ°ÍÎ÷¶«±±²¿ÕëÒ¶Ó£ÌÒ¹ûÊµÖĞ¾«ĞÄİÍÈ¡¾ßÓĞ×¿Ğ§µ­°ßµÄÖ²Îï¾«İÍ£¬´ÓÔ´Í·×è½ØºÚÉ«ËØĞÅÊ¹£¬Í¨¹ıÒÖÖÆºÚÉ«ËØĞÅÊ¹¼õÉÙºÚÉ«ËØ¹ı¶È·ÖÃÚ£¬µ­»¯ÏÖÓĞ°ßµã£¬Ô¤·ÀÇ±ÔÚ°ß£¬²¢ÔÚ¸¨Öú³É·Ö°ïÖúÏÂÎªÑÇÖŞÅ®ĞÔ´øÀ´ÎŞÏ¾¡¢Í¸ÁÁ¡¢¾»°×¼¡¡£</p>
-  	      <p><b>¡öÕëÒ¶Ó£ÌÒ×÷Îªµ­°ßĞ¡´ÉÆ¿µÄÃ÷ĞÇ³É·Ö£¬ÓĞÊ²Ã´ÌØ±ğµÄ¹ÊÊÂ£¿</b></p>
-                      <p><b>ÂêÀöº£Â×¡¤À³¶û£º</b>·ÅÉú¿Æ¼¼ÊÇ½¿ÔÏÊ«¿ÆÑĞÖØÒªµÄ»¤·ôÕÜÑ§Ö®Ò»£¬ÎÒÃÇ´Ó´ó×ÔÈ»ÖĞ¼³È¡Áé¸Ğ£¬È»ºóÔÚ¿Æ¼¼ÖĞµÃµ½´´ĞÂ¡£ÎÒÃÇ¶¼ÖªµÀÕëÒ¶Ó£ÌÒµÄÎ¬ÉúËØCº¬Á¿·Ç³£µÄ·á¸»£¬ËüµÄ¹ûÊµÄÜÊ¹ÎÒÃÇµÄ·ôÉ«¸üÎª¾ùÔÈ£»²»½öÈç´Ë£¬ÎÒÃÇÔÚÓë¾ÓÀïÑĞ¾¿ËùºÏ×÷ÑĞ¾¿ÖĞÊ×´Î·¢ÏÖÕëÒ¶Ó£ÌÒ¹ûÊµİÍÈ¡¾«»ªÄÜÓĞĞ§µØµÖÏûºÚÉ«ËØĞÅÊ¹£¨EXOSOMES£©¶ÔºÚÉ«ËØºÏ³ÉµÄÓ°Ïì¡£Êµ¼ÊÉÏÎÒÃÇÔÚÖÚ¶àÖ²Îïµ±ÖĞÒ»¹²ÕçÑ¡³ö18ÖÖÖ²Îï£¬ËüÃÇ¶¼ÊÇÓĞÇ±Á¦³ÉÎªÎÒÃÇÃÀ°×²úÆ·µÄÔ­ÁÏµÄ¡£×îºóÎÒÃÇËø¶¨ÔÚÕëÒ¶Ó£ÌÒÉÏ£¬ÒòÎªÕëÒ¶Ó£ÌÒ¸»º¬µÄ¶à·Ó·Ö×ÓÊÇ×î¶àµÄ£¬¶øÇÒÎÒÃÇ·¢ÏÖÕëÒ¶Ó£ÌÒÊÇ·Ç³£°²È«µÄÖ²Îï¡£</p>
-  	      <p><b>¡öÔì³É·ôÉ«°µ³Á¡¢¸ÉÔïµÄÖ÷ÒòÊÇÊ²Ã´£¿ºÜ¶àÅ®ĞÔ×·ÇóË®ÈóÍ¸°×£¬ÄúÈçºÎ¶¨ÒåÃÀ°×¼¡·ô£¿</b></p>
-                      <p><b>ÂêÀöº£Â×¡¤À³¶û£º</b>Æ¤·ô°µ³ÁÖ÷ÒªÊÇºÍÁ½¸öÒòËØÏàÁªÏµ£¬µÚÒ»¸öÒòËØÊÇ¸ÉÔï£¬Èç¹ûÎÒÃÇÄÜ¹»Ôö¼Ó²¹Ë®£¬Ê¹Æ¤·ô±äµÃ¸ü¼ÓË®Èó£¬ÄÇÃ´ÔÚÆ¤·ôµÄ½¡¿µºÍ¹âÔó¶È·½Ãæ¶¼»áÓĞ·Ç³£´óµÄ¸ÄÉÆ¡£µÚ¶ş¸öÊÇÉ«ËØ³Á×Å£¬ËùÒÔÒª¶Ô×ÏÍâÏß½øĞĞ·À»¤£¬Ò²Òª×¢Òâ²»ÒªÊ¹Æ¤·ôÓĞÑ×Ö¢×´¿ö£¬Èç¹ûÓĞÑ×Ö¢×´¿ö¾Í»á¼ÓËÙÉ«ËØÉú³É¡£Òò´ËÓµÓĞÔÈ¾»Í¸°×¼¡·ô£¬µ­»¯ÏÖÓĞ°ßµã£¬´ÓÎŞÏ¾¡¢Í¸ÁÁ¡¢¾»°×Èı¸öÎ¬¶È¸øÓèÇåÍ¸¼¡·ôÈıÖØºÇ»¤¡£ÓëºÚÉ«ËØ½ôÃÜÏà¹ØµÄ·ôÉ«ºÍ¾ùÔÈ¶È¶Ô¼¡·ô×´¿ö¹ÌÈ»ÖØÒª£¬µ«Ë®ÈóÑõºÏµÄ¼¡·ôÇåÍ¸¶ÈÍ¬Ñù²»¿ÉĞ¡êï¡£</p>
-    	       <p><b>¡öµ­°ßĞ¡´ÉÆ¿¿ª·âºóµÄÊ¹ÓÃÆÚÏŞÊÇ¶à³¤£¿ÊÇ·ñ±ØĞëÒªÔÚÈı¸öÔÂÄÚÓÃÍê£¿</b></p>
-                      <p><b>ÂêÀöº£Â×¡¤À³¶û£º</b>½¿ÔÏÊ«¡°µ­°ßĞ¡´ÉÆ¿¡±¿ªÆ¿Ö®ºóµÄÊ¹ÓÃÆÚÏŞÊÇ18¸öÔÂ¡£</p>
-    	      <p><b>¡ö¶ÔÓĞÃÀ°×ĞèÇóµÄÅ®ĞÔ£¬ÄúÏë¶ÔËıÃÇËµÊ²Ã´£¿</b></p>
-                      <p><b>ÂêÀöº£Â×¡¤À³¶û£º</b>ÆäÊµÕâ¸öÎÊÌâºÜÓĞÒâË¼£¬ÒòÎªÖĞ¹úÅóÓÑ¾­³£ÎÊÎÒÕâÑùµÄÎÊÌâ¡£ÔÚÅ·ÖŞÎÒÃÇ¶ÔÃÀ°×µÄ¹ÛÄîÒ²ÓĞËù²»Í¬£¬ÏñÔÚÄÏÅ·£¬ÌØ±ğÊÇÒâ´óÀû£¬ËùÓĞÈË¶¼Ï²»¶Ğ¡Âó·ôÉ«£¬ËùÒÔËûÃÇÔÚº£Ì²±ß»á´óÁ¿±©É¹£¬Ï£ÍûÆ¤·ôÑ¸ËÙ±äºÚ£¬°üÀ¨¶ÔÈ¸°ß£¬ËûÃÇµÄ¹ÛµãÒ²²»Ò»Ñù¡£ÔÚ±±Å·ÏÖÔÚ¹ÛÄîÓĞÒ»Ğ©¸Ä±ä£¬±ÈÈçËûÃÇÈÏÎªÏñÑÇÖŞÅ®ĞÔÕâÑù¸ü¼ÓÏ¸Äå¡¢Í¸ÁÁµÄ¼¡·ôÒ²ÊÇ·Ç³£½¡¿µ¡¢·Ç³£ÃÀµÂ£¬ËùÒÔËûÃÇ¿ªÊ¼¹Ø×¢µ­°ß£¬¿ªÊ¼¹Ø×¢¼¡·ôµÄ¾ùÔÈ¶È¡£</p>
+                      <p><b>â– æ·¡æ–‘å°ç“·ç“¶åœ¨ä¼—å¤šç¾ç™½ç²¾åäº§å“ä¸­æœ‰ä½•çªç ´ä¼˜åŠ¿ï¼Ÿ</b></p>
+                      <p><b>ç›ä¸½æµ·ä¼¦Â·è±å°”ï¼š</b>å‡­å€Ÿ20å¹´å¯¹äºšæ´²å¥³æ€§è‚Œè‚¤çš„ä¸“ä¸šæŠ¤ç†ç»éªŒå’Œä¸“æ³¨äºâ€œè†å¬å¥³æ€§å¿ƒå£°â€çš„ç†å¿µï¼Œå¨‡éŸµè¯—ç ”å‘éƒ¨é—¨ä¸æ–­è‡´åŠ›äºç§‘ç ”æˆæœçš„è½¬åŒ–åº”ç”¨ï¼Œæºæ‰‹å±…é‡Œç ”ç©¶æ‰€æ·±å…¥åˆä½œæ•°è½½ï¼Œè‡´åŠ›äºä¸“ä¸ºäºšæ´²å¥³æ€§ç ”å‘çš„æ¸…é€æ¶¦ç™½ç³»åˆ—æ¨å‡ºå…¨æ–°ä¸€æ¬¾ç¾ç™½ç²¾åã€‚æˆ‘ä»¬çªç ´æ€§å‘ç°äº†è‰²ç´ æ²‰ç€ç”Ÿæˆè¿‡ç¨‹ä¸­é»‘è‰²ç´ ä¼ é€’ç½‘ç»œï¼ˆMELA EXO SYSTEMï¼‰çš„é‡è¦ä½œç”¨ï¼Œä»¥åŠè¯±å‘è‰²ç´ æ²‰ç€çš„é»‘è‰²ç´ ä¿¡ä½¿ï¼ˆEXOSOMESï¼‰ã€‚åŸºäºè¿™æ¬¡çªç ´æ€§ç ”ç©¶æˆæœï¼Œå¨‡éŸµè¯—ç§‘ç ”å›¢é˜Ÿæ¢ç´¢å…¨æ–°æ¤ç‰©å¥¥ç§˜ï¼Œè·å¾—æ–°å‘ç°ï¼Œä»ç”Ÿé•¿åœ¨å·´è¥¿ä¸œåŒ—éƒ¨é’ˆå¶æ¨±æ¡ƒæœå®ä¸­ç²¾å¿ƒèƒå–å…·æœ‰å“æ•ˆæ·¡æ–‘çš„æ¤ç‰©ç²¾èƒï¼Œä»æºå¤´é˜»æˆªé»‘è‰²ç´ ä¿¡ä½¿ï¼Œé€šè¿‡æŠ‘åˆ¶é»‘è‰²ç´ ä¿¡ä½¿å‡å°‘é»‘è‰²ç´ è¿‡åº¦åˆ†æ³Œï¼Œæ·¡åŒ–ç°æœ‰æ–‘ç‚¹ï¼Œé¢„é˜²æ½œåœ¨æ–‘ï¼Œå¹¶åœ¨è¾…åŠ©æˆåˆ†å¸®åŠ©ä¸‹ä¸ºäºšæ´²å¥³æ€§å¸¦æ¥æ— æš‡ã€é€äº®ã€å‡€ç™½è‚Œã€‚</p>
+  	      <p><b>â– é’ˆå¶æ¨±æ¡ƒä½œä¸ºæ·¡æ–‘å°ç“·ç“¶çš„æ˜æ˜Ÿæˆåˆ†ï¼Œæœ‰ä»€ä¹ˆç‰¹åˆ«çš„æ•…äº‹ï¼Ÿ</b></p>
+                      <p><b>ç›ä¸½æµ·ä¼¦Â·è±å°”ï¼š</b>æ”¾ç”Ÿç§‘æŠ€æ˜¯å¨‡éŸµè¯—ç§‘ç ”é‡è¦çš„æŠ¤è‚¤å“²å­¦ä¹‹ä¸€ï¼Œæˆ‘ä»¬ä»å¤§è‡ªç„¶ä¸­æ±²å–çµæ„Ÿï¼Œç„¶ååœ¨ç§‘æŠ€ä¸­å¾—åˆ°åˆ›æ–°ã€‚æˆ‘ä»¬éƒ½çŸ¥é“é’ˆå¶æ¨±æ¡ƒçš„ç»´ç”Ÿç´ Cå«é‡éå¸¸çš„ä¸°å¯Œï¼Œå®ƒçš„æœå®èƒ½ä½¿æˆ‘ä»¬çš„è‚¤è‰²æ›´ä¸ºå‡åŒ€ï¼›ä¸ä»…å¦‚æ­¤ï¼Œæˆ‘ä»¬åœ¨ä¸å±…é‡Œç ”ç©¶æ‰€åˆä½œç ”ç©¶ä¸­é¦–æ¬¡å‘ç°é’ˆå¶æ¨±æ¡ƒæœå®èƒå–ç²¾åèƒ½æœ‰æ•ˆåœ°æŠµæ¶ˆé»‘è‰²ç´ ä¿¡ä½¿ï¼ˆEXOSOMESï¼‰å¯¹é»‘è‰²ç´ åˆæˆçš„å½±å“ã€‚å®é™…ä¸Šæˆ‘ä»¬åœ¨ä¼—å¤šæ¤ç‰©å½“ä¸­ä¸€å…±ç”„é€‰å‡º18ç§æ¤ç‰©ï¼Œå®ƒä»¬éƒ½æ˜¯æœ‰æ½œåŠ›æˆä¸ºæˆ‘ä»¬ç¾ç™½äº§å“çš„åŸæ–™çš„ã€‚æœ€åæˆ‘ä»¬é”å®šåœ¨é’ˆå¶æ¨±æ¡ƒä¸Šï¼Œå› ä¸ºé’ˆå¶æ¨±æ¡ƒå¯Œå«çš„å¤šé…šåˆ†å­æ˜¯æœ€å¤šçš„ï¼Œè€Œä¸”æˆ‘ä»¬å‘ç°é’ˆå¶æ¨±æ¡ƒæ˜¯éå¸¸å®‰å…¨çš„æ¤ç‰©ã€‚</p>
+  	      <p><b>â– é€ æˆè‚¤è‰²æš—æ²‰ã€å¹²ç‡¥çš„ä¸»å› æ˜¯ä»€ä¹ˆï¼Ÿå¾ˆå¤šå¥³æ€§è¿½æ±‚æ°´æ¶¦é€ç™½ï¼Œæ‚¨å¦‚ä½•å®šä¹‰ç¾ç™½è‚Œè‚¤ï¼Ÿ</b></p>
+                      <p><b>ç›ä¸½æµ·ä¼¦Â·è±å°”ï¼š</b>çš®è‚¤æš—æ²‰ä¸»è¦æ˜¯å’Œä¸¤ä¸ªå› ç´ ç›¸è”ç³»ï¼Œç¬¬ä¸€ä¸ªå› ç´ æ˜¯å¹²ç‡¥ï¼Œå¦‚æœæˆ‘ä»¬èƒ½å¤Ÿå¢åŠ è¡¥æ°´ï¼Œä½¿çš®è‚¤å˜å¾—æ›´åŠ æ°´æ¶¦ï¼Œé‚£ä¹ˆåœ¨çš®è‚¤çš„å¥åº·å’Œå…‰æ³½åº¦æ–¹é¢éƒ½ä¼šæœ‰éå¸¸å¤§çš„æ”¹å–„ã€‚ç¬¬äºŒä¸ªæ˜¯è‰²ç´ æ²‰ç€ï¼Œæ‰€ä»¥è¦å¯¹ç´«å¤–çº¿è¿›è¡Œé˜²æŠ¤ï¼Œä¹Ÿè¦æ³¨æ„ä¸è¦ä½¿çš®è‚¤æœ‰ç‚ç—‡çŠ¶å†µï¼Œå¦‚æœæœ‰ç‚ç—‡çŠ¶å†µå°±ä¼šåŠ é€Ÿè‰²ç´ ç”Ÿæˆã€‚å› æ­¤æ‹¥æœ‰åŒ€å‡€é€ç™½è‚Œè‚¤ï¼Œæ·¡åŒ–ç°æœ‰æ–‘ç‚¹ï¼Œä»æ— æš‡ã€é€äº®ã€å‡€ç™½ä¸‰ä¸ªç»´åº¦ç»™äºˆæ¸…é€è‚Œè‚¤ä¸‰é‡å‘µæŠ¤ã€‚ä¸é»‘è‰²ç´ ç´§å¯†ç›¸å…³çš„è‚¤è‰²å’Œå‡åŒ€åº¦å¯¹è‚Œè‚¤çŠ¶å†µå›ºç„¶é‡è¦ï¼Œä½†æ°´æ¶¦æ°§åˆçš„è‚Œè‚¤æ¸…é€åº¦åŒæ ·ä¸å¯å°è§‘ã€‚</p>
+    	       <p><b>â– æ·¡æ–‘å°ç“·ç“¶å¼€å°åçš„ä½¿ç”¨æœŸé™æ˜¯å¤šé•¿ï¼Ÿæ˜¯å¦å¿…é¡»è¦åœ¨ä¸‰ä¸ªæœˆå†…ç”¨å®Œï¼Ÿ</b></p>
+                      <p><b>ç›ä¸½æµ·ä¼¦Â·è±å°”ï¼š</b>å¨‡éŸµè¯—â€œæ·¡æ–‘å°ç“·ç“¶â€å¼€ç“¶ä¹‹åçš„ä½¿ç”¨æœŸé™æ˜¯18ä¸ªæœˆã€‚</p>
+    	      <p><b>â– å¯¹æœ‰ç¾ç™½éœ€æ±‚çš„å¥³æ€§ï¼Œæ‚¨æƒ³å¯¹å¥¹ä»¬è¯´ä»€ä¹ˆï¼Ÿ</b></p>
+                      <p><b>ç›ä¸½æµ·ä¼¦Â·è±å°”ï¼š</b>å…¶å®è¿™ä¸ªé—®é¢˜å¾ˆæœ‰æ„æ€ï¼Œå› ä¸ºä¸­å›½æœ‹å‹ç»å¸¸é—®æˆ‘è¿™æ ·çš„é—®é¢˜ã€‚åœ¨æ¬§æ´²æˆ‘ä»¬å¯¹ç¾ç™½çš„è§‚å¿µä¹Ÿæœ‰æ‰€ä¸åŒï¼Œåƒåœ¨å—æ¬§ï¼Œç‰¹åˆ«æ˜¯æ„å¤§åˆ©ï¼Œæ‰€æœ‰äººéƒ½å–œæ¬¢å°éº¦è‚¤è‰²ï¼Œæ‰€ä»¥ä»–ä»¬åœ¨æµ·æ»©è¾¹ä¼šå¤§é‡æš´æ™’ï¼Œå¸Œæœ›çš®è‚¤è¿…é€Ÿå˜é»‘ï¼ŒåŒ…æ‹¬å¯¹é›€æ–‘ï¼Œä»–ä»¬çš„è§‚ç‚¹ä¹Ÿä¸ä¸€æ ·ã€‚åœ¨åŒ—æ¬§ç°åœ¨è§‚å¿µæœ‰ä¸€äº›æ”¹å˜ï¼Œæ¯”å¦‚ä»–ä»¬è®¤ä¸ºåƒäºšæ´²å¥³æ€§è¿™æ ·æ›´åŠ ç»†è…»ã€é€äº®çš„è‚Œè‚¤ä¹Ÿæ˜¯éå¸¸å¥åº·ã€éå¸¸ç¾å¾·ï¼Œæ‰€ä»¥ä»–ä»¬å¼€å§‹å…³æ³¨æ·¡æ–‘ï¼Œå¼€å§‹å…³æ³¨è‚Œè‚¤çš„å‡åŒ€åº¦ã€‚</p>
 
                   </div>
 
@@ -1356,7 +1356,7 @@ if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SA
 </div>
 <div class="copyfoot">
   <div class="w980 pt15 pb15">
-     <!-- °æÈ¨¿ªÊ¼ -->
+     <!-- ç‰ˆæƒå¼€å§‹ -->
       <style>
 
 .tcopyright {width:960px;margin:0 auto;padding:8px 0;font-size:12px;line-height:28px;color:#333; text-align:center; overflow:hidden;clear:both;}
@@ -1373,7 +1373,7 @@ if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SA
 
 	<div>
 
-		<a href="http://www.tencent.com/" target="_blank" rel="nofollow">¹ØÓÚÌÚÑ¶</a> | <a href="http://www.tencent.com/index_e.shtml" target="_blank" rel="nofollow">About Tencent</a> | <a href="http://www.qq.com/contract.shtml" target="_blank" rel="nofollow">·şÎñĞ­Òé</a> | <a href="http://www.qq.com/privacy.htm" target="_blank" rel="nofollow">ÒşË½Õş²ß</a> | <a href="http://open.qq.com/" target="_blank" rel="nofollow">¿ª·ÅÆ½Ì¨</a> | <a href="http://www.tencentmind.com/" target="_blank" rel="nofollow">¹ã¸æ·şÎñ</a> | <a href="http://hr.tencent.com/" target="_blank" rel="nofollow">ÌÚÑ¶ÕĞÆ¸</a> | <a href="http://gongyi.qq.com/" target="_blank" rel="nofollow">ÌÚÑ¶¹«Òæ</a> | <a href="http://service.qq.com/" target="_blank" rel="nofollow">¿Í·şÖĞĞÄ</a> | <a href="http://www.qq.com/map/" target="_blank" rel="nofollow">ÍøÕ¾µ¼º½</a>
+		<a href="http://www.tencent.com/" target="_blank" rel="nofollow">å…³äºè…¾è®¯</a> | <a href="http://www.tencent.com/index_e.shtml" target="_blank" rel="nofollow">About Tencent</a> | <a href="http://www.qq.com/contract.shtml" target="_blank" rel="nofollow">æœåŠ¡åè®®</a> | <a href="http://www.qq.com/privacy.htm" target="_blank" rel="nofollow">éšç§æ”¿ç­–</a> | <a href="http://open.qq.com/" target="_blank" rel="nofollow">å¼€æ”¾å¹³å°</a> | <a href="http://www.tencentmind.com/" target="_blank" rel="nofollow">å¹¿å‘ŠæœåŠ¡</a> | <a href="http://hr.tencent.com/" target="_blank" rel="nofollow">è…¾è®¯æ‹›è˜</a> | <a href="http://gongyi.qq.com/" target="_blank" rel="nofollow">è…¾è®¯å…¬ç›Š</a> | <a href="http://service.qq.com/" target="_blank" rel="nofollow">å®¢æœä¸­å¿ƒ</a> | <a href="http://www.qq.com/map/" target="_blank" rel="nofollow">ç½‘ç«™å¯¼èˆª</a>
 
 	</div>
 
@@ -1381,12 +1381,12 @@ if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SA
 
     <div>
 
-		<a href="http://www.tencent.com/" target="_blank" rel="nofollow">ÌÚÑ¶¹«Ë¾</a> <a href="http://www.tencent.com/zh-cn/le/copyrightstatement.shtml" target="_blank" rel="nofollow">°æÈ¨ËùÓĞ</a>
+		<a href="http://www.tencent.com/" target="_blank" rel="nofollow">è…¾è®¯å…¬å¸</a> <a href="http://www.tencent.com/zh-cn/le/copyrightstatement.shtml" target="_blank" rel="nofollow">ç‰ˆæƒæ‰€æœ‰</a>
 
 	</div>
 
 </div><!--[if !IE]>|xGv00|ebd6fb0d7fdd1cfabfeda4cf113fa32e<![endif]-->
-      <!-- °æÈ¨½áÊø -->
+      <!-- ç‰ˆæƒç»“æŸ -->
   </div>
 </div>
 <script src="js/jquery.1.10.js"></script>
@@ -1462,21 +1462,21 @@ $(function(){
     var $cover = $('#cover'),
         $videoBg = $('#videoBg'),
         $tPlayer = null;
-    // È¡µÃÒ³Í·¡¢Ò³½Å
+    // å–å¾—é¡µå¤´ã€é¡µè„š
     var toolbarH = 0,
         footerH = 0;
-    // ·âÃæÍ¼Æ¬Ô­Ê¼³ß´ç¡¢´°¿Ú´óĞ¡,·âÃæÈİÆ÷¡¢logo³ß´ç£¬±êÌâ×ÖºÅ
+    // å°é¢å›¾ç‰‡åŸå§‹å°ºå¯¸ã€çª—å£å¤§å°,å°é¢å®¹å™¨ã€logoå°ºå¯¸ï¼Œæ ‡é¢˜å­—å·
     var imgW, imgH, winW, winH, coverW, coverH;
-    // ·âÃæ¡¢Í¼Æ¬¡¢ÊÓÆµ±ÈÀı
+    // å°é¢ã€å›¾ç‰‡ã€è§†é¢‘æ¯”ä¾‹
     var coverRatio, imgRatio, hRatiov, vRatio = 16 / 9;
-    // ÊÓÆµËõĞ¡
+    // è§†é¢‘ç¼©å°
     var videoCutW = 300;
-    //ÊÇ·ñ¼ÓÔØ¹ıÍ¼Æ¬
+    //æ˜¯å¦åŠ è½½è¿‡å›¾ç‰‡
     var imgReady = false;
     var videoSupport = checkVideoSupport();
     var resizing = null;
     var tPlayerAdded = false;
-    // ³õÊ¼»¯
+    // åˆå§‹åŒ–
     function init() {
         var _speed = 500;
         coverInit();
@@ -1490,7 +1490,7 @@ $(function(){
             }, 30);
         });
     }
-    // ²¥·Å°´Å¥ÊÂ¼ş
+    // æ’­æ”¾æŒ‰é’®äº‹ä»¶
     function playBtn(){
         $(".playBtn").each(function(i, obj){
             $(obj).click(function(event) {
@@ -1499,12 +1499,12 @@ $(function(){
             });
         });
     };
-    // ·âÃæ³õÊ¼»¯
+    // å°é¢åˆå§‹åŒ–
     function coverInit() {
-        // ´°¿Ú³ß´ç
+        // çª—å£å°ºå¯¸
         winW = $(window).width(),
         winH = $(window).height();
-        // cover¸ß¶È
+        // coveré«˜åº¦
         coverW = winW,
         coverH = winH - toolbarH - footerH;
         coverW2 = winW - videoCutW;
@@ -1513,18 +1513,18 @@ $(function(){
         } else {
             $cover.css({ height: (coverW/imgRatio) + 'px' });
         }
-        // cover±ÈÀı
+        // coveræ¯”ä¾‹
         coverRatio = coverW / coverH;
         hRatio = coverH / 830;
-        // Ö÷ÊÓÆµËõ·Å
+        // ä¸»è§†é¢‘ç¼©æ”¾
         if (tPlayerAdded) {
             scaleMainV();
         }
     }
-    // ¼ÓÔØÍ¼Æ¬
+    // åŠ è½½å›¾ç‰‡
     function imgLoad(url, callback) {
     }
-    // ¼ì²âä¯ÀÀÊÇ·ñÖ§³ÖÊÓÆµ
+    // æ£€æµ‹æµè§ˆæ˜¯å¦æ”¯æŒè§†é¢‘
     function checkVideoSupport() {
         var tempVideo = document.createElement('video');
         if (tempVideo.canPlayType && !$cover.is('.thanks')) {
@@ -1538,19 +1538,19 @@ $(function(){
             return false;
         }
     }
-    // ÇĞ»»±³¾°ÊÓÆµ
+    // åˆ‡æ¢èƒŒæ™¯è§†é¢‘
     function changeVideo(_, _src) {
         if (!_) return;
         _.attr("src", _src);
     };
-    // ´´½¨Ê×ÆÁÖ÷ÊÓÆµ²¥·Å²¥·Å¿ò
+    // åˆ›å»ºé¦–å±ä¸»è§†é¢‘æ’­æ”¾æ’­æ”¾æ¡†
     function createTplayer(vid,targetId) {
         if (!tPlayerAdded) {
             var tempV = $('<div class="V"><div id="mainvideo" class="mainvideo"><div class="close"  id="close"></div><div class="tplayer" id="tplayer"></div></div></div>');
             $videoBg.after(tempV);
             $tPlayer = $('#tplayer');
             scaleMainV();
-            // Ëõ·ÅÌÚÑ¶ÊÓÆµ²¥·ÅÆ÷´°¿Ú
+            // ç¼©æ”¾è…¾è®¯è§†é¢‘æ’­æ”¾å™¨çª—å£
             addTenPlayer(vid,targetId,'100%','100%',function(){
                 doScroll('down');
                 removeTenPlayer();
@@ -1565,13 +1565,13 @@ $(function(){
             });
         }
     }
-    // Ëõ·ÅÊ×ÆÁÖ÷ÊÓÆµ²¥·Å¿ò
+    // ç¼©æ”¾é¦–å±ä¸»è§†é¢‘æ’­æ”¾æ¡†
     function scaleMainV() {
         var tempW, tempH, tempLeft, tempTop;
         coverRatio = coverW2 / coverH;
         if (vRatio <= coverRatio) {
             tempH = coverH;
-            tempW = (tempH -20)* vRatio; //ÌÚÑ¶ÊÓÆµ²¥·ÅÆ÷Æ¤·ôÓĞ20µÄ±ß
+            tempW = (tempH -20)* vRatio; //è…¾è®¯è§†é¢‘æ’­æ”¾å™¨çš®è‚¤æœ‰20çš„è¾¹
         } else {
             tempW = coverW2;
             tempH = (coverW2 / vRatio)+20;
@@ -1583,7 +1583,7 @@ $(function(){
             height:'600px'
         })
     }
-    // Ìí¼ÓÌÚÑ¶ÊÓÆµ²¥·ÅÆ÷
+    // æ·»åŠ è…¾è®¯è§†é¢‘æ’­æ”¾å™¨
     function addTenPlayer(vid, place, w, h,callback) {
         var video = new tvp.VideoInfo();
         video.setVid(vid);
@@ -1599,7 +1599,7 @@ $(function(){
             onallended:callback
         });
     }
-    // ÒÆ³ıÊ×ÆÁÖ÷ÊÓÆµ
+    // ç§»é™¤é¦–å±ä¸»è§†é¢‘
     function removeTenPlayer() {
         if (tPlayerAdded) {
             $('.mainvideo,.V').remove();
@@ -1614,13 +1614,13 @@ $(function(){
             $(function() {
                 $('.single-slider').jRange({
                 		onstatechange: function() { var s =$(".single-slider").val(); if(s<25){$(".c_D_p02").fadeTo(0, 0);}else if(s>75){$(".c_D_p02").fadeTo(0, 1);}else{ $(".c_D_p02").fadeTo(0, (s-25)/50); }     },
-                    from: 0,//»¬¶¯·¶Î§µÄ×îĞ¡Öµ£¬Êı×Ö£¬Èç0
-                    to: 100,//»¬¶¯·¶Î§µÄ×î´óÖµ£¬Êı×Ö£¬Èç100
-                    step: 1,//²½³¤Öµ£¬Ã¿´Î»¬¶¯´óĞ¡
-                    format: '%s',//ÊıÖµ¸ñÊ½
-                    width: 300,//»¬¶¯Ìõ¿í¶È
-                    showLabels: false,// ÊÇ·ñÏÔÊ¾»¬¶¯ÌõÏÂ·½µÄ³ß´ç±êÇ©
-                    showScale: false //ÊÇ·ñÏÔÊ¾»¬¿éÉÏ·½µÄÊıÖµ±êÇ©
+                    from: 0,//æ»‘åŠ¨èŒƒå›´çš„æœ€å°å€¼ï¼Œæ•°å­—ï¼Œå¦‚0
+                    to: 100,//æ»‘åŠ¨èŒƒå›´çš„æœ€å¤§å€¼ï¼Œæ•°å­—ï¼Œå¦‚100
+                    step: 1,//æ­¥é•¿å€¼ï¼Œæ¯æ¬¡æ»‘åŠ¨å¤§å°
+                    format: '%s',//æ•°å€¼æ ¼å¼
+                    width: 300,//æ»‘åŠ¨æ¡å®½åº¦
+                    showLabels: false,// æ˜¯å¦æ˜¾ç¤ºæ»‘åŠ¨æ¡ä¸‹æ–¹çš„å°ºå¯¸æ ‡ç­¾
+                    showScale: false //æ˜¯å¦æ˜¾ç¤ºæ»‘å—ä¸Šæ–¹çš„æ•°å€¼æ ‡ç­¾
                 });
             });
         </script>
