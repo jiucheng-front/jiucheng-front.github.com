@@ -195,7 +195,7 @@ header img,.header_banner img{
 }
 .list_one{
     width: 30%;
-    overflow: hidden;
+    /*overflow: hidden;*/
     border: 1px solid #E6E6E6;
     float: left;
 }
@@ -210,7 +210,7 @@ header img,.header_banner img{
 .list_one img{
     width: 100%;
     padding: .02rem;
-    background-color: #E7E7E7;
+    /*background-color: #E7E7E7;*/
 }
 .list_one h4{
     font-size: .2rem;
@@ -221,6 +221,7 @@ header img,.header_banner img{
     font-size: .18rem;
     color: #504E4D;
     line-height: .3rem;
+    text-align: justify;
 }
 .list_one:not(:nth-child(1)){
     margin-left: .3rem;
@@ -370,4 +371,62 @@ header img,.header_banner img{
     padding: .05rem .3rem;
     cursor: pointer;
     text-align: center;
+}
+/*四步消除腋臭，无痛不留痕*/
+.section_four{
+    padding: .1rem 0;
+}
+.section_four .analyze_title{
+    width: 3.8rem;
+    border-color: #E6E6E6;
+}
+.section_four .analyze_title h3{
+    color: #0D6CB8;
+}
+.section_four .analyze_title p{
+    background-color:#E6E6E6;
+}
+.four_lists{
+    width: 100%;
+    overflow: hidden;
+}
+.four_lists .list_one{
+    width: 40%;
+    position: relative;
+    margin-left: .5rem;
+    margin-top: .5rem;
+}
+.four_lists ul li{
+    position: relative;
+    display: block;
+    /*float: left;*/
+}
+.four_lists ul li img.icon{
+    position: absolute;
+    width: 0.68rem;
+    height: 0.67rem;
+    left: -0.34rem;
+    top: -0.34rem;
+}
+.four_lists .list_one div{
+    height: 2.2rem;
+    padding: .2rem;
+    background-color: #F5F5F5;
+}
+.four_button{
+    padding: .1rem 0;
+}
+.four_button a{
+    width: 70%;
+    margin: 0 auto;
+    color: #fff;
+    display: block;
+    text-align: center;
+    font-size: .22rem;
+    padding: .1rem 0;
+    background-color: #168BD4;
+     border-top-left-radius: .25rem;
+     border-top-right-radius: .25rem;
+     border-bottom-left-radius: .25rem;
+     border-bottom-right-radius: .25rem;
 }
