@@ -439,6 +439,11 @@ header img,.header_banner img{
     background-image: url(../img/bg_yellow.jpg);
     padding: .1rem 0;
 }
+.infor_bottom{
+    width: 98%;
+    margin: .15rem auto;
+    border: 1px solid #8BC4E9;
+}
 .infor_top h3,.infor_top h4,.infor_bottom h3,.infor_bottom h4{
     text-align: center;
 }
@@ -514,4 +519,36 @@ header img,.header_banner img{
 }
 .middle_bottom div p span{
     font-size: .24rem;
+}
+/*底部二维码*/
+.footer{
+    overflow: hidden;
+}
+.footer div{
+    float: left;
+    text-align: center;
+    color: #fff;
+    width: 50%;
+    height: 2rem;
+}
+.footer_left{
+    padding: .3rem 0;
+    background-color: #0064B4;
+}
+.footer_left p{
+    font-size: .2rem;
+}
+.footer_left h3{
+    font-size: .24rem;
+}
+.footer_right{
+    background-color: #E4E4E4;
+    padding: .08rem 0;
+}
+.footer_right img{
+    width: 1.27rem;
+}
+.footer_right h3{
+    font-size: .22rem;
+    color: #C12C29;
 }
