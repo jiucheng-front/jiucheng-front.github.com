@@ -63,7 +63,7 @@ header img,.header_banner img{
     margin-top: .026rem;
 }
 .nav_top ul li a{
-    font-size: .22rem;
+    font-size: .26rem;
     color: #fff;
     display: block;
     line-height: .6rem;
@@ -98,7 +98,7 @@ header img,.header_banner img{
     padding:.1rem 0;
 }
 .message_middle p{
-    font-size: .2rem;
+    font-size: .24rem;
     color: #6E6C6B;
 }
 .message_middle{
@@ -201,7 +201,7 @@ header img,.header_banner img{
 }
 .list_one div{
     border-top: 1px solid #E6E6E6;
-    min-height: 1.5rem;
+    min-height: 1.8rem;
     padding: 0 .1rem;
 }
 .list_one img,.list_one div{
@@ -213,13 +213,13 @@ header img,.header_banner img{
     /*background-color: #E7E7E7;*/
 }
 .list_one h4{
-    font-size: .2rem;
+    font-size: .26rem;
     text-align: center;
     margin: .02rem 0;
 }
 .list_one p{
-    font-size: .18rem;
-    color: #504E4D;
+    font-size: .24rem;
+    color: #797776;
     line-height: .3rem;
     text-align: justify;
 }
@@ -495,7 +495,7 @@ header img,.header_banner img{
 .infor_middle p{
     color: #fff;
     text-indent: .4rem;
-    font-size: .18rem;
+    font-size: .24rem;
 }
 .middle_top{
     padding: .2rem .3rem;
@@ -541,11 +541,11 @@ header img,.header_banner img{
 }
 .middle_bottom div p{
     text-indent: .4rem;
-    font-size: .18rem;
+    font-size: .24rem;
     color: #fff;
 }
 .middle_bottom div p span{
-    font-size: .24rem;
+    font-size: .28rem;
 }
 /*底部二维码*/
 .footer{
@@ -563,11 +563,11 @@ header img,.header_banner img{
     background-color: #0064B4;
 }
 .footer_left p{
-    font-size: .2rem;
+    font-size: .22rem;
     color: #fff;
 }
 .footer_left h3{
-    font-size: .24rem;
+    font-size: .28rem;
 }
 .footer_right{
     background-color: #E4E4E4;
