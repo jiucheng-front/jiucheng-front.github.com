@@ -419,7 +419,7 @@ header img,.header_banner img{
     overflow: hidden;
 }
 .four_lists .list_one{
-    width: 45%;
+    width: 43%;
     position: relative;
     margin-left: .32rem;
     margin-top: .5rem;
@@ -437,7 +437,7 @@ header img,.header_banner img{
 }
 .four_lists .list_one div{
     height: 2.6rem;
-    padding: .2rem;
+    padding: .1rem;
     background-color: #F5F5F5;
 }
 .four_button{
