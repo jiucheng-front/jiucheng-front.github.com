@@ -242,6 +242,34 @@ header img,.header_banner img{
     background-image: url(../img/title_bg_01.jpg);
     background-size: cover;
 }
+.total_title p{
+    width: 72%;
+    height: .5rem;
+    background-image: url(../img/btn_bg.png);
+    background-repeat:no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    margin:.1rem auto;
+}
+.student_two .total_title p{
+    width: 71%;
+}
+.total_title p a{
+    float: left;
+    display: inline-block;
+    height: .5rem;
+    line-height: .5rem;
+}
+.title_left{
+    font-size: .18rem;
+    color: #fff;
+    margin-left: 17%;
+}
+.title_right{
+    font-size: .28rem;
+    color: #BA100E;
+    margin-left: 22%;
+}
 .total_title:before{
     content: "";
     display: table;
@@ -377,7 +405,7 @@ header img,.header_banner img{
     padding: .1rem 0;
 }
 .section_four .analyze_title{
-    width: 3.8rem;
+    width: 80%;
     border-color: #E6E6E6;
 }
 .section_four .analyze_title h3{
@@ -399,7 +427,6 @@ header img,.header_banner img{
 .four_lists ul li{
     position: relative;
     display: block;
-    /*float: left;*/
 }
 .four_lists ul li img.icon{
     position: absolute;
@@ -537,6 +564,7 @@ header img,.header_banner img{
 }
 .footer_left p{
     font-size: .2rem;
+    color: #fff;
 }
 .footer_left h3{
     font-size: .24rem;
