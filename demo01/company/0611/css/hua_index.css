@@ -84,7 +84,7 @@ header img, .header_banner img {
 }
 .tel_online img{
     width: .56rem;
-    margin: 0.05rem;
+    /*margin: 0.05rem;*/
 }
 .tel_online a{
     display: block;
@@ -93,7 +93,7 @@ header img, .header_banner img {
     font-size: .34rem;
 }
 .tel_online a span{
-    font-size: .46rem;
+    font-size: .4rem;
 }
 /*<!--腋臭治疗-->*/
 .nav_list ul,.nav_list ul li a{
@@ -119,16 +119,17 @@ header img, .header_banner img {
 }
 .hot_message ul li{
     position: relative;
-    margin-left: .13rem;
-    width: 31%;
+    margin-left: .065rem;
+    width: 32%;
 }
 .hot_message ul li>a{
-    font-size: .2rem;
+    font-size: .22rem;
     color: #fff;
     display: block;
     /*width: 31%;*/
     background-color: #878787;
-    padding: .1rem;
+    padding: .2rem .1rem;
+    text-align: center;
 }
 .hot_message ul li>a span{
     font-size: .15rem;
