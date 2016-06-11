@@ -18,6 +18,7 @@ body{
     width: 100%;
     min-width: 320px;
     margin: 0 auto;
+    box-shadow: 0 0 .2rem #5D5C61;
     /*border: 1px solid black;*/
 }
 /*LOGO*/
@@ -118,11 +119,11 @@ header img, .header_banner img {
     overflow: hidden;
 }
 .hot_message ul li{
-    position: relative;
     margin-left: .065rem;
     width: 32%;
 }
 .hot_message ul li>a{
+    position: relative;
     font-size: .22rem;
     color: #fff;
     display: block;
@@ -135,6 +136,60 @@ header img, .header_banner img {
     font-size: .15rem;
     color: #B4B4B4;
     text-transform: uppercase;
+}
+.hot_message ul li>a img{
+    position: absolute;
+    width: .14rem;
+    height: .07rem;
+    left: 50%;
+    bottom: -.08rem;
+}
+.hot_message ul li>a.have_selected{
+    background-color: #2582CD;
+}
+.hot_message ul li>a.have_selected span{
+    color: #76B0DF;
+}
+/*hot_list*/
+.hot_list{
+    position: relative;
+    height: 4.45rem;
+}
+.list_top{
+    overflow: hidden;
+    width: 85%;
+    margin: 0 auto;
+}
+.list_top img{
+    width: 47%;
+}
+.list_msg{
+    width: 98%;
+    margin:.1rem auto;
+}
+.list_msg ul li{
+    padding: .1rem .05rem;
+    border-bottom: 1px dashed #524F4E;
+}
+.list_msg ul li a{
+    display: block;
+    color: #524F4E;
+    width: 6rem;
+    font-size: .2rem;
+    padding-left: 10%;
+    background-image: url(../img/hot_list_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.list_one{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+}
+.hot_list .list_one:not(:nth-child(1)){
+    display: none;
 }
 @media screen and (min-width:767px){
     .container{width:640px;}
