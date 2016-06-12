@@ -376,7 +376,8 @@ header img, .header_banner img {
     color: #595858;
     background-color: #fff;
     text-align: center;
-    padding: .05rem;
+    height: .4rem;
+    line-height: .4rem;
 }
 .tec_two div li.tec_a{
      background-color: #9FAFC8;
