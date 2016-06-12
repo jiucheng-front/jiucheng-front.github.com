@@ -144,10 +144,10 @@ header img, .header_banner img {
     left: 50%;
     bottom: -.08rem;
 }
-.hot_message ul li>a.have_selected{
+.hot_message ul li.have_selected a{
     background-color: #2582CD;
 }
-.hot_message ul li>a.have_selected span{
+.hot_message ul li.have_selected a span{
     color: #76B0DF;
 }
 /*hot_list*/
@@ -163,15 +163,15 @@ header img, .header_banner img {
 .list_top img{
     width: 47%;
 }
-.list_msg{
+.list_msg,.list_meg_two{
     width: 98%;
     margin:.1rem auto;
 }
-.list_msg ul li{
+.list_msg ul li,.list_msg_two ul li{
     padding: .1rem .05rem;
     border-bottom: 1px dashed #524F4E;
 }
-.list_msg ul li a{
+.list_msg ul li a,.list_msg_two ul li a{
     display: block;
     color: #524F4E;
     width: 6rem;
@@ -179,6 +179,7 @@ header img, .header_banner img {
     line-height: .36rem;
     font-size: .24rem;
     overflow: hidden;
+    margin: 0 auto;
 }
 .span_left{
     font-size: .2rem;
@@ -194,9 +195,11 @@ header img, .header_banner img {
 }
 .span_right b{
     display: inline-block;
-    width: 23px;
-    height: 19px;
+    width: .23rem;
+    height: .2rem;
+    margin-right: .1rem;
     background-image: url(../img/hot_list_bg.png);
+    background-size: cover;
 }
 .list_one{
     position: absolute;
@@ -205,8 +208,191 @@ header img, .header_banner img {
     width: 100%;
     z-index: 9;
 }
+.list_msg_two ul li a b,.list_msg_two ul li a i{
+    display: inline-block;
+    margin-right: .2rem;
+    background-size: cover;
+}
+.list_msg_two ul li a b{
+    width: .26rem;
+    height: .2rem;
+    background-image: url(../img/hot_yellow_bg.png);
+}
+.list_msg_two ul li a i{
+    width: .19rem;
+    height: .21rem;
+    background-image: url(../img/hot_yel_two.png);
+}
+.list_msg_two ul li a span{
+    float: right;
+}
 .hot_list .list_one:not(:nth-child(1)){
     display: none;
+}
+/*    腋臭技术*/
+.tec_nog{
+    padding-top: .8rem;
+    position: relative;
+}
+.tec_head{
+    overflow: hidden;
+    padding: .1rem .18rem;
+    background-color: #005DAE;
+}
+.tec_head h3{
+    font-size: .26rem;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: .5rem;
+}
+.tec_head h3 span{
+    font-size: .22rem;
+    color: #4D8EC8;
+}
+.tec_head a{
+    font-size: .24rem;
+    padding: .1rem .2rem;
+    color: #fff;
+    background-color: #FF9600;
+    border-top-left-radius: .07rem;
+    border-top-right-radius: .07rem;
+    border-bottom-left-radius: .07rem;
+    border-bottom-right-radius: .07rem;
+}
+.tec_middle{
+    overflow: hidden;
+    width: 100%;
+    margin-top: .1rem;
+    padding: .1rem;
+    background-image: url(../img/bg_hu.jpg);
+    background-size: cover;
+}
+.tec_middle img{
+    width: 16%;
+}
+.tec_meg{
+    width: 83%;
+    text-align: center;
+}
+.tec_meg h2{
+    font-size: .36rem;
+    color: #0B67B4;
+    width: 90%;
+    margin: 0 auto;
+    padding: .1rem 0;
+    border-bottom: 1px solid #5C5B5A;
+}
+.tec_meg p{
+    font-size: .18rem;
+    color: #5C5B5A;
+    margin-top: .1rem;
+}
+.tec_meg span{
+    color: #FF0505;
+}
+/*bottom*/
+.tec_bottom{
+    padding: .15rem 0;
+}
+.tec_bottom h3{
+    color: #0B67B4;
+    font-size: .26rem;
+    width: 5.75rem;
+    height: .48rem;
+    margin:0 auto;
+    text-align: center;
+    line-height: .48rem;
+    background-image: url(../img/tec_h_bg.png);
+    background-size: cover;
+}
+.tec_one li{
+    overflow: hidden;
+}
+.tec_one li img{
+    float: left;
+    width: 1.84rem;
+}
+.tec_one li:not(:nth-child(1)){
+    margin-left: .115rem;
+}
+.tec_one div,.tec_one div ul{
+    overflow: hidden;
+}
+.tec_one div{
+    margin:.2rem auto;
+}
+.tec_one li b,.tec_one li i{
+    display: block;
+    width: .21rem;
+    height: .19rem;
+    margin: .47rem 0;
+    background-size: cover;
+}
+.tec_one li b{
+    background-image: url(../img/tec_small_01.png);
+}
+.tec_one li i{
+    background-image: url(../img/tec_small_03.png);
+}
+.tec_bg b{
+    display: block;
+    width: .19rem;
+    height: .21rem;
+    background-image: url(../img/tec_small_02.png);
+    background-size: cover;
+    margin-right: .81rem;
+}
+/*tec_two*/
+.tec_two div,.tec_two div ul{
+    overflow: hidden;
+}
+.tec_two div{
+    width: 98%;
+    margin:.2rem auto;
+}
+.tec_two div li{
+    float: left;
+    width: 1.2rem;
+}
+.tec_two div li:not(:nth-child(1)){
+    margin-left: .06rem;
+}
+.tec_two div li span{
+    font-size: .24rem;
+    color: #fff;
+    display: block;
+    text-align: center;
+    padding: .1rem 0;
+}
+.tec_two div li.tec_a span{
+    height: .82rem;
+    line-height: .62rem;
+}
+.tec_two div li p{
+    font-size: .22rem;
+    color: #595858;
+    background-color: #fff;
+    text-align: center;
+}
+.tec_two div li.tec_a{
+     background-color: #9FAFC8;
+     border: 1px solid #9fafc8;
+ }
+.tec_two div li.tec_b{
+    background-color: #CC754A;
+    border: 1px solid #CC754A;
+}
+.tec_two div li.tec_c{
+    background-color: #A68AD4;
+    border: 1px solid #A68AD4;
+}
+.tec_two div li.tec_d{
+    background-color: #CA5456;
+    border: 1px solid #CA5456;
+}
+.tec_two div li.tec_e{
+    background-color: #CEBA40;
+    border: 1px solid #CEBA40;
 }
 @media screen and (min-width:767px){
     .container{width:640px;}
