@@ -56,7 +56,7 @@ header img, .header_banner img {
     width: 24.65%;
 }
 .nav_top ul li a {
-    font-size: .26rem;
+    font-size: .3rem;
     color: #fff;
     display: block;
     line-height: .6rem;
@@ -120,14 +120,13 @@ header img, .header_banner img {
 }
 .hot_message ul li{
     margin-left: .065rem;
-    width: 32%;
+    /*width: 32%;*/
 }
 .hot_message ul li>a{
     position: relative;
-    font-size: .22rem;
+    font-size: .28rem;
     color: #fff;
     display: block;
-    /*width: 31%;*/
     background-color: #878787;
     padding: .2rem .1rem;
     text-align: center;
@@ -136,13 +135,6 @@ header img, .header_banner img {
     font-size: .15rem;
     color: #B4B4B4;
     text-transform: uppercase;
-}
-.hot_message ul li>a img{
-    position: absolute;
-    width: .14rem;
-    height: .07rem;
-    left: 50%;
-    bottom: -.08rem;
 }
 .hot_message ul li.have_selected a{
     background-color: #2582CD;
@@ -157,11 +149,11 @@ header img, .header_banner img {
 }
 .list_top{
     overflow: hidden;
-    width: 85%;
+    width: 95%;
     margin: 0 auto;
 }
 .list_top img{
-    width: 47%;
+    width: 49%;
 }
 .list_msg,.list_meg_two{
     width: 98%;
@@ -177,12 +169,11 @@ header img, .header_banner img {
     width: 6rem;
     height: 0.36rem;
     line-height: .36rem;
-    font-size: .24rem;
-    overflow: hidden;
+    font-size: .28rem;
     margin: 0 auto;
 }
 .span_left{
-    font-size: .2rem;
+    font-size: .24rem;
     padding: .04rem .1rem;
     border: 1px solid #FF0505;
     margin-right: .2rem;
@@ -241,13 +232,13 @@ header img, .header_banner img {
     background-color: #005DAE;
 }
 .tec_head h3{
-    font-size: .25rem;
+    font-size: .3rem;
     color: #fff;
     text-transform: uppercase;
     line-height: .5rem;
 }
 .tec_head h3 span{
-    font-size: .2rem;
+    font-size: .18rem;
     color: #4D8EC8;
 }
 .tec_head a{
@@ -526,7 +517,7 @@ header img, .header_banner img {
     padding: .2rem 0;
     background-color: #EEEFF1;
 }
-.test_list h3{
+.test_meg h3{
     font-size: .3rem;
     color: #0061B1;
     text-align: center;
@@ -536,11 +527,12 @@ header img, .header_banner img {
     width: 5.5rem;
     margin: 0 auto;
     border: 1px solid #A2C4DF;
-    overflow: hidden;
+    padding: .2rem 0;
 }
 .test_will p{
-    float: left;
-    margin-top: -.3rem;
+    font-size: .28rem;
+    height: .5rem;
+    line-height: .5rem;
 }
 .test_will p input{
     width: .28rem;
@@ -548,14 +540,13 @@ header img, .header_banner img {
 }
 .test_will p span{
     color: #4E4B4A;
-    font-size: .28rem;
     margin-left: .5rem;
 }
 /*提交测试*/
 .push_form p{
     font-size: .3rem;
     text-align: center;
-    line-height: .7rem;
+    line-height: .5rem;
     color: #4E4C4B;
 }
 .push_form p input{
@@ -566,14 +557,13 @@ header img, .header_banner img {
 }
 .total_btn p{
     overflow: hidden;
-    width: 75%;
+    width: 65%;
     margin: 0 auto;
     padding: .15rem 0;
 }
 .total_btn p a{
     display: inline-block;
-    padding: .1rem .4rem;
-    font-size: .3rem;
+    padding: 0 .3rem;
     color: #fff;
     border-top-left-radius: .07rem;
     border-top-right-radius: .07rem;
@@ -586,7 +576,7 @@ header img, .header_banner img {
 }
 .total_btn p a.btn_blue{
     background-color: #0061B1;
-    margin-left: .7rem;
+    margin-left: .5rem;
 }
 /**/
 .big_btn,.big_btn a{
@@ -613,22 +603,22 @@ header img, .header_banner img {
     width: 24.65%;
 }
 .foot_inf ul li a{
-    font-size: .26rem;
+    font-size: .3rem;
     color: #fff;
     display: block;
     line-height: .6rem;
     cursor: pointer;
 }
 .address_inf{
-    padding-bottom: .2rem;
+    padding: .2rem 0;
 }
 .address_inf p{
     font-size: .24rem;
     color:#6C6C6C;
     text-align: center;
-    height: .5rem;
-    line-height: .5rem;
-    margin: .1rem;
+    height: .4rem;
+    line-height: .4rem;
+    /*margin: .1rem;*/
 }
 .address_inf p span{
     color: #0061B1;
