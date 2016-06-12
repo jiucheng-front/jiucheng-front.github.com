@@ -175,7 +175,9 @@ header img, .header_banner img {
     display: block;
     color: #524F4E;
     width: 6rem;
-    font-size: .2rem;
+    height: .26rem;
+    line-height: .26rem;
+    font-size: .24rem;
     padding-left: 10%;
     background-image: url(../img/hot_list_bg.jpg);
     background-size: cover;
