@@ -561,6 +561,7 @@ header img, .header_banner img {
     width: 3.1rem;
     height: .45rem;
     border: 1px solid #C9C9C9;
+    font-size: .3rem;
 }
 .total_btn p{
     overflow: hidden;
