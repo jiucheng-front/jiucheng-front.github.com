@@ -120,11 +120,11 @@ header img, .header_banner img {
 }
 .hot_message ul li{
     margin-left: .065rem;
-    /*width: 32%;*/
+    width: 32%;
 }
 .hot_message ul li>a{
     position: relative;
-    font-size: .24rem;
+    font-size: .22rem;
     color: #fff;
     display: block;
     background-color: #878787;
@@ -132,7 +132,7 @@ header img, .header_banner img {
     text-align: center;
 }
 .hot_message ul li>a span{
-    font-size: .15rem;
+    font-size: .1rem;
     color: #B4B4B4;
     text-transform: uppercase;
 }
@@ -156,17 +156,16 @@ header img, .header_banner img {
     width: 49%;
 }
 .list_msg,.list_meg_two{
-    width: 98%;
+    width: 95%;
     margin:.1rem auto;
 }
 .list_msg ul li,.list_msg_two ul li{
-    padding: .1rem .05rem;
+    padding: .1rem 0;
     border-bottom: 1px dashed #524F4E;
 }
 .list_msg ul li a,.list_msg_two ul li a{
     display: block;
     color: #524F4E;
-    width: 6rem;
     height: 0.36rem;
     line-height: .36rem;
     font-size: .28rem;
