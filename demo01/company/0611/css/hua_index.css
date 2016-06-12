@@ -212,10 +212,11 @@ header img, .header_banner img {
     display: inline-block;
     margin-right: .2rem;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 .list_msg_two ul li a b{
-    width: .26rem;
-    height: .2rem;
+    width: .28rem;
+    height: .22rem;
     background-image: url(../img/hot_yellow_bg.png);
 }
 .list_msg_two ul li a i{
@@ -525,7 +526,7 @@ header img, .header_banner img {
     background-color: #EEEFF1;
 }
 .test_list h3{
-    font-size: .25rem;
+    font-size: .3rem;
     color: #0061B1;
     text-align: center;
     margin: .1rem 0;
@@ -541,13 +542,94 @@ header img, .header_banner img {
     margin-top: -.3rem;
 }
 .test_will p input{
-    width: .2rem;
-    height: .2rem;
+    width: .28rem;
+    height: .28rem;
 }
 .test_will p span{
     color: #4E4B4A;
-    font-size: .23rem;
-    margin-left: .8rem;
+    font-size: .28rem;
+    margin-left: .5rem;
+}
+/*提交测试*/
+.push_form p{
+    font-size: .3rem;
+    text-align: center;
+    line-height: .7rem;
+    color: #4E4C4B;
+}
+.push_form p input{
+    width: 3.1rem;
+    height: .45rem;
+    border: 1px solid #C9C9C9;
+}
+.total_btn p{
+    overflow: hidden;
+    width: 75%;
+    margin: 0 auto;
+    padding: .15rem 0;
+}
+.total_btn p a{
+    display: inline-block;
+    padding: .1rem .4rem;
+    font-size: .3rem;
+    color: #fff;
+    border-top-left-radius: .07rem;
+    border-top-right-radius: .07rem;
+    border-bottom-left-radius: .07rem;
+    border-bottom-right-radius: .07rem;
+
+}
+.total_btn p a.btn_yell{
+    background-color: #FF9600;
+}
+.total_btn p a.btn_blue{
+    background-color: #0061B1;
+    margin-left: .7rem;
+}
+/**/
+.big_btn,.big_btn a{
+    overflow: hidden;
+}
+.big_btn a{
+    display: block;
+    width: 6.16rem;
+    margin:.2rem auto;
+}
+.big_btn a img{
+    float: left;
+    width: 6.16rem;
+}
+/*医院简介*/
+.foot_inf,.foot_inf ul{
+    overflow: hidden;
+    width: 100%;
+}
+.foot_inf ul li{
+    background-color: #6C6C6C;
+    text-align: center;
+    height: .6rem;
+    width: 24.65%;
+}
+.foot_inf ul li a{
+    font-size: .26rem;
+    color: #fff;
+    display: block;
+    line-height: .6rem;
+    cursor: pointer;
+}
+.address_inf{
+    padding-bottom: .2rem;
+}
+.address_inf p{
+    font-size: .24rem;
+    color:#6C6C6C;
+    text-align: center;
+    height: .5rem;
+    line-height: .5rem;
+    margin: .1rem;
+}
+.address_inf p span{
+    color: #0061B1;
 }
 @media screen and (min-width:767px){
     .container{width:640px;}
