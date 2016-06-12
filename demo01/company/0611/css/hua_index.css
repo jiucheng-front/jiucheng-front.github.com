@@ -363,16 +363,17 @@ header img, .header_banner img {
     display: block;
     text-align: center;
     padding: .1rem 0;
+    height: .82rem;
 }
 .tec_two div li.tec_a span{
-    height: .82rem;
-    line-height: .62rem;
+    line-height: .72rem;
 }
 .tec_two div li p{
     font-size: .22rem;
     color: #595858;
     background-color: #fff;
     text-align: center;
+    padding: .05rem;
 }
 .tec_two div li.tec_a{
      background-color: #9FAFC8;
