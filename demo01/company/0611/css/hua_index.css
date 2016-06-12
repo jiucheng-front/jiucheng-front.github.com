@@ -175,13 +175,28 @@ header img, .header_banner img {
     display: block;
     color: #524F4E;
     width: 6rem;
-    height: .26rem;
-    line-height: .26rem;
+    height: 0.36rem;
+    line-height: .36rem;
     font-size: .24rem;
-    padding-left: 10%;
-    background-image: url(../img/hot_list_bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.span_left{
+    font-size: .2rem;
+    padding: .04rem .1rem;
+    border: 1px solid #FF0505;
+    margin-right: .2rem;
+}
+.span_left,.span_right{
+    color: #FF0505;
+}
+.span_right{
+    float: right;
+}
+.span_right b{
+    display: inline-block;
+    width: 23px;
+    height: 19px;
+    background-image: url(../img/hot_list_bg.png);
 }
 .list_one{
     position: absolute;
