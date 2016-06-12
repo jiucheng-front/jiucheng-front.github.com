@@ -240,13 +240,13 @@ header img, .header_banner img {
     background-color: #005DAE;
 }
 .tec_head h3{
-    font-size: .26rem;
+    font-size: .25rem;
     color: #fff;
     text-transform: uppercase;
     line-height: .5rem;
 }
 .tec_head h3 span{
-    font-size: .22rem;
+    font-size: .2rem;
     color: #4D8EC8;
 }
 .tec_head a{
@@ -310,10 +310,12 @@ header img, .header_banner img {
 }
 .tec_one li img{
     float: left;
-    width: 1.84rem;
+    width: 1.92rem;
+    padding: 1px;
+    border: 1px solid #A4A4A4;
 }
 .tec_one li:not(:nth-child(1)){
-    margin-left: .115rem;
+    margin-left: .05rem;
 }
 .tec_one div,.tec_one div ul{
     overflow: hidden;
@@ -394,6 +396,158 @@ header img, .header_banner img {
 .tec_two div li.tec_e{
     background-color: #CEBA40;
     border: 1px solid #CEBA40;
+}
+/*<!--华肤医生-->*/
+.doctor_pic{
+    overflow: hidden;
+    width: 6.2rem;
+    margin: 0 auto;
+    padding: .1rem 0;
+}
+.doctor_pic img{
+    width: 2rem;
+}
+.doctor_pic img:not(:nth-child(1)){
+    margin-left: .1rem;
+}
+.mis_liu{
+    overflow: hidden;
+    width: 6.25rem;
+    margin: 0 auto;
+    border: 1px solid #AFBCD1;
+    background-color: #FBFDFF;
+    padding: .1rem;
+}
+.mis_liu>img{
+    width: 1.5rem;
+}
+.miss_meg{
+    width: 4.4rem;
+}
+.miss_meg h3{
+    font-size: .36rem;
+    color:#0B67B4;
+    padding: .1rem;
+    border-bottom:1px solid #E1E3E5;
+}
+.miss_meg h3 span{
+    font-size: .22rem;
+    margin-left: .1rem;
+}
+.miss_meg p{
+    font-size: .22rem;
+    color: #696666;
+    height: .5rem;
+    line-height: .5rem;
+}
+.miss_meg p b{
+    display: inline-block;
+    width: .19rem;
+    height: .21rem;
+    background-image: url(../img/mis-star.png);
+    background-size: cover;
+    margin-right: .1rem;
+}
+.miss_meg p a{
+    color:#DD1212;
+}
+.tel_btn{
+    overflow: hidden;
+    width: 100%;
+    padding: .15rem;
+}
+.tel_btn a{
+    display: block;
+    overflow: hidden;
+    width: 5.1rem;
+    margin:0 auto;
+}
+.tel_btn a img{
+    width: 5.09rem;
+}
+/*<!--典型病例-->*/
+.sum_cases,.peo_discus{
+    padding: .1rem 0;
+}
+.case_list{
+    width: 96%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: .1rem 0;
+}
+.case_list img{
+    width: 2.9rem;
+}
+.get_more,.get_more a{
+    overflow: hidden;
+}
+.get_more a{
+    display: block;
+    width: .93rem;
+    margin: 0 auto;
+}
+.get_more a img{
+    width: .93rem;
+    border-radius: 50%;
+}
+/*患者点评*/
+.dis_mes{
+    background-color: #E2E2E2;
+    width: 100%;
+    height: 1.6rem;
+    margin: .15rem 0;
+}
+.dis_mes h2{
+    font-size: .4rem;
+    line-height: 1.6rem;
+    color: #4E4B4A;
+    text-align: center;
+}
+/*腋臭症状自测*/
+.test_have h3{
+    color: #DD1212;
+    background-color: #fff;
+    font-size: .25rem;
+    text-align: center;
+    padding: .1rem 0;
+}
+.test_have h3 b{
+    display:inline-block;
+    width: .25rem;
+    height: .21rem;
+    background-image: url(../img/small_call.png);
+    background-size: cover;
+    margin-right: .1rem;
+    margin-top: .06rem;
+}
+.test_meg{
+    padding: .2rem 0;
+    background-color: #EEEFF1;
+}
+.test_list h3{
+    font-size: .25rem;
+    color: #0061B1;
+    text-align: center;
+    margin: .1rem 0;
+}
+.test_will{
+    width: 5.5rem;
+    margin: 0 auto;
+    border: 1px solid #A2C4DF;
+    overflow: hidden;
+}
+.test_will p{
+    float: left;
+    margin-top: -.3rem;
+}
+.test_will p input{
+    width: .2rem;
+    height: .2rem;
+}
+.test_will p span{
+    color: #4E4B4A;
+    font-size: .23rem;
+    margin-left: .8rem;
 }
 @media screen and (min-width:767px){
     .container{width:640px;}
