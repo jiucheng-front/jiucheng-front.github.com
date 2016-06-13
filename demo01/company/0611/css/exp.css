@@ -141,13 +141,13 @@ h6 {
 	height: 1.91rem;
 }
 .expert .content dl .one {
-	-webkit-box-flex: 2.2;
-	-moz-box-flex: 2.2;
-	-webkit-flex: 2.2;
-	-ms-flex: 2.2;
-	flex: 2.2;
+	-webkit-box-flex: 2.4;
+	-moz-box-flex: 2.4;
+	-webkit-flex: 2.4;
+	-ms-flex: 2.4;
+	flex: 2.4;
 	width: 48%;
-	margin-left: 1%
+	margin-left: 2%
 }
 .expert .content dl .one .top {
 	height: .31rem;
