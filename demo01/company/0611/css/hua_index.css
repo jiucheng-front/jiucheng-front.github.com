@@ -222,7 +222,7 @@ header img, .header_banner img {
 }
 /*    腋臭技术*/
 .tec_nog{
-    padding-top: .8rem;
+    padding-top: 1.4rem;
     position: relative;
 }
 .tec_head{
@@ -393,73 +393,7 @@ header img, .header_banner img {
     border: 1px solid #CEBA40;
 }
 /*<!--华肤医生-->*/
-.doctor_pic{
-    overflow: hidden;
-    width: 6.2rem;
-    margin: 0 auto;
-    padding: .1rem 0;
-}
-.doctor_pic img{
-    width: 2rem;
-}
-.doctor_pic img:not(:nth-child(1)){
-    margin-left: .1rem;
-}
-.mis_liu{
-    overflow: hidden;
-    width: 6.25rem;
-    margin: 0 auto;
-    border: 1px solid #AFBCD1;
-    background-color: #FBFDFF;
-    padding: .1rem;
-}
-.mis_liu>img{
-    width: 1.5rem;
-}
-.miss_meg{
-    width: 4.4rem;
-}
-.miss_meg h3{
-    font-size: .36rem;
-    color:#0B67B4;
-    padding: .1rem;
-    border-bottom:1px solid #E1E3E5;
-}
-.miss_meg h3 span{
-    font-size: .22rem;
-    margin-left: .1rem;
-}
-.miss_meg p{
-    font-size: .22rem;
-    color: #696666;
-    height: .5rem;
-    line-height: .5rem;
-}
-.miss_meg p b{
-    display: inline-block;
-    width: .19rem;
-    height: .21rem;
-    background-image: url(../img/mis-star.png);
-    background-size: cover;
-    margin-right: .1rem;
-}
-.miss_meg p a{
-    color:#DD1212;
-}
-.tel_btn{
-    overflow: hidden;
-    width: 100%;
-    padding: .15rem;
-}
-.tel_btn a{
-    display: block;
-    overflow: hidden;
-    width: 5.1rem;
-    margin:0 auto;
-}
-.tel_btn a img{
-    width: 5.09rem;
-}
+
 /*<!--典型病例-->*/
 .sum_cases,.peo_discus{
     padding: .1rem 0;
