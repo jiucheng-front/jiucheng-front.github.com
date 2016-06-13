@@ -141,11 +141,11 @@ h6 {
 	height: 1.91rem;
 }
 .expert .content dl .one {
-	-webkit-box-flex: 2;
-	-moz-box-flex: 2;
-	-webkit-flex: 2;
-	-ms-flex: 2;
-	flex: 2;
+	-webkit-box-flex: 2.2;
+	-moz-box-flex: 2.2;
+	-webkit-flex: 2.2;
+	-ms-flex: 2.2;
+	flex: 2.2;
 	width: 48%;
 	margin-left: 1%
 }
@@ -217,7 +217,7 @@ h6 {
 	-moz-box-flex: 15%;
 	-webkit-flex: 15%;
 	-ms-flex: 15%;
-	flex: 15%;
+	flex: 30%;
 	width: 16%;
 	background: url(../images/zk.jpg) no-repeat;
 	background-size: 100% 100%;
@@ -226,7 +226,7 @@ h6 {
 	line-height: .28rem
 }
 .expert .content dl .one .btn .sc p {
-	font-size: .22rem;
+	font-size: .19rem;
 	-webkit-box-flex: 83%;
 	-moz-box-flex: 83%;
 	-webkit-flex: 83%;
