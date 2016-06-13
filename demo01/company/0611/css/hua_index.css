@@ -629,7 +629,8 @@ header img, .header_banner img {
 /*detail.html*/
 .have_left{
     position: relative;
-    padding-left: .3rem;
+    /*padding-left: .3rem;*/
+    overflow: hidden;
 }
 .have_left b{
     display: inline-block;
@@ -641,6 +642,17 @@ header img, .header_banner img {
     position: absolute;
     left: 0;
     top: .11rem;
+}
+.have_left img,.have_left span.home{
+    float: left;
+    font-size: .26rem;
+    color: #fff;
+}
+.have_left img{
+    margin-top: .1rem;
+    margin-right: .1rem;
+    width: .28rem;
+    height: .26rem;
 }
 .reason_list h3{
     font-size: .32rem;
