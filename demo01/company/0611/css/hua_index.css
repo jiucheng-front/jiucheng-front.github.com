@@ -235,6 +235,7 @@ header img, .header_banner img {
     color: #fff;
     text-transform: uppercase;
     line-height: .5rem;
+    height: .6rem;
 }
 .tec_head h3 span{
     font-size: .1rem;
