@@ -231,18 +231,19 @@ header img, .header_banner img {
     background-color: #005DAE;
 }
 .tec_head h3{
-    font-size: .3rem;
+    font-size: .26rem;
     color: #fff;
     text-transform: uppercase;
     line-height: .5rem;
 }
 .tec_head h3 span{
-    font-size: .18rem;
+    font-size: .1rem;
     color: #4D8EC8;
+    font-weight: 100;
 }
 .tec_head a{
-    font-size: .24rem;
-    padding: .1rem .2rem;
+    font-size: .22rem;
+    padding: .1rem;
     color: #fff;
     background-color: #FF9600;
     border-top-left-radius: .07rem;
@@ -313,6 +314,7 @@ header img, .header_banner img {
 }
 .tec_one div{
     margin:.2rem auto;
+    width: 100%;
 }
 .tec_one li b,.tec_one li i{
     display: block;
