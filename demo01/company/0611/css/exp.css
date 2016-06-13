@@ -137,7 +137,7 @@ h6 {
 }
 .expert .content dl dt img {
 	display: block;
-	max-width: 98%;
+	max-width: 108%;
 	height: 1.91rem;
 }
 .expert .content dl .one {
@@ -291,8 +291,8 @@ h6 {
 	width: 47%
 }
 .expert .content ul li p span {
-	width: .09rem;
-	height: .09rem;
+	width: .12rem;
+	height: .12rem;
 	display: inline-block;
 	background-color: #e7b4b8;
 	margin-left: .02rem
