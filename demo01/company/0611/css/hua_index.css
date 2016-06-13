@@ -642,7 +642,7 @@ header img, .header_banner img {
     top: .11rem;
 }
 .reason_list h3{
-    font-size: .3rem;
+    font-size: .32rem;
     color: #DD1212;
     text-align: center;
     margin: .2rem 0;
@@ -692,9 +692,10 @@ header img, .header_banner img {
     text-align: justify;
 }
 .list_msg h4{
-    font-size: .24rem;
+    font-size: .32rem;
     color: #0064B4;
     margin-top: .15rem;
+    font-weight: 200;
 }
 .list_msg p span{
     color: #DD1212;
