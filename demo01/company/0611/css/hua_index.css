@@ -128,10 +128,10 @@ header img, .header_banner img {
     color: #fff;
     display: block;
     background-color: #878787;
-    padding: .2rem .1rem;
+    padding: .2rem 0;
     text-align: center;
 }
-.hot_message ul li>a span{
+.hot_message ul li>a span.small_span{
     font-size: .1rem;
     color: #B4B4B4;
     text-transform: uppercase;
@@ -139,7 +139,7 @@ header img, .header_banner img {
 .hot_message ul li.have_selected a{
     background-color: #2582CD;
 }
-.hot_message ul li.have_selected a span{
+.hot_message ul li.have_selected a span.small_span{
     color: #76B0DF;
 }
 /*hot_list*/
@@ -155,7 +155,7 @@ header img, .header_banner img {
 .list_top img{
     width: 49%;
 }
-.list_msg,.list_meg_two{
+.list_msg,.list_msg_two{
     width: 95%;
     margin:.1rem auto;
 }
