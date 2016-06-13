@@ -307,7 +307,7 @@ header img, .header_banner img {
     padding: 1px;
     border: 1px solid #A4A4A4;
 }
-.tec_one li:not(:nth-child(1)){
+.tec_one li.sum_left{
     margin-left: .05rem;
 }
 .tec_one div,.tec_one div ul{
@@ -330,12 +330,9 @@ header img, .header_banner img {
 .tec_one li i{
     background-image: url(../img/tec_small_03.png);
 }
-.tec_bg b{
-    display: block;
+.tec_bg img{
     width: .19rem;
     height: .21rem;
-    background-image: url(../img/tec_small_02.png);
-    background-size: cover;
     margin-right: .81rem;
 }
 /*tec_two*/
