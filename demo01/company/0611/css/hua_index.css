@@ -228,7 +228,7 @@ header img, .header_banner img {
 .tec_head{
     overflow: hidden;
     padding: .1rem .18rem;
-    background-color: #005DAE;
+    background-color: #0061B1;
 }
 .tec_head h3{
     font-size: .26rem;
@@ -511,6 +511,7 @@ header img, .header_banner img {
     height: .21rem;
     background-image: url(../img/small_call.png);
     background-size: cover;
+    background-repeat: no-repeat;
     margin-right: .1rem;
     margin-top: .06rem;
 }
@@ -623,6 +624,83 @@ header img, .header_banner img {
 }
 .address_inf p span{
     color: #0061B1;
+}
+/*detail.html*/
+.have_left{
+    position: relative;
+    padding-left: .3rem;
+}
+.have_left b{
+    display: inline-block;
+    width: .28rem;
+    height: .26rem;
+    background-image: url(../img/reason_home.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: .11rem;
+}
+.reason_list h3{
+    font-size: .3rem;
+    color: #DD1212;
+    text-align: center;
+    margin: .2rem 0;
+    font-weight: 200;
+}
+.list_bg{
+    width: 6.4rem;
+    height: 1.64rem;
+    background-image: url(../img/reason_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.list_bg p,.list_bg p a{
+    overflow: hidden;
+}
+.list_bg p{
+    width: 4.1rem;
+    position: absolute;
+    left: 1.5rem;
+    bottom: .15rem;
+}
+.list_bg p input{
+    outline: none;
+    border: 1px solid #A3C8E0;
+    min-height: .4rem;
+    width: 2.5rem;
+    font-size: .25rem;
+    padding-left: .1rem;
+}
+.list_bg p input,.list_bg p a,.list_bg p a img{
+    float: left;
+}
+.list_bg p a img{
+    width: 1.44rem;
+    min-height: .4rem;
+}
+.list_msg{
+    background-color: #F6F6F6;
+    width: 100%;
+    padding: .2rem .3rem;
+}
+.list_msg p{
+    font-size: .28rem;
+    text-indent:2em;
+    color: #767473;
+    text-align: justify;
+}
+.list_msg h4{
+    font-size: .24rem;
+    color: #0064B4;
+    margin-top: .15rem;
+}
+.list_msg p span{
+    color: #DD1212;
+}
+.list_msg p:not(:nth-child(1)){
+    margin-top: .15rem;
 }
 @media screen and (min-width:767px){
     .container{width:640px;}
