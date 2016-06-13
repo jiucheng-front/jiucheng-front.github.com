@@ -250,13 +250,12 @@ h6 {
 	margin-top: .15rem;
 	height: .21rem;
 	line-height: .21rem;
-	font-size: .24rem;
+	font-size: .23rem;
 	color: #0064b4;
 	text-align: center
 }
 .expert .content dl .two .tetx {
-	width: 91%;
-	margin-left: .05rem;
+	width: 95%;
 	color: #a0a0a0;
 	background-color: #ceeffe;
 	border: solid 1px #a0a0a0;
