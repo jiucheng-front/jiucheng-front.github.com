@@ -231,11 +231,10 @@ header img, .header_banner img {
     background-color: #0061B1;
 }
 .tec_head h3{
-    font-size: .26rem;
+    font-size: .3rem;
     color: #fff;
     text-transform: uppercase;
     line-height: .5rem;
-    height: .64rem;
 }
 .tec_head h3 span{
     font-size: .1rem;
@@ -256,32 +255,9 @@ header img, .header_banner img {
     overflow: hidden;
     width: 100%;
     margin-top: .1rem;
-    padding: .1rem;
-    background-image: url(../img/bg_hu.jpg);
-    background-size: cover;
 }
 .tec_middle img{
-    width: 16%;
-}
-.tec_meg{
-    width: 83%;
-    text-align: center;
-}
-.tec_meg h2{
-    font-size: .36rem;
-    color: #0B67B4;
-    width: 90%;
-    margin: 0 auto;
-    padding: .1rem 0;
-    border-bottom: 1px solid #5C5B5A;
-}
-.tec_meg p{
-    font-size: .18rem;
-    color: #5C5B5A;
-    margin-top: .1rem;
-}
-.tec_meg span{
-    color: #FF0505;
+    width: 100%;
 }
 /*bottom*/
 .tec_bottom{
@@ -593,7 +569,7 @@ header img, .header_banner img {
     font-weight: 200;
 }
 .list_bg{
-    width: 6.4rem;
+    width: 100%;
     height: 1.64rem;
     background-image: url(../img/reason_bg.jpg);
     background-size: cover;
@@ -636,7 +612,7 @@ header img, .header_banner img {
     text-align: justify;
 }
 .list_msg h4{
-    font-size: .32rem;
+    font-size: .3rem;
     color: #0064B4;
     margin-top: .15rem;
     font-weight: 200;
