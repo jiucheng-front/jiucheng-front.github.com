@@ -24,7 +24,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo01/company/0614/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.032259">
+            <state vertical-scroll-proportion="-7.645161">
               <caret line="96" column="73" selection-start-line="96" selection-start-column="73" selection-end-line="96" selection-end-column="73" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -42,8 +42,8 @@
       <file leaf-file-name="sum_index.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/demo01/company/0614/css/sum_index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.63826084">
-              <caret line="110" column="22" selection-start-line="110" selection-start-column="22" selection-end-line="110" selection-end-column="22" />
+            <state vertical-scroll-proportion="-0.4921739">
+              <caret line="105" column="1" selection-start-line="105" selection-start-column="1" selection-end-line="105" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -87,8 +87,8 @@
       <file leaf-file-name="hua_index.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo01/company/0611/css/hua_index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.032258">
-              <caret line="273" column="4" selection-start-line="273" selection-start-column="4" selection-end-line="274" selection-end-column="27" />
+            <state vertical-scroll-proportion="-5.870968">
+              <caret line="274" column="27" selection-start-line="274" selection-start-column="27" selection-end-line="274" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -153,12 +153,12 @@
         <option value="$PROJECT_DIR$/demo01/company/0611/total.html" />
         <option value="$PROJECT_DIR$/demo01/company/0611/people/exp.html" />
         <option value="$PROJECT_DIR$/demo01/company/0611/css/exp.css" />
-        <option value="$PROJECT_DIR$/demo01/company/0611/css/hua_index.css" />
         <option value="$PROJECT_DIR$/demo01/company/index.html" />
         <option value="$PROJECT_DIR$/demo01/company/0611/js/mobile-adaptive.js" />
         <option value="$PROJECT_DIR$/demo01/company/0611/index.html" />
         <option value="$PROJECT_DIR$/demo01/company/0614/index.html" />
         <option value="$PROJECT_DIR$/demo01/company/0614/css/sum_index.css" />
+        <option value="$PROJECT_DIR$/demo01/company/0611/css/hua_index.css" />
       </list>
     </option>
   </component>
@@ -245,80 +245,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="company" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wjf444128852.github.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wjf444128852.github.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demo01" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="company" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="0614" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wjf444128852.github.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wjf444128852.github.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demo01" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="company" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="0614" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wjf444128852.github.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wjf444128852.github.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demo01" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="company" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="0614" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -410,7 +336,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="6" width="1370" height="744" extended-state="1" />
+    <frame x="0" y="6" width="1370" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22230428" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -789,14 +715,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo01/company/0611/css/hua_index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.032258">
-          <caret line="273" column="4" selection-start-line="273" selection-start-column="4" selection-end-line="274" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/demo01/company/0611/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.67742">
@@ -840,7 +758,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/demo01/company/0614/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.032259">
+        <state vertical-scroll-proportion="-7.645161">
           <caret line="96" column="73" selection-start-line="96" selection-start-column="73" selection-end-line="96" selection-end-column="73" />
           <folding>
             <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -854,10 +772,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/demo01/company/0611/css/hua_index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.870968">
+          <caret line="274" column="27" selection-start-line="274" selection-start-column="27" selection-end-line="274" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/demo01/company/0614/css/sum_index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.63826084">
-          <caret line="110" column="22" selection-start-line="110" selection-start-column="22" selection-end-line="110" selection-end-column="22" />
+        <state vertical-scroll-proportion="-0.4921739">
+          <caret line="105" column="1" selection-start-line="105" selection-start-column="1" selection-end-line="105" selection-end-column="1" />
           <folding />
         </state>
       </provider>
