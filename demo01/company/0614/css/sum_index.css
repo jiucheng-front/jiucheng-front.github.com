@@ -187,6 +187,120 @@ header img, .header_banner img {
     font-size: .19rem;
     color: #858383;
 }
+/*.太医堂治皮炎：查清类型，分型而治*/
+.three_top{
+    padding-top: .1rem;
+}
+.three_top,.top_two,.three_right,.three_right p{
+    overflow: hidden;
+}
+.top_two{
+    width: 98%;
+    margin:.1rem auto;
+}
+.top_two>img{
+    width: 39%;
+    padding: 1px;
+    border: 1px solid #C4C4C4;
+}
+.three_right{
+    width: 60%;
+    height: 1.6rem;
+    background-image: url(../img/three_rbg_02.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: .08rem;
+}
+.three_top h4{
+    font-size: .24rem;
+    color: #6F2625;
+    background-image: url(../img/three_head_bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: .1rem;
+    text-align: center;
+}
+.three_top h4 span{
+    color: #A67D18;
+}
+.three_right h5{
+    font-size: .22rem;
+    color: #6F2625;
+    text-align: center;
+}
+.three_right p{
+    font-size: .2rem;
+    color: #858383;
+}
+.three_right p img{
+    float: left;
+    width: .2rem;
+    height: .2rem;
+    border-radius: 50%;
+    margin-top: .04rem;
+    margin-right: .1rem;
+}
+/**/
+.three_list{
+    overflow: hidden;
+}
+.list_one dl{
+    width: 2.1rem;
+    height: 3.88rem;
+}
+.list_one dt{
+    height: .7rem;
+}
+.list_one dt.yellow{
+    background-image: url(../img/three_title_01.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.list_one dt.red{
+    background-image: url(../img/three_title_02.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.list_one dt h5{
+    font-size: .22rem;
+    color: #fff;
+    text-align: center;
+    padding: .03rem 0;
+    font-weight: 300;
+}
+.have_left{
+    margin-left: .05rem;
+}
+.list_one dt.yellow h5,.list_one dt.red h5.red_one{
+    line-height: .63rem;
+}
+.list_one dd{
+    overflow: hidden;
+}
+.list_one dd p{
+    font-size: .2rem;
+    color: #858383;
+    padding: .05rem;
+}
+.list_one dd.have_height{
+    width: 100%;
+    height: 1.66rem;
+}
+.list_one dd img{
+    width: 1.32rem;
+    height: 1.32rem;
+    border-radius: 50%;
+    margin:.1rem .39rem;
+    padding: 1px;
+    border:1px solid #C4C4C4;
+}
+/*太医堂治皮炎：优势在专家*/
+.mir_zhou a{
+    overflow: hidden;
+}
+.mir_zhou a img{
+    width: 100%;
+}
 @media screen and (min-width:767px){
     .container{width:640px;}
 }
