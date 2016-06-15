@@ -21,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/demo01/company/0614/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.0">
-              <caret line="288" column="64" selection-start-line="288" selection-start-column="64" selection-end-line="288" selection-end-column="64" />
+            <state vertical-scroll-proportion="0.63826084">
+              <caret line="290" column="10" selection-start-line="290" selection-start-column="10" selection-end-line="290" selection-end-column="10" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -44,10 +44,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sum_index.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sum_index.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo01/company/0614/css/sum_index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.72869563">
+            <state vertical-scroll-proportion="-13.5161295">
               <caret line="452" column="22" selection-start-line="452" selection-start-column="22" selection-end-line="452" selection-end-column="22" />
               <folding />
             </state>
@@ -162,8 +162,8 @@
         <option value="$PROJECT_DIR$/demo01/company/0611/js/mobile-adaptive.js" />
         <option value="$PROJECT_DIR$/demo01/company/0611/index.html" />
         <option value="$PROJECT_DIR$/demo01/company/0611/css/hua_index.css" />
-        <option value="$PROJECT_DIR$/demo01/company/0614/index.html" />
         <option value="$PROJECT_DIR$/demo01/company/0614/css/sum_index.css" />
+        <option value="$PROJECT_DIR$/demo01/company/0614/index.html" />
       </list>
     </option>
   </component>
@@ -794,10 +794,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/demo01/company/0614/css/sum_index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.5161295">
+          <caret line="452" column="22" selection-start-line="452" selection-start-column="22" selection-end-line="452" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/demo01/company/0614/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.0">
-          <caret line="288" column="64" selection-start-line="288" selection-start-column="64" selection-end-line="288" selection-end-column="64" />
+        <state vertical-scroll-proportion="0.63826084">
+          <caret line="290" column="10" selection-start-line="290" selection-start-column="10" selection-end-line="290" selection-end-column="10" />
           <folding>
             <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -812,14 +820,6 @@
             <element signature="n#div#1;n#div#6;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo01/company/0614/css/sum_index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.72869563">
-          <caret line="452" column="22" selection-start-line="452" selection-start-column="22" selection-end-line="452" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
