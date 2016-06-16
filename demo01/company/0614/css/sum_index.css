@@ -24,8 +24,12 @@ body{
     /*border: 1px solid black;*/
 }
 /*LOGO-banner*/
-header, .header_banner a{
+header,header a,.header_banner a{
     overflow: hidden;
+}
+header a{
+    display: block;
+    cursor: pointer;
 }
 header img, .header_banner img {
     float: left;
