@@ -17,7 +17,8 @@ body{
 }
 .container{
     position: relative;
-    width: 100%;
+    /*width: 100%;*/
+    max-width: 640px;
     min-width: 320px;
     margin: 0 auto;
     box-shadow: 0 0 .2rem #5D5C61;
@@ -459,6 +460,6 @@ header img, .header_banner img {
 .footer img{
     width: 100%;
 }
-@media screen and (min-width:767px){
-    .container{width:640px;}
-}
+/*@media screen and (min-width:767px){*/
+    /*.container{width:640px;}*/
+/*}*/

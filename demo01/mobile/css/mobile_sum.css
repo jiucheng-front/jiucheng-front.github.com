@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-family: Helvetica, STHeiTi, "Microsoft YaHei", sans-serif;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    overflow-x: hidden;
+    /*overflow-y: hidden;*/
+}
+.container{
+    position: relative;
+    max-width: 450px;
+    /*min-width: 320px;*/
+    margin: 0 auto;
+    box-shadow: 0 0 .2rem #5D5C61;
+    color: #858383;
+    font-size: .22rem;
+    background-image: url(../img/mobile_bg.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 5.82rem;
+    /*border: 1px solid black;*/
+}
+.container:before{
+    display: table;
+    content: "";
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.msg_list{
+    overflow: hidden;
+}
+.msg_list img{
+    width: 12%;
+}
+.who{
+    width: 75%;
+    margin-left:3%;
+}
+.who h4{
+    font-weight: 300;
+}
+.msg_list{
+    padding:2% ;
+    margin:5% 8%;
+    border-top:1px solid #5D5C61;
+    border-bottom:1px solid #5D5C61;
+}
+.parent{
+    margin-top: 40%;
+    padding-bottom:10%;
+}
+.will_open{
+    text-align: center;
+
+    /*background-color: red;*/
+}
+.will_open a{
+    font-size: .3rem;
+    color: #858383;
+}

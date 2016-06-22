@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>手机解锁</title>
+    <script src="js/mobile-adaptive.js"></script>
+    <script src="js/jquery-1.11.3.js"></script>
+    <link rel="stylesheet" href="css/mobile_sum.css">
+</head>
+<body>
+    <div class="container">
+        <div class="parent">
+            <div class="msg_list">
+                <img src="img/blue01.png" alt="" class="left">
+                <div class="who left">
+                    <h4>上帝早就了耶稣</h4>
+                    <p>记得回来给大家没人都带份辣条。</p>
+                </div>
+                <span class="right">刚刚</span>
+            </div>
+            <div class="msg_list">
+                <img src="img/wecat.png" alt="" class="left">
+                <div class="who left">
+                    <h4>奥巴马</h4>
+                    <p>明天记得过来会</p>
+                    <p>重要的事情说2遍</p>
+                </div>
+                <span class="right">刚刚</span>
+            </div>
+            <div class="will_open">
+                <a href="javascript:;" id="btn">上滑解锁</a>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    console.log(document.body.scrollHeight);
+//    console.log(document.documentElement.clientWidth);
+//    console.log(document.body.scrollWidth);
+//    (function(){
+    //        var width = 750;
+    //        var height = 1206;
+    //        var page = document.getElementsByClassName('container');
+    //        for(var i = 0; i < page.length; i++) {
+    //            page[i].style.height = document.documentElement.clientWidth/width*height + 'px';
+    //        }
+    //        window.onresize = function() {
+    //            for(var i = 0; i < page.length; i++) {
+    //                page[i].style.height = document.documentElement.clientWidth/width*height + 'px';
+    //            }
+    //        };
+    //    })();
+    $(function(){
+        (function(){
+            //var btn=$("#btn");
+            var y1,y2;
+            $(".will_open").mousedown(function(e){
+                y1=e.clientY;
+                $(this).bind("mousemove",function(e){
+                    y2=e.clientY;
+                    //console.log(y1);
+                });
+            });
+            $(this).mouseup(function(e){
+                //console.log(y1,y2);
+                if(y1-y2>=0){
+                    $(".parent").fadeOut(500);
+                    $(".container").css({
+                        "background-image": "url(img/m_black_bg.jpg)"
+                    });
+                }
+                $(".will_open").unbind("mousemove");
+            });
+        })();
+    });
+</script>
+</html>
