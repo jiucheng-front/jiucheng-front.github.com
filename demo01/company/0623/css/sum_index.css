@@ -261,8 +261,13 @@ header{
     padding: 1px;
     border: 1px solid #B6B5AF;
     position: relative;
-    margin-top: 15px;
     cursor: pointer;
+}
+.reason_list ul li{
+    margin-top: 15px;
+}
+.three_left li.will_top{
+    margin-top: 15px;
 }
 .reason_list ul li.have_left{
     margin-left: 12px;
@@ -511,6 +516,9 @@ header{
     line-height: 16px;
 }
 /*饮食篇*/
+.section_four .reason_list,.section_four .reason_list ul{
+    height: 210px;
+}
 .four_list{
     padding: 15px 0;
     height: 701px;
@@ -617,4 +625,125 @@ header{
 }
 .four_right h6{
     color: #6D953D;
+}
+/*常识篇*/
+.sum_peo{
+    height: 689px;
+    padding: 20px 0;
+}
+.five_left{
+    width: 660px;
+}
+.sum_top{
+    overflow: hidden;
+
+    height: 431px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/sum_big.jpg);
+}
+.sum_top div{
+    width: 380px;
+    margin: 10px 0;
+    padding:0 15px;
+}
+.sum_top h2{
+    color: #0064B4;
+    font-size: 42px;
+    margin: 15px 0;
+}
+.sum_top h2 span{
+    font-size: 18px;
+}
+.sum_top div>p{
+    position: relative;
+    color: #0064B4;
+    padding-left: 30px;
+    font-size: 15px;
+}
+.sum_top div>p:before{
+    display: table;
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: #CDCDCD;
+    left: 15px;
+    top: 5px;
+}
+.sum_top li span{
+    color: #0064B4;
+    text-align: center;
+    line-height: 42px;
+    width: 44px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/zk.jpg);
+    position: relative;
+    top: -3px;
+}
+.sum_top li span,.sum_top li p{
+    display: inline-block;
+}
+.sum_top li{
+    position: relative;
+    margin-top: 20px;
+}
+.sum_top li.five_selected{
+    border: 1px dashed #0064B4;
+    height: 42px;
+}
+.sum_top li p{
+    width: 80%;
+    padding-left: 10px;
+    position: relative;
+    top:5px;
+}
+.sum_top li p,.sum_top li p a{
+    font-size: 12px;
+    color: #565656;
+}
+.sum_top li img{
+    width: 100%;
+}
+.sum_top li>a{
+    text-align: center;
+    display: block;
+    width: 138px;
+    padding: 10px;
+    background-color: #FB6800;
+    font-size: 15px;
+    color: #fff;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+.sum_middle{
+    margin-top: 15px;
+}
+.sum_middle ul{
+    overflow: hidden;
+}
+.sum_middle ul li img{
+    width: 160px;
+}
+.sum_middle ul li.have_left{
+    margin-left: 6px;
+}
+.total_title b.five_small {
+    left: 55px;
+}
+.sum_bottom .reason_list ul li{
+    width: 323px;
+}
+.sum_bottom .reason_list ul,.sum_bottom .reason_list{
+    height: 110px;
+}
+.three_left li.have_top{
+    margin-top: 20px;
+}
+/**/
+.five_right{
+    width: 330px;
 }
