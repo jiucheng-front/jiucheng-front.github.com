@@ -237,8 +237,14 @@ header{
     padding:10px;
 }
 /*img*/
-.sum_img,.sum_img ul,.reason_list,.reason_list ul.list_msg,.list_msg ul{
+.sum_img,.sum_img ul,.list_msg,.list_msg ul{
     /*overflow: hidden;*/
+}
+.sum_img,.sum_img ul{
+    height: 110px;
+}
+.reason_list,.reason_list ul{
+    height: 150px;
 }
 .sum_img{
     padding-top: 10px;
@@ -445,7 +451,6 @@ header{
 }
 /*诊断篇*/
 .three_list{
-    height: 430px;
     margin-top: 20px;
 }
 .three_left{
@@ -504,4 +509,112 @@ header{
 .three_right p{
     font-size: 14px;
     line-height: 16px;
+}
+/*饮食篇*/
+.four_list{
+    padding: 15px 0;
+    height: 701px;
+}
+.total_title b.small{
+    left: 105px;
+}
+.four_left dl{
+    overflow: hidden;
+}
+.four_list ul{
+    width: 470px;
+}
+.four_list h5{
+    font-size: 16px;
+    position: relative;
+    padding-left: 10px;
+}
+.four_list h5 span{
+    font-size: 20px;
+}
+.four_left h5{
+    color: #A51818;
+}
+.four_list h6 b{
+    font-size: 38px;
+    color: #C2C2C2;
+    font-weight: 300;
+    font-style: italic;
+}
+.four_list p{
+    text-indent: 2em;
+    font-size: 12px;
+    color: #565656;
+    padding: 5px 10px;
+}
+.four_list h6 span{
+    font-size: 16px;
+    margin: 0 5px;
+}
+.four_list h6{
+    font-size: 14px;
+    border-bottom: 1px dashed #CDCDCD;
+}
+.four_left h6{
+    color: #215B27;
+}
+.four_list li,.four_list dl{
+    position: relative;
+    height: 190px;
+}
+.four_list li{
+    margin-top: 25px;
+}
+.four_list li dl:before,.four_list li:after,.four_list h5:before{
+    display: table;
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+}
+.four_list li dl:before{
+    width: 200px;
+    height: 200px;
+    border: 1px solid #CDCDCD;
+    left: 0;
+    top: 0;
+}
+.four_list li:after,.four_list h5:before{
+    width: 10px;
+    height: 10px;
+    background-color: #CDCDCD;
+    left: -5px;
+}
+.four_list li:after{
+    top: 93px;
+}
+.four_list h5:before{
+    top: 8px;
+}
+.four_list dt,.four_list dd{
+    position: absolute;
+}
+.four_list dt{
+    left: 13px;
+    top: 10px;
+}
+.four_list dd{
+    left: 187px;
+    top: 30px;
+    background-color: #fff;
+    z-index: 10;
+    width: 280px;
+    /*box-shadow:0px 10px 5px #000;*/
+    box-shadow: 2px 2px 5px #CDCDCD;
+}
+.four_left h6 span{
+    color: #A51818;
+}
+.four_left,.four_right{
+    border-left: 1px solid #CDCDCD;
+}
+.four_right h5,.four_right h6 span{
+    color: #1E5923;
+}
+.four_right h6{
+    color: #6D953D;
 }
