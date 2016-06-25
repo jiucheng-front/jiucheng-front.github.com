@@ -747,3 +747,41 @@ header{
 .five_right{
     width: 330px;
 }
+/*底部*/
+footer{
+
+}
+.nav_bottom{
+    background-color: #2767AE;
+}
+.nav_bar{
+    overflow: hidden;
+}
+.nav_bar li{
+    margin-left: 15px;
+}
+.nav_bar a{
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    padding:10px;
+}
+.footer_logo{
+    background-color: #F7F7F9;
+}
+.footer_list{
+    overflow: hidden;
+    padding: 10px 0;
+}
+.footer_left{
+    margin-top: 20px;
+}
+.footer_middle{
+    width: 430px;
+    border-left: 1px solid #C9C9C9;
+    padding-left: 15px;
+}
+.footer_middle p{
+    font-size: 14px;
+    color: #565656;
+}
