@@ -128,7 +128,7 @@ li.infro_four img{
     background-color: #913195;
 }
 .blue_btn{
-    background-color: #41A6D2;
+    background-color: #65BBD6;
 }
 .infro_five a{
     margin-left: .69rem;
@@ -236,6 +236,7 @@ li.infro_four img{
 .total_sum h4{
     color: #41A6D2;
     font-size: .24rem;
+    font-weight: 300;
 }
 .total_sum p{
     text-transform:uppercase;
@@ -341,4 +342,44 @@ li.infro_four img{
 }
 .two_list_right li.have_top{
     margin-top: .2rem;
+}
+/*荣誉奖项*/
+.section_one,.section_two,.section_three{
+    padding: .1rem 0    ;
+}
+.three_list{
+    width: 100%;
+    height: 4.11rem;
+    background-image: url(../img/three_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    margin-top: .1rem;
+}
+.three_btn{
+    position: absolute;
+    left: .2rem;
+    bottom: .4rem;
+    width: 1.5rem;
+}
+.three_btn a.five_btn{
+    margin-top: .1rem;
+}
+/*行医之道*/
+.four_list{
+    width: 100%;
+    height: 3.22rem;
+    background-image: url(../img/four_list_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    margin-top: .1rem;
+}
+.four_btn{
+    position: absolute;
+    left: 30%;
+    bottom: .3rem;
+}
+.four_btn a.five_btn{
+    margin-left: .15rem;
 }
