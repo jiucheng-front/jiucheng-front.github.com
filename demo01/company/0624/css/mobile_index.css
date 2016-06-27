@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-family: Helvetica, STHeiTi, "Microsoft YaHei", sans-serif;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+.will_left {
+    float: left;
+}
+.will_right{
+    float: right;
+}
+.container{
+    position: relative;
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+    box-shadow: 0 0 .2rem #5D5C61;
+}
+/*@media screen and (min-width:767px){*/
+    /*.container{width:640px;}*/
+/*}*/
+/*顶部LOGO*/
+header,header a{
+    overflow: hidden;
+}
+header a{
+    display: block;
+}
+header img,header a{
+    float: left;
+}
+.logo_same{
+    width: .84rem;
+}
+.logo_big{
+    width: 4.72rem;
+}
+/*王璐*/
+.doctor_infro{
+    padding: .1rem;
+    background-color: #F6F5F4;
+    margin-top: .1rem;
+}
+.infro{
+    width: 2.8rem;
+}
+.infro_right{
+    width: 3.3rem;
+}
+.doctor_infro,.doctor_infro li{
+    overflow: hidden;
+    position: relative;
+}
+.doctor_infro li.one span,.doctor_infro li.one div{
+    float: left;
+}
+li.one span{
+    font-size: .4rem;
+    color: #913195;
+}
+li.one h6{
+    color:#B6B5AF;
+    font-size: .15rem;
+}
+li.one p{
+    font-size: .35rem;
+    color: #D2B9D0;
+}
+li.two h3{
+    width: 2.65rem;
+    height: .49rem;
+    text-align: center;
+    line-height: .49rem;
+    color: #913195;
+    font-size: .2rem;
+    background-image: url(../img/lu_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+li.three p{
+    color: #B6B5AF;
+    font-size: .14rem;
+    float: left;
+    line-height: .21rem;
+    border: 1px solid #42A9CB;
+}
+li.three a{
+    padding: .02rem .05rem;
+    background-color: #42A9CB;
+    color: #fff;
+    font-size: .14rem;
+    float: left;
+}
+li.three p span{
+    padding: .02rem;
+    border-left:1px solid #42A9CB;
+}
+li.four img{
+    width: 2.8rem;
+}
+.five_btn{
+    font-size: .22rem;
+    color: #fff;
+    padding: .05rem 0;
+    padding-left: .2rem;
+    padding-right: .4rem;
+    float: left;
+    position: relative;
+    background-color: #913195;
+}
+.five_btn:after{
+    display: table;
+    content: "";
+    width: .18rem;
+    height: .16rem;
+    position: absolute;
+    background-image: url(../img/pink_small.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: .14rem;
+    right:.1rem;
+}
+.two,.three,.four,.five{
+    margin-top: .08rem;
+}
