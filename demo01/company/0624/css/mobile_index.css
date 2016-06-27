@@ -92,8 +92,9 @@ li.three p{
     color: #B6B5AF;
     font-size: .14rem;
     float: left;
-    line-height: .21rem;
+    /*line-height: .21rem;*/
     border: 1px solid #42A9CB;
+    padding:1px 0;
 }
 li.three a{
     padding: .02rem .05rem;
@@ -103,8 +104,10 @@ li.three a{
     float: left;
 }
 li.three p span{
-    padding: .02rem;
-    border-left:1px solid #42A9CB;
+    padding:0 .02rem;
+}
+li.three p span.have_right{
+    border-right:1px solid #42A9CB;
 }
 li.four img{
     width: 2.8rem;
@@ -128,7 +131,7 @@ li.four img{
     background-image: url(../img/pink_small.png);
     background-repeat: no-repeat;
     background-size: cover;
-    top: .14rem;
+    top: .11rem;
     right:.1rem;
 }
 .two,.three,.four,.five{
