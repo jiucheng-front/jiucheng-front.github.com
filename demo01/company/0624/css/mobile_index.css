@@ -62,22 +62,22 @@ header img,header a{
     overflow: hidden;
     position: relative;
 }
-.doctor_infro li.one span,.doctor_infro li.one div{
+.doctor_infro li.infro_one span,.doctor_infro li.infro_one div{
     float: left;
 }
-li.one span{
+li.infro_one span{
     font-size: .4rem;
     color: #913195;
 }
-li.one h6{
+li.infro_one h6{
     color:#B6B5AF;
     font-size: .15rem;
 }
-li.one p{
+li.infro_one p{
     font-size: .35rem;
     color: #D2B9D0;
 }
-li.two h3{
+li.infro_two h3{
     width: 2.65rem;
     height: .49rem;
     text-align: center;
@@ -88,7 +88,7 @@ li.two h3{
     background-repeat: no-repeat;
     background-size: cover;
 }
-li.three p{
+li.infro_three p{
     color: #B6B5AF;
     font-size: .14rem;
     /*float: left;*/
@@ -96,22 +96,22 @@ li.three p{
 
     overflow: hidden;
 }
-li.three p a,li.three p span{
+li.infro_three p a,li.infro_three p span{
     padding: 1px 2px;
     float: left;
     border: 1px solid #42A9CB;
     border-left: none;
 }
-li.three a{
+li.infro_three a{
     background-color: #42A9CB;
     color: #fff;
     font-size: .14rem;
     float: left;
 }
-li.three p span.have_right{
+li.infro_three p span.have_right{
     border-right:1px solid #42A9CB;
 }
-li.four img{
+li.infro_four img{
     width: 2.8rem;
 }
 .five_btn,.blue_btn{
@@ -130,10 +130,10 @@ li.four img{
 .blue_btn{
     background-color: #41A6D2;
 }
-.five a{
+.infro_five a{
     margin-left: .69rem;
 }
-.five{
+.infro_five{
     height: .4rem;
 }
 .five_btn:after,.blue_btn:after{
@@ -153,7 +153,7 @@ li.four img{
 .blue_btn:after{
     background-image: url(../img/blue_small.png);
 }
-.two,.three,.four,.five{
+.infro_two,.infro_three,.infro_four,.infro_five{
     margin-top: .08rem;
 }
 /*首席专家*/
@@ -164,6 +164,7 @@ li.four img{
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    overflow: hidden;
 }
 .detail_left{
     font-size: .14rem;
@@ -174,12 +175,13 @@ li.four img{
     top: 1.2rem;
 }
 .detail_left li{
-    padding-bottom: 2px;
+    padding:1px 0;
     border-bottom: 1px solid #717172;
     cursor: pointer;
 }
 .detail_left span{
     color: #913195;
+    cursor: pointer;
 }
 .detail_left p{
     margin-top: .3rem;
@@ -193,4 +195,150 @@ li.four img{
 }
 .detail_right a.five_btn{
     margin-top: .15rem;
+}
+/*他们都说*/
+.one_top{
+    width: 100%;
+    height: .8rem;
+    position: relative;
+    background-image: url(../img/total_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.one_top h3{
+    font-size: .32rem;
+    text-align: center;
+    padding-top: .1rem;
+}
+
+.one_top h3 span,.one_top a{
+    color: #913195;
+}
+.one_top h3 span{
+    margin-left: .1rem;
+}
+.one_top a{
+    position: absolute;
+    right: .15rem;
+    bottom: .2rem;
+    font-size: .22rem;
+}
+.one_top h3 b{
+    background-color: #D4B5D5;
+    color: #fff;
+    border-radius: 50%;
+    font-weight: 300;
+    padding: .05rem;
+}
+.total_sum{
+    text-align: center;
+}
+.total_sum h4{
+    color: #41A6D2;
+    font-size: .24rem;
+}
+.total_sum p{
+    text-transform:uppercase;
+    color: #CECECE;
+    font-size: .1rem;
+}
+/*重获新生*/
+.one_list_top{
+    overflow: hidden;
+    padding-top: .15rem;
+}
+.sad_left{
+    width: 58%;
+    position: relative;
+}
+.sad_left a{
+    font-size: .15rem;
+    color: #fff;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    background-color: #A4A4A4;
+    padding: .1rem 0;
+    border-radius: 5px;
+}
+.sad_left a.will_pink{
+    background-color: #B96EBC;
+}
+.sad_left li{
+    margin-top: .19rem;
+}
+.sad_left:before,.sad_left:after{
+    display: table;
+    content: "";
+    position: relative;
+    width: 100%;
+    height: .22rem;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.sad_left:before{
+    background-image: url(../img/one_list_01.jpg);
+}
+.sad_left:after{
+    background-image: url(../img/one_list_02.jpg);
+    margin-top: .18rem;
+}
+.one_list_top img{
+    width: 40%;
+}
+.one_list_middle{
+    margin: .1rem 0;
+}
+.one_list_middle,.one_list_middle li{
+    overflow: hidden;
+}
+.one_list_middle img{
+    width: 1.55rem;
+}
+.one_list_middle li.have_left{
+    margin-left: .066rem;
+}
+.one_list_bottom{
+    overflow: hidden;
+    margin: 0 auto;
+    padding: .1rem 0;
+}
+.one_list_bottom a.five_btn{
+    margin-left: .2rem;
+}
+.one_list_bottom a.blue_btn{
+    margin-left: 20%;
+}
+/**/
+.two_list_left{
+    width: 40%;
+    margin-left: .1rem;
+}
+.two_list_left img{
+    width: 100%;
+}
+.two_list_right{
+    width: 56%;
+}
+.two_list_right img{
+    width: 1.64rem;
+}
+.two_list_right li{
+    float: left;
+}
+.two_list_btn a{
+    margin-left: .05rem;
+}
+.two_list,.two_list div,.two_list_right li{
+    overflow: hidden;
+}
+.two_list_btn{
+    margin-top: .25rem;
+}
+.two_list_right li.have_left{
+    margin-left: .2rem;
+}
+.two_list_right li.have_top{
+    margin-top: .2rem;
 }
