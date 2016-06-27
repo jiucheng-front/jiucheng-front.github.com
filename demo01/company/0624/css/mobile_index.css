@@ -91,20 +91,22 @@ li.two h3{
 li.three p{
     color: #B6B5AF;
     font-size: .14rem;
-    float: left;
+    /*float: left;*/
     /*line-height: .21rem;*/
+
+    overflow: hidden;
+}
+li.three p a,li.three p span{
+    padding: 1px 2px;
+    float: left;
     border: 1px solid #42A9CB;
-    padding:1px 0;
+    border-left: none;
 }
 li.three a{
-    padding: .02rem .05rem;
     background-color: #42A9CB;
     color: #fff;
     font-size: .14rem;
     float: left;
-}
-li.three p span{
-    padding:0 .02rem;
 }
 li.three p span.have_right{
     border-right:1px solid #42A9CB;
@@ -121,6 +123,13 @@ li.four img{
     float: left;
     position: relative;
     background-color: #913195;
+    /*position: absolute;*/
+    /*left: 50%;*/
+    /*transform: translateX(-50%);*/
+    margin-left: .69rem;
+}
+.five{
+    height: .4rem;
 }
 .five_btn:after{
     display: table;
