@@ -114,35 +114,83 @@ li.three p span.have_right{
 li.four img{
     width: 2.8rem;
 }
-.five_btn{
-    font-size: .22rem;
+.five_btn,.blue_btn{
+    font-size: .2rem;
     color: #fff;
     padding: .05rem 0;
     padding-left: .2rem;
     padding-right: .4rem;
     float: left;
     position: relative;
+    border-radius: 5px;
+}
+.five_btn{
     background-color: #913195;
-    /*position: absolute;*/
-    /*left: 50%;*/
-    /*transform: translateX(-50%);*/
+}
+.blue_btn{
+    background-color: #41A6D2;
+}
+.five a{
     margin-left: .69rem;
 }
 .five{
     height: .4rem;
 }
-.five_btn:after{
+.five_btn:after,.blue_btn:after{
     display: table;
     content: "";
     width: .18rem;
     height: .16rem;
     position: absolute;
-    background-image: url(../img/pink_small.png);
     background-repeat: no-repeat;
     background-size: cover;
     top: .11rem;
     right:.1rem;
 }
+.five_btn:after{
+    background-image: url(../img/pink_small.png);
+}
+.blue_btn:after{
+    background-image: url(../img/blue_small.png);
+}
 .two,.three,.four,.five{
     margin-top: .08rem;
+}
+/*首席专家*/
+.doctor_detail{
+    width: 100%;
+    height: 3.2rem;
+    background-image: url(../img/miss_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.detail_left{
+    font-size: .14rem;
+    width: 3rem;
+    color: #717172;
+    position: absolute;
+    left: 1.15rem;
+    top: 1.2rem;
+}
+.detail_left li{
+    padding-bottom: 2px;
+    border-bottom: 1px solid #717172;
+    cursor: pointer;
+}
+.detail_left span{
+    color: #913195;
+}
+.detail_left p{
+    margin-top: .3rem;
+}
+.detail_right{
+    width: 1.83rem;
+    position: absolute;
+    height: .9rem;
+    right: .2rem;
+    bottom: .3rem;
+}
+.detail_right a.five_btn{
+    margin-top: .15rem;
 }
