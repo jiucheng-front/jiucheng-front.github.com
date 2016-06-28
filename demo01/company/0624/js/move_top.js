@@ -13,6 +13,6 @@ window.onload=function(){
                 a=0;
                 moveItem.style.top=a+"rem";
             }
-        },3000);
+        },4000);
     })()
 };

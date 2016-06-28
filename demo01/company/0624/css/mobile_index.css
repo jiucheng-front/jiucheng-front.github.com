@@ -564,3 +564,14 @@ li.infro_four img{
     padding-top: .25rem;
     padding-right: .1rem;
 }
+/*二维码*/
+.logo_er{
+    position: absolute;
+    overflow: hidden;
+    right: .25rem;
+    bottom: .6rem;
+}
+.logo_er img{
+    float: left;
+    width:.87rem;
+}
