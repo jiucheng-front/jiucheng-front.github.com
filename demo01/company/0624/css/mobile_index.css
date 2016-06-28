@@ -423,6 +423,7 @@ li.infro_four img{
 .answer_left ul{
     box-shadow: 0 0 .1rem #913195;
     padding-left: .1rem;
+    border-radius: .1rem;
 }
 .answer_btn{
     overflow: hidden;
@@ -574,4 +575,52 @@ li.infro_four img{
 .logo_er img{
     float: left;
     width:.87rem;
+}
+/*nav*/
+.sum_nav{
+    background-color: #7D7D7D;
+    padding: .1rem 0;
+    border-top: 1px dashed #fff;
+}
+.sum_nav ul li dt a{
+    display: block;
+}
+.sum_nav ul,.sum_nav ul li dt a{
+    overflow: hidden;
+}
+.sum_nav ul li,.sum_nav ul li img{
+    float: left;
+}
+.sum_nav ul li{
+    width: 20%;
+}
+.sum_nav ul li img{
+    border-radius: 50%;
+    width: 1.1rem;
+    cursor: pointer;
+    margin-left: .09rem;
+}
+.sum_nav li dd span{
+    font-size: .2rem;
+    color: #fff;
+    display: block;
+    text-align: center;
+}
+/*footer*/
+footer{
+    position: relative;
+    margin-top: .1rem;
+    width: 6.4rem;
+    height: 1.2rem;
+    background-image: url(../img/footer_logo_03.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+footer a{
+    display: block;
+    position: absolute;
+    color: #fff;
+    font-size: .22rem;
+    right: .2rem;
+    bottom: .32rem;
 }
