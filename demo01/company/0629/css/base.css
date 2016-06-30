@@ -652,3 +652,19 @@ footer section i{
 .hui{ width:13%; display:inline; position:fixed; bottom:10%; right:2%;}
 .hui a{ width:100%;}
 .hui img{ width:100%;}
+/*¡£¡£*/
+ #expert { position:relative; }
+#expert dl { overflow:hidden; width:100%; background:#008f9d; }
+#expert dt { float:left; width:48.9%; }
+#expert dt img ,#expert dd img { width:100%; }
+#expert dd { width:51%; float:left; color:#fff; font-size:0.375rem; line-height:197%; }
+#expert dd em { display:block; font-size:0.515rem; padding-left:7%; line-height:127%; padding-bottom:2.3%; }
+#expert dd p { line-height:187.5%; margin:0 1.5%; border-top:1px dashed #fff; border-bottom:1px dashed #fff; padding:3.4% 0; font-size:0.34375rem; }
+#expert dd p span { padding:0 6%; display:inline-block; width:7.6%; vertical:middle; }
+#expert dd p span img{ width:100%; }
+#expert dd div { padding:0 0 0 5.1%; }
+#expert dd a { display:block; width:79%; margin:6% auto 0; background:#f29600; color:#fff; text-align:center; font-size:0.40625rem; line-height:169%; border:1px solid #fff; }
+#expert dd a img { vertical-align:text-bottom; padding-left:3.4%; width:11%; }
+#expert .prev,#expert .next { position:absolute; left:0; top:37.6%; display:block; z-index: 3; width:9%; }
+#expert .next { left:auto; right:0; }
+#expert .prev img,#expert .next img { width:100%; }
