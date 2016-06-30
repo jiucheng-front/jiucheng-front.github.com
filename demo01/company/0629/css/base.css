@@ -648,3 +648,7 @@ footer section i{
 .noBr{ border-right:none !important;}
 .noBb{ border-bottom:none !important;}
 .noBl{ border-left:none !important;}
+/**/
+.hui{ width:13%; display:inline; position:fixed; bottom:10%; right:2%;}
+.hui a{ width:100%;}
+.hui img{ width:100%;}
