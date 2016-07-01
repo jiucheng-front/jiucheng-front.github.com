@@ -1,0 +1,156 @@
+@charset "gb2312";
+/* CSS Document */
+/*********************************
+ *rookie QQ:1123486116
+ *rookie making
+ *rookie Copyright
+**********************************/
+/*delay*/
+.delay{ transform-style:preserve-3d; perspective:200px;}
+.delay :nth-child(n){ opacity:0;}
+.delay.active :nth-child(n){ transition:1s; opacity:1;}
+.delay.active :nth-child(1){ transition-delay:0s;}
+.delay.active :nth-child(2){ transition-delay:0.1s;}
+.delay.active :nth-child(3){ transition-delay:0.2s;}
+.delay.active :nth-child(4){ transition-delay:0.3s;}
+.delay.active :nth-child(5){ transition-delay:0.4s;}
+.delay.active :nth-child(6){ transition-delay:0.5s;}
+.delay.active :nth-child(7){ transition-delay:0.6s;}
+.delay.active :nth-child(8){ transition-delay:0.7s;}
+.delay.active :nth-child(9){ transition-delay:0.8s;}
+.delay.active :nth-child(10){ transition-delay:0.9s;}
+.delay.active :nth-child(11){ transition-delay:1s;}
+.delay.active :nth-child(12){ transition-delay:1.1s;}
+.delay.active :nth-child(13){ transition-delay:1.2s;}
+.delay.active :nth-child(14){ transition-delay:1.3s;}
+.delay.active :nth-child(15){ transition-delay:1.4s;}
+.delay.active :nth-child(16){ transition-delay:1.5s;}
+.delay.active :nth-child(17){ transition-delay:1.6s;}
+.delay.active :nth-child(18){ transition-delay:1.7s;}
+.delay.active :nth-child(19){ transition-delay:1.8s;}
+.delay.active :nth-child(20){ transition-delay:1.9s;}
+.delay.active :nth-child(21){ transition-delay:2s;}
+.delay.active :nth-child(22){ transition-delay:2.1s;}
+.delay.active :nth-child(23){ transition-delay:2.2s;}
+.delay.active :nth-child(24){ transition-delay:2.3s;}
+.delay.active :nth-child(25){ transition-delay:2.4s;}
+.delay.active :nth-child(26){ transition-delay:2.5s;}
+.delay.active :nth-child(27){ transition-delay:2.6s;}
+.delay.active :nth-child(28){ transition-delay:2.7s;}
+.delay.active :nth-child(29){ transition-delay:2.8s;}
+.delay.active :nth-child(30){ transition-delay:2.9s;}
+.delay.active :nth-child(31){ transition-delay:3s;}
+.delay.active :nth-child(32){ transition-delay:3.1s;}
+.delay.active :nth-child(33){ transition-delay:3.2s;}
+.delay.active :nth-child(34){ transition-delay:3.3s;}
+.delay.active :nth-child(35){ transition-delay:3.4s;}
+.delay.active :nth-child(36){ transition-delay:3.5s;}
+.delay.active :nth-child(37){ transition-delay:3.6s;}
+.delay.active :nth-child(38){ transition-delay:3.7s;}
+.delay.active :nth-child(39){ transition-delay:3.8s;}
+.delay.active :nth-child(40){ transition-delay:3.9s;}
+.delay.active :nth-child(41){ transition-delay:4s;}
+.delay.active :nth-child(42){ transition-delay:4.1s;}
+.delay.active :nth-child(43){ transition-delay:4.2s;}
+.delay.active :nth-child(44){ transition-delay:4.3s;}
+.delay.active :nth-child(45){ transition-delay:4.4s;}
+.delay.active :nth-child(46){ transition-delay:4.5s;}
+.delay.active :nth-child(47){ transition-delay:4.6s;}
+.delay.active :nth-child(48){ transition-delay:4.7s;}
+.delay.active :nth-child(49){ transition-delay:4.8s;}
+.delay.active :nth-child(50){ transition-delay:4.9s;}
+.delay.active :nth-child(51){ transition-delay:5s;}
+.delay.active :nth-child(52){ transition-delay:5.1s;}
+.delay.active :nth-child(53){ transition-delay:5.2s;}
+.delay.active :nth-child(54){ transition-delay:5.3s;}
+.delay.active :nth-child(55){ transition-delay:5.4s;}
+.delay.active :nth-child(56){ transition-delay:5.5s;}
+.delay.active :nth-child(57){ transition-delay:5.6s;}
+.delay.active :nth-child(58){ transition-delay:5.7s;}
+.delay.active :nth-child(59){ transition-delay:5.8s;}
+.delay.active :nth-child(60){ transition-delay:5.9s;}
+.delay.active :nth-child(61){ transition-delay:6s;}
+.delay.active :nth-child(62){ transition-delay:6.1s;}
+.delay.active :nth-child(63){ transition-delay:6.2s;}
+.delay.active :nth-child(64){ transition-delay:6.3s;}
+.delay.active :nth-child(65){ transition-delay:6.4s;}
+.delay.active :nth-child(66){ transition-delay:6.5s;}
+.delay.active :nth-child(67){ transition-delay:6.6s;}
+.delay.active :nth-child(68){ transition-delay:6.7s;}
+.delay.active :nth-child(69){ transition-delay:6.8s;}
+.delay.active :nth-child(70){ transition-delay:6.9s;}
+.delay.active :nth-child(71){ transition-delay:7s;}
+.delay.active :nth-child(72){ transition-delay:7.1s;}
+.delay.active :nth-child(73){ transition-delay:7.2s;}
+.delay.active :nth-child(74){ transition-delay:7.3s;}
+.delay.active :nth-child(75){ transition-delay:7.4s;}
+.delay.active :nth-child(76){ transition-delay:7.5s;}
+.delay.active :nth-child(77){ transition-delay:7.6s;}
+.delay.active :nth-child(78){ transition-delay:7.7s;}
+.delay.active :nth-child(79){ transition-delay:7.8s;}
+.delay.active :nth-child(80){ transition-delay:7.9s;}
+.delay.active :nth-child(81){ transition-delay:8s;}
+.delay.active :nth-child(82){ transition-delay:8.1s;}
+.delay.active :nth-child(83){ transition-delay:8.2s;}
+.delay.active :nth-child(84){ transition-delay:8.3s;}
+.delay.active :nth-child(85){ transition-delay:8.4s;}
+.delay.active :nth-child(86){ transition-delay:8.5s;}
+.delay.active :nth-child(87){ transition-delay:8.6s;}
+.delay.active :nth-child(88){ transition-delay:8.7s;}
+.delay.active :nth-child(89){ transition-delay:8.8s;}
+.delay.active :nth-child(90){ transition-delay:8.9s;}
+.delay.active :nth-child(91){ transition-delay:9s;}
+.delay.active :nth-child(92){ transition-delay:9.1s;}
+.delay.active :nth-child(93){ transition-delay:9.2s;}
+.delay.active :nth-child(94){ transition-delay:9.3s;}
+.delay.active :nth-child(95){ transition-delay:9.4s;}
+.delay.active :nth-child(96){ transition-delay:9.5s;}
+.delay.active :nth-child(97){ transition-delay:9.6s;}
+.delay.active :nth-child(98){ transition-delay:9.7s;}
+.delay.active :nth-child(99){ transition-delay:9.8s;}
+.delay.active :nth-child(100){ transition-delay:9.9s;}
+.delay.active :nth-child(101){ transition-delay:10s;}
+/*.delay-return*/
+.delay-return.active :nth-child(n){ transition-timing-function:cubic-bezier(0.02,0.98,0.47,1.37);}
+/*delay-origin-top*/
+.delay-origin-top :nth-child(n){ transform-origin:50% 0 !important; -webkit-transform-origin:50% 0 !important;}
+/*delay-origin-bottom*/
+.delay-origin-bottom :nth-child(n){ transform-origin:50% 100% !important; -webkit-transform-origin:50% 100% !important;}
+/*delay-origin-left*/
+.delay-origin-left :nth-child(n){ transform-origin:0 50% !important; -webkit-transform-origin:0 50% !important;}
+/*delay-origin-right*/
+.delay-origin-right :nth-child(n){ transform-origin:100% 50% !important; -webkit-transform-origin:100% 50% !important;}
+/*delay-origin-center*/
+.delay-origin-center :nth-child(n){ transform-origin:50% 50% !important; -webkit-transform-origin:50% 50% !important;}
+/*delay-top-to-bottom|delay-bottom-to-top*/
+.delay-top-to-bottom :nth-child(n){ transform:translatey(-400px); -webkit-transform:translatey(-400px);}
+.delay-bottom-to-top :nth-child(n){ transform:translatey(400px); -webkit-transform:translatey(400px);}
+.delay-top-to-bottom.active :nth-child(n),.delay-bottom-to-top.active :nth-child(n){ transform:translatey(0); -webkit-transform:translatey(0);}
+/*delay-left-to-right|delay-right-to-left*/
+.delay-left-to-right :nth-child(n){ transform:translatex(-400px); -webkit-transform:translatex(-400px);}
+.delay-right-to-left :nth-child(n){ transform:translatex(400px); -webkit-transform:translatex(400px);}
+.delay-left-to-right.active :nth-child(n),.delay-right-to-left.active :nth-child(n){ transform:translatex(0); -webkit-transform:translatex(0);}
+/*delay-inner-to-out|delay-out-to-inner*/
+.delay-inner-to-out :nth-child(n){ transform:translatez(-100px); -webkit-transform:translatez(-100px);}
+.delay-out-to-inner :nth-child(n){ transform:translatez(100px); -webkit-transform:translatez(100px);}
+.delay-inner-to-out.active :nth-child(n),.delay-out-to-inner.active :nth-child(n){ transform:translatez(0); -webkit-transform:translatez(0);}
+/*delay-shun-to-ni|delay-ni-to-shun*/
+.delay-shun-to-ni :nth-child(n){ transform:rotate(45deg); -webkit-transform:rotate(45deg);}
+.delay-ni-to-shun :nth-child(n){ transform:rotate(-45deg); -webkit-transform:rotate(-45deg);}
+.delay-shun-to-ni.active :nth-child(n),.delay-ni-to-shun.active :nth-child(n){ transform:rotate(0); -webkit-transform:rotate(0);}
+/*delay-up-to-down|delay-down-to-up*/
+.delay-up-to-down :nth-child(n){ transform:rotatex(120deg); -webkit-transform:rotatex(120deg);}
+.delay-down-to-up :nth-child(n){ transform:rotatex(-120deg); -webkit-transform:rotatex(-120deg);}
+.delay-up-to-down.active :nth-child(n),.delay-down-to-up.active :nth-child(n){ transform:rotatex(0); -webkit-transform:rotatex(0);}
+/*delay-nei-to-wai|delay-wai-to-nei*/
+.delay-wai-to-nei :nth-child(n){ transform:rotatey(-30deg); -webkit-transform:rotatey(-30deg);}
+.delay-nei-to-wai :nth-child(n){ transform:rotatey(30deg); -webkit-transform:rotatey(30deg);}
+.delay-wai-to-nei.active :nth-child(n),.delay-nei-to-wai.active :nth-child(n){ transform:rotatey(0); -webkit-transform:rotatey(0);}
+/*delay-big-to-small|delay-small-to-big*/
+.delay-big-to-small :nth-child(n){ transform:scale(2); -webkit-transform:scale(2);}
+.delay-small-to-big :nth-child(n){ transform:scale(0); -webkit-transform:scale(0);}
+.delay-big-to-small.active :nth-child(n),.delay-small-to-big.active :nth-child(n){ transform:scale(1); -webkit-transform:scale(1);}
+/*delay-xie-to-skew|delay-skew-to-xie*/
+.delay-xie-to-skew :nth-child(n){ transform:skew(-10deg,-10deg); -webkit-transform:skew(-10deg,-90deg);}
+.delay-skew-to-xie :nth-child(n){ transform:skew(10deg,10deg); -webkit-transform:skew(10deg,90deg);}
+.delay-xie-to-skew.active :nth-child(n),.delay-skew-to-xie.active :nth-child(n){ transform:skew(0,0); -webkit-transform:skew(0,0);}
