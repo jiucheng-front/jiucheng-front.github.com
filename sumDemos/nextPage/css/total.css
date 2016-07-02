@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-family: Helvetica, STHeiTi, "Microsoft YaHei", sans-serif;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+.will_left {
+    float: left;
+}
+.will_right{
+    float: right;
+}
+.container{
+    position: relative;
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+    box-shadow: 0 0 .2rem #5D5C61;
+}
+/*show_weibo*/
+.show_weibo{
+    width: 100%;
+    height: 5.3rem;
+    background-image: url(../img/good_answer.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+.show_left{
+    float: left;
+    left: .15rem;
+    top: 1.5rem;
+    height: 3.6rem;
+    overflow: hidden;
+}
+.show_left,.show_list{
+    position: relative;
+}
+.show_list{
+    width: 4.88rem;
+    top: 0;
+}
+.show_list li{
+    overflow: hidden;
+    padding: .1rem 0;
+}
+.show_list li img,.show_list li p{
+    float: left;
+}
+.show_list li img{
+    width: .65rem;
+    height: .65rem;
+    border-radius: 50%;
+    border: 4px solid #5D5D5D;
+}
+.show_list li p{
+    background-image: url(../img/good_bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: #717172;
+    font-size: .1rem;
+    width: 4.06rem;
+    height: .7rem;
+    padding-left: .25rem;
+    padding-top: .25rem;
+    padding-right: .1rem;
+}
+/*二维码*/
+.logo_er{
+    position: absolute;
+    overflow: hidden;
+    right: .25rem;
+    bottom: .6rem;
+}
+.logo_er img{
+    float: left;
+    width:.87rem;
+}
