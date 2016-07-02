@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="css/sum_index.css">
     <script language="javascript" type="text/javascript" src="js/My97DatePicker/WdatePicker.js"></script>
     <link href="js/My97DatePicker/skin/WdatePicker.css" rel="stylesheet" type="text/css">
+    <!--date-->
+    <link rel="stylesheet" href="date/css/css.css"/>
+    <link rel="stylesheet" href="date/laydate/need/laydate.css"/>
+    <script type="text/javascript" src="date/js/jquery-1.7.2.min.js"></script>
 </head>
 <body>
     <div class="container">
@@ -33,7 +37,7 @@
                             </li>
                             <li><span>年<i></i>龄：</span><input type="text" placeholder="请输入您的年龄" class="sum_text"></li>
                             <li><span>联系电话：</span><input type="text" placeholder="请输入您的电话号码" class="sum_text"></li>
-                            <li><span>预约时间：</span><input type="text" placeholder="请选择您的就诊时间" class="sum_text date_btn" onclick="WdatePicker()"></li>
+                            <li><span>预约时间：</span><input type="text" placeholder="请选择您的就诊时间" class="sum_text date_btn" id="time"></li>
                             <li><span class="sum_one">病情描述：</span><textarea name="sum" id="" class="user_sum" placeholder="请输入不适症状和治疗经过、既往疾病、想获得什么样的帮助等，方便医生匹配精准对症的专家，如有意向医院或医生，请您补充（请输入10-200个字）"></textarea></li>
                             <li class="seven">
                                 <p class="will_left">*&nbsp;预约成功患者，系统会将医生号和医院地址下发到您的手机，请注意查收</p>
@@ -78,5 +82,8 @@
             </div>
         </footer>
     </div>
+<!--date-->
+    <script type="text/javascript" src="date/laydate/laydate.js"></script>
+    <script type="text/javascript" src="date/js/js.js"></script>
 </body>
 </html>

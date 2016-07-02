@@ -1,0 +1,253 @@
+﻿/* CSS Document */
+/*********************************
+ *rookie QQ:1123486116
+ *rookie making
+ *rookie Copyright
+**********************************/
+/* CSS Document */
+/*********************************
+ *rookie QQ:1123486116
+ *rookie making
+ *rookie Copyright
+**********************************/
+/*zero*/
+html{
+    font-size:62.5%;
+}
+body,
+div,
+menu,
+ol,
+ul,
+li,
+dl,
+dd,
+dt,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+p,
+form,
+header,
+nav,
+article,
+section,
+aside,
+footer,
+video,
+audio,
+figure,
+textarea{
+    padding:0;
+    margin:0;
+}
+input,
+select,
+textarea,
+img,
+area{
+    outline:none;
+    border:none;
+}
+input,
+select,
+textarea{
+    background:#FFF;
+}
+mark{
+    background:none;
+}
+img{
+    vertical-align:middle;
+}
+textarea{
+    resize:none;
+}
+menu,
+ul,
+ol{
+    list-style-type:none;
+}
+body{
+    font:14px/1 "Microsoft YaHei";
+}
+em,
+i,
+strong,
+b,
+small,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+address,
+cite{
+    font-style:normal;
+    font-weight:normal;
+    font-size:100%;
+}
+span,
+b,
+em,
+i,
+strong,
+small,
+label,
+a,
+mark{
+    display:inline-block;
+}
+em,
+i,
+strong,
+b,
+small,
+span,
+li,
+a,
+mark{
+    transition:all 0.4s;
+}
+ul li{
+    transition:0s;
+}
+a{
+    text-decoration:none;
+    outline:none;
+    color:inherit;
+}
+/*clearFix*/
+.clearFix{
+    clear:both;
+    *zoom:1;
+}
+.clearFix:after{
+    clear:both;
+    display:block;
+    visibility:hidden;
+    height:0;
+    line-height:0;
+    content:"";
+    font-size:0;
+}
+/*common*/
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
+/*guahao*/
+#guahao{
+    width:933px;
+    margin:0 auto;
+    font-size:14px;
+    color:#2b2b2b;
+    word-spacing:30px;
+}
+#guahao em,
+#guahao span{
+    display:inline-block;
+}
+#guahao input,
+#guahao textarea{
+    background:#ffffff;
+    border:1px solid #c9c9c9;
+    width:144px;
+    height:14px;
+    padding:5px 5px;
+    border-radius:5px;
+}
+#guahao .sex input{
+    width:auto;
+    margin:0 2px 0 6px;
+    vertical-align:middle;
+}
+#guahao h2{
+    height:26px;
+    line-height:26px;
+    margin-bottom:10px;
+}
+#guahao .sex-age-tel{
+    margin-left:40px;
+}
+#guahao .age{
+    margin-left:30px;
+}
+#guahao .age span{
+    width:auto;
+}
+#guahao .age input{
+    width:50px;
+}
+#guahao .tel input{
+    width:192px;
+}
+#guahao span{
+    width:70px;
+}
+#guahao dl{
+    position:relative;
+}
+#guahao dl dt{
+    padding:20px 0 40px;
+}
+#guahao dl dd.guahao-title{
+    text-align:center;
+    font-size:12px;
+    height:20px;
+    line-height:20px;
+    width:190px;
+    position:absolute;
+    right:0;
+    bottom:160px;
+    color:#666;
+}
+#guahao dl dd.guahao-title.guahao-red{
+    color:#d10000;
+}
+#guahao dl dd.guahao-title.guahao-green{
+    color:#0067b7;
+}
+#guahao textarea{
+    width:610px;
+    height:70px;
+}
+#guahao .description{
+    height:auto;
+    padding-bottom:20px;
+    margin-bottom:0;
+}
+#guahao .description span{
+    vertical-align:top;
+}
+#guahao .fr{
+    width:190px;
+    padding-top:20px;
+}
+#guahao .fr em{
+    color:#d10000;
+    font-size:12px;
+    line-height:20px;
+    padding-top:6px;
+    text-align:justify;
+}
+#guahao .fr input{
+    width:190px;
+    height:60px;
+    background:#0067b7;
+    font-size:24px;
+    font-weight:bold;
+    color:#ffffff;
+    border:none;
+    cursor:pointer;
+}
+#guahao #time{
+    background:url("../images/guahao-time.jpg") 132px center no-repeat;
+}
