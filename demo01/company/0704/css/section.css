@@ -1,0 +1,390 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-family: Helvetica, STHeiTi, "Microsoft YaHei", sans-serif;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+.will_left {
+    float: left;
+}
+.will_right{
+    float: right;
+}
+
+/**/
+.will_middle{
+    width: 1000px;
+    margin: 0 auto;
+}
+.section_one{
+    position: relative;
+    height: 125px;
+}
+.section_one img{
+    left: 0;
+    top: 0;
+    width: 100%;
+    height:125px;
+}
+.slideBox{
+    position: relative;
+}
+.hd{
+    position: absolute;
+    z-index: 888;
+    right: 100px;
+    bottom: 10px;
+}
+.hd ul li{
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    background-color: #909189;
+    float: left;
+    margin-left: 15px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 20px;
+}
+.hd ul li.on{
+    background-color: #FC7C37;
+}
+/*section_two*/
+.section_two{
+    overflow: hidden;
+}
+.two_top{
+    padding:10px;
+    margin-top: 15px;
+    border: 1px solid #EFEFEF;
+    background-color: #F8F8F8;
+}
+.two_top h3{
+    font-size: 20px;
+    color: #565656;
+}
+/*two_infor*/
+.two_infor{
+    overflow: hidden;
+}
+.two_left{
+    width: 685px;
+}
+.two_right{
+    width: 302px;
+}
+.left_infor_top{
+    overflow: hidden;
+    padding: 10px 0 10px 5px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+h3{
+    font-size: 20px;
+}
+h4{
+    font-size: 16px;
+}
+h5{
+    font-size: 14px;
+}
+.infor_top_list{
+    width: 330px;
+    padding:0 0 0 10px;
+}
+.infor_top_list>p{
+    text-indent: 2em;
+    color: #535353;
+}
+.infor_top_list p a{
+    text-decoration: none;
+}
+.infor_top_list ul li p{
+    color: #9A9A9A;
+    font-size: 14px;
+}
+.infor_top_list ul{
+    margin-top: 10px;
+}
+.infor_top_list ul li:before{
+    display: table;
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #6F2424;
+    position: absolute;
+    top: 15px;
+    left: 0;
+}
+.infor_top_list li.border_top{
+    border-top: 1px solid #ccc;
+}
+.infor_top_list li.bor_bottom{
+    border-bottom: 1px dashed #9A9A9A;
+}
+.infor_top_list ul li{
+    padding: 8px 0;
+    position: relative;
+    padding-left: 10px;
+}
+.will_red{
+    color: #FF254F;
+}
+.deep_red{
+    color: #792120;
+}
+/*infor_hot*/
+.infor_hot{
+    margin-top: 15px;
+    padding: 15px 0;
+    border: 1px solid #ccc;
+}
+.infor_sum_border{
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+    height: 6px;
+    background-image: url(../images/bg_repeat.png);
+}
+.infor_hot h4{
+    padding-left: 8px;
+}
+.infor_hot ul{
+    overflow: hidden;
+}
+.infor_hot li{
+    float: left;
+}
+.infor_hot li.have_width{
+    width: 224px;
+}
+.infor_hot li.have_left{
+    margin-left:16px;
+}
+.infor_hot li.have_top{
+    margin-top: 8px;
+}
+.infor_hot li a{
+    text-decoration: none;
+    color: #7F7F7F;
+    font-size: 14px;
+}
+/*患者关注*/
+.have_got{
+    overflow: hidden;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+}
+.got_left{
+    padding: 1px;
+    border-right: 1px solid #ccc;
+}
+.got_left h1{
+    width: 58px;
+    height: 144px;
+    background-image: url(../images/two_hot.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 16px;
+}
+.got_left h1 span{
+    display: block;
+    text-align: center;
+}
+/*got_right*/
+.got_right{
+    width: 600px;
+}
+.got_right ul{
+    overflow: hidden;
+}
+.got_right li{
+    float: left;
+    border: 1px solid #792120;
+}
+
+.got_right li a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 0;
+    color: #792120;
+}
+/*1*/
+.got_one li.one{
+    width: 18%;
+}
+.got_one li.two{
+    width: 40%;
+}
+/*2*/
+.got_two li.one{
+    width: 35%;
+}
+.got_two li.two{
+    width: 36%;
+}
+.got_two li.three{
+    width: 23%;
+}
+/*3*/
+.got_three li.one{
+    width: 46%;
+}
+.got_three li.two{
+    width: 24%;
+}
+.got_one li.have_left{
+    margin-left: 10px;
+}
+.got_two li.have_left,.got_three li.have_left{
+    margin-left: 15px;
+}
+.got_right ul{
+    margin-top: 13px;
+}
+/*two_space*/
+.two_space{
+    margin-top: 10px;
+}
+.two_space a{
+    display: block;
+    overflow: hidden;
+}
+.two_space img{
+    width: 100%;
+    float: left;
+}
+/*two_right*/
+.two_right{
+    margin-top: 10px;
+}
+.two_right h3{
+    color: #fff;
+    padding-left: 50px;
+    line-height: 38px;
+    height: 38px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.two_right_top h3{
+    background-image: url(../images/two_tight_top.jpg);
+}
+.right_top_list p{
+    color: #535353;
+    margin-top: 6px;
+}
+.right_top_list{
+    padding: 10px 4px;
+    border:1px solid #ccc;
+}
+.right_top_list ul{
+    overflow: hidden;
+    margin-top: 8px;
+}
+.right_top_list li{
+    float: left;
+    background-image: url(../images/top_right_01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    border: 1px solid #792120;
+}
+.right_top_list li.have_left{
+    margin-left: 8px;
+}
+.right_top_list li a{
+    display: block;
+    width: 89px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #792120;
+    text-decoration: none;
+}
+.right_top_list>div{
+    overflow: hidden;
+    margin: 8px 0;
+}
+.right_top_list dl{
+    float: left;
+    text-align: center;
+    margin-left: 23px;
+    cursor: pointer;
+}
+.right_top_list>a{
+    display: block;
+}
+.right_top_list>a img{
+    width: 100%;
+}
+/*专家风采*/
+.two_right_doc{
+    margin-top: 20px;
+}
+.two_right_doc h3{
+    background-image: url(../images/two_right_doc.jpg);
+}
+.Doctor_slideBox{
+    overflow: hidden;
+    position: relative;
+    margin-top: 10px;
+}
+.doctor_bd{
+    position: relative;
+    height: 100%;
+    z-index: 0;
+}
+.doctor_bd img{
+    width: 100%;
+    height: 213px;
+}
+.Doctor_slideBox .prev,.Doctor_slideBox .next{
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    display: block;
+    width: 32px;
+    height: 40px;
+    background: url(../images/slider-arrow.png) -110px 5px no-repeat;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+    background-color: #BABAB8;
+}
+.Doctor_slideBox .prev{
+    left: 3%;
+}
+.Doctor_slideBox .next{
+    right: 3%;
+    background-position: 8px 5px;
+}
+/*中西医光学*/
+.section_three{
+    padding: 15px 0;
+}
+.total_title{
+    color: #fff;
+    text-align: center;
+    line-height: 61px;
+    font-size: 30px;
+    width: 100%;
+    height: 61px;
+    background-image: url(../images/big_title.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}detail_t_bg.jpg
+ .total_tittle h3{
+
+ }

@@ -1,11 +1,321 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>济南中医</title>
-    <link rel="stylesheet" href="css/sum_index.css">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>济南中研</title>
+	<link rel="stylesheet" href="css/base.css" />
+	<link rel="stylesheet" href="css/section.css">
+	<script src="js/jquery1.42.min.js"></script>
+	<script src="js/jquery.SuperSlide.2.1.1.js"></script>
+	<!-- 	<script src="js/tab2.js"></script>
+-->
 </head>
 <body>
+	<img src="images/logo.jpg" alt="" class="logo" />
+	<!--导航-->
+	<div class="nav">
+		<ul>
+			<li class="active">
+				<a href="/" target="_blank">网站首页</a>
+			</li>
+			<li>
+				<a href="/zyjj/" target="_blank">医院概况</a>
+			</li>
+			<li>
+				<a href="/xwdt/" target="_blank">医院新闻</a>
+			</li>
+			<li>
+				<a href="/mtbd/" target="_blank">媒体报道</a>
+			</li>
+			<li>
+				<a href="/zyzj/" target="_blank">名医堂</a>
+			</li>
+			<li>
+				<a href="/djjs/" target="_blank">特色技术</a>
+			</li>
+			<li>
+				<a href="/shgy/" target="_blank">社会公益</a>
+			</li>
+			<li>
+				<a href="/zt/shipin/" target="_blank">视频中心</a>
+			</li>
+			<li>
+				<a href="/kfbl/" target="_blank">病友交流</a>
+			</li>
+			<li>
+				<a  href="javascript:void(0)" onclick="LR_HideInvite();openZoosUrl();return false;" target="_blank">在线咨询</a>
+			</li>
+			<li class="end">
+				<a href="/lylx/" target="_blank">来院路线</a>
+			</li>
+		</ul>
+	</div>
+	<script>
+		$('.nav li').hover(
+			function(){
+				$(this).addClass('active').siblings().removeClass('active');
+			});
+	</script>
+	<!-- banner -->
+	<div class="banner">
+		<a href="">
+			<img src="images/ban1.jpg" alt="" />
+			<img src="images/ban2.jpg" alt="" />
+		</a>
+	</div>
+	<div class="layout">
+		<div class="bznav hdn">
+			<div class="bzn_l fl">
+				<h2 class="bzh">疑难皮肤病</h2>
+				<p>
+					<span>
+						<a href="">牛皮癣</a>
+					</span>
+					<span>
+						<a href="">白癜风</a>
+					</span>
+					<span>
+						<a href="">鱼鳞病</a>
+					</span>
+				</p>
+			</div>
+			<div class="bzn_r fr">
+				<h2 class="bzh">常见皮肤病</h2>
+				<ul class="bzu">
+					<li>
+						<a href="" class="hot">痤疮(青春痘）</a>
+					</li>
+					<li>
+						<a href="" class="hot">脱发</a>
+					</li>
+					<li>
+						<a href="" class="hot">湿疹</a>
+					</li>
+					<li>
+						<a href="" class="hot">荨麻疹</a>
+					</li>
+					<li>
+						<a href="" class="hot">皮炎</a>
+					</li>
+					<li>
+						<a href="">带状疱疹</a>
+					</li>
+					<li>
+						<a href="" class="hot">皮肤过敏</a>
+					</li>
+					<li>
+						<a href="">皮肤瘙痒</a>
+					</li>
+					<li class="wb">
+						<a href="">神经性皮炎</a>
+					</li>
+					<li class="gmp">
+						<a href="">过敏性皮炎</a>
+					</li>
+					<li>
+						<a href="">脂溢性皮炎</a>
+					</li>
+					<li>
+						<a href="" class="hot">扁平疣</a>
+					</li>
+					<li>
+						<a href="">斑秃</a>
+					</li>
+					<li>
+						<a href="">灰指甲</a>
+					</li>
+					<li>
+						<a href="">雀斑</a>
+					</li>
+					<li>
+						<a href="">黄褐斑</a>
+					</li>
+					<li>
+						<a href="">酒糟鼻</a>
+					</li>
+					<li class="wb">
+						<a href="">痘抗痘印</a>
+					</li>
+					<li class="xcy">
+						<a href="">寻常疣</a>
+					</li>
+					<li>
+						<a href="">毛囊炎</a>
+					</li>
+					<li>
+						<a href="">手足癣</a>
+					</li>
+					<li>
+						<a href="">股癣</a>
+					</li>
+					<li>
+						<a href="">花斑癣</a>
+					</li>
+					<li>
+						<a href="">头癣</a>
+					</li>
+					<li>
+						<a href="">体癣</a>
+					</li>
+				</ul>
+			</div>
+		</div>
 
+		</div>
+<!--列表页-->
+	<section>
+		<div class="section_one will_middle">
+			<div id="slideBox" class="slideBox">
+				<div class="hd">
+					<ul><li class="">1</li><li class="">2</li></ul>
+				</div>
+				<div class="bd">
+					<ul>
+						<li style="display: none;"><a href="javascript:;" target="_blank"><img src="images/move_01.jpg"></a></li>
+						<li style="display: none;"><a href="javascript:;" target="_blank"><img src="images/move_02.jpg"></a></li>
+					</ul>
+				</div>
+			</div>
+			<script>
+				jQuery(".slideBox").slide({mainCell:".bd ul",autoPlay:true});
+			</script>
+		</div>
+		<!--您所在位置-->
+		<div class="section_two">
+			<div class="two_top will_middle">
+				<h3>您现在的位置&gt;济南中研皮肤病医院&gt;青春痘</h3>
+			</div>
+			<div class="two_infor will_middle">
+				<div class="two_left will_left">
+					<!--痤疮简介-->
+					<div class="left_infor_top">
+						<img src="images/left_infor.jpg" alt="" class="will_left">
+						<div class="infor_top_list will_left">
+							<h4 class="deep_red">痤疮简介</h4>
+							<p>痤疮（青春痘）是毛囊皮脂腺单位的一种慢性炎症性皮肤病，主要好发于青少年，对青少年的心理和社交影响很大，但青春期后往往能自然减轻或痊愈<a href="javascript:;" class="will_red">.....【详细】</a></p>
+							<ul>
+								<li class="border_top bor_bottom"><p>常见症状：白头、脓包、丘疹、结节、囊肿</p></li>
+								<li class="bor_bottom"><p>好发部位：面部、后背、前胸</p></li>
+								<li class="bor_bottom"><p>常见危害：酒渣鼻、药疹、面部播散性粟粒状狼疮</p></li>
+								<li><p>发病原因：内外因素导致人体皮脂腺发炎引起</p></li>
+							</ul>
+						</div>
+					</div>
+					<!--热点-->
+					<div class="infor_hot">
+						<h4 class="deep_red">热点推荐</h4>
+						<b class="infor_sum_border"></b>
+						<ul>
+							<li class="have_width"><a href="javascript:;"><span class="deep_red">【病因】</span>脸上长青春痘的原因</a></li>
+							<li class="have_left have_width"><a href="javascript:;"><span class="deep_red">【危害】</span>用手挤痘痘会造成哪些危害</a></li>
+							<li class="have_left"><a href="javascript:;"><span class="deep_red">【症状】</span>青春痘八大症状表现</a></li>
+							<li class="have_top have_width"><a href="javascript:;"><span class="deep_red">【费用】</span>青春痘治疗大概需要多少钱</a></li>
+							<li class="have_left have_top have_width"><a href="javascript:;"><span class="deep_red">【治疗】</span>怎样有效治疗痤疮</a></li>
+							<li class="have_left have_top"><a href="javascript:;"><span class="deep_red">【医院】</span>济南去痘哪家医院好</a></li>
+						</ul>
+					</div>
+					<!--患者关注-->
+					<div class="have_got">
+						<div class="got_left will_left">
+							<h1 class="deep_red">
+								<span>患</span>
+								<span>者</span>
+								<span>关</span>
+								<span>注</span>
+							</h1>
+						</div>
+						<div class="got_right will_right">
+							<ul class="got_one">
+								<li class="one"><a href="javascript:;">眉周长痘</a></li>
+								<li class="one have_left"><a href="javascript:;">脖子长痘</a></li>
+								<li class="one have_left"><a href="javascript:;">脸颊痘多</a></li>
+								<li class="two have_left"><a href="javascript:;">发际长痘和额头长痘怎么办?</a></li>
+							</ul>
+							<ul class="got_two">
+								<li class="one"><a href="javascript:;">手臂长痘怎么治疗?</a></li>
+								<li class="two have_left"><a href="javascript:;">下巴长痘治疗费贵吗?</a></li>
+								<li class="three have_left"><a href="javascript:;">嘴角长痘</a></li>
+							</ul>
+							<ul class="got_three">
+								<li class="one"><a href="javascript:;">鼻子长痘的原因及治疗</a></li>
+								<li class="two have_left"><a href="javascript:;">后背长痘</a></li>
+								<li class="two have_left"><a href="javascript:;">胸前长痘</a></li>
+							</ul>
+						</div>
+					</div>
+					<!--您和健康的距离-->
+					<div class="two_space">
+						<a href="javascript:;"><img src="images/two_space.jpg" alt=""></a>
+					</div>
+				</div>
+				<div class="two_right will_right">
+					<div class="two_right_top">
+						<h3>走进中研</h3>
+						<div class="right_top_list">
+							<img src="images/right_top_list.jpg" alt="">
+							<p>济南中研皮肤病医院是山东省国际皮肤病学诊疗新技术推广定点单位、315诚信医院、新农合定点单位<a href="javascript:;" class="will_red">...【详细】</a></p>
+							<ul>
+								<li><a href="javascript:;">医院概况</a></li>
+								<li class="have_left"><a href="javascript:;">名医专家</a></li>
+								<li class="have_left"><a href="javascript:;">来院路线</a></li>
+							</ul>
+							<div>
+								<dl>
+									<dt><img src="images/commit_watc.png" alt=""></dt>
+									<dd>在线咨询</dd>
+								</dl>
+								<dl>
+									<dt><img src="images/commit_sum.png" alt=""></dt>
+									<dd>预约挂号</dd>
+								</dl>
+								<dl>
+									<dt><img src="images/commit_qqq.png" alt=""></dt>
+									<dd>QQ咨询</dd>
+								</dl>
+							</div>
+							<a href="javascript:;"><img src="images/right_list_btn.jpg" alt=""></a>
+						</div>
+					</div>
+					<div class="two_right_doc">
+						<h3>专家风采</h3>
+						<div id="slideDoctors" class="Doctor_slideBox">
+							<div class="doctor_bd">
+								<ul>
+									<li style="display: none;"><a href="javascript:;" target="_blank"><img src="images/sum_doctors_01.jpg"></a></li>
+									<li style="display: none;"><a href="javascript:;" target="_blank"><img src="images/sum_doctors_02.jpg"></a></li>
+								</ul>
+							</div>
+							<!-- 下面是前/后按钮代码，如果不需要删除即可 -->
+							<a class="prev" href="javascript:void(0)"></a>
+							<a class="next" href="javascript:void(0)"></a>
+						</div>
+						<script>
+							jQuery(".Doctor_slideBox").slide({mainCell:".doctor_bd ul",autoPlay:true});
+						</script>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--中西医光学-->
+		<div class="section_three will_middle">
+			<h1 class="total_title">中西医光学药理疗法  中西医结合治疗青春痘更放心</h1>
+			<!--治疗原理-->
+			<div class="detail_infor">
+				<div class="total_tittle">
+					<h3><span>治疗原理：</span>从发病根源入手，有效治疗皮肤疾病</h3>
+					<b class="infor_sum_border"></b>
+				</div>
+			</div>
+			<!--康复故事-->
+			<!--温馨提示-->
+			<!--千万别拖-->
+			<!--中研名录-->
+		</div>
+	</section>
+	<!--底部-->
+	<footer>
+
+	</footer>
+	<br><br><br><br><br>
 </body>
 </html>
