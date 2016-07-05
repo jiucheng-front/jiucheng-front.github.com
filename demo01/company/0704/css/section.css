@@ -110,7 +110,7 @@ h5{
     text-decoration: none;
 }
 .infor_top_list ul li p{
-    color: #9A9A9A;
+    color: #535353;
     font-size: 14px;
 }
 .infor_top_list ul{
@@ -608,7 +608,6 @@ h5{
 }
 .power_left li{
     float: left;
-
 }
 .power_left li a:hover,.power_left li.have_selected a{
     background-color: #6F2424;
