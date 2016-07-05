@@ -30,6 +30,9 @@ body{
     position: relative;
     height: 125px;
 }
+.section_one a{
+    display: block;
+}
 .section_one img{
     left: 0;
     top: 0;
