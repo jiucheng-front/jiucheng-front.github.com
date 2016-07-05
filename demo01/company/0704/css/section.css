@@ -325,10 +325,15 @@ h5{
     margin: 8px 0;
 }
 .right_top_list dl{
-    float: left;
+    /*float: left;*/
     text-align: center;
     margin-left: 23px;
     cursor: pointer;
+}
+.right_top_list div a{
+    float: left;
+    display: block;
+    overflow: hidden;
 }
 .right_top_list>a{
     display: block;
