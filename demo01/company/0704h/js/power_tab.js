@@ -18,15 +18,17 @@ window.onload=function(){
         }
         // 固定定位
         var elem=document.getElementById("rigTop");
+        var MAX=document.getElementById("max_Height");
+        var max_height=MAX.offsetTop;
         var sum=elem.offsetTop;
         document.onscroll=function(){
             var willHeight=parseFloat(document.body.scrollTop);
-            if(willHeight>sum&&willHeight<3860){
+            if(willHeight>sum&&willHeight<(max_height-386)){
                 elem.className="rigTop"+" will_fixed";
             }else{
                 elem.className="rigTop"+"";
             }
-            console.log(sum,willHeight);
+            console.log(sum,willHeight,max_height);
         }
     })();
 };
