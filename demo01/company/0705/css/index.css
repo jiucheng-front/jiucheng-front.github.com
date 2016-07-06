@@ -467,16 +467,17 @@ nav ul li:nth-child(3) {
 }
 .mod05 li h6 a{
     display: inline-block;
-    padding: 5px 10px;
+    line-height: 26px;
     color: #fff;
+    width: 28%;
 }
 .pink_btn{
     background-color: #913195;
-    margin-right: 2px;
+    margin-right: 1%;
 }
 .yell_btn{
     background-color: #FF9C00;
-    margin-left: 2px;
+    margin-left: 1%;
 }
 .mod05 h3{
     font-size: 14px;
