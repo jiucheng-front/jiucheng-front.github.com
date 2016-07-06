@@ -457,7 +457,7 @@ nav ul li:nth-child(3) {
 .mod05 li{
     background-color: #F2F2F2;
     border: 1px solid #ccc;
-    padding: 5px 3px;
+    padding: 10px 3px;
 }
 .mod05 li.have_left{
     margin-left: 10px;
@@ -469,7 +469,7 @@ nav ul li:nth-child(3) {
     display: inline-block;
     line-height: 26px;
     color: #fff;
-    width: 28%;
+    padding: 0 5px;
 }
 .pink_btn{
     background-color: #913195;
