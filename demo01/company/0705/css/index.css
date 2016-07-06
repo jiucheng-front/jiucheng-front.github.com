@@ -374,7 +374,6 @@ nav ul li:nth-child(3) {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    padding: 0 10px;
     margin-top: 10px;
 }
 .mod03 ul li,.mod04 ul li,.mod05 ul li{
@@ -383,6 +382,9 @@ nav ul li:nth-child(3) {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
+}
+.mod03 ul{
+    padding: 0 10px;
 }
 .mod03 ul li{
     color: #fff;
@@ -418,6 +420,9 @@ nav ul li:nth-child(3) {
 .mod04{
     margin-top: 10px;
 }
+.mod04 ul{
+    padding: 0 10px;
+}
 .mod04_title{
     overflow: hidden;
     position: relative;
@@ -426,6 +431,10 @@ nav ul li:nth-child(3) {
     color: #fff;
     float: left;
     margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     background-color: #FF9C00;
     font-size: 16px;
@@ -491,4 +500,157 @@ nav ul li:nth-child(3) {
 }
 .mod05 ul li h3,.mod05 ul li h6{
     text-align: center;
+}
+/*mod06*/
+.mod06{
+    padding: 10px;
+}
+.mod06 div{
+    margin-top: 10px;
+}
+.mod06 img{
+    display: block;
+    max-width: 100%;
+}
+.mod06 p{
+    width: 70%;
+    color: #fff;
+    font-size: 12px;
+    padding:10px;
+    border-radius: 5px;
+    position: relative;
+}
+.will_left{
+    float: left;
+}
+.will_right{
+    float: right;
+}
+.mod06,.sum_peo,.sum_doct{
+    overflow: hidden;
+}
+.sum_peo,.sum_doct{
+    width: 88%;
+}
+.sum_peo img,.sum_peo p{
+    float: left;
+}
+.sum_doct p,.sum_doct img{
+    float: right;
+}
+.sum_peo p{
+    background-color: #6C6C6C;
+    margin-left: 20px;
+}
+.sum_peo p:before,.sum_doct p:before{
+    display: table;
+    content: "";
+    width: 15px;
+    height: 17px;
+    position: absolute;
+    top: 10px;
+}
+.sum_peo p:before{
+    background-image: url(../images/small_icon_01.png);
+    left: -15px;
+}
+.sum_doct p{
+    background-color: #9C599F;
+    margin-right: 20px;
+}
+.sum_doct p:before{
+    background-image: url(../images/small_icon_02.png);
+    right: -15px;
+}
+/*mod06-btn*/
+.mod06-btn{
+    overflow: hidden;
+}
+.mod06-btn a{
+    display: block;
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+/*g挂号平台*/
+.will_center{
+    text-align: center;
+}
+.will_commit ul,.footer ul{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    margin-top: 10px;
+}
+.will_commit li,.footer li{
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+.commit_left{
+    background-color: #38A9CD;
+    padding: 10px;
+}
+.commit_right{
+    background-color: #F3F3F3;
+}
+.commit_left input[type="text"]{
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 5px;
+    /*margin-top: 10px;*/
+}
+.commit_left p.sum_ques{
+    color: #fff;
+    font-size: 16px;
+    padding:3px 5px;
+    background-color: #6EC9E5;
+    border-radius: 3px;
+}
+.commit_left p{
+    margin-top: 5px;
+    overflow: hidden;
+}
+.commit_left p a{
+    float: left;
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    padding: 3px 20px;
+    border-radius: 3px;
+    background-color: #FF369A;
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+/*footer*/
+.footer{
+    background-color: #913195;
+    padding: 5px 0;
+    margin-top: 15px;
+}
+.footer img{
+    display: block;
+    max-width: 80%;
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.footer_right img{
+    margin-top:36px;
 }
