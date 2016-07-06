@@ -653,4 +653,5 @@ nav ul li:nth-child(3) {
 }
 .footer_right img{
     margin-top:36px;
+    border: none;
 }
