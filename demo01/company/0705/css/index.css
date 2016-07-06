@@ -479,6 +479,7 @@ nav ul li:nth-child(3) {
     line-height: 26px;
     color: #fff;
     padding: 0 5px;
+    font-size: 12px;
 }
 .pink_btn{
     background-color: #913195;
