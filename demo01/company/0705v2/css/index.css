@@ -527,6 +527,7 @@ nav input{
     background-color: #F2F2F2;
     border: 1px solid #ccc;
     padding: 10px 3px;
+    text-align: center;
 }
 .mod05 li.have_left{
     margin-left: 10px;
@@ -542,7 +543,7 @@ nav input{
     font-size: 12px;
 }
 .pink_btn{
-    background-color: #913195;
+    background-color: #31B1BC;
     margin-right: 1%;
 }
 .yell_btn{
@@ -616,7 +617,7 @@ nav input{
     left: -15px;
 }
 .sum_doct p{
-    background-color: #9C599F;
+    background-color: #38BDC5;
     margin-right: 20px;
 }
 .sum_doct p:before{
@@ -656,11 +657,13 @@ nav input{
     flex: 1;
 }
 .commit_left{
-    background-color: #38A9CD;
+    background-color: #FF9C00;
     padding: 10px;
 }
 .commit_right{
     background-color: #F3F3F3;
+    text-align: center;
+    padding: 15px;
 }
 .commit_left input[type="text"]{
     outline: none;
@@ -671,10 +674,10 @@ nav input{
     border: none;
 }
 .commit_left p.sum_ques{
-    color: #fff;
+    color: #959595;
     font-size: 16px;
     padding:3px 5px;
-    background-color: #6EC9E5;
+    background-color: #fff;
     border-radius: 3px;
 }
 .commit_left p{
@@ -684,11 +687,11 @@ nav input{
 .commit_left p a{
     float: left;
     display: block;
-    color: #fff;
+    color: #D28710;
     font-size: 16px;
     padding: 3px 20px;
     border-radius: 3px;
-    background-color: #FF369A;
+    background-color: #fff;
     margin-left: 50%;
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
@@ -698,7 +701,7 @@ nav input{
 }
 /*footer*/
 .footer{
-    background-color: #913195;
+    background-color: #15A3AC;
     padding: 5px 0;
     margin-top: 15px;
 }
