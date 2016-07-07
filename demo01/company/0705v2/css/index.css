@@ -159,6 +159,7 @@ header ul li:nth-child(1), header ul li:nth-child(3) {
 }
 header ul li:nth-child(2) img{
     max-width: 80%;
+    margin-left: 24px;
 }
 header ul li:nth-child(1) img, header ul li:nth-child(3) img {
     display: block;
@@ -416,7 +417,7 @@ nav input{
 }
 .will_bg{
     padding: 5px 10px;
-    width: 95%;
+    /*width: 95%;*/
 }
 .mod04_left .will_bg{
     background-color: #DDD4FC;
@@ -426,17 +427,17 @@ nav input{
     text-align: center;
 }
 .mod04 ul{
-    padding: 0 10px;
+    padding: 0 2px;
 }
 .mod04 ul li.have_left{
-    margin-left: 5px;
+    margin-left: 3px;
 }
 .mod04 ul li{
-    padding: 5px;
+    padding: 2px;
 }
 .mod04 ul li>div{
     margin-top: 10px;
-    padding: 5px;
+    padding: 5px 0;
     background-color: #fff;
 }
 .mod04 h3{
@@ -469,11 +470,12 @@ nav input{
     position: relative;
 }
 .small_wei,.small_tel{
-    width: 32px;
-    height: 23px;
-    top: 10px;
+    width: 20px;
+    height: 15px;
+    top: 5px;
     background-repeat: no-repeat;
-    background-size: 75%;
+    background-size: 85%;
+    /**/
 }
 .mod04_left .small_wei{
     background-image: url(../images/small_p_01.jpg);
