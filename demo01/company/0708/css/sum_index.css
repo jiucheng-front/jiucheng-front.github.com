@@ -454,6 +454,7 @@ img{
     border: none;
     outline: none;
     background-color: #B1B0B0;
+    cursor: pointer;
 }
 .from_place li span,.five_text,.five_btn{
     height: 30px;
