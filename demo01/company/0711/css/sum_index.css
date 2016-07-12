@@ -794,13 +794,13 @@ body,.max_width{
     padding-top: 30px;
 }
 .nav_bar .sum_mod01 li.mod_tittle{
-    color: #FF2F2F;
+    color: #991D1B;
 }
 .nav_bar .nav_list li a{
     color: #5A5A5A;
     border-bottom: 2px solid #fff;
 }
-.nav_bar .sum_mod01 a:hover{
-    color: #FF2F2F;
-    border-bottom: 2px  solid #FF2F2F;
+.nav_bar .sum_mod01 a:hover,.nav_bar .sum_mod01 a.sub_selected{
+    color: #991D1B;
+    border-bottom: 2px  solid #991D1B;
 }
