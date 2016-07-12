@@ -26,7 +26,7 @@ window.onload=function(){
         var sum=elem.offsetTop;
         var elemHeight=parseFloat(getComputedStyle(elem).height);
         var elemWidth=parseFloat(getComputedStyle(elem).width);
-        console.log(elemHeight,elemWidth);
+        //console.log(elemHeight,elemWidth);
         document.onscroll=function(){
             elem.style.width=elemWidth+"px";
             elem.style.height=elemHeight+"px";
@@ -37,6 +37,7 @@ window.onload=function(){
                         //    willHeight=parseFloat(document.documentElement.scrollTop);
                         //}
             var scrollTop = document.documentElement.scrollTop||window.pageYOffset||document.body.scrollTop;
+            console.log(scrollTop);
             var willHeight=parseFloat(scrollTop);
             ///***********顶部跟随滚动条固定*********/
             var elemHeader=document.getElementById("header");
