@@ -68,6 +68,9 @@ body,.max_width{
 .top_header{
     background-color: #F3F3F3;
 }
+.top_header img{
+    display: block;
+}
 .header_nav{
     background-color: #6F2423;
 }
