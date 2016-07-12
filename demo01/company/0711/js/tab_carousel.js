@@ -31,6 +31,16 @@ window.onload=function(){
                 willShowsTwo[this.index].className="three_items"+" will_show";
             }
         }
-
+        //eight_six
+        var eightBtns=document.getElementsByClassName("js_eight_btn");
+        for(var x= 0,y=eightBtns.length;x<y;x++){
+            eightBtns[x].index=x;
+            eightBtns[x].onmouseover=function(){
+                for(var z=0;z<y;z++){
+                    eightBtns[z].className="js_eight_btn"+"";
+                }
+                this.className="js_eight_btn"+" on";
+            }
+        }
     })();
 };
