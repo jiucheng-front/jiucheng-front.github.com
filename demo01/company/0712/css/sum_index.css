@@ -160,10 +160,19 @@ img{
 /*top_bottom*/
 .top_bottom{
     margin-top: 10px;
+    position: relative;
 }
-.top_bottom a,.top_bottom img{
+.top_bottom img{
     display: block;
     width: 100%;
+}
+.top_bottom a{
+    position: absolute;
+    display: block;
+    padding: 22px 57px;
+    right: 2%;
+    top: 30%;
+    z-index: 10;
 }
 /*。。。。section_one。。。。*/
 .section_one{
@@ -207,4 +216,100 @@ img{
 }
 .section_one ul{
     margin-top: 10px;
+}
+.section_btn{
+    position: relative;
+}
+.section_btn img{
+    display: block;
+    width: 100%;
+}
+.section_btn a{
+    display: block;
+    padding: 40px;
+    position: absolute;
+    right:3%;
+    top: 20%;
+    z-index: 10;
+}
+/********section_two***********/
+.section_two{
+    background-color: #f6f6f6;
+}
+.two_lists_parent{
+    padding: 5px 10px;
+}
+.two_lists{
+    overflow: hidden;
+    margin-top: 20px;
+}
+.two_lists_left{
+    width: 29%;
+    height: 154px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.two_lists_left h3{
+    text-align: center;
+    color:#fff;
+    font-size: 20px;
+}
+.two_lists_left h3.have_top{
+    margin-top: 51px;
+}
+.list_yellow{
+    background-image: url(../images/two_bg_03.jpg);
+}
+.list_red{
+    background-image: url(../images/two_bg_06.jpg);
+}
+.list_deep{
+    background-image: url(../images/two_bg_08.jpg);
+}
+.two_lists_right{
+    width: 67%;
+    height: 154px;
+}
+.two_lists_right .deep_red{
+    color: #DF002B;
+}
+.two_lists_right li{
+    width: 148px;
+    height: 48px;
+    position: relative;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.two_lists_right li.have_bg{
+    background-image: url(../images/two_lists_bg.jpg);
+}
+.two_lists_right li a{
+    display: block;
+    text-align: center;
+    line-height: 48px;
+    color: #595757;
+    font-size: 15px;
+}
+.two_lists_right li b{
+    display: block;
+    width: 23px;
+    height: 12px;
+    background-image: url(../images/small_hot.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 10px;
+    right:14%;
+}
+.two_lists_right li b.max_right{
+    right: 8%;
+}
+.two_lists_right li b.big_right{
+    right: 4%;
+}
+.two_lists_right li.have_left{
+    margin-left: 5px;
+}
+.two_lists_right ul.have_top{
+    margin-top: 5px;
 }

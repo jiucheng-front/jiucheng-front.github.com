@@ -93,9 +93,9 @@ a{text-decoration:none}
 .section_four{margin-top:40px}
 .four_lists{overflow:hidden;margin-top:30px}
 .four_lists div div{text-align:center}
-.four_left{width:200px;float:left;height:324px;}
-.four_middle{width:380px;float:left;margin-left:20px;height:345px;}
-.four_right{width:380px;float:right;height:345px;}
+.four_left{width:200px;float:left}
+.four_middle{width:380px;float:left;margin-left:20px}
+.four_right{width:380px;float:right}
 .four_lists a{display:block;width:110px;height:32px;line-height:32px;font-size:18px;background-color:#C78315;color:#fff;text-align:center;margin:10px auto;border-radius:5px}
 .four_lists h4 span,.four_lists p{font-size:16px;color:#7B7B7B}
 .have_border{padding:10px 0;border-bottom:1px dashed #7B7B7B}
