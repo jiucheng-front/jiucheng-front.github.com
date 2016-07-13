@@ -6,6 +6,11 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+*, :before, :after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
 body{
     font-family: Helvetica, STHeiTi, "Microsoft YaHei", sans-serif;
     width: 100%;
@@ -789,18 +794,3 @@ body,.max_width{
     margin-right:5px;
 }
 /*追加改动*/
-.nav_bar{
-    background-color: #fff;
-    padding-top: 30px;
-}
-.nav_bar .sum_mod01 li.mod_tittle{
-    color: #991D1B;
-}
-.nav_bar .nav_list li a{
-    color: #5A5A5A;
-    border-bottom: 2px solid #fff;
-}
-.nav_bar .sum_mod01 a:hover,.nav_bar .sum_mod01 a.sub_selected{
-    color: #991D1B;
-    border-bottom: 2px  solid #991D1B;
-}
