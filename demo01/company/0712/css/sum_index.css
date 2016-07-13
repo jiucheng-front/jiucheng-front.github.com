@@ -11,10 +11,6 @@ body{
     color: #595757;
     background-color: #fff;
     outline: 0;
-    max-width: 640px;
-    min-width: 320px;
-    width: 100%;
-    margin: auto;
     overflow-x: hidden;
     font-size: 14px;
 }
@@ -47,7 +43,10 @@ img{
 }
 /*container*/
 .container{
+    max-width: 640px;
+    min-width: 320px;
     width: 100%;
+    margin: 0 auto;
 }
 .header{
     background-color: #F3F3F3;
