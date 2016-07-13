@@ -166,3 +166,46 @@ img{
     display: block;
     width: 100%;
 }
+/*。。。。section_one。。。。*/
+.section_one{
+    margin-top: 10px;
+}
+.section_one li{
+    width:48%;
+    height: 375px;
+    background-image: url(../images/section_one_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 0 10px;
+}
+.section_one li img{
+    display: block;
+    max-width: 100%;
+    margin: 20px auto;
+    margin-bottom: 0;
+}
+.section_one li p{
+    line-height: 41px;
+    margin-left: 13%;
+}
+.section_one li p.have_top{
+    margin-top:10px;
+}
+.section_one li.have_left{
+    margin-left: 10px;
+}
+.section_one li a{
+    display: block;
+    float: left;
+    width: 58%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background-image: url(../images/section_icon.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+.section_one ul{
+    margin-top: 10px;
+}
