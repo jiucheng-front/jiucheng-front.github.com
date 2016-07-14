@@ -16,6 +16,10 @@ body{
 img{
     border: none;
 }
+/**:before{*/
+    /*display: table;*/
+    /*content: "";*/
+/*}*/
 .will_left {
     float: left;
 }
@@ -206,7 +210,7 @@ img{
     margin: 0 .08rem;
 }
 .one_lists dl p{
-    font-size: .18rem;
+    font-size: .2rem;
 }
 .one_lists dd a{
     font-size: .2rem;
@@ -296,13 +300,13 @@ img{
     float: left;
     position: relative;
 }
-.two_same_right li.have_left{
+.two_same_right li.have_left,.two_answer_right li.have_left{
     margin-left: .05rem;
 }
 .two_same_right li.have_top{
     margin-top: .05rem;
 }
-.two_same_right a{
+.two_same_right a,.two_answer_right a{
     display: block;
     width: 1.4rem;
     height: .48rem;
@@ -314,10 +318,10 @@ img{
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
-.two_same_right a.deep_red {
+.two_same_right a.deep_red,.deep_red {
     color: #DF002B;
 }
-.two_same_right li b{
+.two_same_right li b,.two_answer_right li b{
     display: block;
     width: .23rem;
     height: .12rem;
@@ -333,4 +337,288 @@ img{
 }
 .two_same_right li b.min_right{
     right: .01rem;
+}
+/*same_btn*/
+.same_btn{
+    overflow: hidden;
+}
+.same_btn p{
+    font-size: .24rem;
+    color: #595757;
+    overflow: hidden;
+    line-height: .59rem;
+    float: left;
+    border: 2px solid #D57A10;
+    border-radius: 5px;
+    margin-left: 20%;
+}
+.same_btn span,.same_btn a{
+    float: left;
+}
+.same_btn span.p_left{
+     padding-left: .2rem;
+ }
+.same_btn span.p_right{
+    padding-right: .2rem;
+}
+.same_btn a{
+    background-image: url(../images/same_btn.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 2.17rem;
+    height: .59rem;
+    text-align: center;
+    color: #fff;
+    padding-right: .3rem;
+}
+.two_answer_left{
+    float: left;
+    width: 1.82rem;
+    height: .48rem;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.two_answer_right{
+    width: 4.3rem;
+    height: .48rem;
+    float: right;
+}
+.two_answer_right ul{
+    overflow: hidden;
+}
+.two_answer_right li{
+    float: left;
+    position: relative;
+}
+.two_answer_left{
+     background-image: url(../images/two_answer.jpg);
+     background-size: 100% 100%;
+     background-repeat: no-repeat;
+ }
+.two_answer_left h3{
+    text-align: center;
+    color: #fff;
+    line-height: .48rem;
+    font-size: .3rem;
+}
+.section_two{
+    background-color: #F6F6F6;
+    padding-bottom: .2rem;
+ }
+/******section_hot*******/
+.section_hot{
+    overflow: hidden;
+    margin-top: .1rem;
+}
+.hot_left{
+    float: left;
+}
+.hot_left img{
+    width: 100%;
+}
+.hot_left,.hot_right{
+    width: 1.5rem;
+    height: 1.45rem;
+
+}
+.hot_middle{
+    float: left;
+    width: 3.36rem;
+    height: 1.45rem;
+    margin-left: 2px;
+}
+.hot_right{
+    float: right;
+}
+.yellow_one{
+    background-color: #905B3F;
+}
+.yellow_two{
+    background-color: #EAB324;
+}
+.yellow_three{
+    background-color: #FF7B06;
+}
+.yellow_four{
+    background-color: #BD8D53;
+}
+.section_hot p a{
+    font-size: .2rem;
+    color: #fff;
+    display: block;
+    float: left;
+    text-align: center;
+}
+.hot_middle p a{
+    line-height: .47rem;
+}
+.section_hot p{
+    overflow: hidden;
+}
+.section_hot p.have_top{
+    margin-top: 2px;
+}
+a.p_one{
+    width: 44%;
+}
+a.p_s_left{
+    margin-left:.5%;
+}
+a.p_two{
+    width: 55.5%;
+}
+.hot_right p{
+    overflow: hidden;
+}
+.hot_right p a{
+    display: block;
+    line-height: .72rem;
+    width: 100%;
+}
+
+/*section_three*/
+.three_banner{
+    margin-top: .1rem;
+    height: 3.4rem;
+}
+.slideBox{
+    width: 100%;
+    height:2.78rem;
+    position: relative;
+    border: 1px solid #ddd;
+    margin: 0 auto;
+}
+.slideBox .hd {
+    height: 20px;
+    overflow: hidden;
+    position: absolute;
+    bottom:-.4rem;
+    z-index: 1;
+}
+.slideBox .hd ul {
+    overflow: hidden;
+    zoom: 1;
+    float: left;
+}
+.slideBox .bd {
+    position: relative;
+    height: 100%;
+    z-index: 0;
+}
+.slideBox .hd ul li.on {
+    background: #905B3F;
+}
+.slideBox .hd ul li {
+    float: left;
+    margin-right: 10px;
+    width: .2rem;
+    height: .2rem;
+    background: #AEACAC;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.slideBox .bd li{
+    zoom: 1;
+    vertical-align: middle;
+    position: relative;
+}
+.slideBox .bd li a{
+    display: block;
+    position: absolute;
+    width: 1.44rem;
+    height: .6rem;
+    bottom:-2.5rem;
+    /*background-color: #000;*/
+    z-index: 20;
+}
+a.bg_red{
+    right: 1.87rem;
+}
+a.bg_yellow{
+    right: .3rem;
+}
+.slideBox .bd li img{
+    float: left;
+    width: 100%;
+}
+.big_tittle{
+    position: relative;
+    overflow: hidden;
+}
+.big_tittle img{
+    display: block;
+    float: left;
+    width: 100%;
+}
+.big_tittle a{
+    position: absolute;
+    width: 2.17rem;
+    height: .5rem;
+    background-image: url(../images/click_bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: 10;
+    right: .85rem;
+    bottom: .25rem;
+}
+/*section_five*/
+.five_top{
+    margin-top: .1rem;
+    padding: .2rem;
+    background-image: url(../images/five_top_03.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.five_top p{
+    font-size: .22rem;
+    text-indent: .2rem;
+}
+.five_middle{
+    width: 96%;
+    margin:.1rem auto;
+    overflow: hidden;
+}
+.five_middle a{
+    font-size: .22rem;
+    color: #fff;
+    display: block;text-align: center;
+    line-height: .6rem;
+    width: 3rem;
+    height: .6rem;
+    background-image: url(../images/five_h_02.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.five_middle a:nth-child(1){
+    float: left;
+}
+.five_middle a:nth-child(2){
+    float: right;
+}
+.five_middle a.will_click{
+    background-image: url(../images/five_h_01.png);
+}
+.five_lists{
+    width: 96%;
+    margin:.1rem auto;
+    position: relative;
+    height: 3.82rem;
+}
+.five_tab{
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.will_show{
+    display: block;
+}
+.will_hide{
+    display: none;
+}
+.five_tab img{
+    width: 3rem;
+}
+.five_tab img.have_top{
+    margin-top: .08rem;
 }
