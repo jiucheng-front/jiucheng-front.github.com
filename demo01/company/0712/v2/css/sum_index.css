@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-family: Helvetica, STHeiTi, "Microsoft YaHei", sans-serif;
+    color: #595757;
+    background-color: #fff;
+    outline: 0;
+    overflow-x: hidden;
+}
+img{
+    border: none;
+}
+.will_left {
+    float: left;
+}
+.will_right{
+    float: right;
+}
+.will_translateY{
+    margin: 0 auto;
+    margin-top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.will_translateX{
+    margin: 0 auto;
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+/*container*/
+.container{
+    max-width: 640px;
+    min-width: 320px;
+    width: 100%;
+    margin: 0 auto;
+}
+.flex_parent{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+.flex_child{
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+/*header_top*/
+.header_top{
+    background-color: #F3F3F3;
+    height:.6rem;
+}
+.header_top a{
+    font-size: .2rem;
+    color: #fff;
+    display: block;
+}
+.header_one,.header_two{
+    width: 1.1rem;
+    height: .4rem;
+    text-align: center;
+    line-height: .4rem;
+}
+.header_one{
+    background-color: #A65A0E;
+    margin-left: .2rem;
+    margin-top: .1rem;
+}
+.header_two{
+    background-color: #FF7800;
+    margin-left: .2rem;
+    margin-top: .1rem;
+}
+.header_top a img{
+    width: 2.57rem;
+    margin-right: .2rem;
+    margin-top: .12rem;
+}
+/*header_logo*/
+.header_logo{
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+}
+.header_logo img{
+    max-width: 100%;
+}
+.header_logo a{
+    display: block;
+    position: absolute;
+    padding: .21rem;
+    top: .15rem;
+}
+.header_left{
+    left: .23rem;
+}
+.header_right{
+    right: .25rem;
+}
+/*..........*/
+.nav_bar{
+    margin-top: 10px;
+}
+.nav_top, .nav_top ul {
+    overflow: hidden;
+    width: 100%;
+}
+.nav_top ul li {
+    text-align: center;
+    height: .6rem;
+    width: 24.65%;
+    background-image: url(../images/nav_bg.jpg);
+    background-size: 100% 100%;
+}
+.hove_left{
+    margin-left: .03rem;
+}
+.nav_top ul li a {
+    font-size: .26rem;
+    color: #fff;
+    display: block;
+    line-height: .6rem;
+    cursor: pointer;
+}
+.nav_top ul li:nth-child(5), .nav_top ul li:nth-child(6), .nav_top ul li:nth-child(7), .nav_top ul li:nth-child(8) {
+    margin-top: .026rem;
+}
+/*..top_banner*/
+.top_banner{
+    margin-top: 10px;
+}
+.top_banner a,.top_banner img{
+    display: block;
+}
+.top_banner a{
+    overflow: hidden;
+}
+.top_banner a img{
+    float: left;
+}
+.big_banner img{
+    width: 100%;
+}
+.top_middle{
+    overflow: hidden;
+    margin-top: 5px;
+}
+.top_middle_left img{
+    width: 4.27rem;
+}
+.top_middle_right img{
+    width: 2.09rem;
+}
+.top_bottom{
+    overflow: hidden;
+    margin-top: 10px;
+    position: relative;
+}
+.top_bottom img{
+    width: 100%;
+    float: left;
+}
+.top_bottom a{
+    display: block;
+    padding: .23rem .58rem;
+    top: .35rem;
+    right: .14rem;
+    position: absolute;
+}
+/**/
+.child a{
+    display: block;
+    font-size: .3rem;
+    color: #000;
+}
+/*section_one*/
+.one_lists{
+    overflow: hidden;
+    margin-top: 10px;
+}
+.one_lists dl{
+    width: 3.1rem;
+    background-image: url(../images/section_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 20px 10px;
+}
+.one_lists dt img{
+    width: 2.75rem;
+    margin: 0 .08rem;
+}
+.one_lists dl p{
+    font-size: .18rem;
+}
+.one_lists dd a{
+    font-size: .2rem;
+}
+.one_lists dt,.one_lists dd{
+    overflow: hidden;
+}
+.one_lists dd{
+    padding: 5px;
+}
+.one_lists dd img{
+    margin-top: .04rem;
+    margin-right: 3px;
+}
+.one_lists dd.have_border{
+    border-bottom: 1px dashed #ccc;
+}
+.one_lists dl img,.one_lists p,.one_lists a{
+    float: left;
+}
+.one_lists a{
+    background-image: url(../images/section_icon.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 2.1rem;
+    height: .5rem;
+    display: block;
+    text-align: center;
+    line-height: .5rem;
+    color: #fff;
+    float: left;
+    padding-right: .25rem;
+}
+/*section_btn*/
+.section_btn{
+    position: relative;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.section_btn img{
+    width: 100%;
+    float: left;
+}
+.section_btn a{
+    display: block;
+    padding: .42rem;
+    top: .3rem;
+    right: .2rem;
+    position: absolute;
+}
+/*two_same*/
+.two_same{
+    overflow: hidden;
+    padding:10px 5px;
+}
+.two_same_left{
+    float: left;
+    width: 1.82rem;
+    height: 1.54rem;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-top: .3rem;
+}
+.two_same_left h3{
+    font-size: .3rem;
+    color: #fff;
+    text-align: center;
+}
+.list_yellow {
+    background-image: url(../images/two_bg_03.jpg);
+}
+.list_red {
+    background-image: url(../images/two_bg_06.jpg);
+}
+.list_deep {
+    background-image: url(../images/two_bg_08.jpg);
+}
+.two_same_right{
+    width: 4.3rem;
+    height: 1.54rem;
+    float: right;
+}
+.two_same_right ul{
+    overflow: hidden;
+}
+.two_same_right li{
+    float: left;
+    position: relative;
+}
+.two_same_right li.have_left{
+    margin-left: .05rem;
+}
+.two_same_right li.have_top{
+    margin-top: .05rem;
+}
+.two_same_right a{
+    display: block;
+    width: 1.4rem;
+    height: .48rem;
+    font-size: .18rem;
+    text-align: center;
+    line-height: .48rem;
+    color: #595757;
+    background-image: url(../images/two_lists_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.two_same_right a.deep_red {
+    color: #DF002B;
+}
+.two_same_right li b{
+    display: block;
+    width: .23rem;
+    height: .12rem;
+    background-image: url(../images/small_hot.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:.1rem;
+    right: .1rem;
+}
+.two_same_right li b.max_right{
+    right: .2rem;
+}
+.two_same_right li b.min_right{
+    right: .01rem;
+}
