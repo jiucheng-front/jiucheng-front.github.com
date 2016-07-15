@@ -50,6 +50,7 @@ img{
 }
 .header{
     background-color: #F3F3F3;
+    height: 50px;
 }
 
 .flex_parent{
@@ -69,6 +70,9 @@ img{
 .header ul,.header li{
     overflow: hidden;
 }
+.header img{
+    max-width: 100%;
+}
 .header li a{
     display: block;
     float: left;
@@ -78,12 +82,12 @@ img{
 .header_one{
     background-color: #A65A0E;
     margin-top: 10px;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 .header_two{
     background-color: #FF7800;
     margin-top: 10px;
-    margin-left: 20px;
+    margin-left: 8px;
 }
 *:before{
     display: table;
@@ -118,7 +122,7 @@ img{
     display: block;
     color: #fff;
     text-align: center;
-    line-height: 61px;
+    line-height: 50px;
     font-size: 16px;
 }
 .nav_bar ul{
@@ -128,7 +132,7 @@ img{
     background-image: url(../images/nav_bg.jpg);
     background-size: 100% 100%;
     width: 157px;
-    height: 61px;
+    height: 50px;
 }
 .nav_bar li.have_left{
     margin-left: 4px;
