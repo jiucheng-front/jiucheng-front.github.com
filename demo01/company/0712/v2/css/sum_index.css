@@ -319,7 +319,7 @@ img{
     display: block;
     width: 1.4rem;
     height: .48rem;
-    font-size: .18rem;
+    font-size: .2rem;
     text-align: center;
     line-height: .48rem;
     color: #595757;
@@ -334,7 +334,7 @@ img{
     display: block;
     width: .23rem;
     height: .12rem;
-    background-image: url(../images/small_hot.png);
+    background-image: url(../images/small_hot.gif);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     position: absolute;
@@ -345,21 +345,21 @@ img{
     right: .2rem;
 }
 .two_same_right li b.min_right{
-    right: .01rem;
+    right: .05rem;
 }
 /*same_btn*/
 .same_btn{
     overflow: hidden;
 }
 .same_btn p{
-    font-size: .24rem;
+    font-size: .3rem;
     color: #595757;
     overflow: hidden;
     line-height: .59rem;
     float: left;
     border: 2px solid #D57A10;
     border-radius: 5px;
-    margin-left: 20%;
+    margin-left: 14%;
 }
 .same_btn span,.same_btn a{
     float: left;
@@ -488,71 +488,25 @@ a.p_two{
 /*section_three*/
 .three_banner{
     margin-top: .1rem;
-    height: 3.4rem;
+    height: 3.2rem;
 }
-.slideBox{
-    width: 100%;
-    height:2.78rem;
-    position: relative;
-    border: 1px solid #ddd;
-    margin: 0 auto;
-}
-.slideBox .hd {
-    height: 20px;
-    overflow: hidden;
-    position: absolute;
-    bottom:-.4rem;
-    z-index: 1;
-}
-.slideBox .hd ul {
-    overflow: hidden;
-    zoom: 1;
-    float: left;
-}
-.slideBox .bd {
-    position: relative;
-    height: 100%;
-    z-index: 0;
-}
-.slideBox .hd ul li.on {
-    background: #905B3F;
-}
-.slideBox .hd ul li {
-    float: left;
-    margin-right: 10px;
-    width: .2rem;
-    height: .2rem;
-    background: #AEACAC;
-    cursor: pointer;
-    border-radius: 50%;
-}
-.slideBox .bd li{
-    zoom: 1;
-    vertical-align: middle;
-    position: relative;
-}
-.slideBox .bd li a{
+.swiper-slide a{
     display: block;
-    position: absolute;
-    width: 1.44rem;
-    height: .6rem;
-    bottom:-2.5rem;
-    /*background-color: #000;*/
-    z-index: 20;
+    overflow: hidden;
 }
-a.bg_red{
-    right: 1.87rem;
-}
-a.bg_yellow{
-    right: .3rem;
-}
-.slideBox .bd li img{
+.swiper-slide a img{
     float: left;
     width: 100%;
 }
+.swiper-container{
+    width: 100%;
+    height:3.1rem;
+}
+/*big_tittle*/
 .big_tittle{
     position: relative;
     overflow: hidden;
+    margin-top: .1rem;
 }
 .big_tittle img{
     display: block;
@@ -640,6 +594,11 @@ a.bg_yellow{
 .five_msg{
     border:1px solid #EDE8E5;
 }
+.five_msg p{
+    display: block;
+    font-size: .22rem;
+    color: #6B6968;
+}
 .msg_bg{
     width: 100%;
     height: 9px;
@@ -647,15 +606,19 @@ a.bg_yellow{
 }
 .five_msg p{
     overflow: hidden;
-    font-size:.22rem ;
-    color: #6B6968;
     padding: .1rem .2rem;
     margin: .1rem 0;
+}
+.five_sum{
+    display: block;
+    overflow: hidden;
+    font-size:.22rem ;
+    color: #6B6968;
 }
 .five_msg p span{
     float: left;
 }
-.five_msg p a{
+.five_msg p a.five_bbq{
     display: block;
     float: left;
     font-size: .22rem;
@@ -770,7 +733,7 @@ a.bg_yellow{
 /*git_center*/
 .git_center{
     width: 96%;
-    margin: 0 auto;
+    margin:.1rem auto;
 }
 .git_center_bg{
     width: 100%;
@@ -786,6 +749,26 @@ a.bg_yellow{
 }
 .git_center .five_msg{
     margin-top: .1rem;
+}
+.scrollbox {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#scrollDiv {
+    width: 100%;
+    height: 1.69rem;
+    overflow: hidden;
+}
+#scrollDiv li{
+    height:.5rem;
+    width:100%;
+    overflow:hidden;
+    zoom:1;
+    padding-left: .15rem;
+}
+#scrollDiv li p{
+    padding: 0;
 }
 /*git_tel*/
 .git_tel{
@@ -852,7 +835,7 @@ a.bg_yellow{
     padding-top: .2rem;
 }
 .sum_word p{
-    font-size: .2rem;
+    font-size: .22rem;
     color: #535543;
 }
 /*who_said*/

@@ -23,8 +23,10 @@
     <meta name="description" content="">
     <title>郑州国丹</title>
     <script src="js/mobile-adaptive.js"></script>
-    <script src="js/jquery1.42.min.js"></script>
-    <script src="js/jquery.SuperSlide.2.1.1.js"></script>
+    <link rel="stylesheet" href="js/swiper-3.3.1.min.css">
+    <script src="js/swiper-3.3.1.min.js"></script>
+    <script src="js/jquery-1.4.4.min.js" type="text/javascript"></script>
+    <script src="js/jq_scroll.js" type="text/javascript"></script>
     <link rel="stylesheet" href="css/sum_index.css">
     <script src="js/tab_show.js"></script>
 </head>
@@ -184,14 +186,14 @@
                 </div>
                 <div class="two_same_right">
                     <ul>
-                        <li><a href="/" class="deep_red">痘坑痘印</a><b></b></li>
+                        <li><a href="/" class="deep_red">痘坑痘印</a><b class="min_right"></b></li>
                         <li class="have_left"><a href="/">洗纹身</a></li>
                         <li class="have_left"><a href="/">雀斑</a></li>
                         <li class="have_top"><a href="/">脱毛</a></li>
-                        <li class="have_left have_top"><a href="/" class="deep_red">疤痕修复</a><b></b></li>
-                        <li class="have_left have_top"><a href="/" class="deep_red">毛周角化</a><b></b></li>
+                        <li class="have_left have_top"><a href="/" class="deep_red">疤痕修复</a><b class="min_right"></b></li>
+                        <li class="have_left have_top"><a href="/" class="deep_red">毛周角化</a><b class="min_right"></b></li>
                         <li class="have_top"><a href="/" class="deep_red">黄褐斑</a><b></b></li>
-                        <li class="have_left have_top"><a href="/" class="deep_red min_right">过敏原检测</a><b class="min_right"></b></li>
+                        <li class="have_left have_top"><a href="/" class="deep_red min_right">过敏原检测</a></li>
                     </ul>
                 </div>
             </div>
@@ -222,60 +224,70 @@
                 <a href="/"></a>
             </div>
             <div class="three_banner">
-                <div id="slideBox" class="slideBox">
-                    <div class="hd will_translateX">
-                        <ul><li></li><li></li><li></li><li></li><li></li><li></li></ul>
-                    </div>
-                    <div class="bd">
-                        <ul>
-                            <li>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <!--1-->
+                        <div class="swiper-slide">
+                            <a href="/">
                                 <img src="images/three_banner_1.jpg" alt="">
                                 <img src="images/three_banner_2.jpg" alt="">
                                 <img src="images/three_banner_3.jpg" alt="">
-                                <a href="/" class="bg_red"></a>
-                                <a href="/" class="bg_yellow"></a>
-                            </li>
-                            <li>
+                            </a>
+                        </div>
+                        <!--2-->
+                        <div class="swiper-slide">
+                            <a href="/">
                                 <img src="images/three_banner_4.jpg" alt="">
                                 <img src="images/three_banner_5.jpg" alt="">
                                 <img src="images/three_banner_6.jpg" alt="">
-                                <a href="/" class="bg_red"></a>
-                                <a href="/" class="bg_yellow"></a>
-                            </li>
-                            <li>
+                            </a>
+                        </div>
+                        <!--3-->
+                        <div class="swiper-slide">
+                            <a href="/">
                                 <img src="images/three_banner_7.jpg" alt="">
                                 <img src="images/three_banner_8.jpg" alt="">
                                 <img src="images/three_banner_9.jpg" alt="">
-                                <a href="/" class="bg_red"></a>
-                                <a href="/" class="bg_yellow"></a>
-                            </li>
-                            <li>
+                            </a>
+                        </div>
+                        <!--4-->
+                        <div class="swiper-slide">
+                            <a href="/">
                                 <img src="images/three_banner_10.jpg" alt="">
                                 <img src="images/three_banner_11.jpg" alt="">
                                 <img src="images/three_banner_12.jpg" alt="">
-                                <a href="/" class="bg_red"></a>
-                                <a href="/" class="bg_yellow"></a>
-                            </li>
-                            <li>
+                            </a>
+                        </div>
+                        <!--5-->
+                        <div class="swiper-slide">
+                            <a href="/">
                                 <img src="images/three_banner_13.jpg" alt="">
                                 <img src="images/three_banner_14.jpg" alt="">
                                 <img src="images/three_banner_15.jpg" alt="">
-                                <a href="/" class="bg_red"></a>
-                                <a href="/" class="bg_yellow"></a>
-                            </li>
-                            <li>
+                            </a>
+                        </div>
+                        <!--6-->
+                        <div class="swiper-slide">
+                            <a href="/">
                                 <img src="images/three_banner_16.jpg" alt="">
                                 <img src="images/three_banner_17.jpg" alt="">
                                 <img src="images/three_banner_18.jpg" alt="">
-                                <a href="/" class="bg_red"></a>
-                                <a href="/" class="bg_yellow"></a>
-                            </li>
-                        </ul>
+                            </a>
+                        </div>
                     </div>
-                    <!-- 下面是前/后按钮代码，如果不需要删除即可 -->
+                    <!-- 如果需要分页器 -->
+                    <div class="swiper-pagination"></div>
                 </div>
                 <script>
-                    jQuery(".slideBox").slide({mainCell:".bd ul",autoPlay:true});
+                    var mySwiper = new Swiper ('.swiper-container', {
+//            direction: 'vertical',
+                        loop: true,
+                        autoplay: 2000,
+                        // 如果需要分页器
+                        pagination: '.swiper-pagination',
+                        // 如果需要滚动条
+//            scrollbar: '.swiper-scrollbar',
+                    });
                 </script>
             </div>
             <div class="big_tittle">
@@ -315,10 +327,9 @@
         <div class="five_more">
             <div class="five_msg">
                 <h6 class="msg_bg"></h6>
-                <p class="border_bottom"><span class="msg_book"></span><span>服务百姓 健康行动 全国大型义诊活动</span></p>
-                <p class="border_bottom"><span class="msg_book"></span><span>服务百姓 健康行动 全国大型义诊活动</span></p>
-                <p><span class="msg_book"></span><span>服务百姓 健康行动 全国大型义诊活动</span></p>
-                <p><a href="/" class="will_translateX">查看更多关于国丹医院内新闻</a></p>
+                <p class="border_bottom"><a href="/" class="five_sum"><span class="msg_book"></span><span>服务百姓 健康行动 全国大型义诊活动</span></a></p>
+                <p class="border_bottom"><a href="/" class="five_sum"><span class="msg_book"></span><span>服务百姓 健康行动 全国大型义诊活动</span></a></p>
+                <p><a href="/" class="five_sum"><span class="msg_book"></span><span>服务百姓 健康行动 全国大型义诊活动</span></a></p>
                 <h6 class="msg_bg"></h6>
             </div>
         </div>
@@ -377,9 +388,20 @@
                     <h3>挂号中心</h3>
                     <div class="five_msg">
                         <h6 class="msg_bg"></h6>
-                        <p class="border_bottom"><span>王**&nbsp;青春痘&nbsp;预约成功&nbsp;李主任&nbsp;5分钟前</span></p>
-                        <p class="border_bottom"><span>李**&nbsp;皮炎&nbsp;预约成功&nbsp;杨主任&nbsp;16分钟前</span></p>
-                        <p><span>张** &nbsp;荨麻疹 &nbsp;预约成功&nbsp;常主任&nbsp;20分钟前</span></p>
+                        <!---->
+                        <div class="scrollbox">
+                            <div id="scrollDiv">
+                                <ul>
+                                    <li class="border_bottom"><p><span>王**&nbsp;青春痘&nbsp;预约成功&nbsp;李主任&nbsp;5分钟前</span></p></li>
+                                    <li class="border_bottom"><p><span>李**&nbsp;皮炎&nbsp;预约成功&nbsp;杨主任&nbsp;16分钟前</span></p></li>
+                                    <li><p><span>张** &nbsp;荨麻疹 &nbsp;预约成功&nbsp;常主任&nbsp;20分钟前</span></p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <script type="text/javascript">
+                            $(document).ready(function(){$("#scrollDiv").Scroll({line:1,speed:500,timer:3000});});
+                        </script>
+                        <!---->
                         <h6 class="msg_bg"></h6>
                     </div>
                 </div>
