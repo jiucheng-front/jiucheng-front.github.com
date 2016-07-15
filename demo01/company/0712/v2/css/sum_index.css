@@ -107,7 +107,7 @@ img{
 .header_logo{
     position: relative;
     overflow: hidden;
-    margin-top: 10px;
+    margin-top: .1rem;
 }
 .header_logo img{
     max-width: 100%;
@@ -126,7 +126,7 @@ img{
 }
 /*..........*/
 .nav_bar{
-    margin-top: 10px;
+    margin-top: .1rem;
 }
 .nav_top, .nav_top ul {
     overflow: hidden;
@@ -154,7 +154,7 @@ img{
 }
 /*..top_banner*/
 .top_banner{
-    margin-top: 10px;
+    margin-top:.1rem;
 }
 .top_banner a,.top_banner img{
     display: block;
@@ -170,7 +170,7 @@ img{
 }
 .top_middle{
     overflow: hidden;
-    margin-top: 5px;
+    margin-top: .05rem;
 }
 .top_middle_left img{
     width: 4.27rem;
@@ -180,7 +180,7 @@ img{
 }
 .top_bottom{
     overflow: hidden;
-    margin-top: 10px;
+    margin-top:.1rem;
     position: relative;
 }
 .top_bottom img{
@@ -203,7 +203,7 @@ img{
 /*section_one*/
 .one_lists{
     overflow: hidden;
-    margin-top: 10px;
+    margin-top: .1rem;
 }
 .one_lists dl{
     width: 3.1rem;
@@ -256,7 +256,7 @@ img{
 /*section_btn*/
 .section_btn{
     position: relative;
-    margin-top: 10px;
+    margin-top: .1rem;
     overflow: hidden;
 }
 .section_btn img{
@@ -273,7 +273,7 @@ img{
 /*two_same*/
 .two_same{
     overflow: hidden;
-    padding:10px 5px;
+    padding:.1rem .05rem;
 }
 .two_same_left{
     float: left;
@@ -894,7 +894,7 @@ a.bg_yellow{
 }
 /*section_footer*/
 .section_footer{
-    margin-top: .2rem;
+    margin-top: .1rem;
 }
 .footer_bar{
     width: 100%;
@@ -917,7 +917,7 @@ a.bg_yellow{
 }
 /*footer_place*/
 .footer_place{
-    margin-top: .2rem;
+    margin-top: .1rem;
     width: 100%;
     height: 2.44rem;
     background-image: url(../images/footer_bg_03.jpg);
