@@ -218,58 +218,78 @@ img{
 .deep_red{
     color: #DF002B;
 }
-.home_lists{
-    margin-top: .2rem;
-}
-.home_top h2{
-    text-align: center;
-    font-size: .3rem;
-    color: #1D1D1D;
-}
-.top_msg{
-    background-color: #F0F0F0;
+/*young_lists*/
+.young_lists{
     margin-top: .1rem;
-    padding: .2rem 0;
-}
-.top_msg p{
-    font-size: .22rem;
-    color: #6B6968;
-    text-align: center;
-}
-.sum_width{
-    width: 4.9rem;
-    margin: 0 auto;
+    padding: .06rem .1rem;
+    background-color: #F0F0F0;
     overflow: hidden;
+}
+.young_left{
+    width: 1.36rem;
+    height: 1.75rem;
+    float: left;
+    overflow: hidden;
+}
+.young_one{
+    background-color: #DB5543;
+}
+.young_two{
+    background-color: #BB9005;
+}
+.young_three{
+    background-color: #AF7C4A;
+}
+.young_left img{
+    float: left;
+    width: .72rem;
     margin-top: .25rem;
 }
-.sum_width a{
-    display: block;
+.young_left h3{
     font-size: .22rem;
     color: #fff;
-    height: .45rem;
-    line-height: .45rem;
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-top: .1rem;
+    font-weight: 100;
+}
+.young_right{
+    width: 4.7rem;
+    float: right;
+}
+.young_right h4{
+    font-size: .22rem;
+    color: #4F4F51;
+    padding: .1rem 0;
+    border-bottom:1px dashed #C9C9C9;
+}
+.young_right p{
+    font-size: .2rem;
+    color: #676768;
+    margin-top: .1rem;
+}
+.young_right p a.deep_red{
+    color: #DF002B;
+}
+.young_btn{
+    width: 3.74rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.young_btn a{
+    display: block;
+    width: 1.65rem;
+    font-size: .22rem;
+    color: #fff;
+    line-height:.42rem;
     text-align: center;
 }
-.ask_doctor{
-    width: 1.7rem;
-    background-color: #924B00;
+.ybtn_left{
+    background-color: #865820;
 }
-.ask_call{
-    width: 2.9rem;
+.ybtn_right{
     background-color: #D57A10;
-}
-.home_msg{
-    padding: .2rem .25rem;
-}
-.home_msg p{
-    font-size: .2rem;
-    text-indent: .2rem;
-    color: #6B6968;
-    line-height: .3rem;
-}
-.home_msg p.deep_red{
-    color: #DF002B;
-    padding: .05rem;
 }
 /******section_hot*******/
 .section_hot{
