@@ -319,7 +319,7 @@ img{
     display: block;
     width: 1.4rem;
     height: .48rem;
-    font-size: .2rem;
+    font-size: .24rem;
     text-align: center;
     line-height: .48rem;
     color: #595757;
@@ -338,7 +338,7 @@ img{
     background-size: 100% 100%;
     background-repeat: no-repeat;
     position: absolute;
-    top:.1rem;
+    top:.04rem;
     right: .1rem;
 }
 .two_same_right li b.max_right{
@@ -352,10 +352,10 @@ img{
     overflow: hidden;
 }
 .same_btn p{
-    font-size: .3rem;
+    font-size: .26rem;
     color: #595757;
     overflow: hidden;
-    line-height: .59rem;
+    line-height: .5rem;
     float: left;
     border: 2px solid #D57A10;
     border-radius: 5px;
@@ -375,7 +375,7 @@ img{
     background-size: 100% 100%;
     background-repeat: no-repeat;
     width: 2.17rem;
-    height: .59rem;
+    height: .5rem;
     text-align: center;
     color: #fff;
     padding-right: .3rem;
