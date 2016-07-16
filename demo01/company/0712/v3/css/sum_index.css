@@ -258,6 +258,9 @@ img{
     width: 4.7rem;
     float: right;
 }
+.young_right a.young_bbq{
+    display: block;
+}
 .young_right h4{
     font-size: .22rem;
     color: #4F4F51;
