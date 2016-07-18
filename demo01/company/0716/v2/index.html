@@ -23,206 +23,254 @@
     <meta name="description" content="">
     <title>文章页</title>
     <link href="css/font.css" rel="stylesheet" type="text/css" />
-    <!--<link href="css/swiper.css" rel="stylesheet" type="text/css" />-->
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
-    <!--<script src="js/swiper.min.js" type="text/javascript"></script>-->
+    <link href="css/swiper.css" rel="stylesheet" type="text/css" />
+    <script src="js/swiper.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
     <script type="text/javascript" src="js/tab.js"></script>
 </head>
 <body>
-<header><a href="tel:400-024-8088"><img src="images/m1.jpg"><div><b>400-024-8088</b><span>连线专家</span></div></a></header>
-<div class="logo">
-    <img src="images/logo.jpg" title="沈阳东城皮肤病医院【胎记科】">
-    <a href="#" class="a1"></a>
-    <a href="#" class="a2"></a>
-</div>
-<div class="banner">
-    <a href="/">
-        <img src="images/top_banner_03.jpg" alt="">
-        <img src="images/top_banner_05.jpg" alt="">
-        <img src="images/top_banner_06.jpg" alt="">
-    </a>
-</div>
-<nav class="hd">
-    <ul>
-        <li><a href="#"><img src="images/nav1.jpg"><span>关于东城</span></a></li>
-        <li><a href="#"><img src="images/nav2.jpg"><span>媒体视点</span></a></li>
-        <li><a href="#"><img src="images/nav3.jpg"><span>胎记专家</span></a></li>
-        <li><a href="#"><img src="images/nav4.jpg"><span>疗法设备<img src="images/nav7.jpg"></span></a></li>
-        <li><a href="#"><img src="images/nav5.jpg"><span>真人案例<img src="images/nav7.jpg"></span></a></li>
-        <li><a href="#"><img src="images/nav6.jpg"><span>来院路线</span></a></li>
-    </ul>
-    <a class="favorable" href="#"><b><img src="images/nav8.jpg">优惠活动</b></a>
-</nav>
-<div class="message">
-    <div class="fl">
-        <img src="images/m1.png">
+    <header><a href="tel:400-024-8088"><img src="images/m1.jpg"><div><b>400-024-8088</b><span>连线专家</span></div></a></header>
+    <div class="logo">
+        <img src="images/logo.jpg" title="沈阳东城皮肤病医院【胎记科】">
+        <a href="#" class="a1"></a>
+        <a href="#" class="a2"></a>
     </div>
-    <div class="slide">
-        <div class="slide1">
-            <ul>
-                <li>
-                    <a href="#">沈阳东城联合辽宁省慈善总会开展首个儿童胎记关爱热线：400-024-8088</a>
-                </li>
-                <li>
-                    <a href="#">沈阳东城联合辽宁省慈善总会开展首个儿童胎记关爱热线：400-024-8088</a>
-                </li>
-            </ul>
-        </div>
+    <div class="banner">
+        <a href="/">
+            <img src="images/top_banner_03.jpg" alt="">
+            <img src="images/top_banner_05.jpg" alt="">
+            <img src="images/top_banner_06.jpg" alt="">
+        </a>
     </div>
-</div>
-<script>
-    jQuery(".slide").slide({mainCell:".slide1 ul",autoPlay:true,effect:"leftMarquee",interTime:50,trigger:"click"});
-</script>
-<!---->
-<!---->
-<section class="part6">
-    <div class="up">
-        <img src="images/part6-01.jpg">
-        <img src="images/part6-02.jpg">
-    </div>
-    <ul class="part6-01">
-        <li>
-            <img src="images/part6-04.jpg">
-            <p>网上挂号</p>
-        </li>
-        <li>
-            <img src="images/part6-05.jpg">
-            <p>节省时间</p>
-        </li>
-        <li>
-            <img src="images/part6-06.jpg">
-            <p>避免排队</p>
-        </li>
-        <li>
-            <img src="images/part6-07.jpg">
-            <p>优先就诊</p>
-        </li>
-    </ul>
-    <ul class="part6-02">
-        <li>
-            就诊姓名：<input type="text" value="请输入" id="name"
-                        onFocus="if(this.value=='请输入'){this.value='';}"
-                        onBlur="if(this.value==''){this.value='请输入';}">　※必填
-        </li>
-        <li>
-            就诊电话：<input type="text" value="请输入" id="tel"
-                        onFocus="if(this.value=='请输入'){this.value='';}"
-                        onBlur="if(this.value==''){this.value='请输入';}">　※必填
-        </li>
-        <li>
-            就诊时间：<input type="date" value="请输入"
-                        onFocus="if(this.value=='请输入'){this.value='';}"
-                        onBlur="if(this.value==''){this.value='请输入';}">　※必填
-        </li>
-        <li>
-            病种类型：<select id="select">
-            <option value="红胎记">红胎记</option>
-            <option value="黑胎记">黑胎记</option>
-            <option value="青胎记">青胎记</option>
-            <option value="褐色胎记">褐色胎记</option>
-            <option value="红血丝">红血丝</option>
-        </select>
-        </li>
-    </ul>
-    <div class="btn">
-        <input type="button" value="加密提交" id="but">
-        <a href="#">重新输入</a>
-    </div>
-</section>
-<div class="search-01">
-    <div>
-        <input type="text" value="请输入您的电话号"
-               onfocus="this.value='';this.style.color='black'"
-               onblur="this.value=this.value.length==0?'请输入您的电话号':this.value">
-        <a href="#"><img src="images/search-01.png">点击拨打</a>
-    </div>
-</div>
-<section class="part7">
-    <h2>患者真实评价</h2>
-    <div class="part7-01">
-        <div class="fl">
-            <ul>
-                <li><img src="images/part7-01.jpg"></li>
-                <li><img src="images/part7-02.jpg"></li>
-                <li><img src="images/part7-03.jpg"></li>
-                <li><img src="images/part7-04.jpg"></li>
-            </ul>
-        </div>
-        <div class="fr">
-            <h3>FOLLOW</h3>
-            <img src="images/part7-06.png">
-            <img src="images/part7-05.jpg">
-        </div>
-    </div>
-    <div class="subnav">
+    <nav class="hd">
         <ul>
+            <li><a href="#"><img src="images/nav1.jpg"><span>关于东城</span></a></li>
+            <li><a href="#"><img src="images/nav2.jpg"><span>媒体视点</span></a></li>
+            <li><a href="#"><img src="images/nav3.jpg"><span>胎记专家</span></a></li>
+            <li><a href="#"><img src="images/nav4.jpg"><span>疗法设备<img src="images/nav7.jpg"></span></a></li>
+            <li><a href="#"><img src="images/nav5.jpg"><span>真人案例<img src="images/nav7.jpg"></span></a></li>
+            <li><a href="#"><img src="images/nav6.jpg"><span>来院路线</span></a></li>
+        </ul>
+        <a class="favorable" href="#"><b><img src="images/nav8.jpg">优惠活动</b></a>
+    </nav>
+    <div class="message">
+        <div class="fl">
+            <img src="images/m1.png">
+        </div>
+        <div class="slide">
+            <div class="slide1">
+                <ul>
+                    <li>
+                        <a href="#">沈阳东城联合辽宁省慈善总会开展首个儿童胎记关爱热线：400-024-8088</a>
+                    </li>
+                    <li>
+                        <a href="#">沈阳东城联合辽宁省慈善总会开展首个儿童胎记关爱热线：400-024-8088</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        jQuery(".slide").slide({mainCell:".slide1 ul",autoPlay:true,effect:"leftMarquee",interTime:50,trigger:"click"});
+    </script>
+    <!--东城荣誉-->
+    <div class="section_one">
+        <div class="one_navbar">
+            <ul>
+                <li class="will_blue"><a href="/"><img src="images/nav_icons_03.png" alt=""><span>东城荣誉</span></a></li>
+                <li class="will_red have_left"><a href="/"><img src="images/nav_icons_05.png" alt=""><span>楼层分布</span></a></li>
+                <li class="will_blue have_left"><a href="/"><img src="images/nav_icons_07.png" alt=""><span>诊疗环境</span></a></li>
+                <li class="will_red have_left"><a href="/"><img src="images/nav_icons_09.png" alt=""><span>院长寄语</span></a></li>
+            </ul>
+        </div>
+        <div class="sanme_lists">
+            <div class="same_msg_left msg_one will_blue">
+                <h3>医生</h3>
+                <h6>DOCTOR</h6>
+                <p>超强的医学背景</p>
+                <p>良好的职业道德</p>
+                <img src="images/sum_mleft_03.png" alt="">
+            </div>
+            <div class="same_msg_right msg_one bg_one">
+                <p>医院由中国医科大学附属第一医院皮肤科主任马在墀、宋芳吉，中国医科大学大东分院皮肤科主任王璐、大连医科大学硕士研究生董雪娇等组建了一支“老中青”、“传帮带”的医务人才梯队。在各学科主任带领下探索新疗法、新技术，研究提高诊疗质量。</p>
+                <div class="sum_peo">
+                    <div class="sum_carousel">
+                        <div class="swiper-container" id="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/sum_p_01.jpg" alt="">
+                                    <img src="images/sum_p_02.jpg" alt="" class="have_left">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/sum_p_03.jpg" alt="">
+                                    <img src="images/sum_p_04.jpg" alt="" class="have_left">
+                                </div>
+                            </div>
+                            <!-- 如果需要导航按钮 -->
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                    <script>
+                        var mySwiper = new Swiper ('.swiper-container', {loop: true, autoplay: 2000, nextButton: '.swiper-button-next', prevButton: '.swiper-button-prev'});
+                    </script>
+                    <div class="sum_btn">
+                        <a href="/" class="red">点击通话</a>
+                        <a href="/" class="blue">我要咨询</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---->
+    <section class="part6">
+        <div class="up">
+            <img src="images/part6-01.jpg">
+            <img src="images/part6-02.jpg">
+        </div>
+        <ul class="part6-01">
             <li>
-                <a href="#">
-                    <img src="images/subnav-01.jpg">
-                    <p>医院实力</p>
-                </a>
+                <img src="images/part6-04.jpg">
+                <p>网上挂号</p>
             </li>
             <li>
-                <a href="#">
-                    <img src="images/subnav-02.jpg">
-                    <p>权威技术</p>
-                </a>
+                <img src="images/part6-05.jpg">
+                <p>节省时间</p>
             </li>
             <li>
-                <a href="#">
-                    <img src="images/subnav-03.jpg">
-                    <p>医院环境</p>
-                </a>
+                <img src="images/part6-06.jpg">
+                <p>避免排队</p>
             </li>
             <li>
-                <a href="#">
-                    <img src="images/subnav-04.jpg">
-                    <p>设备安全</p>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="images/subnav-05.jpg">
-                    <p>专家资质</p>
-                </a>
+                <img src="images/part6-07.jpg">
+                <p>优先就诊</p>
             </li>
         </ul>
+        <ul class="part6-02">
+            <li>
+                就诊姓名：<input type="text" value="请输入" id="name"
+                            onFocus="if(this.value=='请输入'){this.value='';}"
+                            onBlur="if(this.value==''){this.value='请输入';}">　※必填
+            </li>
+            <li>
+                就诊电话：<input type="text" value="请输入" id="tel"
+                            onFocus="if(this.value=='请输入'){this.value='';}"
+                            onBlur="if(this.value==''){this.value='请输入';}">　※必填
+            </li>
+            <li>
+                就诊时间：<input type="date" value="请输入"
+                            onFocus="if(this.value=='请输入'){this.value='';}"
+                            onBlur="if(this.value==''){this.value='请输入';}">　※必填
+            </li>
+            <li>
+                病种类型：<select id="select">
+                <option value="红胎记">红胎记</option>
+                <option value="黑胎记">黑胎记</option>
+                <option value="青胎记">青胎记</option>
+                <option value="褐色胎记">褐色胎记</option>
+                <option value="红血丝">红血丝</option>
+            </select>
+            </li>
+        </ul>
+        <div class="btn">
+            <input type="button" value="加密提交" id="but">
+            <a href="#">重新输入</a>
+        </div>
+    </section>
+    <div class="search-01">
+        <div>
+            <input type="text" value="请输入您的电话号"
+                   onfocus="this.value='';this.style.color='black'"
+                   onblur="this.value=this.value.length==0?'请输入您的电话号':this.value">
+            <a href="#"><img src="images/search-01.png">点击拨打</a>
+        </div>
     </div>
-</section>
-<link href="css/date.css" rel="stylesheet" type="text/css" />
-<script src="js/pickdate.js"></script>
-<script type="text/javascript">
-    $( '[type=date], .datepicker' ).pickadate()
-</script>
-<script type="text/javascript">
-    $("#but").click(function () {
-        if ($('#name').val() == ''|| $('#name').val() == '请输入') {
-            alert("请填写姓名！");
-            $('#name').focus();
-            return false;
-        }
-        if ($('#tel').val() == '' || $('#tel').val() == '请输入') {
-            alert("请填写手机号码！");
-            $('#tel').focus();
-            return false;
-        }
-        var tel = /^(1[3,5,8][0-9])\d{8}$/;
-        if (!tel.test($('#tel').val())) {
-            alert("请正确填写手机号码！");
-            return false ;
-        }
-        if ($('#select').val() == ''||$('#select').val() == '请选择预约病种') {
-            alert("请选择预约病种");
-            $('#bz').focus()
-            ;return false
-        }
-    });
-</script>
-<footer>
-    <p>医院地址：沈阳市大东区小北街38号</p>
-    <p>东城胎记官方微信号：qq2765657399</p>
-</footer>
+    <section class="part7">
+        <h2>患者真实评价</h2>
+        <div class="part7-01">
+            <div class="fl">
+                <ul>
+                    <li><img src="images/part7-01.jpg"></li>
+                    <li><img src="images/part7-02.jpg"></li>
+                    <li><img src="images/part7-03.jpg"></li>
+                    <li><img src="images/part7-04.jpg"></li>
+                </ul>
+            </div>
+            <div class="fr">
+                <h3>FOLLOW</h3>
+                <img src="images/part7-06.png">
+                <img src="images/part7-05.jpg">
+            </div>
+        </div>
+        <div class="subnav">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="images/subnav-01.jpg">
+                        <p>医院实力</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/subnav-02.jpg">
+                        <p>权威技术</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/subnav-03.jpg">
+                        <p>医院环境</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/subnav-04.jpg">
+                        <p>设备安全</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/subnav-05.jpg">
+                        <p>专家资质</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <link href="css/date.css" rel="stylesheet" type="text/css" />
+    <script src="js/pickdate.js"></script>
+    <script type="text/javascript">
+        $( '[type=date], .datepicker' ).pickadate()
+    </script>
+    <script type="text/javascript">
+        $("#but").click(function () {
+            if ($('#name').val() == ''|| $('#name').val() == '请输入') {
+                alert("请填写姓名！");
+                $('#name').focus();
+                return false;
+            }
+            if ($('#tel').val() == '' || $('#tel').val() == '请输入') {
+                alert("请填写手机号码！");
+                $('#tel').focus();
+                return false;
+            }
+            var tel = /^(1[3,5,8][0-9])\d{8}$/;
+            if (!tel.test($('#tel').val())) {
+                alert("请正确填写手机号码！");
+                return false ;
+            }
+            if ($('#select').val() == ''||$('#select').val() == '请选择预约病种') {
+                alert("请选择预约病种");
+                $('#bz').focus()
+                ;return false
+            }
+        });
+    </script>
+    <footer>
+        <p>医院地址：沈阳市大东区小北街38号</p>
+        <p>东城胎记官方微信号：qq2765657399</p>
+    </footer>
 </body>
 </html>

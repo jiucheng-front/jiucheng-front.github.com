@@ -239,3 +239,124 @@ footer p{font-size: 1.4rem;color: #fff;text-align: center;}
 .hd{
     margin-top: 1%;
 }
+/*one_navbar*/
+.one_navbar ul{
+    overflow: hidden;
+}
+.one_navbar li{
+    float: left;
+    width: 24%;
+    padding: .8rem .5rem;
+}
+.one_navbar li a{
+    font-size: 1.2rem;
+    color: #fff;
+}
+.will_blue{
+    background-color: #04A6E3;
+}
+.one_navbar li.have_left{
+    margin-left: 1.3%;
+}
+.will_red{
+    background-color: #F9716E;
+}
+.one_navbar li a img{
+    width: 1.4rem;
+    height: 1.4rem;
+    vertical-align: middle;
+    position: relative;
+    top: -0.1rem;
+}
+/*sanme_lists*/
+.will_left{
+    float: left;
+}
+.will_right{
+    float: right;
+}
+.sanme_lists{
+    overflow: hidden;
+    margin-top: .5rem;
+}
+.same_msg_left{
+    width: 30%;
+    color: #fff;
+    padding:1rem .5rem;
+    position: relative;
+    float: left;
+}
+.same_msg_left h3{
+    font-size: 1.6rem;
+}
+.same_msg_left h6{
+    color: #59B9E8;
+    padding: .5rem 0;
+    font-size: 1rem;
+    border-bottom: 1px dashed #82D3F1;
+}
+.same_msg_left p{
+    font-size: 1.2rem;
+}
+.same_msg_left img{
+    width: 6rem;
+    position: relative;
+    right: -30%;
+    bottom: .1rem;
+    margin-top: 3rem;
+}
+.same_msg_right{
+    width: 70%;
+    float: right;
+    padding-top: 1rem;
+}
+.bg_one{
+    background-color: #D7F4FF;
+}
+.msg_one{
+    height: 18.4rem;
+}
+.same_msg_right  p{
+    text-indent: 2rem;
+    padding: 0 .5rem;
+    font-size: 1rem;
+}
+/*swiper-container*/
+.sum_peo{
+    overflow: hidden;
+    margin-top: .5rem;
+}
+.sum_carousel{
+    float: left;
+    position: relative;
+    margin-left: 30px;
+}
+.sum_peo img{
+    float: left;
+    width: 5.35rem;
+}
+.sum_peo img.have_left{
+    margin-left: 3px;
+}
+#swiper-container{
+    width: 11rem;
+}
+/*sum_btn*/
+.sum_btn{
+    float: right;
+    margin-right: .5rem;
+}
+.sum_btn a{
+    color: #fff;
+    display: block;
+    text-align: center;
+    line-height: 2.5rem;
+    padding: 0 .8rem;
+    margin-top: .3rem;
+}
+.sum_btn a.red{
+    background-color: #E60011;
+}
+.sum_btn a.blue{
+    background-color: #04A6E3;
+}
