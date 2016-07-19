@@ -17,7 +17,7 @@ var adv={
         adv.div.style.display="none";
         timer=setTimeout(function(){
             adv.displayBlock();
-        },3000);
+        },1000);//此处偷偷改了~0 0~
     }
 };
 window.onload=function(){
