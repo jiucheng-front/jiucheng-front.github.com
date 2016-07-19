@@ -19,6 +19,10 @@ body{
 img{
     border: none;
 }
+.whiteColor{
+    color: #fff;
+    text-align: center;
+}
 .flex_parent{
     display: -webkit-box;
     display: -moz-box;
@@ -46,7 +50,7 @@ body{
     background-repeat: no-repeat;
     background-size: 100% 100%;
     border-radius: 10px;
-    /**/
+    /*水平垂直居中*/
     position: fixed;
     left: 50%;
     top: 50%;
