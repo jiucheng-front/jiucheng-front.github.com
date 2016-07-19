@@ -36,14 +36,16 @@ img{
 /*middle_box*/
 body{
     position: relative;
+    background-color: #272822;
 }
 #middleBox{
     width: 260px;
     height: 248px;
     margin: 0 auto;
-    background-image: url(../images/box_bg.png);
+    background-image: url(../images/irfa_dog.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    border-radius: 10px;
     /**/
     position: fixed;
     left: 50%;
@@ -94,11 +96,11 @@ body{
     margin-left: 5px;
 }
 .btn_tel{
-    background-color: #7f0000;
+    background-color: #F92665;
     border-bottom-left-radius: 10px;
 }
 .btn_chat{
-    background-color: #6e3b13;
+    background-color: #1EA362;
     border-bottom-right-radius: 10px;
 }
 .parent_btn{

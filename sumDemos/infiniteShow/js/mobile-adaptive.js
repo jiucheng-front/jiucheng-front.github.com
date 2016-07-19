@@ -1,5 +1,6 @@
 /**
  * Created by Administrator on 2016/6/2.
+ * form:https://github.com/wjf444128852/about-web-rem
  */
 (function (doc, win) {
     var docEl = doc.documentElement,
