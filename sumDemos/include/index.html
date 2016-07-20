@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script src="./jquery.js"></script>
+<script>
+    $.getScript("a.js", function (js) {
+        //$("#a").html(js);
+        var b=eval("a");
+        b.init();
+    })
+</script>
+</html>
