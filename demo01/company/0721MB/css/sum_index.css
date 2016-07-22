@@ -471,13 +471,26 @@ header a img{
     background-color: #fff;
     outline: none;
     border: 1px solid #D1D1D0;
+    padding-left: .1rem;
 }
 .six_form ul li select option{
 }
-.footer{
-    overflow: hidden;
-    margin-top: .15rem;
-}
-.footer img{
+/*section_footer*/
+.section_footer{
     width: 100%;
+    height: 3.5rem;
+    background-image: url(../images/footer_bg.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.footer_msg{
+    width: 3.9rem;
+    position: absolute;
+    bottom: .3rem;
+}
+.footer_whiter{
+    font-size: .24rem;
+    color: #fff;
+    text-align: center;
 }
