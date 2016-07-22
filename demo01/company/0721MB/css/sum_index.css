@@ -20,6 +20,9 @@ input[type=submit] { -webkit-appearance: none }
 .none{ display:none;}
 *:focus { outline: 0 }
 img{vertical-align:middle;max-width: 100%;border: none;}
+p{
+    font-size: .2rem;
+}
 .flex_parent{
     display: -webkit-box;
     display: -moz-box;
@@ -120,7 +123,7 @@ header a img{
     text-align: center;
     height: .6rem;
     width: 24.75%;
-    background-image: url(../images/nav_bg.png);
+    background-image: url(../images/nav_bg.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -175,6 +178,15 @@ header a img{
 .same_tel{
     top:.15rem;
     right:.15rem;
+}
+.one_lists{
+    padding: .15rem .05rem;
+}
+.one_lists>p{
+    color: #5C5C5C;
+    margin-top: .1rem;
+    text-indent: 2em;
+    padding: 0 .1rem;
 }
 /*.太医堂治皮炎：查清类型，分型而治*/
 
