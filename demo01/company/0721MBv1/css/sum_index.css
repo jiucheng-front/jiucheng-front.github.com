@@ -64,6 +64,12 @@ p{
     box-shadow: 0 0 .2rem #5D5C61;
 }
 /*LOGO-banner*/
+#swiper-pagination span:nth-child(1){
+    margin-left: 3rem;
+}
+#swiper-pagination span{
+    margin-top: .15rem;
+}
 header,header a,.header_banner a{
     overflow: hidden;
 }
@@ -83,7 +89,6 @@ header a{
 }
 .swiper-container {
     width: 100%;
-    height: 3.6rem;
 }
 header{
     position: relative;
@@ -141,6 +146,9 @@ header a img{
     margin-top: .026rem;
 }
 /*big_btn*/
+.big_btn{
+    margin-top: .15rem;
+}
 .big_btn,.big_btn a{
     display: block;
     overflow: hidden;

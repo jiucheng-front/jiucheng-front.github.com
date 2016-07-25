@@ -25,8 +25,8 @@
     <script src="js/mobile-adaptive.js"></script>
     <link rel="stylesheet" href="css/sum_index.css">
     <!--轮播-->
-    <link rel="stylesheet" href="js/swiper-3.3.1.min.css">
-    <script src="js/swiper-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="js/swiper.css">
+    <script src="js/swiper.min.js"></script>
     <title>重太皮</title>
 </head>
 <body>
@@ -54,27 +54,28 @@
         </div>
         <!--顶部广告-->
         <div class="header_banner">
-            <div class="swiper-container">
+            <div class="swiper-container bannerSlide">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <a href="javascript:;">
-                            <img src="images/top_banner_01.jpg" alt="">
+                        <a href="#">
+                            <img src="images/top_banner_01.jpg" />
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="javascript:;">
-                            <img src="images/top_banner_02.jpg" alt="">
+                        <a href="#">
+                            <img src="images/top_banner_02.jpg" />
                         </a>
                     </div>
                 </div>
-                <!-- 如果需要分页器 -->
-                <div class="swiper-pagination"></div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination" id="swiper-pagination"></div>
             </div>
             <script>
-                var mySwiper = new Swiper ('.swiper-container', {
-                    loop: true,
-                    autoplay: 2000,
-                    pagination: '.swiper-pagination'
+                var swiper = new Swiper('.bannerSlide', {
+                    pagination: '.swiper-pagination',
+                    loop : true,
+                    autoplay:3000,
+                    autoHeight: true, //高度随内容变化
                 });
             </script>
         </div>
