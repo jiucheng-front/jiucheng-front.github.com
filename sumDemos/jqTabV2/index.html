@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQtab</title>
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="css/sum_demo.css">
+</head>
+<body>
+    <div class="main">
+        <div class="tab_lists" id="idSmall">
+            <ul>
+                <li><img src="images/i_01.png" alt=""></li>
+                <li><img src="images/i_02.png" alt=""></li>
+                <li><img src="images/i_03.png" alt=""></li>
+                <li><img src="images/i_04.png" alt=""></li>
+                <li><img src="images/i_05.png" alt=""></li>
+                <li><img src="images/i_06.png" alt=""></li>
+                <li><img src="images/i_07.png" alt=""></li>
+                <li><img src="images/i_08.png" alt=""></li>
+                <li><img src="images/i_09.png" alt=""></li>
+                <li><img src="images/i_10.png" alt=""></li>
+            </ul>
+            <span id="prev" class="prev"></span>
+            <span id="next" class="next"></span>
+        </div>
+        <div class="tab_msg" id="idBig">
+            <ul>
+                <li><img src="images/baner01.jpg" alt=""></li>
+                <li><img src="images/baner02.jpg" alt=""></li>
+                <li><img src="images/baner03.jpg" alt=""></li>
+                <li><img src="images/baner04.jpg" alt=""></li>
+                <li><img src="images/baner01.jpg" alt=""></li>
+                <li><img src="images/baner02.jpg" alt=""></li>
+                <li><img src="images/baner03.jpg" alt=""></li>
+                <li><img src="images/baner04.jpg" alt=""></li>
+                <li><img src="images/baner01.jpg" alt=""></li>
+                <li><img src="images/baner02.jpg" alt=""></li>
+            </ul>
+        </div>
+    </div>
+    <script src="js/slide-left.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function (e) {
+            slideLeft("idBig", "idSmall", "prev", "next", 4, 10);
+        });
+    </script>
+</body>
+</html>

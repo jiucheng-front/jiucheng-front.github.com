@@ -1,0 +1,74 @@
+html,body,menu,ul,ol,li,p,div,form,h1,h2,h3,h4,h5,h6,dl,dt,dd,input{padding:0;margin:0;border:0}ul,ol,li{list-style:none outside none;}body{position:relative;-webkit-text-size-adjust:none;font:14px/1.5 'Microsoft YaHei','微软雅黑','\5FAE\8F6F\96C5\9ED1';color:#333;overflow-x:hidden;}a,a:visited{text-decoration:none;color:#333;outline:none;cursor:pointer;}a:hover{color:#000;}img{vertical-align:top;display:inline-block;border: none;}.btn{display:inline-block;vertical-align:middle}.fl{float:left;}.fr{float:right;}.fw{font-weight: bold;}.clear{content:'';clear:both;display:block;height:0;visibility:hidden;line-height:0;zoom:1;}.arial{font-family:'arial';}.ft24{font-size:24px;}.ft18{font-size:18px;}.ft14{font-size: 14px;}.ft12{font-size:12px;}a.a-red,a.a-red:visited{color:#e60012;}a.a-red:hover{color:#d38d00;}.ft-red{color:#e60012;}
+
+
+
+/*---------wrap-3--------------*/
+
+.zj-l{width:718px;height: 100%;overflow: hidden;}
+
+.expert{position:relative;width:100%;height:100%;}
+
+.thumb{height:300px;width:155px;overflow: hidden;position:relative;}
+
+.thumb ul{height:1000px;position:absolute;}
+
+.thumb li{width:155px;height: 68px;margin-top:10px;background: #b5b5b5;cursor: pointer;overflow:hidden;}
+
+.thumb li.cur{background: #f4ac2e;}
+
+.thumb li img{width:55px;height: 60px;margin:4px;float:left;}
+
+.thumb li h3{font-size:14px;line-height: 26px;padding-top:10px;float:left;margin-left:5px;font-weight: 100;width:87px;}
+
+.person{height:303px;width:630px;position:relative;margin:0 auto;overflow:hidden;}
+
+.expert span.prev,.expert span.next{top:215px;}
+
+span.prev,span.next{display: block;position:absolute;width:25px;height: 44px;background:url(../images/sprite_bg1.png) no-repeat;overflow: hidden;cursor: pointer;z-index:100;}
+
+span.prev{background-position:-191px top;top:125px;left:0;}
+
+span.next{background-position: -216px top;top:125px;right: 0;}
+
+.person ul{height:302px;position:absolute;}
+
+.person li{width:630px;height: 302px;float:left;position:relative;}
+
+.person li img{float:left;margin-right:22px;}
+
+.person li h3{font-size:18px;font-weight: bold;height:56px;padding-top:38px;color:#333;}
+
+span.goodat{display: block;height:35px;font-size:16px;}
+
+span.undergo{line-height: 26px;display: block;height: 110px;}
+
+.zj-r{width:214px;overflow: hidden;position:relative;z-index:0;}
+
+.them{height: 335px;margin-top:-9px;}
+
+.them dd{border-bottom:1px dashed #dcdcdc;height: 78px;position:relative;}
+
+.th-wrap{height:63px;padding-top:15px;position:absolute;top:0;left:0;}
+
+.them dd img{float:left;margin:0 16px 10px 0;}
+
+span.th-name{font-size:12px;color:#969696;display: block;padding-left:3px;float:left;margin-top:-4px;}
+
+span.th-des{float:left;display:block;width:130px;line-height:18px;}
+
+.th-info{width:127px;height:73px;position:absolute;top:27px;_top:25px;left:58px;background:url(../images/sprite_bg4.png) no-repeat;font-size:12px;padding:10px 11px 0 13px;z-index:10;display:none;overflow:hidden;}
+
+a.th-zx1,a.th-zx2{display: block;float:left;width:75px;height: 53px;text-align: center;line-height: 53px;font-weight:800;}
+
+a.th-zx1:hover{color:#ddd;}
+
+a.th-zx1{background:#6a6a6a;margin-left:18px;color:#fff;}a.th-zx2{background: #f4ac2e;margin-left:22px;}
+
+
+/*add*/
+.thumb ul{
+    overflow: hidden;
+}
+.thumb ul li{
+    float: left;
+}

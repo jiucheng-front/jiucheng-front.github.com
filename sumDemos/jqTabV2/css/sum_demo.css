@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/**/
+.main{
+    width: 800px;
+    margin: 0 auto;
+}
+.tab_lists{
+    /*overflow: hidden;*/
+    height: 100px;
+    position: relative;
+}
+.tab_lists ul{
+    position: absolute;
+    overflow: hidden;
+    height: 78px;
+}
+
+.tab_lists ul li{
+    float: left;
+    margin-left: 7px;
+    padding: 5px 0;
+}
+/*tab_msg*/
+.tab_msg{
+    position: relative;
+}
+.tab_msg ul{
+    position: relative;
+    width: 800px;
+    height: 350px;
+    overflow: hidden;
+}
+.tab_msg ul li{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+/*前进后退按钮*/
+.prev,.next{
+    width: 24px;
+    height: 42px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 13px;
+    cursor: pointer;
+}
+.prev{
+    background-image: url(../images/sum_btn_03.png);
+    left: -30px;
+}
+.next{
+    background-image: url(../images/sum_btn_05.png);
+    right: -30px;
+}
