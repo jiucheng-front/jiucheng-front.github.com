@@ -1,5 +1,5 @@
 function slideSwitch(idBig,idSmall,prev,next,numVar,pWidth){
-	//
+	//pWidth->小li的margin-taop:10px
 	function G(s){
 		return document.getElementById(s);
 	}
@@ -30,26 +30,27 @@ function slideSwitch(idBig,idSmall,prev,next,numVar,pWidth){
 		}, 30);
 	}
     /***********/
-	var oPic = G(idBig);
-	var oList = G(idSmall);
+	var oPic = G(idBig);//大DIV
+	var oList = G(idSmall);//小DIV
 	var oPrev = G(prev);
 	var oNext = G(next);
 	var oSwitch = G("exchange");
 console.log(oSwitch);
 console.log(idBig,idSmall,prev,next,numVar,pWidth);
-	var oPicLi = oPic.getElementsByTagName("li");
-	var oListLi = oList.getElementsByTagName("li");
+	var oPicLi = oPic.getElementsByTagName("li");//大li
+	var oListLi = oList.getElementsByTagName("li");//小li
 	var len1 = oPicLi.length;
 	var len2 = oListLi.length;
-	var oPicUl = oPic.getElementsByTagName("ul")[0];
-	var oListUl = oList.getElementsByTagName("ul")[0];
-	var w1 = oPicLi[0].offsetHeight;
-	var w2 = oListLi[0].offsetHeight;
+	var oPicUl = oPic.getElementsByTagName("ul")[0];//大ul
+	var oListUl = oList.getElementsByTagName("ul")[0];//小ul
+	var w1 = oPicLi[0].offsetHeight;//大UL高度
+	var w2 = oListLi[0].offsetHeight;//小UL高度
 	oPicUl.style.height = w1 * len1 + "px";//下面ul的高度
-	oListUl.style.height =(w2 + pWidth )*len2 + "px";
+	oListUl.style.height =(w2 + pWidth )*len2 + "px";//上面UL高度
 	var index = 0;
 	var num = numVar;
-	var num2 = Math.ceil(num / 2);
+	var num2 = Math.ceil(num/2);
+	console.log(num,num2);
 	//
 	function Change(){
 		Animate(oPicUl, {top: - index * w1});

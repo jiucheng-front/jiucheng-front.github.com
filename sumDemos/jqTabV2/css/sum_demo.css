@@ -7,12 +7,17 @@
     text-decoration: none;
 }
 /**/
+.main img{
+    display: block;
+    border: 2px solid #fff;
+}
 .main{
-    width: 800px;
+    width: 830px;
     margin: 0 auto;
+    position: relative;
 }
 .tab_lists{
-    /*overflow: hidden;*/
+    overflow: hidden;
     height: 100px;
     position: relative;
 }
@@ -24,21 +29,31 @@
 
 .tab_lists ul li{
     float: left;
-    margin-left: 7px;
+    margin-left: 10px;
     padding: 5px 0;
+    cursor: pointer;
+}
+.tab_lists ul li.on img{
+    border: 2px solid #e4393c;
 }
 /*tab_msg*/
 .tab_msg{
     position: relative;
+    overflow: hidden;
+    width: 800px;
+    height: 350px;
+    margin: 0 auto;
 }
 .tab_msg ul{
-    position: relative;
+    position: absolute;
     width: 800px;
     height: 350px;
     overflow: hidden;
+    left: 0;
+    top: 0;
 }
 .tab_msg ul li{
-    position: absolute;
+    position: relative;
     left: 0;
     top: 0;
 }

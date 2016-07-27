@@ -10,7 +10,7 @@
     <div class="main">
         <div class="tab_lists" id="idSmall">
             <ul>
-                <li><img src="images/i_01.png" alt=""></li>
+                <li class="on"><img src="images/i_01.png" alt=""></li>
                 <li><img src="images/i_02.png" alt=""></li>
                 <li><img src="images/i_03.png" alt=""></li>
                 <li><img src="images/i_04.png" alt=""></li>
@@ -21,28 +21,35 @@
                 <li><img src="images/i_09.png" alt=""></li>
                 <li><img src="images/i_10.png" alt=""></li>
             </ul>
-            <span id="prev" class="prev"></span>
-            <span id="next" class="next"></span>
         </div>
         <div class="tab_msg" id="idBig">
             <ul>
-                <li><img src="images/baner01.jpg" alt=""></li>
-                <li><img src="images/baner02.jpg" alt=""></li>
-                <li><img src="images/baner03.jpg" alt=""></li>
-                <li><img src="images/baner04.jpg" alt=""></li>
-                <li><img src="images/baner01.jpg" alt=""></li>
-                <li><img src="images/baner02.jpg" alt=""></li>
-                <li><img src="images/baner03.jpg" alt=""></li>
-                <li><img src="images/baner04.jpg" alt=""></li>
-                <li><img src="images/baner01.jpg" alt=""></li>
-                <li><img src="images/baner02.jpg" alt=""></li>
+                <li><img src="images/ferrari01.jpg" alt=""></li>
+                <li><img src="images/ferrari02.jpg" alt=""></li>
+                <li><img src="images/ferrari03.jpg" alt=""></li>
+                <li><img src="images/ferrari04.jpg" alt=""></li>
+                <li><img src="images/aodi01.jpg" alt=""></li>
+                <li><img src="images/aodi02.jpg" alt=""></li>
+                <li><img src="images/aodi03.jpg" alt=""></li>
+                <li><img src="images/aodi04.jpg" alt=""></li>
+                <li><img src="images/baoma01.jpg" alt=""></li>
+                <li><img src="images/benchi01.jpg" alt=""></li>
             </ul>
         </div>
+        <span id="prev" class="prev"></span>
+        <span id="next" class="next"></span>
     </div>
     <script src="js/slide-left.js"></script>
     <script type="text/javascript">
         $(document).ready(function (e) {
-            slideLeft("idBig", "idSmall", "prev", "next", 4, 10);
+            slideLeft(
+                    "idBig",//下面大图列表ID
+                    "idSmall",//上面小列表ID
+                    "prev",//后退按钮ID
+                    "next",//前进按钮ID
+                    5,//上面的小图片每行要显示几个，防止点到最后有空白
+                    10//7是上面li的margin-left
+            );
         });
     </script>
 </body>
