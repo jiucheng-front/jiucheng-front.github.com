@@ -582,3 +582,141 @@ p{
     background-color: #2767AE;
     margin-left: .1rem;
 }
+/***************V2-v1的css在里面没动****************/
+.top_logo:before{
+    display: table;
+    content: "";
+}
+.top_sport a,.top_logo{
+    overflow: hidden;
+    display: block;
+}
+.top_logo img{
+    margin-top: 1.3rem;
+}
+.top_sport a img,.top_logo img{
+    float: left;
+    width: 100%;
+}
+.top_sport{
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+    position: fixed;
+    top:0;
+    z-index: 30;
+}
+/*top_navbar*/
+.top_navbar{
+    overflow: hidden;
+}
+.navbar_left{
+    float: left;
+    overflow: hidden;
+    width: 5.2rem;
+}
+.navbar_left li{
+    width: 1.25rem;
+    height: .7rem;
+    float: left;
+    background-image: url(../images/navbar_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-right: .05rem;
+    margin-bottom: .05rem;
+}
+.navbar_left li a{
+    display: block;
+    text-align: center;
+    font-size: .24rem;
+    line-height: .7rem;
+    color: #fff;
+}
+.navbar_right{
+    float: right;
+    width: 1.2rem;
+    height: 1.45rem;
+    background-image: url(../images/navbar_02.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.navbar_right a{
+    display: block;
+    font-size: .24rem;
+    color: #8C0707;
+    text-align: center;
+    padding: .415rem 0;
+}
+/*section_footer*/
+.section_footer{
+    overflow: hidden;
+    margin-top: .25rem;
+}
+.footer_lists_left,.footer_lists_right{
+    width: 50%;
+    height: 2.5rem;
+    float: left;
+}
+.footer_lists_right{
+    background-color: #e4e4e4;
+}
+.footer_lists_left{
+    background-color: #2762a4;
+}
+.footer_lists_left h6{
+    color: #fff;
+    margin-top: .4rem;
+    text-align: center;
+    font-size: .22rem;
+    background: url(../images/footer_linebg.jpg) no-repeat center center;
+    background-size: 100% auto;
+}
+.deep_white{
+    text-align: center;
+    font-size: .22rem;
+    color: #fff;
+}
+.call_me{
+    display: block;
+    overflow: hidden;
+    width: 2.56rem;
+    margin: 0 auto;
+    margin-top: .1rem;
+    height: .5rem;
+    line-height:.5rem;
+    background-color: #fff;
+    border-radius: .05rem;
+}
+.call_me img,.call_me span{
+    float: left;
+    font-size: .22rem;
+    color: #8C0707;
+}
+.call_me img{
+    width: .39rem;
+    margin-top: .1rem;
+    margin-left: .63rem;
+}
+.call_me span{
+    margin-left: .1rem;
+}
+/*footer_lists_right*/
+.footer_lists_right p{
+    overflow: hidden;
+}
+.footer_lists_right p img{
+    float: left;
+    width:1.36rem;
+    margin-top: .1rem;
+}
+.footer_gray{
+    color: #464646;
+    margin-top: .15rem;
+}
+.footer_gray,.footer_red{
+    font-size: .22rem;
+    text-align: center;
+}
+.footer_red{
+    color: #8c0708;
+}
