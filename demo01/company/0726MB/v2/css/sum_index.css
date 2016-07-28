@@ -336,8 +336,8 @@ p{
     margin: .2rem 0;
 }
 .yellow_tittle h2{
-    padding: 0 .2rem;
     line-height: .53rem;
+    text-align: center;
     background-image: url(../images/yellow_tbg.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
