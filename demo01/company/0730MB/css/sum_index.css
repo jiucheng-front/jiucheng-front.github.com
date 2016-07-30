@@ -1,0 +1,702 @@
+/*   重置样式  star  */
+*, :before, :after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, header, hgroup, nav, section, article, aside, footer, figure, figcaption, menu, button { margin: 0; padding: 0 }
+body { font-family:Microsoft YaHei, Helvetica, STHeiTi, sans-serif; color:#575757; background-color: #fff;outline: 0;max-width: 640px; min-width: 320px; width: 100%; margin:auto;}
+caption, th { text-align: left }
+fieldset, img { border: none;}
+li { list-style: none }
+ins { text-decoration: none }
+del { text-decoration: line-through }
+input, button, textarea, select, optgroup, option { font-family: inherit; font-size: inherit; font-style: inherit; font-weight: inherit; outline: 0 }
+button { -webkit-appearance: none; border: none;  }
+a { -webkit-touch-callout: none; text-decoration: none }
+:focus { outline:none }
+em, i { font-style: normal }
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-appearance: none !important; margin: 0 }
+input[type=submit] { -webkit-appearance: none }
+.hd{ overflow:hidden}
+.block{ display:block;}
+.none{ display:none;}
+*:focus { outline: 0 }
+img{vertical-align:middle;max-width: 100%;border: none;}
+p{
+    font-size: .2rem;
+}
+.flex_parent{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+.flex_child{
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+.will_translateY{
+    margin: 0 auto;
+    margin-top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.will_translateX{
+    margin: 0 auto;
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.deep_gray{
+    color: #626262;
+}
+.have_indent{
+    text-indent: .4rem;
+}
+/*   重置样式  end  */
+.container{
+    position: relative;
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+    box-shadow: 0 0 .2rem #5D5C61;
+}
+/*头部*/
+header{
+    position: relative;
+    overflow: hidden;
+}
+.header_big{
+    float: left;
+    width: 100%;
+}
+.header_tel{
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    right: .15rem;
+    top: .13rem;
+    z-index: 10;
+}
+.header_tel img{
+    float: left;
+    width: .67rem;
+}
+/*LOGO-banner*/
+#swiper-pagination span:nth-child(1){
+    margin-left: 3rem;
+}
+#swiper-pagination span{
+    margin-top: .15rem;
+}
+header,header a,.header_banner a{
+    overflow: hidden;
+}
+.header_banner img {
+    float: left;
+    width: 100%;
+}
+.header_banner {
+    padding-top: .05rem;
+}
+.header_banner a{
+    display: block;
+}
+.swiper-container {
+    width: 100%;
+}
+
+/*导航*/
+.will_left {
+    float: left;
+}
+.will_right{
+    float: right;
+}
+.nav_top, .nav_top ul {
+    overflow: hidden;
+    width: 100%;
+}
+.nav_top ul {
+    padding-top: 1px;
+}
+.nav_top ul li {
+    text-align: center;
+    height: .6rem;
+    width: 24.75%;
+    background-image: url(../images/nav_bg.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.nav_top ul li a {
+    font-size: .3rem;
+    color: #fff;
+    display: block;
+    line-height: .6rem;
+    cursor: pointer;
+}
+.hove_left {
+    margin-left: .333%;
+}
+.nav_top ul li.have_top{
+    margin-top: .026rem;
+}
+/********************big_btn***********/
+.big_btn{
+    margin-top: .15rem;
+}
+.big_btn,.big_btn a{
+    display: block;
+    overflow: hidden;
+}
+.big_btn a img{
+    float: left;
+}
+.big_tel img{
+    width: 4.6rem;
+}
+.big_call img{
+    width: 1.76rem;
+}
+/*************长按钮*************/
+.total_btn{
+    padding-bottom: .15rem;
+    padding-top: .15rem;
+}
+.Total_Btn{
+    display: block;
+    line-height: .53rem;
+    text-align: center;
+    color: #fff;
+    font-size: .24rem;
+    width: 5.35rem;
+    margin: 0 auto;
+    background-image: url(../images/total_btn.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+/*<!--治痤疮拒绝挑挤涂-->*/
+.section_one{
+    margin-top:.2rem;
+}
+h1{
+    font-size: .3rem;
+    color: #fff;
+}
+.same_tittle{
+    position: relative;
+    background-color: #702425;
+    padding-left: .15rem;
+}
+.same_tittle h1{
+    line-height: .65rem;
+}
+.same_tittle a{
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    top: .15rem;
+    right: .15rem;
+}
+.same_tittle a img{
+    float: left;
+    width: 1.94rem;
+}
+.small_bg_yel{
+    margin-top: 1px;
+    width: 100%;
+    height: .11rem;
+    background-image: url(../images/small_repeat_bg.jpg);
+}
+/*one_lists_msg*/
+.one_lists_msg{
+    position: relative;
+    margin-top: .15rem;
+}
+.one_lists_msg ul{
+    overflow: hidden;
+}
+.one_lists_msg li{
+    float: left;
+    position: relative;
+    width: 2.1rem;
+    height: 2.64rem;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.one_lists_msg li.have_left{
+    margin-left: .05rem;
+}
+.one_msgbg{
+    background-image: url(../images/one_listsmsg_01.jpg);
+}
+.two_msgbg{
+    background-image: url(../images/one_listsmsg_02.jpg);
+}
+.three_msgbg{
+    background-image: url(../images/one_listsmsg_03.jpg);
+}
+.lists_msg{
+    height: 1rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: .1rem;
+}
+.lists_msg p{
+    font-size: .2rem;
+    color: #fff;
+}
+/*<!--治疗痤疮  需分型 / 分级 / 分度-->*/
+/*.section_two*/
+.two_lists_msg{
+    width: 6rem;
+    margin: 0 auto;
+    padding-top: .15rem;
+}
+.two_lists p{
+    font-size: .2rem;
+}
+.two_index_one{
+    margin: 0 auto;
+    padding-top: .6rem;
+    overflow: hidden;
+}
+.two_index_one li{
+    float: left;
+    width: 2.9rem;
+    border: 1px solid #ccc;
+    position: relative;
+}
+.two_index_one li.have_left{
+    margin-left: .2rem;
+}
+.index_one{
+    overflow: hidden;
+    padding: 1px;
+}
+.index_one img{
+    float: left;
+    width: 100%;
+}
+.have_padding{
+    padding: .3rem .08rem .1rem .08rem;
+    background-color: #F2F2F2;
+}
+/**/
+.over_top{
+    display: block;
+    position: absolute;
+    text-align: center;
+    line-height:.45rem;
+    width: 1.35rem;
+    background-color: #994E4E;
+    border-radius: .08rem;
+    color: #fff;
+    font-size: .24rem;
+    top: -.25rem;
+    left: .775rem;
+}
+/*<!--祛痤疮前需知道自己的病因！-->*/
+.three_lists_msg{
+    overflow: hidden;
+    margin-top: .15rem;
+}
+.three_lists_msg img{
+    float: left;
+    width: 100%;
+}
+/*.three_cd*/
+.three_cd{
+    margin-top: .3rem;
+    margin-bottom: .15rem;
+}
+.three_cd a{
+    display: block;
+    overflow: hidden;
+}
+.three_cd img{
+    float: left;
+    width: 100%;
+}
+/*<!--太医堂 中医纳米波平衡理疗>*/
+.sum_yellow{
+    color: #FFF600;
+}
+.same_tittle h1 span{
+    margin-right: .1rem;
+}
+/*<!--中医纳米波平衡理疗section_four-->*/
+.four_lists{
+    margin: 0 auto;
+}
+.four_msg{
+    overflow: hidden;
+    padding-left:.25rem;
+    padding-top: .3rem;
+    margin-top: .15rem;
+}
+.four_msg li{
+    float: left;
+    position: relative;
+}
+.left_bg{
+    width: .78rem;
+    height: .67rem;
+    position: absolute;
+    left: -.2rem;
+    top: -.3rem;
+    background-image: url(../images/small_topbg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-right: .1rem;
+    padding-top: .05rem;
+}
+.left_bg span{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: .2rem;
+    color: #fff;
+    font-weight: 100;
+}
+.four_msg li.have_left{
+    margin-left: .4rem;
+}
+.four_msg li p{
+    overflow: hidden;
+}
+.four_msg li p img{
+    float: left;
+    max-width: 100%;
+}
+.four_msg h6{
+    font-size: .24rem;
+    color: #6F2625;
+    text-align: center;
+    line-height: .4rem;
+}
+.text_indent{
+    text-indent: .4rem;
+    padding: 0 .15rem;
+}
+.four_msg li{
+    width: 2.81rem;
+    float: left;
+    padding: 1px 1px .1rem 1px;
+    border: 1px dashed #ccc;
+}
+/*four_redbg*/
+.four_redbg{
+    width: 6rem;
+    height: 2.46rem;
+    margin:.2rem auto 0 auto;
+    background-image: url(../images/four_redbg.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.deep_yel{
+    color: #FFF600;
+    font-size: .24rem;
+    text-align: center;
+    line-height: .6rem;
+}
+.redbg_msg{
+    width: 4.8rem;
+    margin: 0 auto;
+}
+.redbg_msg p{
+    font-size: .2rem;
+    color: #fff;
+    padding: .03rem 0;
+}
+/*<!--重庆太医堂祛痘医师亲诊-->*/
+/*section_seven*/
+.section_seven{
+    margin-top: .2rem;
+}
+
+.seven_msg{
+    width: 100%;
+    height: 4.05rem;
+    background-image: url(../images/tan_shaojun.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.seven_lists{
+    width: 3.4rem;
+    height: 1.47rem;
+    position: absolute;
+    z-index: 10;
+    right: .3rem;
+    /*top: 1.2rem;*/
+    top: 1rem;
+    padding-top: .2rem;
+}
+.seven_btn{
+    width: 2.25rem;
+    height: .9rem;
+    overflow: hidden;
+    position: absolute;
+    z-index: 10;
+    bottom: .3rem;
+    /*right: .8rem;*/
+    left: .2rem;
+}
+.seven_btn a{
+    float: left;
+    display: block;
+    width: .89rem;
+    height: .89rem;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.seven_btn a.have_left{
+    margin-left: .4rem;
+}
+.seven_left{
+    background-image: url(../images/seven_01.png);
+}
+.seven_right{
+    background-image: url(../images/seven_02.png);
+}
+/*seven_navbar*/
+.seven_navbar{
+    width: 3.4rem;
+    position: absolute;
+    right: .1rem;
+    bottom: .3rem;
+}
+.seven_navbar h4{
+    font-size: .26rem;
+    color: #3C3C3C;
+}
+.seven_navbar ul{
+    overflow: hidden;
+    margin-top: .15rem;
+}
+.seven_navbar li a{
+    display: block;
+    text-align: center;
+    line-height: .4rem;
+    font-size: .24rem;
+    color: #fff;
+}
+.seven_navbar li{
+    float: left;
+    width: 1.4rem;
+    height: .41rem;
+    background-image: url(../images/seven_navbar.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-left: .15rem;
+}
+.seven_navbar li.have_top{
+    margin-top: .15rem;
+}
+/*选择太医堂治痤疮的四大理由*/
+.section_nine{
+    margin-top: .2rem;
+}
+.nine_lists{
+    width: 6rem;
+    margin: 0 auto;
+}
+.nine_img{
+    overflow: hidden;
+    margin-top: .2rem;
+}
+.nine_img li{
+    float: left;
+}
+.nine_img li img{
+    width: 2.85rem;
+}
+.nine_img li.have_left{
+    margin-left: .3rem;
+}
+.nine_img li.have_top{
+    margin-top: .3rem;
+}
+/**/
+.nine_msglists{
+    width: 6.2rem;
+    margin: 0 auto;
+    margin-top: .3rem;
+    overflow: hidden;
+}
+.nine_msgleft,.nine_right{
+    float: left;
+}
+.nine_msgleft{
+    width: 1.45rem;
+    height: .85rem;
+    background-color: #850404;
+    padding-top: .1rem;
+    border-radius: .05rem;
+}
+.nine_msgleft h4{
+    text-align: center;
+    font-size: .22rem;
+    color: #fff;
+}
+.nine_right{
+    margin-left: .05rem;
+    width: 4.7rem;
+}
+.nine_msg{
+    overflow: hidden;
+}
+.nine_msg li{
+    float: left;
+}
+.nine_msg li.have_left{
+    margin-left:.05rem;
+}
+.nine_msg li.have_top{
+    margin-top: .05rem;
+}
+.nine_msg a{
+    display: block;
+    text-align: center;
+    line-height: .4rem;
+    font-size: .2rem;
+    color: #fff;
+}
+.nine_one,.nine_two{
+    width:2.32rem;
+}
+.nine_one{
+    background-color: #B46D47;
+}
+.nine_two{
+    background-color: #9E5353;
+}
+.nine_three{
+    background-color: #A28943;
+    width: 2.44rem;
+}
+.nine_four{
+    width: 2.2rem;
+    background-color: #C48640;
+}
+/*section_eight*/
+.section_eight{
+    margin-top: .15rem;
+}
+/*快速挂号通道   预约快人一步*/
+.section_six{
+    background-color: #F5F5F5;
+}
+.six_h{
+    width: 4.8rem;
+    margin: 0 auto;
+    height: .71rem;
+    background-image: url(../images/six_h3.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.six_form{
+    width: 100%;
+    background-image: url(../images/form_bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: .25rem 0;
+    margin-top: .05rem;
+}
+.six_form p a{
+    display: block;
+    width: 1.9rem;
+    height: .55rem;
+    line-height: .55rem;
+    color: #fff;
+    font-size: .28rem;
+    text-align: center;
+    background-image: url(../images/six_bg_btn.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.six_form p{
+    margin-top: .2rem;
+}
+.tips_msg{
+    width: 92%;
+    margin: 0 auto;
+    padding: .15rem;
+}
+.tips_msg p{
+    font-size: .2rem;
+    color: #858383;
+}
+.tips_msg p span{
+    font-size: .22rem;
+    color: #FF0303;
+    font-weight: 300;
+}
+.six_form ul{
+    width: 75%;
+    margin: 0 auto;
+}
+.six_form ul li{
+    overflow: hidden;
+    font-size: .26rem;
+    color: #858383;
+    padding: .05rem;
+}
+.six_form ul li span{
+    display: inline-block;
+    width: 1.4rem;
+    text-align: right;
+}
+.six_form ul li input{
+    width: 3rem;
+    height: .4rem;
+    padding-left: .1rem;
+    background-color: #fff;
+    outline: none;
+    border: 1px solid #D1D1D0;
+    font-size: .24rem;
+    color: #858383;
+    margin-left: .07rem;
+}
+
+.six_form ul li select{
+    width: 3rem;
+    height: .4rem;
+    font-size: .24rem;
+    color: #858383;
+    background-color: #fff;
+    outline: none;
+    border: 1px solid #D1D1D0;
+    padding-left: .1rem;
+}
+.six_form ul li select option{
+}
+/*section_footer*/
+.section_footer{
+    width: 100%;
+    height: 3.5rem;
+    background-image: url(../images/footer_bg.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.footer_msg{
+    width: 3.9rem;
+    position: absolute;
+    bottom: .3rem;
+}
+.footer_whiter{
+    font-size: .24rem;
+    color: #fff;
+    text-align: center;
+}
