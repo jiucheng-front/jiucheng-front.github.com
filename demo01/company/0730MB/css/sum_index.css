@@ -266,7 +266,7 @@ h1{
 }
 .two_index_one{
     margin: 0 auto;
-    padding-top: .6rem;
+    padding-top: .4rem;
     overflow: hidden;
 }
 .two_index_one li{
@@ -540,7 +540,7 @@ h1{
     width: 1.45rem;
     height: .85rem;
     background-color: #850404;
-    padding-top: .1rem;
+    padding-top: .13rem;
     border-radius: .05rem;
 }
 .nine_msgleft h4{
