@@ -77,6 +77,87 @@
 			</div>
 			<h3 class="deep_black">局限性瘙痒症</h3>
 			<!--轮播-->
+			<div class="one_banner">
+				<div class="swiper-container mobTabs">
+					<div class="my-pagination mys"></div>
+					<div class="swiper-wrapper">
+						<!--1-->
+						<div class="swiper-slide slide_one">
+							<div class="one_lists">
+								<div class="one_right will_left">
+									<div class="one_msg">
+										<p class="deep_gray">瘙痒常从一处开始，逐渐扩展到全身。常为阵发性，尤以夜间为重，严重者呈持续性瘙痒伴阵发性加剧</p>
+									</div>
+									<a href="/" class="same_onebtn"><span class="bg_white">我是这种瘙痒</span><span class="bg_yellow">咨询一下</span></a>
+								</div>
+								<div class="one_left will_right">
+									<img src="images/one_banner_01.jpg" alt="">
+								</div>
+							</div>
+						</div>
+						<!--2-->
+						<div class="swiper-slide slide_one">
+							<div class="one_lists">
+								<div class="one_right will_left">
+									<div class="one_msg">
+										<p class="deep_gray">多见于中年男性，患蛲虫病的儿童也可患病。瘙痒一般局限于肛门及其周围皮肤，有时可蔓延至会阴、女阴和阴囊。</p>
+									</div>
+									<a href="/" class="same_onebtn"><span class="bg_white">我是这种瘙痒</span><span class="bg_yellow">咨询一下</span></a>
+								</div>
+								<div class="one_left will_right">
+									<img src="images/one_banner_02.jpg" alt="">
+								</div>
+							</div>
+						</div>
+						<!--3-->
+						<div class="swiper-slide slide_one">
+							<div class="one_lists">
+								<div class="one_right will_left">
+									<div class="one_msg">
+										<p class="deep_gray">瘙痒主要局限于阴囊，有时也可累及阴茎、会阴和肛门。由于不断搔抓，引起苔藓样变、湿疹样变及继发感染等。</p>
+									</div>
+									<a href="/" class="same_onebtn"><span class="bg_white">我是这种瘙痒</span><span class="bg_yellow">咨询一下</span></a>
+								</div>
+								<div class="one_left will_right">
+									<img src="images/one_banner_03.jpg" alt="">
+								</div>
+							</div>
+						</div>
+						<!--4-->
+						<div class="swiper-slide slide_one">
+							<div class="one_lists">
+								<div class="one_right will_left">
+									<div class="one_msg">
+										<p class="deep_gray">瘙痒常发生于大、小阴唇。因不断搔抓，阴唇部常有皮肤肥厚及浸渍，阴蒂及阴道黏膜可有红肿及糜烂。</p>
+									</div>
+									<a href="/" class="same_onebtn"><span class="bg_white">我是这种瘙痒</span><span class="bg_yellow">咨询一下</span></a>
+								</div>
+								<div class="one_left will_right">
+									<img src="images/one_banner_04.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-pagination mobpage" id="super_pagination"></div>
+				</div>
+			</div>
+			<script>
+				var mySwiper = new Swiper('.mobTabs',{
+					autoplay: 5000,
+					pagination: '.mys,.mobpage',
+					paginationClickable: true,
+					paginationBulletRender: function (index, className) {
+						switch (index) {
+							case 0: name='躯干瘙痒';break;
+							case 1: name='肛门瘙痒';break;
+							case 2: name='阴囊瘙痒';break;
+							case 3: name='女阴瘙痒';break;
+							default: name='';
+						}
+						return '<span class="' + className + '"><i>' + name + '</i></span>';
+					}
+				})
+			</script>
 			<!--2个按钮-->
 			<div class="one_btns">
 				<p class="btn_blue"><a href="/">在线咨询如何快速科学止痒？</a></p>
@@ -163,9 +244,9 @@
 				<img src="images/same_tittle_04.jpg" alt="">
 			</div>
 			<div class="four_lists">
-				<div class="swiper-container">
+				<div class="swiper-container super_container">
 					<div class="swiper-wrapper">
-						<div class="swiper-slide">
+						<div class="swiper-slide four_slide">
 							<div class="swiper_slide_lists will_left">
 								<img src="images/four_img_01.jpg" alt="">
 								<p class="deep_gray have_indent">虽然能够起到一时解痒的痛快， 但是热水烫洗易烫伤患处皮肤， 导致渗出变重，继发感染后，可形成糜烂面，后果很严重。此外，热水烫洗还易导致瘙痒加剧，致使病情加重。</p>
@@ -176,25 +257,25 @@
 							</div>
 						</div>
 						<!--西面要替换-->
-						<div class="swiper-slide">
+						<div class="swiper-slide four_slide">
 							<div class="swiper_slide_lists will_left">
-								<img src="images/four_img_01.jpg" alt="">
-								<p class="deep_gray have_indent">虽然能够起到一时解痒的痛快， 但是热水烫洗易烫伤患处皮肤， 导致渗出变重，继发感染后，可形成糜烂面，后果很严重。此外，热水烫洗还易导致瘙痒加剧，致使病情加重。</p>
+								<img src="images/four_img_03.jpg" alt="">
+								<p class="deep_gray have_indent">首先是盐水浓度的问题，如果浓度高了对皮肤有刺激，浓度低了也没有太大作用，而且，有的市民会选择用温水将盐化开，如果水温偏高容易让患处病情加重，所以这种方法不推荐使用。</p>
 							</div>
 							<div class="swiper_slide_lists will_right">
-								<img src="images/four_img_02.jpg" alt="">
+								<img src="images/four_img_04.jpg" alt="">
 								<p class="deep_gray have_indent">虽然涂用止痒药膏后，当时止痒效果良好，但是不一会儿功夫，瘙痒又会重新发作，甚至比之前还痒。而且，止痒药膏含有不少激素成分，长期使用，会有很多副作用。</p>
 							</div>
 						</div>
 					</div>
 					<!-- 如果需要分页器 -->
 				</div>
-				<div class="swiper-pagination" id="swiper-pagination"></div>
+				<div class="swiper-pagination super_pagination" id="swiper-pagination"></div>
 				<script>
-					var mySwiper = new Swiper ('.swiper-container', {
+					var mySwiper = new Swiper ('.super_container', {
 						loop: true,
 						autoplay: 2000,
-						pagination: '.swiper-pagination'
+						pagination: '.super_pagination'
 					});
 				</script>
 			</div>
@@ -309,14 +390,87 @@
 			</div>
 		</div>
 		<!--7瘙痒专家强强联盟 疗效有保障-->
+		<div class="section_seven">
+			<div class="same_tittle">
+				<img src="images/same_tittle_07.jpg" alt="">
+			</div>
+			<div class="seven_img">
+				<img src="images/seven_img_01.jpg" alt="">
+				<p class="deep_gray">杭州京都医院皮肤科的医生们，在中西医结合治疗皮肤病领域都具有很深的造诣。尤其擅长结合中西医疗法的特点治疗各类皮肤瘙痒、皮肤过敏、皮炎、湿疹等皮肤疾病。多年来，解决了众多患者的瘙痒烦恼，赢得了患者心中的好口碑……<a href="/" class="deep_yellow">【详情】</a></p>
+			</div>
+			<div class="seven_btn">
+				<p class="seven_question"><a href="/" class="bg_yellow">有问题咨询医生</a><a href="/" class="bg_blue">想预约咨询医生</a></p>
+				<a href="/" class="five_tel"><img src="images/five_tel.jpg" alt=""></a>
+			</div>
+		</div>
 		<!--8瘙痒还可能是因为其他疾病？-->
+		<div class="section_eight bg_gray">
+			<!--共用头部-->
+			<div class="same_tittle">
+				<img src="images/same_tittle_08.jpg" alt="">
+			</div>
+			<div class="eight_lists">
+				<div class="eight_list_one will_left">
+					<img src="images/eight_img_01.jpg" alt="">
+					<p class="deep_yellow text_senter">瘙痒&nbsp;&nbsp;夜晚尤甚</p>
+					<p class="deep_gray"><span>好发部位</span>：颈、项、膝、肘等</p>
+					<a href="/" class="five_ask bg_yellow will_translateX eight_absolute">咨询详情</a>
+				</div>
+				<div class="eight_list_one will_right">
+					<img src="images/eight_img_02.jpg" alt="">
+					<p class="deep_yellow text_senter">自觉灼痒&nbsp;&nbsp;重者感疼痛</p>
+					<p class="deep_gray">可引起全身反应，如畏寒、发热、恶心、头痛等。</p>
+					<a href="/" class="five_ask bg_yellow will_translateX eight_absolute">咨询详情</a>
+				</div>
+			</div>
+			<div class="eight_lists">
+				<div class="eight_list_one will_left">
+					<img src="images/eight_img_03.jpg" alt="">
+					<p class="deep_yellow text_senter">瘙痒&nbsp;&nbsp;夜晚尤甚</p>
+					<p class="deep_gray">红色或白色的瘙痒性风团</p>
+					<a href="/" class="five_ask bg_yellow will_translateX eight_absolute">咨询详情</a>
+				</div>
+				<div class="eight_list_one will_right">
+					<img src="images/eight_img_04.jpg" alt="">
+					<p class="deep_yellow text_senter">奇痒&nbsp;&nbsp;严重时出现小水</p>
+					<p class="deep_gray">搔抓后皮肤损害呈渗液、糜烂状，境界不清</p>
+					<a href="/" class="five_ask bg_yellow will_translateX eight_absolute">咨询详情</a>
+				</div>
+			</div>
+			<div class="four_btns">
+				<p><a href="/" class="four_blue"><span class="color_blue">让医生判断自己的疾病类型</span><span class="bg_blue">点此咨询</span></a></p>
+			</div>
+			<div class="one_btns">
+				<p class="btn_two"><a href="/"><span class="btn_two_left">打字嫌麻烦</span><span class="btn_two_right"></span></a></p>
+			</div>
+		</div>
 		<!--9看病直通车-->
+		<div class="section_nine">
+			<!--共用头部-->
+			<div class="same_tittle">
+				<img src="images/same_tittle_09.jpg" alt="">
+			</div>
+			<div class="nine_lists">
+				<p><a href="/">手机一键预约</a><a href="/" class="have_left">全程指导路线</a><a href="" class="have_left">导医全程陪护</a></p>
+			</div>
+			<div class="nine_href bg_gray">
+				<ul class="nine_msg">
+					<li><a href="/" class="have_on"><img src="images/nine_icon_01.png" alt=""><span>问症状</span></a></li>
+					<li class="have_left"><a href="/"><img src="images/nine_icon_02.png" alt=""><span>问治疗</span></a></li>
+					<li class="have_left"><a href="/"><img src="images/nine_icon_03.png" alt=""><span>问费用</span></a></li>
+					<li class="have_left"><a href="/"><img src="images/nine_icon_04.png" alt=""><span>问医生</span></a></li>
+				</ul>
+			</div>
+			<div class="big_btn">
+				<a href="/" class="big_tel"></a>
+			</div>
+		</div>
 		<!--10挂号-->
-		<section class="regsiter">
-			<h5>
-				<p>脱发患者自助挂号平台</p>
-				<span>Patient self-help registration</span>
-			</h5>
+		<section class="regsiter bg_gray">
+			<!--共用头部-->
+			<div class="same_tittle">
+				<img src="images/same_tittle_10.jpg" alt="">
+			</div>
 			<div class="reg">
 				<form>
 					<div class="w1">
@@ -360,12 +514,13 @@
 						</select>
 					</div>
 				</form>
-				<div class="w2">
-					<input type="submit" id="" name="" value="加密在线提交">
-					<a href=""><img src="images/gh-swt.jpg"></a>
-				</div>
+
 			</div>
 		</section>
+		<div class="w2">
+			<input type="submit" id="" name="" value="加密在线提交">
+			<a href=""><img src="images/gh-swt.jpg"></a>
+		</div>
 		<!--11底部-->
 		<footer>
 			<h5><img src="images/footer-img1.png"></h5>
