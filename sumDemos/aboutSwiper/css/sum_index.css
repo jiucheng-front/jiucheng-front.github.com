@@ -1,0 +1,75 @@
+body{
+    font-family: Microsoft YaHei, Helvetica, STHeiTi, sans-serif;
+    color: #575757;
+    background-color: #fff;
+    font-size: 24px;
+}
+/*one_banner*/
+.mobTabs{
+    padding-bottom:35px;
+}
+.mobTabs.swiper-container-horizontal >.mys.swiper-pagination-bullets .swiper-pagination-bullet{ margin:0;}
+.my-pagination{
+    background:#f3f3f3;
+    overflow:hidden;
+}
+.my-pagination span{
+    display:block;
+    float:left;
+    text-align:center;
+    border-radius:0;
+    width:25%;
+    height:auto;
+    background:none;
+    opacity:1;}
+.my-pagination span i{
+    /*border-bottom:1px solid #ddd; */
+    border-bottom:2px solid #ddd;
+    /*padding:0.1rem 0.1rem; */
+    padding:10px 10px;
+    display:inline-block;
+}
+.mobTabs .my-pagination .swiper-pagination-bullet-active{
+    color:#0b70c0;
+}
+.mobTabs .my-pagination .swiper-pagination-bullet-active i{
+    color:#0b70c0;
+    /*border-bottom:1px solid #0b70c0;*/
+    border-bottom:2px solid #0b70c0;
+}
+.mobpage.swiper-pagination-bullets{
+    bottom:5px;
+}
+.mobpage .swiper-pagination-bullet{
+    overflow:hidden;
+    /*margin:0 0.2rem;*/
+    margin:0 20px;
+}
+.mobpage  .swiper-pagination-bullet-active{
+    text-indent:-99999em;
+}
+.mobpage  .swiper-pagination-bullet-active i{
+    display:none;
+}
+.mobpage span i{
+    color: #000;
+    opacity: .2;
+}
+/**/
+.one_banner{
+    position: relative;
+}
+#super_pagination span{
+    width: 20px;
+    height: 20px;
+}
+#super_pagination{
+    bottom:5px;
+}
+.main{
+    width: 800px;
+    margin: 0 auto;
+}
+.bigWrapper{
+    margin-top: 8px;
+}

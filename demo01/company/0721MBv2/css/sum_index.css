@@ -415,7 +415,9 @@ header a img{
     padding: .25rem 0;
     margin-top: .05rem;
 }
-.six_form p a{
+.new_submit input{
+    border: 0;
+    outline: none;
     display: block;
     width: 1.9rem;
     height: .55rem;

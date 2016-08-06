@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/sum_index.css">
+    <link rel="stylesheet" href="js/swiper-3.3.1.min.css">
+    <script src="js/swiper-3.3.1.min.js"></script>
+    <title>about_swiper</title>
+</head>
+<body>
+    <div class="main">
+        <!--轮播-->
+        <div class="one_banner">
+            <div class="swiper-container mobTabs">
+                <div class="my-pagination mys"></div>
+                <div class="swiper-wrapper bigWrapper">
+                    <!--1-->
+                    <div class="swiper-slide">
+                        <img src="images/aodi03.jpg" alt="">
+                    </div>
+                    <!--2-->
+                    <div class="swiper-slide">
+                        <img src="images/baoma02.jpg" alt="">
+                    </div>
+                    <!--3-->
+                    <div class="swiper-slide">
+                        <img src="images/benchi01.jpg" alt="">
+                    </div>
+                    <!--4-->
+                    <div class="swiper-slide">
+                        <img src="images/ferrari03.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-pagination mobpage" id="super_pagination"></div>
+            </div>
+        </div>
+        <script>
+            var mySwiper = new Swiper('.mobTabs',{
+                autoplay: 5000,
+                pagination: '.mys,.mobpage',
+                paginationClickable: true,
+                paginationBulletRender: function (index, className) {
+                    switch (index) {
+                        case 0: name='奥迪';break;
+                        case 1: name='宝马';break;
+                        case 2: name='奔驰';break;
+                        case 3: name='法拉利';break;
+                        default: name='';
+                    }
+                    return '<span class="' + className + '"><i>' + name + '</i></span>';
+                }
+            })
+        </script>
+    </div>
+</body>
+</html>
