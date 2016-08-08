@@ -25,7 +25,7 @@ h3{font-size:.26rem}
 h4{font-size:.24rem}
 .deep_blue{color:#0A70C0}
 .deep_yellow{color:#F29003}
-.deep_black{color:#4E4B4B; margin:0.2rem 0;}
+.deep_black{color:#4E4B4B; margin:0.3rem 0;}
 .will_translateY{margin-top:50%;-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-o-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}
 .will_translateX{margin-left:50%;-webkit-transform:translateX(-50%);-moz-transform:translateX(-50%);-o-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}
 .will_left{float:left}
@@ -85,7 +85,7 @@ nav ul li:nth-child(1){border-left:0}
 .mobpage .swiper-pagination-bullet-active i{display:none}
 .mobpage span i{color:#000;opacity:.2}
 .one_banner{position:relative}
-.mobTabs{ padding-bottom:0.5rem}
+.mobTabs{ padding-bottom:0.6rem}
 #super_pagination span{width:.2rem;height:.2rem}
 .slide_one{overflow:hidden}
 .slide_one .one_right{width:3.1rem}
@@ -201,7 +201,7 @@ nav ul li:nth-child(1){border-left:0}
 .regsiter .reg form .w1{margin-top:.2rem}
 .w1{width:4.5rem;margin:0 auto}
 .regsiter .reg form .w1 span{width:15.2%}
-.regsiter .reg form .w1 em{width:.3rem;display:inline-block}
+.regsiter .reg form .w1 em{width:.339rem;display:inline-block}
 .regsiter .reg form .w1 input,.regsiter .reg form .w1 select{width:70%;border:solid 1px #bcbcbc;line-height:.4rem;height:.4rem;color:#626262;padding-left:.1rem}
 .regsiter .reg form .w1:nth-child(1){margin-top:0}
 .w2{margin:.2rem 1rem}
