@@ -415,7 +415,7 @@ p{
     margin: 0 auto;
 }
 .six_form {
-    width: 75%;
+    width: 85%;
     margin: 0 auto;
 }
 .six_form li {
@@ -431,20 +431,20 @@ p{
     text-align: right;
 }
 .six_form li input {
-    width: 3rem;
-    height: .4rem;
+    width: 3.5rem;
+    height: .6rem;
     background-color: #fff;
     outline: none;
     border: 1px solid #D1D1D0;
-    font-size: .24rem;
+    font-size: .26rem;
     color: #858383;
     margin-left: .07rem;
     padding-left: .1rem;
 }
 .six_form li select {
-    width: 3rem;
-    height: .4rem;
-    font-size: .24rem;
+    width: 3.5rem;
+    height: .6rem;
+    font-size: .26rem;
     color: #858383;
     background-color: #fff;
     outline: none;
