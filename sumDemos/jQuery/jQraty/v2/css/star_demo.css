@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+#products_fen {
+    height: 16px;
+    background: url(../images/star-matrix.gif) no-repeat 0 0;
+    position: relative;
+}
+#products_fen li{
+    float: left;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    cursor: pointer;
+    margin-top: -1px;
+}
+/********以下是鼠标悬停样式******/
+#products_fen.star1{
+    background: url(../images/star-matrix.gif) no-repeat 0 -96px;
+}
+#products_fen.star2{
+    background: url(../images/star-matrix.gif) no-repeat 0 -112px;
+}
+#products_fen.star3{
+    background: url(../images/star-matrix.gif) no-repeat 0 -128px;
+}
+#products_fen.star4{
+    background: url(../images/star-matrix.gif) no-repeat 0 -144px;
+}
+#products_fen.star5{
+    background: url(../images/star-matrix.gif) no-repeat 0 -160px;
+}
+/********以下是鼠标点击样式******/
+#products_fen.click1{
+    background: url(../images/star-matrix.gif) no-repeat 0 -16px;
+}
+#products_fen.click2{
+    background: url(../images/star-matrix.gif) no-repeat 0 -32px;
+}
+#products_fen.click3{
+    background: url(../images/star-matrix.gif) no-repeat 0 -48px;
+}
+#products_fen.click4{
+    background: url(../images/star-matrix.gif) no-repeat 0 -64px;
+}
+#products_fen.click5{
+    background: url(../images/star-matrix.gif) no-repeat 0 -80px;
+}

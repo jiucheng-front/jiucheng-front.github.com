@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>原生JS评分</title>
+    <link rel="stylesheet" href="css/star_demo.css">
+    <style>
+        .main{
+            width: 200px;
+            margin:30px auto;
+        }
+        #products_fen{
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h3>原生JS评分</h3>
+        <ul id="products_fen">
+            <li id="star1" class="starElem"></li>
+            <li id="star2" class="starElem"></li>
+            <li id="star3" class="starElem"></li>
+            <li id="star4" class="starElem"></li>
+            <li id="star5" class="starElem"></li>
+        </ul>
+    </div>
+    <script>
+        var fiveLis=document.getElementsByClassName("starElem");
+        for(var i=0;i<fiveLis.length;i++){
+            //以备是几分
+            fiveLis[i].index=i;
+            //鼠标悬停绑定
+            fiveLis[i].onmouseover=function(){
+                this.parentNode.className=this.parentNode.className+" "+this.id;
+            };
+            //鼠标移除一起绑定
+            fiveLis[i].onmouseout=function(){
+                this.parentNode.className=this.parentNode.className.replace(/star[0-5]/,"");
+            };
+            fiveLis[i].onclick=function(){
+                alert(this.index+"分，感谢您的评分！");
+                //if(!this.parentNode.className()){
+                    this.parentNode.className="click"+this.id.replace(/[a-z]+/,"");
+                //}else{
+                //return false;
+                //}
+            }
+        }
+    </script>
+</body>
+</html>

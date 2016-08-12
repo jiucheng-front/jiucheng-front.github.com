@@ -730,7 +730,8 @@
     click        : undefined,
     half         : false,
     halfShow     : true,
-    hints        : ['bad', 'poor', 'regular', 'good', 'gorgeous'],
+    //hints        : ['bad', 'poor', 'regular', 'good', 'gorgeous'],//原有
+    hints        : ['1分', '2分', '3分', '4分', '5分'],//改动后
     iconRange    : undefined,
     mouseout     : undefined,
     mouseover    : undefined,
@@ -745,9 +746,14 @@
     scoreName    : 'score',
     single       : false,
     space        : true,
-    starHalf     : 'star-half.png',
-    starOff      : 'star-off.png',
-    starOn       : 'star-on.png',
+    //starHalf     : 'star-half.png',原有
+    //starOff      : 'star-off.png',
+    //starOn       : 'star-on.png',
+    /*******下面是改动后*********/
+    starHalf     : 'lib/images/star-half.png',
+    starOff      : 'lib/images/star-off.png',
+    starOn       : 'lib/images/star-on.png',
+    /**************************/
     starType     : 'img',
     target       : undefined,
     targetFormat : '{score}',

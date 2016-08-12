@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQ评分插件</title>
+    <link rel="stylesheet" href="lib/jquery.raty.css">
+    <script src="js/jquery.js">
+    </script><script src="lib/jquery.raty.js"></script>
+    <style>
+        .main{
+            width: 200px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h3>点击没文字提示</h3>
+        <div id="star_one"></div>
+        <div class="star_two">
+            <h3>点击有文字提示</h3>
+            <div id="star_two"></div>
+            <div id="star_msg"></div>
+        </div>
+    </div>
+    <script>
+        //1、不带分数
+        $('#star_one').raty();
+        //2、点击带分数
+        $('#star_two').raty({
+            click: function(score) {
+                var elem=$("#star_msg");
+                if(!elem.hasClass("have_click")){
+                    elem.html(score+"分,感谢您的评分");
+                    elem.addClass("have_click");
+                }else{
+                    return false;
+                }
+            }
+        });
+    </script>
+</body>
+</html>
