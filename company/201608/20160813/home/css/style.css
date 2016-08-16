@@ -44,8 +44,8 @@ img{vertical-align:middle;margin: 0 auto;}
 /*nav*/
 nav{overflow: hidden;margin-top: 0.12rem; margin-bottom: 0.12rem;}
 .nu{width: 67%;float: left;}
-.na{display: block;float: left;width: 33%;margin-top: 0.5%;background: #a8763e;color: #fff;text-align: center;padding: 0.145rem 0;}
-.nu li{position: relative; float: left;width:32.8%;margin-left:0.5%; margin-top: 0.5%;}
+.na{display: block;float: left;width: 33%;background: #a8763e;color: #fff;text-align: center;padding: 0.155rem 0;}
+.nu li{position: relative; float: left;width:32.8%;margin-left:0.5%; margin-bottom: 0.5%;}
 .nu li .hot{display: block; position: absolute; right: 0;top: 0;width: 0.46rem;height: 0.45rem;}
 .nu li:first-child,.nu li:nth-of-type(4){margin-left: 0}
 .nu li a{display: block;background: #a8763e;color: #fff;text-align: center; padding: 0.07rem;}
@@ -541,7 +541,8 @@ h1{
 .nine_carousel_one a,.nine_carousel_two a{
     display: block;
     width: 1.3rem;
-    height: .35rem;
+    height: .4rem;
+    line-height: .4rem;
     text-align: center;
     color: #fff;
     background-color: #A50D3F;
@@ -555,10 +556,6 @@ h1{
 .floor_ten{
     margin-top: .15rem;
 }
-/*.ten_carousel_peo{*/
-    /*width: 5.17rem;*/
-    /*height: 2.47rem;*/
-/*}*/
 .ten_carousel{
     position: relative;
     margin: .1rem 0;
@@ -612,8 +609,14 @@ h1{
 .part6-01 li p{font-size: 0.22rem;color: #2e3642;}
 .part6-02{margin-top: 2%;padding-left: 12.5%;text-align: left;}
 .part6-02 li{margin-bottom: 3%;height: 0.4rem;line-height:0.4rem;font-size: 0.22rem;color: #4c4948;}
-.part6-02 li input,.part6-02 li select{border: 1px solid #d7d7d7;height: 0.4rem;line-height:0.4rem;color: #c4c4c3;padding-left: 3%;
-    font-size: 0.22rem;}
+.part6-02 li input,.part6-02 li select{
+    border: 1px solid #d7d7d7;
+    height: 0.4rem;
+    line-height:0.4rem;color: #c4c4c3;
+    padding-left: 3%;
+    font-size: 0.22rem;
+    background-color: #fff;
+}
 .part6-02 li input{width: 45%;}
 .part6-02 li select{width: 60%;}
 .part6 .btn{width: 56%;margin: 0 auto;overflow: hidden;}
