@@ -459,6 +459,38 @@
             </script>
         </div>
         <!--东城更多祛斑病友分享案例-->
+        <div class="floor_ten bg_gray">
+            <!--共用头部-->
+            <div class="same_tittle">
+                <h1 class="font_weight">东城更多祛斑病友分享病例</h1>
+                <p class="same_bg"></p>
+            </div>
+            <div class="ten_carousel">
+                <div class="swiper-container ten_carousel_peo">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><div class="ten_carousel_one"></div></div>
+                        <div class="swiper-slide"><div class="ten_carousel_two"></div></div>
+                        <div class="swiper-slide"><div class="ten_carousel_three"></div></div>
+                    </div>
+                </div>
+                <!-- 如果需要导航按钮 -->
+                <div class="swiper-button-prev ten_carousel_prev" id="ten_prev"></div>
+                <div class="swiper-button-next ten_carousel_next" id="ten_next"></div>
+                <script>
+                    var mySwiper = new Swiper ('.ten_carousel_peo', {
+                        loop: true,
+                        autoplay: 2000,
+                        // 如果需要前进后退按钮
+                        nextButton: '.ten_carousel_next',
+                        prevButton: '.ten_carousel_prev'
+                    });
+                </script>
+            </div>
+            <!--共用按钮-->
+            <div class="big_btn">
+                <a href="/" class="same_btn bg_red will_translateX">查看更多案例</a>
+            </div>
+        </div>
         <!-- 表单-->
         <div class="b5 mt12">
             <section class="part6">

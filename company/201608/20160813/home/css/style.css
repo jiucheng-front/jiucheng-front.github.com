@@ -551,6 +551,49 @@ h1{
     bottom: .3rem;
     z-index: 10;
 }
+/*floor_ten*/
+.floor_ten{
+    margin-top: .15rem;
+}
+/*.ten_carousel_peo{*/
+    /*width: 5.17rem;*/
+    /*height: 2.47rem;*/
+/*}*/
+.ten_carousel{
+    position: relative;
+    margin: .1rem 0;
+}
+.ten_carousel_one,.ten_carousel_two,.ten_carousel_three{
+    width: 5.17rem;
+    height: 2.47rem;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.ten_carousel_one{
+    background-image: url(../images/ten_img_01.jpg);
+}
+.ten_carousel_two{
+    background-image: url(../images/ten_img_02.jpg);
+}
+.ten_carousel_three{
+    background-image: url(../images/ten_img_03.jpg);
+}
+#ten_prev,#ten_next{
+    width: .34rem;
+    height: .76rem;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#ten_prev{
+    background-image: url(../images/ten_prev.png);
+}
+#ten_next{
+    background-image: url(../images/ten_next.png);
+}
+
+
+
 
 /*表单*/
 .part6:before{
