@@ -4,7 +4,6 @@ body{ font-family:Microsoft YaHei, Helvetica, STHeiTi, sans-serif; color:#575757
 h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: 400}
 caption, th { text-align: left }
 fieldset, img { border: none;}
-ul{overflow: hidden;}
 li { list-style: none }
 ins { text-decoration: none }
 del { text-decoration: line-through }
@@ -394,11 +393,170 @@ h1{
     width: 100%;
     display: block;
 }
+/*floor_eight*/
+.floor_eight{
+    margin-top: .15rem;
+}
+.floor_eightnav{
+    height: .5rem;
+}
+.eight_navbar{
+    width: 6.28rem;
+    margin: 0 auto;
+}
+.eight_navbar li{
+    width:24.5%;
+    float: left;
+    background-color: #884F23;
+    position: relative;
+    margin-left:.5%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.eight_navbar li b{
+    width: .15rem;
+    height: .08rem;
+    background-image: url(../images/samll_icon_01.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    z-index: 10;
+    bottom:-.08rem;
+    left: .69rem;
+    display: none;
+}
+.eight_navbar li.have_on{
+    background-color: #A61042;
+}
+.eight_navbar li.have_on b{
+    display: block;
+}
+.eight_navbar li span{
+    display: block;
+    height: .5rem;
+    line-height: .5rem;
+    text-align: center;
+    color: #fff;
+}
+.eight_tittle{
+    width: 5.7rem;
+    margin:.1rem auto;
+}
+.eight_tittle img{
+    width: 5.67rem;
+}
+.eight_tittle h3{
+    color:#884F23;
+    font-size: .22rem;
+    margin-top: .05rem;
+    text-align: center;
+ }
+/**/
+.eight_parent{
+    width: 100%;
+    position: absolute;
+}
+.floor_eightlists{
+    overflow: hidden;
+    width: 6.1rem;
+    margin: 0 auto;
+    position: relative;
+    height:3.4rem;
+}
+.floor_eightmsg{
+    width: 3.5rem;
+    padding:0 .1rem;
+}
+.floor_lists{
+    width: 100%;
+    overflow: hidden;
+    /*padding: .1rem;*/
+}
+.floor_eightmsg p,.floor_msgthree p{
+    font-size: .2rem;
+    color: #2E2E2E;
+}
+.eight_btn{
+    display: block;
+    width: 2rem;
+    text-align: center;
+    border-radius: 5px;
+    margin:.1rem auto;
+    font-size: .2rem;
+    height: .4rem;
+    line-height: .4rem;
+    color: #fff;
+}
+.eightimg_one{
+    width: 2.29rem;
+}
+/**/
+.eightimg_two{
+    width: 2.36rem;
+}
+.display_none{
+    display: none;
+}
+.display_block{
+    display: block;
+}
+.floor_msgthree{
+    width: 2.2rem;
+    padding:0 .1rem;
+}
+.eightimg_three{
+    width: 3.67rem;
+}
+.eightimg_four{
+    width: 2.55rem;
+    margin-top: .15rem;
+}
+/*floor_nine*/
+.floor_nine{
+    margin-top: .15rem;
+    padding: .15rem 0;
+}
+.nine_tittle{
+    width: 4.53rem;
+    margin: 0 auto;
+    height: .3rem;
+    background-image: url(../images/nine_tittle.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.nine_carousel_one,.nine_carousel_two{
+    position: relative;
+    width: 6.21rem;
+    margin: 0 auto;
+    height: 3.58rem;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.nine_carousel_one{
+    background-image: url(../images/nine_img.jpg);
+}
+.nine_carousel_two{
+    background-image: url(../images/nine_img_02.jpg);
+}
+.nine_carousel_one a,.nine_carousel_two a{
+    display: block;
+    width: 1.3rem;
+    height: .35rem;
+    text-align: center;
+    color: #fff;
+    background-color: #A50D3F;
+    border-radius: 4px;
+    position: absolute;
+    left: .95rem;
+    bottom: .3rem;
+    z-index: 10;
+}
 
-
-
-
-    /*表单*/
+/*表单*/
+.part6:before{
+    display: table;
+    content: "";
+}
 .b5m img{display: block;width: 100%;}
 .part6-01{width: 97%;margin: 3.3% auto;background: url("../images/part6-03.jpg") no-repeat center center;background-size: 100% 100%;
     overflow: hidden;}
