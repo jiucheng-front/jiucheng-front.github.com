@@ -1,0 +1,145 @@
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+
+}
+body {
+	line-height: 21px;
+	background-color: #373737;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* end eric meyer css reset */
+
+
+/* =Layout
+--------------------------------------------------------------------------------------------------------*/
+html, body {
+	font-family:Georgia, Arial, sans-serif;
+	color: #FFF;
+	font-size: 12px;
+	line-height: 21px;
+}
+a:link, a:visited, a:active {
+	color: #FFF;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+#wrapper {
+	width: 800px;
+	margin:15% auto;
+	position: relative;
+	top:0;
+	left: 0;
+}
+/* =Menu
+--------------------------------------------------------------------------------------------------------*/
+
+#menu {
+	float: left;
+	position: relative;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+#menu .colourful {
+	display: block;
+	position: absolute;
+	background: #f0ad22;
+	height: 38px;
+	width: 85px;
+	top: 4px;
+	left: -100px;
+}
+#menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+#menu li {
+	float: left;
+	margin: 0 1px 0 0;
+}
+#menu a:link, #menu a:visited, #menu a:hover, #menu a:active {
+	color: #C4C4C4;
+	text-align: center;
+	display: block;
+	border: solid;
+	border-width: 4px 0 0;
+	line-height: 40px;
+	width: 85px;
+}
+#menu li a:hover {
+	text-decoration: none;
+	color: #fff;
+	text-shadow: 0 0 1px #999;
+}
+/* =Footer
+ --------------------------------------------------------------------------------------------------------------------------------------------*/
+ footer {
+	background:#000;
+	position:fixed;
+	width:100%;
+	height:70px;
+	top:0;
+	left:0;
+	color:#fff;
+	text-shadow:2px 2px #000;
+	-moz-box-shadow:5px 1px 10px #000;
+	-webkit-box-shadow:5px 1px 10px #000;
+	box-shadow:5px 1px 10px #000;
+	font-family:Consolas, Acens, Georgia;
+}
+footer h1 {
+	font-size:16px;
+	font-weight:normal;
+	margin:0 50px 0 0;
+	padding:25px 0;
+	width:300px;
+	float:right;
+}
+footer a.orig, a.orig:visited {
+	background:url("../images/logo.png") no-repeat right top;
+	border:none;
+	text-decoration:none;
+	font-size:14px;
+	height:70px;
+	line-height:50px;
+	float:left;
+	margin:3px 0 0 50px;
+	width:220px;
+	padding-top:8px;
+}
