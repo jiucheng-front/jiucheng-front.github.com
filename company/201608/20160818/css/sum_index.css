@@ -259,11 +259,13 @@ p{
     background-color: #fff;
     border: 1px solid #CFCFCF;
     padding:.05rem;
-    overflow: hidden;
     position: relative;
 }
+.same_tittleParent{
+    display: block;
+    overflow: hidden;
+}
 .same_msgLists{
-    /*width: 5.2rem;*/
     width: 80%;
     margin-left: .1rem;
     margin-top: .05rem;
@@ -323,7 +325,7 @@ p{
 .floor_two_bottom p img{
     width: .52rem;
 }
-.floor_two_bottom p span{
+.floor_two_bottom p a{
     margin-left: .2rem;
     color: #4E4B4A;
     line-height: .52rem;
@@ -456,4 +458,107 @@ p{
     width: .12rem;
     margin-right: .1rem;
     margin-top: .08rem;
+}
+/*floor_six*/
+.floor_six{
+    margin-top: .1rem;
+    padding: .2rem .1rem;
+}
+.floor_six h3{
+    font-size: .26rem;
+}
+.six_sameImg{
+    width: 1.08rem;
+}
+.six_msgList{
+    width: 80%;
+    margin-left: .1rem;
+}
+.six_msgList h4{
+    color: #555251;
+    font-size: .26rem;
+}
+.six_msgList p{
+    color: #737070;
+    font-size: .2rem;
+    overflow: hidden;
+}
+.six_msgList p span{
+    float: right;
+}
+.floor_six a.same_tittleParent{
+    padding:.2rem .1rem;
+    border-bottom: 1px dashed #ccc;
+}
+/*floor_seven*/
+.floor_seven{
+    padding: .1rem;
+}
+.floor_seven h3{
+    color: #555251;
+    font-size: .26rem;
+    padding-left: .1rem;
+}
+.seven_imgLists{
+    overflow: hidden;
+    margin-top: .2rem;
+}
+.seven_imgLists li{
+    float: left;
+}
+.seven_imgLists a{
+    display: block;
+}
+.seven_imgLists a img{
+    width: 2rem;
+}
+.seven_imgLists li.have_left{
+    margin-left: .1rem;
+}
+.seven_imgLists li.have_top{
+    margin-top: .1rem;
+}
+/*footer_nav*/
+.footer_nav{
+    margin-top: .15rem;
+    padding-bottom: .3rem;
+}
+.footer_navLists{
+    overflow: hidden;
+    background-color: #DDF7FD;
+}
+.footer_navLists li{
+    float: left;
+    width: 25%;
+    position: relative;
+}
+.footer_navLists li a{
+    display: block;
+    text-align: center;
+    font-size: .24rem;
+    padding: .15rem 0;
+    vertical-align: middle;
+    color: #555251;
+}
+.footer_navLists li a img{
+    width: .22rem;
+    margin-bottom: .04rem;
+    margin-right: .06rem;
+}
+.footer_navLists li.have_border:before{
+    display: table;
+    content: "";
+    height: .62rem;
+    width: 2px;
+    background-color: #ccc;
+    position: absolute;
+    left: -1px;
+}
+.footer_msg{
+    margin-top: .15rem;
+}
+.footer_msg a{
+    padding-left: .3rem;
+    font-size: .24rem;
+    color: #555251;
 }
