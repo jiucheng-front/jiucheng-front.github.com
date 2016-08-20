@@ -1,0 +1,108 @@
+*{
+    list-style: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+    border: 0;
+}
+body{
+    font-family:Microsoft YaHei, Helvetica, STHeiTi, sans-serif; color:#575757;
+}
+/*swt_one*/
+#swt_one{
+    width: 290px;
+    height: 187px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-top: -124px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    border-radius: 10px;
+    z-index: 100;
+}
+.swt_five{
+    background-image: url(../images/swt_bg_05.jpg);
+}
+.swt_close{
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    top: -12px;
+    right: -10px;
+}
+.swt_close img{
+    float: left;
+    display: block;
+    width: 27px;
+}
+.swt_bottom {
+    position:absolute;
+    bottom:8px;
+    left: 0;
+    padding-left: 10px;
+}
+.swt_bottom p{
+    overflow: hidden;
+}
+.swt_bottom p input{
+    float: left;
+    font-size: 16px;
+    height: 30px;
+    line-height: 30px;
+    border: 2px solid #1D64B2;
+}
+.swt_input{
+    color: #ACADAF;
+    padding-left: 5px;
+    width: 175px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.swt_commit{
+    color: #fff;
+    width: 95px;
+    background-color: #1D64B2;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.swt_call img,.swt_what img{
+    width: 27px;
+    float: left;
+    margin-left: 5px;
+    margin-top: 8px;
+}
+.swt_bottom p a span{
+    float: left;
+}
+.swt_bottom p.have_top{
+    margin-top: 8px;
+}
+.swt_bottom p a{
+    display: block;
+    float: left;
+    font-size: 16px;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    width: 130px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.swt_call{
+    background-color: #1D64B2;
+}
+.swt_what{
+    background-color: #FD7C16;
+}
+.swt_bottom p a.have_left{
+    margin-left: 10px;
+}
