@@ -221,7 +221,7 @@ p{
 }
 /********main_one*********/
 .main_one{
-    margin-top: .15rem;
+    margin-top: .25rem;
 }
 .main_onetop{
     width: 6.25rem;
@@ -326,7 +326,7 @@ p{
 }
 /********main_two*********/
 .main_two{
-    margin-top: .2rem;
+    margin-top: .25rem;
 }
 .main_twolists{
     margin-top: .15rem;
@@ -360,7 +360,7 @@ p{
 }
 /*******main_three**********/
 .main_three{
-    margin-top: .2rem;
+    margin-top: .25rem;
 }
 .three_imglist{
     width: 6.18rem;
@@ -382,7 +382,7 @@ p{
 }
 /*********main_four********/
 .main_four{
-    margin-top: .2rem;
+    margin-top: .25rem;
 }
 .four_msglists{
     width: 100%;
@@ -446,9 +446,81 @@ p{
 .four_bigbtn{
     width: 2.8rem;
 }
-/*****************/
-/*****************/
-
+/*******main_five**********/
+.main_five{
+    margin-top: .25rem;
+}
+.five_msglists{
+    width: 6.2rem;
+    height: 1.67rem;
+    margin: .15rem auto;
+    background-image: url(../images/five_bgimg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+.five_msglists_left{
+    width: 27%;
+    /*margin-top: .5rem;*/
+}
+.five_msglists_left p{
+    text-align: center;
+}
+.five_msglists_left p.big_top{
+    margin-top: .4rem;
+}
+.five_msglists_left p.have_top{
+    margin-top: .15rem;
+}
+.five_msglists_right{
+    width: 65%;
+    margin-top: .5rem;
+    margin-right: 4%;
+}
+.deep_white{
+    color: #fff;
+}
+.five_imglists{
+    margin-top: .35rem;
+    overflow: hidden;
+}
+.five_imglists img{
+    display: block;
+    width: 100%;
+}
+.five_imglists img.have_top{
+    margin-top: .08rem;
+}
+.five_bigbtn{
+    width: 4.5rem;
+}
+/*******main_six**********/
+.main_six{
+    margin-top: .25rem;
+}
+.six_msglists{
+    padding:.1rem;
+}
+.six_msgul{
+    overflow: hidden;
+    margin-top: .15rem;
+}
+.six_msgul li{
+    width: 3.04rem;
+}
+.six_msgul li img{
+    display: block;
+    width: 100%;
+}
+.six_bgred{
+    background-color: #AD0707;
+    margin-top: 1px;
+    padding: .1rem .2rem;
+}
+.six_bgred p{
+    color: #fff;
+    font-size: .2rem;
+}
 /*footer*/
 .footer{
     margin-top: .2rem;
