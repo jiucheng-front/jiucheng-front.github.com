@@ -432,10 +432,9 @@ p{
 .will_showmsg.will_showitem{
     display: block;
 }
-.four_bigbtn{
+.same_bigBtn{
     display: block;
-    width: 2.8rem;
-    margin: .2rem auto;
+    margin: .3rem auto;
     text-align: center;
     color: #EF7326;
     font-size: .24rem;
@@ -443,6 +442,9 @@ p{
     border: 2px solid #EF7326;
     border-radius: 25px;
     padding: .08rem 0;
+}
+.four_bigbtn{
+    width: 2.8rem;
 }
 /*****************/
 /*****************/
