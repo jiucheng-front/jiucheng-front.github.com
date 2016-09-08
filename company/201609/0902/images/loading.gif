@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<title>_杭州京都医院皮肤科</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link type="text/css" rel="stylesheet" href="/templets/news/css/style.css"/>
+<script type="text/javascript" src="/templets/news/js/jquery.min.js"></script>
+<script type="text/javascript" src="/templets/news/js/TouchSlide.1.1.js"></script>
+<script type="text/javascript" src="/templets/news/js/tab.js"></script>
+</head>
+
+<body>
+<div class="top">
+  <header> <img src="/templets/news/images/header.jpg"/> <a href="tel:057128203700"><img src="/templets/news/images/tel1.gif" class="img1"/></a> </header>
+  <span> 
+  <script type="text/javascript">
+	function ss() {	
+	if (document.form1.keyword.value==""||document.form1.keyword.value=="请输入您想搜索的内容")
+	{
+		alert("请输入您要搜索的内容");document.form1.keyword.focus();
+		return false
+	}
+	return true;
+	}
+	</script>
+  <form name="form1" id="form1" action="/sysclus/search.php" method="get" onsubmit="return ss();">
+    <input name="keyword" id="keyword" type="text" class="text" value="请输入您想搜索的内容" onfocus="if(this.value==this.defaultValue){this.value='';};" onblur="if(this.value==''){this.value=this.defaultValue;}" />
+    <input type="submit" value="搜索" class="bt" />
+  </form>
+  </span>
+  <nav>
+    <ul>
+      <li style="margin-left:0"><a href="/">网站首页</a></li>
+      <li><a href="/yyjj/">医院概况</a></li>
+      <li><a href="/myzj/">名医专家</a></li>
+      <li><a href="/tslf/">权威技术</a></li>
+      <li style="margin-left:0"><a href="/kfbl/">康复案例</a></li>
+      <li><a href="/gy/">公益活动</a></li>
+      <li><a href="/lylx/">来院路线</a></li>
+      <li><a href="/channel.html">自助挂号</a></li>
+    </ul>
+  </nav>
+</div>
+<div class="banner">
+  <div id="content"><!-- 本例主要代码 Start ================================ -->
+    <div id="focuss1" class="focuss1">
+      <div class="hds1">
+        <ul>
+        </ul>
+      </div>
+      <div class="bds1">
+        <ul>
+          <li><a onclick="LR_HideInvite();openZoosUrl();return false;" href="javascript:void(0)"><img src="/templets/news/images/banners11.jpg" /></a></li>
+          <li><a href="/myzj/"><img src="/templets/news/images/list6_banner.jpg"/></a></li>
+        </ul>
+      </div>
+    </div>
+    <script type="text/javascript">
+				TouchSlide({ 
+					slideCell:"#focuss1",
+					titCell:".hds1 ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+					mainCell:".bds1 ul", 
+					effect:"left",
+					autoPlay:true,//自动播放
+					autoPage:true, //自动分页
+					switchLoad:"_src", //切换加载，真实图片路径为"_src" 
+					delayTime: 1000,
+					interTime:5000
+				});
+			</script> 
+    <!-- 本例主要代码 End ================================ --> 
+    
+    <!-- 效果导航 --></div>
+  
+  <!--<span><img src="/templets/news/images/banners.jpg"/></span>--> 
+</div>
+<div class="list5_main">
+  <h1>404</h1>
+  <h2>非常抱歉，没有找到您想要的内容</h2>
+</div>
+<div class="message">
+  <h2><a href="javascript:void(0)" onclick="LR_HideInvite();openZoosUrl();return false;" style="color:#f00;">点一点，知道更多信息</a></h2>
+  <ul>
+    <li class="l1"><a href="javascript:void(0)" onclick="LR_HideInvite();openZoosUrl();return false;"><img src="/templets/news/images/icon_t1.jpg"/>
+      <p>问症状</p>
+      </a></li>
+    <li class="l2"><a href="javascript:void(0)" onclick="LR_HideInvite();openZoosUrl();return false;"><img src="/templets/news/images/icon_t2.jpg"/>
+      <p>问治疗</p>
+      </a></li>
+    <li class="l3"><a href="javascript:void(0)" onclick="LR_HideInvite();openZoosUrl();return false;"><img src="/templets/news/images/icon_t3.jpg"/>
+      <p>问费用</p>
+      </a></li>
+    <li class="l4"><a href="javascript:void(0)" onclick="LR_HideInvite();openZoosUrl();return false;"><img src="/templets/news/images/icon_t4.jpg"/>
+      <p>问专家</p>
+      </a></li>
+  </ul>
+</div>
+<div class="list1_bgs"> <a href="tel:057128203700"><img src="/templets/news/images/center.jpg"/></a> </div>
+  <div class="red_bg">
+  <p>365天无假日医院<br/>
+    门诊时间：8：00—20：00<br/>
+    医院电话：0571-28203700<br/>
+    咨询QQ：1975229489<br/>
+    地址：杭州市下城区绍兴路400号</p>
+</div>
+<footer>
+  <ul>
+    <li class="a"><a  href="javascript:void(0)" onclick="LR_HideInvite();openZoosUrl();return false;"><img src="/templets/news/images/fot_icon1.gif" style="width:48%; padding-top:2%"/>
+      <p>网络咨询</p>
+      </a></li>
+    <li class="a"><a href="tel:057128203700"><img src="/templets/news/images/fot_icon2.jpg"/>
+      <p>电话咨询</p>
+      </a></li>
+    <li class="a"><a href="/yyjj/"><img src="/templets/news/images/fot_icon3.jpg"/>
+      <p>医院概况</p>
+      </a></li>
+    <li class="a" style="background:none"><a href="#top" target="_self"><img src="/templets/news/images/fot_icon4.jpg"/>
+      <p>返回顶部</p>
+      </a></li>
+  </ul>
+</footer>
+<div class="swt_m_bg" ></div>
+
+  <div class="swt_m" style="background-image: url(/templets/news/images/shang1.jpg) !important;" ><div style="position:absolute; top:1px; right:1px; z-index:904;"><a href="javascript:void(0);" class="close" target="_self"><img border="0" src="/templets/news/images/cha1.png"></a></div><a onclick="LR_HideInvite();openZoosUrl();return false;" href="javascript:void(0)" target="_blank" style="width:277px; height:116px; display:block; text-decoration:none;">&nbsp;</a><div style="padding:0 0 0 20px;"><a onclick="LR_HideInvite();openZoosUrl();return false;" href="javascript:void(0)" target="_blank"><img src="/templets/news/images/shang_1.png" style="margin-top:10px"></a><a href="tel:057128203700" target="_blank"><img src="/templets/news/images/shang_2.png" style="margin-left:15px;margin-top:10px"></a></div></div>
+<script language="javascript" src="http://lut.zoosnet.net/JS/LsJS.aspx?siteid=LUT85099262&float=0"></script> 
+<script type="text/javascript" src="/templets/news/js/pf.js"></script>
+<script type="text/javascript" src="http://wap.jdpfb.com/templets/newweb/js/call.js"></script> 
+<script type="text/javascript"> var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa2f1cf39ae7ba98f381503f9f19e5e5e' type='text/javascript'%3E%3C/script%3E")) </script> 
+<script src="http://s11.cnzz.com/stat.php?id=4562918&web_id=4562918&show=pic" language="JavaScript"></script> 
+
+<script src="/templets/newweb/js/llqrz.js"></script> 
+<script src="http://wap.jdpfb.com/swt/qq.js"></script> 
+<script type="text/javascript" id="clientjs" src="http://mobile.0757j.net/theapi/getjs?id=2548058&type=30"></script>
+<script type="text/javascript" src="http://121.41.78.12:801/api.aspx?bhid=49" ></script>
+</body>
+<!--制作人：徐同娜-->
+</html>

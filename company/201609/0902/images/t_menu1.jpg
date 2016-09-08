@@ -1,0 +1,819 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="gb2312">
+<!-- UC强制全屏 -->
+<meta name="full-screen" content="yes">
+<!-- QQ强制全屏 -->
+<meta name="x5-fullscreen" content="true">
+<!-- WebApp全屏模式 -->
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<title>济南中研皮肤病医院_山东济南中研皮肤医院_山东省中研皮肤病医院官网</title>
+<meta name="description" content="山东省皮肤病医院哪家好？山东省中研皮肤病医院官网★★山东济南中研皮肤医院,济南中研皮肤病医院开展牛皮癣，青春痘,脱发,白癜风,鱼鳞病,扁平疣,湿疹,灰指甲等多项皮肤病治疗项目,济南皮肤病专家坐诊保肤堂,使之成为济南治疗皮肤病知名的医院." />
+<meta name="keywords" content="济南中研皮肤病医院_山东济南中研皮肤医院_山东省中研皮肤病医院官网" />
+<!--<meta name="keywords" content="" />
+<meta name="description" content="" />-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<script src="/templets/xintemp/js/jquery.js"></script>
+<link type="text/css" rel="stylesheet" href="/templets/xintemp/css/dht.css">
+<link type="text/css" rel="stylesheet" href="/templets/xintemp/css/swiper.min.css">
+<link type="text/css" rel="stylesheet" href="/templets/xintemp/css/stylex.css">
+<script type="text/javascript" src="/templets/xintemp/js/dht.js"></script>
+
+</head>
+
+
+<script src="/templets/xintemp/js/swiper.min.js"></script>
+
+
+
+<body>
+
+
+<div class="logo">
+<img src="/templets/xintemp/images/lCon1.gif">
+<a class="back" href="/">返回首页</a>
+<a class="goon" href="tel:053182708008">立即通话</a>
+</div>
+
+<nav>
+  <ul>
+    <li><a href="/zt/yyjs/"><img src="/templets/xintemp/images/nav1.png"><p>医院简介</p></a></li>
+    <li><a href="/mymj/"><img src="/templets/xintemp/images/nav2.png"><p>名医专家</p></a></li>
+    <li><a href="/kfal/"><img src="/templets/xintemp/images/nav3.png"><p>病友交流</p></a></li>
+    <li><a href="/zt/gy/"><img src="/templets/xintemp/images/nav4s.png"><p>公益活动</p></a></li>
+    <li><a href="/lylx/"><img src="/templets/xintemp/images/nav4.png"><p>来院路线</p></a></li>
+  </ul>
+</nav>
+
+<div class="diandi"></div>
+
+
+
+
+<div class="headerBanner">
+  <div class="swiper-container slide1">
+    <div class="swiper-wrapper">
+		<div class="swiper-slide"><a href="/mymj/95.html"><img src="/templets/xintemp/images/xwx.jpg"></a></div><div class="swiper-slide"><a href="/yydt/695.html"><img src="/templets/xintemp/images/shandong.jpg"></a></div><div class="swiper-slide"><a href="javascript:void(0)" onClick="LR_HideInvite();openZoosUrl();return false;"><img src="/templets/xintemp/images/mbanner2.jpg"></a></div><div class="swiper-slide"><a href="javascript:void(0)" onClick="LR_HideInvite();openZoosUrl();return false;"><img src="/templets/xintemp/images/mbanner3.jpg"></a></div>
+    </div>
+    <div class="swiper-pagination slide_page1"></div>
+  </div>
+</div>
+
+<script> 
+  var mySwiper = new Swiper('.slide1',{
+  autoplay :2000,
+  loop : true,
+  pagination : '.slide_page1',
+});
+
+  var mySwiper2 = new Swiper('.slide3',{
+  autoplay :2000,
+  loop : true, 
+  pagination : '.slide_page3',
+});
+
+</script>
+
+
+<style>
+.in_qsb dl dd{background:url(/templets/xintemp/images/list_style.jpg) no-repeat 1% center; padding-left:2.2rem}
+.inqsbt ul li{width:10.4rem;}
+.inqsbt ul li.hover{background:#992c2c;}
+</style>
+<div id="inqs" class="inqs">
+    <div class="inqsbt">
+        <ul>
+            <li class="hover">
+                医院动态
+            </li>
+            <li class="">
+                媒体报道
+            </li>
+            <li class="">
+                热心公益
+            </li>
+        </ul>
+    </div>
+    <div class="inqsnr">
+        <div class="appendwrap">
+            <ul>
+                <li >
+                    <div class="in_qst">
+                        <dl>
+							<dd>
+                                <p>济南中研皮肤病医院携手滴滴打车送健康</p>
+                                <img src="/PICS/ly/ddd.jpg">
+                            </dd>
+<dd>
+                                <p>爱党月专题报道 济南中研内化“两学一做”</p>
+                                <img src="/PICS/ly/at.jpg">
+                            </dd>
+
+                        </dl>
+                    </div>
+                    <div class="in_qsb">
+                        <dl>
+							<dd>
+                                <a href="/yydt/751.html">
+                                    济南中研皮肤病医院携手滴滴打车送健康
+                                </a>
+                            </dd>
+<dd>
+                                <a href="/yydt/750.html">
+                                    爱党月专题报道 济南中研内化“两学一做”
+                                </a>
+                            </dd>
+<dd>
+                                <a href="/yydt/749.html">
+                                    济南中研特色“医患交流会”再掀爱党月高潮
+                                </a>
+                            </dd>
+<dd>
+                                <a href="/yydt/748.html">
+                                    济南中研住院病房7成以上患者为学生群体
+                                </a>
+                            </dd>
+
+                        </dl>
+                    </div>
+                </li>
+				
+                <li >
+                    <div class="in_qst">
+                        <dl>
+                            <dd>
+                                <p>《济南时报》：3·15诚信医院评选 为好医院</p>
+                                <img src="/uploads/allimg/160627/1_160627173654_1.jpg">
+                            </dd>
+<dd>
+                                <p>不做“鱼美人”，只做美人鱼！</p>
+                                <img src="/uploads/allimg/160627/1_160627181608_1.jpg">
+                            </dd>
+
+                        </dl>
+                    </div>
+                    <div class="in_qsb">
+                        <dl>
+                            <dd>
+                                <a href="/mtbd/734.html">
+                                    《济南时报》：3·15诚信医院评选 为好医院
+                                </a>
+                            </dd>
+<dd>
+                                <a href="/mtbd/733.html">
+                                    不做“鱼美人”，只做美人鱼！
+                                </a>
+                            </dd>
+<dd>
+                                <a href="/mtbd/732.html">
+                                    央视主持人董浩助阵国际银屑病学诊疗新技术
+                                </a>
+                            </dd>
+<dd>
+                                <a href="/mtbd/731.html">
+                                    国际皮肤大会胜利闭幕 济南中研专家载誉归
+                                </a>
+                            </dd>
+
+                        </dl>
+                    </div>
+                </li>
+                <li >
+                    <div class="in_qst">
+                        <dl>
+                            <dd>
+                                <p>不一样的元宵节  我和孤寡老人有个约会</p>
+                                <img src="/uploads/allimg/160627/1_160627180034_1.jpg">
+                            </dd>
+<dd>
+                                <p>济南中研走进济南温暖老年公寓</p>
+                                <img src="/uploads/allimg/160627/1_160627182159_1.jpg">
+                            </dd>
+
+                        </dl>
+                    </div>
+                    <div class="in_qsb">
+                        <dl>
+                            <dd>
+                                <a href="/rxgy/738.html">
+                                    不一样的元宵节  我和孤寡老人有个约会
+                                </a>
+                            </dd>
+<dd>
+                                <a href="/rxgy/737.html">
+                                    济南中研走进济南温暖老年公寓
+                                </a>
+                            </dd>
+<dd>
+                                <a href="/rxgy/736.html">
+                                    女大学生突发银屑病不愿再上学
+                                </a>
+                            </dd>
+<dd>
+                                <a href="/rxgy/735.html">
+                                    “健康你我，惠民齐鲁” --济南中研走进聊
+                                </a>
+                            </dd>
+
+                        </dl>
+                    </div>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+		phonecommon({
+			id: "#inqs",
+			titkj: ".inqsbt li",
+			contkj: ".inqsnr ul",
+			xiaoguo: "leftauto",
+			autoplay: true,
+			cxtime: 200,
+			jgtime: 5000,
+			morenindex: 0,
+			tjclass: "hover",
+			autopage: false,
+			leftarr: "",
+			rightarr: "",
+			showpage: ".showpage",
+			arrauto: "false",
+			startfn: null,
+			endfn: null,
+			changeload: null		
+		});
+</script>
+	
+<div class="diandi"></div>
+<div class="lTitle sBg1">
+  <h2>疾病导航</h2>
+</div>
+<div class="diandi"></div>
+<table class="sickTable sickBor1">
+  <tr>
+    <td class="sicekTd sickBg1" rowspan="4"><a href="javascript:void(0)" target="_self"><img src="/templets/xintemp/images/sCon1.png">
+      <p>特色诊疗</p>
+      </a></td>
+    <td><a href="/npx/">银屑病<br>(牛皮癣)</a></td>
+    <td><a href="/qcd/">青春痘<br>(痤疮)</td>
+    <td><a href="/tf/">脱发</a></td>
+    <td><a href="/bt/">斑秃</a></td>
+  </tr>
+  <tr>
+    <td><a href="/xmz/">荨麻疹</a></td>
+    <td><a href="/sz/">湿疹</a></td>
+    <td><a href="/hzj/">灰指甲 </a></td>
+    <td><a href="/py/">皮炎</a></td>
+  </tr>
+  <tr>
+   
+    <td><a href="/bdf/">白癜风</a></td>
+    <td><a href="/ylb/">鱼鳞病</a></td>
+    <td><a href="/bpy/">扁平疣</a></td>
+    <td><a href="/mny/">毛囊炎</a></td>
+  </tr>
+  <tr>
+   
+    <td><a href="/sjxpy/">神经性皮炎</a></td>
+    <td><a href="/gmxpy/">过敏性皮炎</a></td>
+    <td><a href="/zyxpy/">脂溢性皮炎</a></td>
+    <td></td>
+  </tr>
+</table>
+<div class="diandi"></div>
+<table class="sickTable sickBor2">
+  <tr>
+    <td class="sicekTd sickBg2" rowspan="3"><a  href="javascript:void(0)" target="_self"><img src="/templets/xintemp/images/sCon2.png">
+      <p>常见疾病</p>
+      </a></td>
+    <td><a href="/pfsy/">皮肤瘙痒</a></td>
+    <td><a href="/pfgm/">皮肤过敏</a></td>
+    <td><a href="/pifuxuan//">皮肤癣</a></td>
+    <td><a href="/jc/">疥疮</a></td>
+  </tr>
+  <tr>
+    <td><a href="/tx/">头癣</a></td>
+    <td><a href="/tix/">体股癣</td>
+    <td><a href="/szx/">手足癣</a></td>
+    <td><a href="/hanban/">花斑癣</a></td>
+  </tr>
+  <tr>
+    
+    <td><a href="/jq/">脚气</a></td>
+    <td><a href="/dzbz/">带状疱疹</a></td>
+    <td><a href="/xunchangyou/">寻常疣</a></td>
+    <td></td>
+  </tr>
+</table>
+<div class="diandi"></div>
+<table class="sickTable sickBor1">
+  <tr>
+    <td class="sicekTd sickBg1" rowspan="3"><a  href="javascript:void(0)" target="_self"><img src="/templets/xintemp/images/sCon3.png">
+      <p>皮肤美容</p>
+      </a></td>    
+    <td><a href="/quban/">祛斑</a></td>
+    <td><a href="/hhb/">黄褐斑 </a></td>
+    <td><a href="/qb/">雀斑</a></td>
+    <td><a href="/jzb//">酒糟鼻 </a></td>
+  </tr>
+  <tr>
+   <td><a href="/dkdy/">痘坑痘印 </a></td>
+   <td><a href="/mzjh/">毛周角化</a></td>
+
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+<!--新加-->
+<div class="diandi"></div>
+<!--<table class="sickTable sickBor2">
+  <tr>
+    <td class="sicekTd sickBg2" rowspan="3" style="padding: 0% 0;"><a  href="javascript:void(0)" target="_self"><img src="/templets/xintemp/images/xinjia.png">
+      <p>其他疾病</p>
+      </a></td>
+    <td style="padding: 0% 0;"><a href="/zt/szqpzzt/">生殖器疱疹</a></td>
+    <td style="padding: 0% 0;"><a href="/zt/jrsz/">尖锐湿疣</a></td>
+    <td style="padding: 0% 0;"> </td>
+    <td style="padding: 0% 0;"></td>
+  </tr>
+
+
+</table>-->
+<!--新加end-->
+<div class="diandi"></div>
+<div class="sickBox"> 
+  <!-- Swiper -->
+  <div class="swiper-container sickCon">
+    <div class="swiper-wrapper">
+     <div class="swiper-slide"><a href="/yydt/751.html" target="_blank"><img src="/templets/xintemp/images/dddc.jpg"></a></div>
+      <div class="swiper-slide"><a href="javascript:void(0)" onClick="LR_HideInvite();openZoosUrl();return false;" target="_blank"><img src="/templets/xintemp/images/sCon4.jpg"></a></div>
+      <div class="swiper-slide"><a href="javascript:void(0)" onClick="LR_HideInvite();openZoosUrl();return false;" target="_blank"><img src="/templets/xintemp/images/sCon5.jpg"></a></div>
+       <div class="swiper-slide"><a href="tel:053182708008"><img src="/templets/xintemp/images/yttl.jpg"></a></div>
+    </div>
+  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination sickYuan"></div>
+</div>
+<!-- Initialize Swiper --> 
+<script>
+	var swiper = new Swiper('.sickCon', {
+		loop: true,
+		autoplay:3000,
+        pagination: '.sickYuan',
+        paginationClickable: true
+    });
+    </script>
+<div class="diandi"></div>
+<div class="lTitle sBg2">
+  <h2>对症问诊</h2>
+</div>
+<div class="diandi"></div>
+<div class="symptomatic hd">
+  <ul>
+    <li><a href="/qcd/187.html"><img src="/templets/xintemp/images/sCon6-1.jpg"></a></li>
+    <li><a href="/tf/516.html"><img src="/templets/xintemp/images/sCon6-2.jpg"></a></li>
+    <li><a href="/xmz/365.html"><img src="/templets/xintemp/images/sCon6-3.jpg"></a></li>
+    <li><a href="/pfsy/"><img src="/templets/xintemp/images/sCon6-4.jpg"></a></li>
+    <li><a href="/bt/322.html"><img src="/templets/xintemp/images/sCon6-5.jpg"></a></li>
+    <li><a href="/hzj/340.html"><img src="/templets/xintemp/images/sCon6-6.jpg"></a></li>
+    <li><a href="/npx/132.html"><img src="/templets/xintemp/images/sCon6-7.jpg"></a></li>
+    <li><a href="/dkdy/"><img src="/templets/xintemp/images/sCon6-8.jpg"></a></li>
+  </ul>
+</div>
+<style>
+.topic{ overflow:hidden; text-align:center;}
+.topic dt{ width:54.5%; float:left; overflow:hidden; margin-right:0.5%;}
+.topic dt span{ display:block; width:100%; margin-bottom:0.5%;padding: 3% 0;}
+.topic dt font{ width:49.7%; float:left;padding: 2% 0;}
+.topic dt font:nth-of-type(1){margin-right: 0.5%;}
+.topic dd{ width:22%; float:left;padding: 3% 0;}
+.topic dd:nth-of-type(1){margin-right: 0.5%;}
+.stopBg1{ background:#e8e9d2;}
+.stopBg2{ background:#ecdcd0;}
+.stopBg3{ background:#f1e7ce;}
+.stopBg4{ background:#d3d6e5;}
+.stopBg5{ background:#cee1ef;}
+.stopBg6{ background:#d0ecd8;}
+.stopBg7{ background:#e9d2dd;}
+.stopBg1 a{color:#7d8416;}
+.stopBg2 a{color:#952a2a;}
+.stopBg3 a{color:#9f7608;}
+.stopBg4 a{ color:#4d588c;}
+.stopBg5 a{ color:#20557c;}
+.stopBg6 a{ color:#32944e;}
+.stopBg7 a{ color:#a44e77;}
+
+.topicUl{ overflow:hidden;}
+.topicUl li{ width:33%; text-align:center; float:left; padding:2% 0;margin-right: 0.3%;margin-top: 0.3%;}
+.topicUl li:nth-of-type(3){ padding:4.5% 0;}
+
+</style>
+<dl class="topic">
+
+  <dt> <span class="stopBg1"><a href="/tf/665.html">头发稀疏什么原因</a></span> <font class="stopBg2"><a href="/tf/671.html">生姜治疗脱发<br>
+
+    效果怎样</a></font> <font class="stopBg3"><a href="/qcd/674.html">前胸后背<br>
+
+    长痘痘</a></font> </dt>
+
+  <dd class="stopBg4"><a href="/qcd/670.html">鼻子上长<br>
+
+    痘痘的<br>
+
+    原因</a></dd>
+
+  <dd class="stopBg5"><a href="/pfgm/667.html">身上长红斑<br>
+
+    的原因是什么</a></dd>
+
+</dl>
+
+<ul class="topicUl">
+
+  <li class="stopBg5"><a href="/pfgm/673.html">皮肤起红疹<br>
+
+    是过敏了吗</a></li>
+
+  <li class="stopBg6"><a href="/qcd/666.html">脸上嘴周边长痘<br>
+
+    的原因和治疗</a></li>
+
+  <li class="stopBg7"><a href="/sz/203.html">湿疹症状图</a></li>
+
+</ul>
+<div class="commonBut"> <a onClick="LR_HideInvite();openZoosUrl();return false;" href="javascript:void(0)">详细描述自己的症状>></a> <a href="tel:053182708008"><img src="/templets/xintemp/images/sCon8.png">0531-82708008</a> </div>
+<div class="diandi"></div>
+<div class="lTitle sBg3">
+  <h2>名医专家</h2>
+</div>
+<div class="diandi"></div>
+<!--<div class="expert"> <img src="/templets/xintemp/images/sCon9.jpg">-->
+ 
+</div>
+<div class="expertList expBg1">
+  <div class="fl"><img src="/templets/xintemp/images/sCon10.png"></div>
+  <div class="fr">
+    <div class="expTop"><img src="/templets/xintemp/images/sCon10_1.png"></div>
+    <div class="expBot">
+      <h4>本院院长</h4>
+      <p><b>擅长项目：</b>“中西医光学药理疗法”治青春痘、脱发、荨麻疹、湿疹、牛皮癣...<a href="/mymj/93.html">[详情]</a></p>
+    </div>
+    <div class="expFanwai"></div>
+  </div>
+</div>
+<div class="expertList expBg2">
+  <div class="fl"><img src="/templets/xintemp/images/sCon11.png"></div>
+  <div class="fr">
+    <div class="expTop"><img src="/templets/xintemp/images/sCon11_1.png"></div>
+    <div class="expBot">
+      <h4>周一、周四早上坐诊</h4>
+      <p><b>擅长项目：</b>中研会诊专家，擅长采用中西医结合方法治疗痤疮、白癜风、牛皮癣、扁平疣...<a href="/mymj/95.html">[详情]</a></p>
+    </div>
+    <div class="expFanwai"></div>
+  </div>
+</div>
+<div class="expertList expBg1">
+  <div class="fl"><img src="/templets/xintemp/images/sCon12.png"></div>
+  <div class="fr">
+    <div class="expTop"><img src="/templets/xintemp/images/sCon12_1.png"></div>
+    <div class="expBot">
+      <h4>本院皮肤科专家</h4>
+      <p><b>擅长项目：</b>治疗各种常见皮肤病和多发牛皮癣，对青春痘、脱发、荨麻疹...<a href="/mymj/470.html">[详情]</a></p>
+    </div>
+    <div class="expFanwai"></div>
+  </div>
+</div>
+<div class="expertList expBg2">
+  <div class="fl"><img src="/templets/xintemp/images/sCon13.png"></div>
+  <div class="fr">
+    <div class="expTop"><img src="/templets/xintemp/images/sCon13_1.png"></div>
+    <div class="expBot">
+      <h4>本院皮肤科专家</h4>
+      <p><b>擅长项目：</b>白癜风、牛皮癣、皮炎类、湿疹、荨麻疹...<a href="/mymj/94.html">[详情]</a></p>
+    </div>
+    <div class="expFanwai"></div>
+  </div>
+</div>
+<div class="commonBut"> <a onClick="LR_HideInvite();openZoosUrl();return false;" href="javascript:void(0)">免费咨询</a> <a href="tel:053182708008"><img src="/templets/xintemp/images/sCon8.png">0531-82708008</a> </div>
+<div class="diandi"></div>
+<div class="lTitle sBg4">
+  <h2>最新案例</h2>
+</div>
+<div class="diandi"></div>
+<div class="indexTure">
+  <div class="fl tureLeft"><a  href="/kfal/tf/600.html"><img src="/uploads/151218/1-15121Q92112161.jpg"></a>
+    <p>脱发案例</p>
+  </div>
+  <div class="fr tureRight">
+    <h4><a  href="/kfal/tf/600.html" title="止脱经历：网上搜索两个月，千挑万选来中研">网上搜索两个月，千挑万选来中研</a></h4>
+    <p>初诊情况：头发稀、黄、软、大片掉落</p>
+    <p>目前情况：脱发严重的地方已经长好了头发</p>
+    <div> <img src="/uploads/151215/1-151215143K4B0.jpg"> </div>
+  </div>
+</div>
+<div class="commonBut"> <a onClick="LR_HideInvite();openZoosUrl();return false;" href="javascript:void(0)">效果这么好，了解详情</a> <a href="tel:053182708008"><img src="/templets/xintemp/images/sCon8.png">0531-82708008</a> </div>
+<div class="indexTure">
+  <div class="fl tureLeft"><a  href="/kfal/cc/602.html"><img src="/uploads/151217/1-15121G5301A95.jpg"></a>
+    <p>痤疮案例</p>
+  </div>
+  <div class="fr tureRight">
+    <h4><a  href="/kfal/cc/602.html" title="“脸上痘痘治好，我就结婚!”">“脸上痘痘治好，我就结婚!”</a></h4>
+    <p>初诊情况：痘痘集中在左脸，有脓包发炎</p>
+    <p>目前情况：鼓起的痘痘变瘪，炎症消失，</p>
+    <div> <img src="/uploads/151217/1-15121G41QY11.jpg"> </div>
+  </div>
+</div>
+<div class="commonBut"> <a onClick="LR_HideInvite();openZoosUrl();return false;" href="javascript:void(0)">效果这么好，了解详情</a> <a href="tel:053182708008"><img src="/templets/xintemp/images/sCon8.png">0531-82708008</a> </div>
+<div class="indexTure">
+  <div class="fl tureLeft"><a  href="/kfal/cc/607.html"><img src="/uploads/151218/1-15121QT62G48.jpg"></a>
+    <p>痤疮案例</p>
+  </div>
+  <div class="fr tureRight">
+    <h4><a  href="/kfal/cc/607.html" title="酒窝帅哥为中研点赞：女朋友的痤疮两次就治好了！">酒窝帅哥为济南中研点赞</a></h4>
+    <p>初诊情况：脸颊两边长满痘痘，发红发炎</p>
+    <p>目前情况：效果很明显，痘痘基本消失，两个疗程就差不多了</p>
+    <div> <img src="/uploads/151218/1-15121QPRT07.jpg"> </div>
+  </div>
+</div>
+<div class="commonBut"> <a onClick="LR_HideInvite();openZoosUrl();return false;" href="javascript:void(0)">效果这么好，了解详情</a> <a href="tel:053182708008"><img src="/templets/xintemp/images/sCon8.png">0531-82708008</a> </div>
+<div class="indexTure">
+  <div class="fl tureLeft"><a  href="/kfal/npx/608.html"><img src="/uploads/151218/1-15121R011421G.jpg"></a>
+    <p>牛皮癣案例</p>
+  </div>
+  <div class="fr tureRight">
+    <h4><a  href="/kfal/npx/608.html" title="牛皮癣已康复，双手合十谢名医">牛皮癣已康复，双手合十谢名医</a></h4>
+    <p>初诊情况：全身皮癣超过90%，皮肤无弹性</p>
+    <p>目前情况：皮肤恢复正常人手感，现已康复</p>
+    <div> <img src="/uploads/151218/1-15121R00F4R0.jpg"> </div>
+  </div>
+</div>
+<div class="commonBut"> <a onClick="LR_HideInvite();openZoosUrl();return false;" href="javascript:void(0)">效果这么好，了解详情</a> <a href="tel:053182708008"><img src="/templets/xintemp/images/sCon8.png">0531-82708008</a> </div>
+
+
+
+<div class="lTitle lBg1">
+  <h2>院内活动</h2>
+</div>
+<div class="diandi"></div>
+<!-- Swiper -->
+<div class="swiper-container brandActivity">
+  <div class="swiper-wrapper">
+  
+  <div class="swiper-slide">
+    
+        <img class="brandUlimg" src="/templets/xintemp/images/xyhhd.jpg">
+      </ul>
+    </div>
+  
+  <div class="swiper-slide">
+      <h3><!--<img src="/templets/xintemp/images/lCon12.jpg">-->
+        <p>2015世界皮肤病日暨全国皮肤疑<br>
+          难病防治公益基金山东中研站启动</p>
+      </h3>
+      <div class="brandImg"> <img src="/templets/xintemp/images/lCon33.jpg"> </div>
+      <ul>
+        <li>活动内容：贫困牛皮癣患者援助3000元</li>
+        <li>活动时间：2015年10月29日起</li>
+        <li>活动地点：济南中研皮肤病医院</li>
+        <li>支持单位：全国皮肤病防治工程组委会</li>
+        <img class="brandUlimg" src="/templets/xintemp/images/lCon17.jpg">
+      </ul>
+    </div>
+    <div class="swiper-slide">
+      <h3><!--<img src="/templets/xintemp/images/lCon12.jpg">-->
+        <p>2015国际皮肤病学诊疗新技术推广大会<br>
+          暨全国皮肤疑难病防治公益基金启动仪式</p>
+      </h3>
+      <div class="brandImg"> <img src="/templets/xintemp/images/lCon13.jpg"> <img src="/templets/xintemp/images/lCon14.jpg"> <img src="/templets/xintemp/images/lCon15.jpg"> <img src="/templets/xintemp/images/lCon16.jpg"> </div>
+      <ul>
+        <li>图1：集体合影</li>
+        <li>图2：原国家卫生部副部长曹荣桂出席大会</li>
+        <li>图3：国际皮肤外科协会会员保罗</li>
+        <li>图4：我院王国丽主任出席大会并做重要学术报告</li>
+        <li>图5：我院王国丽主任接受CCTV专访</li>
+        <li>图6：我院成为山东省领先"国际皮肤病学诊疗新技术推广定点单位"</li>
+        <img class="brandUlimg" src="/templets/xintemp/images/lCon17.jpg">
+      </ul>
+    </div>
+    <div class="swiper-slide">
+      <h3>
+        <p>2016济南中研皮肤病医院第二季度医患交流会</p>
+      </h3>
+      <div class="brandImg"> <img src="/templets/xintemp/images/lCon18.jpg"> <img src="/templets/xintemp/images/lCon19.jpg"> <img src="/templets/xintemp/images/lCon20.jpg"> <img src="/templets/xintemp/images/lCon21.jpg"> </div>
+      <ul>
+        <li>图1：济南中研2016年第二季度医患交流会</li>
+
+        <li>图2：PPT展示医患面对面零距离沟通</li>
+
+        <li>图3：中研专家免费发放爱心大米</li>
+
+        <li>图4：中研专家倾听真实患者诊疗诉求</li>
+        <li>活动地方：济南中研皮肤病医院</li>
+        <img class="brandUlimg" src="/templets/xintemp/images/lCon22.jpg">
+      </ul>
+    </div>
+    <div class="swiper-slide">
+      <h3>
+        <p>社会责任：2016公益之路，我们一直在前进</p>
+      </h3>
+      <div class="brandImg"> <img src="/templets/xintemp/images/lCon23.jpg"> <img src="/templets/xintemp/images/lCon24.jpg"> <img src="/templets/xintemp/images/lCon25.jpg"> <img src="/templets/xintemp/images/lCon26.jpg"> </div>
+      <ul>
+        <li>图1：中研专家团慰问环卫工人</li>
+        <li>图2：中研专家义诊图</li>
+        <li>图3：全院护士为高考学子送上正能量</li>
+        <li>图4：端午节，中研走进敬老院</li>
+        <li>图5：中研走进南全福社区</li>
+        <img class="brandUlimg" src="/templets/xintemp/images/lCon27.jpg">
+      </ul>
+    </div>
+    
+    
+    
+  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination bradYuan"></div>
+</div>
+
+<!-- Initialize Swiper --> 
+<script>
+    var swiper = new Swiper('.brandActivity', {
+		 loop: true,
+		autoplay:3000,
+        pagination: '.bradYuan',
+        paginationClickable: true
+    });
+    </script> 
+<div class="diandi"></div>
+<script src='/templets/xintemp/js/pl.php?asd=0' language='javascript'></script>
+<!-- end of pl -->
+
+<div class="diandi"></div>
+<div class="lTitle lBg3">
+  <h2>快速挂号</h2>
+</div>
+
+<div class="diandi"></div>
+
+
+
+<link href="/templets/xintemp/css/common.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/templets/xintemp/js/date.js" charset=utf-8 ></script>
+<script type="text/javascript" src="/templets/xintemp/js/iscroll.js" ></script>
+<script type="text/javascript">
+$(function(){
+	$('#beginTime').date();
+	//$('#endTime').date({theme:"datetime"});
+});
+</script>
+<div class="form" id="gh">
+  <p class="wxtx">
+	<font>温馨提示：</font>本网站已加密，较好保证您的隐私安全，就诊前通过手机预约可免排队等候，免专家挂号费。15秒挂号到院免排队，优先就诊。
+  </p>
+ <form action="http://3g.xpf99.com/syslus/guahao.php?act=add" method="post" name="gh_form" id="gh_form" onsubmit="return check();" target="_self">
+		<div class="formBar">
+			<span>就诊姓名：</span>
+			<input type="text" id="name" name="name" value="如：王静 " onFocus="if(this.value=='如：王静 '){this.value='';}" onBlur="if(this.value==''){this.value='如：王静 ';}">
+		</div>
+        <div class="formBar">
+			<span>预约时间：</span>
+			<input name="app_time"  id="beginTime" class="kbtn" />
+		</div>
+		<div class="formBar">
+			<span>手机号码：</span>
+			<input type="tel" id="tel" name="phone" value="如：15000000000" onFocus="if(this.value=='如：15000000000'){this.value='';}" onBlur="if(this.value==''){this.value='如：15000000000';}">
+		</div>
+		
+		<div class="formBar">
+			<span>预约病种：</span>
+			<select name="yyjb" id="select" style="visibility: visible;">
+            <option value="青春痘">青春痘</option>
+            <option value="脱发">脱发</option>
+            <option value="牛皮癣">牛皮癣</option>
+            <option value="白癜风">白癜风</option>
+            <option value="湿疹">湿疹</option>
+            <option value="鱼鳞病">鱼鳞病</option>
+            <option value="皮炎">皮炎</option>
+            <option value="荨麻疹">荨麻疹</option>
+            <option value="酒糟鼻">酒糟鼻</option>
+            <option value="毛囊炎">毛囊炎</option>
+            <option value="斑秃">斑秃</option>
+            <option value="带状疱疹">带状疱疹</option>
+            <option value="毛周角化">毛周角化</option>
+            <option value="皮肤瘙痒">皮肤瘙痒</option>
+            <option value="灰指甲">灰指甲</option>
+            <option value="扁平疣">扁平疣</option>
+            <option value="平常疣">平常疣</option>
+            <option value="脚气">脚气</option>
+            <option value="花斑癣">花斑癣</option>
+            <option value="手足癣">手足癣</option>
+            <option value="其他">其他</option>
+          </select>
+
+		</div>
+        <div class="formBar">
+			<span>预约专家：</span>
+			<select name="yyzj" id="select"   style="visibility: visible;">
+            <option value="陈爱茂">陈爱茂 [院长]</option>
+            <option value="徐文祥">徐文祥 [坐诊专家]</option>
+            <option value="邱玉清">邱玉清 [皮肤科专家]</option>
+            <option value="王国丽">王国丽 [皮肤科专家]</option>
+            <option value="闻长铨">闻长铨 [会诊专家]</option>
+			</select>
+		</div>
+		<div class="formBtn hd">
+			<input type="submit" id="but" value="加密提交">
+		</div>
+	</form>
+    <script type="text/javascript">
+function check() {	
+	if (document.gh_form.name.value=="" || document.gh_form.name.value=="请填入您的真实姓名"){alert("请填入您的姓名");document.gh_form.name.focus();return false}
+	if(!document.gh_form.name.value.match(/^[\u4e00-\u9fa5]{2,4}$/)){alert("姓名输入有误");document.gh_form.name.focus();return false}
+	if (document.gh_form.tel.value==""){alert("请填入您的联系电话");document.gh_form.tel.focus();return false}
+	if (!document.gh_form.tel.value.match(/^(^(\d{3,4}-)?\d{7,8})$|(1[358]{1}[0-9]{9})$/)){alert("联系电话格式不正确");document.gh_form.tel.focus();return false}	
+	if (document.gh_form.yytime.value==""){alert("请填入您的就诊日期");document.gh_form.yytime.focus();return false}
+	else{
+		var today=new Date();
+		var year=today.getFullYear();
+		var month=(today.getMonth() + 1).toString();
+		var dom=today.getDate().toString();
+		if (month.length == 1) month = "0" + month;
+		if (dom.length == 1) dom = "0" + dom;
+		if (document.gh_form.yytime.value < year + "-" + month + "-" + dom) {
+			alert("您填入的就诊日期错误");document.gh_form.yytime.value='';document.gh_form.yytime.focus();return false
+		}
+	}
+if (document.gh_form.bz.value==""){alert("请选择预约病种");document.gh_form.bz.focus();return false}	
+	return true;
+}
+</script>
+</div>
+<div id="datePlugin"></div> 
+
+
+<div class="lTel">
+
+  <a href="tel:053182708008"><img src="/templets/xintemp/images/lCon30.jpg"></a>
+
+</div>
+
+
+
+<div class="botMap">
+
+  <div class="fl"></div>
+
+  <div class="fr">
+
+    <p>门诊时间（节假日无休）<br>
+
+    <b>08:00—17:30</b><br>
+
+    医院地址：济南市槐荫区<br>
+
+    <b>经六路904号（济南市槐荫区段北路123号）</b></p>
+
+    <div class="botBot">
+
+      <a href="/lylx/">查看地图</a>
+
+      <a href="/zt/yyjj/">关于中研</a>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<script src='/templets/xintemp/js/dbdh.php?asd=0' language='javascript'></script>
+
+
+
+<script src='/templets/xintemp/js/swt.php?asd=0' language='javascript'></script>
+<!-- 中间弹窗离线宝代码开始 -->
+<script>
+document.getElementById("callBtn").onclick = function () { 
+lxb.call(document.getElementById("telInput"));
+};
+</script>
+<!-- 中间弹窗离线宝代码结束 -->
+<script src='/templets/xintemp/js/dbx.php?asd=0' language='javascript'></script>
+
+<script type="text/javascript" src="/templets/xintemp/js/qqshow.js"></script>
+
+
+
+
+<script language="javascript" src="http://pdt.zoosnet.net/JS/LsJS.aspx?siteid=PDT84681726&float=0&lng=cn"></script>
+
+</body>
+
+</html>
