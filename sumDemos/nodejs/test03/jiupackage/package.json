@@ -1,0 +1,22 @@
+{
+  "name": "jiupackage",
+  "version": "1.0.0",
+  "description": "sampl package\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[Ce\u001b[C\u001b[C\u001b[D\u001b[D \u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[C\u001b package just for node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "mypackage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wjf444128852/wjf444128852.github.com.git"
+  },
+  "keywords": [
+    "mypackage"
+  ],
+  "author": "jiucheng wang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wjf444128852/wjf444128852.github.com/issues"
+  },
+  "homepage": "https://github.com/wjf444128852/wjf444128852.github.com#readme"
+}
