@@ -6,7 +6,7 @@ ol, ul, li, dl, dt, dd { list-style:none; }
 input, button, textarea, checkbox, select, radio, form { vertical-align: top; }
 a { color:#545454; text-decoration:none; }
 a:link, a:visited { text-decoration:none; }
-a:hover { text-decoration:underline; }
+/*a:hover { text-decoration:underline; }*/
 .red, .red a { color:#f40000; }
 .left { float:left; }
 .right { float:right; }
@@ -22,7 +22,7 @@ body { margin:0 auto; color:#545454;max-width:640px;min-width:320px;}
 .navi li:nth-child(4n) { border-right: none;}
 .navi li a { font-size: 1.2rem; color: #FFF;}
 .banne_xw img{ width:100%;}
-.m1_xw,.m3_xw{ background:#eaf8ff; overflow:hidden; margin-top:2.4rem; padding-bottom:2rem;}
+.m1_xw,.m3_xw{  overflow:hidden; margin-top:1rem; }
 .dlan_xw h2{ text-align:center; color:#007575; font-size:3.1rem; padding-top:.9rem;}
 .dlan_xw p{ color:#b6b6b6; font-size:1rem; line-height:1.2rem; border:solid 1px #e0e0e0; border-right:none; border-left:none; text-align:center; overflow:hidden;}
 .qhd_xw{ padding:1.5rem .5rem 0 .5rem; overflow:hidden;}
@@ -40,7 +40,7 @@ body { margin:0 auto; color:#545454;max-width:640px;min-width:320px;}
 .zxa_xw a{ display:block;}
 .zxb_xw{ text-align:center; overflow:hidden;}
 .zxb_xw img{ width:13.4rem; height:3rem; margin:0 .8rem}
-.m2_xw,.m4_xw{ background:#f1f1f1; overflow:hidden; margin-top:2.5rem; padding-bottom:1.9rem;}
+.m2_xw,.m4_xw{ background:#f1f1f1; overflow:hidden; margin-top:1rem; padding-bottom:1.9rem;}
 .bti_xw{  line-height:3rem; color:#fff; font-size:1.35rem; background:url(../images/bti_xw_03.jpg); background-size:100% 100%; overflow:hidden; margin-top:1.4rem;}
 .bti_xw b{ font-size:1.7rem; margin-left:.75rem;}
 .m2a_xw{ padding:.4rem 1.25rem 0 1.25rem; overflow:hidden;}

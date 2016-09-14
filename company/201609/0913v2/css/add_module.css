@@ -63,8 +63,10 @@ em, i, strong, b, small, h1, h2, h3, h4, h5, h6, address {
     width: 100%;
     overflow: hidden;
     text-align: center;
-    margin: 8% auto;
+    margin:0 auto;
+    margin-top: 1rem;
 }
+
 .zixun1 img{
     width: 100%;
 }
@@ -147,8 +149,10 @@ em, i, strong, b, small, h1, h2, h3, h4, h5, h6, address {
     width: 96%;
     margin: 3% auto;
     overflow: hidden;
-    border-bottom: #CCC dashed 1px;
     padding-bottom: 3%;
+}
+.have_bottom{
+    border-bottom: #CCC dashed 1px;
 }
 .box3 img{
     width: 100%;
@@ -160,7 +164,6 @@ em, i, strong, b, small, h1, h2, h3, h4, h5, h6, address {
 /*--*/
 .newtil{
     width: 100%;
-    margin: 5% auto;
 }
 .newtil p {
     font-size: 1.6rem;
@@ -317,8 +320,8 @@ em, i, strong, b, small, h1, h2, h3, h4, h5, h6, address {
     color: #b3b3b3;
 }
 .reg dl dt li {
-    height: 2.2em;
-    line-height: 2.2em;
+    height: 2rem;
+    line-height: 2rem;
     overflow: hidden;
     zoom: 1;
     margin-top: 0.3em;
