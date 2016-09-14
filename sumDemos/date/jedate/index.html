@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jedate日期样式</title>
+    <!--参考来源：http://www.jayui.com/jedate/-->
+    <link rel="stylesheet" href="jedate/skin/jedate.css">
+    <script src="jedate/jedate.js"></script>
+</head>
+<body>
+    <input type="text" placeholder="请选择日期" id="test">
+</body>
+<script type="text/javascript">
+    jeDate({
+        dateCell:"#test",
+        format:"YYYY-MM-DD",
+        isTime:false,
+        minDate:"2014-09-19 00:00:00"
+    })
+</script>
+</html>
