@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>Document</title>
+</head>
+<body>
+<div>
+    AAAAAAAAAAAAAAAA<br>
+    AAAAAAAAAAAAAAAA<br>
+    AAAAAAAAAAAAAAAA<br>
+    AAAAAAAAAAAAAAAA<br>
+    AAAAAAAAAAAAAAAA<br>
+    AAAAAAAAAAAAAAAA<br>
+    AAAAAAAAAAAAAAAA<br>
+    AAAAAAAAAAAAAAAA<br>
+</div>
+<div id="btn">
+
+</div>
+<script>
+    var btn=document.getElementById("btn");
+    var W=window.innerWidth;//文档显示区宽高
+    var H=window.innerHeight;
+    var ZW=window.outerWidth;//整个窗口的宽高
+    var ZH=window.outerHeight;
+    var SW=screen.width;//桌面完整分辨率宽高
+    var SH=screen.height;
+    var BW=screen.availWidth;//去掉任务栏后剩余分辨率的宽高
+    var BH=screen.availHeight;
+    console.log(W);
+    console.log(H);
+    console.log(SW);
+    console.log(SH);
+    console.log(BW);
+    console.log(BH);
+    btn.innerHTML="";
+    btn.innerHTML+="<p>"+"文档显示区的宽度是："+W+"PX"+"<br>";
+    btn.innerHTML+="文档显示区的高度是："+H+"PX"+"<br>";
+    btn.innerHTML+="整个窗口的宽度："+ZW+"PX"+"<br>";
+    btn.innerHTML+="整个窗口的高度："+ZH+"PX"+"<br>";
+    btn.innerHTML+="桌面完整分辨率宽度："+SW+"PX"+"<br>";
+    btn.innerHTML+="桌面完整分辨率高度："+SH+"PX"+"<br>";
+    btn.innerHTML+="去掉任务栏后剩余分辨率的宽度："+BW+"PX"+"<br>";
+    btn.innerHTML+="去掉任务栏后剩余分辨率的高度："+BH+"PX"+"<br>"+"</p>";
+</script>
+</body>
+</html>
