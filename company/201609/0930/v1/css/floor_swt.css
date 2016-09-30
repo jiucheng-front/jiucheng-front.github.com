@@ -1,0 +1,59 @@
+*{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+body{ font-size:14px;font-family:"Microsoft YaHei"; background:#ffffff; color:#393939;}
+.floor_swt{
+    width: 240px;
+    height: 233px;
+    background-image: url(../images/swt_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: fixed;
+    /**/
+    left: 50%;
+    top: 50%;
+    margin-top: -115px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 100;
+}
+.swt_close {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/red-close.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    right: -8px;
+    top: -8px;
+}
+.swt_btn{
+    position: absolute;
+    overflow: hidden;
+    left: 28px;
+    bottom: 42px;
+}
+.swt_btn a{
+    float: left;
+    display: block;
+    width: 85px;
+    height: 23px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.swt_tel{
+    background-image: url(../images/btn_tel.png);
+}
+.swt_online{
+    margin-left: 15px;
+    background-image: url(../images/btn_online.png);
+}
