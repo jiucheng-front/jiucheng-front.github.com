@@ -42,10 +42,11 @@
             if(e.keyCode==123){
                 alert("小样你想干嘛？");
                 return false;
-            }else{
-                console.log("不是F12");
+            }else if((e.ctrlKey)&&(e.shiftKey)&&(e.keyCode==73)){
+                alert("还是不给你看。。");
+                return false;
             }
-        }
+        };
         document.oncontextmenu=function(){
             alert("小样不给你看");
             return false;
