@@ -45,12 +45,15 @@
             }else if((e.ctrlKey)&&(e.shiftKey)&&(e.keyCode==73)){
                 alert("还是不给你看。。");
                 return false;
+            }else if((e.ctrlKey)&&(e.keyCode==85)){
+                alert("还是算了吧……^_^");
+                return false;
             }
         };
         document.oncontextmenu=function(){
             alert("小样不给你看");
             return false;
-        }
+        };
     }
 </script>
 </html>
