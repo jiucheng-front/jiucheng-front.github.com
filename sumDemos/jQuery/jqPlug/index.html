@@ -10,6 +10,8 @@
     <script src="js/jq-changeColor-plug1.js"></script>
     <!--简单的jq插件plus2-->
     <script src="js/jq-changeColor-plug2.js"></script>
+    <script src="js/jq-changeColor-plug3.js"></script>
+    <script src="js/jq-changeColor-plug4.js"></script>
 </head>
 <body>
 <div class="main">
@@ -17,7 +19,7 @@
     <p>进行jQuery插件开发前，首先要知道两个问题：什么是jQuery插件？jQuery插件如何使用？</p>
     <p>第一个问题，jQuery插件就是用来扩展jQuery原型对象的一个方法，简单来说就是jQuery插件是jQuery对象的一个方法。其实回答了第一个问题，也就知道第二个问题的答案了，jQuery插件的使用方式就是jQuery对象方法的调用。</p>
     <p>我们先看个例子：$("a").css("color","red")。我们知道每个jQuery对象都会包含jQuery中定义的DOM操作方法,这里使用$方法来选择a元素，返回一个a元素的jQuery对象，这个对象就可以使用jQuery中定义的DOM操作方法。那么jQuery对象是如何获取这些方法的呢？其实jQuery内部定义了一个jQuery.fn对象，查看jQuery源码可以发现jQuery.fn=jQuery.prototype，也就是说jQuery.fn对象是jQuery的原型对象,jQuery的DOM操作方法都在jQuery.fn对象上定义的，然后jQuery对象就可以通过原型继承这些方法。</p>
-    <p>下面是调用了简单插件一后的结果：</p>
+    <p>插件使用效果如下：</p>
     <p class="one">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aperiam at cumque dolores doloribus eius, impedit ipsam iste omnis perferendis placeat provident quaerat sunt. Doloremque earum minus nihil sunt voluptate?</p>
     <!--1、简单的插件调用-->
     <script>
@@ -25,14 +27,26 @@
     </script>
     <h2>防止$符号污染的jQuery插件</h2>
     <p>有很多js库都会使用$符号，虽然jQuery可以使用jQuery.noConflict()方法交出$符号的使用权，但是如果定义插件的时候，使用$.fn对象来定义的，那么这些插件使用的时候就会受到其它使用$变量的js库的影响。对于这种情况，我们可以使用立即执行函数通过传参的方式封装插件。形式如：plus-2</p>
-    <p>下面持用了简单插件2：</p>
+    <p>插件使用效果如下：</p>
     <p class="two">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi deleniti eligendi modi sed! Commodi dolores hic ipsam laborum magnam nemo neque officia quibusdam sequi unde? Aliquam exercitationem odit recusandae suscipit!</p>
     <script>
         $(".two").changeColor2("#3DA742");
     </script>
     <p>因为使用了立即执行函数，所以此时的$只属于这个立即执行函数的函数作用域，这样就可以避免$符号的污染。</p>
     <h2>可以接受参数的jQuery插件</h2>
-    <p>继续上面的例子，假如我还想为这个插件添加一个设置标签元素内容文字大小的功能，那么我可以这么来实现：</p>
+    <p>继续上面的例子，假如我还想为这个插件添加一个设置标签元素内容文字大小的功能，插件使用效果如下：</p>
+    <p class="three">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ipsa neque pariatur reprehenderit veniam. Consectetur dicta eaque enim, excepturi hic incidunt labore minima mollitia natus obcaecati pariatur quia quos reiciendis.</p>
+    <script>
+        $(".three").changeColor3("#E4393C",20);
+    </script>
+    <p>上面这种插件传参方式适用于参数比较少的情况，如果需要传给插件内部的参数比较多，我们可以定义一个参数对象，然后把需要传给插件的参数放在参数对象中。插件使用效果如下：</p>
+    <p class="four">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus at debitis deserunt dicta enim facere harum id impedit ipsum iste laborum officia possimus quas quia quidem, reiciendis rem, rerum sed.</p>
+    <script>
+        $(".four").changeColor4({
+            colorStr:"#4285F4",
+            fontSize:25
+        });
+    </script>
 </div>
 <!--下面是禁止查看源码的几种方式-->
 <!--<script src="../src/failedConsole.js"></script>-->
