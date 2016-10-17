@@ -142,37 +142,7 @@ p{
     width: 1.77rem;
     margin-left: .03rem;
 }
-/*top_tips*/
-.top_tips{
-    overflow: hidden;
-    margin-top: .05rem;
-}
-.top_tips:before{
-    display: table;
-    content: "";
-}
-.top_tips p{
-    overflow: hidden;
-    padding: .1rem .08rem;
-    background-color: #F6F6F6;
-    float: left;
-    width: 86%;
-    margin-top: .075rem;
-}
-.top_tips p img{
-    width: .29rem;
-}
-.top_tips img,.top_tips span{
-    float: left;
-}
-.top_tips span{
-    margin-left: .1rem;
-}
-.top_tipsimg{
-    width: .85rem;
-}
-/*----------top_one------*/
-/*same_title*/
+/*---------same_title----------*/
 .same_title{
     overflow: hidden;
     position: relative;
@@ -200,156 +170,6 @@ p{
     bottom: 1px;
     z-index: 5;
 }
-/*-----------top_one--------------------*/
-.top_one{
-    margin-top: .1rem;
-}
-.one_msg{
-    overflow: hidden;
-    margin-top: .1rem;
-}
-.msg_left,.msg_right{
-    float: left;
-}
-.msg_left{
-    width: 73%;
-    overflow: hidden;
-}
-.msg_left li{
-    float: left;
-    width: 49.5%;
-}
-.msg_left li.have_mleft{
-    margin-left: .5%;
-}
-.msg_left li.have_top{
-    margin-top: .5%;
-}
-.one_msg a{
-    display: block;
-    color: #fff;
-    font-size: .2rem;
-    text-align: center;
-}
-.one_bgred{
-    background-color: #975F60;
-}
-.one_bgrellow{
-    background-color: #C0A646;
-}
-.one_bggray{
-    background-color: #8D8F93;
-}
-.one_height{
-    height: .5rem;
-    line-height: .5rem;
-}
-.two_height{
-    height: .78rem;
-    line-height: .78rem;
-}
-/*msg_right*/
-.msg_right{
-    width: 27%;
-}
-.msg_right li{
-    height: .9rem;
-    width: 100%;
-}
-.msg_right li.have_top{
-    margin-top: 1.5%;
-}
-.msg_right li a.havepone{
-    padding-top: .3rem;
-}
-.msg_right li a.haveptwo{
-     padding-top: .15rem;
- }
-/*top_one-end*/
-/*----------top_two-----------------*/
-.top_two{
-    margin-top: .15rem;
-}
-.two_msg a.font_red{
-    color: #A22227;
-}
-.two_msg{
-    overflow: hidden;
-    width: 99%;
-    margin: 0 auto;
-    margin-top: .1rem;
-}
-.two_msg li{
-    float: left;
-    height: .64rem;
-    line-height: .64rem;
-    background-image: url(../images/two_msgbg.jpg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
-.two_msg a{
-    font-size: .2rem;
-    display: block;
-    color: #585554;
-    text-align: center;
-}
-.two_msg li.have_mleft{
-    margin-left: .5%;
-}
-.two_wone{
-    width: 25%;
-}
-.two_wtwo{
-    width: 21%;
-}
-.two_wthree{
-    width: 31.5%;
-}
-/*two_imglist*/
-.toptwo_img{
-    width: 96%;
-    margin: 0 auto;
-    margin-top: .1rem;
-}
-.toptwo_imglist{
-    overflow: hidden;
-}
-.toptwo_imglist li{
-    float: left;
-    width: 25%;
-    position: relative;
-}
-.toptwo_imglist li.have_border{
-    border-right: 1px dashed #ccc;
-}
-.toptwo_imglist img,.toptwo_imglist a,.toptwo_imglist span{
-    display: block;
-}
-.toptwo_imglist span{
-    font-size: .2rem;
-    color: #585554;
-    text-align: center;
-    margin-top: .05rem;
-}
-/*toptwo_banner*/
-.toptwo_banner{
-    width: 100%;
-    height: 1.7rem;
-    margin-top: .1rem;
-    position: relative;
-    background-image: url(../images/toptwo_banbg.jpg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
-.toptwo_btn{
-    position: absolute;
-    display: block;
-    width: 1.1rem;
-    height: .4rem;
-    right: .18rem;
-    bottom: .05rem;
-}
-/*top_two-end*/
 /*------------top_three----------------*/
 .top_three{
     margin-top: .1rem;
@@ -369,7 +189,6 @@ p{
     width: 60%;
     margin-left: 1%;
     height: 2.88rem;
-    /*padding:.25rem .1rem;*/
     padding: .1rem;
     background-color: #F6F6F6;
 }
@@ -512,6 +331,32 @@ p{
     background-color: #992E2E;
 }
 /*---------------------top_five---------------------*/
+/*main_caseplace*/
+.main_caseplace{
+    overflow: hidden;
+    position: relative;
+}
+.main_caseplace h4{
+    float: left;
+    color: #4F4F51;
+    font-size: .24rem;
+    padding: .05rem .1rem;
+    border-bottom: 4px solid #AB4144;
+    position: relative;
+    z-index: 10;
+    font-weight: 100;
+}
+.main_caseplace:after{
+    display: table;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #C6C7C9;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    z-index: 5;
+}
 .top_five{
     margin-top: .15rem;
 }
@@ -651,11 +496,21 @@ p{
 .topfive_police{
     margin-top: .15rem;
 }
+.topfive_police a{
+    display: block;
+}
 .topfive_police img{
     display: block;
     width: 100%;
 }
-/*----------------------------------*/
+/*------------main_casesay患者评论-----------------*/
+.main_casesay{
+    margin-top: .15rem;
+}
+.case_saycontainer{
+    margin-top: .1rem;
+}
+/*----------------top_six------------------*/
 .top_six{
     background-color: #F5F5F5;
 }
@@ -847,4 +702,7 @@ p{
 }
 .footernav_btn{
     background-image: url(../images/footernav_btn.jpg);
+}
+.footernav_home{
+    background-image: url(../images/go_home.jpg);
 }
