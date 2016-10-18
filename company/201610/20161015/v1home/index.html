@@ -51,7 +51,33 @@
         </div>
         <!--banner-->
         <div class="top_banner">
-            <a href="/" class="banner_btn"></a>
+            <div class="swiper-container top_bannerimg">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="top_bannerlists">
+                            <a href="/"><img src="images/top_bannerbg_01.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="top_bannerlists">
+                            <a href="/"><img src="images/top_bannerbg_02.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="top_bannerlists">
+                            <a href="/"><img src="images/top_bannerbg_03.jpg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination bannerimg-pagination" id="bannerimg-pagination"></div>
+            </div>
+            <script>
+                var mySwiper = new Swiper ('.top_bannerimg', {
+                    loop: true,
+                    autoplay: 2000,
+                    pagination: '.bannerimg-pagination'
+                });
+            </script>
         </div>
         <!--toptel-->
         <div class="top_telnumber">
@@ -160,7 +186,27 @@
             </ul>
         </div>
         <div class="toptwo_banner">
-            <a href="/" class="toptwo_btn"></a>
+            <!---->
+            <div class="swiper-container toptwo_bannerimg">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="/" class="toptwo_bannerbtn">
+                            <img src="images/toptwo_banbg_01.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="/" class="toptwo_bannerbtn">
+                            <img src="images/toptwo_banbg_02.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <script>
+                var mySwiper = new Swiper ('.toptwo_bannerimg', {
+                    loop: true,
+                    autoplay: 2000
+                });
+            </script>
         </div>
         <!--3、医德双馨-->
         <div class="top_three">
@@ -240,12 +286,12 @@
                     </div>
                 </div>
                 <!-- 如果需要分页器 -->
-                <div class="swiper-pagination" id="swiper-pagination"></div>
+                <div class="swiper-pagination experts-pagination" id="swiper-pagination"></div>
                 <script>
                     var mySwiper = new Swiper ('.experts-container', {
                         loop: true,
                         autoplay: 2000,
-                        pagination: '.swiper-pagination'
+                        pagination: '.experts-pagination'
                     });
                 </script>
             </div>
@@ -468,7 +514,36 @@
             <ul>
                 <li class="footernav_one"><a href="/" class="footernav_tel"></a></li>
                 <li class="footernav_one"><a href="/" class="footernav_online"></a></li>
-                <li class="footernav_three"><a href="/" class="footernav_btn"></a></li>
+                <li class="footernav_three" id="homeBtn">
+                    <div class="footernav_three_btn">
+                        <a href="javascript:;" class="footernav_btn">
+                            <div class="footerLines">
+                                <span><em></em></span>
+                            </div>
+                            <b>病种</b>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--9、底部导航按钮3病种选择效果-->
+        <div class="footernav_menu" id="footerMenu">
+            <h4>常见皮肤病</h4>
+            <ul>
+                <li><a href="/">银屑病(牛皮癣)</a><a href="">白癜风</a><a href="">灰指甲</a><a href="">斑秃</a></li>
+                <li><a href="/">毛囊炎</a><a href="">手足癣</a><a href="">体股癣</a><a href="">带状疱疹</a></li>
+                <li><a href="/">疥疮</a><a href="">鱼鳞病</a><a href="">在线咨询</a><a href="">一键通话</a></li>
+            </ul>
+            <h4>季节高发病</h4>
+            <ul>
+                <li><a href="/">痤疮(青春痘)</a><a href="">脱发</a><a href="">湿疹</a><a href="">荨麻疹</a></li>
+                <li><a href="/">皮炎</a><a href="">过敏性皮炎</a><a href="">脂溢性皮炎</a><a href="">神经性皮炎</a></li>
+                <li><a href="/">皮肤过敏</a><a href="">皮肤瘙痒</a><a href="">在线咨询</a><a href="">一键通话</a></li>
+            </ul>
+            <h4>皮肤美容其他皮肤病</h4>
+            <ul>
+                <li><a href="/">扁平疣</a><a href="">痘坑痘印</a><a href="">毛周角化</a><a href="">酒糟鼻</a></li>
+                <li><a href="/">雀斑</a><a href="">黄褐斑</a><a href="">在线咨询</a><a href="">一键通话</a></li>
             </ul>
         </div>
     </div>

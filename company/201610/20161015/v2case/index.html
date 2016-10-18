@@ -51,7 +51,33 @@
         </div>
         <!--banner-->
         <div class="top_banner">
-            <a href="/" class="banner_btn"></a>
+            <div class="swiper-container top_bannerimg">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="top_bannerlists">
+                            <a href="/"><img src="images/top_bannerbg_01.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="top_bannerlists">
+                            <a href="/"><img src="images/top_bannerbg_02.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="top_bannerlists">
+                            <a href="/"><img src="images/top_bannerbg_03.jpg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination bannerimg-pagination" id="bannerimg-pagination"></div>
+            </div>
+            <script>
+                var mySwiper = new Swiper ('.top_bannerimg', {
+                    loop: true,
+                    autoplay: 2000,
+                    pagination: '.bannerimg-pagination'
+                });
+            </script>
         </div>
         <!--toptel-->
         <div class="top_telnumber">
@@ -312,12 +338,12 @@
                     </div>
                 </div>
                 <!-- 如果需要分页器 -->
-                <div class="swiper-pagination" id="swiper-pagination"></div>
+                <div class="swiper-pagination experts-pagination" id="swiper-pagination"></div>
                 <script>
                     var mySwiper = new Swiper ('.experts-container', {
                         loop: true,
                         autoplay: 2000,
-                        pagination: '.swiper-pagination'
+                        pagination: '.experts-pagination'
                     });
                 </script>
             </div>

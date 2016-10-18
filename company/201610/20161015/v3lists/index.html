@@ -49,10 +49,35 @@
                 <li class="have_mleft have_top"><a href="/">来院路线</a></li>
             </ul>
         </div>
-        <!--listbanner-->
-        <div class="list_banner">
-            <a href="/" class="list_btn_one"></a>
-            <a href="/" class="list_btn_two"></a>
+        <!--top_banner-->
+        <div class="top_banner">
+            <div class="swiper-container top_bannerimg">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="top_bannerlists">
+                            <a href="/"><img src="images/list_bannerbg.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="top_bannerlists">
+                            <a href="/"><img src="images/top_bannerbg_02.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="top_bannerlists">
+                            <a href="/"><img src="images/top_bannerbg_03.jpg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination bannerimg-pagination" id="bannerimg-pagination"></div>
+            </div>
+            <script>
+                var mySwiper = new Swiper ('.top_bannerimg', {
+                    loop: true,
+                    autoplay: 2000,
+                    pagination: '.bannerimg-pagination'
+                });
+            </script>
         </div>
         <!--toptel-->
         <div class="top_telnumber">
@@ -174,12 +199,12 @@
                     </div>
                 </div>
                 <!-- 如果需要分页器 -->
-                <div class="swiper-pagination" id="swiper-pagination"></div>
+                <div class="swiper-pagination experts-pagination" id="swiper-pagination"></div>
                 <script>
                     var mySwiper = new Swiper ('.experts-container', {
                         loop: true,
                         autoplay: 2000,
-                        pagination: '.swiper-pagination'
+                        pagination: '.experts-pagination'
                     });
                 </script>
             </div>

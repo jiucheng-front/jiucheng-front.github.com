@@ -27,7 +27,6 @@
     <link rel="stylesheet" href="css/jizhong-index.css">
     <link rel="stylesheet" href="css/swiper.css">
     <script src="js/swiper.min.js"></script>
-    <script src="js/topfour_tab.js"></script>
     <title>济中皮专家</title>
 </head>
 <body>
@@ -51,7 +50,33 @@
         </div>
         <!--top_banner-->
         <div class="top_banner">
-            <a href="/" class="banner_btn"></a>
+            <div class="swiper-container top_bannerimg">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="top_bannerlists">
+                            <a href="/"><img src="images/top_bannerbg_01.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="top_bannerlists">
+                            <a href="/"><img src="images/top_bannerbg_02.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="top_bannerlists">
+                            <a href="/"><img src="images/top_bannerbg_03.jpg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination bannerimg-pagination" id="bannerimg-pagination"></div>
+            </div>
+            <script>
+                var mySwiper = new Swiper ('.top_bannerimg', {
+                    loop: true,
+                    autoplay: 2000,
+                    pagination: '.bannerimg-pagination'
+                });
+            </script>
         </div>
         <!--toptel-->
         <div class="top_telnumber">
