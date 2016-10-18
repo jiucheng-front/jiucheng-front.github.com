@@ -585,10 +585,13 @@ p{
     width: 30%;
     text-align: right;
     float: left;
+    height: .6rem;
+    line-height: .6rem;
 }
 .six_form ul li input{
     width:65%;
-    height: .4rem;
+    height: .6rem;
+    line-height: .6rem;
     padding-left: .1rem;
     background-color: #fff;
     outline: none;
@@ -601,7 +604,8 @@ p{
 .six_form ul li select{
     float: left;
     width: 65%;
-    height: .4rem;
+    height: .6rem;
+    line-height: .6rem;
     font-size: .24rem;
     color: #858383;
     background-color: #fff;
