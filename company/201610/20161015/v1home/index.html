@@ -445,7 +445,30 @@
                     <a href="/" class="fivecase_more">点击查看更多</a>
                 </div>
             </div>
-            <div class="topfive_police"><img src="images/fivecase_police.jpg" alt=""></div>
+            <!--追加开始-->
+            <div class="topfive_banner">
+                <div class="swiper-container topfive_bannerimg">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="/" class="toptwo_bannerbtn">
+                                <img src="images/fivecase_police.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="/" class="toptwo_bannerbtn">
+                                <img src="images/toptwo_banbg_02.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    var mySwiper = new Swiper ('.topfive_bannerimg', {
+                        loop: true,
+                        autoplay: 2000
+                    });
+                </script>
+            </div>
+            <!--追加结束-->
         </div>
         <!--6、快速挂号-->
         <div class="top_six">

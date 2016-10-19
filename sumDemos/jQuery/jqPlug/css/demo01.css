@@ -7,62 +7,64 @@
     outline: none;
     text-decoration: none;
 }
+body{
+    /*font-family:"Times New Roman",Georgia,Serif;*/
+    font-family: 'Microsoft Yahei', sans-serif;
+}
 .main{
     width:60%;
     margin:30px auto;
 }
-.progress_parent li{
-    overflow: hidden;
-    height: 35px;
-    position: relative;
+.main p{
+    padding: 5px 0;
+    /*color: #808080;*/
+    color: #313335;
 }
-.progress_parent li span{
-    display: block;
-    height: 35px;
-    line-height: 35px;
-}
-.progress_parent li p{
-    float: left;
-    width: 85%;
-    /*width: 100px;*/
-    background-color: #081A6E;
-    position: relative;
-    height: 35px;
-}
-.progress_bgcolor{
-    float: left;
-}
-.progress_btn{
-    float: right;
-}
-.progress_number{
-    text-align: center;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 700;
-    position: absolute;
-    width: 100%;
-    z-index: 10;
-}
-.progress_btn{
-    background-color: #FFEA75;
-    color: #075A48;
-    font-size: 16px;
-    font-weight: 700;
-    width: 10%;
-    text-align: center;
-    border-radius: 10px;
-    cursor: pointer;
-}
-.progress_bgcolor{
-    position: absolute;
-    left: 0;
-    top: 0;
-    background-color: #46FBEC;
-    z-index: 9;
+.main p code{
+    color:#0000ff;
+    padding: 8px 20px;
+    background-color: #F5F5F5;
+    border: 1px solid #ccc;
 }
 h2{
     text-align: center;
     color:#3DA742;
     margin: 15px;
 }
+.plug_img img{
+    display: block;
+    max-width: 100%;
+    width: 100%;
+}
+
+
+
+/*-----Media start------*/
+/*最大宽度为640即屏幕小于640px*/
+@media screen and (max-width: 640px) {
+    .main {
+        width: 96%;
+    }
+    body{
+        background: rgba(60,63,65,.2);
+    }
+}
+/*最小宽度为640最大宽度为960即：640px<屏幕<960px*/
+@media screen and (min-width:640px) and (max-width:960px) {
+    .main{
+        width: 80%;
+    }
+    body{
+        background: rgba(231,190,85,.2);
+    }
+}
+/*最小宽度为960，即：大于960px*/
+@media screen and (min-width:960px){
+    .main{
+        width: 60%;
+    }
+    body{
+        background: rgba(180,83,44,.2);
+    }
+}
+/*------media end------*/
