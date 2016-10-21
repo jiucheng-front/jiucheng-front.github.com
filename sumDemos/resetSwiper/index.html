@@ -55,7 +55,7 @@
             <script>
                 var mySwiper = new Swiper ('.top_bannerimg', {
                     loop: true,
-                    autoplay: 2000,
+                    autoplay: 1000,
                     pagination: '.bannerimg-pagination'
                 });
             </script>
@@ -91,6 +91,27 @@
                     });
                 </script>
             </div>
+        </div>
+        <div class="door_fiveimg">
+            <div class="swiper-container fiveimg-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/baner01.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/baner02.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/baner03.jpg" alt=""></div>
+                </div>
+                <!-- 如果需要导航按钮 -->
+                <div class="swiper-button-prev prev_btn" id="prev_btn"></div>
+                <div class="swiper-button-next next_btn" id="next_btn"></div>
+            </div>
+            <script>
+                var mySwiper = new Swiper ('.fiveimg-container', {
+                    loop: true,
+                    autoplay: 3000,
+                    // 如果需要前进后退按钮
+                    nextButton: '.next_btn',
+                    prevButton: '.prev_btn',
+                });
+            </script>
         </div>
     </div>
 </body>

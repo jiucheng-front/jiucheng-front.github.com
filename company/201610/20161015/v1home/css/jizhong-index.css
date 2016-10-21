@@ -21,7 +21,8 @@ input[type=submit] { -webkit-appearance: none }
 img{vertical-align:middle;max-width: 100%;border: none;}
 p{
     font-size: .22rem;
-}.flex_parent{
+}
+.flex_parent{
      display: -webkit-box;
      display: -moz-box;
      display: -ms-flexbox;
