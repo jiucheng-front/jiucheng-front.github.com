@@ -26,7 +26,7 @@
     transform: rotateX(-33.5deg) rotateY(45deg);
     -webkit-transform-style: preserve-3d;
      transform-style: preserve-3d; 
-     -webkit-animation: willRotate 3s ease-in-out infinite 2s; 
+     -webkit-animation: willRotate 3s ease-in-out infinite alternate;
      animation: willRotate 3s ease-in-out infinite alternate; 
      /*animation: name duration timing-function delay iteration-count direction;*/
 	    /*name	规定需要绑定到选择器的 keyframe 名称。。*/
@@ -112,15 +112,15 @@
 @keyframes willRotate{
 	0%{
 		transform:rotateX(-33.5deg) rotateY(45deg);
-		zoom:1;
+		/*zoom:1;*/
 	}
 	50%{
 		transform:rotateX(-33.5deg) rotateY(180deg);
-		zoom:2;
+		/*zoom:2;*/
 	}
 	100%{
 		transform:rotateX(-33.5deg) rotateY(360deg);
-		zoom:1;
+		/*zoom:1;*/
 	}
 }
 

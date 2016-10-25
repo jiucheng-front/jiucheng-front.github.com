@@ -32,7 +32,9 @@ var adv={
     init:function(){
         this.div=document.getElementById("footerMenu");
         this.btnItem=document.getElementById("homeBtn");
-        this.btnItem.onclick=adv.toggleItem;
+        if(this.btnItem){
+            this.btnItem.onclick=adv.toggleItem;
+        }
     },
     moveUp:function(){
         //1、按钮点击通过追加classNanme改变样式
