@@ -1347,3 +1347,98 @@ p{
     width: .33rem;
 }
 /*<!--20161024追加案例结束-->*/
+/*-----------------20161025追加案例-----------------*/
+.cases_lists{
+    margin-top: .1rem;
+    overflow: hidden;
+    padding-bottom: .1rem;
+    border-bottom: 1px dashed #ccc;
+}
+.cases_lists_left{
+    float: left;
+    width: 28%;
+    margin-left: 2%;
+}
+.cases_lists_right{
+    float: right;
+    width: 68%;
+}
+.cases_lists_right p,.cases_listsmsg p{
+    font-size: .22rem;
+    color: #4F4F51;
+}
+.cases_lists_right p span,.cases_listsmsg p span{
+    color: #6f2323;
+}
+.cases_listsmsg{
+    margin: 0 auto;
+    margin-top: .1rem;
+    padding-left: 4%;
+    padding-bottom: .1rem;
+    border-bottom: 1px solid #ccc;
+}
+.cases_listsmsg p{
+    line-height: .35rem;
+}
+.deep_red{
+    color: #ff0000;
+}
+/*cases_img*/
+.cases_img{
+    background-color: #F1F2F2;
+    padding-bottom: .15rem;
+    border-bottom: 1px dashed #ccc;
+}
+.cases_imgtitle{
+    padding: .1rem 0;
+}
+.cases_imgtitle h3{
+    font-size: .26rem;
+    padding-left: .15rem;
+}
+.sum_red{
+    color: #6f2323;
+}
+/*cases_imglists*/
+.cases_imglists{
+    margin-top: .1rem;
+    overflow: hidden;
+}
+.cases_imglists_left{
+    float: left;
+    width: 38%;
+    margin-left: 1%;
+}
+.cases_imglists_left img{
+    display: block;
+    width: 100%;
+}
+.cases_imglists_right{
+    width: 60%;
+    float: right;
+    padding-right: .06rem;
+}
+.cases_imglists_right p{
+    font-size: .2rem;
+    line-height: .34rem;
+}
+/*cases_imgmsg*/
+.cases_imgmsg{
+    margin-top: .1rem;
+    width: 96%;
+    margin: 0 auto;
+}
+.cases_imgmsg li{
+    height: .6rem;
+    line-height: .6rem;
+    padding-left: 5%;
+    border-bottom: 1px dashed #bdbdbd;
+    font-size: 80%;
+    background: url(../images/cases_imgicon01.jpg) no-repeat left;
+    padding-left: 4%;
+}
+.cases_imgmsg li a{
+    display: block;
+    color: #575757;
+    font-size: .22rem;
+}
