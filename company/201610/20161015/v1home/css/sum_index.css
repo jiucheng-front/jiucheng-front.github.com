@@ -1442,3 +1442,47 @@ p{
     color: #575757;
     font-size: .22rem;
 }
+/*----------------1029头条滚动开始-----------------*/
+.move_box{
+    overflow: hidden;
+    float: left;
+    padding: .1rem .08rem;
+    background-color: #F6F6F6;
+    float: left;
+    width: 86%;
+    margin-top: .075rem;
+}
+.move_boximg{
+    width: .29rem;
+    float: left;
+}
+.slidebox{
+    width: 90%;
+    text-align: left;
+    overflow: hidden;
+    float: right;
+    border-left: none;
+    height:.35rem;
+    line-height: .35rem;
+}
+.slidelists{
+    overflow: hidden;
+}
+/*.slidelists ul{
+    overflow: hidden;
+}*/
+.slidelists li{
+    float: left;
+    /*margin-right: 30px;*/
+    height: .35rem;
+    line-height: .35rem;
+    overflow: hidden;
+    margin-right: 30px;
+}
+.slidelists li a {
+    float: left;
+    font-size: .22rem;
+    color: #3879D9;
+    white-space: nowrap;
+}
+/*----------------1029头条滚动结束-----------------*/

@@ -28,7 +28,11 @@
     <link rel="stylesheet" href="css/swiper.css">
     <script src="js/swiper.min.js"></script>
     <script src="js/topfour_tab.js"></script>
-    <title>济中皮首页</title>
+    <!-- 头条滚动JS开始 -->
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/jquery.SuperSlide.2.1.1.js"></script>
+    <!-- 头条滚动JS结束-->
+    <title>济中皮首页1</title>
 </head>
 <body>
     <div class="container">
@@ -85,10 +89,25 @@
             <a href="/" class="top_btncall"><img src="images/top_btncall.jpg" alt="" class="display_block"></a>
         </div>
         <!--头条-->
+        <!-- ----------------------头条滚动开始-------------------- -->
         <div class="top_tips">
             <img src="images/top_tipsimg.jpg" alt="" class="top_tipsimg">
-            <p><img src="images/top_tipsicon.png" alt=""><span>携手齐鲁晚报 济南中研皮肤病健康普查暖民心</span></p>
+            <div class="move_box">
+                <img src="images/top_tipsicon.png" alt="" class="move_boximg">
+                    <div class="slidebox">
+                        <div class="slidelists">
+                                <ul>
+                                    <li><a href="#">10月29日世界银屑病日，北京海军总医院专家莅临我院公益会诊</a></li>
+                                    <li><a href="#">10月29日世界银屑病日，北京海军总医院专家莅临我院公益会诊</a></li>
+                                </ul>
+                        </div>
+                </div>
+            </div>
+            <script>
+            jQuery(".slidebox").slide({mainCell:".slidelists ul",autoPlay:true,effect:"leftMarquee",interTime:50,trigger:"click"});
+            </script>
         </div>
+<!------- ------------------头条滚动结束------------------------ ----->
         <!--1、你有下面症状点击查看-->
         <div class="top_one">
             <!--共用头部-->
