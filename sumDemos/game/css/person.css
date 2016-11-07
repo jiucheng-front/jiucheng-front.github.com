@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+.main{
+    max-width: 640px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.table_parent{
+    border-collapse: collapse;
+    font-family: verdana,arial,sans-serif;
+    font-size:18px;
+    color:#333333;
+}
+.have_left{
+    margin-left: 5px;
+}
+.table_parent td,.table_parent th{
+    border: 1px solid #a9c6c9;
+    text-align: center;
+}
+.yellow{
+    color: #f4a42b;
+}
+.green{
+    color: #019966;
+}
+.red{
+    color: #e4393c;
+}
+/*--------*/
+ul{
+    width: 100%;
+}
+.tittle{
+    overflow: hidden;
+    border-top: 1px solid #a9c6c9;
+    border-left: 1px solid #a9c6c9;
+}
+.tittle li{
+    font-weight: 700;
+    color: #f4a42b;
+}
+ul li{
+    float: left;
+    width: 25%;
+    font-size: .3rem;
+    text-align: center;
+    border-right: 1px solid #a9c6c9;
+    border-bottom: 1px solid #a9c6c9;
+    padding:1% 0;
+}
+.lists{
+    overflow: hidden;
+    border-left: 1px solid #a9c6c9;
+}
+.lists li{
+    font-size: .24rem;
+    color: #019966;
+}
+.lists li.red{
+    color: #e4393c;
+}

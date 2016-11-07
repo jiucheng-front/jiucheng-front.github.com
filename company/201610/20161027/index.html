@@ -3,8 +3,7 @@
 <head>
     <meta charset="gb2312">
     <meta name="renderer" content="webkit">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
     <!-- 启用webAPP全屏模式-->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <!-- 隐藏状态栏或者设置状态栏的颜色-->
@@ -95,13 +94,38 @@
             <div class="onelists_middle">
                 <p class="east_indent">自建院以来，一直致力于提升医疗服务和创新医疗技术，坚持<span class="east_red">专病专治</span>，凭借“一对一辩证、组方验方责任制、全程医疗跟踪服务制”深得广大患者信赖，成为<span class="east_red">沈阳地区家喻户晓的皮肤病治疗好医院。</span></p>
             </div>
-            <div class="onelists_bottom">
-                <ul>
-                    <li><img src="images/eastcity_onelists_02.jpg" alt=""></li>
-                    <li class="have_mleft"><img src="images/eastcity_onelists_03.jpg" alt=""></li>
-                    <li class="have_mleft"><img src="images/eastcity_onelists_04.jpg" alt=""></li>
-                </ul>
+            <!--滚动1开始-->
+            <div class="swiper-container onelists-caousel">
+                <div class="swiper-wrapper">
+                    <!-------1--------->
+                    <div class="swiper-slide">
+                        <div class="onelists_bottom">
+                            <ul>
+                                <li><img src="images/eastcity_onelists_02.jpg" alt=""></li>
+                                <li class="have_mleft"><img src="images/eastcity_onelists_03.jpg" alt=""></li>
+                                <li class="have_mleft"><img src="images/eastcity_onelists_04.jpg" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--------2---------->
+                    <div class="swiper-slide">
+                        <div class="onelists_bottom">
+                            <ul>
+                                <li><img src="images/eastcity_onelists_05.jpg" alt=""></li>
+                                <li class="have_mleft"><img src="images/eastcity_onelists_06.jpg" alt=""></li>
+                                <li class="have_mleft"><img src="images/eastcity_onelists_07.jpg" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <script>
+                var mySwiper = new Swiper ('.onelists-caousel', {
+                    loop: true,
+                    autoplay: 2000
+                });
+            </script>
+            <!--滚动1结束-->
         </div>
     </div>
     <div class="eastcity_btns">

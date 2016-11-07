@@ -481,8 +481,12 @@ nav ul li a.hover {
     float: left;
     width: 31.5%;
 }
+.onelists_bottom li img{
+    display: block;
+    width: 100%;
+}
 .onelists_bottom li.have_mleft{
-    margin-left: 2%;
+    margin-left: 2.75%;
 }
 /*--eastcity_btns*/
 .eastcity_btns{
