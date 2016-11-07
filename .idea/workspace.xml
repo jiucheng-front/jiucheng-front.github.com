@@ -21,10 +21,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="person.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="person.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sumDemos/game/person.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.90215266">
+            <state vertical-scroll-proportion="-14.40625">
               <caret line="327" column="14" selection-start-line="327" selection-start-column="14" selection-end-line="327" selection-end-column="14" />
               <folding>
                 <element signature="n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -97,11 +97,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="person.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="person.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sumDemos/game/css/person.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.15625">
-              <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.53816044">
+              <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -173,8 +173,8 @@
         <option value="$PROJECT_DIR$/demo01/mobile/index.html" />
         <option value="$PROJECT_DIR$/demo01/MNmobile/css/mobile_sum.css" />
         <option value="$PROJECT_DIR$/demo01/MNmobile/index.html" />
-        <option value="$PROJECT_DIR$/sumDemos/game/css/person.css" />
         <option value="$PROJECT_DIR$/sumDemos/game/person.html" />
+        <option value="$PROJECT_DIR$/sumDemos/game/css/person.css" />
       </list>
     </option>
   </component>
@@ -641,17 +641,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sumDemos/game/css/person.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.15625">
-          <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sumDemos/game/person.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.90215266">
+        <state vertical-scroll-proportion="-14.40625">
           <caret line="327" column="14" selection-start-line="327" selection-start-column="14" selection-end-line="327" selection-end-column="14" />
           <folding>
             <element signature="n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -720,6 +712,14 @@
             <element signature="n#ul#63;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#ul#64;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sumDemos/game/css/person.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.53816044">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
