@@ -26,13 +26,13 @@ function loadingAllImg(){
         // 放全景图的元素
         container: div,
 
-        // Deactivate the animation
+        // 可选，默认值为2000，全景图在time_anim毫秒后会自动进行动画。（设置为false禁用它）
         time_anim: false,
 
-        // Display the navigation bar
+        // 可选值，默认为false。显示导航条。
         navbar: true,
 
-        // Resize the panorama
+        // 可选，默认值null，全景图容器的最终尺寸。例如：{width: 500, height: 300}。
         size: {
             width: '100%',
             height: canvasHeight
