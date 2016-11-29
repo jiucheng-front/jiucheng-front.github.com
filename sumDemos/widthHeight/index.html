@@ -6,7 +6,17 @@
     <meta name="Author" content="">
     <meta name="Keywords" content="">
     <meta name="Description" content="">
-    <title>Document</title>
+    <title>各种宽高</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #offsetSpan{
+            color: #e4393c;
+        }
+    </style>
 </head>
 <body>
 <div>
@@ -14,6 +24,31 @@
     AAAAAAAAAAAAAAAA<br>
     AAAAAAAAAAAAAAAA<br>
     AAAAAAAAAAAAAAAA<br>
+    AAAAAAAAAAAAAAAA<br>
+    AAAAAAAAAAAAAAAA<br>
+    AAAAAAAAAAAAAAAA<br>
+    AAAAAAAAAAAAAAAA<br>
+    AAAAAAAAAAAAAAAA<br>
+    AAAAAAAAAAAAAAAA<br>
+    AAAAAAAAAAAAAAAA<br>
+    AAAAAAAAAAAAAAAA<br>
+    AAAAAAAAAAAAAAAA<br>
+    AAAAAAAAAAAAAAAA<br>
+    AAAAAAAAAAAAAAAA<br>
+    AAAAAAAAAAAAAAAA<br>
+    AAAAAAAAAAAAAAAA<br>
+    AAAAAAAAAAAAAAAA<br>
+    AAAAAAAAAAAAAAAA<br>
+    AAAAAAAAAAAAAAAA<br>
+    AAAAAAAAAAAAAAAA<br>
+    AAAAAAAAAAAAAAAA<br>
+    AAAAAAAAAAAAAAAA<br>
+    AAAAAAAAAAAAAAAA<br>
+    AAAAAAAAAAAAAAAA<br>
+    AAAAAAAAAAAAAAAA<br>
+    AAAAAAAAAAAAAAAA<br>
+    AAAAAAAAAAAAAAAA<br>
+    AAAAAAAAAAAAAAAAAAAAAAAAA<span id="offsetSpan">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</span>AAAAAAAA<br>
     AAAAAAAAAAAAAAAA<br>
     AAAAAAAAAAAAAAAA<br>
     AAAAAAAAAAAAAAAA<br>
@@ -32,12 +67,14 @@
     var SH=screen.height;
     var BW=screen.availWidth;//去掉任务栏后剩余分辨率的宽高
     var BH=screen.availHeight;
-    console.log(W);
-    console.log(H);
-    console.log(SW);
-    console.log(SH);
-    console.log(BW);
-    console.log(BH);
+    console.log("文档显示区宽window.innerWidth: "+W);
+    console.log("文档显示区高window.innerHeight: "+H);
+    console.log("整个窗口的宽window.outerWidth: "+ZW);
+    console.log("整个窗口的高window.outerHeight: "+ZH);
+    console.log("桌面完整分辨率宽screen.width: "+SW);
+    console.log("桌面完整分辨率高screen.height: "+SH);
+    console.log("去掉任务栏后剩余分辨率的宽screen.availWidth: "+BW);
+    console.log("去掉任务栏后剩余分辨率的高(去掉底部任务栏包括网页地址栏和顶部任务栏)screen.availHeight: "+BH);
     btn.innerHTML="";
     btn.innerHTML+="<p>"+"文档显示区的宽度是："+W+"PX"+"<br>";
     btn.innerHTML+="文档显示区的高度是："+H+"PX"+"<br>";
@@ -47,6 +84,33 @@
     btn.innerHTML+="桌面完整分辨率高度："+SH+"PX"+"<br>";
     btn.innerHTML+="去掉任务栏后剩余分辨率的宽度："+BW+"PX"+"<br>";
     btn.innerHTML+="去掉任务栏后剩余分辨率的高度："+BH+"PX"+"<br>"+"</p>";
+//    ------------------------
+    console.log("网页body可见区域宽document.body.clientWidth: "+document.body.clientWidth);
+    console.log("网页body可见区域高document.body.clientHeight: "+document.body.clientHeight);
+    console.log("网页body可见区域宽document.body.offsetWidth: "+document.body.offsetWidth);
+    console.log("网页body可见区域高document.body.offsetHeight : "+document.body.offsetHeight);
+    console.log("网页元素可见区域高document.getElementById('btn').offsetWidth : "+document.getElementById('btn').offsetWidth);
+    console.log("网页正文全文宽document.body.scrollWidth: "+document.body.scrollWidth);
+    console.log("网页正文全文高document.body.scrollHeight: "+document.body.scrollHeight);
+    console.log("网页滚动的时候滚动条距离顶部的高度document.body.scrollTop: "+document.body.scrollTop);
+    console.log("网页有左右滚动条时候被卷去的左document.body.scrollLeft: "+document.body.scrollLeft);
+    console.log("网页正文部分上window.screenTop: "+window.screenTop);
+    console.log("网页正文部分左window.screenLeft: "+window.screenLeft);
+    console.log("屏幕分辨率的宽window.screen.width: "+window.screen.width);
+    console.log("屏幕分辨率的高window.screen.height: "+window.screen.height);
+    console.log("屏幕可用工作区高度(去掉底部任务栏包括网页地址栏和顶部任务栏)window.screen.availHeight: "+window.screen.availHeight);
+
+
+    //1、获取元素在页面的坐标
+    var offsetSpan=document.getElementById('offsetSpan');
+    console.log('id为offsetSpan的Y坐标'+offsetSpan.offsetTop);
+    console.log('id为offsetSpan的X坐标'+offsetSpan.offsetLeft);
+    //2、滚动事件（左右滚动）
+//    window.onscroll=function(){
+//            //网页滚动的时候滚动条距离顶部的高度
+////        console.log("网页滚动的时候滚动条距离顶部的高度document.body.scrollTop: "+document.body.scrollTop);
+//        console.log("网页有左右滚动条时候被卷去的左document.body.scrollLeft: "+document.body.scrollLeft);
+//    }
 </script>
 </body>
 </html>
