@@ -1,0 +1,48 @@
+/*重置*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 0;
+    outline: none;
+}
+h3{
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+.border-all-color {
+    margin: 20px auto;
+    width: 0;
+    height: 0;
+    border-top: 40px solid coral;
+    border-right: 40px solid lightblue;
+    border-bottom: 40px solid lightgreen;
+    border-left: 40px solid mediumpurple;
+}
+
+.border-left-color,
+.border-top-color,
+.border-right-color,
+.border-bottom-color{
+    width: 0;
+    height: 0;
+    margin: 10px auto;
+    border: 20px solid transparent;
+}
+
+.border-left-color{
+    border-left-color: #9370DB;
+}
+.border-top-color{
+    border-top-color: #FF7F50;
+}
+.border-right-color{
+    border-right-color: #ADD8E6;
+}
+.border-bottom-color{
+     border-top-color: #90EE90;
+ }
