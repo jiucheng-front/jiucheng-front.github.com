@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS兼容性</title>
+    <style>
+        .main{
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 200px;
+        }
+        .float-left{
+            float: left;
+            margin: 5px;/*IE下理解为10px*/
+            display: inline;/*IE下再理解为5px*/
+        }
+        /* 设置滚动条的样式 */
+        ::-webkit-scrollbar {    width: 12px;}
+        /* 滚动槽 */
+        ::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+            border-radius: 10px;
+        }
+        /* 滚动条滑块 */
+        ::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background: rgba(0,0,0,0.1);
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+        }
+        ::-webkit-scrollbar-thumb:window-inactive {
+            background: rgba(255,0,0,0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        文字垂直居中
+    </div>
+    <!--<div class="float-left"></div>-->
+    <br><br><br><br><br><br>
+    <br><br><br><br><br><br>
+    <br><br><br><br><br><br>
+    <br><br><br><br><br><br>
+    <br><br><br><br><br><br>
+    <br><br><br><br><br><br>
+</body>
+</html>
