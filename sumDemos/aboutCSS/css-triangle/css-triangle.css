@@ -12,8 +12,6 @@ h3{
     margin-top: 20px;
 }
 
-
-
 .border-all-color {
     margin: 20px auto;
     width: 0;
@@ -46,3 +44,52 @@ h3{
 .border-bottom-color{
      border-top-color: #90EE90;
  }
+
+ /*---------2-------*/
+ .d1{
+    position: relative;
+    border: 1px dashed #999;
+    background: #fff;
+    width: 150px;
+    height: 100px;
+}
+.d1 span{
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-right:1px dashed #999;
+    border-bottom:1px dashed #999;
+    transform: rotate(45deg);
+    bottom: -10px;
+    left: 50%;
+    margin-left:-15px;
+    background: #fff;
+    z-index: 99;
+}
+/*---------3--------*/
+
+.main {
+    margin-top: 30px;
+    /**/
+  position: relative;
+  width: 412px;
+  height: 261px;
+  background:url(img/0001.jpg) no-repeat;
+  border-radius: 10px;
+}
+.main:after {
+    position: absolute;
+    top: 261px;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    content: '';
+    box-sizing: border-box;
+    border-top: 20px solid transparent;
+    border-left: 20px solid #f3f5f6;
+    border-right: 20px solid #f3f5f6;
+    background: inherit;
+    background-position: -20px bottom;
+    background-origin: border-box;
+  }

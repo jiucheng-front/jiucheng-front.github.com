@@ -15,19 +15,32 @@
     position: absolute;
     display: block;
 }
+
 .cube {
     width: 100%;
     height: 100%;
     padding: 0;
     /*margin: -50px 0;*/
     -webkit-transform-origin: 50px 50px;
+    -o-transform-origin: 50px 50px;
+    -moz-transform-origin: 50px 50px;
+    -ms-transform-origin: 50px 50px;
     transform-origin: 50px 50px;
     -webkit-transform: rotateX(-33.5deg) rotateY(45deg);
+    -o-transform: rotateX(-33.5deg) rotateY(45deg);
+    -moz-transform: rotateX(-33.5deg) rotateY(45deg);
+    -ms-transform: rotateX(-33.5deg) rotateY(45deg);
     transform: rotateX(-33.5deg) rotateY(45deg);
     -webkit-transform-style: preserve-3d;
-     transform-style: preserve-3d; 
+    -o-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+     transform-style: preserve-3d;
      -webkit-animation: willRotate 3s ease-in-out infinite alternate;
-     animation: willRotate 3s ease-in-out infinite alternate; 
+     -o-animation: willRotate 3s ease-in-out infinite alternate;
+     -moz-animation: willRotate 3s ease-in-out infinite alternate;
+     -ms-animation: willRotate 3s ease-in-out infinite alternate;
+     animation: willRotate 3s ease-in-out infinite alternate;
      /*animation: name duration timing-function delay iteration-count direction;*/
 	    /*name	规定需要绑定到选择器的 keyframe 名称。。*/
 	   	/*duration	规定完成动画所花费的时间，以秒或毫秒计。*/
@@ -46,41 +59,68 @@
     width: 100px;
     height: 100px;
      transition: -webkit-transform 1s ease-in-out; 
-     transition: transform 1s ease-in-out; 
+     -webkit-transition: transform 1s ease-in-out;
+     -moz-transition: transform 1s ease-in-out;
+     -o-transition: transform 1s ease-in-out;
+     transition: transform 1s ease-in-out;
 }
 .cube .front {
     -webkit-transform: translateZ(50px);
-     transform: translateZ(50px); 
+    -o-transform: translateZ(50px);
+    -moz-transform: translateZ(50px);
+    -ms-transform: translateZ(50px);
+     transform: translateZ(50px);
 }
 .cube .back {
     -webkit-transform:translateZ(-50px);
+    -o-transform:translateZ(-50px);
+    -moz-transform:translateZ(-50px);
+    -ms-transform:translateZ(-50px);
     transform:translateZ(-50px);
 }
 .cube .right {
     -webkit-transform: rotateY(90deg) translateZ(50px);
+    -moz-transform: rotateY(90deg) translateZ(50px);
+    -o-transform: rotateY(90deg) translateZ(50px);
+    -ms-transform: rotateY(90deg) translateZ(50px);
     transform: rotateY(90deg) translateZ(50px);
 }
 .cube .left {
     -webkit-transform: rotateY(90deg) translateZ(-50px);
+    -o-transform: rotateY(90deg) translateZ(-50px);
+    -moz-transform: rotateY(90deg) translateZ(-50px);
+    -ms-transform: rotateY(90deg) translateZ(-50px);
     transform: rotateY(90deg) translateZ(-50px);
 }
 .cube .top {
     -webkit-transform: rotateX(90deg) translateZ(50px);
+    -moz-transform: rotateX(90deg) translateZ(50px);
+    -o-transform: rotateX(90deg) translateZ(50px);
+    -ms-transform: rotateX(90deg) translateZ(50px);
     transform: rotateX(90deg) translateZ(50px);
 }
 .cube .bottom{
     -webkit-transform: rotateX(90deg) translateZ(-50px);
+    -moz-transform: rotateX(90deg) translateZ(-50px);
+    -o-transform: rotateX(90deg) translateZ(-50px);
+    -ms-transform: rotateX(90deg) translateZ(-50px);
     transform: rotateX(90deg) translateZ(-50px);
 }
 .cube .floor {
     box-shadow: -300px 0 50px rgba(0,0,0,.3);
     -webkit-backface-visibility: visible;
+    -o-backface-visibility: visible;
+    -moz-backface-visibility: visible;
+    -ms-backface-visibility: visible;
     backface-visibility: visible;
     width: 110px;
     height: 110px;
     left: 295px;
     background-color: transparent;
     -webkit-transform: rotateX(90deg) translateZ(-60px);
+    -moz-transform: rotateX(90deg) translateZ(-60px);
+    -o-transform: rotateX(90deg) translateZ(-60px);
+    -ms-transform: rotateX(90deg) translateZ(-60px);
     transform: rotateX(90deg) translateZ(-60px);
 }
 .cube li span {
@@ -97,17 +137,47 @@
 }
 @-webkit-keyframes willRotate{
 	0%{
-		transform:rotateX(-33.5deg) rotateY(45deg);
-		zoom:1;
+		-webkit-transform:rotateX(-33.5deg) rotateY(45deg);
 	}
 	50%{
-		transform:rotateX(-33.5deg) rotateY(180deg);
-		zoom:2;
+        -webkit-transform:rotateX(-33.5deg) rotateY(180deg);
 	}
 	100%{
-		transform:rotateX(-33.5deg) rotateY(360deg);
-		zoom:1;
+        -webkit-transform:rotateX(-33.5deg) rotateY(360deg);
 	}
+}
+@-moz-keyframes willRotate{
+    0%{
+        -moz-transform:rotateX(-33.5deg) rotateY(45deg);
+    }
+    50%{
+        -moz-transform:rotateX(-33.5deg) rotateY(180deg);
+    }
+    100%{
+        -moz-transform:rotateX(-33.5deg) rotateY(360deg);
+    }
+}
+@-o-keyframes willRotate{
+    0%{
+        -o-transform:rotateX(-33.5deg) rotateY(45deg);
+    }
+    50%{
+        -o-transform:rotateX(-33.5deg) rotateY(180deg);
+    }
+    100%{
+        -o-transform:rotateX(-33.5deg) rotateY(360deg);
+    }
+}
+@-ms-keyframes willRotate{
+    0%{
+        -ms-transform:rotateX(-33.5deg) rotateY(45deg);
+    }
+    50%{
+        -ms-transform:rotateX(-33.5deg) rotateY(180deg);
+    }
+    100%{
+        -ms-transform:rotateX(-33.5deg) rotateY(360deg);
+    }
 }
 @keyframes willRotate{
 	0%{
