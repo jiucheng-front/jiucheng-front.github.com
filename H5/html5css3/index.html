@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>网页标题</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<link rel="stylesheet" href="css/base.css" type="text/css" />
+<link rel="stylesheet" href="css/main.css" type="text/css" />
+</head>
+
+<body>
+<div  class="contain" id="contain">
+	<div  class="wrapper" id="wrapper">
+		<div  class="page01 screen">
+			<div class="tit01"></div>
+			<div class="tit02"></div>
+			<div class="tit03"></div>
+			<div class="arrow"></div>
+		</div>
+
+		<div  class="page02 screen">
+			<div class="sug"><div></div></div>
+			<p class="info">当福特Mustang遇见三位不同领域的艺术家<br>一场跨界艺术展由此拉开盛宴</p>
+			<div class="picList">
+				<img src="images/tx01.jpg">
+				<img src="images/tx02.jpg">
+				<img src="images/tx03.jpg">
+			</div>
+			<div class="arrow"></div>
+		</div>
+
+		<div  class="page03 screen">
+			<div class="circle">
+				<div class="bigFace"></div>
+				<div class="bgc">摄影界</div>
+				<div class="pic pic01"></div>
+				<div class="pic pic02"></div>
+				<div class="pic pic03"></div>
+				<span class="leftline"></span>
+				<span class="rightline"></span>
+			</div>
+			<h2 class="name">马良</h2>
+			<p class="info">当代视觉艺术家</p>
+			<p class="details">Mustang充满自由和激情，用铜管乐器、熟铁板、铜铁管及铁皮，创作出“自由之子”金属雕塑。马头的半抽象造型，由Mustang的LOGO演变而来。各种密集的铜管乐器的组合，如同烈马的鬓毛，也如同自由者心理永远嘹亮的出发号角，高歌猛进，驰骋人生沙场。</p> 
+			<div class="arrow"></div>
+		</div>
+
+
+	</div>
+</div>
+
+<script src="js/mAnimation.js" type="text/javascript"></script>
+<script src="js/zepto.min.js" type="text/javascript"></script>
+
+<script>
+	var slide = new mAnimation({
+		bindEle: document.querySelector("#contain"),  //div层 绑定touch事件元素
+		touchUl: document.querySelector("#wrapper"),  //ul层 执行滚动动画元素
+		touchLi: document.querySelectorAll(".screen"),   //li层 一共有几屏内容
+		initCallback: function(){
+			$('.page01').addClass('animation');
+		},
+		callback: function(index){
+			//滑动到第一屏
+			if (index === 0) {
+				$('.page01').addClass('animation')
+				$('.page01').siblings().removeClass('animation');
+			
+			}
+			//滑动到第二屏
+			if (index === 1) {
+
+				$('.page02').addClass('animation')
+				$('.page02').siblings().removeClass('animation');
+			
+			}
+			//滑动到第三屏
+			if (index === 2) {
+				$('.page03').addClass('animation')
+				$('.page03').siblings().removeClass('animation');
+			
+			}
+            //滑动到第四屏
+			if (index === 3) {
+				$('.page04').addClass('animation')
+				$('.page04').siblings().removeClass('animation');
+			
+			}
+			
+		}
+		
+	});
+
+	</script>
+
+</body>
+</html>
