@@ -1,0 +1,84 @@
+*{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+body{ font-size:14px;font-family:"Microsoft YaHei"; background:#ffffff; color:#393939;}
+.swt_box{
+    width: 277px;
+    height: 173px;
+    background-image: url(../images/swt_bg01.gif);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: fixed;
+    /**/
+    left: 50%;
+    top: 50%;
+    margin-top: -138px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 100;
+}
+.close_btn{
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right:3px;
+    top: 3px;
+    z-index: 999;
+}
+.get_tel,.get_online{
+    display: block;
+    width: 112px;
+    height: 34px;
+    position: absolute;
+    bottom: 6px;
+}
+.get_tel{
+    left: 24px;
+}
+.get_online{
+    right: 24px;
+}
+.swt-form{
+    width: 240px;
+    position: absolute;
+    left: 18px;
+    bottom: 43px;
+}
+.swt_tips{
+    text-align: center;
+    font-size: 14px;
+}
+.swt-form p{
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.swt-form input{
+    height: 32px;
+    font-size: 14px;
+    border: 1px solid #C2690A;
+}
+.swt_inputtel{
+    color: #D4D4D4;
+    width: 168px;
+    padding-left: 10px;
+    float: left;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.swt_callback{
+    float: left;
+    width: 70px;
+    background-color: #C2690A;
+    color: #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
