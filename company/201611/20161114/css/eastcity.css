@@ -1,0 +1,70 @@
+.eastcity_box{
+    max-width: 640px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: .15rem;
+    padding-bottom: 1%;
+    border: 1px solid #ccc;
+}
+.eastcity_title h3{
+    font-size: .26rem;
+    color: #fff;
+    text-align: center;
+    height: .75rem;
+    line-height: .75rem;
+    background-color: #134D89;
+}
+/*eastcity_one*/
+.eastcity_one{
+    width: 98%;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: .15rem;
+}
+.eastcity_oneleft{
+    float: left;
+    width: 33%;
+}
+.eastcity_oneright{
+    float: right;
+    width: 64%;
+}
+.title_h4{
+    font-size: .24rem;
+    color: #2867AE;
+}
+.eastcity_box p{
+    font-size: .2rem;
+    padding: .5% 0;
+}
+.eastcity_msg{
+    width: 98%;
+    margin: 0 auto;
+    margin-top: .1rem;
+}
+.have_indent{
+    text-indent: 2em;
+}
+.eastcity_box p a{
+    color: #FD0000;
+}
+/*eastcity_two*/
+.eastcity_two{
+    width: 98%;
+    margin: 0 auto;
+    margin-top: .1rem;
+    overflow: hidden;
+    padding-bottom: .1rem;
+}
+.eastcity_twoleft{
+    float: left;
+    width: 33%;
+}
+.eastcity_tworight{
+    float: right;
+    width: 66%;
+    padding: 1%;
+}
+.have_border{
+    border-bottom: 1px dashed #ccc;
+}
