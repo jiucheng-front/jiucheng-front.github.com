@@ -51,16 +51,24 @@ var oneliLists=getElement('.jsone-star');
 var twoliLists=getElement('.jstwo-star');
 
 
-var divitem=document.getElementsByClassName('showb');
+// var divitem=document.getElementsByClassName('showb');
+var divitem=getElement('.showb');
 var stepW = 24;
-
+oneliLists.status=true;
+twoliLists.status=true;
 function changeItem(list,count){
-    for(var i=0;i<list.length;i++){
-        list[i].index=i;
-        list[i].onclick=function(){
-            divitem[count].style.width=(this.index+1)*stepW+'px';
-            console.log(this.index);      
-        };
+    if(list.status){
+        for(var i=0;i<list.length;i++){
+            list[i].index=i;
+            list[i].onclick=function(){
+                divitem[count].style.width=(this.index+1)*stepW+'px';
+                list.status=false;
+                // console.log(this.index);      
+                console.log(list.status);      
+            };
+        }
+    }else{
+        return false;
     }
 }
 changeItem(oneliLists,0);
