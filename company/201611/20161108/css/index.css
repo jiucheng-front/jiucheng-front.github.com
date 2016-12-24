@@ -1,0 +1,73 @@
+.sum_wechat{
+    max-width: 640px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: .15rem;
+    overflow: hidden;
+    padding: 2%;
+    border: 1px solid #ccc;
+}
+.sum_wechat_left{
+    float: left;
+    width: 80%;
+}
+.sum_wechat_right{
+    float: right;
+    width: 20%;
+    overflow: hidden;
+    padding: 2% 0;
+}
+.sum_wechat_right img{
+    display: block;
+}
+.sum_wechat_left h3{
+    font-size: .26rem;
+    color: #585858;
+    text-align: center;
+    position: relative;
+}
+.sum_wechat_left h3 span{
+    font-size: .32rem;
+}
+.sum_wechat_left h3:before,.sum_wechat_left h3:after{
+    display: table;
+    content: "";
+    width: 9%;
+    height: 1px;
+    position: absolute;
+    top: 53%;
+}
+.sum_wechat_left h3:before{
+    background-image: url(../images/sum-wechat_01.jpg);
+    left: 19%;
+}
+.sum_wechat_left h3:after{
+    background-image: url(../images/sum-wechat_02.jpg);
+    right: 19%;
+}
+.sum_wechat_left p{
+    overflow: hidden;
+    font-size: .24rem;
+    color: #EA5704;
+    background-image: url(../images/sum_wechatbg.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: .15rem;
+}
+.sum_wechat_left p span{
+    color: #fff;
+    text-align: center;
+    display: block;
+    width: 38%;
+}
+.sum_wechat_left p span,.sum_wechat_left p b{
+    float: left;
+    line-height: .5rem;
+}
+.sum_wechat_left p b{
+    display: block;
+    width: 60%;
+    text-align: center;
+}
