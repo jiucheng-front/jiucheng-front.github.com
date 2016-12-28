@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <!-- 启用webAPP全屏模式-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- 隐藏状态栏或者设置状态栏的颜色-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- 忽略数字自动识别为电话号码-->
+    <meta name="format-detection" content="telephone=no">
+    <!--控制缓存的失效日期 -->
+    <meta http-equiv="Expires" content="-1">
+    <!-- 禁止转码-->
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <!-- 禁止缓存访问页面-->
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="applicable-device" content="mobile">
+    <!-- 页面关键词-->
+    <meta content="" name="keywords">
+    <meta name="description" content="">
+    <base target="_blank">
+    <!--自适应控制JS必须存在-->
+    <script src="js/mobile-adaptive.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <!--文字向上滚动插件-->
+    <script src="js/jquery.SuperSlide.2.1.1.js"></script>
+    <title>沈阳肤康首页</title>
+</head>
+<body>
+    <div class="container">
+        <!--1、顶部logo-->
+        <header class="top_header" id="Top">
+            <img src="images/toplogo.jpg" alt="">
+            <a href="/"></a>
+        </header>
+        <!--2、nvabar-->
+        <div class="top_nav">
+            <ul>
+                <li><a href="/">网站首页</a></li>
+                <li class="have_mleft"><a href="/">东城简介</a></li>
+                <li class="have_mleft"><a href="/">最新动态</a></li>
+                <li class="have_mleft"><a href="/">权威专家</a></li>
+                <li class="have_mtop"><a href="/">尖端技术</a></li>
+                <li class="have_mleft have_mtop selected"><a href="/">尖锐湿疣</a></li>
+                <li class="have_mleft have_mtop selected"><a href="/">生殖包疹</a></li>
+                <li class="have_mleft have_mtop"><a href="/">康复案例</a></li>
+            </ul>
+        </div>
+        <!--3、topbanner-->
+        <div class="top_banner">
+            <a href="/"><img src="images/one_img01.jpg" alt=""></a>
+        </div>
+        <!--滚动文字-->
+        <div class="top_moveleft">
+            <img src="images/top_moveimg.jpg" alt="">
+            <div class="slidebox">
+                <div class="slidelists">
+                    <ul>
+                        <li><a href="#">好消息！肤康 全国皮肤病专科连锁品牌进驻沈阳，沈阳东城皮肤病医院正式更名沈阳肤康皮肤病医院。专家、技术、疗效、品质、设备、服务全面升级！</a></li>
+                        <li><a href="#">好消息！肤康 全国皮肤病专科连锁品牌进驻沈阳，沈阳东城皮肤病医院正式更名沈阳肤康皮肤病医院。专家、技术、疗效、品质、设备、服务全面升级！</a></li>
+                    </ul>
+                </div>
+            </div>
+            <script>
+                jQuery(".slidebox").slide({mainCell:".slidelists ul",autoPlay:true,effect:"leftMarquee",interTime:50,trigger:"click"});
+            </script>
+        </div>
+        <div class="same_btn same_mtop">
+            <a href="/"><img src="images/same_btn03.jpg" alt=""></a>
+        </div>
+        <!--1、沈阳东城皮肤病医院来院路线-->
+        <div class="saction_floor">
+            <div class="same_tltle">
+                <h3>沈阳东城皮肤病医院来院路线</h3>
+            </div>
+            <p class="samep_bg"></p>
+            <div class="floor_one">
+                <div class="floor_oneimg">
+                    <img src="images/floorone_01.jpg" alt="">
+                </div>
+                <div class="floor_onemsg">
+                    <p>沈阳肤康皮肤病医院性病科24小时专家咨询热线：<b>024-88568810</b></p>
+                    <p>医院地址：<span>沈阳市大东区小北街38号</span></p>
+                </div>
+            </div>
+        </div>
+        <!--2、医院临近的公交站台  -->
+        <div class="saction_floor">
+            <div class="same_tltle">
+                <h3>医院临近的公交站台</h3>
+            </div>
+            <p class="samep_bg"></p>
+        </div>
+        <ul class="floor_twomsg flex_parent">
+            <li class="flex_child">
+                <img src="images/floortwoimg01.jpg" alt="">
+                <h3>大北门站</h3>
+                <p>途径公交车：116、131、213、276</p>
+            </li>
+            <li class="flex_child">
+                <img src="images/floortwoimg02.jpg" alt="">
+                <h3>天后宫站</h3>
+                <p>途经公交车：116、131、290、334、105</p>
+            </li>
+        </ul>
+        <!--3、医院临近的地铁站-->
+        <div class="saction_floor">
+            <div class="same_tltle">
+                <h3>医院临近的地铁站</h3>
+            </div>
+            <p class="samep_bg"></p>
+        </div>
+        <ul class="floor_twomsg flex_parent">
+            <li class="flex_child">
+                <img src="images/floortwoimg03.jpg" alt="">
+                <h3>地铁一号线</h3>
+                <p>中街站→294路→小北街下</p>
+            </li>
+            <li class="flex_child">
+                <img src="images/floortwoimg04.jpg" alt="">
+                <h3>地铁二号线</h3>
+                <p>青年大街站转乘1号线→中街站→294路→小北街下</p>
+            </li>
+        </ul>
+        <!--4、从沈阳火车站如何来院-->
+        <div class="saction_floor">
+            <div class="same_tltle">
+                <h3>从沈阳火车站如何来院？</h3>
+            </div>
+            <p class="samep_bg"></p>
+        </div>
+        <ul class="floor_twomsg flex_parent">
+            <li class="flex_child">
+                <img src="images/floortwoimg05.jpg" alt="">
+                <h3>沈阳站(沈阳南站)</h3>
+                <p>沈阳站→地铁1号线（黎明广场方向）→中街站B2下→步行1.4公里→沈阳东城皮肤病医院</p>
+            </li>
+            <li class="flex_child">
+                <img src="images/floortwoimg06.jpg" alt="">
+                <h3>沈阳北站</h3>
+                <p>沈阳北站→116（131、290、334、105）路→天后宫站下→步行460米→沈阳东城皮肤病医院</p>
+            </li>
+        </ul>
+        <!--5、从沈阳长途汽车站如何来院-->
+        <div class="saction_floor">
+            <div class="same_tltle">
+                <h3>从沈阳长途汽车站如何来院？</h3>
+            </div>
+            <p class="samep_bg"></p>
+        </div>
+        <ul class="floor_twomsg flex_parent">
+            <li class="flex_child">
+                <img src="images/floortwoimg07.jpg" alt="">
+                <h3>沈阳长途客运西站</h3>
+                <p>103路→中华路南京街站下→步行60米至中华路和平大街站→221路→小北街下</p>
+            </li>
+            <li class="flex_child">
+                <img src="images/floortwoimg08.jpg" alt="">
+                <h3>沈阳南塔客运站</h3>
+                <p>224路→天后宫站下→步行370米→沈阳东城皮肤病医院</p>
+            </li>
+        </ul>
+        <!--6、从沈阳仙桃机场站如何来院-->
+        <div class="saction_floor">
+            <div class="same_tltle">
+                <h3>从沈阳仙桃机场站如何来院？</h3>
+            </div>
+            <p class="samep_bg"></p>
+        </div>
+        <div class="plane_station">
+            <img src="images/floortwoimg11.jpg" alt="">
+            <h3>沈阳仙桃机场</h3>
+        </div>
+        <ul class="floor_twomsg flex_parent">
+            <li class="flex_child">
+                <img src="images/floortwoimg09.jpg" alt="">
+                <h3>机场巴士1号线</h3>
+                <p>机场巴士1号线→辽宁电视台下步行20米→文化路立交桥南（彩电中心）站上车→126路→令闻街天后宫路站下→步行600米→沈阳东城皮肤病医院</p>
+                <p>机场巴士1号线→105路→小北街下→沈阳东城皮肤病医院</p>
+            </li>
+            <li class="flex_child">
+                <img src="images/floortwoimg10.jpg" alt="">
+                <h3>机场巴士2号线</h3>
+                <p>机场巴士2号线 → 221路→小北街下→沈阳东城皮肤病医院</p>
+                <p>机场巴士2号线→207路→小北门下→步行900米→沈阳东城皮肤病医院</p>
+            </li>
+        </ul>
+        <!--联系方式-->
+        <div class="call_us">
+            <h3>如果您有任何问题，可通过以下方式与我们联系</h3>
+            <a href="/" class="experts_online">专家在线咨询&gt;&gt;</a>
+            <a href="/" class="tel_online">24小时专家热线：<span>024-88568810</span></a>
+            <a href="/" class="qq_online">专家QQ：<span>3370797101</span></a>
+        </div>
+        <!--7、挂号系统-->
+        <div class="floor_seven">
+            <div class="seven_title">
+                <div class="regist_box">
+                    <h3>性病科患者网上自助挂号【加密提交】</h3>
+                </div>
+            </div>
+            <form action="" id="gh_form" name="gh_form" onsubmit="javascript:return check();"method="">
+                <div class="six_form">
+                    <ul>
+                        <li><span>就诊姓名：</span><input type="text" name="name" placeholder="如：周芳"></li>
+                        <li><span>预约时间：</span><input type="text" class="datepicker" id="yytime" name="yydate" onblur="if(this.value==''){this.value=this.defaultValue;}" onfocus="if(this.value==this.defaultValue){this.value='';};" placeholder="如：2016-10-05" readonly></li>
+                        <li><span>手机号码：</span><input type="text" name="tel" placeholder="如：15800000000"></li>
+                        <li>
+                            <span>预约病种：</span>
+                            <select name="what" id="sum">
+                                <option value="请选择预约病种">请选择预约病种</option>
+                                <option value="尖锐湿疣">尖锐湿疣</option>
+                                <option value="生殖疱疹">生殖疱疹</option>
+                                <option value="病毒性疱疹">病毒性疱疹</option>
+                                <option value="淋病">淋病</option>
+                                <option value="梅毒">梅毒</option>
+                                <option value="非淋">非淋</option>
+                                <option value="支/衣原体">支/衣原体</option>
+                                <option value="前列腺炎">前列腺炎</option>
+                                <option value="龟头炎">龟头炎</option>
+                                <option value="尿道炎">尿道炎</option>
+                                <option value="阴道炎">阴道炎</option>
+                            </select>
+                        </li>
+                    </ul>
+                <p class="new_submit"><input type="submit" value="加密提交" class="commit-btn"><input type="reset" value="重新填写" class="new_reset"></p>
+                </div>
+            </form>
+            <!--日起插件-->
+            <link href="css/date.css" rel="stylesheet" type="text/css" />
+            <script src="js/pickdate.js" charset="gb2312"></script>
+            <script type="text/javascript">
+                $( '[type=date], .datepicker' ).pickadate()
+            </script>
+        </div>
+        <!--8、底部地址-->
+        <div class="floor_footer">
+            <img src="images/footerimg1.jpg">
+            <div class="footermsg">
+                <p>健康咨询热线：024-88568810</p>
+                <p>咨询医生qq：3370797101</p>
+                <p>地址：沈阳市大东区小北街38号</p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+function check() {
+
+    if (document.gh_form.name.value=="" || document.gh_form.name.value=="请填入您的真实姓名"){alert("请填入您的姓名");document.gh_form.name.focus();return false}
+
+    if(!document.gh_form.name.value.match(/^[\u4e00-\u9fa5]{2,4}$/)){alert("姓名输入有误");document.gh_form.name.focus();return false}
+
+    if (document.gh_form.bz.value==""){alert("请选择预约病种");document.gh_form.bz.focus();return false}
+
+    if (document.gh_form.tel.value==""){alert("请填入您的联系电话");document.gh_form.tel.focus();return false}
+
+    if (!document.gh_form.tel.value.match(/^(^(\d{3,4}-)?\d{7,8})$|(1[358]{1}[0-9]{9})$/)){alert("联系电话格式不正确");document.gh_form.tel.focus();return false}
+
+    return true;
+}
+</script>
+</body>
+</html>
