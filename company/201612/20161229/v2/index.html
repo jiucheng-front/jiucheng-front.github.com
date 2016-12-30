@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="gb2312">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <!-- 启用webAPP全屏模式-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- 隐藏状态栏或者设置状态栏的颜色-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- 忽略数字自动识别为电话号码-->
+    <meta name="format-detection" content="telephone=no">
+    <!--控制缓存的失效日期 -->
+    <meta http-equiv="Expires" content="-1">
+    <!-- 禁止转码-->
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <!-- 禁止缓存访问页面-->
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="applicable-device" content="mobile">
+    <!-- 页面关键词-->
+    <meta content="" name="keywords">
+    <meta name="description" content="">
+    <base target="_blank">
+    <!--自适应控制JS必须存在-->
+    <script src="js/mobile-adaptive.js"></script>
+    <link rel="stylesheet" href="css/swiper.css">
+    <script src="js/swiper.min.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <!--文字向上滚动插件-->
+    <script src="js/jMarquee.js"></script>
+    <script src="js/jquery.SuperSlide.2.1.1.js"></script>
+    <title>沈阳东城专家专题页</title>
+</head>
+<body>
+    <div class="container">
+        <!--顶部电话-->
+        <!--1、顶部logo-->
+        <header class="top_header" id="Top">
+            <img src="images/toplogo.jpg" alt="">
+            <a href="/"></a>
+        </header>
+        <!--2、nvabar-->
+        <div class="top_nav">
+            <ul>
+                <li><a href="/">网站首页</a></li>
+                <li class="have_mleft"><a href="/">东城简介</a></li>
+                <li class="have_mleft"><a href="/">最新动态</a></li>
+                <li class="have_mleft"><a href="/">权威专家</a></li>
+                <li class="have_mtop"><a href="/">尖端技术</a></li>
+                <li class="have_mleft have_mtop selected"><a href="/">尖锐湿疣</a></li>
+                <li class="have_mleft have_mtop selected"><a href="/">生殖疱疹</a></li>
+                <li class="have_mleft have_mtop"><a href="/">康复案例</a></li>
+            </ul>
+        </div>
+        <!--3、topbanner-->
+        <div class="top_banner">
+            <div class="swiper-container top_bannerimg">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="top_bannerlists">
+                            <a href="/"><img src="images/one_img01.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="top_bannerlists">
+                            <a href="/"><img src="images/one_img02.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="top_bannerlists">
+                            <a href="/"><img src="images/one_img03.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="top_bannerlists">
+                            <a href="/"><img src="images/one_img04.jpg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination bannerimg-pagination" id="bannerimg-pagination"></div>
+            <script>
+                var mySwiper = new Swiper ('.top_bannerimg', {
+                    loop: true,
+                    autoplay: 1000,
+                    pagination: '.bannerimg-pagination',
+                    paginationClickable: true
+                });
+            </script>
+        </div>
+        <!--滚动文字-->
+        <div class="top_moveleft">
+            <img src="images/top_moveimg.jpg" alt="">
+            <div class="slidebox">
+                <div class="slidelists">
+                    <ul>
+                        <li><a href="#">好消息！沈阳东城皮肤病医院成功承办2016年皮肤病新技术推广大会。专家、技术、疗效、品质、设备、服务全面升级！</a></li>
+                        <li><a href="#">好消息！沈阳东城皮肤病医院成功承办2016年皮肤病新技术推广大会。专家、技术、疗效、品质、设备、服务全面升级！</a></li>
+                    </ul>
+                </div>
+            </div>
+            <script>
+                jQuery(".slidebox").slide({mainCell:".slidelists ul",autoPlay:true,effect:"leftMarquee",interTime:50,trigger:"click"});
+            </script>
+        </div>
+        <div class="same_btn same_mtop">
+            <a href="/"><img src="images/same_btn.jpg" alt=""></a>
+        </div>
+        <!--1、国务院津贴专家-->
+        <div class="floor_experttitle">
+            <img src="images/title_icon01.png" alt="">
+            <h3>特邀曾享受<span>国务院津贴专家、原医</span></h3>
+            <h3><span>大一院省人民医院专家</span>定期坐诊</h3>
+        </div>
+        <div class="experts_list">
+            <!--1-->
+            <div class="experts_msg">
+                <div class="experts_msgleft">
+                    <img src="images/experts01.jpg" alt="">
+                    <img src="images/expertsame.png" alt="" class="expertsame">
+                </div>
+                <div class="experts_msgright">
+                    <div class="msgright_title">
+                        <h3>宋芳吉</h3>
+                        <div class="msgright_smg">
+                            <img src="images/expertname01.jpg" alt="">
+                            <p class="font_blue">40年诊疗经验</p>
+                        </div>
+                    </div>
+                    <p class="font_blue">中国医科大一院特需门诊专家</p>
+                    <h3 class="middle_title"><span>擅长</span></h3>
+                    <p>对尖锐湿疣、生殖器疱疹等性病有丰富的临床经验及较深造诣</p>
+                    <h3 class="middle_title"><span class="middle_titlebig">专家介绍</span></h3>
+                    <p>宋芳吉，从事皮肤性病的科研和临床工作40多年，中国医科大一院皮肤病专家 ...<a href="/">【详情】</a></p>
+                </div>
+            </div>
+            <div class="expert_btn">
+                <p>
+                    <a href="/"><img src="images/expert_btnyel_01.jpg" alt=""></a>
+                    <a href="/"><img src="images/expert_btnyel_02.jpg" alt=""></a>
+                </p>
+            </div>
+            <p class="expert_line"></p>
+            <!--2-->
+            <div class="experts_msg same_mtop">
+                <div class="experts_msgleft">
+                    <img src="images/experts02.jpg" alt="">
+                    <img src="images/expertsame.png" alt="" class="expertsame">
+                </div>
+                <div class="experts_msgright">
+                    <div class="msgright_title">
+                        <h3>马在墀</h3>
+                        <div class="msgright_smg">
+                            <img src="images/expertname02.jpg" alt="">
+                            <p class="font_blue">40年诊疗经验</p>
+                        </div>
+                    </div>
+                    <p class="font_blue">中国医科大一院特需门诊专家</p>
+                    <h3 class="middle_title"><span>擅长</span></h3>
+                    <p>中西医结合治疗各种常见、疑难性病，梅毒、淋病、非淋等见解独特、疗效确切</p>
+                    <h3 class="middle_title"><span class="middle_titlebig">专家介绍</span></h3>
+                    <p>曾为中国医科大一院皮肤科主任，现为沈阳东城皮肤病医院特聘教授，从事皮肤病的科研…<a href="/">【详情】</a></p>
+                </div>
+            </div>
+            <div class="expert_btn">
+                <p>
+                    <a href="/"><img src="images/expert_btnyel_01.jpg" alt=""></a>
+                    <a href="/"><img src="images/expert_btnyel_02.jpg" alt=""></a>
+                </p>
+            </div>
+            <p class="expert_line"></p>
+            <!--3-->
+            <div class="experts_msg same_mtop">
+                <div class="experts_msgleft">
+                    <img src="images/experts03.jpg" alt="">
+                    <img src="images/expertsame.png" alt="" class="expertsame">
+                </div>
+                <div class="experts_msgright">
+                    <div class="msgright_title">
+                        <h3>王&nbsp;&nbsp;璐</h3>
+                        <div class="msgright_smg">
+                            <img src="images/expertname03.jpg" alt="">
+                            <p class="font_blue">30年诊疗经验</p>
+                        </div>
+                    </div>
+                    <p class="font_blue">原中国医科大学皮肤科主任</p>
+                    <h3 class="middle_title"><span>擅长</span></h3>
+                    <p>在应用激光等物理方法解决性病问题方面有很深的造诣</p>
+                    <h3 class="middle_title"><span class="middle_titlebig">专家介绍</span></h3>
+                    <p>王璐，从事皮肤性病的科研和临床工作40多年，原中国医科大学大东分院皮肤科主任...<a href="/">【详情】</a></p>
+                </div>
+            </div>
+            <div class="expert_btn">
+                <p>
+                    <a href="/"><img src="images/expert_btnyel_01.jpg" alt=""></a>
+                    <a href="/"><img src="images/expert_btnyel_02.jpg" alt=""></a>
+                </p>
+            </div>
+            <p class="expert_line"></p>
+            <!--4-->
+            <div class="experts_msg same_mtop">
+                <div class="experts_msgleft">
+                    <img src="images/experts04.jpg" alt="">
+                    <img src="images/expertsame.png" alt="" class="expertsame">
+                </div>
+                <div class="experts_msgright">
+                    <div class="msgright_title">
+                        <h3>贾&nbsp;&nbsp;勇</h3>
+                        <div class="msgright_smg">
+                            <img src="images/expertname04.jpg" alt="">
+                            <p class="font_blue">20年诊疗经验</p>
+                        </div>
+                    </div>
+                    <p class="font_blue">现沈阳东城皮肤病医院副院长</p>
+                    <h3 class="middle_title"><span>擅长</span></h3>
+                    <p>擅长运用“ALA多维高效活性抗体技术”治疗尖锐湿疣、生殖器疱疹、淋病、非淋、梅毒、等性疾病</p>
+                    <h3 class="middle_title"><span class="middle_titlebig">专家介绍</span></h3>
+                    <p>贾勇，曾先后在北京大学先进人民医院、上海复旦大学附属华山医院、天津长征医院工作...<a href="/">【详情】</a></p>
+                </div>
+            </div>
+            <div class="expert_btn">
+                <p>
+                    <a href="/"><img src="images/expert_btnyel_01.jpg" alt=""></a>
+                    <a href="/"><img src="images/expert_btnyel_02.jpg" alt=""></a>
+                </p>
+            </div>
+            <p class="expert_line"></p>
+            <!--5-->
+            <div class="experts_msg">
+                <div class="experts_msgleft">
+                    <img src="images/experts05.jpg" alt="">
+                    <img src="images/expertsame.png" alt="" class="expertsame">
+                </div>
+                <div class="experts_msgright">
+                    <div class="msgright_title">
+                        <h3>梁绍滢</h3>
+                        <div class="msgright_smg">
+                            <img src="images/expertname05.jpg" alt="">
+                            <p class="font_blue">20年诊疗经验</p>
+                        </div>
+                    </div>
+                    <p class="font_blue">现沈阳东城皮肤病医院副院长</p>
+                    <h3 class="middle_title"><span>擅长</span></h3>
+                    <p>擅长生殖器长水泡、长菜花、长肉芽等疑难病的治疗</p>
+                    <h3 class="middle_title"><span class="middle_titlebig">专家介绍</span></h3>
+                    <p>梁绍滢，从事皮肤性病的科研和临床工作20余年，现沈阳东城皮肤病医院副院长 ...<a href="/">【详情】</a></p>
+                </div>
+            </div>
+            <div class="expert_btn">
+                <p>
+                    <a href="/"><img src="images/expert_btnyel_01.jpg" alt=""></a>
+                    <a href="/"><img src="images/expert_btnyel_02.jpg" alt=""></a>
+                </p>
+            </div>
+            <p class="expert_line"></p>
+        </div>
+        <div class="floor_five">
+            <div class="same_tltle">
+                <h3>沈阳本月网友热门关注</h3>
+            </div>
+            <p class="samep_bg"></p>
+            <!---->
+            <ul class="five_msg">
+                <li class="half_width color_one"><a href="/">治疗湿疣好方法是什么？</a></li>
+                <li class="half_width have_mleft color_two"><a href="/">治疗尖锐湿疣大概多少钱？</a></li>
+                <li class="two_width color_three have_mtop"><a href="/">阴道湿疣怎么治？</a></li>
+                <li class="three_width have_mleft color_four have_mtop"><a href="/">男性尖锐湿疣什么症状表现？</a></li>
+                <li class="have_mtop four_width color_five"><a href="/">女性尖锐湿什么症状表现？</a></li>
+                <li class="have_mtop five_width color_six have_mleft"><a href="/">尖锐湿的早期症状图片？</a></li>
+                <li class="have_mtop two_width color_six"><a href="/">龟头小红点怎么办？</a></li>
+                <li class="have_mtop have_mleft three_width color_seven"><a href="/">尖锐湿疣是怎么传染的？</a></li>
+                <li class="have_mtop color_five six_width"><a href="/">尖锐湿要做哪些检查？</a></li>
+                <li class="have_mtop have_mleft seven_width color_one"><a href="/">得了尖锐湿疣应该挂什么科？</a></li>
+            </ul>
+            <!---->
+            <div class="same_btn same_mtop">
+                <a href="/"><img src="images/same_btn04.jpg" alt=""></a>
+            </div>
+        </div>
+        <!--6、你所拥有的治疗环境-->
+        <div class="floor_six">
+            <div class="same_tltle">
+                <h3>你所拥有的治疗环境</h3>
+            </div>
+            <p class="samep_bg"></p>
+            <div class="six_list">
+                <div class="swiper-container todo-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <ul class="six_img">
+                                <li class="will_left"><a href="/"><img src="images/jun_dy7_01.jpg" alt=""></a></li>
+                                <li class="will_right"><a href="/"><img src="images/jun_dy7_02.jpg" alt=""></a></li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul class="six_img">
+                                <li class="will_left"><a href="/"><img src="images/jun_dy7_03.jpg" alt=""></a></li>
+                                <li class="will_right"><a href="/"><img src="images/jun_dy7_04.jpg" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 如果需要导航按钮 -->
+                    <div class="swiper-button-prev todo-prev" id="todoprev"></div>
+                    <div class="swiper-button-next todo-next" id="todonext"></div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination todo-pagination" id="todopagination"></div>
+            </div>
+            <script>
+                var MMSwiper = new Swiper ('.todo-container', {
+                    loop: true,
+                    autoplay: 2000,
+                    // 如果需要分页器
+                    pagination: '.todo-pagination',
+                    // 如果需要前进后退按钮
+                    nextButton: '.todo-next',
+                    prevButton: '.todo-prev',
+                    paginationClickable: true
+                });
+            </script>
+        </div>
+        <div class="floor_six big_mtop">
+            <div class="same_tltle">
+                <h3>你所拥有的治疗设备</h3>
+            </div>
+            <p class="samep_bg"></p>
+            <div class="six_list">
+                <div class="swiper-container six-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <ul class="six_img">
+                                <li class="will_left"><a href="/"><img src="images/siximg01.jpg" alt=""><span>艾拉光动力治疗仪</span></a></li>
+                                <li class="will_right"><a href="/"><img src="images/siximg02.jpg" alt=""><span>太空舱全套治疗</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul class="six_img">
+                                <li class="will_left"><a href="/"><img src="images/siximg03.jpg" alt=""><span>臭氧</span></a></li>
+                                <li class="will_right"><a href="/"><img src="images/siximg04.jpg" alt=""><span>二氧化碳激光治疗机</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul class="six_img">
+                                <li class="will_left"><a href="/"><img src="images/siximg05.jpg" alt=""><span>高频电刀，冲洗，雾化</span></a></li>
+                                <li class="will_right"><a href="/"><img src="images/siximg06.jpg" alt=""><span>红光治疗仪</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 如果需要导航按钮 -->
+                    <div class="swiper-button-prev six-prev" id="sixprev"></div>
+                    <div class="swiper-button-next six-next" id="sixnext"></div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination six-pagination" id="sixpagination"></div>
+            </div>
+            <script>
+                var mySwiper = new Swiper ('.six-container', {
+                    loop: true,
+                    autoplay: 2000,
+                    // 如果需要分页器
+                    pagination: '.six-pagination',
+                    // 如果需要前进后退按钮
+                    nextButton: '.six-next',
+                    prevButton: '.six-prev',
+                    paginationClickable: true
+                });
+            </script>
+        </div>
+        <!--7、挂号系统-->
+        <div class="floor_seven">
+            <div class="seven_title">
+                <div class="regist_box">
+                    <h3>性病科患者网上自助挂号【加密提交】</h3>
+                </div>
+            </div>
+            <form action="">
+                <div class="six_form">
+                    <ul>
+                        <li><span>就诊姓名：</span><input type="text" placeholder="如：周芳"></li>
+                        <li><span>预约时间：</span><input type="text" class="datepicker" id="yytime" name="yydate" onBlur="if(this.value==''){this.value=this.defaultValue;}" onFocus="if(this.value==this.defaultValue){this.value='';};" placeholder="如：2016-10-05"  readonly="readonly"/></li>
+                        <li><span>手机号码：</span><input type="text" placeholder="如：15800000000"></li>
+                        <li>
+                            <span>预约病种：</span>
+                            <select name="what" id="sum">
+                                <option value="请选择预约病种">请选择预约病种</option>
+                                <option value="尖锐湿疣">尖锐湿疣</option>
+                                <option value="生殖疱疹">生殖疱疹</option>
+                                <option value="病毒性疱疹">病毒性疱疹</option>
+                                <option value="淋病">淋病</option>
+                                <option value="梅毒">梅毒</option>
+                                <option value="非淋">非淋</option>
+                                <option value="支/衣原体">支/衣原体</option>
+                                <option value="前列腺炎">前列腺炎</option>
+                                <option value="龟头炎">龟头炎</option>
+                                <option value="尿道炎">尿道炎</option>
+                                <option value="阴道炎">阴道炎</option>
+                            </select>
+                        </li>
+                    </ul>
+                    <p class="new_submit"><input type="submit" value="加密提交" class="commit-btn"><input type="button" value="重新填写" class="new_reset"></p>
+                </div>
+            </form>
+            <!--日起插件-->
+            <link href="css/date.css" rel="stylesheet" type="text/css" />
+            <script src="js/pickdate.js" charset="gb2312"></script>
+            <script type="text/javascript">
+                $( '[type=date], .datepicker' ).pickadate()
+            </script>
+        </div>
+        <!--8、底部地址-->
+        <div class="floor_footer"> <img src="images/footerimg1.png">
+            <div class="footermsg">
+                <p>健康咨询热线：024-88568810</p>
+                <p>咨询医生qq：3370797101</p>
+                <p>地址：沈阳市大东区小北街38号</p>
+            </div>
+        </div>
+        <ul class="footer-nav">
+            <li><a href="/"><img src="images/footer-nav01.jpg" alt=""><span>拨打电话</span></a></li>
+            <li><a href="/"><img src="images/footer-nav02.jpg" alt=""><span>在线咨询</span></a></li>
+            <li><a href="/"><img src="images/footer-nav03.jpg" alt=""><span>回到首页</span></a></li>
+        </ul>
+    </div>
+</body>
+</html>
