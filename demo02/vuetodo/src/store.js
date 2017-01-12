@@ -32,5 +32,8 @@ var Store={
     },
     fetch:function(){
         return JSON.parse(window.sessionStorage.getItem(STORAGE_KEY)||'[]');
+    },
+    deletedThis:function(kk){
+        return window.sessionStorage.removeItem(kk);
     }
 }
