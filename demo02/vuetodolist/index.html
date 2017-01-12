@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>todolist-vue</title>
+    <script src="src/vue.js"></script>
+    <script src="src/store.js"></script>
+    <style>
+        *{
+            list-style: none;
+            outline: none;
+            border: none;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .app h1,.app p{
+            text-align: center;
+            margin-top: 10px;
+        }
+        #app{
+            font-family: 'Avenir', Helvetica, Arial, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            color: #2C3E7A;
+        }
+        .app{
+            width: 640px;
+            margin: 0 auto;
+            background: #c5c5c5;
+            padding:30px 10px;
+            border: 1px solid #2C3E7A;
+            margin-top: 10px;
+            position: relative;
+            box-shadow: 0 0 10px #2C3E7A;
+        }
+        .app:before{
+            content: '';
+            width: 2px;
+            border-left: 1px dashed #2C3E7A;
+            border-right: 1px dashed #2C3E7A;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 51px;
+        }
+        .app li{
+            cursor: pointer;
+            height: 45px;
+            line-height: 45px;
+            padding-left: 65px;
+            position: relative;
+            border-bottom: 1px dashed #2C3E7A;
+        }
+        .todo-box li input{
+            text-align: center;
+            width: 40px;
+            height: auto;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            margin:0 auto;
+            border: none;
+            -webkit-appearance: none;
+            -moz-appearance: none; 
+            -ms-appearance: none;
+            -o-appearance: none;
+            appearance: none;
+        }
+        .todo-box li input:after{
+            content: '✔';
+            line-height: 43px;
+            font-size: 20px;
+            color: #f0f0f0;
+            text-shadow: 0 -1px 0 #bfbfbf;
+        }    
+        .app li.finished{
+            text-decoration: line-through;
+            color: #4fc08d;
+        }
+        .app li.finished input:after{
+            color: #4fc08d;
+            text-shadow: 0 1px 0 #669991;
+            bottom: 1px;
+            position: relative;
+        }
+        .typeInput input{
+            width: 81%;
+            color: #2C3E7A;
+            font-size: 24px;
+            border: 1px solid #2C3E7A;
+            padding: 1%;
+            transition: all 0.3s ease-in-out;
+        }
+        .typeInput input:focus {
+            outline: none;
+            border-color: #2C3E7A;
+            box-shadow: 0 0 10px #2C3E7A;
+        }
+        /*删除按钮样式*/
+        .app li b{
+            display: none;
+            width: 35px;
+            height: 35px;
+            font-size: 20px;
+            color: #e4393c;
+            text-align: center;
+            position: absolute;
+            top: 5px;
+            right: 50px;
+            -webkit-transition: all 0.2s;
+            -moz-transition: all 0.2s;
+            -ms-transition: all 0.2s;
+            -o-transition: all 0.2s;
+            transition: all 0.2s;
+        }
+        .app li b:hover{
+            text-shadow: 0 0 1px #000,0 0 10px rgba(199, 107, 107, 0.8);
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            -o-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+        .app li:hover b{
+            display: block;        
+        }
+    </style>
+</head>
+<body>
+    <div id="app" class="app">
+        <h1 v-text='title'></h1>
+        <p class='typeInput'>
+            <input type="text" v-model='newText' v-on:keyup.enter='addNewlist'>
+        </p>
+        <ul class="todo-box">
+            <li v-for='item in items' v-bind:class='{finished:item.isFinished}'>
+                <input type="checkbox"  v-on:click='toggleFinish(item)'>
+                {{item.text}}
+                <b v-on:click='deleteList(item)'>✖</b>
+            </li>
+        </ul>
+    </div>
+    <script>
+        var app=new Vue({
+            el:'#app',
+            data:{
+                title:'My todo list',
+                // items:[
+                //     // {
+                //     //     text:'Learn CSS',
+                //     //     isFinished:true
+                //     // },
+                //     // {
+                //     //     text:'Learn javascript',
+                //     //     isFinished:false
+                //     // }
+                // ],
+                items:Store.fetch(),
+                newText:''
+            },
+            
+            //watch深度监听函数，监听的是items的变化
+            //只要有新的输入内容就会触发，
+            watch:{
+                items:{
+                    //val和oldval这里都是对象
+                    handler:function(items){
+                        // console.log(items);
+                        Store.save(items);
+                    },
+                    deep:true
+                }
+            },
+            //
+            methods:{
+                toggleFinish:function(item){
+                    // console.log(item.isFinished);
+                    item.isFinished=!item.isFinished;
+                },
+                //3、输入后按enter键盘的事件
+                addNewlist:function(){
+                    var _self=this;
+                    // console._self.newText;
+                    //3.1 如果不为空就将刚刚输入的内容以对象的形式，追加到items数组对象内部，
+                    //默认新追加的是没完成的为false
+                    //存在且不能为空格
+                    if(_self.newText&&_self.newText.trim()){
+                        _self.items.push({
+                            text:_self.newText,
+                            isFinished:false
+                        });
+                    }
+                    // console.log(_self.newText);
+                    // console.log(this);
+                    //3.2 同时清空input输入框
+                    _self.newText='';
+                },
+                //点击删除该选项 法一
+                deleteList:function(item){
+                    this.items.splice(this.items.indexOf(item),1);
+                }
+                //法二
+                //此时必须在v-for=(item,index) inde items,否则vue会报错，显然法一更简洁
+                // deleteThis(item,index){
+                //     this.items.splice(index,1);
+                // }
+            }
+        });
+    </script>
+</body>
+</html>
