@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <!-- 启用webAPP全屏模式-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- 隐藏状态栏或者设置状态栏的颜色-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- 忽略数字自动识别为电话号码-->
+    <meta name="format-detection" content="telephone=no">
+    <!--控制缓存的失效日期 -->
+    <meta http-equiv="Expires" content="-1">
+    <!-- 禁止转码-->
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <!-- 禁止缓存访问页面-->
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="applicable-device" content="mobile">
+    <!-- 页面关键词-->
+    <meta content="" name="keywords">
+    <meta name="description" content="">
+    <base target="_blank">
+    <!--自适应控制JS必须存在-->
+    <script src="js/mobile-adaptive.js"></script>
+    <link rel="stylesheet" href="css/swiper.css">
+    <script src="js/swiper.min.js"></script>
+    <link rel="stylesheet" href="css/index-mini.css">
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <!--文字向上滚动插件-->
+    <script src="js/jquery.SuperSlide.2.1.1.js"></script>
+    <title>沈阳肤康首页</title>
+</head>
+<body>
+    <div class="container">
+        <!--1、顶部logo-->
+        <header class="top_header" id="Top">
+            <img src="images/toplogo.jpg" alt="">
+            <a href="/"></a>
+        </header>
+        <!--2、nvabar-->
+        <div class="top_nav">
+            <ul>
+                <li><a href="/">网站首页</a></li>
+                <li class="have_mleft"><a href="/">东城简介</a></li>
+                <li class="have_mleft"><a href="/">最新动态</a></li>
+                <li class="have_mleft"><a href="/">权威专家</a></li>
+                <li class="have_mtop"><a href="/">尖端技术</a></li>
+                <li class="have_mleft have_mtop selected"><a href="/">尖锐湿疣</a></li>
+                <li class="have_mleft have_mtop selected"><a href="/">生殖包疹</a></li>
+                <li class="have_mleft have_mtop"><a href="/">康复案例</a></li>
+            </ul>
+        </div>
+        <!--3、topbanner-->
+        <div class="top_banner">
+            <div class="swiper-container top_bannerimg">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="top_bannerlists">
+                            <a href="/"><img src="images/one_img01.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="top_bannerlists">
+                            <a href="/"><img src="images/one_img02.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="top_bannerlists">
+                            <a href="/"><img src="images/one_img03.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="top_bannerlists">
+                            <a href="/"><img src="images/one_img04.jpg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination bannerimg-pagination" id="bannerimg-pagination"></div>
+            <script>
+                var mySwiper = new Swiper ('.top_bannerimg', {
+                    loop: true,
+                    autoplay: 1000,
+                    pagination: '.bannerimg-pagination',
+                    paginationClickable: true
+                });
+            </script>
+        </div>
+        <!--滚动文字-->
+        <div class="top_moveleft">
+            <img src="images/top_moveimg.jpg" alt="">
+            <div class="slidebox">
+                <div class="slidelists">
+                    <ul>
+                        <li><a href="#">好消息！沈阳东城皮肤病医院成功承办2016年皮肤病新技术推广大会，性病诊疗技术全面升级！</a></li>
+                        <li><a href="#">好消息！沈阳东城皮肤病医院成功承办2016年皮肤病新技术推广大会，性病诊疗技术全面升级！</a></li>
+                    </ul>
+                </div>
+            </div>
+            <script>
+                jQuery(".slidebox").slide({mainCell:".slidelists ul",autoPlay:true,effect:"leftMarquee",interTime:50,trigger:"click"});
+            </script>
+        </div>
+        <!--1、你所拥有的治疗环境-->
+        <div class="floor_five same_mtop">
+            <div class="same_tltle">
+                <h3>你所拥有的治疗环境</h3>
+            </div>
+            <p class="samep_bg"></p>
+            <h3 class="environ_title">接待区</h3>
+            <div class="environ_list">
+                <img src="images/environment01.jpg" alt="">
+                <img src="images/environment02.jpg" alt="">
+                <img src="images/environment03.jpg" alt="">
+            </div>
+            <h3 class="environ_title">治疗区</h3>
+            <div class="environ_list">
+                <img src="images/environment04.jpg" alt="">
+                <img src="images/environment05.jpg" alt="">
+                <img src="images/environment06.jpg" alt="">
+            </div>
+            <h3 class="environ_title">医药区</h3>
+            <div class="environ_list">
+                <img src="images/environment07.jpg" alt="">
+                <img src="images/environment08.jpg" alt="">
+                <img src="images/environment09.jpg" alt="">
+            </div>
+        </div>
+        <div class="same_btn same_mtop">
+            <a href="/"><img src="images/same_btn04.jpg" alt=""></a>
+        </div>
+        <!--2在沈阳，10个性病患者，9个选择东城-->
+        <div class="floor_four same_mtop">
+            <div class="same_tltle">
+                <h3>在沈阳，10个性病患者，9个选择东城</h3>
+            </div>
+            <p class="samep_bg"></p>
+            <div class="four_lists">
+                <div class="four_listsbtn">
+                    <a href="#" class="selected"><span>肤康学术交流</span></a>
+                    <a href="#"><span>肤康公益行</span></a>
+                </div>
+            </div>
+            <ul class="four_img">
+                <li><img src="images/qgzimg5.jpg" alt=""><p>2016国际皮肤病临床新技术成果学术
+                    报告会</p></li>
+                <li class="have_mleft"><img src="images/qgzimg6.jpg" alt=""><p>沈阳肤康皮肤病医院携康复患者共游北陵</p></li>
+                <li class="have_mtop"><img src="images/qgzimg7.jpg" alt=""><p>北京同仁皮肤病性病科杨秀敏副教授
+                    新技术学术报告</p></li>
+                <li class="have_mleft have_mtop"><img src="images/qgzimg8.jpg" alt=""><p>肤康阳光慈善基金成立</p></li>
+            </ul>
+            <div class="four_btn"><a href="/">查看更多有关肤康院内新闻&gt;&gt;</a></div>
+        </div>
+        <!--3 网友热门关注-->
+        <div class="floor_five">
+            <div class="same_tltle">
+                <h3>沈阳本月网友热门关注</h3>
+            </div>
+            <p class="samep_bg"></p>
+            <!---->
+            <ul class="five_msg">
+                <li class="half_width color_one"><a href="/">治疗湿疣好方法是什么？</a></li>
+                <li class="half_width have_mleft color_two"><a href="/">治疗尖锐湿疣大概多少钱？</a></li>
+                <li class="two_width color_three have_mtop"><a href="/">阴道湿疣怎么治？</a></li>
+                <li class="three_width have_mleft color_four have_mtop"><a href="/">男性尖锐湿疣什么症状表现？</a></li>
+                <li class="have_mtop four_width color_five"><a href="/">女性尖锐湿什么症状表现？</a></li>
+                <li class="have_mtop five_width color_six have_mleft"><a href="/">尖锐湿的早期症状图片？</a></li>
+                <li class="have_mtop two_width color_six"><a href="/">龟头小红点怎么办？</a></li>
+                <li class="have_mtop have_mleft three_width color_seven"><a href="/">尖锐湿疣是怎么传染的？</a></li>
+                <li class="have_mtop color_five six_width"><a href="/">尖锐湿要做哪些检查？</a></li>
+                <li class="have_mtop have_mleft seven_width color_one"><a href="/">得了尖锐湿疣应该挂什么科？</a></li>
+            </ul>
+            <!---->
+            <div class="same_btn same_mtop">
+                <a href="/"><img src="images/same_btn04.jpg" alt=""></a>
+            </div>
+        </div>
+        <!-- 4你所拥有的治疗设备-->
+        <div class="floor_six">
+            <div class="same_tltle">
+                <h3>你所拥有的治疗环境</h3>
+            </div>
+            <p class="samep_bg"></p>
+            <div class="six_list">
+                <div class="swiper-container todo-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <ul class="six_img">
+                                <li class="will_left"><a href="/"><img src="images/jun_dy7_01.jpg" alt=""></a></li>
+                                <li class="will_right"><a href="/"><img src="images/jun_dy7_02.jpg" alt=""></a></li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul class="six_img">
+                                <li class="will_left"><a href="/"><img src="images/jun_dy7_03.jpg" alt=""></a></li>
+                                <li class="will_right"><a href="/"><img src="images/jun_dy7_04.jpg" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 如果需要导航按钮 -->
+                    <div class="swiper-button-prev todo-prev" id="todoprev"></div>
+                    <div class="swiper-button-next todo-next" id="todonext"></div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination todo-pagination" id="todopagination"></div>
+            </div>
+            <script>
+                var MMSwiper = new Swiper ('.todo-container', {
+                    loop: true,
+                    autoplay: 2000,
+                    // 如果需要分页器
+                    pagination: '.todo-pagination',
+                    // 如果需要前进后退按钮
+                    nextButton: '.todo-next',
+                    prevButton: '.todo-prev',
+                    paginationClickable: true
+                });
+            </script>
+        </div>
+        <div class="floor_six big_mtop">
+            <div class="same_tltle">
+                <h3>你所拥有的治疗设备</h3>
+            </div>
+            <p class="samep_bg"></p>
+            <div class="six_list">
+                <div class="swiper-container six-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <ul class="six_img">
+                                <li class="will_left"><a href="/"><img src="images/siximg01.jpg" alt=""><span>艾拉光动力治疗仪</span></a></li>
+                                <li class="will_right"><a href="/"><img src="images/siximg02.jpg" alt=""><span>太空舱全套治疗</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul class="six_img">
+                                <li class="will_left"><a href="/"><img src="images/siximg03.jpg" alt=""><span>臭氧</span></a></li>
+                                <li class="will_right"><a href="/"><img src="images/siximg04.jpg" alt=""><span>二氧化碳激光治疗机</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul class="six_img">
+                                <li class="will_left"><a href="/"><img src="images/siximg05.jpg" alt=""><span>高频电刀，冲洗，雾化</span></a></li>
+                                <li class="will_right"><a href="/"><img src="images/siximg06.jpg" alt=""><span>红光治疗仪</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 如果需要导航按钮 -->
+                    <div class="swiper-button-prev six-prev" id="sixprev"></div>
+                    <div class="swiper-button-next six-next" id="sixnext"></div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination six-pagination" id="sixpagination"></div>
+            </div>
+            <script>
+                var mySwiper = new Swiper ('.six-container', {
+                    loop: true,
+                    autoplay: 2000,
+                    // 如果需要分页器
+                    pagination: '.six-pagination',
+                    // 如果需要前进后退按钮
+                    nextButton: '.six-next',
+                    prevButton: '.six-prev',
+                    paginationClickable: true
+                });
+            </script>
+        </div>
+        <!--5 挂号-->
+        <div class="floor_seven">
+            <div class="seven_title">
+                <div class="regist_box">
+                    <h3>性病科患者网上自助挂号【加密提交】</h3>
+                </div>
+            </div>
+            <form action="">
+                <div class="six_form">
+                    <ul>
+                        <li><span>就诊姓名：</span><input id="usename" type="text" placeholder="如：周芳"></li>
+                        <li><span>预约时间：</span><input type="text" class="datepicker" id="yytime" name="yydate" onBlur="if(this.value==''){this.value=this.defaultValue;}" onFocus="if(this.value==this.defaultValue){this.value='';};" placeholder="如：2016-10-05"  readonly="readonly"/></li>
+                        <li><span>手机号码：</span><input id="tel" type="text" placeholder="如：15800000000"></li>
+                        <li>
+                            <span>预约病种：</span>
+                            <select name="what" id="sum">
+                                <option value="请选择预约病种">请选择预约病种</option>
+                                <option value="尖锐湿疣">尖锐湿疣</option>
+                                <option value="生殖疱疹">生殖疱疹</option>
+                                <option value="病毒性疱疹">病毒性疱疹</option>
+                                <option value="淋病">淋病</option>
+                                <option value="梅毒">梅毒</option>
+                                <option value="非淋">非淋</option>
+                                <option value="支/衣原体">支/衣原体</option>
+                                <option value="前列腺炎">前列腺炎</option>
+                                <option value="龟头炎">龟头炎</option>
+                                <option value="尿道炎">尿道炎</option>
+                                <option value="阴道炎">阴道炎</option>
+                            </select>
+                        </li>
+                    </ul>
+                    <p class="new_submit"><input id="but" type="submit" value="加密提交" class="commit-btn"><input type="button" value="重新填写" class="new_reset"></p>
+                </div>
+            </form>
+            <!--日起插件-->
+            <link href="css/date.css" rel="stylesheet" type="text/css" />
+            <script src="js/pickdate.js" charset="gb2312"></script>
+            <script type="text/javascript">
+                $( '[type=date], .datepicker' ).pickadate()
+            </script>
+        </div>
+        <script>
+            (function() {
+                $("#but").click(function() {
+                    if($("#usename").val() == "" || $("#usename").val() == "请输入姓名...") {
+                        alert("请输入患者姓名");
+                        return false;
+                    }
+                    if($("#tel").val() == "" || $("#tel").val() == "请输入手机号...") {
+                        alert("请输入电话号码");
+                        return false;
+                    }
+                    var tels = /^((\d{11})|^((\d{7,8})|(\d{4}|\d{3})-(\d{7,8})|(\d{4}|\d{3})-(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1})|(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1}))$)$/;
+                    var pattern = /^[\u4E00-\u9FA5]{1,6}$/;
+
+                    if(!pattern.test($('#usename').val())) {
+                        alert("正确的姓名！");
+                        return false;
+                    }
+                    if(!tels.test($('#tel').val())) {
+                        alert("请正确填写电话号码！");
+                        return false;
+                    }
+                })
+            })();
+        </script>
+        <!--8、底部地址-->
+        <div class="floor_footer">
+            <img src="images/footerimg1.png">
+            <div class="footermsg">
+                <p>健康咨询热线：024-88568810</p>
+                <p>咨询医生qq：3370797101</p>
+                <p>地址：沈阳市大东区小北街38号</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
