@@ -25,6 +25,7 @@
     <script src="js/mobile-adaptive.js"></script>
     <link rel="stylesheet" href="css/swiper.css">
     <script src="js/swiper.min.js"></script>
+    <script src="js/jquery-2.1.1.min.js"></script>
     <link rel="stylesheet" href="css/index.css">
     <title>东城黄褐斑</title>
 </head>
@@ -255,6 +256,35 @@
                         <!--<a href="#">重新输入</a> </div>-->
                     </div>
                 </form>
+                <!--表单验证-->
+                <script>
+                    (function () {
+                        $("#but").click(function () {
+                            if ($("#name").val() == "" || $("#name").val() == "请输入") {
+                                alert("请输入患者姓名");
+                                return false;
+                            }
+                            if ($("#contacts").val() == "" || $("#contacts").val() == "请输入") {
+                                alert("请输入电话号码");
+                                return false;
+                            }
+                            if ($("#date").val() == "" || $("#date").val() == "点击选择就诊日期") {
+                                alert("请输入就诊日期");
+                                return false;
+                            }
+                            var tels = /^((\d{11})|^((\d{7,8})|(\d{4}|\d{3})-(\d{7,8})|(\d{4}|\d{3})-(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1})|(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1}))$)$/;
+                            var pattern = /^[\u4E00-\u9FA5]{1,6}$/;
+                            if (!pattern.test($('#name').val())) {
+                                alert("正确的姓名！");
+                                return false;
+                            }
+                            if (!tels.test($('#contacts').val())) {
+                                alert("请正确填写电话号码！");
+                                return false;
+                            }
+                        })
+                    })();
+                </script>
             </section>
         </div>
         <!--5挂号-->
