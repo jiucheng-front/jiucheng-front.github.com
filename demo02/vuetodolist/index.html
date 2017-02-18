@@ -134,6 +134,11 @@
         <p class='typeInput'>
             <input type="text" v-model='newText' v-on:keyup.enter='addNewlist'>
         </p>
+        <p>
+            <a href="#all">所有任务</a>
+            <a href="#un">未完成</a>
+            <a href="#finished">已经完成</a>
+        </p>
         <ul class="todo-box">
             <li v-for='item in items' v-bind:class='{finished:item.isFinished}'>
                 <input type="checkbox"  v-on:click='toggleFinish(item)'>
@@ -158,7 +163,8 @@
                 //     // }
                 // ],
                 items:Store.fetch(),
-                newText:''
+                newText:'',
+                visibility:'all'// 通过这个属性对是否完成进行过滤
             },
             
             //watch深度监听函数，监听的是items的变化
@@ -208,6 +214,13 @@
                 // }
             }
         });
+        //9 监听hash 过滤是否完成
+        function watchHash(){
+            var hash=window.location.hash.slice(1);
+            app.visibility=hash;
+            console.log(hash);
+        }
+        watchHash();
     </script>
 </body>
 </html>
