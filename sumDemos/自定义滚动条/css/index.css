@@ -1,0 +1,35 @@
+
+/*谷歌*/
+body::-webkit-scrollbar{width:14px;}
+body::-webkit-scrollbar-track{background-color:#bee1eb;}
+body::-webkit-scrollbar-thumb{background-color:#00aff0;}
+body::-webkit-scrollbar-thumb:hover {background-color:#9c3}
+body::-webkit-scrollbar-thumb:active {background-color:#00aff0}
+
+/*FireFox*/
+@-moz-document url-prefix(http://),url-prefix(https://) {   
+    /* 滚动条颜色 */  
+    scrollbar {   
+       -moz-appearance: none !important;   
+       background: rgb(0,255,0) !important;   
+    }   
+    /* 滚动条按钮颜色 */  
+    thumb,scrollbarbutton {   
+       -moz-appearance: none !important;   
+       background-color: rgb(0,0,255) !important;   
+    }   
+    /* 鼠标悬停时按钮颜色 */  
+      
+    thumb:hover,scrollbarbutton:hover {   
+       -moz-appearance: none !important;   
+       background-color: rgb(255,0,0) !important;   
+    }   
+    /* 隐藏上下箭头 */  
+    scrollbarbutton {   
+       display: none !important;   
+    }   
+    /* 纵向滚动条宽度 */  
+    scrollbar[orient="vertical"] {   
+      min-width: 15px !important;   
+    }   
+}
