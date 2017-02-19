@@ -9,7 +9,7 @@ window.onload=function(){
 			var snowDiv=document.createElement("div");
 			document.getElementById("js_sonw").appendChild(snowDiv);
 			// 让创建DIV的class为随机，显示不同的雪花
-			var whatName=["snow_one parent","snow_two parent","snow_three parent","snow_four parent"];
+			var whatName=["snow_one","snow_two","snow_three","snow_four"];
 			var index=Math.floor(Math.random()*whatName.length);
 			snowDiv.className=whatName[index];
 			// 获取该DIV的left属性值(随机的)并赋值给创建的DIV

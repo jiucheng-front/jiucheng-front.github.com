@@ -16,7 +16,7 @@ body{
 	overflow: hidden;
 	margin: 0 auto;
 }
-.snow_parent div.parent{
+.snow_parent div{
 	background-image: url(../img/snow.png);
 	float: left;
 	-webkit-transform: scale(.1);
