@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PC端简单悬停效果的封装</title>
+    <link rel="stylesheet" href="css/index.css">
+    <!--js封装-->
+    <script src="js/mouseover-tab.js"></script>
+</head>
+<body>
+    <div class="view-page">
+        <ul class="nav-bar">
+            <li><a href="/">学院首页</a></li>
+            <li id="navbtn-one">
+                <a href="/">学院概况</a>
+                <ul class="experts-lists" id="navlist-one">
+                    <li><a href="/">周芷若</a></li>
+                    <li><a href="/">张无忌</a></li>
+                    <li><a href="/">杨过</a></li>
+                    <li><a href="/">齐天大圣</a></li>
+                </ul>
+            </li>
+            <li><a href="/">学院图书馆</a></li>
+            <li id="navbtn-two">
+                <a href="/">金牌教授</a>
+                <ul class="experts-lists" id="navlist-two">
+                    <li><a href="/">周芷若</a></li>
+                    <li><a href="/">张无忌</a></li>
+                    <li><a href="/">杨过</a></li>
+                    <li><a href="/">齐天大圣</a></li>
+                </ul>
+            </li>
+            <li><a href="/">学院地址</a></li>
+        </ul>
+    </div>
+
+    <script>
+        //1
+        var itemone=new Overitem({
+            btn:'navbtn-one',
+            item:'navlist-one'
+        });
+        //2
+        var itemtwo=new Overitem({
+            btn:'navbtn-two',
+            item:'navlist-two'
+        });
+    </script>
+</body>
+</html>
