@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PC端简单悬停效果的封装</title>
+    <link rel="stylesheet" href="css/index.css">
+    <!--js封装-->
+    <script src="js/mouseover-tab.js"></script>
+    <!--切换效果：哪怕一个页面有再多的切换效果只需要写同样的class就可以-->
+    <script src="js/protoype-tab.js"></script>
+</head>
+<body>
+    <div class="view-page">
+        <!--鼠标悬停效果-->
+        <ul class="nav-bar">
+            <li><a href="/">学院首页</a></li>
+            <li id="navbtn-one" class="btns">
+                <a href="/">学院概况</a>
+                <ul class="experts-lists" id="navlist-one">
+                    <li><a href="/">周芷若</a></li>
+                    <li><a href="/">张无忌</a></li>
+                    <li><a href="/">杨过</a></li>
+                    <li><a href="/">齐天大圣</a></li>
+                </ul>
+            </li>
+            <li><a href="/">学院图书馆</a></li>
+            <li id="navbtn-two" class="btns">
+                <a href="/">金牌教授</a>
+                <ul class="experts-lists" id="navlist-two">
+                    <li><a href="/">周芷若</a></li>
+                    <li><a href="/">张无忌</a></li>
+                    <li><a href="/">杨过</a></li>
+                    <li><a href="/">齐天大圣</a></li>
+                </ul>
+            </li>
+            <li><a href="/">学院地址</a></li>
+        </ul>
+    </div>
+    <!--切换效果1-->
+    <div class="view-tab">
+        <div class="box">
+            <ul class="fl">
+                <li class="tabbtn on">天龙八部</li>
+                <li class="tabbtn">射雕英雄传</li>
+                <li class="tabbtn">倚天屠龙记</li>
+                <li class="tabbtn">乾坤大挪移</li>
+                <li class="tabbtn">天龙八部</li>
+            </ul>
+            <div class="tabmsg fr">
+                <div class="tabmsg_list block">1111111111</div>
+                <div class="tabmsg_list">2222222222</div>
+                <div class="tabmsg_list">3333333333</div>
+                <div class="tabmsg_list">4444444444</div>
+                <div class="tabmsg_list">5555555555</div>
+            </div>
+        </div>
+    </div>
+    <!--切换效果2-->
+    <div class="view-tab">
+        <div class="box">
+            <div class="tabmsg fl">
+                <div class="itemtwo block">1111111111</div>
+                <div class="itemtwo">2222222222</div>
+                <div class="itemtwo">3333333333</div>
+                <div class="itemtwo">4444444444</div>
+                <div class="itemtwo">5555555555</div>
+            </div>
+            <ul class="fr">
+                <li class="btntwo on">天龙八部</li>
+                <li class="btntwo">射雕英雄传</li>
+                <li class="btntwo">倚天屠龙记</li>
+                <li class="btntwo">乾坤大挪移</li>
+                <li class="btntwo">天龙八部</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        //1悬停效果一
+        var itemone=new Overitem({
+            btn:'navbtn-one',
+            item:'navlist-one',
+            addclass:'hover'
+        });
+        //2悬停效果2
+        var itemtwo=new Overitem({
+            btn:'navbtn-two',
+            item:'navlist-two',
+            addclass:'hover'
+        });
+        //1 切换一
+        var tabone=new Tabitem({
+            btn:'tabbtn',//切换按钮的classname
+            item:'tabmsg_list',//切换要显示的内容的classname
+            btnaddclass:'on',//切换按钮追加的classname控制选中的样式
+            otemaddclass:'block'//切换内容追加的classname,控制显示还是影藏
+        });
+        //2切换二
+        var tabone=new Tabitem({
+            btn:'btntwo',
+            item:'itemtwo',
+            btnaddclass:'on',
+            otemaddclass:'block'
+        });
+    </script>
+</body>
+</html>

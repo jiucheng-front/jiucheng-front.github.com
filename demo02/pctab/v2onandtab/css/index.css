@@ -1,0 +1,122 @@
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/*view-page*/
+.view-page{
+    width: 100%;
+    height: 500px;
+    background: #ccc;
+    overflow: hidden;
+}
+.nav-bar:before,.nav-bar:after{
+    display: table;
+    content: '';
+    clear: both;
+}
+.nav-bar{
+    width: 900px;
+    margin: 0 auto;
+    background: purple;
+}
+.nav-bar>li{
+    float: left;
+    margin-left: 20px;
+    /**/
+    position: relative;
+}
+.nav-bar>li:hover,.nav-bar>li.hover{
+    background: #999;
+}
+.nav-bar>li>a{
+    display: block;
+    font-size: 16px;
+    color: #fff;
+    line-height: 60px;
+    padding: 0 20px;
+}
+
+/*-experts-lists-*/
+.experts-lists{
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    left: 0;
+    background: rgba(0,0,0,.4);
+    padding: 10px 0;
+    display: none;
+}
+.experts-lists li a{
+    display: block;
+    text-align: center;
+    line-height: 35px;
+    color: #fff;
+    font-size: 14px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+.experts-lists li a:hover{
+    color: purple;
+}
+/*view-tab*/
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.view-tab{
+    width: 100%;
+    overflow: hidden;
+    height: 300px;
+    margin-top: 20px;
+}
+.box{
+    width: 800px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.box ul{
+    width: 150px;
+}
+.box ul li{
+    line-height: 40px;
+    background: #999;
+    text-align: center;
+    cursor: pointer;
+}
+.box ul li+li{
+    margin-top: 10px;
+}
+.box ul li:hover,
+.box ul li.on{
+    background: purple;
+}
+/*tabmsg*/
+.tabmsg{
+    width: 625px;
+    height: 240px;
+    position: relative;
+}
+.tabmsg_list,
+.itemtwo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #ccc;
+    display: none;
+}
+.tabmsg_list.block,
+.itemtwo.block{
+    display: block;
+}
+/*切换2*/
