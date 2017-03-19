@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: 0; }
+
+*, :after, :before {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  list-style: none; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.clear,
+.clear:before,
+.clear:after {
+  display: table;
+  content: '';
+  clear: both; }
+
+body {
+  font-family: Microsoft YaHei,Helvetica,STHeiTi,sans-serif;
+  color: #575757;
+  background-color: #fff;
+  outline: 0;
+  margin: auto;
+  font-size: .2rem; }
+
+.main {
+  max-width: 640px;
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 0 0.2rem #5D5C61; }
+  .main h1 {
+    font-size: 0.35rem;
+    color: #42b983;
+    text-align: center;
+    font-weight: 100;
+    padding: .2rem 0; }
+
+.movelist {
+  width: 100%; }
+
+.movelist li {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  margin-top: .15rem; }
+  .movelist li img {
+    display: block;
+    width: 46.875%; }
+
+.message {
+  width: 53%;
+  padding-left: .2rem; }
+  .message h3 {
+    font-size: 0.3rem;
+    color: #42b983;
+    text-align: center;
+    font-weight: 100; }
+  .message p {
+    font-size: .24rem;
+    line-height: .35rem;
+    margin-top: .05rem; }
+    .message p span {
+      color: #e4393c; }
+    .message p a {
+      color: #6495ed; }
+
+#gotop {
+  font-size: .24rem;
+  display: block;
+  width: .3rem;
+  height: .34rem;
+  position: fixed;
+  z-index: 10;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  text-align: center;
+  border-radius: .05rem;
+  cursor: pointer;
+  line-height: .34rem; }
