@@ -18,7 +18,7 @@ Tabitem.prototype={
                     _self.item[j].className=option.item;
                 }
                 _self.btn[this.index].className=option.btn+' '+option.btnaddclass;
-                _self.item[this.index].className=option.item+' '+option.otemaddclass;
+                _self.item[this.index].className=option.item+' '+option.itemaddclass;
                 //console.log(this);
                 //console.log(_self);
             };
