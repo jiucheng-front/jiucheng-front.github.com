@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        .content{
+            position: relative;
+            width: 610px;
+            height: 288px;
+            margin: 0px auto;
+            padding: 40px;
+        }
+        .time {
+            position: absolute;
+            width: 110px;
+            height: 170px;
+            /*background-color: red;*/
+            top: 168px;
+            left: 103px;
+            color: #FFFFFF;
+            font-size: 32px;
+            line-height: 60px;
+            text-align: center;
+        }
+        body{
+            text-align: center;
+        }
+        canvas{
+            background-color: #014279;
+        }
+        .down{
+            position: absolute;
+            top: 320px;
+            left: 282px;
+            width: 100px;
+            height: 20px;
+            /*background-color: red;*/
+            font-size: 10px;
+            line-height: 20px;
+            color: white;
+        }
+        .up{
+            position: absolute;
+            width: 100px;
+            height: 20px;
+            /*background-color: red;*/
+            top: 320px;
+            left: 440px;
+            font-size: 10px;
+            line-height: 20px;
+            color: white;
+        }
+        .up span ,.down span{
+            color: #00D2FF;
+        }
+
+    </style>
+</head>
+<!--<script src="js/countdown.js"></script>-->
+<body>
+<div class="content">
+    <canvas id="can" width="610" height="288">
+
+    </canvas>
+    <div class="time"></div>
+
+    <div class="down">
+        <span></span> 
+    </div>
+    <div class="up">
+        <span></span> 
+    </div>
+    <div class="current"></div>
+</div>
+</body>
+<script>
+    var min = 400;  // 下限
+    var max = 800;  // 上限
+    var tem = 600;  // 当前
+    var  cas=document.querySelector("canvas");
+    var ctx=cas.getContext("2d");
+
+
+    function getRandom(){
+        var arr=[];
+        for(var i=0;i<10;i++){
+            arr.push(Math.random()*2+0.5)
+        }
+        return arr.sort(function (a,b) {
+            return a-b;
+        })
+    }
+    var arr=[0,0.3,0.4,0.7,0.8,1.1,1.2,1.5,1.6,2]
+    function drawLine(arr){
+        setInterval(function () {
+            //清除画布
+            ctx.clearRect(0,0,cas.width,cas.height);
+            //画出几个半径不同的圆
+            ctx.beginPath();
+            ctx.arc(120,160,40,0,2*Math.PI);
+            ctx.fillStyle="#0A4E86";
+            ctx.fill();
+            ctx.beginPath();
+            ctx.arc(120,160,30,0,2*Math.PI);
+            ctx.fillStyle="#0E5A93";
+            ctx.fill();
+            ctx.beginPath();
+            ctx.arc(120,160,16,0,2*Math.PI);
+            ctx.fillStyle="#2187CB";
+            ctx.fill();
+            ctx.beginPath();
+            ctx.arc(120,160,3,0,2*Math.PI);
+            ctx.fillStyle="#32AFFE";
+            ctx.fill();
+            ctx.beginPath();
+            ctx.lineWidth=1;
+            ctx.arc(120,160,65,0,2*Math.PI);
+            ctx.stroke()
+            ctx.beginPath();
+            ctx.arc(120,160,54,0,2*Math.PI);
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.arc(120,160,50,0,2*Math.PI);
+            ctx.stroke();
+            ctx.beginPath();
+            //连坐标线
+            ctx.beginPath();
+            ctx.strokeStyle="#1773B4";
+            ctx.moveTo(120,160);
+            ctx.lineTo(220,210);
+            ctx.lineTo(600,210)
+            ctx.stroke();
+
+            //坐标尺
+            for(var m=1;m<Math.ceil(300/8)+10;m++){
+                ctx.beginPath();
+                ctx.lineWidth=1;
+                ctx.strokeStyle="#2898E2";
+                ctx.moveTo(220+m*8,210);
+                if(m==1 || m%10==0){
+
+                    ctx.lineTo(220+m*8,205);
+                }else{
+                    ctx.lineTo(220+m*8,207);
+                }
+                ctx.stroke();
+                ctx.beginPath();
+                
+                //if(m < Math.ceil(300*.382/8)){
+                  //  ctx.strokeStyle="#2898E2";
+                //}else 
+				if(m == Math.ceil(((300*.618)*(tem-min)/(max-min) +  Math.ceil(300*.382))/8) && tem <= max){
+                    ctx.strokeStyle="#2898E2";
+                    
+                }else if(m < Math.ceil(((300*.618)*(tem-min)/(max-min) +  Math.ceil(300*.382))/8) + 2 && tem <= max){
+                    ctx.strokeStyle="#33325B";
+                }else if(tem>max && m == Math.ceil(300/8) + 5){
+                    ctx.strokeStyle="#f00";
+                    
+                }else{
+                    ctx.strokeStyle="#33325B";
+                }
+                ctx.moveTo(220+m*8,200);
+                ctx.lineTo(220+m*8,180)
+                ctx.lineWidth=4;
+                ctx.stroke();
+                
+            }
+            //记录当前的值,写字
+            ctx.beginPath();
+            ctx.font = "12px Courier New";
+            //设置字体填充颜色
+            ctx.fillStyle = "#00D2FF";
+
+            //最大值和最小值框
+            ctx.beginPath();
+            ctx.lineWidth=1;
+            ctx.strokeStyle="#2898E2"
+            ctx.moveTo(520,220);
+            ctx.lineTo(585,220);
+            ctx.lineTo(590,225);
+            ctx.lineTo(590,240);
+            ctx.lineTo(525,240);
+            ctx.lineTo(520,235);
+            ctx.closePath();
+            ctx.stroke();
+            //从坐标点(cirPoint-22, 110)开始绘制文字
+            ctx.fillText("上限值:"+max, 522, 235);
+            var x = Math.ceil(300*.382) + 220;
+            ctx.beginPath();
+            ctx.moveTo(x,220);
+            ctx.lineTo(x-65,220);
+            ctx.lineTo(x-70,225);
+            ctx.lineTo(x-70,240);
+            ctx.lineTo(x-5,240);
+            ctx.lineTo(x,235);
+            ctx.closePath();
+            ctx.stroke();
+            ctx.fillText("下限值:"+min, x-68, 235);
+
+            //加粗边框
+            ctx.beginPath();
+            ctx.moveTo(x-10,220);
+            ctx.lineTo(x,220);
+            ctx.lineTo(x,230);
+            ctx.lineWidth=2;
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.moveTo(530,220);
+            ctx.lineTo(520,220);
+            ctx.lineTo(520,230);
+            ctx.stroke()
+
+            //当前值
+            ctx.beginPath();
+            //坐标点从220开始,每个占8,传输过来的定义为tem,圆心即为(tem-500)/5*8+220+20*8;
+            
+            var cirPoint;
+            if(tem>max){
+                cirPoint = 217+347;
+            } else if(tem<min){
+                cirPoint = 228;
+            } else {
+                cirPoint= Math.ceil(((300*.618)*(tem-min)/(max-min) + Math.ceil(300*.382) + 220));
+            }
+
+            ctx.arc(cirPoint,115,40,0,2*Math.PI);
+            ctx.lineWidth=1;
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.arc(cirPoint,115,32,0,2*Math.PI);
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.arc(cirPoint,115,30,0,2*Math.PI);
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.arc(cirPoint,115,15,0,2*Math.PI);
+            ctx.fillStyle="#2185C9";
+            ctx.fill();
+            ctx.beginPath();
+            ctx.arc(cirPoint,115,4,0,2*Math.PI);
+            ctx.fillStyle="#32AFFE";
+            ctx.fill();
+            ctx.font = "14px Courier New";
+            //从坐标点(cirPoint-22, 110)开始绘制文字
+            ctx.fillText("当前值:", cirPoint-22, 110);
+
+            
+
+
+            ctx.beginPath();
+            ctx.font = "16px Courier New";
+            ctx.fillStyle="#fff";
+            ctx.fillText(tem+"°C", cirPoint-22, 130);
+            ctx.beginPath();
+            ctx.moveTo(cirPoint-10,156);
+            ctx.lineTo(cirPoint+10,156);
+            ctx.lineTo(cirPoint,165);
+            ctx.fillStyle="#32AFFE"
+            ctx.fill();
+            //最外层的边框
+            for(var k=0;k<arr.length;k++){
+                arr[k]+=0.005;
+            }
+            var j=0;
+            for(var i=0;i<arr.length/2;i++){
+                ctx.beginPath();
+                ctx.arc(120,160,68,arr[j]*Math.PI,arr[j+1]*Math.PI);
+                ctx.lineWidth=3;
+                j++;
+                if(j%2!==0){
+                    j++;
+                }
+                ctx.strokeStyle="#32AFFE";
+                ctx.stroke();
+
+                ctx.beginPath();
+                ctx.arc(cirPoint,115,43,arr[j]*Math.PI,arr[j+1]*Math.PI);
+                ctx.stroke()
+            };
+            //内部表盘指针
+            ctx.strokeStyle="#2692D9"
+            for(var i=0; i<24; i++){
+                ctx.save();
+                ctx.translate(120,160);
+                ctx.rotate(15*i*Math.PI/180);
+                ctx.lineWidth = 1;
+                ctx.beginPath();
+                ctx.moveTo(0,-50);
+//        ctx.lineTo(0,-70);
+                if(i%2==0){
+                    ctx.lineWidth = 2;
+//            ctx.moveTo(0,-80);
+                    ctx.lineTo(0,-45);
+                }else{
+                    ctx.lineTo(0,-47);
+                }
+
+                ctx.stroke();
+                ctx.restore();
+            }
+        },20)
+    }
+    drawLine(arr);
+    //设置倒计时
+    //timer可以接收后台传过来的数据
+    var timer=80;
+    document.querySelector(".time").innerHTML=timer+"s"
+    var t=setInterval(function () {
+        timer--;
+        document.querySelector(".time").innerHTML=timer+"s"
+        if(timer==0){
+            clearInterval(t);
+            document.querySelector(".time").innerHTML=""
+        }
+    },1000)
+</script>
+</html>
