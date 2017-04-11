@@ -48,8 +48,11 @@ $(function(){
 	                    "nickname": "缘由天定娃娃",
 	                    "sex": "1",
 	                    "lvl": "57",
-	                    "live_id": null,
-	                    "status": "0"
+	                    "live_id": "10006391491804091",
+	                    "status": "1",
+						"follow_status": "0",
+						"live_key": "hblI2t",
+	                    "live_url": "rtmp://video.langlive.com/live/10006391491804091"
 	                },
 	                {
 	                    "pfid": "1024124",
@@ -58,7 +61,8 @@ $(function(){
 	                    "sex": "1",
 	                    "lvl": "2",
 	                    "live_id": null,
-	                    "status": "0"
+	                    "status": "0",
+						"follow_status": "0"
 	                },
 	                {
 	                    "pfid": "1000037",
@@ -67,7 +71,8 @@ $(function(){
 	                    "sex": "1",
 	                    "lvl": "186",
 	                    "live_id": null,
-	                    "status": "2"
+	                    "status": "2",
+						"follow_status": "0"
 	                },
 	                {
 	                    "pfid": "1000039",
@@ -76,7 +81,8 @@ $(function(){
 	                    "sex": "2",
 	                    "lvl": "163",
 	                    "live_id": null,
-	                    "status": "0"
+	                    "status": "0",
+						"follow_status": "0"
 	                }
 	            ],
 	            "2": [
@@ -89,7 +95,6 @@ $(function(){
 	                    "live_id": "10006391491804091",
 	                    "status": "1",
 	                    "live_key": "hblI2t",
-	                    "stream_type": 0,
 	                    "live_url": "rtmp://video.langlive.com/live/10006391491804091"
 	                }
 	            ],
@@ -98,22 +103,65 @@ $(function(){
 	        }
 	    }
 	};
-	//1.0 渲染DOM
+	//1.0 渲染DOM公用
 	function randerDom($dom,$html){
 		$dom.append($html);
 	}
-	var totaldata;
+	// var totaldata;
 	function getDate(){
 	// 	$.post(domain+'v2/html/activity/photo/list', {"HTTP_USER_TOKEN":token, "HTTP_USER_UID":pfid, "anchor_pfid":anchor_id },
 	// 	 	function(data) {
 			/*optional stuff to do after success */
 			// if(data.ret_code=="0"){
-				totaldata=data.data.all_anchor_info;
-				console.log(totaldata);
+				var totaldata=data.data.all_anchor_info;
+				sortData(totaldata);
+				// console.log(totaldata);
 			// }
 		// });
 	}
 	getDate();
+	//1.1 序列化data
+	function sortData(data){
+		var arrdata=[
+			{
+				lists:data[4]
+			},
+			{
+				lists:data[3]
+			},
+			{
+				lists:data[2]
+			},
+			{
+				lists:data[1]
+			}
+		];
+		console.log(arrdata);
+		for(var i=0,leng=arrdata.length;i<leng;i++){
+			// totallist 青铜-钻石的主播列表信息
+			var totallist=arrdata[i].lists;
+			// 是否有主播列表信息
+			var totalinum=totallist.length;
+			if(totalinum!=0){
+				// 是否正在直播
+				var living=totallist.live_id;
+				for(var j=0;j<totalinum;j++){
+					if(living!=null){
+						console.log("正在直播");
+					}else{
+						console.log("不在直播");
+					}
+				}
+				// console.log("有");
+			}else{
+				console.log("wu");
+			}
+		}
+	}
+	//1.2 创建DOM
+	function createDom(totallist,totalinum){
+		console.log(totallist,totalinum);
+	}
 	// 2 活动细则
 	$(".detial-btn").click(function(e){
 		event.stopPropagation();
