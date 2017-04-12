@@ -7,12 +7,10 @@
 
 'use strict';
 //0 上传，选择文件后客户端调用该方法返回URL
+var loadingSrc;
 function langApp2Web_camerartn(imgUrl) {
+	loadingSrc=imgUrl;
    $("img[data-src='imgSrc']").attr('src', imgUrl).removeAttr("data-src");
-}
-//0.1 获得客户端返回的URL
-function getImgSrc(url){
-	return url;
 }
 $(function(){
 	//0 没有收到相框礼物
@@ -256,37 +254,33 @@ $(function(){
 		        ]
 		    }
 		};
-	var indexData;
 	//1、获取数据
 	function getDate(){
 	// 	$.post(domain+'v2/html/activity/photo/list', {"HTTP_USER_TOKEN":token, "HTTP_USER_UID":pfid, "anchor_pfid":anchor_id },
 	// 	 	function(data) {
 			/*optional stuff to do after success */
 			// if(data.ret_code=="0"){
-				indexData=data.data;
-				// console.log(indexData);
+				var Data=data.data;
+				//pfid 后端注入， 用于判断进入该页面的是主播还是观众
+				// var pfid=1000037;//不是主播
+				var pfid=1000002;
+				creatDom(Data,pfid);
+				console.log(Data);
 			// }
 		// });
 	}
 	//1、0 调用
 	getDate();
 	//1.2 根据数据渲染DOM
-	// 4种相框对应元素的的class
-	// 钻石：diamond
-	// 黄金：gold
-	// 白银：silver
-	// 青铜：bronze
-	var anchorlists;
-	//观众ID 用于判断进入该页面的是主播还是观众
-	// var pfid=1000037;//不是主播
-	var pfid=1000002;
-	function creatDom(){
+	function creatDom(indexData,pfid){
+		// 是否需要先清空？
+		$(".main-me").empty();
 		// 主播信息
 		var anchor=indexData.anchor_info;
 		// anchorid主播ID :1000002，
 		var anchorid=anchor.pfid;
 		// anchorlists  9中相框礼物的信息列表
-		anchorlists=indexData.photo_collection_list;
+		var anchorlists=indexData.photo_collection_list;
 		// console.log(anchorlists);
 		//1 渲染当前主播
 		var str="";
@@ -296,6 +290,8 @@ $(function(){
 		randerDom($(".main-me"),str);
 		//2 渲染所有相框礼物
 		for (var i=0,leng=anchorlists.length;i<leng;i++) {
+			// 是否需要先清空？
+			$(".list-one"+i).empty();
 			var str_html="";
 			// anchorindex对应每个相框礼物
 			var anchorindex=anchorlists[i];
@@ -398,11 +394,9 @@ $(function(){
 			randerDom($(".list-one"+i),str_html);
 		};		
 	};
-	creatDom();
+	// creatDom();
 	//1.3 每隔1分钟更新一次
 	// setInterval(getDate, 6*1000);
-	
-
 	function randerDom($dom,$html){
 		$dom.append($html);
 	}
@@ -486,6 +480,8 @@ $(function(){
 		// isTrue 已经上传照片并且审核通过
 		var isTrue=$(this).find('.inner-box img').attr("data-got");
 		if(isTrue){
+			// scrollTop 记录当前滚动条的的位置以备恢复位置
+			var scrollTop=$(document).scrollTop();
 			var bigSrc=$(this).find('.inner-box img').attr("src");
 			var maxwidth=window.screen.width+"px";
 			var maxheight=window.screen.height+"px";
@@ -503,57 +499,83 @@ $(function(){
 			$(".big-img").on('click',function(event) {
 				event.preventDefault();
 				event.stopPropagation();
-				// 清空内部内容
-				$(".big-img").empty();
+				// 清空内容并隐藏
+				$(this).empty().hide();
 				$(".content").show();
-				$("this").hide();
+				// 返回到之前的锚点位置
+				$(document).scrollTop(scrollTop);
 			});
 		}
 		// console.log(isTrue);
 	});
 	// 4、上传照片遮罩层
-	// function langApp2Web_camerartn(imgUrl) {
-	//    $("img[data-src='imgSrc']").attr('src', imgUrl).removeAttr("data-src");
-	// }
 	// 要根据后台的数据限制每日上传的次数
 	$(".open-upload").on('click',function(event) {
 		event.stopPropagation();
 		event.preventDefault();
-		// 	$.post(domain+'v2/html/activity/photo/upload_photo ', {"photo_url":token, "prod_id":pfid},
-		// 	 	function(data) {
-				/*optional stuff to do after success */
-				// if(data.ret_code=="0"){
-					// indexData=data.data;
-					// console.log(indexData);
-				// }
-			// });
 		$(".upload").show();
 		var thisID=$(this).attr("data-anchorid");
 		console.log(thisID);
+		// 模拟的数据，最终是不需要的
+		var DATA={
+			"ret_code": "0",
+		    "ret_msg": "ok",
+			"data":{
+				"status":1 //0-审核已经通过，今日不能再上传，1-上传成功
+			}
+		}
+		// 请求回来的数据
+		var imgdata;
 		// 5 、点击选择图片会调用客户端的方法
 		$(".upload-btn").click(function(event){
 			event.stopPropagation();
 			event.preventDefault();
+			// 创建一个img append upload-inner
+			var $loadimg="<img data-src='imgSrc' src='' alt=''>";
+			// 清空并隐藏
+			$(".upload-inner").empty().append($loadimg);
+			// 下面2行是客户端调用，自动返回的src，这里模拟，正事环境需要去掉
+			var imgUrl="/html/magic/images/test01.jpg";
+			langApp2Web_camerartn(imgUrl);
 			//调用客户端的方法，并返回img的URL
 			// if(isiOS==true){
-   //              window.webkit.messageHandlers.langWeb2App_camera.postMessage({body:'{"needupload":"1","cropImg":"0"}'});
-   //          }else{
-   //              javascriptinterface.langWeb2App_camera("1","0");
-   //          }
-			alert("请选择图片");
+            //     window.webkit.messageHandlers.langWeb2App_camera.postMessage({body:'{"needupload":"1","cropImg":"0"}'});
+            // }else{
+            //     javascriptinterface.langWeb2App_camera("1","0");
+            // }
+			// alert("请选择图片");
 		});
 		// 6、点击确认会把客户端返回的img的url返回给后端
 		$(".upload-agree").click(function(event){
 			event.stopPropagation();
 			event.preventDefault();
-			var $uptips=$("<p>照片正在审核中</p>");
-			$(".upload-inner").html($uptips);
-			alert("正在上传ing");
+			// 请求数据，根据数据判断今日是否已经上传或者更换过照片
+			if(loadingSrc&&thisID){
+				sendDate(loadingSrc,thisID);
+			}
+			if(imgdata.status==0){
+				alert("今日上傳次數已達上限！");
+			}else{
+				alert("上傳成功！");
+				// 上传成功之后需要重新渲染页面
+				getDate();
+			}
+			// console.log(imgdata,loadingSrc,thisID);
 		});
+		//6.0 图片地址发送给后端，返回是否今日是否可以再次上传或者更换
+		function sendDate(url,id){
+				// $.post(domain+'v2/html/activity/photo/upload_photo ', {"photo_url":loadingSrc, "prod_id":thisID},
+				// 	 	function(data) {
+						/*optional stuff to do after success */
+						// if(data.ret_code=="0"){
+							// imgdata=data.data;
+							imgdata=DATA.data;
+						// }
+				// });
+		}
 	});
 	$(".upload-close").click(function(event){
 		event.stopPropagation();
 		$(".upload").hide();
 	});
 })
-
