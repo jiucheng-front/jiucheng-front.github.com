@@ -18,6 +18,11 @@
     margin: 0 auto;
     overflow: hidden;
 }
+.total-lists ul p{
+    text-align: center;
+    color: #fff;
+    margin-top: .26rem;
+}
 .total-lists ul li{
     float: left;
     width: 2.4rem;
@@ -46,6 +51,7 @@
 .had-got img{
     display: block;
     width: 100%;
+    border-radius: 50%;
 }
 .had-got span{
     display: block;
