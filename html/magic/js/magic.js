@@ -272,8 +272,8 @@ $(function(){
 				// if(data.ret_code=="0"){
 					var Data=data.data;
 					//pfid 后端注入， 用于判断进入该页面的是主播还是观众，显示不同样式
-					var pfid=1000037;//观众ID,
-					// var pfid=1000002;// 主播ID 
+					// var pfid=1000037;//观众ID,
+					var pfid=1000002;// 主播ID 
 					// console.log(Data,pfid);
 					creatDom(Data,pfid);
 				// }else{
