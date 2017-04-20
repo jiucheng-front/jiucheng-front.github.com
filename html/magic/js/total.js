@@ -2,7 +2,7 @@
 * @Author: wangjianfei
 * @Date:   2017-04-10 14:07:52
 * @Last Modified by:   wangjianfei
-* @Last Modified time: 2017-04-13 19:16:30
+* @Last Modified time: 2017-04-20 18:03:59
 */
 
 'use strict';
@@ -37,76 +37,1012 @@ $(function(){
 	var isNotAjax=true;
 	if(isNotAjax){
 		var data={
-			"ret_code": "0",
-			"ret_msg": "ok",
-			"data": {
-				"all_anchor_info": {
-					"1": [
-						{
-							"pfid": "1000002",
-							"headimg": "http://playback-langlive.ufile.ucloud.com.cn/c8f137446774494db18e41839c4a788f.jpg",
-							"nickname": "缘由天定娃娃",
-							"sex": "1",
-							"lvl": "57",
-							"live_id": "12206391491804093",
-							"status": "1",
-							"follow_status": "0",
-							"live_key": "hblI2t",
-							"live_url": "rtmp://video.langlive.com/live/10006391491804091",
-							"direction":"direction"
-						},
-						{
-							"pfid": "1024124",
-							"headimg": "http://playback-langlive.ufile.ucloud.com.cn/ee45ce71acecbed01e2e19d97c8e53f109d0589b7d0652d51e276f839f92298c",
-							"nickname": "嗨",
-							"sex": "1",
-							"lvl": "2",
-							"live_id": null,
-							"status": "0",
-							"follow_status": "0"
-						},
-						{
-							"pfid": "1000037",
-							"headimg": "http://playback-langlive.ufile.ucloud.com.cn/ff33eb72fe3940bdb267098975785e7446e7b4c4eae0b64f8bd75c8ffb6b24be",
-							"nickname": "湉湉开心湉湉开心?",
-							"sex": "1",
-							"lvl": "186",
-							"live_id": null,
-							"status": "2",
-							"follow_status": "0"
-						},
-						{
-							"pfid": "1000039",
-							"headimg": "http://playback-langlive.ufile.ucloud.com.cn/25f0e2243ac9f515ed3be2fb1854c8b7db8e04b195a088962179cf5937ae25dd",
-							"nickname": "哇呀唔唔無武呃呃😂哇咔",
-							"sex": "2",
-							"lvl": "163",
-							"live_id": null,
-							"status": "0",
-							"follow_status": "0"
-						}
-					],
-					"2": [
-						{
-							"pfid": "1000639",
-							"headimg": "http://playback-langlive.ufile.ucloud.com.cn/d24e9f3e8dfc7193a969f22b528e2dc1.jpg",
-							"nickname": "老鼠爱大米",
-							"sex": "1",
-							"lvl": "33",
-							"live_id": "10006391491804091",
-							"status": "1",
-							"live_key": "hblI2t",
-							"live_url": "rtmp://video.langlive.com/live/10006391491804091",
-							"direction":"direction"
-						}
-					],
-					"3": [],
-					"4": []
-				}
+			  "ret_code": "0",
+			  "ret_msg": "ok",
+			  "data": {
+			    "all_anchor_info": {
+			      "1": [
+			        {
+			          "pfid": "1000002",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/c8f137446774494db18e41839c4a788f.jpg",
+			          "nickname": "缘由天定娃娃",
+			          "sex": "1",
+			          "lvl": "57",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1000110",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/6edcee496f8b38234f38c50ee1ea49f8bb332df142586f88d7943b6aa5419440",
+			          "nickname": "下雨天记得要带☔️或雨衣",
+			          "sex": "1",
+			          "lvl": "63",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1000018",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/3210eaaeb40dfc37a9ffe983e06158c7.jpg",
+			          "nickname": "454654",
+			          "sex": "2",
+			          "lvl": "300",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1024124",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/ee45ce71acecbed01e2e19d97c8e53f109d0589b7d0652d51e276f839f92298c",
+			          "nickname": "嗨",
+			          "sex": "1",
+			          "lvl": "8",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1000783",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/851c5a81889f306d82b092ce4b4bf8f91c63bec96c34e23f5ac965380875523a",
+			          "nickname": "DFGHHuYTFReE",
+			          "sex": "1",
+			          "lvl": "19",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1000020",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/1b21ec48a867305f952278aea3c69d55.jpg",
+			          "nickname": "最長，更長，無敵長的帳號",
+			          "sex": "1",
+			          "lvl": "300",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1000037",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/ff33eb72fe3940bdb267098975785e7446e7b4c4eae0b64f8bd75c8ffb6b24be",
+			          "nickname": "湉湉开心湉湉开心?",
+			          "sex": "1",
+			          "lvl": "186",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1000041",
+			          "headimg": "http://playback-langlive.ufile.ucloud.cn/ce533fc1f9c0102ff649642dc989563f.jpg",
+			          "nickname": "哈哈哈哈哈哈哈哈哈哈哈哈",
+			          "sex": "1",
+			          "lvl": "146",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1001085",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/f4139b7bc5102e6b7d660829ac2d98856bf114581f663d725e41c64eaf08ff49",
+			          "nickname": "方法",
+			          "sex": "1",
+			          "lvl": "83",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1000046",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/fd4b38889393116d8f98418be5c720fb.jpg",
+			          "nickname": "kkk",
+			          "sex": "1",
+			          "lvl": "110",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1023488",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/2554f9d57c114df07a2bce6e146f41cf.jpg",
+			          "nickname": "dean",
+			          "sex": "1",
+			          "lvl": "97",
+			          "live_id": null,
+			          "status": "2"
+			        },
+			        {
+			          "pfid": "1001085",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/f4139b7bc5102e6b7d660829ac2d98856bf114581f663d725e41c64eaf08ff49",
+			          "nickname": "方法",
+			          "sex": "1",
+			          "lvl": "83",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1000046",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/fd4b38889393116d8f98418be5c720fb.jpg",
+			          "nickname": "kkk",
+			          "sex": "1",
+			          "lvl": "110",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1023488",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/2554f9d57c114df07a2bce6e146f41cf.jpg",
+			          "nickname": "dean",
+			          "sex": "1",
+			          "lvl": "97",
+			          "live_id": null,
+			          "status": "2"
+			        },
+			        {
+			          "pfid": "1001085",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/f4139b7bc5102e6b7d660829ac2d98856bf114581f663d725e41c64eaf08ff49",
+			          "nickname": "方法",
+			          "sex": "1",
+			          "lvl": "83",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1000046",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/fd4b38889393116d8f98418be5c720fb.jpg",
+			          "nickname": "kkk",
+			          "sex": "1",
+			          "lvl": "110",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1023488",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/2554f9d57c114df07a2bce6e146f41cf.jpg",
+			          "nickname": "dean",
+			          "sex": "1",
+			          "lvl": "97",
+			          "live_id": null,
+			          "status": "2"
+			        },
+			        {
+			          "pfid": "1001085",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/f4139b7bc5102e6b7d660829ac2d98856bf114581f663d725e41c64eaf08ff49",
+			          "nickname": "方法",
+			          "sex": "1",
+			          "lvl": "83",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1000046",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/fd4b38889393116d8f98418be5c720fb.jpg",
+			          "nickname": "kkk",
+			          "sex": "1",
+			          "lvl": "110",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1023488",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/2554f9d57c114df07a2bce6e146f41cf.jpg",
+			          "nickname": "dean",
+			          "sex": "1",
+			          "lvl": "97",
+			          "live_id": null,
+			          "status": "2"
+			        },
+			        {
+			          "pfid": "1001085",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/f4139b7bc5102e6b7d660829ac2d98856bf114581f663d725e41c64eaf08ff49",
+			          "nickname": "方法",
+			          "sex": "1",
+			          "lvl": "83",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1000046",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/fd4b38889393116d8f98418be5c720fb.jpg",
+			          "nickname": "kkk",
+			          "sex": "1",
+			          "lvl": "110",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1023488",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/2554f9d57c114df07a2bce6e146f41cf.jpg",
+			          "nickname": "dean",
+			          "sex": "1",
+			          "lvl": "97",
+			          "live_id": null,
+			          "status": "2"
+			        },
+			        {
+			          "pfid": "1001085",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/f4139b7bc5102e6b7d660829ac2d98856bf114581f663d725e41c64eaf08ff49",
+			          "nickname": "方法",
+			          "sex": "1",
+			          "lvl": "83",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1000046",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/fd4b38889393116d8f98418be5c720fb.jpg",
+			          "nickname": "kkk",
+			          "sex": "1",
+			          "lvl": "110",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1023488",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/2554f9d57c114df07a2bce6e146f41cf.jpg",
+			          "nickname": "dean",
+			          "sex": "1",
+			          "lvl": "97",
+			          "live_id": null,
+			          "status": "2"
+			        },
+			        {
+			          "pfid": "1001085",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/f4139b7bc5102e6b7d660829ac2d98856bf114581f663d725e41c64eaf08ff49",
+			          "nickname": "方法",
+			          "sex": "1",
+			          "lvl": "83",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1000046",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/fd4b38889393116d8f98418be5c720fb.jpg",
+			          "nickname": "kkk",
+			          "sex": "1",
+			          "lvl": "110",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1023488",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/2554f9d57c114df07a2bce6e146f41cf.jpg",
+			          "nickname": "dean",
+			          "sex": "1",
+			          "lvl": "97",
+			          "live_id": null,
+			          "status": "2"
+			        },
+			        {
+			          "pfid": "1001085",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/f4139b7bc5102e6b7d660829ac2d98856bf114581f663d725e41c64eaf08ff49",
+			          "nickname": "方法",
+			          "sex": "1",
+			          "lvl": "83",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1000046",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/fd4b38889393116d8f98418be5c720fb.jpg",
+			          "nickname": "kkk",
+			          "sex": "1",
+			          "lvl": "110",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1023488",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/2554f9d57c114df07a2bce6e146f41cf.jpg",
+			          "nickname": "dean",
+			          "sex": "1",
+			          "lvl": "97",
+			          "live_id": null,
+			          "status": "2"
+			        },
+			        {
+			          "pfid": "1001085",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/f4139b7bc5102e6b7d660829ac2d98856bf114581f663d725e41c64eaf08ff49",
+			          "nickname": "方法",
+			          "sex": "1",
+			          "lvl": "83",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1000046",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/fd4b38889393116d8f98418be5c720fb.jpg",
+			          "nickname": "kkk",
+			          "sex": "1",
+			          "lvl": "110",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1023488",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/2554f9d57c114df07a2bce6e146f41cf.jpg",
+			          "nickname": "dean",
+			          "sex": "1",
+			          "lvl": "97",
+			          "live_id": null,
+			          "status": "2"
+			        },
+			        {
+			          "pfid": "1001085",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/f4139b7bc5102e6b7d660829ac2d98856bf114581f663d725e41c64eaf08ff49",
+			          "nickname": "方法",
+			          "sex": "1",
+			          "lvl": "83",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1000046",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/fd4b38889393116d8f98418be5c720fb.jpg",
+			          "nickname": "kkk",
+			          "sex": "1",
+			          "lvl": "110",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1023488",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/2554f9d57c114df07a2bce6e146f41cf.jpg",
+			          "nickname": "dean",
+			          "sex": "1",
+			          "lvl": "97",
+			          "live_id": null,
+			          "status": "2"
+			        }
+			      ],
+			      "2": [
+			        {
+			          "pfid": "1000952",
+			          "headimg": "http://playback-langlive.ufile.ucloud.cn/cef09a0f6976a3c5d2614c3cbafd4e3d.jpg",
+			          "nickname": "deancc",
+			          "sex": "1",
+			          "lvl": "99",
+			          "live_id": "10009521492159608",
+			          "status": "1",
+			          "live_key": "bKSmtu",
+			          "stream_type": 0,
+			          "live_url": "rtmp://video.langlive.com/live/10009521492159608"
+			        },
+			        {
+			          "pfid": "1000054",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/a8400b08327ffe107fb33596ddb0c02c.jpg",
+			          "nickname": "(*๓´╰╯`๓)♡88",
+			          "sex": "2",
+			          "lvl": "79",
+			          "live_id": "10000541492422402",
+			          "status": "1",
+			          "live_key": "T8ponm",
+			          "stream_type": 0,
+			          "live_url": "rtmp://video.langlive.com/live/10000541492422402"
+			        },
+			        {
+			          "pfid": "1000041",
+			          "headimg": "http://playback-langlive.ufile.ucloud.cn/ce533fc1f9c0102ff649642dc989563f.jpg",
+			          "nickname": "哈哈哈哈哈哈哈哈哈哈哈哈",
+			          "sex": "1",
+			          "lvl": "146",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1001085",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/f4139b7bc5102e6b7d660829ac2d98856bf114581f663d725e41c64eaf08ff49",
+			          "nickname": "方法",
+			          "sex": "1",
+			          "lvl": "83",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1000046",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/fd4b38889393116d8f98418be5c720fb.jpg",
+			          "nickname": "kkk",
+			          "sex": "1",
+			          "lvl": "110",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1023488",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/2554f9d57c114df07a2bce6e146f41cf.jpg",
+			          "nickname": "dean",
+			          "sex": "1",
+			          "lvl": "97",
+			          "live_id": null,
+			          "status": "2"
+			        }
+			      ],
+			      "3": [
+			        {
+			          "pfid": "1000639",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/d24e9f3e8dfc7193a969f22b528e2dc1.jpg",
+			          "nickname": "33444555",
+			          "sex": "1",
+			          "lvl": "39",
+			          "live_id": "10006391492137134",
+			          "status": "1",
+			          "live_key": "YsLDtC",
+			          "stream_type": 0,
+			          "live_url": "rtmp://video.langlive.com/live/10006391492137134"
+			        },
+			        {
+			          "pfid": "1000041",
+			          "headimg": "http://playback-langlive.ufile.ucloud.cn/ce533fc1f9c0102ff649642dc989563f.jpg",
+			          "nickname": "哈哈哈哈哈哈哈哈哈哈哈哈",
+			          "sex": "1",
+			          "lvl": "146",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1001085",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/f4139b7bc5102e6b7d660829ac2d98856bf114581f663d725e41c64eaf08ff49",
+			          "nickname": "方法",
+			          "sex": "1",
+			          "lvl": "83",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1000046",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/fd4b38889393116d8f98418be5c720fb.jpg",
+			          "nickname": "kkk",
+			          "sex": "1",
+			          "lvl": "110",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1023488",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/2554f9d57c114df07a2bce6e146f41cf.jpg",
+			          "nickname": "dean",
+			          "sex": "1",
+			          "lvl": "97",
+			          "live_id": null,
+			          "status": "2"
+			        },
+			        {
+			          "pfid": "1000041",
+			          "headimg": "http://playback-langlive.ufile.ucloud.cn/ce533fc1f9c0102ff649642dc989563f.jpg",
+			          "nickname": "哈哈哈哈哈哈哈哈哈哈哈哈",
+			          "sex": "1",
+			          "lvl": "146",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1001085",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/f4139b7bc5102e6b7d660829ac2d98856bf114581f663d725e41c64eaf08ff49",
+			          "nickname": "方法",
+			          "sex": "1",
+			          "lvl": "83",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1000046",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/fd4b38889393116d8f98418be5c720fb.jpg",
+			          "nickname": "kkk",
+			          "sex": "1",
+			          "lvl": "110",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1023488",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/2554f9d57c114df07a2bce6e146f41cf.jpg",
+			          "nickname": "dean",
+			          "sex": "1",
+			          "lvl": "97",
+			          "live_id": null,
+			          "status": "2"
+			        },
+			        {
+			          "pfid": "1000041",
+			          "headimg": "http://playback-langlive.ufile.ucloud.cn/ce533fc1f9c0102ff649642dc989563f.jpg",
+			          "nickname": "哈哈哈哈哈哈哈哈哈哈哈哈",
+			          "sex": "1",
+			          "lvl": "146",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1001085",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/f4139b7bc5102e6b7d660829ac2d98856bf114581f663d725e41c64eaf08ff49",
+			          "nickname": "方法",
+			          "sex": "1",
+			          "lvl": "83",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1000046",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/fd4b38889393116d8f98418be5c720fb.jpg",
+			          "nickname": "kkk",
+			          "sex": "1",
+			          "lvl": "110",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1023488",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/2554f9d57c114df07a2bce6e146f41cf.jpg",
+			          "nickname": "dean",
+			          "sex": "1",
+			          "lvl": "97",
+			          "live_id": null,
+			          "status": "2"
+			        },
+			        {
+			          "pfid": "1000041",
+			          "headimg": "http://playback-langlive.ufile.ucloud.cn/ce533fc1f9c0102ff649642dc989563f.jpg",
+			          "nickname": "哈哈哈哈哈哈哈哈哈哈哈哈",
+			          "sex": "1",
+			          "lvl": "146",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1001085",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/f4139b7bc5102e6b7d660829ac2d98856bf114581f663d725e41c64eaf08ff49",
+			          "nickname": "方法",
+			          "sex": "1",
+			          "lvl": "83",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1000046",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/fd4b38889393116d8f98418be5c720fb.jpg",
+			          "nickname": "kkk",
+			          "sex": "1",
+			          "lvl": "110",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1023488",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/2554f9d57c114df07a2bce6e146f41cf.jpg",
+			          "nickname": "dean",
+			          "sex": "1",
+			          "lvl": "97",
+			          "live_id": null,
+			          "status": "2"
+			        },
+			        {
+			          "pfid": "1000041",
+			          "headimg": "http://playback-langlive.ufile.ucloud.cn/ce533fc1f9c0102ff649642dc989563f.jpg",
+			          "nickname": "哈哈哈哈哈哈哈哈哈哈哈哈",
+			          "sex": "1",
+			          "lvl": "146",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1001085",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/f4139b7bc5102e6b7d660829ac2d98856bf114581f663d725e41c64eaf08ff49",
+			          "nickname": "方法",
+			          "sex": "1",
+			          "lvl": "83",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1000046",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/fd4b38889393116d8f98418be5c720fb.jpg",
+			          "nickname": "kkk",
+			          "sex": "1",
+			          "lvl": "110",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1023488",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/2554f9d57c114df07a2bce6e146f41cf.jpg",
+			          "nickname": "dean",
+			          "sex": "1",
+			          "lvl": "97",
+			          "live_id": null,
+			          "status": "2"
+			        },
+			        {
+			          "pfid": "1000041",
+			          "headimg": "http://playback-langlive.ufile.ucloud.cn/ce533fc1f9c0102ff649642dc989563f.jpg",
+			          "nickname": "哈哈哈哈哈哈哈哈哈哈哈哈",
+			          "sex": "1",
+			          "lvl": "146",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1001085",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/f4139b7bc5102e6b7d660829ac2d98856bf114581f663d725e41c64eaf08ff49",
+			          "nickname": "方法",
+			          "sex": "1",
+			          "lvl": "83",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1000046",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/fd4b38889393116d8f98418be5c720fb.jpg",
+			          "nickname": "kkk",
+			          "sex": "1",
+			          "lvl": "110",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1023488",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/2554f9d57c114df07a2bce6e146f41cf.jpg",
+			          "nickname": "dean",
+			          "sex": "1",
+			          "lvl": "97",
+			          "live_id": null,
+			          "status": "2"
+			        },
+			        {
+			          "pfid": "1000041",
+			          "headimg": "http://playback-langlive.ufile.ucloud.cn/ce533fc1f9c0102ff649642dc989563f.jpg",
+			          "nickname": "哈哈哈哈哈哈哈哈哈哈哈哈",
+			          "sex": "1",
+			          "lvl": "146",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1001085",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/f4139b7bc5102e6b7d660829ac2d98856bf114581f663d725e41c64eaf08ff49",
+			          "nickname": "方法",
+			          "sex": "1",
+			          "lvl": "83",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1000046",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/fd4b38889393116d8f98418be5c720fb.jpg",
+			          "nickname": "kkk",
+			          "sex": "1",
+			          "lvl": "110",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1023488",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/2554f9d57c114df07a2bce6e146f41cf.jpg",
+			          "nickname": "dean",
+			          "sex": "1",
+			          "lvl": "97",
+			          "live_id": null,
+			          "status": "2"
+			        }
+			      ],
+			      "4": [
+			        {
+			          "pfid": "1023488",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/2554f9d57c114df07a2bce6e146f41cf.jpg",
+			          "nickname": "dean",
+			          "sex": "1",
+			          "lvl": "97",
+			          "live_id": null,
+			          "status": "2"
+			        },
+			        {
+			          "pfid": "1000110",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/6edcee496f8b38234f38c50ee1ea49f8bb332df142586f88d7943b6aa5419440",
+			          "nickname": "下雨天记得要带☔️或雨衣",
+			          "sex": "1",
+			          "lvl": "63",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1000018",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/3210eaaeb40dfc37a9ffe983e06158c7.jpg",
+			          "nickname": "454654",
+			          "sex": "2",
+			          "lvl": "300",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1024124",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/ee45ce71acecbed01e2e19d97c8e53f109d0589b7d0652d51e276f839f92298c",
+			          "nickname": "嗨",
+			          "sex": "1",
+			          "lvl": "8",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1000783",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/851c5a81889f306d82b092ce4b4bf8f91c63bec96c34e23f5ac965380875523a",
+			          "nickname": "DFGHHuYTFReE",
+			          "sex": "1",
+			          "lvl": "19",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1000020",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/1b21ec48a867305f952278aea3c69d55.jpg",
+			          "nickname": "最長，更長，無敵長的帳號",
+			          "sex": "1",
+			          "lvl": "300",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1000110",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/6edcee496f8b38234f38c50ee1ea49f8bb332df142586f88d7943b6aa5419440",
+			          "nickname": "下雨天记得要带☔️或雨衣",
+			          "sex": "1",
+			          "lvl": "63",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1000018",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/3210eaaeb40dfc37a9ffe983e06158c7.jpg",
+			          "nickname": "454654",
+			          "sex": "2",
+			          "lvl": "300",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1024124",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/ee45ce71acecbed01e2e19d97c8e53f109d0589b7d0652d51e276f839f92298c",
+			          "nickname": "嗨",
+			          "sex": "1",
+			          "lvl": "8",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1000783",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/851c5a81889f306d82b092ce4b4bf8f91c63bec96c34e23f5ac965380875523a",
+			          "nickname": "DFGHHuYTFReE",
+			          "sex": "1",
+			          "lvl": "19",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1000020",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/1b21ec48a867305f952278aea3c69d55.jpg",
+			          "nickname": "最長，更長，無敵長的帳號",
+			          "sex": "1",
+			          "lvl": "300",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1000110",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/6edcee496f8b38234f38c50ee1ea49f8bb332df142586f88d7943b6aa5419440",
+			          "nickname": "下雨天记得要带☔️或雨衣",
+			          "sex": "1",
+			          "lvl": "63",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1000018",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/3210eaaeb40dfc37a9ffe983e06158c7.jpg",
+			          "nickname": "454654",
+			          "sex": "2",
+			          "lvl": "300",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1024124",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/ee45ce71acecbed01e2e19d97c8e53f109d0589b7d0652d51e276f839f92298c",
+			          "nickname": "嗨",
+			          "sex": "1",
+			          "lvl": "8",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1000783",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/851c5a81889f306d82b092ce4b4bf8f91c63bec96c34e23f5ac965380875523a",
+			          "nickname": "DFGHHuYTFReE",
+			          "sex": "1",
+			          "lvl": "19",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1000020",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/1b21ec48a867305f952278aea3c69d55.jpg",
+			          "nickname": "最長，更長，無敵長的帳號",
+			          "sex": "1",
+			          "lvl": "300",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1000110",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/6edcee496f8b38234f38c50ee1ea49f8bb332df142586f88d7943b6aa5419440",
+			          "nickname": "下雨天记得要带☔️或雨衣",
+			          "sex": "1",
+			          "lvl": "63",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1000018",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/3210eaaeb40dfc37a9ffe983e06158c7.jpg",
+			          "nickname": "454654",
+			          "sex": "2",
+			          "lvl": "300",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1024124",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/ee45ce71acecbed01e2e19d97c8e53f109d0589b7d0652d51e276f839f92298c",
+			          "nickname": "嗨",
+			          "sex": "1",
+			          "lvl": "8",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1000783",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/851c5a81889f306d82b092ce4b4bf8f91c63bec96c34e23f5ac965380875523a",
+			          "nickname": "DFGHHuYTFReE",
+			          "sex": "1",
+			          "lvl": "19",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1000020",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/1b21ec48a867305f952278aea3c69d55.jpg",
+			          "nickname": "最長，更長，無敵長的帳號",
+			          "sex": "1",
+			          "lvl": "300",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1000110",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/6edcee496f8b38234f38c50ee1ea49f8bb332df142586f88d7943b6aa5419440",
+			          "nickname": "下雨天记得要带☔️或雨衣",
+			          "sex": "1",
+			          "lvl": "63",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1000018",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/3210eaaeb40dfc37a9ffe983e06158c7.jpg",
+			          "nickname": "454654",
+			          "sex": "2",
+			          "lvl": "300",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1024124",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/ee45ce71acecbed01e2e19d97c8e53f109d0589b7d0652d51e276f839f92298c",
+			          "nickname": "嗨",
+			          "sex": "1",
+			          "lvl": "8",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1000783",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/851c5a81889f306d82b092ce4b4bf8f91c63bec96c34e23f5ac965380875523a",
+			          "nickname": "DFGHHuYTFReE",
+			          "sex": "1",
+			          "lvl": "19",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1000020",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/1b21ec48a867305f952278aea3c69d55.jpg",
+			          "nickname": "最長，更長，無敵長的帳號",
+			          "sex": "1",
+			          "lvl": "300",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1000110",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/6edcee496f8b38234f38c50ee1ea49f8bb332df142586f88d7943b6aa5419440",
+			          "nickname": "下雨天记得要带☔️或雨衣",
+			          "sex": "1",
+			          "lvl": "63",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1000018",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/3210eaaeb40dfc37a9ffe983e06158c7.jpg",
+			          "nickname": "454654",
+			          "sex": "2",
+			          "lvl": "300",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1024124",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/ee45ce71acecbed01e2e19d97c8e53f109d0589b7d0652d51e276f839f92298c",
+			          "nickname": "嗨",
+			          "sex": "1",
+			          "lvl": "8",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1000783",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/851c5a81889f306d82b092ce4b4bf8f91c63bec96c34e23f5ac965380875523a",
+			          "nickname": "DFGHHuYTFReE",
+			          "sex": "1",
+			          "lvl": "19",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1000020",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/1b21ec48a867305f952278aea3c69d55.jpg",
+			          "nickname": "最長，更長，無敵長的帳號",
+			          "sex": "1",
+			          "lvl": "300",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1000110",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/6edcee496f8b38234f38c50ee1ea49f8bb332df142586f88d7943b6aa5419440",
+			          "nickname": "下雨天记得要带☔️或雨衣",
+			          "sex": "1",
+			          "lvl": "63",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1000018",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/3210eaaeb40dfc37a9ffe983e06158c7.jpg",
+			          "nickname": "454654",
+			          "sex": "2",
+			          "lvl": "300",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1024124",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/ee45ce71acecbed01e2e19d97c8e53f109d0589b7d0652d51e276f839f92298c",
+			          "nickname": "嗨",
+			          "sex": "1",
+			          "lvl": "8",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1000783",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/851c5a81889f306d82b092ce4b4bf8f91c63bec96c34e23f5ac965380875523a",
+			          "nickname": "DFGHHuYTFReE",
+			          "sex": "1",
+			          "lvl": "19",
+			          "live_id": null,
+			          "status": "0"
+			        },
+			        {
+			          "pfid": "1000020",
+			          "headimg": "http://blob.ufile.ucloud.com.cn/1b21ec48a867305f952278aea3c69d55.jpg",
+			          "nickname": "最長，更長，無敵長的帳號",
+			          "sex": "1",
+			          "lvl": "300",
+			          "live_id": null,
+			          "status": "0"
+			        }
+			      ]
+			    }
+			  }
 			}
-		};
 	}
-	
 	//1.0 渲染DOM公用
 	function randerDom($dom,$html){
 		$dom.append($html);
@@ -140,6 +1076,12 @@ $(function(){
 				lists:data[1]
 			}
 		];
+		//	青铜的最后一个原本的
+		var $lastLihtml
+		// 青铜的最后一个按钮
+		// var $laslibtn="<div class='had-got'>";
+		// $laslibtn+="<img src='/html/magic/images/loadmore.png' alt='' class='load-more'></div>";
+		// $laslibtn+="<p>查看更多</p>"
 		for(var i=0,leng=arrdata.length;i<leng;i++){
 			// totallist 青铜-钻石的主播列表信息
 			var totallist=arrdata[i].lists;
@@ -173,34 +1115,57 @@ $(function(){
 				inner_html+="<p>暫無主播達到該等級，請繼續加油喔~！</p>";
 			}
 			randerDom($(".total-list"+i),inner_html);
+			// 获取4个ul下的所有li列表
+			var liLists=$(".total-list"+i).find('li');
+			//获取每个ul下li的个数
+			var liLength=liLists.length;
+			// console.log(liLists.length);
+			if(liLength>18){
+				$(".total-list"+i).find('li').eq(17).nextAll().css({
+					display:"none"
+				});
+				// 把青铜的第5个保留
+				$lastLihtml=$(".total-list"+i).find("li").eq(17).html();
+				var $laslibtn="<div class='had-got'>";
+				$laslibtn+="<img data-num="+i+" src='/html/magic/images/loadmore.png' alt='' class='load-more'></div>";
+				$laslibtn+="<p>查看更多</p>"
+				$(".total-list"+i).find("li").eq(17).empty().append($laslibtn);
+			}
 		}
-		// 调用事件
-		resetEvent();
-	}
-	//3 动态DOM 事件
-	function resetEvent(){
-		//3 、点击头像根据liveid判断是进入直播间还是个人主页
-		$(".had-got").on('click',function(event) {
+		// 查看更多绑定事件  
+		$(document).on('click', '.load-more', function(event) {
 			event.preventDefault();
 			event.stopPropagation();
-			var liveid=$(this).attr("data-liveid");
-			var direction=$(this).attr("data-direction");
-			var livekey=$(this).attr("data-livekey");
-			var liveurl=$(this).attr("data-liveurl");
-			var nickname=$(this).attr("data-nickname");
-			var pfid=$(this).attr("data-pfid");
-			// 如果正在直播
-			if(liveid!="null"){
-				// 进入直播间
-				alert("进入直播间");
-				// h5toRoom(pfid,nickname,liveid,liveurl,livekey,direction);
-			// 如果没在直播，进入个人主页	
-			}else{
-				alert("进入个人主页");
-				// h5toHomepage(pfid,nickname);
-			}
+			var indexNum=$(this).attr("data-num");
+			$(".total-list"+indexNum).find("li").eq(17).empty().append($lastLihtml).nextAll().css({
+				display:"block"
+			});
+			console.log(indexNum);
 		});
 	}
+	//3 动态DOM 事件
+	$(document).on('click', '.had-got', function(event) {
+		event.preventDefault();
+		event.stopPropagation();
+		event.preventDefault();
+		event.stopPropagation();
+		var liveid=$(this).attr("data-liveid");
+		var direction=$(this).attr("data-direction");
+		var livekey=$(this).attr("data-livekey");
+		var liveurl=$(this).attr("data-liveurl");
+		var nickname=$(this).attr("data-nickname");
+		var pfid=$(this).attr("data-pfid");
+		// 如果正在直播
+		if(liveid!="null"){
+			// 进入直播间
+			alert("进入直播间");
+			// h5toRoom(pfid,nickname,liveid,liveurl,livekey,direction);
+		// 如果没在直播，进入个人主页	
+		}else{
+			alert("进入个人主页");
+			// h5toHomepage(pfid,nickname);
+		}
+	});
 	// 4 静态DOM事件
 	// 4.1 活动细则
 	$(".detial-btn").click(function(event){
