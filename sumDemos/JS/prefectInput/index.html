@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自适应高度的输入框</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="../../jQuery/src/jquery-1.11.3.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="input-item empty" contenteditable="true" data-placeholder="请输入地址（50字以内）" data-length="50">
+
+        </div>
+    </div>
+    <script type="text/javascript">
+        // 模拟输入框的placeholder
+        $('.input-item').on('keyup',function(){
+            $(this).removeClass('empty')
+            if($(this).text() == ""){
+                $(this).addClass('empty')
+            }
+        })
+        // 模拟输入框的maxLength
+        $('.input-item').on('keyup',function(event){
+            if($(this).text().length >= $(this).attr('data-length')){
+                // console.log($(this).text().length)
+                // return false
+                var text = $(this).text().substr(0, $(this).attr('data-length'))
+                $(this).text(text)
+                console.log(text)
+                // 截取后将光标放到最后
+                var _this = $(this)[0]
+                _this.focus();
+                if($.support.msie)
+                {
+                    var range = document.selection.createRange();
+                    this.last = range;
+                    range.moveToElementText(_this);
+                    range.select();
+                    document.selection.empty(); //取消选中
+                }
+                else
+                {
+                    var range = document.createRange();
+                    range.selectNodeContents(_this);
+                    range.collapse(false);
+                    var sel = window.getSelection();
+                    sel.removeAllRanges();
+                    sel.addRange(range);
+                }
+            }
+        })
+    </script>
+</body>
+</html>
