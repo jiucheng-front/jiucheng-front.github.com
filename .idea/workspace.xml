@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e720a17a-59a8-4c62-a781-269dc2a586d7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/magic/css/total.css" afterPath="$PROJECT_DIR$/html/magic/css/total.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wjf444128852.github.com.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,8 +35,8 @@
       <file leaf-file-name="total.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html/magic/css/total.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="667">
-              <caret line="41" column="29" lean-forward="false" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
+            <state relative-caret-position="406">
+              <caret line="32" column="18" lean-forward="false" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -63,14 +63,20 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>degula</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>degulaV3</replace>
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/DEMOLIST/GAME/index.html" />
-        <option value="$PROJECT_DIR$/DEMOLIST/WEB/index.html" />
         <option value="$PROJECT_DIR$/demo02/tetris/tetris.html" />
         <option value="$PROJECT_DIR$/demo02/2048/2048.html" />
         <option value="$PROJECT_DIR$/demo02/2048/2048.css" />
@@ -120,6 +126,8 @@
         <option value="$PROJECT_DIR$/sumDemos/JS/prefectInput/index.html" />
         <option value="$PROJECT_DIR$/sumDemos/mouseove-proto/index.html" />
         <option value="$PROJECT_DIR$/html/magic/css/total.css" />
+        <option value="E:/tools/XAMPP/htdocs/html/degulaV3/index.html" />
+        <option value="E:/tools/XAMPP/htdocs/html/degulaV3/degula.html" />
       </list>
     </option>
   </component>
@@ -130,8 +138,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="561" />
-    <option name="y" value="9" />
+    <option name="x" value="265" />
+    <option name="y" value="39" />
     <option name="width" value="1940" />
     <option name="height" value="1107" />
   </component>
@@ -337,15 +345,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1463805970977</updated>
-      <workItem from="1494403072921" duration="3584000" />
+      <workItem from="1494403072921" duration="4244000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3584000" />
+    <option name="totallyTimeSpent" value="4244000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="561" y="9" width="1940" height="1107" extended-state="1" />
+    <frame x="265" y="39" width="1940" height="1107" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15592515" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -386,13 +394,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sumDemos/aboutCSS/css-compatibility/demo01.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DEMOLIST/JS/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -732,10 +733,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://E:/tools/XAMPP/htdocs/html/degulaV3/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="16" column="37" lean-forward="true" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/tools/XAMPP/htdocs/html/degulaV3/degula.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3224">
+          <caret line="114" column="31" lean-forward="false" selection-start-line="114" selection-start-column="31" selection-end-line="114" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/html/magic/css/total.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="41" column="29" lean-forward="false" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
+        <state relative-caret-position="406">
+          <caret line="32" column="18" lean-forward="false" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
           <folding />
         </state>
       </provider>
