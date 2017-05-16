@@ -29,10 +29,10 @@
 	      {
 	        "pfid": 1000004,
 	        "count": 0,
-	        "follow_status": null,
+	        "follow_status": "123131231313132",
 	        "score": 17,
 	        "promotion": 1,
-	        "live_id": null,
+	        "live_id": "123131231313132",
 	        "live_key": "",
 	        "stream_direction": 0,
 	        "live_url": "",
@@ -55,7 +55,7 @@
 	      {
 	        "pfid": 1000044,
 	        "count": 0,
-	        "follow_status": null,
+	        "follow_status": "123131231313132",
 	        "score": 13,
 	        "promotion": 1,
 	        "live_id": null,
@@ -81,7 +81,7 @@
 	      {
 	        "pfid": 1000830,
 	        "count": 0,
-	        "follow_status": null,
+	        "follow_status": "123131231313132",
 	        "score": 9,
 	        "promotion": -1,
 	        "live_id": null,
