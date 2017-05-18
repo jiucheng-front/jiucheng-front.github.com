@@ -60,7 +60,11 @@ function sortData(lists){
 }
 //1.3.01 注册一个Handlebars Helper：addOne,用来将索引+1，因为默认是从0开始的
 Handlebars.registerHelper("addOne",function(index,options){
-	return parseInt(index)+1;
+	// return parseInt(index)+1;
+	var i=index+1;
+	var num='0'+i;
+	if(i>9)	num=i;
+	return num;
 });
 
 // 1.3.06 注册helper：compare，用来比较判断不同的显示内容
