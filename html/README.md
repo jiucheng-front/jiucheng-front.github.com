@@ -1,3 +1,11 @@
+### git常用命令
++ git add .
++ git commit -m '这次提交的注释内容'
++ git pull --rebase	//push之前先pull防止有人在你之前push
++ git push 提交/如果还是不慎需要合并
++ 注意如果不慎进入合并冲突界面步骤：Insert>Esc>:wq>Enter
+
+
 ### 一、活动介绍
 + 1、my/fillInfo.html是上传照片的功能，调用客户端
 + 2、magic是相框礼物页面
@@ -7,13 +15,16 @@
 + 6、Growth新人成长活动
 + 7、degula德古拉活动
 + 8、520love：520活动
+
+
 ### 二、js介绍以及如何使用
 + 1、html/js/publicVersion.js（封装好的JS方法）
 	+ 1、h5进入个人主页
 	+ 2、h5进入直播间
 	+ 3、h5关注
 	+ 4、h5分享
-	+ 5、大部分活动页面的顶部需要的参数,具体字段名字需跟对应后台确认
+	+ 5、追踪主播
+	+ 6、大部分活动页面的顶部需要的参数,具体字段名字需跟对应后台确认
 
 ```javascript
 
@@ -86,7 +97,7 @@
 ```javascript
 	
 	//html code
-	<!-- 跳转到总榜 -->
+	//<!-- 跳转到总榜 -->
     <form action="<?php echo DOMAIN ?>v2/html/activity/magic/total.html" method="post" class="jumpTo">
         <input type="hidden" name="HTTP_USER_TOKEN" class="access_token" value="<?=$token;?>">
         <input type="hidden" name="HTTP_USER_UID" class="pfid" value="<?=$pfid;?>">
@@ -101,7 +112,7 @@
 
 ```
 
-+ 2、按钮直接跳转，原生js
++ 2、按钮直接跳转，需要用户信息拼接在url后面，如：520love
 
 ```javascript
 
