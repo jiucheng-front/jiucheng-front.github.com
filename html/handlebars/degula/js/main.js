@@ -2,31 +2,44 @@
 * @Author: wangjianfei
 * @Date:   2017-05-16 16:10:25
 * @Last Modified by:   wangjianfei
-* @Last Modified time: 2017-05-16 18:37:19
+* @Last Modified time: 2017-05-16 18:57:02
 */
 
 'use strict';
 // AJAX
-var xhrRequest=new XMLHttpRequest();
-xhrRequest.open('GET','http://wjf444128852.github.io/json-datas/degula.json');
-xhrRequest.onload=function(){
-	if(xhrRequest.status>=200&&xhrRequest.status<400){
-		var data=JSON.parse(xhrRequest.responseText);
-		// 1 定义用户列表
-		var users=data.data.users;
-		// 1.1 重新排列数据
-		sortData(users);
-		// 2 判断是否正在直播
-		var isLiving=data.data.my;
-		// console.log(data);
-	}else{
-		console.log('The server returned an error.');
+/* 
+	type:请求类型		GET或者POST，必须
+	url:请求地址		请求地址的一小段方便环境切换代码不变，必须
+	data:请求参数		必须，GET默认传:null,POST传object,如下：
+		data={
+			"HTTP_USER_TOKEN":token,
+			"HTTP_USER_UID":pfid, 
+			"anchor_pfid":anchor_id
+		}
+*/
+function Ajax(type,urlStr,data){
+	// 定义domain,方便环境切换
+	var domain='https://' + window.location.host + '/';
+	var url=domain+urlStr;
+	var xhrRequest=new XMLHttpRequest();
+	xhrRequest.open(type,url,true);
+	if(type==="POST"){
+		xhrRequest.setRequestHeader("Content-type", "application/x-www-form-urlencoded"); 
 	}
+	xhrRequest.onreadystatechange=function(){
+		if(xhrRequest.readyState==4&&xhrRequest.status==200||xhrRequest.status==304){
+			// 1、格式化返回的数据
+			var responseData=JSON.parse(xhrRequest.responseText);
+			console.log(responseData);
+			// 2、获取指定的数据列表
+			var users=responseData.data.users;
+			// 3、操作返回的数据
+			sortData(users);
+		}
+	}
+	xhrRequest.send(data);
 }
-xhrRequest.onerror=function(){
-	console.log('error!');
-}
-xhrRequest.send();
+Ajax("GET","json-datas/degula.json",null);
 
 
 // 1 把人員按照積分从高到底排列
