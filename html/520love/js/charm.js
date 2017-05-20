@@ -480,7 +480,7 @@ function adapter(data){
 }
 
 adapter(obj);
-// console.log(obj);
+console.log(obj);
 
 
 
