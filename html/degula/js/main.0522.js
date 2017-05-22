@@ -2,7 +2,7 @@
 * @Author: wangjianfei
 * @Date:   2017-05-22 11:20:14
 * @Last Modified by:   wangjianfei
-* @Last Modified time: 2017-05-22 15:08:22
+* @Last Modified time: 2017-05-22 18:22:07
 */
 
 'use strict';
@@ -26,11 +26,11 @@ if(isNotAjax){
 	    "users": [
 	      {
 	        "pfid": 1000011,
-	        "count": 99999999,
+	        "count": 4654654646,
 	        "follow_status": null,
 	        "score": 19,
 	        "promotion": 1,
-	        "live_id": 13132132,
+	        "live_id": "546546546465465",
 	        "live_key": "",
 	        "stream_direction": 0,
 	        "live_url": "",
@@ -42,8 +42,8 @@ if(isNotAjax){
 	        "count": 0,
 	        "follow_status": null,
 	        "score": 17,
-	        "promotion": 1,
-	        "live_id": 46465,
+	        "promotion": -1,
+	        "live_id": null,
 	        "live_key": "",
 	        "stream_direction": 0,
 	        "live_url": "",
@@ -56,7 +56,7 @@ if(isNotAjax){
 	        "follow_status": null,
 	        "score": 15,
 	        "promotion": 1,
-	        "live_id": 5464646,
+	        "live_id": null,
 	        "live_key": "",
 	        "stream_direction": 0,
 	        "live_url": "",
@@ -65,11 +65,11 @@ if(isNotAjax){
 	      },
 	      {
 	        "pfid": 1000044,
-	        "count": 0,
+	        "count": 999999,
 	        "follow_status": null,
 	        "score": 13,
-	        "promotion": 1,
-	        "live_id": null,
+	        "promotion": 0,
+	        "live_id": "213213123",
 	        "live_key": "",
 	        "stream_direction": 0,
 	        "live_url": "",
@@ -120,7 +120,7 @@ if(isNotAjax){
 	        "count": 0,
 	        "follow_status": null,
 	        "score": 7,
-	        "promotion": -1,
+	        "promotion": 0,
 	        "live_id": null,
 	        "live_key": "",
 	        "stream_direction": 0,
@@ -140,47 +140,71 @@ if(isNotAjax){
 	        "live_url": "",
 	        "headimg": "http://playback-langlive.ufile.ucloud.cn/8422f67af167df7d2b2caa78ac0a4773c4eade4575b343b5a82b7a48c4bf1427",
 	        "nickname": "查房"
-	      }
-	    ],
-	    "finals":[
+	      },
 	      {
 	        "pfid": 1000012,
 	        "count": 0,
 	        "follow_status": null,
 	        "score": 5,
-	        "promotion": -1,
+	        "promotion": 0,
 	        "live_id": null,
 	        "live_key": "",
 	        "stream_direction": 0,
 	        "live_url": "",
 	        "headimg": "http://blob.ufile.ucloud.com.cn/0d94ae9dc33721c87af78a7b2099f5a7ab7395972444c7ab979e3dea46e8ba2e",
-	        "nickname": "03c224002001"
+	        "nickname": "c224002"
 	      },
 	      {
 	        "pfid": 1000039,
 	        "count": 0,
 	        "follow_status": null,
-	        "score": 20,
+	        "score": 4,
 	        "promotion": 0,
-	        "live_id": "10000391494820650",
-	        "live_key": "UioEgF",
+	        "live_id": null,
+	        "live_key": "",
 	        "stream_direction": 0,
-	        "live_url": "rtmp://video.langlive.com/live/10000391494820650",
+	        "live_url": "",
 	        "headimg": "http://blob.ufile.ucloud.com.cn/25f0e2243ac9f515ed3be2fb1854c8b7db8e04b195a088962179cf5937ae25dd",
-	        "nickname": "02哇呀唔唔無武呃呃😂哇咔"
+	        "nickname": "哇呀唔唔無武呃呃😂哇咔"
 	      },
 	      {
 	        "pfid": 1000049,
 	        "count": 0,
 	        "follow_status": null,
-	        "score": 555555,
-	        "promotion": -1,
+	        "score": 3,
+	        "promotion": 0,
 	        "live_id": null,
 	        "live_key": "",
 	        "stream_direction": 0,
 	        "live_url": "",
 	        "headimg": "http://blob.ufile.ucloud.com.cn/6b7f50b02ed10b72159ccf1f00a73ab9.jpg",
-	        "nickname": "01思考解决"
+	        "nickname": "思考解决"
+	      },
+	      {
+	        "pfid": 1000040,
+	        "count": 0,
+	        "follow_status": null,
+	        "score": 2,
+	        "promotion": 0,
+	        "live_id": null,
+	        "live_key": "",
+	        "stream_direction": 0,
+	        "live_url": "",
+	        "headimg": "http://blob.ufile.ucloud.com.cn/3f8f9f008d9d34a9b4cdffd32a06a3d8.jpg",
+	        "nickname": "🐾\"sting\"💤"
+	      },
+	      {
+	        "pfid": 1000010,
+	        "count": 0,
+	        "follow_status": null,
+	        "score": 1,
+	        "promotion": 0,
+	        "live_id": "4556464646",
+	        "live_key": "",
+	        "stream_direction": 0,
+	        "live_url": "",
+	        "headimg": "http://blob.ufile.ucloud.com.cn/f9cb7d8ac961fb9b3d5a882aea55bfe5",
+	        "nickname": "gggggg"
 	      }
 	    ]
 	  }
@@ -198,17 +222,40 @@ function getDate(){
                 isLive(isLiving);
                 // 0522 复活赛9个用户
                 var users=data.data.users;
-                var dataHtml=sortData(users);
-                printing("#users-one",dataHtml);
-                // 0522,进入总决赛的用户
-                var finalsUser=data.data.finals;
-                var finals_str=sortData(finalsUser);
-                printing("#finals",finals_str);
+                // 0522 过滤选手
+                filterUser(users);
             }
 	    // },
 		// "json"
     // );
 }
+// 0522 获取败部、决赛选手
+function filterUser(allUsers){
+	// 败部选手
+	var defeatedLists=[];
+	// 决赛选手
+	var finalsLists=[];
+	for(var f=0,finalsLength=allUsers.length;f<finalsLength;f++){
+		var nowUser=allUsers[f];
+		var promotion_status=nowUser.promotion;
+		if(promotion_status==0){
+			defeatedLists.push(nowUser);
+		}else if(promotion_status==1){
+			finalsLists.push(nowUser);
+		}
+	}
+	// 败部选手排序
+	var dataHtml=sortData(defeatedLists);
+    printing("#users-one",dataHtml);
+    // 决赛选手排序
+    var finals_str=sortData(finalsLists);
+    printing("#finals",finals_str);
+	// console.log(defeatedLists);
+	// console.log(finalsLists);
+}
+
+
+
 // 0 根据传入的DOM元素和data渲染不同的html结构
 function printing(dom,dataHtml){
 	$(dom).append(dataHtml);
@@ -262,8 +309,6 @@ function prentData(userData){
 		user_html+="</li>";
 	}
 	return user_html;
-	// 渲染結束時間
-	console.log(userData);
 }
 
 // 頂部是否是在直播狀態
@@ -277,62 +322,17 @@ function isLive(live){
 	var liveNickname=live.nickname;
 	var livePfid=live.pfid;
 	var nowstatus=live.follow_status;
-	if(liveId!=null){
-		$("#isLiving").css({
-			display:"block"
-		});
-		$("#isLiving").click(function(){
-			h5toRoom(livePfid,liveNickname,liveId,liveUrl,liveKey,direction);
-		});
-	}else if(liveId==null){
-		$("#isLiving").css({
-			display:"none"
-		});
-		if(nowstatus==1){
-			$("#isFlow").css({
-				display:"none"
-			});
-		}else if(nowstatus==0){
-			$("#isFlow").css({
-				display:"block"
-			});
-			$("#isFlow").click(function(){
-				$(this).addClass('followed');
-				follow(livePfid);
-			});
+	$("#willGo").click(function(){
+		if(liveId!=null){
+			alert("进入直播间");
+			// h5toRoom(livePfid,liveNickname,liveId,liveUrl,liveKey,direction);
+		}else{
+			// h5toHomepage(pfid,nickname);
+			alert("进入个人主页");
 		}
-	}
+	});
 }
 
-// 點擊追蹤按鈕
-$(".user-list").on('click', '.willFollow', function(event) {
-	var willPfid=$(this).attr('data-pfid');
-	$(this).addClass('followed');
-	console.log(willPfid);
-	//公用方法
-	follow(willPfid);
-})
-//客戶端返回追蹤狀態
-function langApp2Web_httprtn(result,follow){
-	if(isiOS == true){
-		if(JSON.parse(result).ret_code == "0"){
-			$(".followed").css({
-				display:"none"
-			}); 
-		}else{
-			alert(JSON.parse(result).ret_msg);
-		}
-	}else{
-		if(JSON.parse(follow).ret_code == "0"){
-			$(".followed").css({
-				display:"none"
-			}); 
-		}else{
-			alert(JSON.parse(follow).ret_msg);
-		}
-	}
-		
-}
 // 点击头像判断是跳转到直播间还是主页
 function domEvent(dom){
 	$(dom).on('click', '.main-img', function(event) {
@@ -349,11 +349,11 @@ function domEvent(dom){
 		// console.log(nickname);
 		if(liveid!="null"){
 			// 进入直播间
-			h5toRoom(pfid,nickname,liveid,liveurl,livekey,direction);
-			// alert("进入直播间");
+			// h5toRoom(pfid,nickname,liveid,liveurl,livekey,direction);
+			alert("进入直播间");
 		// 如果没在直播，进入个人主页	
 		}else{
-			h5toHomepage(pfid,nickname);
+			// h5toHomepage(pfid,nickname);
 			alert("进入个人主页");
 		}
 	});
