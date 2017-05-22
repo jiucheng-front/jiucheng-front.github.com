@@ -2,16 +2,11 @@
 * @Author: wangjianfei
 * @Date:   2017-04-28 15:32:29
 * @Last Modified by:   wangjianfei
-* @Last Modified time: 2017-05-02 17:35:23
+* @Last Modified time: 2017-05-02 18:41:37
 */
 
 'use strict';
-var u = navigator.userAgent,
-    app = navigator.appVersion;
-var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
-
-
-var isNotAjax=false;
+var isNotAjax=true;
 if(isNotAjax){
 	var data={
 	  "ret_code": "0",
@@ -136,19 +131,21 @@ if(isNotAjax){
 var isLiving="";
 //2.0 请求数据
 function getDate(){
-	$.post(domain+'v2/activity/dracula_data', {"HTTP_USER_TOKEN":token, "HTTP_USER_UID":pfid, "anchor_pfid":anchor_id },
-	 	function(data) {
-			/*optional stuff to do after success */
-				if(data.ret_code=="0"){
-					var users=data.data;
-					isLiving=data.data.my;
-					resetData(users);
-					// 是否在直播
-					isLive(isLiving);
-				}
-		},
-		"json"
-	);
+// 	$.post(domain+'v2/activity/dracula_data', {"HTTP_USER_TOKEN":token, "HTTP_USER_UID":pfid, "anchor_pfid":anchor_id },
+// 	 	function(data) {
+		/*optional stuff to do after success */
+		// if(data.ret_code=="0"){
+			//第一集的数据为
+			var users=data.data;
+			//第二集为
+			// var secendData=data.data[1];
+			isLiving=data.data.my;
+			resetData(users);
+			// sortData(secendData);
+			// 是否在直播
+			isLive(isLiving);
+		// }
+	// });
 }
 getDate();
 // resetData
@@ -188,7 +185,6 @@ function sortData(lists){
 // 2
 function prentData(num,userData){
 	var user_html="";
-	$(".userlist"+num).empty();
 	for(var i=0,leng=userData.length;i<leng;i++){
 		var userList=userData[i];
 		var followStatus=userList.follow_status;
@@ -229,7 +225,7 @@ $navbtn.click(function(){
 	var index=$(this).attr('data-index');
 	$(this).addClass('on').siblings().removeClass('on');
 	$(".user-list").eq(index).show().siblings('.user-list').hide();
-	// 重新請求一次數據，刷新追蹤狀態
+	// 重新請求一次數據
 	getDate();
 	console.log(index);
 });
@@ -309,21 +305,3 @@ $(document).scroll(function(){
 			$('.backTop').hide();
 	}
 })
-
-//h5进入直播间
-function h5toRoom(pfid,nickname,liveid,liveurl,livekey,direction){
-	if(isiOS==true){
-			window.webkit.messageHandlers.langWeb2App_openActivity.postMessage({body:'{"live_id":"'+liveid+'","className":"PlayFlowViewController","live_url":"'+liveurl+'","live_key":"'+livekey+'","stream_direction":'+direction+',"pfid":"'+pfid+'"}'});
-		}else{
-			javascriptinterface.langWeb2App_openActivity('com.lang.lang.ui.activity.room.YunfanLiveActivity','{"pfid":"'+pfid+'","nickname":"'+nickname+'","live_id":"'+liveid+'","stream_direction":'+direction+',"liveurl":"'+liveurl+'","live_key":"'+livekey+'"}')
-		}
-}
-
-//h5关注
-function follow(pfid){
-	if(isiOS==true){  
-			window.webkit.messageHandlers.langWeb2App_httpreq.postMessage({body:'{"base_url":"'+domain+'v2/","requst_url":"friend/follow","param":{"be_pfid":"'+pfid+'","action":"1"}}'});
-        }else{
-			javascriptinterface.langWeb2App_httpreq(domain+'v2/friend/follow','{"key": ["be_pfid","action"],"value": ["'+pfid+'","1"],"needlogin": false,"callback": true,"callback_tag": "follow"}'); 
-        }
-}
