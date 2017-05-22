@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+	    <title>德古拉的晚餐</title>
+	    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+	    <meta name="description" content="" />
+	    <meta name="HandheldFriendly" content="True" />
+	    <meta name="MobileOptimized" content="320" />
+	    <meta name="format-detection" content="telephone=no" />
+	    <meta http-equiv="cleartype" content="on" />
+	    <script src="/html/js/flexible.js"></script>
+	    <link rel="stylesheet" href="/html/css/base.css">
+	    <link rel="stylesheet" href="/html/degula/css/main.0522.css?v=0522">
+	    <script>
+	    	var token = '<?=$token;?>';
+	        var pfid = '<?=$pfid;?>';
+	        var share_url_head = '<?=$share_url_head;?>';
+	        var anchor_id='<?=$anchor_id;?>';
+	    </script>
+    </head>
+    <body>
+    	<div class="content">
+			<img src="/html/degula/images/top.png" alt="" class="backTop">
+    		<!--  -->
+    		<header>
+    			<img src="/html/degula/images/main0522.jpg" alt="">
+				<!--0522-->
+    			<img src="/html/degula/images/living_bg.png" alt="" id="isLiving">
+    			<img src="/html/degula/images/follow.png" alt="" id="isFlow">
+    		</header>
+    		<!-- 列表 -->
+    		<div class="container">
+				<div class="main-box">
+					<!-- 0502 -->
+    				<div class="main-title">
+    					<span>主播</span>
+    					<span>積分</span>
+    					<span>票數</span>
+    				</div>
+					<div class="main">
+						<ul id="users-one" class="user-list">
+						
+						</ul>
+					</div>
+                    <!-- 0522總決賽 -->
+                    <div class="end-box">
+                        <img src="/html/degula/images/main0522_title.png" alt="">
+                        <div class="main">
+                            <ul class="finals" id="finals"></ul>
+                        </div>
+                    </div>
+				</div>
+    		</div>
+    		<!-- footer -->
+    		<div class="footer">
+    			<img src="/html/degula/images/footer_title.jpg" alt="">
+    			<div class="rule-msg">
+    				<div class="rule-list">
+    					<p>一、 參賽者：</p>
+    					<p>5/26敗部復活賽：初賽的4~12名，共9位主播。</p>
+    					<p>5/31總決賽：初賽的前3名+敗部復活賽的前6名，共9位主播。</p>
+    				</div>
+    				<div class="rule-list">
+    					<p>二、 積分規則：</p>
+    					<p>5/26敗部復活賽 & 5/31總決賽：</p>
+                        <p>1. 初賽主播獲得的積分與得票數全數歸零，敗部復活賽與總決賽的積分與得票數將重新計算。</p>
+                        <p>2. 每局比賽邪惡（吸血鬼）陣營勝利，該陣營每位主播得2分；正義（貴族/預言家/守夜人）陣營勝利，該陣營每位主播得1分。當局比賽的落敗陣營主播不給分也不扣分。</p>
+                        <p>3. 每局比賽由專業評審團選出一名表現最佳的主播，為本局MVP主播，MVP主播將額外獲得1分獎勵積分。</p>
+                        <p>4. 兩局比賽結束公佈浪粉投票，得票數最高的前2名主播，將個別獲得1分獎勵積分。</p>
+                        <p>5. (1) 敗部復活賽2局比賽結束，總積分前6名的主播晉級5/31總決賽，後3名主播遭到淘汰。</p>
+                        <p>(2) 總決賽2局比賽結束，總積分前3名主播為優勝者，第1名主播為本季總冠軍。</p>
+                        <p>6. 兩局比賽結束，主播積分總和相同時(參照積分規則2~4點說明)。由專業評審團決定最終排名。(評審評比標準如下：(1)邏輯推理能力 (2)語言表達能力 (3)臨場反應能力)。</p>
+    				</div>
+    				<div class="rule-list">
+    					<p>三、浪粉投票機制：</p>
+    					<p>1. 20:00開始每一位進入《德古拉的晚餐》的浪粉會得到3張票，可自行選擇投票給1~9號任一主播。浪粉可以選擇把3張票分開投給不同主播，也可以選擇把票全部投給同一位主播。</p>
+                        <p>2. 節目進行中，浪粉點選畫面右上方《德古拉的晚餐》的標誌，便可進入投票與觀看即時更新的票數。</p>
+                        <p>3. 節目進行中，每15分鐘發放給觀看《德古拉的晚餐》節目的每位浪粉額外1張票，</p>
+                        <p>【發送票的四階段：20:15、20:30、20:45、21:00】，每一位浪粉最多可以擁有7張票。</p>
+                        <p>4. 投票時間從20:00開始至第二局比賽主持人宣佈獲勝陣營時截止，浪粉若超過截止時間仍擁有剩餘的票，該票將失效，超過截止時間投出的票也將不予計算。</p>
+                        <p>5. 投票截止時間以官方時間為準。</p>
+                        <p></p>
+    				</div>
+    				<div class="rule-list">
+    					<p>四、優勝獎勵：</p>
+                        <p>前3名主播獲得「貴族爵位」頭銜。</p>
+                        <p>第1名主播額外獲得「浪Live In-App Banner」置頂一週。</p>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </body>
+    <script src="/html/js/jquery-1.9.1.min.js"></script>
+    <script src="/html/admin/js/constant.js"></script>
+    <script src="/html/js/publicVersion.js?v=0"></script>
+    <script src="/html/degula/js/main.0522.js?v=05221"></script>
+</html>
