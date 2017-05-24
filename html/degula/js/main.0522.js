@@ -327,7 +327,7 @@ function isLive(live){
 			alert("进入直播间");
 			// h5toRoom(livePfid,liveNickname,liveId,liveUrl,liveKey,direction);
 		}else{
-			// h5toHomepage(pfid,nickname);
+			// h5toHomepage(livePfid,liveNickname);
 			alert("进入个人主页");
 		}
 	});
