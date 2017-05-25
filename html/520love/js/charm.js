@@ -2,7 +2,7 @@
 * @Author: wangjianfei
 * @Date:   2017-05-19 10:31:46
 * @Last Modified by:   wangjianfei
-* @Last Modified time: 2017-05-19 18:41:39
+* @Last Modified time: 2017-05-25 14:36:04
 */
 
 'use strict';
@@ -20,7 +20,7 @@ if(isNotAjax){
 		          "headimg": "http://blob.ufile.ucloud.com.cn/c93f71544c5f7aabc4f435e38953189874bdefee4283f0e78dc912574733ccb2",
 		          "nickname": "on",
 		          "charm_val": 4397840,
-		          "live_id": null,
+		          "live_id": '12313213',
 		          "live_key": null,
 		          "live_url": null,
 		          "stream_direction": 0,
@@ -58,6 +58,204 @@ if(isNotAjax){
 		          "live_url": null,
 		          "stream_direction": 0,
 		          "live_pfid": 0
+		        },
+		        {
+		          "pfid": "1000122",
+		          "headimg": "http://blob.ufile.ucloud.com.cn/480d8577e7e473a30a2de29a28829dd72c8254ea10bffbab4436990a465eadfd",
+		          "nickname": "嘻嘻",
+		          "charm_val": 95288,
+		          "live_id": null,
+		          "live_key": null,
+		          "live_url": null,
+		          "stream_direction": 0,
+		          "live_pfid": 0
+		        },
+		        {
+		          "pfid": "1023987",
+		          "headimg": "http://blob.ufile.ucloud.com.cn/2fb5d9538079fde4d4837c775632da5c636c90a3acd94f77af4f04c6d5cb51e5",
+		          "nickname": "兔子不吃窝边草",
+		          "charm_val": 61958,
+		          "live_id": null,
+		          "live_key": null,
+		          "live_url": null,
+		          "stream_direction": 0,
+		          "live_pfid": 0
+		        },
+		        {
+		          "pfid": "1000122",
+		          "headimg": "http://blob.ufile.ucloud.com.cn/480d8577e7e473a30a2de29a28829dd72c8254ea10bffbab4436990a465eadfd",
+		          "nickname": "嘻嘻",
+		          "charm_val": 95288,
+		          "live_id": null,
+		          "live_key": null,
+		          "live_url": null,
+		          "stream_direction": 0,
+		          "live_pfid": 0
+		        },
+		        {
+		          "pfid": "1023987",
+		          "headimg": "http://blob.ufile.ucloud.com.cn/2fb5d9538079fde4d4837c775632da5c636c90a3acd94f77af4f04c6d5cb51e5",
+		          "nickname": "兔子不吃窝边草",
+		          "charm_val": 61958,
+		          "live_id": null,
+		          "live_key": null,
+		          "live_url": null,
+		          "stream_direction": 0,
+		          "live_pfid": 0
+		        },
+		        {
+		          "pfid": "1000122",
+		          "headimg": "http://blob.ufile.ucloud.com.cn/480d8577e7e473a30a2de29a28829dd72c8254ea10bffbab4436990a465eadfd",
+		          "nickname": "嘻嘻",
+		          "charm_val": 95288,
+		          "live_id": null,
+		          "live_key": null,
+		          "live_url": null,
+		          "stream_direction": 0,
+		          "live_pfid": 0
+		        },
+		        {
+		          "pfid": "1023987",
+		          "headimg": "http://blob.ufile.ucloud.com.cn/2fb5d9538079fde4d4837c775632da5c636c90a3acd94f77af4f04c6d5cb51e5",
+		          "nickname": "兔子不吃窝边草",
+		          "charm_val": 61958,
+		          "live_id": null,
+		          "live_key": null,
+		          "live_url": null,
+		          "stream_direction": 0,
+		          "live_pfid": 0
+		        },
+		        {
+		          "pfid": "1000122",
+		          "headimg": "http://blob.ufile.ucloud.com.cn/480d8577e7e473a30a2de29a28829dd72c8254ea10bffbab4436990a465eadfd",
+		          "nickname": "嘻嘻",
+		          "charm_val": 95288,
+		          "live_id": null,
+		          "live_key": null,
+		          "live_url": null,
+		          "stream_direction": 0,
+		          "live_pfid": 0
+		        },
+		        {
+		          "pfid": "1023987",
+		          "headimg": "http://blob.ufile.ucloud.com.cn/2fb5d9538079fde4d4837c775632da5c636c90a3acd94f77af4f04c6d5cb51e5",
+		          "nickname": "兔子不吃窝边草",
+		          "charm_val": 61958,
+		          "live_id": null,
+		          "live_key": null,
+		          "live_url": null,
+		          "stream_direction": 0,
+		          "live_pfid": 0
+		        },
+		        {
+		          "pfid": "1000122",
+		          "headimg": "http://blob.ufile.ucloud.com.cn/480d8577e7e473a30a2de29a28829dd72c8254ea10bffbab4436990a465eadfd",
+		          "nickname": "嘻嘻",
+		          "charm_val": 95288,
+		          "live_id": null,
+		          "live_key": null,
+		          "live_url": null,
+		          "stream_direction": 0,
+		          "live_pfid": 0
+		        },
+		        {
+		          "pfid": "1023987",
+		          "headimg": "http://blob.ufile.ucloud.com.cn/2fb5d9538079fde4d4837c775632da5c636c90a3acd94f77af4f04c6d5cb51e5",
+		          "nickname": "兔子不吃窝边草",
+		          "charm_val": 61958,
+		          "live_id": null,
+		          "live_key": null,
+		          "live_url": null,
+		          "stream_direction": 0,
+		          "live_pfid": 0
+		        },
+		        {
+		          "pfid": "1000122",
+		          "headimg": "http://blob.ufile.ucloud.com.cn/480d8577e7e473a30a2de29a28829dd72c8254ea10bffbab4436990a465eadfd",
+		          "nickname": "嘻嘻",
+		          "charm_val": 95288,
+		          "live_id": null,
+		          "live_key": null,
+		          "live_url": null,
+		          "stream_direction": 0,
+		          "live_pfid": 0
+		        },
+		        {
+		          "pfid": "1023987",
+		          "headimg": "http://blob.ufile.ucloud.com.cn/2fb5d9538079fde4d4837c775632da5c636c90a3acd94f77af4f04c6d5cb51e5",
+		          "nickname": "兔子不吃窝边草",
+		          "charm_val": 61958,
+		          "live_id": null,
+		          "live_key": null,
+		          "live_url": null,
+		          "stream_direction": 0,
+		          "live_pfid": 0
+		        },
+		        {
+		          "pfid": "1000122",
+		          "headimg": "http://blob.ufile.ucloud.com.cn/480d8577e7e473a30a2de29a28829dd72c8254ea10bffbab4436990a465eadfd",
+		          "nickname": "嘻嘻",
+		          "charm_val": 95288,
+		          "live_id": null,
+		          "live_key": null,
+		          "live_url": null,
+		          "stream_direction": 0,
+		          "live_pfid": 0
+		        },
+		        {
+		          "pfid": "1023987",
+		          "headimg": "http://blob.ufile.ucloud.com.cn/2fb5d9538079fde4d4837c775632da5c636c90a3acd94f77af4f04c6d5cb51e5",
+		          "nickname": "兔子不吃窝边草",
+		          "charm_val": 61958,
+		          "live_id": null,
+		          "live_key": null,
+		          "live_url": null,
+		          "stream_direction": 0,
+		          "live_pfid": 0
+		        },
+		        {
+		          "pfid": "1000122",
+		          "headimg": "http://blob.ufile.ucloud.com.cn/480d8577e7e473a30a2de29a28829dd72c8254ea10bffbab4436990a465eadfd",
+		          "nickname": "嘻嘻",
+		          "charm_val": 95288,
+		          "live_id": null,
+		          "live_key": null,
+		          "live_url": null,
+		          "stream_direction": 0,
+		          "live_pfid": 0
+		        },
+		        {
+		          "pfid": "1023987",
+		          "headimg": "http://blob.ufile.ucloud.com.cn/2fb5d9538079fde4d4837c775632da5c636c90a3acd94f77af4f04c6d5cb51e5",
+		          "nickname": "兔子不吃窝边草",
+		          "charm_val": 61958,
+		          "live_id": null,
+		          "live_key": null,
+		          "live_url": null,
+		          "stream_direction": 0,
+		          "live_pfid": 0
+		        },
+		        {
+		          "pfid": "1000122",
+		          "headimg": "http://blob.ufile.ucloud.com.cn/480d8577e7e473a30a2de29a28829dd72c8254ea10bffbab4436990a465eadfd",
+		          "nickname": "嘻嘻",
+		          "charm_val": 95288,
+		          "live_id": null,
+		          "live_key": null,
+		          "live_url": null,
+		          "stream_direction": 0,
+		          "live_pfid": 0
+		        },
+		        {
+		          "pfid": "1023987",
+		          "headimg": "http://blob.ufile.ucloud.com.cn/2fb5d9538079fde4d4837c775632da5c636c90a3acd94f77af4f04c6d5cb51e5",
+		          "nickname": "兔子不吃窝边草",
+		          "charm_val": 61958,
+		          "live_id": null,
+		          "live_key": null,
+		          "live_url": null,
+		          "stream_direction": 0,
+		          "live_pfid": 0
 		        }
 		      ]
 	    },
@@ -77,7 +275,7 @@ if(isNotAjax){
 		        },
 		        {
 		          "pfid": "1023177",
-		          "headimg": "http://(null)/54c91e9259d8bcb3e15db7e62a99e14d.jpg",
+		          "headimg": "http://blob.ufile.ucloud.com.cn/ac7b67bdececf6719bece36b0458c37c.jpg",
 		          "nickname": "139@1-8👀",
 		          "charm_val": 1069518,
 		          "live_id": null,
@@ -107,7 +305,7 @@ if(isNotAjax){
 		          "headimg": "http://blob.ufile.ucloud.com.cn/ac7b67bdececf6719bece36b0458c37c.jpg",
 		          "nickname": "成都替补风风光光v🐳",
 		          "charm_val": 708060,
-		          "live_id": null,
+		          "live_id": "456465",
 		          "live_key": null,
 		          "live_url": null,
 		          "stream_direction": 0,
@@ -129,7 +327,7 @@ if(isNotAjax){
 		          "headimg": "http://blob.ufile.ucloud.com.cn/275dfd157b539b1d8979cb73e24bb9fa.jpg",
 		          "nickname": "?哭哭好嘛",
 		          "charm_val": 615122,
-		          "live_id": null,
+		          "live_id": "6465465",
 		          "live_key": null,
 		          "live_url": null,
 		          "stream_direction": 0,
@@ -208,7 +406,7 @@ if(isNotAjax){
 		        },
 		        {
 		          "pfid": "1024315",
-		          "headimg": "http://(null)/395fb1f6a7ab5718ad72df3599cb6996.jpg",
+		          "headimg": "http://blob.ufile.ucloud.com.cn/ac7b67bdececf6719bece36b0458c37c.jpg",
 		          "nickname": "139@2-8🐯",
 		          "charm_val": 269696,
 		          "live_id": null,
@@ -337,7 +535,7 @@ if(isNotAjax){
 	  ]
 	}
 }
-
+// 1、请求数据
 function getDate(){
 	// $.post(domain+'v2/activity/dracula_data', {"HTTP_USER_TOKEN":token, "HTTP_USER_UID":pfid, "anchor_pfid":anchor_id },
 	 	// function(data) {
@@ -345,7 +543,7 @@ function getDate(){
             if(data.ret_code=="0"){
                 //
                 var users=data.list;
-                // resetDate(users);
+                chunkData(users,10)
             }
 	    // },
 		// "json"
@@ -353,152 +551,109 @@ function getDate(){
 }
 getDate();
 
-
-function chunkData(lists){
-	// var anchor_lists=[];
+// 2、重新处理数据如果对应的list.length>10,就把对应的list每10个放在二维数组内，
+// 不足10个放在二维数组的尾部，
+function chunkData(lists,count){
 	for(var i=0,leng=lists.length;i<leng;i++){
+		var nowList=lists[i];
 		// 获得每组对应的数据
 		var now_list=lists[i].user_list;
 		// 每组数据的length,分页用的到
-		var innerLeng=now_list.length;
-		// 如果有
-		if(innerLeng!=0){
-			for(var j=0;j<innerLeng;j++){
-
-
+		var innerLength=now_list.length;
+		//2.3 如果有
+		if(innerLength!=0&&innerLength>count){
+             // 定义在每个对象上的二维数组外层
+            nowList.outer=[];
+            var sliceNum = 0, resIndex = 0;
+			while (sliceNum < innerLength) {
+			    nowList.outer[resIndex++] = now_list.slice(sliceNum, sliceNum += count);
 			}
-		}else{
-			// 没有
-			console.log("没有");
+			// 大于10个先只拿二维数组的前10个
+			nowList.finals=nowList.outer[0];
+			// 多于10个 显示换一批按钮
+			// $(".changeList").eq(i).addClass('change');
+			// .attr('data-arr',nowList.outer)
+		}else if(innerLength!=0&&innerLength<=count){
+			nowList.finals=now_list;
 		}
 		
-		// anchor_lists.push(now_list);
 	}
-	// console.log(anchor_lists);
+	console.log(lists);
+	printDom(lists);
+}
+// 3、渲染用户列表
+function printDom(newLists){
+	var listsLength=newLists.length;
+	for(var k=0;k<listsLength;k++){
+		var nowList=newLists[k];
+		// 如果多于10个的二维数组,用以点击换一批
+		var outerLists=JSON.stringify(newLists[k].outer);
+		// 最終需要的
+		var nowFinals=nowList.finals;
+		// 返回的HTML
+		var user_html=createHtml(nowFinals);
+		// 渲染DOM
+		$(".user-box"+k).append(user_html);
+		// console.log(outerLists);
+		if(typeof(outerLists)!="undefined"){
+			$(".changeList").eq(k).addClass('change').attr('data-arr',outerLists).attr('data-index',k).attr('data-init',0);
+		}
+	}
+	// 绑定事件
+	addEvent();
+}
+// return html
+function createHtml(nowFinals){
+	var finalsLength=nowFinals.length;
+	var user_html="";
+	if(finalsLength!=0){
+		for(var j=0;j<finalsLength;j++){
+			var temp_lists=nowFinals[j];
+			var temp_charm=temp_lists.charm_val;
+			var temp_headimg=temp_lists.headimg;
+			var temp_liveId=temp_lists.live_id;
+			var temp_liveKey=temp_lists.live_key;
+			var temp_livePfid=temp_lists.pfid;
+			var temp_liveUrl=temp_lists.live_url;
+			var temp_name=temp_lists.nickname;
+			var temp_direction=temp_lists.stream_direction;
+			// 拼接DOM
+			user_html+='<li>';
+			user_html+='<div data-direction="'+temp_direction+'" data-livekey="'+temp_liveKey+'" data-liveurl="'+temp_liveUrl+'" data-nickname="'+temp_name+'" data-pfid="'+temp_livePfid+'" data-liveid="'+temp_liveId+'" class="user-img">';
+			user_html+='<img src="'+temp_headimg+'" alt="">';
+			if(temp_liveId!=null){
+				user_html+="<i></i>";
+			}
+			user_html+='</div>';
+			user_html+='<div class="user-info">';
+			user_html+='<p>'+temp_name+'</p>';
+			user_html+='<p>魅力值 '+temp_charm+'</p>';;
+			user_html+='</div>';
+			user_html+='</li>';
+		}
+	}
+	return user_html;
+}
+// 换一批事件,可以通过自定义属性，或者自定义一个数组同样可以解决
+function addEvent(){
+	// var tempIndex=0;
+	// var btns=[0,0,0,0,0];
+	$(document).on('click', '.changeList', function(event) {
+		event.preventDefault();
+		event.stopPropagation();
+		var arr=JSON.parse($(this).attr('data-arr'));
+		var index=$(this).attr('data-index');
+		var tempIndex=$(this).attr('data-init');
+		var arrLength=arr.length;
+		tempIndex++;
+		if(tempIndex==arrLength) tempIndex=0;
+		$(this).attr('data-init',tempIndex);
+		var temp_html=createHtml(arr[tempIndex]);
+		$(".user-box"+index).empty().append(temp_html);
+		console.log(tempIndex);
+	});
 }
 
-
-
-
-
-
-
-
-
-
-
-var obj=[
-        {
-            "list":[
-                {a:1},{a:2},{a:3},{a:4},{a:5},{a:6},
-                {a:7},{a:8},{a:9}
-            ]
-        },
-        {
-            "list":[
-                {a:1},{a:2},{a:3},{a:4},{a:5},{a:6},
-                {a:7},{a:8},{a:9},{a:10},{a:11},{a:12},
-                {a:13},{a:14},{a:15},{a:16},{a:17},
-                {a:18},{a:19},{a:20},{a:21}
-            ]
-        },
-        {
-            "list":[
-                {a:1},{a:2},{a:3},{a:4},{a:5},{a:6},
-                {a:7},{a:8},{a:9},{a:10},{a:11},{a:12},
-                {a:13},{a:14},{a:15},{a:16},{a:17},
-                {a:18},{a:19},{a:20},{a:21},{a:22},
-                {a:23},{a:24},{a:25},{a:26},{a:27},
-                {a:28},{a:29},{a:30},{a:31}
-            ]
-        },
-        {
-            "list":[
-                {a:1},{a:2},{a:3},{a:4},{a:5},{a:6},
-                {a:7},{a:8},{a:9},{a:10},{a:11},{a:12},
-                {a:13},{a:14},{a:15},{a:16},{a:17},
-                {a:18},{a:19},{a:20},{a:21},{a:22},
-                {a:23},{a:24},{a:25}
-            ]
-        },
-        {
-            "list":[
-                {a:1},{a:2},{a:3},{a:4},{a:5},{a:6}
-            ]
-        }
-    ];
-    //每个list的长度可能为0，无上限 
-    //如果对应的list.length>10,就把对应的list每10个放在二维数组内，不足10个放在二维数组的尾部，
-    //例如第三个有31个，把第三个list替换为：
-    //  [
-    //    [{a:1},{a:2}..{a:10}],
-    //    [{a:11},{a:12}...{a:20}],
-    //    [{a:21}..{30}],[{a:31}]
-    //  ]
-    //
-    //该如何一次性获得所有的二维数组？
-    function resetDate(arr,num){
-        //1整个数组的长度
-        var leng=arr.length;
-        for(var i=0;i<leng;i++){
-            //2 每个列表
-            var innerList=arr[i].list;
-            // console.log(arr);
-            //3 每个列表的个数，即lenth
-            var innerLength=innerList.length;
-            //如果大于10个
-            if(innerLength!=0&&innerLength>num){
-                //如果大于10个的，二维数组外层数组的长度：max,需要上取整
-                var outerMaxLen=Math.ceil(innerLength/num);
-                // 定义在每个对象上的二维数组外层
-                // arr[i].outer=Array(outerMaxLen);
-                arr[i].outer=[];
-                var sliceNum = 0, resIndex = 0;
-				// console.log(result)
-				while (sliceNum < innerLength) {
-				    arr[i].outer[resIndex++] = innerList.slice(sliceNum, sliceNum += num);
-				}
-                // 需要用到arr.slice(start,end);
-                console.log(arr[i].outer);
-            }
-
-        }
-    }
-    resetDate(obj,10);
-
-
-// 同样是把大于10个的转换为二维数组，小于10个有点BUG
-function adapter(data){
-  function _splice(list,i){
-    i = i || 1;
-    list.push(list.splice(0,10));
-    list.length>10 ? _splice(list,++i):list.push(list.splice(0,list.length-i));
-  }
-  data.forEach(function(v){
-    _splice(v.list);
-  });
-}
-
-adapter(obj);
-console.log(obj);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// $(".outer-box li").click(function(){
-// 	console.log("aaa");
-// });
 
 // 返回頂部
 $("#backTop").click(function(){
