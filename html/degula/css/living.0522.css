@@ -2,7 +2,7 @@
 * @Author: wangjianfei
 * @Date:   2017-05-22 16:34:08
 * @Last Modified by:   wangjianfei
-* @Last Modified time: 2017-05-23 11:21:21
+* @Last Modified time: 2017-05-25 15:17:19
 */
 
 html,body,header,section,footer,div,p,h1,h2,h3,h4,h5,h6,
@@ -166,6 +166,13 @@ header img{
 .vote-box li b{
   color: #fff;
 }
+.vote-box li p:nth-child(2){
+  margin: 0 auto;
+  width: 80%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
 .vote-box li span{
   /* font-size: .28rem; */
   color: #53F2F3;
@@ -180,4 +187,7 @@ header img{
   background-image: url(../images/living_vote_06.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
+}
+.vote-box li b.none{
+  filter: grayscale(100%);
 }
