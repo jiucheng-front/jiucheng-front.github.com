@@ -175,10 +175,10 @@ function voteEvent(){
 					}
 				}else if(response.ret_code=="6000"){
 					// alert("投票未開始！");
-					dialogObj.init("投票未開始！");
+					promptObj.init("投票未開始！");
 				}else if(response.ret_code=="6001"){
 					// alert("投票已經結束！")
-					dialogObj.init("投票已經結束！");
+					promptObj.init("投票已經結束！");
 				}
 		// },
 		// "json"
