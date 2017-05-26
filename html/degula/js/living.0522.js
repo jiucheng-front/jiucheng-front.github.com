@@ -2,7 +2,7 @@
 * @Author: wangjianfei
 * @Date:   2017-05-22 16:35:01
 * @Last Modified by:   wangjianfei
-* @Last Modified time: 2017-05-25 16:41:56
+* @Last Modified time: 2017-05-26 17:19:05
 */
 
 'use strict';
@@ -71,12 +71,21 @@ if(isNotAjax){
 	    ],
 	    "ticket_count" : 3
 	  }
+	};
+	// 假数据
+	var response={
+	  "ret_code": "0",//6000:投票沒開始,6001：投票已經結束
+	  "ret_msg": "ok",
+	  "data": { 
+	  	"ticket_count" : 3,
+	  	"ticket_count":9999
+	  }
 	}
 }
 
 //2.0 请求数据
 function getDate(){
-	// $.post(domain+'v2/activity/dracula_final_data', {"HTTP_USER_TOKEN":token, "HTTP_USER_UID":pfid, "anchor_pfid":anchor_id },
+	// $.post(domain+'v2/activity/dracula_final_data', {"HTTP_USER_TOKEN":token, "HTTP_USER_UID":pfid, "anchor_pfid":anchor_id,"device_id":device_id},
 	 	// function(data) {
 		/*optional stuff to do after success */
 			if(data.ret_code=="0"){
@@ -130,28 +139,24 @@ function voteEvent(){
 		// 主播ID
 		var votePfid=$(this).attr('data-pfid');
 		console.log(votePfid);
-		// 假数据
-		if(isNotAjax){
-			var response={
-			  "ret_code": "0",
-			  "ret_msg": "ok",
-			  "data": { 
-			  	"ticket_count" : 3,
-			  	"ticket_count":9999
-			  }
-			}
-		}
-
-		// $.post(domain+'v2/activity/dracula_final_vote', {"anchor_pfid":votePfid },
+		
+		// 接口一旦打開$(this)指向變了
+		var that=$(this);
+		// $.post(domain+'v2/activity/dracula_final_vote', {"anchor_pfid":votePfid,"device_id":device_id},
 		 	// function(response) {
 				if(response.ret_code=="0"){
 					var Remaining_count=response.data.ticket_count;
-					var total_count=response.data.ticket_count;
-					$(this).prev("p").find("span").html(total_count);
 					render(Remaining_count);
+					var total_count=response.data.ticket_count;
+					var str="<span>"+total_count+"</span>";
+					that.prev().empty().append(str);
 					if(Remaining_count==0){
 						$(".vote-btn").removeClass('vote-btn').addClass('none');
 					}
+				}else if(response.ret_code=="6000"){
+					alert("投票未開始！");
+				}else if(response.ret_code=="6001"){
+					alert("投票已經結束！")
 				}
 		// },
 		// "json"
