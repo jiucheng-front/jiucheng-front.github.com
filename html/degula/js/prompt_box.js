@@ -23,11 +23,10 @@ var promptObj={
 		this.promptBox=document.getElementById("prompt_box");
 		this.infoItem=document.getElementById("prompt_title");
 		this.promptBtn=document.getElementById("prompt_btn");
-        // 
+        // 2、是否是PC
         this.platform();
-		// 显示弹出框 promptBtn
+		// 3、显示弹出框 promptBtn
 		this.showPrompt(msg);
-        
 	},
     platform:function(){
         var _this=this;
@@ -35,14 +34,12 @@ var promptObj={
         var Agents = ["Android", "iPhone",
                     "SymbianOS", "Windows Phone",
                     "iPad", "iPod"];
-        // var flag = true;
         for (var v = 0; v < Agents.length; v++) {
             if (userAgentInfo.indexOf(Agents[v]) > 0) {
                 _this.isPC= false;
                 break;
             }
         }
-        // return flag;
     },
 	hidePrompt:function(){
 		promptObj.promptBox.style.display="none";
@@ -87,4 +84,4 @@ var promptObj={
         }
 	}
 }
-// dialogObj.init();
+// promptObj.init();
