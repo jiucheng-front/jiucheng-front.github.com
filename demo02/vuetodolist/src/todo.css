@@ -140,16 +140,17 @@
 .view-box span{
     font-size: 16px;
     padding-left: 15px;
+    display: block;
 }
 /*双击编辑*/
 /*.todo-box li>input */
 .edit{
     position: absolute;
-    height: 40px;
-    line-height: 40px;
+    height: 45px;
+    line-height: 45px;
     width: 530px;
     left: 50px;
-    top: 5px;
+    top: 0;
     background: transparent;
     display: none;
     font-size: 16px;
@@ -160,8 +161,19 @@
     display: block;
 }
 .todo-box li.editing{
-    border-bottom: 0;
+    /*border-bottom: 0;*/
 }
 .todo-box li.editing .view-box{
     display: none;
+}
+/*todo-box*/
+.todo-box{
+    margin-top: 20px;
+}
+.todo-box:before{
+    display: table;
+    content: "";
+}
+.todo-box li{
+    margin-top: 10px;
 }

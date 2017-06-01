@@ -7,23 +7,28 @@
     <script src="src/store.js"></script>
     <link rel="stylesheet" href="src/todo.css">
     <script>
-        window.onload=function(){
-            document.getElementById("aa").focus();
-        }
+        // window.onload=function(){
+        //     document.getElementById("aa").focus();
+        // }
     </script>
 </head>
 <body>
     <div id="app" class="app">
         <h1 v-text='title'></h1>
         <p class='typeInput'>
-            <input id="aa" type="text" v-model='newText' v-on:keyup.enter='addNewlist' placeholder="what needs to do ?">
+            <input id="aa" type="text" v-model='newText' placeholder="what needs to do ?"
+             v-on:keyup.enter='addNewlist'
+             @blur="addNewlist"
+             >
         </p>
         <ul class="todo-box">
-            <li v-for='item in items' v-bind:class='{finished:item.isFinished,editing: item.isEditing}'
-            @dblclick="canEdit(item,$event)">
+            <li v-for='item in filteredTodos' v-bind:class='{finished:item.isFinished,editing:item == editedTodo }'
+            
+            >
+            <!--@dblclick="canEdit(item,$event)"-->
                 <div class="view-box">
                     <input type="checkbox"  v-on:click='toggleFinish(item)'>
-                    <span>{{item.text}}</span>
+                    <span @dblclick="editTodo(item)">{{item.text}}</span>
                     <b v-on:click='deleteList(item)'>✖</b>
                 </div>
                 <input type="text" class="edit" v-model="item.text"
@@ -35,14 +40,30 @@
                 >
             </li>
         </ul>
-        <p>
-            <span v-show="totalCount"><b>{{totalCount}} </b> {{totalCount|pluralize}}</span>
-            <a href="#all">所有任务</a>
-            <a href="#un">未完成</a>
-            <a href="#finished">已经完成</a>
+        <p v-show="totalCount">
+            <span><b>{{totalCount}} </b> {{totalCount|pluralize}}</span>
+            <!--<a href="#all" :class="{ selected: visibility == 'all' }">所有任务</a>
+            <a href="#active" :class="{ selected: visibility == 'active' }">未完成</a>
+            <a href="#completed" :class="{ selected: visibility == 'completed' }">已经完成</a>-->
         </p>
     </div>
     <script>
+        // visibility filters
+        var filters = {
+            all: function (items) {
+                return items;
+            },
+            active: function (items) {
+                return items.filter(function (item) {
+                    return !item.completed;
+                })
+            },
+            completed: function (items) {
+                return items.filter(function (item) {
+                    return item.completed;
+                })
+            }
+        };
         var app=new Vue({
             el:'#app',
             data:{
@@ -59,11 +80,11 @@
                 // ],
                 items:Store.fetch(),
                 newText:'',
-                visibility:'all',// 通过这个属性对是否完成进行过滤
-                editedTodo:null
+                visibility:'all',   // 通过这个属性对是否完成进行过滤
+                editedTodo:null     //暂时存储当前被编辑之前的内容
             },
             
-            //watch深度监听函数，监听的是items的变化
+            //0、watch深度监听函数，监听的是items的变化
             //只要有新的输入内容就会触发，
             watch:{
                 items:{
@@ -77,11 +98,12 @@
             },
             //  方法
             methods:{
+                // 1、是否已经完成
                 toggleFinish:function(item){
                     // console.log(item.isFinished);
                     item.isFinished=!item.isFinished;
                 },
-                //3、输入后按enter键盘的事件
+                //2、输入后按enter键盘的事件
                 addNewlist:function(){
                     var _self=this;
                     // console._self.newText;
@@ -91,8 +113,7 @@
                     if(_self.newText&&_self.newText.trim()){
                         _self.items.push({
                             text:_self.newText,
-                            isFinished:false,
-                            isEditing:false
+                            isFinished:false
                         });
                     }
                     // console.log(_self.newText);
@@ -100,7 +121,7 @@
                     //3.2 同时清空input输入框
                     _self.newText='';
                 },
-                //点击删除该选项 法一
+                // 3、点击删除该选项 法一
                 deleteList:function(item){
                     this.items.splice(this.items.indexOf(item),1);
                 },
@@ -109,55 +130,53 @@
                 // deleteThis(item,index){
                 //     this.items.splice(index,1);
                 // }
+
+                // 4、 双击进入可以编辑 
                 editTodo: function (item) {
                     this.beforeEditCache = item.text;
                     this.editedTodo = item;
                     // console.log(this.beforeEditCache);
                 },
-                // 完成编辑
+                // 5、完成编辑
                 doneEdit: function (item) {
+                    // console.log(this.editedTodo);
+                    if (!this.editedTodo) {
+                        return
+                    }
+                    this.editedTodo = null;
+                    item.text = item.text.trim();
                     if (!item.text) {
                         this.deleteList(item);
-                    }else{
-                        item.text = item.text.trim();
                     }
-                    item.isEditing = false;
                 },
-                // 关闭编辑
+                // 6、关闭(取消)编辑
                 cancelEdit: function (item) {
-                    this.editedTodo = null
-                    item.text = this.beforeEditCache
-                    console.log(this.text);
+                    this.editedTodo = null;
+                    item.text = this.beforeEditCache;
+                    console.log(item.text);
                 },
-                // 双击可以编辑
-                canEdit:function(item,event){
-                    item.isEditing=true;
-                    // this.focus();
-                    // var _this=event.currentTarget;//事件触发的DOM元素
-                    // var tt=document.getElementsByClassName("edit");
-                    // var a=_this.getElementsByTagName("input")[1];
-                    // _this.getElementsByTagName("input")[0].focus();
-                    // a.focus();
-                    // console.log(a);
-                }
+                
             },
-            // 计算属性，计算总数
+            // 7、计算属性，计算总数
             computed:{
+                filteredTodos: function () {
+                    return filters[this.visibility](this.items);
+                },
                 totalCount:function(){
                     return this.items.length;
                 }
             },
-            // 过滤器,pluralize:变复数
+            // 8、过滤器,pluralize:变复数
             filters:{
                 pluralize:function(n){
                     return n===1?"matter":"matters";
                 }
             },
-            // 注册自定义指令
+            // 9、注册自定义指令
             directives: {
                 'todo-focus': function (el, binding) {
                     if (binding.value) {
-                        el.focus()
+                        el.focus();
                     }
                 }
             }
@@ -169,7 +188,21 @@
         //     console.log(window.location.hash);
         // }
         // watchHash();
-        
+
+
+        // handle routing
+        function onHashChange () {
+            var visibility = window.location.hash.replace(/#\/?/, '')
+            if (filters[visibility]) {
+                app.visibility = visibility;
+            } else {
+                window.location.hash = '';
+                app.visibility = 'all';
+            }
+            console.log(visibility);
+        }
+        window.addEventListener('hashchange', onHashChange)
+        onHashChange()
 
 
         // 官方DEMO地址：http://fiddle.jshell.net/yyx990803/4dr2fLb7/light/
