@@ -1,0 +1,14 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: 0;
+    text-decoration: none;
+    outline: none;
+}
+
+#app{
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 100px;
+}

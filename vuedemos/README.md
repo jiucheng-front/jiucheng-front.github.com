@@ -9,7 +9,7 @@
 + :class='{a:true,b:false}',a对应的直接是calssName,true和false可以对应data里的数据，配置相关的className是否生效
 + :style={json}
 
-二 过滤器
+二 过滤器，2.0+ 已經不支持
 + {{msg|filterA|filterB}}
 + uppercase大写，lowercase小写，capitalize首字母大写
 
@@ -19,3 +19,44 @@
 + jsonp
 + https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=a
 + https://sug.so.360.cn/suggest?callback=suggest_so&word=a
+
+```javascript
+
+	//请求get
+	get:function(){
+		this.$http.get(url).then(function(res){
+			//成功
+			this.data=response.body;
+		},function(res){
+			//error
+		});
+	}
+
+	// 发送get
+	get:function(){
+		this.$http.get(url,{
+			a:xx,
+			b:xxx
+		}).then(function(res){
+			//success
+			this.data=response.body;
+		},function(res){
+			//error
+		});
+	}
+
+	//post
+	post:function(){
+		this.$http.post(url,{
+			a:xxx,
+			b:xxx
+		}).then(function(res){
+			//success
+			this.data=response.body;
+		},function(res){
+			//error
+		});
+	}
+
+
+```
