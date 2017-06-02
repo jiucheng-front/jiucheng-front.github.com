@@ -36,6 +36,7 @@ window.onload=function(){
                 }
                 // 替換搜搜框的內容
                 this.msg=this.someData[this.now];
+                document.addEventListener
             },
             // 向上按钮事件
             selectedUp:function(){
