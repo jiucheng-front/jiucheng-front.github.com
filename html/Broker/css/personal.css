@@ -1,0 +1,47 @@
+/*
+* @Author: wangjianfei
+* @Date:   2017-06-05 10:20:31
+* @Last Modified by:   wangjianfei
+* @Last Modified time: 2017-06-05 10:31:40
+*/
+*{
+	margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 0;
+  box-sizing: border-box;
+  outline: 0;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+}
+/* flex */
+.flex_parent{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.flex_child{
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+/* clear float */
+.clear:after{
+	display: table;
+	content: "";
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+/* clear margin-top */
+.clearMtop:before{
+	display: table;
+	content: "";
+}
