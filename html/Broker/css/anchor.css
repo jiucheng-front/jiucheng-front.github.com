@@ -2,12 +2,10 @@
 * @Author: wangjianfei
 * @Date:   2017-06-05 10:20:07
 * @Last Modified by:   wangjianfei
-* @Last Modified time: 2017-06-06 22:02:17
+* @Last Modified time: 2017-06-07 19:03:48
 */
-
-
 *{
-	margin: 0;
+  margin: 0;
   padding: 0;
   list-style: none;
   border: 0;
@@ -33,14 +31,14 @@
 }
 /* float */
 .clear:after{
-	display: table;
-	content: "";
+  display: table;
+  content: "";
 }
 .fl{
-	float: left;
+  float: left;
 }
 .fr{
-	float: right;
+  float: right;
 }
 .block {
     display: block;
@@ -48,8 +46,8 @@
 }
 /* clear margin-top */
 .clearMtop:before{
-	display: table;
-	content: "";
+  display: table;
+  content: "";
 }
 .backTop {
     position: fixed;
@@ -324,7 +322,13 @@ header{
   transform: translateX(-50%);
   bottom: -0.213333rem;
 }
-
+.total-broker-imgbox{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 50%;
+}
 /* 1級別 */
 .total-borker-imgone .total-borker-img{
   border-color: #FFCA3F;
@@ -335,48 +339,23 @@ header{
 .total-borker-imgone .total-borker-img span{
   background-image: url(../images/total_icon1_02.png);
 }
-.total-borker-imgone .total-borker-msg p b{
+/* 级别 */
+.anchor-now-one{
   background-image: url(../images/anchor_icon01.png);
 }
-/* 2 */
-.total-borker-imgtwo .total-borker-img{
-  border-color: #D6DF00;
-}
-.total-borker-imgtwo .total-borker-img i{
-  background-image: url(../images/total_icon1_01.png);
-}
-.total-borker-imgtwo .total-borker-img span{
-  background-image: url(../images/total_icon1_02.png);
-}
-.total-borker-imgtwo .total-borker-msg p b{
+.anchor-now-two{
   background-image: url(../images/anchor_icon02.png);
 }
-/* 3 */
-.total-borker-imgthree .total-borker-img{
-  border-color: #00C7FA;
-}
-.total-borker-imgthree .total-borker-img i{
-  background-image: url(../images/total_icon1_01.png);
-}
-.total-borker-imgthree .total-borker-img span{
-  background-image: url(../images/total_icon1_02.png);
-}
-.total-borker-imgthree .total-borker-msg p b{
+.anchor-now-three{
   background-image: url(../images/anchor_icon03.png);
 }
-/* 4 */
-.total-borker-imgfour .total-borker-img{
-  border-color: #BF41DB;
-}
-.total-borker-imgfour .total-borker-img i{
-  background-image: url(../images/total_icon1_01.png);
-}
-.total-borker-imgfour .total-borker-img span{
-  background-image: url(../images/total_icon1_02.png);
-}
-.total-borker-imgfour .total-borker-msg p b{
+.anchor-now-four{
   background-image: url(../images/anchor_icon04.png);
 }
+.anchor-now-five{
+  background-image: url(../images/anchor_icon01.png);
+}
+
 
 /* total-borker-msg */
 .total-borker-msg{
@@ -574,7 +553,7 @@ header{
     border-radius: 50%;
     position: relative;
     margin-top: 0.6rem;
-    margin-left: 0.333333rem;
+    margin-left: 0.2rem;
     position: relative;
     cursor: pointer;
     box-shadow: 3px 0 5px #ccc;
@@ -613,7 +592,7 @@ header{
 
 /* anchor-listmsg */
 .anchor-listmsg{
-  width: 4.266667rem;
+  width: 4.7rem;
   margin-left: .3rem;
   padding-top: .7rem;
 }
@@ -655,7 +634,7 @@ header{
     background-image: url(../images/total_icon01.png);
 }
 .anchor-listmsg h3{
-  width: 100%;
+  width: 80%;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
