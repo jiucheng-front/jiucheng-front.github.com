@@ -2,7 +2,7 @@
 * @Author: wangjianfei
 * @Date:   2017-06-05 10:24:21
 * @Last Modified by:   wangjianfei
-* @Last Modified time: 2017-06-09 19:59:55
+* @Last Modified time: 2017-06-09 20:08:50
 */
 
 !function(){
@@ -467,7 +467,7 @@
 				}
 			// },
 			// "json"
-		);
+		// );
 		document.getElementById("gift-mask").addEventListener("touchmove", function(event){
 	        // 阻止彈出後頁面的滚动
 	        event.preventDefault();
