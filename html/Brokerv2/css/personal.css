@@ -542,7 +542,6 @@ header{
   width: 3.6rem;
   color: #fff;
   margin-left: 0.333333rem;
-  margin-top: .1rem;
 }
 .user-msg h3{
     text-overflow: ellipsis;
@@ -711,99 +710,4 @@ header{
 }
 .none{
   display: none;
-}
-/* detial-rule-mask 活動細則*/
-.detial-rule-mask{
-  position: relative;
-  width: 100%;
-  background: #fff;
-  display: none;
-  z-index: 15;
-  padding: .8rem .5rem;
-}
-.detial-rule-mask>p{
-  margin-top: .2rem;
-}
-/* detial-box */
-.detial-box{
-  width: 100%;
-  margin-top: .3rem;
-  overflow: hidden;
-  border-top: 1px solid #FFD67E;
-  border-left: 1px solid #FFD67E;
-}
-.detial-box li{
-  float: left;
-  width: 33.33%;
-  border-right: 1px solid #FFD67E;
-  border-bottom: 1px solid #FFD67E;
-  height: 1rem;
-  line-height: 1rem;
-  text-align: center;
-}
-.detial-box li:nth-child(1),
-.detial-box li:nth-child(2),
-.detial-box li:nth-child(3) {
-    background: #AE7E16;
-    color: #fff;
-}
-/* detial-content */
-.detial-content{
-  border-collapse: collapse;
-  width: 100%;
-  margin-top: .2rem;
-}
-.detial-content td{
-  border:1px solid #FFD67E;
-  text-align: center;
-  padding: .08rem 0;
-}
-.detial-rule-font{
-  background: #AE7E16;
-  color: #fff;
-}
-/* detial-content-two */
-.detial-content-two{
-  width: 100%;
-  overflow: hidden;
-  margin-top: .2rem;
-  border-top: 1px solid #FFD67E;
-  border-left: 1px solid #FFD67E;
-}
-.detial-content-two li{
-  width: 50%;
-  float: left;
-  border-right: 1px solid #FFD67E;
-  border-bottom: 1px solid #FFD67E;
-  height: 1rem;
-  line-height: 1rem;
-  text-align: center;
-}
-/*  */
-.detial-rule-mask>h5{
-  text-align: center;
-  margin-top: .2rem;
-}
-.detial-rule-mask>h3{
-  text-align: center;
-  line-height: .8rem;
-  margin-top: .3rem;
-}
-#detialRuleClose{
-  position: absolute;
-  width: 0.666667rem;
-  height: 0.666667rem;
-  background-image: url(../images/upload_close.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  right: .2rem;
-  top: .2rem;
-}
-/* 0609 */
-.same-msg{
-  width: 7rem;
-  position: absolute;
-  bottom: 2.0rem;
-  left: .4rem;
-  color: #911631;
 }

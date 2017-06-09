@@ -2,7 +2,7 @@
 * @Author: wangjianfei
 * @Date:   2017-06-08 17:05:09
 * @Last Modified by:   wangjianfei
-* @Last Modified time: 2017-06-09 19:51:08
+* @Last Modified time: 2017-06-08 19:44:27
 */
 
 'use strict';
@@ -16,8 +16,7 @@ if(isNotAjax){
 		    "pfid": "1020025",
 		    "headimg": "http://playback-langlive.ufile.ucloud.com.cn/128dc4649a19a496cc1c95633e8e2517",
 		    "nickname": "含師傅",
-		    "anchor_num": 9,
-		    "total_score":12
+		    "anchor_num": 9
 		  },
 		  "broke_today_ranked": [
 		    {

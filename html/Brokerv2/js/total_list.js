@@ -2,7 +2,7 @@
 * @Author: wangjianfei
 * @Date:   2017-06-05 10:25:20
 * @Last Modified by:   wangjianfei
-* @Last Modified time: 2017-06-09 20:01:24
+* @Last Modified time: 2017-06-08 21:05:36
 */
 
 
@@ -23,8 +23,9 @@
 
 	//1.0 请求数据
 	function getDate(){
-		// $.post(domain+'v2/html/broke/get_broke_ranked_info', {"HTTP_USER_TOKEN":token, "HTTP_USER_UID":pfid, "anchor_pfid":anchor_pfid,"broke_pfid":pfid,"date":""},
+		// $.post(domain+'v2/activity/dracula_data', {"HTTP_USER_TOKEN":token, "HTTP_USER_UID":pfid, "anchor_pfid":anchor_id },
 		 	// function(data) {
+	            /*optional stuff to do after success */
 	            if(data.ret_code=="0"){
 	            	// 1、底部主播信息
 	            	var anchorInfo=data.broke_info;
@@ -71,7 +72,7 @@
 			today_html+='<span>'+brokerScore+'</span>';
 			today_html+='</li>';
 		}
-		$("#totalTodayLists").empty().append(today_html);
+		$("#totalTodayLists").append(today_html);
 		// 多于10个先隐藏
 		if(today_length>10){
 			$("#totalTodayLists li").eq(9).nextAll().addClass('none');
@@ -107,7 +108,7 @@
 			all_html+='<span>'+allScore+'</span>';
 			all_html+='</li>';
 		}
-		$("#totalLists").empty().append(all_html);
+		$("#totalLists").append(all_html);
 		// 多于10个先隐藏
 		if(all_length>10){
 			$("#totalLists li").eq(9).nextAll().addClass('none');
@@ -131,82 +132,49 @@
 		artistImgDom.src=artist_img;
 		artistNameDom.innerHTML=artist_nickname;
 		artistCountDom.innerHTML=artist_count;
-		// ---0609添加  總積分
-		var totalScoreDom=getDomId("anchorTotalScore");
-		var total_score=info.total_score;
-		totalScoreDom.innerHTML=total_score;
 	}
 
 	//3 定位日期
 	function changeDate(){
-		// 12號 備用
-		// var dateObj={
-		// 	"12":0,
-		// 	"13":1,
-		// 	"14":2,
-		// 	"15":3,
-		// 	"16":4,
-		// 	"17":5,
-		// 	"18":6,
-		// 	"19":7,
-		// 	"20":8,
-		// 	"21":9,
-		// 	"22":10,
-		// 	"23":11,
-		// 	"24":12,
-		// 	"25":13
-		// };
 		var dateObj={
-			"8":0,
-			"9":1,
-			"10":2,
-			"11":3,
-			"12":4,
-			"13":5,
-			"14":6,
-			"15":7,
-			"16":8,
-			"17":9,
-			"18":10,
-			"19":11,
-			"20":12,
-			"21":13
+			"10":0,
+			"11":1,
+			"12":2,
+			"13":3,
+			"14":4,
+			"15":5,
+			"16":6,
+			"17":7,
+			"18":8,
+			"19":9,
+			"20":10,
+			"21":11,
+			"22":12,
+			"23":13
 		};
-		var nowDate=new Date();
-		// var nowDate=new Date("2017-06-20");
+		// var nowDate=new Date();
+		var nowDate=new Date("2017-06-20");
 		// 把日期作為key，对应按钮的index
 		var key=nowDate.getDate();
 		var index=dateObj[key];
-		if(key<8||key>21){
+		if(key<10||key>23){
 			console.log(key);
 			$(".change-date").addClass('gray-bg');
 		}else{
 			$(".change-date").eq(index).addClass('selected choice-date').siblings().removeClass('selected');
 			$(".change-date").eq(index).nextAll().addClass('gray-bg');
 			$(".change-date").eq(index).prevAll().addClass('choice-date');
+			$(".choice-date").click(function(){
+				if(!$(this).hasClass('selected')){
+					var thisTime=$(this).attr("data-time");
+					$(this).addClass('selected').siblings().removeClass('selected');
+					console.log(thisTime);
+				}
+			});
 		}
 		
 	}
 	changeDate();
-	// 重新选择之前的日期查看榜单
-	$(".choice-date").click(function(){
-		var $that=$(this);
-		if(!$that.hasClass('selected')){
-			var thisTime=$that.attr("data-time");
-			$that.addClass('selected').siblings().removeClass('selected');
-			console.log(thisTime);
-			$.post(domain+'v2/html/broke/get_broke_ranked_info', {"broke_pfid":pfid, "date":thisTime},
-				function(DATA) {
-					if(DATA.ret_code=="0"){
-						// 
-						var nowTodaBroker=DATA.broke_today_ranked;
-						printToday(nowTodaBroker);
-					}
-				},
-				"json"
-			);
-		}
-	});
 	//4、中间 切換
 	$(".anchor-tabbtn").click(function(){
 		if(!$(this).hasClass('selected')){
@@ -232,20 +200,5 @@
 		$("#jumpPersonal").trigger('submit');
 	});
 
-	// 活動細則
-	$("#rule-btn").click(function(){
-		$("#container").hide();
-		$("#detialRuleMask").show();
-	});
-	$("#detialRuleClose").click(function(){
-		$("#detialRuleMask").hide();
-		$("#container").show();
-	});
-
-	if(isiOS==true){
-		window.webkit.messageHandlers.langWeb2App_topback.postMessage({body:'{"flag":"1"}'});
-	} else {
-		javascriptinterface.langWeb2App_topback("1");
-	}
 
 // }();

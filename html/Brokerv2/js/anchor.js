@@ -2,7 +2,7 @@
 * @Author: wangjianfei
 * @Date:   2017-06-06 12:51:16
 * @Last Modified by:   wangjianfei
-* @Last Modified time: 2017-06-09 19:58:15
+* @Last Modified time: 2017-06-08 18:18:11
 */
 
 'use strict';
@@ -169,8 +169,9 @@
 	}
 	//2.0 请求数据
 	function getDate(){
-		// $.post(domain+'v2/html/broke/get_index_info', {"HTTP_USER_TOKEN":token, "HTTP_USER_UID":pfid, "anchor_pfid":anchor_pfid,"broke_pfid":pfid},
+		// $.post(domain+'v2/html/broke/get_index_info', {"HTTP_USER_TOKEN":token, "HTTP_USER_UID":pfid, "anchor_pfid":anchor_id },
 		 	// function(data) {
+	            /*optional stuff to do after success */
 	            if(data.ret_code=="0"){
 					console.log(data);
 	            	// 主播信息
@@ -207,8 +208,7 @@
 		anchorNextLevel.style.width=anchor_NextLevel+"%";
 		//3 对应的级别和class、icon需要确认
 		var artistLevelDom=getDomId("artistLevel");
-		// 排除0的可能
-		var anchor_LevelIndex=anchorInfo.act_id;
+		var anchor_LevelIndex=anchorInfo.act_id;//未给到
 		var nowLevelArr={
 			"1":["anchor-level-one","潛力之星"],
 			"2":["anchor-level-two","希望之星"],
@@ -216,11 +216,9 @@
 			"4":["anchor-level-four","人氣之星"],
 			"5":["anchor-level-five","超級巨星"]
 		}
-		if(anchor_LevelIndex!=0){
-			var addClassName=nowLevelArr[anchor_LevelIndex][0];
-			artistLevelDom.innerHTML=nowLevelArr[anchor_LevelIndex][1];
-			artistLevelDom.className=addClassName;
-		}
+		var addClassName=nowLevelArr[anchor_LevelIndex][0];
+		artistLevelDom.innerHTML=nowLevelArr[anchor_LevelIndex][1];
+		artistLevelDom.className=addClassName;
 		//2、 中间切换对应的数据
 		var Brokers=anchorInfo.ranking;
 		var todayBrokers=Brokers.today;
@@ -252,10 +250,17 @@
 			str_html+='<div class="anchor-listmsg">';
 			str_html+='<h3>'+brokers_nickname+'</h3>';
 			str_html+='<p><span>我看好妳</span>';
-			str_html+='<b>'+diamondCount+'</b></p></div></li>';
+			str_html+='<b>'+diamondCount+'磚</b></p></div></li>';
 		}
 		return str_html;
 	}
+
+
+
+
+
+
+
 
 	///2、底部主播
 	function printBottom(brokerInfo){
@@ -307,19 +312,4 @@
 	$("#artistBtn").click(function(){
 		$("#jumpPersonal").trigger('submit');
 	});
-
-	// 活動細則
-	$("#rule-btn").click(function(){
-		$("#container").hide();
-		$("#detialRuleMask").show();
-	});
-	$("#detialRuleClose").click(function(){
-		$("#detialRuleMask").hide();
-		$("#container").show();
-	});
-	if(isiOS==true){
-		window.webkit.messageHandlers.langWeb2App_topback.postMessage({body:'{"flag":"1"}'});
-	} else {
-		javascriptinterface.langWeb2App_topback("1");
-	}
 }();

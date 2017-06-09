@@ -2,7 +2,7 @@
 * @Author: wangjianfei
 * @Date:   2017-06-05 10:24:21
 * @Last Modified by:   wangjianfei
-* @Last Modified time: 2017-06-09 19:59:55
+* @Last Modified time: 2017-06-08 20:48:14
 */
 
 !function(){
@@ -31,7 +31,6 @@
 			    "today_ranked": 4,
 			    "today_broke_id": 4,	//级别
 			    "today_score": 7,
-			    "total_score":99,
 			    "gift_box": {
 			      "big": {
 			        "id": 1,
@@ -218,8 +217,9 @@
 	}
 	//2.0 请求数据
 	function getDate(){
-		// $.post(domain+'v2/html/broke/get_broke_info', {"HTTP_USER_TOKEN":token, "HTTP_USER_UID":pfid, "anchor_pfid":anchor_pfid,"broke_pfid":pfid},
+		// $.post(domain+'v2/html/broke/get_broke_info', {"HTTP_USER_TOKEN":token, "HTTP_USER_UID":pfid, "anchor_pfid":anchor_id },
 		 	// function(data) {
+	            /*optional stuff to do after success */
 	            if(data.ret_code=="0"){
 	            	//1、上下主播信息
 	            	var broker_info=data.broke_info;
@@ -229,9 +229,7 @@
 	            	printArtists(artists);
 	            	//3、 推荐主播
 	            	var recommendAnchors=broker_info.recommend_achcor;
-					if(recommendAnchors!=null){
-						printRecommend(recommendAnchors);
-					}
+	            	printRecommend(recommendAnchors);
 	            }
 		    // },
 			// "json"
@@ -293,12 +291,12 @@
 			var direction=$(this).attr('data-direction');
 			if(liveid!="null"){
 				// 进入直播间
-				h5toRoom(pfid,nickname,liveid,liveurl,livekey,direction);
-				// alert("进入直播间");
+				// h5toRoom(pfid,nickname,liveid,liveurl,livekey,direction);
+				alert("进入直播间");
 				// 如果没在直播，进入个人主页	
 			}else{
-				h5toHomepage(pfid,nickname);
-				// alert("进入个人主页");
+				// h5toHomepage(pfid,nickname);
+				alert("进入个人主页");
 			}
 		});
 	}
@@ -330,16 +328,6 @@
 		$("#anchorbg-anchor").append(rec_html);
 		// 头像跳转
 		addEvent("#anchorbg-anchor",".recommend-img");
-		// 5、推薦主播弹框
-		$("#artist-btn").click(function(event){
-			event.preventDefault();
-			event.stopPropagation();
-			$("#recommend-bg").show();
-			document.getElementById("recommend-bg").addEventListener("touchmove", function(event){
-				// 阻止彈出後頁面的滚动
-				event.preventDefault();
-			});
-		});
 	}
 
 	//1、上下主播信息
@@ -356,27 +344,20 @@
 		var broker_levelid=broker_info.today_broke_id;
 		var topImg=getDomId("personalIconOne");
 		var outerCard=getDomId("personalIconTwo");
-		if(broker_levelid!=0){
-			var topImg_src=cardLists[broker_levelid][0];
-			var outerCard_src=cardLists[broker_levelid][1];
-			topImg.src=topImg_src;
-			outerCard.src=outerCard_src;
-		}
+		var topImg_src=cardLists[broker_levelid][0];
+		var outerCard_src=cardLists[broker_levelid][1];
+		topImg.src=topImg_src;
+		outerCard.src=outerCard_src;
 		// 1.2上升还是下降
 		var yesterday_ranked=broker_info.yesterday_ranked;
 		var today_ranked=broker_info.today_ranked;
 		var isUp=yesterday_ranked-today_ranked;
 		var yesRankingDom=getDomId("personalRanking");
-		var rank_str="<span>";
-		if(yesterday_ranked==0){
-			rank_str+="未上榜";
-		}else{
-			rank_str+=yesterday_ranked;
-			if(isUp>0){
-				rank_str+='<i class="up"></i>';
-			}else if(isUp<0){
-				rank_str+='<i class="down"></i>';
-			}
+		var rank_str="<span>"+yesterday_ranked;
+		if(isUp>0){
+			rank_str+='<i class="up"></i>';
+		}else if(isUp<0){
+			rank_str+='<i class="down"></i>';
 		}
 		rank_str+='</span>';
 		yesRankingDom.innerHTML=rank_str;
@@ -388,21 +369,14 @@
 		// 1.31 底部信息
 		var BottomImgDom=getDomId("anchorBottomImg");
 		BottomImgDom.src=broker_img;
-		// 用戶名字
 		var BottomNameDom=getDomId("anchorBottomName");
 		var bottom_name=broker_info.nickname;
 		BottomNameDom.innerHTML=bottom_name;
-		// 旗下藝人
 		var anchor_num=broker_info.anchor_num;
 		var ArtistsNumDom=getDomId("anchorArtistsNum");
 		ArtistsNumDom.innerHTML=anchor_num;
-		// 今日排名
 		var TodayLevelDom=getDomId("userTodayLevel");
 		TodayLevelDom.innerHTML=today_ranked;
-		// ---0609添加  總積分
-		var totalScoreDom=getDomId("anchorTotalScore");
-		var total_score=broker_info.total_score;
-		totalScoreDom.innerHTML=total_score;
 		// 1.4今日积分
 		var today_score=broker_info.today_score;
 		printDom("personalScore",today_score);
@@ -454,20 +428,18 @@
 			}
 		}
 		// $.post(domain+'v2/html/broke/open_gift_box', {"gift_box_id":thisGiftId, "broke_pfid":thisGiftPfid},
-			// function(DATA) {
-				if(DATA.ret_code=="0"){
-					var last_count=DATA.last_num;
-					var gift_name=DATA.winning_title;
-					$("#gift-info").empty().html("恭喜獲得"+gift_name);
-					_this.find('span').html(last_count);
-					// 如果是0个去掉可以点击的classname
-					if(last_count==0){
-						_this.removeClass('open-gift').addClass('cant-open');
+				 	// function(DATA) {
+					if(DATA.ret_code=="0"){
+						var last_count=DATA.last_num;
+						var gift_name=DATA.winning_title;
+						$("#gift-info").empty().html("恭喜獲得"+gift_name);
+						_this.find('span').html(last_count);
+						// 如果是0个去掉可以点击的classname
+						if(last_count==0){
+							_this.removeClass('open-gift').addClass('cant-open');
+						}
 					}
-				}
-			// },
-			// "json"
-		);
+		// });
 		document.getElementById("gift-mask").addEventListener("touchmove", function(event){
 	        // 阻止彈出後頁面的滚动
 	        event.preventDefault();
@@ -495,7 +467,16 @@
 				$('.backTop').hide();
 		}
 	})
-	
+	// 5、推薦主播弹框
+	$("#artist-btn").click(function(event){
+		event.preventDefault();
+		event.stopPropagation();
+		$("#recommend-bg").show();
+		document.getElementById("recommend-bg").addEventListener("touchmove", function(event){
+	        // 阻止彈出後頁面的滚动
+	        event.preventDefault();
+	    });
+	});
 	$("#close-recommend").click(function(event){
 		event.preventDefault();
 		event.stopPropagation();
@@ -505,21 +486,4 @@
 	$("#go_total").click(function(){
 		$("#jumpTotal").trigger('submit');
 	});
-
-	// 活動細則
-	$("#rule-btn").click(function(){
-		$("#container").hide();
-		$("#detialRuleMask").show();
-	});
-	$("#detialRuleClose").click(function(){
-		$("#detialRuleMask").hide();
-		$("#container").show();
-	});
-	
-	if(isiOS==true){
-		window.webkit.messageHandlers.langWeb2App_topback.postMessage({body:'{"flag":"1"}'});
-	} else {
-		javascriptinterface.langWeb2App_topback("1");
-	}
-
 }()
