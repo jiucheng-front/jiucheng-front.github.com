@@ -183,7 +183,7 @@ header{
   left: 0;
   bottom: 0;
   height: 1.866667rem;
-  background: rgba(0,0,0,.3);
+  background: rgba(0,0,0,.7);
   overflow: hidden;
   z-index: 20;
 }
