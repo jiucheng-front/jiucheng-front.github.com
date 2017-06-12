@@ -226,7 +226,10 @@
 ### 八、分享按钮(页面中的分享按钮和浏览器右上角的分享按钮)，如果需要显示用户信息，把参数在url后面拼接，分享方法的参数具体问产品要文案以及图片。被分享的页面需要新建一个页面内部如果有分享按钮需要去除(部分逻辑也需要去除)
 
 ```javascript
-	
+
+	**//注意：分享出去的頁面不需要相互跳轉，去掉跳轉的JS以及html內的跳轉按鈕**
+	//分享的參數需要注入的比如注入
+
 	//1、h5分享公用方法：页面中的分享按钮方法
 	function needShare(imgUrl,desc,pageTitle,pageUrl){
 		var androidShareJson={"imageurl":imgUrl,"description":desc,"title":pageTitle,"shareUrl":pageUrl};
@@ -261,9 +264,9 @@
 	})
 	
 	needShare(
-	     "http://playback-langlive.ufile.ucloud.com.cn/e634d9705beb4f8e9ab506748c940e84",
-	     "熱情夏日之旅，點亮心中奇夢！快來幫助主播實現迪士尼夢幻之旅計劃~",
-	     "迪士尼夢幻之旅展開中",
+	     "http://playback-langlive.ufile.ucloud.com.cn/e634d9705beb4f8e9ab506748c940e84",//分享的圖片
+	     "熱情夏日之旅，點亮心中奇夢！快來幫助主播實現迪士尼夢幻之旅計劃~",//分享的內容
+	     "迪士尼夢幻之旅展開中",//分享的標題
 	     share_url_head + 'html/activity/disney2017/map_share.html?anchor_pfid='+anchor_id+'&pfid='+pfid
 	);
 	
