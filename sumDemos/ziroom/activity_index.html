@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>向上生活节.浪潮小局</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="swiper-3.3.1.min.css"/>
+    <style>
+        body{background-color:#ffffff;width:100%;max-width:640px;margin:auto;-webkit-text-size-adjust:none;}
+        html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+        a,button,input,textarea,li{text-decoration:none;-webkit-tap-highlight-color:rgba(255,255,255,0);color:#999999;}
+        a{display:block;}
+        li{list-style-type:none;}
+        ul{padding:0;margin:0;}
+        /*轮播图公共样式*/
+        .swiper-container{width:100%;max-width:640px;margin:auto;}
+        .swiper-slide{font-size:18px;background:#ffffff;}
+        .swiper-slide .image{width:100%;height:9rem;vertical-align:middle;display:inline-block;}
+        .activity-block{box-shadow:none;}
+        .activity-mask{background:none;}
+        .activity-describe{width:100%;}
+        .footFix{position:fixed;bottom:0;width:100%;max-width:640px;margin:auto;background:rgba(0, 0, 0, .3);text-align:center;color:#333333;height:2rem;line-height:2rem;font-size:0.8rem;}
+        .lay{position:fixed;width:100%;max-width:640px;height:100%;top:0;bottom:0;background-color:rgba(0,0,0,0.4);z-index:30;display:none;}
+        .layer{width:85%;max-width:640px;padding:0.8rem;background:#ffffff;margin:auto;z-index:50;position:absolute;top:50%;left:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);font-size:0.8rem;line-height:1.5;text-align:center;}
+        .layerT{text-align:center;margin-top:0.5rem;}
+        .layerDes{text-align:left;}
+        .layerKnow{color:#ffffff;border-radius:4px;background-color:#249cd1;font-size:0.6rem;height:2rem;border:none;outline:none;padding:0 2.5rem;font-weight:700;}
+        .scroll{overflow-y:hidden;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 轮播图 -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="javascript:void(0)">
+                        <img src="image/svg/box3.png" class="image">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="javascript:void(0)">
+                        <img src="image/svg/box.png" class="image">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="javascript:void(0)">
+                        <img src="image/svg/box2.png" class="image">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="list">
+        <!-- for 循环 start-->
+        <div class="activity-block">
+            <img class="activity-photo" src="http://7xn8h3.com2.z0.glb.qiniucdn.com/FtlMz_y5Pk8xMEPQCw5MGKCRuGxe" alt="activity photo">
+            <div class="activity-mask">
+                <div class="activity-describe">
+                    <a href="">测试专用</a>
+                </div>
+            </div>
+        </div>
+        <!-- for 循环 end-->
+    </div>
+
+
+    <!--0613假-->
+    <ul id="app_one">
+        <li>
+            <p></p>
+            <p></p>
+        </li>
+    </ul>
+    <!--0613假-->
+
+
+    <footer class="footFix" onclick="lay()">活动须知</footer>
+    <!-- 活动须知弹窗 -->
+    <div class="lay">
+        <div class="layer">
+            <p class="layerT">活动须知</p>
+            <p class="layerDes">活动由自如和someet平台独家合作，<br><br>当周活动将于每周二、周三晚发布，欢迎报名<br><br>自如客可享受Someet3个月免费会员服务。自首次扫码报名成功起，可任意报名Someet活动，无需额外购买会员权益。<br><br>P.S.会员费仅为报名资格费，不含单产活动小费。</p>
+            <button class="layerKnow">知道啦</button>
+        </div>
+    </div>
+</body>
+<script src="swiper-3.3.1.min.js"></script>
+<script src="jquery-2.1.1.min.js"></script>
+<script src="jquery.js"></script>
+</html>
+<script>
+$(document).ready(function(){
+    // 轮播图
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        paginationClickable: true,
+        loop: true,
+        autoplay:2000,
+        autoplayDisableOnInteraction:false,
+    });
+    // // 列表获取到的数据
+    // $.ajax({
+    //     url: "http://api.someet.cc/v1/activities/zi-room-act-index",
+    //     type: 'GET',
+    //     dataType: "json",
+    //     success: function(data, status){
+    //        if(data.status_code === 200){
+    //             // 数据成功获取
+    //             console.log(data.data);
+    //        } else {
+    //             // 数据获取失败
+    //             console.log("error");
+    //        }
+    //     },
+    //     // 错误提示
+    //     error: function(error){
+    //         alert("AjaxError:" + error.responseText);
+    //     }
+    // });
+
+
+    //0613模擬假數據
+    var data={
+        "success": "1",
+        "data": [
+            {
+                "id": "6416",
+                "city_id": "2",
+                "city": "北京",
+                "type_id": "46",
+                "title": "测试1测试1",
+                "desc": "测试1测试1",
+                "poster": "http://7xn8h3.com2.z0.glb.qiniucdn.com/FtlMz_y5Pk8xMEPQCw5MGKCRuGxe",
+                "week": "6",
+                "start_time": "1498069800",
+                "end_time": "1496505600",
+                "area": "雍和宫",
+                "address": "wadad",
+                "address_assign": null,
+                "details": "",
+                "group_code": "http://img.someet.cc/FmjgGht7Jo41a1wjhgqJdeKZQZM_",
+                "longitude": "0",
+                "latitude": "0",
+                "cost": "0",
+                "cost_list": "0",
+                "peoples": "10",
+                "ideal_number": "10",
+                "ideal_number_limit": "10",
+                "is_volume": "0",
+                "is_digest": "0",
+                "is_top": "0",
+                "principal": "0",
+                "pma_type": "0",
+                "review": null,
+                "created_at": "1496287677",
+                "created_by": "38",
+                "updated_at": "1496296989",
+                "updated_by": "1",
+                "status": "20",
+                "edit_status": "0",
+                "display_order": "99",
+                "content": "测试1测试1",
+                "apply_rate": "0",
+                "field1": null,
+                "field2": "1、活动不允许空降，如果有同行的小伙伴请把活动分享给TA让TA自行报名哟；<p>2、活动若无法照常参加，请进入Someet服务平台中的个人界面自行请假，否则将视为爽约（距活动开始时间24小时以上请假将获一张黄牌，24小时内请假两张黄牌，临时爽约三张黄牌）；</p>\n                    <p>3、</p>",
+                "field3": null,
+                "field4": null,
+                "field5": null,
+                "field6": null,
+                "field7": null,
+                "field8": null,
+                "co_founder1": "0",
+                "co_founder2": "0",
+                "co_founder3": "0",
+                "co_founder4": "0",
+                "is_full": "0",
+                "join_people_count": "0",
+                "space_spot_id": "0",
+                "sequence_id": "0",
+                "version_number": "0",
+                "group_id": "0",
+                "is_display": "1",
+                "allow_vip": "0",
+                "want_allow_vip": null,
+                "is_rfounder": null,
+                "reject_reason": null,
+                "tag_id": "24",
+                "detail_header": "$$$$",
+                "first_publish_date": "1496287699",
+                "type": {
+                    "id": "46",
+                    "city_id": "2",
+                    "city": "北京",
+                    "name": "职场&心理"
+                },
+                "user": {
+                    "id": "38",
+                    "username": "XYZorro",
+                    "profile": {
+                        "user_id": "38",
+                        "bio": "算命，起名都是骗人行为\n",
+                        "headimgurl": "http://wx.qlogo.cn/mmopen/iaNNqwlz7WaYQibDFsNfU4O7nrlCCZ9guCosw4VAL8uvica9YTA7mseKKPpXCO20189PBbyLaicGUawZgoCX0n9tKLwNfKzgbJMS/0",
+                        "sex": "1"
+                    }
+                }
+            },
+            {
+                "id": "6416",
+                "city_id": "2",
+                "city": "北京",
+                "type_id": "46",
+                "title": "测试1测试1",
+                "desc": "测试1测试1",
+                "poster": "http://7xn8h3.com2.z0.glb.qiniucdn.com/FtlMz_y5Pk8xMEPQCw5MGKCRuGxe",
+                "week": "6",
+                "start_time": "1498069800",
+                "end_time": "1496505600",
+                "area": "雍和宫",
+                "address": "wadad",
+                "address_assign": null,
+                "details": "",
+                "group_code": "http://img.someet.cc/FmjgGht7Jo41a1wjhgqJdeKZQZM_",
+                "longitude": "0",
+                "latitude": "0",
+                "cost": "0",
+                "cost_list": "0",
+                "peoples": "10",
+                "ideal_number": "10",
+                "ideal_number_limit": "10",
+                "is_volume": "0",
+                "is_digest": "0",
+                "is_top": "0",
+                "principal": "0",
+                "pma_type": "0",
+                "review": null,
+                "created_at": "1496287677",
+                "created_by": "38",
+                "updated_at": "1496296989",
+                "updated_by": "1",
+                "status": "20",
+                "edit_status": "0",
+                "display_order": "99",
+                "content": "测试1测试1",
+                "apply_rate": "0",
+                "field1": null,
+                "field2": "1、活动不允许空降，如果有同行的小伙伴请把活动分享给TA让TA自行报名哟；<p>2、活动若无法照常参加，请进入Someet服务平台中的个人界面自行请假，否则将视为爽约（距活动开始时间24小时以上请假将获一张黄牌，24小时内请假两张黄牌，临时爽约三张黄牌）；</p>\n                    <p>3、</p>",
+                "field3": null,
+                "field4": null,
+                "field5": null,
+                "field6": null,
+                "field7": null,
+                "field8": null,
+                "co_founder1": "0",
+                "co_founder2": "0",
+                "co_founder3": "0",
+                "co_founder4": "0",
+                "is_full": "0",
+                "join_people_count": "0",
+                "space_spot_id": "0",
+                "sequence_id": "0",
+                "version_number": "0",
+                "group_id": "0",
+                "is_display": "1",
+                "allow_vip": "0",
+                "want_allow_vip": null,
+                "is_rfounder": null,
+                "reject_reason": null,
+                "tag_id": "24",
+                "detail_header": "$$$$",
+                "first_publish_date": "1496287699",
+                "type": {
+                    "id": "46",
+                    "city_id": "2",
+                    "city": "北京",
+                    "name": "职场&心理"
+                },
+                "user": {
+                    "id": "38",
+                    "username": "XYZorro",
+                    "profile": {
+                        "user_id": "38",
+                        "bio": "算命，起名都是骗人行为\n",
+                        "headimgurl": "http://wx.qlogo.cn/mmopen/iaNNqwlz7WaYQibDFsNfU4O7nrlCCZ9guCosw4VAL8uvica9YTA7mseKKPpXCO20189PBbyLaicGUawZgoCX0n9tKLwNfKzgbJMS/0",
+                        "sex": "1"
+                    }
+                }
+            },
+            {
+                "id": "6416",
+                "city_id": "2",
+                "city": "北京",
+                "type_id": "46",
+                "title": "测试1测试1",
+                "desc": "测试1测试1",
+                "poster": "http://7xn8h3.com2.z0.glb.qiniucdn.com/FtlMz_y5Pk8xMEPQCw5MGKCRuGxe",
+                "week": "6",
+                "start_time": "1498069800",
+                "end_time": "1496505600",
+                "area": "雍和宫",
+                "address": "wadad",
+                "address_assign": null,
+                "details": "",
+                "group_code": "http://img.someet.cc/FmjgGht7Jo41a1wjhgqJdeKZQZM_",
+                "longitude": "0",
+                "latitude": "0",
+                "cost": "0",
+                "cost_list": "0",
+                "peoples": "10",
+                "ideal_number": "10",
+                "ideal_number_limit": "10",
+                "is_volume": "0",
+                "is_digest": "0",
+                "is_top": "0",
+                "principal": "0",
+                "pma_type": "0",
+                "review": null,
+                "created_at": "1496287677",
+                "created_by": "38",
+                "updated_at": "1496296989",
+                "updated_by": "1",
+                "status": "20",
+                "edit_status": "0",
+                "display_order": "99",
+                "content": "测试1测试1",
+                "apply_rate": "0",
+                "field1": null,
+                "field2": "1、活动不允许空降，如果有同行的小伙伴请把活动分享给TA让TA自行报名哟；<p>2、活动若无法照常参加，请进入Someet服务平台中的个人界面自行请假，否则将视为爽约（距活动开始时间24小时以上请假将获一张黄牌，24小时内请假两张黄牌，临时爽约三张黄牌）；</p>\n                    <p>3、</p>",
+                "field3": null,
+                "field4": null,
+                "field5": null,
+                "field6": null,
+                "field7": null,
+                "field8": null,
+                "co_founder1": "0",
+                "co_founder2": "0",
+                "co_founder3": "0",
+                "co_founder4": "0",
+                "is_full": "0",
+                "join_people_count": "0",
+                "space_spot_id": "0",
+                "sequence_id": "0",
+                "version_number": "0",
+                "group_id": "0",
+                "is_display": "1",
+                "allow_vip": "0",
+                "want_allow_vip": null,
+                "is_rfounder": null,
+                "reject_reason": null,
+                "tag_id": "24",
+                "detail_header": "$$$$",
+                "first_publish_date": "1496287699",
+                "type": {
+                    "id": "46",
+                    "city_id": "2",
+                    "city": "北京",
+                    "name": "职场&心理"
+                },
+                "user": {
+                    "id": "38",
+                    "username": "XYZorro",
+                    "profile": {
+                        "user_id": "38",
+                        "bio": "算命，起名都是骗人行为\n",
+                        "headimgurl": "http://wx.qlogo.cn/mmopen/iaNNqwlz7WaYQibDFsNfU4O7nrlCCZ9guCosw4VAL8uvica9YTA7mseKKPpXCO20189PBbyLaicGUawZgoCX0n9tKLwNfKzgbJMS/0",
+                        "sex": "1"
+                    }
+                }
+            }
+        ],
+        "status_code": 200
+    } 
+
+    var isNotAjax=true;
+    if(isNotAjax){
+        var lists=data.data;
+        resetData(lists);
+    }
+
+    function resetData(lists){
+        var str="";
+        var length=lists.length;
+        if(length!=0){
+            for(var i=0;i<length;i++){
+                var thisList=lists[i];
+                console.log(thisList);
+                var address=thisList.address;
+                var area=thisList.area;
+                // 其他屬性類推。。。。。
+                str+="<li>";
+                str+="<p>"+address+"</p>";
+                str+="<p>"+area+"</p>";
+                str+="</li>";
+            }
+            $("#app_one").append(str);
+        }
+    }   
+
+
+
+
+
+
+
+
+    $(window).scroll(function(){
+        if($(window).scrollTop() >120){
+            function getShopList(n){
+            n = n < 1 ? 1 : n;
+            var resStr = "";
+            for(i = 0; i < n; i++){
+                resStr += '<div class="activity-block"><img class="activity-photo" src="http://7xn8h3.com2.z0.glb.qiniucdn.com/FtlMz_y5Pk8xMEPQCw5MGKCRuGxe" alt="activity photo"><div class="activity-mask"><div class="activity-describe"><a href="">测试专用</a></div></div></div>';
+                }
+            return resStr;
+            }
+            var shopList = getShopList(2);
+            $(".list").append(shopList);
+        }
+    })
+})
+</script>
