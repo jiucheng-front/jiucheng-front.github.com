@@ -337,3 +337,9 @@
 + ![](../imgs/AJAX01.png)
 + ![](../imgs/AJAX02.png)
 + ![](../imgs/AJAX03.png)
+
++ ## 注意事項
++ 1、Content-Type: application/x-www-form-urlencoded;charset=utf-8；
+	+ 此時的請求參數得是：'key=value&key2=value2'格式
++ 2、application/json;charset=utf-8；
+	+ 此時的請求頭是：JSON.stringify(data)系列化之後的JSON格式，需要后台配合
