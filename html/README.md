@@ -12,9 +12,10 @@
 + 3、Disney迪士尼活动
 + 4、anchorGrowTree成长树活动
 + 5、motherDay：母亲节活动
-+ 6、Growth新人成长活动
-+ 7、degula德古拉活动
++ 6、Growth：新人成长活动
++ 7、degula：德古拉活动
 + 8、520love：520活动
++ 9、Broker：王牌经纪人活动(已经取消)
 
 
 ### 二、js介绍以及如何使用
