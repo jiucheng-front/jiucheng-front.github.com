@@ -271,3 +271,69 @@
 	);
 	
 ```
+
+
+### 注：其他封裝
+#### 1、ajax的封裝
+
+```javascript
+
+	// 614 測試封裝的ajax:post 測試可以使用
+	var str='HTTP_USER_TOKEN='+token+'&HTTP_USER_UID='+pfid+'&anchor_pfid='+anchor_pfid+'&broke_pfid='+pfid+'&date='+date;
+	function Ajax(type,urlStr,data){
+		// 定义domain,方便环境切换
+		var domain='https://' + window.location.host + '/';
+		var url=domain+urlStr;
+		var xhrRequest=new XMLHttpRequest();
+		xhrRequest.open(type,url,true);
+		if(type==="POST"){
+			xhrRequest.setRequestHeader("Content-type", "application/x-www-form-urlencoded;charset=utf-8"); 
+		}
+		xhrRequest.onreadystatechange=function(){
+			if(xhrRequest.readyState==4&&xhrRequest.status==200||xhrRequest.status==304){
+				// 1、格式化返回的数据
+				var responseData=JSON.parse(xhrRequest.responseText);
+				console.log(responseData);
+			}
+		}
+		xhrRequest.send(str);
+	}
+	Ajax("POST","v2/html/broke/get_broke_ranked_info",str);
+
+
+	
+
+
+	
+	//GET:測試可以用如：http://wjf444128852.github.io/html/handlebars/degula/
+	function Ajax(type,urlStr,data){
+		// 定义domain,方便环境切换
+		var domain='https://' + window.location.host + '/';
+		var url=domain+urlStr;
+		var xhrRequest=new XMLHttpRequest();
+		xhrRequest.open(type,url,true);
+		if(type==="POST"){
+			xhrRequest.setRequestHeader("Content-type", "application/x-www-form-urlencoded;charset=utf-8"); 
+		}
+		xhrRequest.onreadystatechange=function(){
+			if(xhrRequest.readyState==4&&xhrRequest.status==200||xhrRequest.status==304){
+				// 1、格式化返回的数据
+				var responseData=JSON.parse(xhrRequest.responseText);
+				console.log(responseData);
+				// 2、获取指定的数据列表
+				var users=responseData.data.users;
+				// 3、操作返回的数据
+				sortData(users);
+			}
+		}
+		xhrRequest.send(data);
+	}
+	Ajax("GET","json-datas/degula.json",null);
+
+
+```
+
++ POST測試結果
++ ![](../imgs/AJAX01.png)
++ ![](../imgs/AJAX02.png)
++ ![](../imgs/AJAX03.png)
