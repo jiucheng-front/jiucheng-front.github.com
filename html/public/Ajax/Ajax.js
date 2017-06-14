@@ -45,7 +45,7 @@ var postOption={
 	}
 }
 
-var loadPostData=Ajax(postOption);
+Ajax(postOption);
 
 //3、GET：定义请求参数
 var getOption={
@@ -53,7 +53,7 @@ var getOption={
 	urlStr:"v2/html/broke/get_broke_ranked_info",
 	ajaxData:null		
 }
-var loadGetData=Ajax(getOption);
+Ajax(getOption);
 
 // 注意：使用说明option必须
 option={
