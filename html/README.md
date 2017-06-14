@@ -366,9 +366,9 @@
 	}
 	// 2、POST：定義請求參數
 	var postOption={
-		ajaxType:"POST",								//必须："GET"/"POST"
-		urlStr:"v2/html/broke/get_broke_ranked_info",	//必须："string类型"
-		ajaxData:{										//必须：POST时候为object{key:value}，GET的时候直接为：null
+		ajaxType:"POST",
+		urlStr:"v2/html/broke/get_broke_ranked_info",
+		ajaxData:{	
 			"HTTP_USER_TOKEN":token,
 			"HTTP_USER_UID":pfid, 
 			"anchor_pfid":anchor_pfid,
@@ -381,12 +381,21 @@
 	
 	//3、GET：定义请求参数
 	var getOption={
-		ajaxType:"GET",									//必须：
-		urlStr:"v2/html/broke/get_broke_ranked_info",	//必须：
-		ajaxData:null									//必须：		
+		ajaxType:"GET",
+		urlStr:"v2/html/broke/get_broke_ranked_info",
+		ajaxData:null
 	}
 	Ajax(getOption);
 	
+	**//说明Ajax(option)**option必须
+	option{
+		//1、ajaxType必须："GET"/"POST"
+		ajaxType:"POST",
+		//2、urlStr必须："string类型"
+		urlStr:"xxxx",
+		//3、ajaxData必须：POST时候为object{key:value}，GET的时候直接为：null
+		ajaxData：null/object
+  	}
 	
 
 ```
