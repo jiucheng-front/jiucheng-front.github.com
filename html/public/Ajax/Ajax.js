@@ -49,9 +49,9 @@ var loadPostData=Ajax(postOption);
 
 //3、GET：定义请求参数
 var getOption={
-	ajaxType:"GET",									//必须：
-	urlStr:"v2/html/broke/get_broke_ranked_info",	//必须：
-	ajaxData:null									//必须：		
+	ajaxType:"GET",	
+	urlStr:"v2/html/broke/get_broke_ranked_info",
+	ajaxData:null		
 }
 var loadGetData=Ajax(getOption);
 
