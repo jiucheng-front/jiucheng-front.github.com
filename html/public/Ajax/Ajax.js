@@ -23,7 +23,7 @@ function Ajax(option){
 		}
 	}
 	xhrRequest.onreadystatechange=function(){
-		if(xhrRequest.readyState==4&&xhrRequest.status==200||xhrRequest.status==304){
+		if(xhrRequest.readyState==4&&xhrRequest.status==200){
 			// 1、格式化返回的数据
 			var responseData=JSON.parse(xhrRequest.responseText);
 			console.log(responseData);
