@@ -333,10 +333,69 @@
 
 ```
 
+
+### ajax封装的升级版
+
+```javascript
+
+	// 1、封裝AJAX函數
+	function Ajax(option){
+		// 定义domain,方便环境切换
+		var domain='https://' + window.location.host + '/';
+		var url=domain+option.urlStr;
+		var type=option.ajaxType;
+		var data=option.ajaxData;
+		var xhrRequest=new XMLHttpRequest();
+		var str=null;
+		xhrRequest.open(type,url,true);
+		if(type==="POST"&&data!=null){
+			xhrRequest.setRequestHeader("Content-type", "application/x-www-form-urlencoded;charset=utf-8");
+			for(var key in data){
+				str+='&'+key+'='+data[key];
+				str=str.slice(1);
+			}
+		}
+		xhrRequest.onreadystatechange=function(){
+			if(xhrRequest.readyState==4&&xhrRequest.status==200||xhrRequest.status==304){
+				// 1、格式化返回的数据
+				var responseData=JSON.parse(xhrRequest.responseText);
+				console.log(responseData);
+			}
+		}
+		xhrRequest.send(str);
+	}
+	// 2、POST：定義請求參數
+	var postOption={
+		ajaxType:"POST",								//必须："GET"/"POST"
+		urlStr:"v2/html/broke/get_broke_ranked_info",	//必须："string类型"
+		ajaxData:{										//必须：POST时候为object{key:value}，GET的时候直接为：null
+			"HTTP_USER_TOKEN":token,
+			"HTTP_USER_UID":pfid, 
+			"anchor_pfid":anchor_pfid,
+			"broke_pfid":pfid,
+			"date":date
+		}
+	}
+	
+	Ajax(postOption);
+	
+	//3、GET：定义请求参数
+	var getOption={
+		ajaxType:"GET",									//必须：
+		urlStr:"v2/html/broke/get_broke_ranked_info",	//必须：
+		ajaxData:null									//必须：		
+	}
+	Ajax(getOption);
+	
+	
+
+```
+
 + POST測試結果
-+ ![](../imgs/AJAX01.png)
-+ ![](../imgs/AJAX02.png)
-+ ![](../imgs/AJAX03.png)
++ ![](./imgs/AJAX01.png)
++ ![](./imgs/AJAX02.png)
++ ![](./imgs/AJAX03.png)
++ ![](./imgs/AJAX04.png)
 
 + ## 注意事項
 + 1、Content-Type: application/x-www-form-urlencoded;charset=utf-8；
@@ -364,5 +423,5 @@
 
 
 	+ 3、需要弹出的时候直接调用：promptObj.init("投票已經結束！");init()的參數就是提示信息的內容
-	+ 4、比如：![](../imgs/prompt01.png)
+	+ 4、比如：![](./imgs/prompt01.png)
 	+ 5、点击确定提示框关闭

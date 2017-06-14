@@ -17,14 +17,53 @@
 			"anchor_pfid":anchor_id
 		}
 */
-function Ajax(type,urlStr,data){
+
+// --------------------------------------------0518 start 可以正常使用
+// function Ajax(type,urlStr,data){
+// 	// 定义domain,方便环境切换
+// 	var domain='https://' + window.location.host + '/';
+// 	var url=domain+urlStr;
+// 	var xhrRequest=new XMLHttpRequest();
+// 	xhrRequest.open(type,url,true);
+// 	if(type==="POST"){
+// 		xhrRequest.setRequestHeader("Content-type", "application/x-www-form-urlencoded"); 
+// 	}
+// 	xhrRequest.onreadystatechange=function(){
+// 		if(xhrRequest.readyState==4&&xhrRequest.status==200||xhrRequest.status==304){
+// 			// 1、格式化返回的数据
+// 			var responseData=JSON.parse(xhrRequest.responseText);
+// 			console.log(responseData);
+// 			// 2、获取指定的数据列表
+// 			var users=responseData.data.users;
+// 			// 3、操作返回的数据
+// 			sortData(users);
+// 		}
+// 	}
+// 	xhrRequest.send(data);
+// }
+// Ajax("GET","json-datas/degula.json",null);
+// -------------------------------------------------0518 end
+
+
+
+
+// -----------------0614 start
+// 1、封裝AJAX函數
+function Ajax(option){
 	// 定义domain,方便环境切换
 	var domain='https://' + window.location.host + '/';
-	var url=domain+urlStr;
+	var url=domain+option.urlStr;
+	var type=option.ajaxType;
+	var data=option.ajaxData;
 	var xhrRequest=new XMLHttpRequest();
+	var str=null;
 	xhrRequest.open(type,url,true);
-	if(type==="POST"){
-		xhrRequest.setRequestHeader("Content-type", "application/x-www-form-urlencoded"); 
+	if(type==="POST"&&data!=null){
+		xhrRequest.setRequestHeader("Content-type", "application/x-www-form-urlencoded;charset=utf-8");
+		for(var key in data){
+			str+='&'+key+'='+data[key];
+			str=str.slice(1);
+		}
 	}
 	xhrRequest.onreadystatechange=function(){
 		if(xhrRequest.readyState==4&&xhrRequest.status==200||xhrRequest.status==304){
@@ -37,9 +76,22 @@ function Ajax(type,urlStr,data){
 			sortData(users);
 		}
 	}
-	xhrRequest.send(data);
+	xhrRequest.send(str);
 }
-Ajax("GET","json-datas/degula.json",null);
+// 定义请求参数
+var getOption={
+	ajaxType:"GET",
+	urlStr:"json-datas/degula.json",
+	ajaxData:null		
+}
+// 调用
+Ajax(getOption);
+
+// -----------------0614 end
+
+
+
+
 
 
 // 1 把人員按照積分从高到底排列
