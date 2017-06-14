@@ -27,6 +27,7 @@ function Ajax(option){
 			// 1、格式化返回的数据
 			var responseData=JSON.parse(xhrRequest.responseText);
 			console.log(responseData);
+			// 2、这里操作数据
 		}
 	}
 	xhrRequest.send(str);
@@ -44,7 +45,7 @@ var postOption={
 	}
 }
 
-Ajax(postOption);
+var loadPostData=Ajax(postOption);
 
 //3、GET：定义请求参数
 var getOption={
@@ -52,7 +53,7 @@ var getOption={
 	urlStr:"v2/html/broke/get_broke_ranked_info",	//必须：
 	ajaxData:null									//必须：		
 }
-Ajax(getOption);
+var loadGetData=Ajax(getOption);
 
 // 注意：使用说明option必须
 option={
