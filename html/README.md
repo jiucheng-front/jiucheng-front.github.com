@@ -274,7 +274,7 @@
 
 
 ### 注：其他封裝
-#### 1、ajax的封裝
+#### 一、ajax的封裝
 
 ```javascript
 
@@ -343,3 +343,26 @@
 	+ 此時的請求參數得是：'key=value&key2=value2'格式
 + 2、application/json;charset=utf-8；
 	+ 此時的請求頭是：JSON.stringify(data)系列化之後的JSON格式，需要后台配合
+
+### 二、自定义弹出框的封装
++ 如何使用：
+	+ 1、分别引入public/prompt_box/prompt_box.css和public/prompt_box/prompt_box.js
+	+ 2、html底部放入一下HTML片段
+
+	```javascript
+		
+		<!-- 自定义alert框 -->
+		    <div id="prompt_box">
+		        <div class="prompt_mask">
+		            <p>友情提示：</p>
+		            <h2 id="prompt_title" class="prompt_title"></h2>
+		            <span id="prompt_btn">確 認</span>
+		        </div>
+		    </div>
+	
+	```
+
+
+	+ 3、需要弹出的时候直接调用：promptObj.init("投票已經結束！");init()的參數就是提示信息的內容
+	+ 4、比如：![](../imgs/prompt01.png)
+	+ 5、点击确定提示框关闭
