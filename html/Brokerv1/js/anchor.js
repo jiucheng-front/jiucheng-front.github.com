@@ -40,16 +40,20 @@
 // ----------------------613 end
 
 
-
 // -------------------------------------------------615 start
 // 1、封裝AJAX函數
-function Ajax(option){
+function nativeAjax(option,success,error){
 	// 定义domain,方便环境切换
 	var domain='https://' + window.location.host + '/';
 	var url=domain+option.urlStr;
 	var type=option.ajaxType;
 	var data=option.ajaxData;
-	var xhrRequest=new XMLHttpRequest();
+	var xhrRequest=null;
+	if(window.XMLHttpRequest){
+        xhrRequest = new XMLHttpRequest();
+    } else {
+        xhrRequest = new ActiveXObject('Microsoft.XMLHTTP')
+    }
 	var str=null;
 	xhrRequest.open(type,url,true);
 	if(type==="POST"&&data!=null){
@@ -60,18 +64,15 @@ function Ajax(option){
 		}
 	}
 	xhrRequest.onreadystatechange=function(){
-		if(xhrRequest.readyState==4&&xhrRequest.status==200){
-			// 1、格式化返回的数据
-			var responseData=JSON.parse(xhrRequest.responseText);
-			console.log(responseData);
-			// 2、这里操作数据-----------------------------------
-			if(responseData.ret_code=="0"){
-				// 主播信息
-				var anchor_info=responseData.anchor_info;
-				filterInfo(anchor_info);
-				// 底部用户信息
-				var broker_info=responseData.broke_info;
-				printBottom(broker_info);
+		if(xhrRequest.readyState==4){
+			if(xhrRequest.status==200){
+				// 1.1、格式化返回的数据
+				var responseData=JSON.parse(xhrRequest.responseText);
+				// 1.2、这里操作数据--------
+				success(responseData);
+			}else{
+				// 1.3、没成功返回HTTP状态码
+				error(xhrRequest.status);
 			}
 		}
 	}
@@ -84,7 +85,19 @@ var getOption={
 	ajaxData:null		
 }
 // 3、請求數據
-Ajax(getOption);
+Ajax(getOption,function(data){
+	// 成功函数
+	console.log(data);
+	// 主播信息
+	var anchor_info=data.anchor_info;
+	filterInfo(anchor_info);
+	// 底部用户信息
+	var broker_info=data.broke_info;
+	printBottom(broker_info);
+},function(error){
+	// 失败返回HTTP状态码
+	console.log(error);
+});
 // -------------------------------------------------615 end
 
 
