@@ -17,6 +17,7 @@
 	function printDom(id,html){
 		document.getElementById(id).innerHTML=html;
 	}
+	
 	//------------------------------------------------0613 start 去掉JQ的post	
 	// //2.0 请求数据
 	// function getDate(){
@@ -299,6 +300,7 @@
 		$("#gift-info").empty();
 		$("#gift-mask").show();
 		// 加数据
+		var isNotAjax=true;
 		if(isNotAjax){
 			var DATA={
 			  "ret_code": "0",
