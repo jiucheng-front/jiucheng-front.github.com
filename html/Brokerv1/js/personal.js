@@ -87,7 +87,7 @@
 	//2、GET：定义请求参数
 	var getOption={
 		ajaxType:"GET",	
-		urlStr:"json-datas/Broker/personal.json",
+		urlStr:"json-datas/Broker/personalData.json",
 		ajaxData:null		
 	}
 	// 3、請求數據
