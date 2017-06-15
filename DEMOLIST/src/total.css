@@ -32,6 +32,11 @@ body{
     border: 2px dotted #B7DEDF;
     cursor: pointer;
 }
+.parent li h3{
+    line-height: 45px;
+    color: #fff;
+    text-align: center;
+}
 .parent li a{
     display: block;
     padding:10px 30px;
