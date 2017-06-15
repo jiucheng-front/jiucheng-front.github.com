@@ -7,7 +7,7 @@
         "nickname": "破坏破恩爱PDF怕啥",
         "yesterday_ranked": 3,
         "today_ranked": 4,
-        "today_broke_id": 4,	//级别
+        "today_broke_id": 4,
         "today_score": 7,
         "total_score":99,
         "gift_box": {
@@ -24,7 +24,7 @@
             "num": 10
             }
         },
-        "anchor_num": 97891,		//旗下艺人
+        "anchor_num": 97891,
         "today_anchor_list":[
             {
                 "pfid": "1020266",

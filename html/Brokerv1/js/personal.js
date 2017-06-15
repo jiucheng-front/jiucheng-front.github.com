@@ -371,10 +371,10 @@
 		$("#container").show();
 	});
 	
-	if(isiOS==true){
-		window.webkit.messageHandlers.langWeb2App_topback.postMessage({body:'{"flag":"1"}'});
-	} else {
-		javascriptinterface.langWeb2App_topback("1");
-	}
+	// if(isiOS==true){
+	// 	window.webkit.messageHandlers.langWeb2App_topback.postMessage({body:'{"flag":"1"}'});
+	// } else {
+	// 	javascriptinterface.langWeb2App_topback("1");
+	// }
 
 }()
