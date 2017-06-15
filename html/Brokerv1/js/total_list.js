@@ -285,10 +285,16 @@
 		}
 	})
 	//6 跳转到个人
-	$("#artistBtn").click(function(){
-		$("#jumpPersonal").trigger('submit');
-	});
+	// $("#artistBtn").click(function(){
+	// 	$("#jumpPersonal").trigger('submit');
+	// });
 
+	// 跳转到个人
+	$("#artistBtn").click(function(){
+		var url=domain+"html/Brokerv1/personal.html";
+		window.open(url,"target");
+	});
+	
 	// 活動細則
 	$("#rule-btn").click(function(){
 		$("#container").hide();
