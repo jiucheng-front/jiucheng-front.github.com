@@ -2,10 +2,10 @@
 * @Author: wangjianfei
 * @Date:   2017-06-05 10:20:07
 * @Last Modified by:   wangjianfei
-* @Last Modified time: 2017-06-07 19:08:04
+* @Last Modified time: 2017-06-08 21:02:58
 */
 *{
-  margin: 0;
+	margin: 0;
   padding: 0;
   list-style: none;
   border: 0;
@@ -31,14 +31,14 @@
 }
 /* float */
 .clear:after{
-  display: table;
-  content: "";
+	display: table;
+	content: "";
 }
 .fl{
-  float: left;
+	float: left;
 }
 .fr{
-  float: right;
+	float: right;
 }
 .block {
     display: block;
@@ -46,8 +46,8 @@
 }
 /* clear margin-top */
 .clearMtop:before{
-  display: table;
-  content: "";
+	display: table;
+	content: "";
 }
 .backTop {
     position: fixed;
@@ -183,7 +183,7 @@ header{
   left: 0;
   bottom: 0;
   height: 1.866667rem;
-  background: rgba(0,0,0,.3);
+  background: rgba(0,0,0,.7);
   overflow: hidden;
   z-index: 20;
 }
@@ -206,6 +206,7 @@ header{
   width: 3.6rem;
   color: #fff;
   margin-left: 0.333333rem;
+  margin-top: .1rem;
 }
 .user-msg h3{
     text-overflow: ellipsis;
@@ -229,7 +230,9 @@ header{
 }
 
 .total-list-box{
-  margin-top: -10.6rem;
+  margin-top: -11.6rem;
+  z-index: 10;
+  position: relative;
 }
 .total-header,
 .total-body,
@@ -259,6 +262,7 @@ header{
     margin-top: 1.666667rem;
 }
 .total-header ul li {
+    border: 1px solid #F53A50;
     -webkit-box-flex: 1;
     -moz-box-flex: 1;
     -webkit-flex: 1;
@@ -270,7 +274,6 @@ header{
     text-align: center;
     font-size: 0.426667rem;
     font-weight: 700;
-    border: 0.026667rem solid #F53A50;
 }
 .total-header ul li.selected {
     background: #F53A50;
@@ -351,7 +354,7 @@ header{
 
 /* same-lists */
 .same-lists{
-  margin-top: 0.533333rem;
+  padding-top: 0.533333rem;
 }
 .same-lists li{
   /* height: 2.453333rem; */
@@ -478,4 +481,120 @@ header{
   bottom: -.6rem;
   font-size: 0.213333rem;
   text-align: center;
+}
+/* seeMore */
+#lookMore,
+#seeMore{
+  width: 4.053333rem;
+  height: 0.933333rem;
+  background-image: url(../images/personal_morebg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: .4rem;
+  display: none;
+}
+#lookMore.Block,
+#seeMore.Block{
+  display: block;
+}
+.none{
+  display: none;
+}
+/* detial-rule-mask 活動細則*/
+.detial-rule-mask{
+  position: relative;
+  width: 100%;
+  background: #fff;
+  display: none;
+  z-index: 15;
+  padding: .8rem .5rem;
+}
+.detial-rule-mask>p{
+  margin-top: .2rem;
+}
+/* detial-box */
+.detial-box{
+  width: 100%;
+  margin-top: .3rem;
+  overflow: hidden;
+  border-top: 1px solid #FFD67E;
+  border-left: 1px solid #FFD67E;
+}
+.detial-box li{
+  float: left;
+  width: 33.33%;
+  border-right: 1px solid #FFD67E;
+  border-bottom: 1px solid #FFD67E;
+  height: 1rem;
+  line-height: 1rem;
+  text-align: center;
+}
+.detial-box li:nth-child(1),
+.detial-box li:nth-child(2),
+.detial-box li:nth-child(3) {
+    background: #AE7E16;
+    color: #fff;
+}
+/* detial-content */
+.detial-content{
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: .2rem;
+}
+.detial-content td{
+  border:1px solid #FFD67E;
+  text-align: center;
+  padding: .08rem 0;
+}
+.detial-rule-font{
+  background: #AE7E16;
+  color: #fff;
+}
+/* detial-content-two */
+.detial-content-two{
+  width: 100%;
+  overflow: hidden;
+  margin-top: .2rem;
+  border-top: 1px solid #FFD67E;
+  border-left: 1px solid #FFD67E;
+}
+.detial-content-two li{
+  width: 50%;
+  float: left;
+  border-right: 1px solid #FFD67E;
+  border-bottom: 1px solid #FFD67E;
+  height: 1rem;
+  line-height: 1rem;
+  text-align: center;
+}
+/*  */
+.detial-rule-mask>h5{
+  text-align: center;
+  margin-top: .2rem;
+}
+.detial-rule-mask>h3{
+  text-align: center;
+  line-height: .8rem;
+  margin-top: .3rem;
+}
+#detialRuleClose{
+  position: absolute;
+  width: 0.666667rem;
+  height: 0.666667rem;
+  background-image: url(../images/upload_close.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  right: .2rem;
+  top: .2rem;
+}
+/* 0609 */
+.same-msg{
+  width: 7rem;
+  position: absolute;
+  bottom: 2.0rem;
+  left: .4rem;
+  color: #911631;
 }

@@ -2,7 +2,7 @@
 * @Author: wangjianfei
 * @Date:   2017-06-06 12:51:16
 * @Last Modified by:   wangjianfei
-* @Last Modified time: 2017-06-07 19:03:28
+* @Last Modified time: 2017-06-09 19:58:15
 */
 
 'use strict';
@@ -18,219 +18,127 @@
 	}
 
 	// 模拟数据
-	var isNotAjax=true;
-	if(isNotAjax){
-		var data={
-		  "ret_code": "0",
-		  "ret_msg": "ok",
-		  "anchor_info": {
-			    "pfid": "1024168",
-			    "headimg": "http://playback-langlive.ufile.ucloud.cn/ce533fc1f9c0102ff649642dc989563f.jpg",
-			    "nickname": "哈哈哈哈",
-			    "today_diamond": 225010,
-			    "act_id": 4,
-			    "act_title": "超級巨星",
-			    "act_name": "",
-			    "act_level_schedule": 90,
-			    "ranking": {
-			      "today": [
-				        {
-				          "pfid": "1020025",
-				          "headimg": "http://playback-langlive.ufile.ucloud.com.cn/128dc4649a19a496cc1c95633e8e2517",
-				          "nickname": "含師傅",
-				          "contribution_diamond": 175010
-				        },
-				        {
-				          "pfid": "1020023",
-				          "headimg": "http://playback-langlive.ufile.ucloud.com.cn/3757371cfcb68e65aef24c3d309f2069",
-				          "nickname": "君風雲",
-				          "contribution_diamond": 35000
-				        },
-				        {
-				          "pfid": "1020021",
-				          "headimg": "http://playback-langlive.ufile.ucloud.com.cn/60ac2fc56905879a7076a948e94c938a",
-				          "nickname": "君邪",
-				          "contribution_diamond": 3999
-				        },
-				        {
-				          "pfid": "1020015",
-				          "headimg": "http://playback-langlive.ufile.ucloud.com.cn/2fb118dd2c48ba57d463ab255cf60775",
-				          "nickname": "君無憂",
-				          "contribution_diamond": 1501
-				        },
-				        {
-				          "pfid": "1020009",
-				          "headimg": "http://playback-langlive.ufile.ucloud.com.cn/094d18a273ad26ca3f3c628d34346414",
-				          "nickname": "君子之爭",
-				          "contribution_diamond": 1500
-				        },
-				        {
-				          "pfid": "1020000",
-				          "headimg": "http://playback-langlive.ufile.ucloud.com.cn/85eb61f3d962e7c81ee75f63cc363b0f",
-				          "nickname": "向飛天",
-				          "contribution_diamond": 1500
-				        },
-				        {
-				          "pfid": "1020014",
-				          "headimg": "http://playback-langlive.ufile.ucloud.com.cn/a3c8605f610f053784f2dcb59c8a95ce",
-				          "nickname": "君樂",
-				          "contribution_diamond": 1000
-				        },
-				        {
-				          "pfid": "1020013",
-				          "headimg": "http://playback-langlive.ufile.ucloud.com.cn/42d5ed2fdb862c770f96d1854ae83f61",
-				          "nickname": "君彥",
-				          "contribution_diamond": 1000
-				        },
-				        {
-				          "pfid": "1020012",
-				          "headimg": "http://playback-langlive.ufile.ucloud.com.cn/c3a0f05f75153312b27e0de92a762d11",
-				          "nickname": "君子風雲",
-				          "contribution_diamond": 1000
-				        },
-				        {
-				          "pfid": "1020011",
-				          "headimg": "http://playback-langlive.ufile.ucloud.com.cn/97c6c5def9ece9b291b6d1198930fe7a",
-				          "nickname": "君子無雙",
-				          "contribution_diamond": 1000
-				        }
-			      ],
-			      "total": [
-				        {
-				          "pfid": "1020025",
-				          "headimg": "http://playback-langlive.ufile.ucloud.com.cn/97c6c5def9ece9b291b6d1198930fe7a",
-				          "nickname": "发挥地方适合",
-				          "contribution_diamond": 175010
-				        },
-				        {
-				          "pfid": "1020023",
-				          "headimg": "http://playback-langlive.ufile.ucloud.com.cn/c3a0f05f75153312b27e0de92a762d11",
-				          "nickname": "13245君風雲",
-				          "contribution_diamond": 35000
-				        },
-				        {
-				          "pfid": "1020021",
-				          "headimg": "http://playback-langlive.ufile.ucloud.com.cn/60ac2fc56905879a7076a948e94c938a",
-				          "nickname": "xxx君邪",
-				          "contribution_diamond": 3999
-				        },
-				        {
-				          "pfid": "1020015",
-				          "headimg": "http://playback-langlive.ufile.ucloud.com.cn/85eb61f3d962e7c81ee75f63cc363b0f",
-				          "nickname": "4646554646",
-				          "contribution_diamond": 1501
-				        },
-				        {
-				          "pfid": "1020009",
-				          "headimg": "http://playback-langlive.ufile.ucloud.com.cn/094d18a273ad26ca3f3c628d34346414",
-				          "nickname": "君子之爭",
-				          "contribution_diamond": 1500
-				        },
-				        {
-				          "pfid": "1020000",
-				          "headimg": "http://playback-langlive.ufile.ucloud.com.cn/c3a0f05f75153312b27e0de92a762d11",
-				          "nickname": "向飛天",
-				          "contribution_diamond": 1500
-				        },
-				        {
-				          "pfid": "1020014",
-				          "headimg": "http://playback-langlive.ufile.ucloud.com.cn/a3c8605f610f053784f2dcb59c8a95ce",
-				          "nickname": "君樂",
-				          "contribution_diamond": 1000
-				        },
-				        {
-				          "pfid": "1020013",
-				          "headimg": "http://playback-langlive.ufile.ucloud.com.cn/42d5ed2fdb862c770f96d1854ae83f61",
-				          "nickname": "君彥",
-				          "contribution_diamond": 1000
-				        },
-				        {
-				          "pfid": "1020012",
-				          "headimg": "http://playback-langlive.ufile.ucloud.com.cn/3757371cfcb68e65aef24c3d309f2069",
-				          "nickname": "君子風雲",
-				          "contribution_diamond": 1000
-				        },
-				        {
-				          "pfid": "1020011",
-				          "headimg": "http://playback-langlive.ufile.ucloud.com.cn/128dc4649a19a496cc1c95633e8e2517",
-				          "nickname": "君子無雙",
-				          "contribution_diamond": 1000
-				        }
-			      ]
-			    }
-		  },
-		  "broke_info": {
-		    "pfid": "1020025",
-		    "headimg": "http://playback-langlive.ufile.ucloud.com.cn/128dc4649a19a496cc1c95633e8e2517",
-		    "nickname": "含師傅",
-		    "anchor_num": 2
-		  }
+	// -------------------------613 start
+	//2.0 请求数据
+	// function getDate(){
+	// 	// $.post(domain+'v2/html/broke/get_index_info', {"HTTP_USER_TOKEN":token, "HTTP_USER_UID":pfid, "anchor_pfid":anchor_pfid,"broke_pfid":pfid},
+	// 	 	// function(data) {
+	//             if(data.ret_code=="0"){
+	// 				console.log(data);
+	//             	// 主播信息
+	//             	var anchor_info=data.anchor_info;
+	//             	filterInfo(anchor_info);
+	//             	// 底部用户信息
+	//             	var broker_info=data.broke_info;
+	//             	printBottom(broker_info);
+	//             }
+	// 	    // },
+	// 		// "json"
+	//     // );
+	// }
+	// getDate();
+// ----------------------613 end
+
+
+
+// -------------------------------------------------615 start
+// 1、封裝AJAX函數
+function Ajax(option){
+	// 定义domain,方便环境切换
+	var domain='https://' + window.location.host + '/';
+	var url=domain+option.urlStr;
+	var type=option.ajaxType;
+	var data=option.ajaxData;
+	var xhrRequest=new XMLHttpRequest();
+	var str=null;
+	xhrRequest.open(type,url,true);
+	if(type==="POST"&&data!=null){
+		xhrRequest.setRequestHeader("Content-type", "application/x-www-form-urlencoded;charset=utf-8");
+		for(var key in data){
+			str+='&'+key+'='+data[key];
+			str=str.slice(1);
 		}
 	}
-	//2.0 请求数据
-	function getDate(){
-		// $.post(domain+'v2/activity/dracula_data', {"HTTP_USER_TOKEN":token, "HTTP_USER_UID":pfid, "anchor_pfid":anchor_id },
-		 	// function(data) {
-	            /*optional stuff to do after success */
-	            if(data.ret_code=="0"){
-					console.log(data);
-	            	// 主播信息
-	            	var anchor_info=data.anchor_info;
-	            	filterInfo(anchor_info);
-	            	// 底部用户信息
-	            	var broker_info=data.broke_info;
-	            	printBottom(broker_info);
-	            }
-		    // },
-			// "json"
-	    // );
+	xhrRequest.onreadystatechange=function(){
+		if(xhrRequest.readyState==4&&xhrRequest.status==200){
+			// 1、格式化返回的数据
+			var responseData=JSON.parse(xhrRequest.responseText);
+			console.log(responseData);
+			// 2、这里操作数据-----------------------------------
+			if(data.ret_code=="0"){
+				// 主播信息
+				var anchor_info=data.anchor_info;
+				filterInfo(anchor_info);
+				// 底部用户信息
+				var broker_info=data.broke_info;
+				printBottom(broker_info);
+			}
+		}
 	}
-	getDate();
+	xhrRequest.send(str);
+}
+//2、GET：定义请求参数
+var getOption={
+	ajaxType:"GET",	
+	urlStr:"json-datas/Broker/anchor.json",
+	ajaxData:null		
+}
+// 3、請求數據
+Ajax(getOption);
+// -------------------------------------------------615 end
+
+
+
+
+
+
+
 
 
 
 	// 1、主播信息过滤和渲染
 	function filterInfo(anchorInfo){
-		// 主播数据
+		//1 主播数据
 		var anchor_pfid=anchorInfo.pfid;
 		var anchor_Img=anchorInfo.headimg;
 		var anchor_Name=anchorInfo.nickname;
 		var anchor_TodayIncome=anchorInfo.today_diamond;
-		var anchor_LevelIndex=anchorInfo.act_id;//未给到
 		var anchor_NextLevel=anchorInfo.act_level_schedule;
-		// DOM
+		//2 DOM
 		var anchorImgDom=getDomId("anchorTopImg");
 		var anchorNameDom=getDomId("anchorTopName");
 		var anchorTodayIncomeDom=getDomId("anchorIncome");
 		var anchorNextLevel=getDomId("anchorNextLevel");
-		var anchorNowLevel=getDomId("anchorNowLevel");
 		anchorImgDom.src=anchor_Img;
 		anchorNameDom.innerHTML=anchor_Name;
 		anchorTodayIncomeDom.innerHTML=anchor_TodayIncome;
 		anchorNextLevel.style.width=anchor_NextLevel+"%";
-		// 对应的级别和class、icon需要确认
-		var nowLevelArr=[
-			"anchor-now-one",
-			"anchor-now-two",
-			"anchor-now-three",
-			"anchor-now-four",
-			"anchor-now-five"
-		];
-		var addClassName=nowLevelArr[anchor_LevelIndex-1];
-		// console.log(addClassName);
-		anchorNowLevel.className=addClassName;
-		//2、 中间对应的数据
+		//3 对应的级别和class、icon需要确认
+		var artistLevelDom=getDomId("artistLevel");
+		// 排除0的可能
+		var anchor_LevelIndex=anchorInfo.act_id;
+		var nowLevelArr={
+			"1":["anchor-level-one","潛力之星"],
+			"2":["anchor-level-two","希望之星"],
+			"3":["anchor-level-three","明日之星"],
+			"4":["anchor-level-four","人氣之星"],
+			"5":["anchor-level-five","超級巨星"]
+		}
+		if(anchor_LevelIndex!=0){
+			var addClassName=nowLevelArr[anchor_LevelIndex][0];
+			artistLevelDom.innerHTML=nowLevelArr[anchor_LevelIndex][1];
+			artistLevelDom.className=addClassName;
+		}
+		//2、 中间切换对应的数据
 		var Brokers=anchorInfo.ranking;
 		var todayBrokers=Brokers.today;
 		var totalBrokers=Brokers.total;
 		// 今日经纪人 渲染
 		var today_str=printBrokers(todayBrokers);
-		console.log(today_str);
 		printDom("anchorToday",today_str);
 		// 总榜的经纪人  渲染
 		var total_str=printBrokers(totalBrokers);
 		printDom("anchorTotal",total_str);
-
 	}
 
 	// 2.1、中间切换的渲染
@@ -244,7 +152,6 @@
 			var brokers_nickname=thisBroker.nickname;
 			var brokers_pfid=thisBroker.pfid;
 			var index=i+1;
-
 			str_html+='<li><b>'+index;
 			str_html+='</b>';
 			str_html+='<div class="anchor-listimg">';
@@ -253,17 +160,10 @@
 			str_html+='<div class="anchor-listmsg">';
 			str_html+='<h3>'+brokers_nickname+'</h3>';
 			str_html+='<p><span>我看好妳</span>';
-			str_html+='<b>'+diamondCount+'磚</b></p></div></li>';
+			str_html+='<b>'+diamondCount+'</b></p></div></li>';
 		}
 		return str_html;
 	}
-
-
-
-
-
-
-
 
 	///2、底部主播
 	function printBottom(brokerInfo){
@@ -307,4 +207,27 @@
 				$('.backTop').hide();
 		}
 	});
+	// 跳转到总榜
+	$("#go_total").click(function(){
+		$("#jumpTotal").trigger('submit');
+	});
+	// 跳转到个人
+	$("#artistBtn").click(function(){
+		$("#jumpPersonal").trigger('submit');
+	});
+
+	// 活動細則
+	$("#rule-btn").click(function(){
+		$("#container").hide();
+		$("#detialRuleMask").show();
+	});
+	$("#detialRuleClose").click(function(){
+		$("#detialRuleMask").hide();
+		$("#container").show();
+	});
+	if(isiOS==true){
+		window.webkit.messageHandlers.langWeb2App_topback.postMessage({body:'{"flag":"1"}'});
+	} else {
+		javascriptinterface.langWeb2App_topback("1");
+	}
 }();

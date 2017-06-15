@@ -2,14 +2,16 @@
 var u = navigator.userAgent,
     app = navigator.appVersion;
 var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
-if(pfid==="0"){
-     if(isiOS==true){
-        window.webkit.messageHandlers.langWeb2App_openActivity.postMessage({body:'{"className":"LNGLoginViewController"}'})
-    }else{
-        javascriptinterface.langWeb2App_openActivity('com.lang.lang.ui.activity.login.LoginSelectActivity','{"data":""}')
-    }   
 
-}
+// 0615 暫時注釋
+// if(pfid==="0"){
+//      if(isiOS==true){
+//         window.webkit.messageHandlers.langWeb2App_openActivity.postMessage({body:'{"className":"LNGLoginViewController"}'})
+//     }else{
+//         javascriptinterface.langWeb2App_openActivity('com.lang.lang.ui.activity.login.LoginSelectActivity','{"data":""}')
+//     }   
+
+// }
 
 //h5进入个人主页
 function h5toHomepage(pfid,nickname){
