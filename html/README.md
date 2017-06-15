@@ -231,7 +231,7 @@
 	**//注意：分享出去的頁面不需要相互跳轉，去掉跳轉的JS以及html內的跳轉按鈕**
 	//分享的參數需要注入的比如注入
 
-	//1、h5分享公用方法：页面中的分享按钮方法
+	//1、浏览器右上角默认分享按钮方法
 	function needShare(imgUrl,desc,pageTitle,pageUrl){
 		var androidShareJson={"imageurl":imgUrl,"description":desc,"title":pageTitle,"shareUrl":pageUrl};
 		var iosShareJson={"img_url":imgUrl,"share_content":desc,"share_title":pageTitle,"share_link":pageUrl}
@@ -242,7 +242,7 @@
 		}
 	
 	}
-	//2、浏览器右上角默认分享按钮方法
+	//、h5分享公用方法：页面中的按钮点击分享方法
 	function shareInterface(imgUrl,desc,pageTitle,pageUrl){
 		var androidShareJson={"imageurl":imgUrl,"description":desc,"title":pageTitle,"shareUrl":pageUrl};
 		var iosShareJson={"img_url":imgUrl,"share_content":desc,"share_title":pageTitle,"share_link":pageUrl}
