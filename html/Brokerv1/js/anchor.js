@@ -67,10 +67,10 @@ function Ajax(option){
 			// 2、这里操作数据-----------------------------------
 			if(responseData.ret_code=="0"){
 				// 主播信息
-				var anchor_info=data.anchor_info;
+				var anchor_info=responseData.anchor_info;
 				filterInfo(anchor_info);
 				// 底部用户信息
-				var broker_info=data.broke_info;
+				var broker_info=responseData.broke_info;
 				printBottom(broker_info);
 			}
 		}
