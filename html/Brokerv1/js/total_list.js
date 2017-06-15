@@ -20,28 +20,83 @@
 	function printDom(id,html){
 		document.getElementById(id).innerHTML=html;
 	}
+	// ---------------------------------------------------0613 start
+	// //1.0 请求数据
+	// function getDate(){
+	// 	// $.post(domain+'v2/html/broke/get_broke_ranked_info', {"HTTP_USER_TOKEN":token, "HTTP_USER_UID":pfid, "anchor_pfid":anchor_pfid,"broke_pfid":pfid,"date":""},
+	// 	 	// function(data) {
+	//             if(data.ret_code=="0"){
+	//             	// 1、底部主播信息
+	//             	var anchorInfo=data.broke_info;
+	//             	printAnchor(anchorInfo);
+	//             	// 2、今日经纪人信息
+	//             	var todayBrokers=data.broke_today_ranked;
+	//             	printToday(todayBrokers);
+	//             	// 3、经纪人总榜信息
+	//             	var allBrokers=data.broke_total_ranked;
+	//             	printAll(allBrokers);
+	//             	// console.log(allBrokers);
+	//             }
+	// 	    // },
+	// 		// "json"
+	//     // );
+	// }
+	// getDate();
+	// ---------------------------------------------------0613 end
 
-	//1.0 请求数据
-	function getDate(){
-		// $.post(domain+'v2/html/broke/get_broke_ranked_info', {"HTTP_USER_TOKEN":token, "HTTP_USER_UID":pfid, "anchor_pfid":anchor_pfid,"broke_pfid":pfid,"date":""},
-		 	// function(data) {
-	            if(data.ret_code=="0"){
-	            	// 1、底部主播信息
-	            	var anchorInfo=data.broke_info;
+
+
+	// --------------------------------------------------------------------615 start
+	// 1、封裝AJAX函數
+	function Ajax(option){
+		// 定义domain,方便环境切换
+		var domain='https://' + window.location.host + '/';
+		var url=domain+option.urlStr;
+		var type=option.ajaxType;
+		var data=option.ajaxData;
+		var xhrRequest=new XMLHttpRequest();
+		var str=null;
+		xhrRequest.open(type,url,true);
+		if(type==="POST"&&data!=null){
+			xhrRequest.setRequestHeader("Content-type", "application/x-www-form-urlencoded;charset=utf-8");
+			for(var key in data){
+				str+='&'+key+'='+data[key];
+				str=str.slice(1);
+			}
+		}
+		xhrRequest.onreadystatechange=function(){
+			if(xhrRequest.readyState==4&&xhrRequest.status==200){
+				// 1、格式化返回的数据
+				var responseData=JSON.parse(xhrRequest.responseText);
+				console.log(responseData);
+				// 2、这里操作数据-----------------------------------
+				if(responseData.ret_code=="0"){
+						// 1、底部主播信息
+	            	var anchorInfo=responseData.broke_info;
 	            	printAnchor(anchorInfo);
 	            	// 2、今日经纪人信息
-	            	var todayBrokers=data.broke_today_ranked;
+	            	var todayBrokers=responseData.broke_today_ranked;
 	            	printToday(todayBrokers);
 	            	// 3、经纪人总榜信息
-	            	var allBrokers=data.broke_total_ranked;
+	            	var allBrokers=responseData.broke_total_ranked;
 	            	printAll(allBrokers);
 	            	// console.log(allBrokers);
-	            }
-		    // },
-			// "json"
-	    // );
+				}
+			}
+		}
+		xhrRequest.send(str);
 	}
-	getDate();
+	//2、GET：定义请求参数
+	var getOption={
+		ajaxType:"GET",	
+		urlStr:"json-datas/Broker/total.json",
+		ajaxData:null		
+	}
+	// 3、請求數據
+	Ajax(getOption);
+	// --------------------------------------------------------------------615 end
+
+
 
 	// 2、今日经纪人信息
 	function printToday(brokers){
@@ -172,8 +227,8 @@
 			"20":12,
 			"21":13
 		};
-		var nowDate=new Date();
-		// var nowDate=new Date("2017-06-20");
+		// var nowDate=new Date();
+		var nowDate=new Date("2017-06-20");
 		// 把日期作為key，对应按钮的index
 		var key=nowDate.getDate();
 		var index=dateObj[key];
@@ -195,16 +250,18 @@
 			var thisTime=$that.attr("data-time");
 			$that.addClass('selected').siblings().removeClass('selected');
 			console.log(thisTime);
-			$.post(domain+'v2/html/broke/get_broke_ranked_info', {"broke_pfid":pfid, "date":thisTime},
-				function(DATA) {
-					if(DATA.ret_code=="0"){
-						// 
-						var nowTodaBroker=DATA.broke_today_ranked;
-						printToday(nowTodaBroker);
-					}
-				},
-				"json"
-			);
+			// ---------------------------0615 start
+			// $.post(domain+'v2/html/broke/get_broke_ranked_info', {"broke_pfid":pfid, "date":thisTime},
+			// 	function(DATA) {
+			// 		if(DATA.ret_code=="0"){
+			// 			// 
+			// 			var nowTodaBroker=DATA.broke_today_ranked;
+			// 			printToday(nowTodaBroker);
+			// 		}
+			// 	},
+			// 	"json"
+			// );
+			// ---------------------------0615 end
 		}
 	});
 	//4、中间 切換
