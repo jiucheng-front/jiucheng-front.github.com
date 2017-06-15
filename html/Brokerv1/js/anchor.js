@@ -85,7 +85,7 @@ var getOption={
 	ajaxData:null		
 }
 // 3、請求數據
-Ajax(getOption,function(data){
+nativeAjax(getOption,function(data){
 	// 成功函数
 	console.log(data);
 	// 主播信息
