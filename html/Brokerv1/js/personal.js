@@ -358,10 +358,16 @@
 		event.stopPropagation();
 		$("#recommend-bg").hide();
 	});
-	// 跳转到总榜
+	// // 跳转到总榜
+	// $("#go_total").click(function(){
+	// 	$("#jumpTotal").trigger('submit');
+	// });
 	$("#go_total").click(function(){
-		$("#jumpTotal").trigger('submit');
+		var str=domain+"html/Brokerv1/totalList.html";
+		window.open(str,"target");
 	});
+
+
 
 	// 活動細則
 	$("#rule-btn").click(function(){
