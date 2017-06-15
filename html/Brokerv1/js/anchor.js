@@ -65,7 +65,7 @@ function Ajax(option){
 			var responseData=JSON.parse(xhrRequest.responseText);
 			console.log(responseData);
 			// 2、这里操作数据-----------------------------------
-			if(data.ret_code=="0"){
+			if(responseData.ret_code=="0"){
 				// 主播信息
 				var anchor_info=data.anchor_info;
 				filterInfo(anchor_info);
