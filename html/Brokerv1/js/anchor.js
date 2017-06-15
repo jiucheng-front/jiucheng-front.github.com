@@ -207,13 +207,23 @@ Ajax(getOption);
 				$('.backTop').hide();
 		}
 	});
-	// 跳转到总榜
+	// 跳转到总榜---0613
+	// $("#go_total").click(function(){
+	// 	$("#jumpTotal").trigger('submit');
+	// });
+	// // 跳转到个人
+	// $("#artistBtn").click(function(){
+	// 	$("#jumpPersonal").trigger('submit');
+	// });
+	// -----------------------------------0615
 	$("#go_total").click(function(){
-		$("#jumpTotal").trigger('submit');
+		var str=domain+"html/Brokerv1/totalList.html";
+		window.open(str,"target");
 	});
 	// 跳转到个人
 	$("#artistBtn").click(function(){
-		$("#jumpPersonal").trigger('submit');
+		var url=domain+"html/Brokerv1/personal.html";
+		window.open(url,"target");
 	});
 
 	// 活動細則
