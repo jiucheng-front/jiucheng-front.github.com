@@ -28,14 +28,16 @@ function nativeAjax(option,success,error){
 		}
 	}
 	xhrRequest.onreadystatechange=function(){
-		if(xhrRequest.readyState==4&&xhrRequest.status==200){
-			// 1.1、格式化返回的数据
-			var responseData=JSON.parse(xhrRequest.responseText);
-			// 1.2、这里操作数据--------
-			success(responseData);
-		}else{
-			// 1.3、没成功返回HTTP状态码
-			error(xhrRequest.status);
+		if(xhrRequest.readyState==4){
+			if(xhrRequest.status==200){
+				// 1.1、格式化返回的数据
+				var responseData=JSON.parse(xhrRequest.responseText);
+				// 1.2、这里操作数据--------
+				success(responseData);
+			}else{
+				// 1.3、没成功返回HTTP状态码
+				error(xhrRequest.status);
+			}
 		}
 	}
 	xhrRequest.send(str);
@@ -77,7 +79,8 @@ Ajax(getOption,function(data){
 	console.log(error);
 
 });
-// 注意：使用说明option必须
+// 使用说明
+// 一、option必须
 option={
 	//1、ajaxType必须："GET"或者"POST"
 	ajaxType:"",
@@ -86,3 +89,5 @@ option={
 	//3、必须：POST时候为object{key:value}，GET的时候直接为：null
 	ajaxData:null
 }
+// 二、success请求成功回调必须
+// 三：error请求失败回调必须
