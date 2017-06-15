@@ -17,212 +17,59 @@
 	function printDom(id,html){
 		document.getElementById(id).innerHTML=html;
 	}
-	// 模拟数据
-	var isNotAjax=true;
-	if(isNotAjax){
-		var data={
-		  "ret_code": "0",
-		  "ret_msg": "ok",
-		  "broke_info": {
-			    "pfid": "1020166",
-			    "headimg": "http://playback-langlive.ufile.ucloud.com.cn/a51cb76f34b4632049f47e1847ee72fc",
-			    "nickname": "破坏破恩爱PDF怕啥",
-			    "yesterday_ranked": 3,
-			    "today_ranked": 4,
-			    "today_broke_id": 4,	//级别
-			    "today_score": 7,
-			    "total_score":99,
-			    "gift_box": {
-			      "big": {
-			        "id": 1,
-			        "num": 10
-			      },
-			      "mid": {
-			        "id": 2,
-			        "num": 0
-			      },
-			      "small": {
-			        "id": 3,
-			        "num": 10
-			      }
-			    },
-			    "anchor_num": 97891,		//旗下艺人
-			    "today_anchor_list":[
-				    {
-				        "pfid": "1020266",
-				        "headimg": "http://playback-langlive.ufile.ucloud.com.cn/b01c9dd84f59218583f67a2fa7a1e322",
-				        "nickname": "哇係小龍",
-				        "get_score": 99,
-				        "live_url": "",
-				        "stream_direction": 0,
-				        "live_key": "",
-				        "live_id": "12313"
-			      	},
-		      		{
-			          "pfid": "1020025",
-			          "headimg": "http://playback-langlive.ufile.ucloud.com.cn/128dc4649a19a496cc1c95633e8e2517",
-			          "nickname": "含師傅",
-			          "get_score": 88,
-				        "live_url": "",
-				        "stream_direction": 0,
-				        "live_key": "",
-				        "live_id": null
-			        },
-			        {
-			          "pfid": "1020023",
-			          "headimg": "http://playback-langlive.ufile.ucloud.com.cn/3757371cfcb68e65aef24c3d309f2069",
-			          "nickname": "君風雲",
-			          "get_score": 77,
-				        "live_url": "",
-				        "stream_direction": 0,
-				        "live_key": "",
-				        "live_id": "465465"
-			        },
-			        {
-			          "pfid": "1020021",
-			          "headimg": "http://playback-langlive.ufile.ucloud.com.cn/60ac2fc56905879a7076a948e94c938a",
-			          "nickname": "君邪",
-			          "get_score": 66,
-				        "live_url": "",
-				        "stream_direction": 0,
-				        "live_key": "",
-				        "live_id": null
-			        },
-			        {
-			          "pfid": "1020015",
-			          "headimg": "http://playback-langlive.ufile.ucloud.com.cn/2fb118dd2c48ba57d463ab255cf60775",
-			          "nickname": "君無憂",
-			          "get_score": 55,
-				        "live_url": "",
-				        "stream_direction": 0,
-				        "live_key": "",
-				        "live_id": null
-			        },
-			        {
-			          "pfid": "1020009",
-			          "headimg": "http://playback-langlive.ufile.ucloud.com.cn/094d18a273ad26ca3f3c628d34346414",
-			          "nickname": "君子之爭",
-			          "get_score": 46,
-				        "live_url": "",
-				        "stream_direction": 0,
-				        "live_key": "",
-				        "live_id": null
-			        },
-			        {
-			          "pfid": "1020000",
-			          "headimg": "http://playback-langlive.ufile.ucloud.com.cn/85eb61f3d962e7c81ee75f63cc363b0f",
-			          "nickname": "向飛天",
-			          "get_score": 37,
-				        "live_url": "",
-				        "stream_direction": 0,
-				        "live_key": "",
-				        "live_id": null
-			        },
-			        {
-			          "pfid": "1020014",
-			          "headimg": "http://playback-langlive.ufile.ucloud.com.cn/a3c8605f610f053784f2dcb59c8a95ce",
-			          "nickname": "君樂",
-			          "get_score": 27,
-				        "live_url": "",
-				        "stream_direction": 0,
-				        "live_key": "",
-				        "live_id": null
-			        },
-			        {
-			          "pfid": "1020013",
-			          "headimg": "http://playback-langlive.ufile.ucloud.com.cn/42d5ed2fdb862c770f96d1854ae83f61",
-			          "nickname": "君彥",
-			          "get_score": 7,
-				        "live_url": "",
-				        "stream_direction": 0,
-				        "live_key": "",
-				        "live_id": null
-			        }
-			    ],
-			    "recommend_achcor":[
-				      {
-				        "pfid": "1020266",
-				        "headimg": "http://playback-langlive.ufile.ucloud.com.cn/b01c9dd84f59218583f67a2fa7a1e322",
-				        "nickname": "哇係小龍",
-				        "live_url": "",
-				        "stream_direction": 0,
-				        "live_key": "",
-				        "live_id": "211313"
-				      },
-				      {
-				          "pfid": "1020025",
-				          "headimg": "http://playback-langlive.ufile.ucloud.com.cn/128dc4649a19a496cc1c95633e8e2517",
-				          "nickname": "含師傅",
-				          "live_url": "",
-				          "stream_direction": 0,
-				          "live_key": "",
-				          "live_id": null
-				        },
-				        {
-				          "pfid": "1020023",
-				          "headimg": "http://playback-langlive.ufile.ucloud.com.cn/3757371cfcb68e65aef24c3d309f2069",
-				          "nickname": "君風雲",
-				          "live_url": "",
-				          "stream_direction": 0,
-				          "live_key": "",
-				          "live_id": "5464654"
-				        },
-				        {
-				          "pfid": "1020021",
-				          "headimg": "http://playback-langlive.ufile.ucloud.com.cn/60ac2fc56905879a7076a948e94c938a",
-				          "nickname": "君邪",
-				          "live_url": "",
-				          "stream_direction": 0,
-				          "live_key": "",
-				          "live_id": null
-				        },
-				        {
-				          "pfid": "1020015",
-				          "headimg": "http://playback-langlive.ufile.ucloud.com.cn/2fb118dd2c48ba57d463ab255cf60775",
-				          "nickname": "君無憂",
-				          "live_url": "",
-				          "stream_direction": 0,
-				          "live_key": "",
-				          "live_id": null
-				        },
-				        {
-				          "pfid": "1020009",
-				          "headimg": "http://playback-langlive.ufile.ucloud.com.cn/094d18a273ad26ca3f3c628d34346414",
-				          "nickname": "君子之爭",
-				          "live_url": "",
-				          "stream_direction": 0,
-				          "live_key": "",
-				          "live_id": null
-				        },
-				        {
-				          "pfid": "1020000",
-				          "headimg": "http://playback-langlive.ufile.ucloud.com.cn/85eb61f3d962e7c81ee75f63cc363b0f",
-				          "nickname": "向飛天",
-				          "live_url": "",
-				          "stream_direction": 0,
-				          "live_key": "",
-				          "live_id": null
-				        },
-				        {
-				          "pfid": "1020014",
-				          "headimg": "http://playback-langlive.ufile.ucloud.com.cn/a3c8605f610f053784f2dcb59c8a95ce",
-				          "nickname": "君樂",
-				          "live_url": "",
-				          "stream_direction": 0,
-				          "live_key": "",
-				          "live_id": null
-				        }
-			    ]
-		  }
+	//------------------------------------------------0613 start 去掉JQ的post	
+	// //2.0 请求数据
+	// function getDate(){
+	// 	// $.post(domain+'v2/html/broke/get_broke_info', {"HTTP_USER_TOKEN":token, "HTTP_USER_UID":pfid, "anchor_pfid":anchor_pfid,"broke_pfid":pfid},
+	// 	 	// function(data) {
+	//             if(data.ret_code=="0"){
+	//             	//1、上下主播信息
+	//             	var broker_info=data.broke_info;
+	//             	topBroker(broker_info);
+	//             	//2、中间旗下艺人
+	//             	var artists=broker_info.today_anchor_list;
+	//             	printArtists(artists);
+	//             	//3、 推荐主播
+	//             	var recommendAnchors=broker_info.recommend_achcor;
+	// 				if(recommendAnchors!=null){
+	// 					printRecommend(recommendAnchors);
+	// 				}
+	//             }
+	// 	    // },
+	// 		// "json"
+	//     // );
+	// }
+	// getDate();
+	//------------------------------------------------0613 end
+
+
+	// -----------------------------------------------------------0615 start
+	// 1、封裝AJAX函數
+	function Ajax(option){
+		// 定义domain,方便环境切换
+		var domain='https://' + window.location.host + '/';
+		var url=domain+option.urlStr;
+		var type=option.ajaxType;
+		var data=option.ajaxData;
+		var xhrRequest=new XMLHttpRequest();
+		var str=null;
+		xhrRequest.open(type,url,true);
+		if(type==="POST"&&data!=null){
+			xhrRequest.setRequestHeader("Content-type", "application/x-www-form-urlencoded;charset=utf-8");
+			for(var key in data){
+				str+='&'+key+'='+data[key];
+				str=str.slice(1);
+			}
 		}
-	}
-	//2.0 请求数据
-	function getDate(){
-		// $.post(domain+'v2/html/broke/get_broke_info', {"HTTP_USER_TOKEN":token, "HTTP_USER_UID":pfid, "anchor_pfid":anchor_pfid,"broke_pfid":pfid},
-		 	// function(data) {
-	            if(data.ret_code=="0"){
-	            	//1、上下主播信息
-	            	var broker_info=data.broke_info;
+		xhrRequest.onreadystatechange=function(){
+			if(xhrRequest.readyState==4&&xhrRequest.status==200){
+				// 1、格式化返回的数据
+				var responseData=JSON.parse(xhrRequest.responseText);
+				console.log(responseData);
+				// 2、这里操作数据-----------------------------------
+				if(responseData.ret_code=="0"){
+					//1、上下主播信息
+	            	var broker_info=responseData.broke_info;
 	            	topBroker(broker_info);
 	            	//2、中间旗下艺人
 	            	var artists=broker_info.today_anchor_list;
@@ -232,13 +79,21 @@
 					if(recommendAnchors!=null){
 						printRecommend(recommendAnchors);
 					}
-	            }
-		    // },
-			// "json"
-	    // );
+				}
+			}
+		}
+		xhrRequest.send(str);
 	}
-	getDate();
-
+	//2、GET：定义请求参数
+	var getOption={
+		ajaxType:"GET",	
+		urlStr:"json-datas/Broker/personal.json",
+		ajaxData:null		
+	}
+	// 3、請求數據
+	Ajax(getOption);
+	
+	// -----------------------------------------------------------0615 end
 	//2、中间旗下艺人
 	function printArtists(artists){
 		// console.log(artists);
