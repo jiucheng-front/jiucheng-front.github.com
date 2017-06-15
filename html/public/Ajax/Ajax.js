@@ -6,13 +6,18 @@
 */
 'use strict';
 // 1、封裝AJAX函數
-function Ajax(option){
+function nativeAjax(option,success,error){
 	// 定义domain,方便环境切换
 	var domain='https://' + window.location.host + '/';
 	var url=domain+option.urlStr;
 	var type=option.ajaxType;
 	var data=option.ajaxData;
-	var xhrRequest=new XMLHttpRequest();
+	var xhrRequest=null;
+	if(window.XMLHttpRequest){
+        xhrRequest = new XMLHttpRequest();
+    } else {
+        xhrRequest = new ActiveXObject('Microsoft.XMLHTTP')
+    }
 	var str=null;
 	xhrRequest.open(type,url,true);
 	if(type==="POST"&&data!=null){
@@ -24,10 +29,13 @@ function Ajax(option){
 	}
 	xhrRequest.onreadystatechange=function(){
 		if(xhrRequest.readyState==4&&xhrRequest.status==200){
-			// 1、格式化返回的数据
+			// 1.1、格式化返回的数据
 			var responseData=JSON.parse(xhrRequest.responseText);
-			console.log(responseData);
-			// 2、这里操作数据-----------------------------------
+			// 1.2、这里操作数据--------
+			success(responseData);
+		}else{
+			// 1.3、没成功返回HTTP状态码
+			error(xhrRequest.status);
 		}
 	}
 	xhrRequest.send(str);
@@ -44,14 +52,31 @@ var postOption={
 		"date":date
 	}
 }
-Ajax(postOption);
-//3、GET：定义请求参数
+// 3、调用AJAX
+nativeAjax(postOption,function(data){
+	// 3.1、请求成功回调
+	console.log(data);
+},function(error){
+	// 3.2、请求失败回调,返回HTTP状态码
+	console.log(error);
+});
+
+
+
+//4、GET：定义请求参数
 var getOption={
 	ajaxType:"GET",	
 	urlStr:"v2/html/broke/get_broke_ranked_info",
 	ajaxData:null		
 }
-Ajax(getOption);
+Ajax(getOption,function(data){
+	// 成功函数
+	console.log(data);
+},function(error){
+	// 失败返回HTTP状态码
+	console.log(error);
+
+});
 // 注意：使用说明option必须
 option={
 	//1、ajaxType必须："GET"或者"POST"
