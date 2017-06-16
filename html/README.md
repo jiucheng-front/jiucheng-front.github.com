@@ -299,6 +299,32 @@
 ```
 
 
+### 九、h5调出发布动态界面
+
+```javascript
+	
+	//android
+	1、进入发布动态：
+	第一个参数：com.lang.lang.ui.activity.sns.SnsPublishActivity
+	第二个参数：{"content":"带入的默认文字","imgpaths":["本地路径","本地路径"]}
+	
+	2、进入动态详情：
+	第一个参数：com.lang.lang.ui.activity.SnsDetailActivity
+	第二个参数：{"sns_id":"动态id"}
+	//iOS  H5调用发布动态页面参数
+	className:LANGGraffitiWallBuilderViewController
+	param:{content:"默认文本"}//可选参数
+	
+	iOS  H5调用发布动态详情
+	className:LANGPostViewController
+	param:{postId:"sns_id"}//必填参数	
+
+```
+
+
+
+
+
 ### 注：其他封裝
 #### 一、ajax的封裝:public/Ajax/Ajax.js
 
