@@ -2,12 +2,12 @@
 * @Author: wangjianfei
 * @Date:   2017-04-28 15:32:29
 * @Last Modified by:   wangjianfei
-* @Last Modified time: 2017-05-08 15:11:26
+* @Last Modified time: 2017-05-22 11:16:44
 */
 
 'use strict';
 
-var isNotAjax=false;
+var isNotAjax=true;
 if(isNotAjax){
 	var data={
 	  "ret_code": "0",
@@ -122,20 +122,20 @@ if(isNotAjax){
 var isLiving="";
 //2.0 请求数据
 function getDate(){
-	$.post(domain+'v2/activity/dracula', {"HTTP_USER_TOKEN":token, "HTTP_USER_UID":pfid, "anchor_pfid":anchor_id },
-	 	function(data) {
+	// $.post(domain+'v2/activity/dracula', {"HTTP_USER_TOKEN":token, "HTTP_USER_UID":pfid, "anchor_pfid":anchor_id },
+	 	// function(data) {
 		/*optional stuff to do after success */
-		if(data.ret_code=="0"){
-			//第一集的数据为
-			var users=data.data.list;
-			isLiving=data.data.my;
-			randData(users,pfid);
-			 // 是否在直播
-			isLive(isLiving);
-		}
-	},
-	"json"
-	);
+			if(data.ret_code=="0"){
+				//第一集的数据为
+				var users=data.data.list;
+				isLiving=data.data.my;
+				randData(users,pfid);
+				 // 是否在直播
+				isLive(isLiving);
+			}
+	// },
+	// "json"
+	// );
 }
 getDate();
 // 中間
