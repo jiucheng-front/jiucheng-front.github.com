@@ -10,17 +10,22 @@
 + 0、陽光手機禮物
 	+ [測試首頁](https://api.s.lang.live/v2/html/activity/dragon/rank.html?HTTP_USER_UID=1001085&HTTP_USER_TOKEN=eb47539ba3bc14af42984201a1205897&anchor_pfid=11222333)
 + 1、my/fillInfo.html是上传照片的功能，调用客户端
+	+ [上傳資料測試首頁](https://api.s.lang.live/html/my/fillInfo.html)
 + 2、magic是相框礼物页面
 	+ [正式首頁](https://tw.api.langlive.com/v2/html/activity/magic/index.html?HTTP_USER_UID=1007128&HTTP_USER_TOKEN=a63c9dcd20b29a5da09eda89be913a1e&anchor_pfid=1007128 "首頁")
 	+ [正式總榜頁面](https://tw.api.langlive.com/v2/html/activity/magic/total.html)
 + 3、Disney迪士尼活动
-	+ 
+	+ [測試首頁](https://api.s.lang.live/html/activity/disney2017/map.html?anchor_pfid=1000054)
 + 4、anchorGrowTree成长树活动
+	+ [測試首頁](https://api.s.lang.live/html/anchor_grow_tree.html?anchor_pfid=1024189)
 + 5、motherDay：母亲节活动
+	+ [測試開始頁面](https://api.s.lang.live/v2/html/activity/mothers_day/index_start.html)
+	+ [測試首頁](https://api.s.lang.live/v2/html/activity/mothers_day/index.html?HTTP_USER_UID=1009998&HTTP_USER_TOKEN=cfd6c635508cceea7fce23828442fa14&anchor_pfid=1009998)
 + 6、端午節活動
 	+ [測試首頁](https://api.s.lang.live/v2/html/activity/dragon/index.html?HTTP_USER_UID=1000052&HTTP_USER_TOKEN=e99348993fc097a68f10c5f0f3b9a109&anchor_pfid=1000037)
 	+ [測試榜單頁面](https://api.s.lang.live/v2/html/activity/dragon/rank.html?HTTP_USER_UID=1001085&HTTP_USER_TOKEN=eb47539ba3bc14af42984201a1205897&anchor_pfid=11222333)
 + 6、Growth：新人成长活动
+	+ [測試首頁](https://api.s.lang.live/html/activity/growth.html)
 + 7、degula：德古拉活动
 	+ [正式比賽結果頁面](https://tw.api.langlive.com/html/activity/dracula.html)
 	+ [正式比賽中投票頁面](https://tw.api.langlive.com/html/activity/degula.html)
