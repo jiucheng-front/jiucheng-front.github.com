@@ -7,15 +7,35 @@
 
 
 ### 一、活动介绍
++ 0、陽光手機禮物
+	+ [測試首頁](https://api.s.lang.live/v2/html/activity/dragon/rank.html?HTTP_USER_UID=1001085&HTTP_USER_TOKEN=eb47539ba3bc14af42984201a1205897&anchor_pfid=11222333)
 + 1、my/fillInfo.html是上传照片的功能，调用客户端
 + 2、magic是相框礼物页面
+	+ [正式首頁](https://tw.api.langlive.com/v2/html/activity/magic/index.html?HTTP_USER_UID=1007128&HTTP_USER_TOKEN=a63c9dcd20b29a5da09eda89be913a1e&anchor_pfid=1007128 "首頁")
+	+ [正式總榜頁面](https://tw.api.langlive.com/v2/html/activity/magic/total.html)
 + 3、Disney迪士尼活动
+	+ 
 + 4、anchorGrowTree成长树活动
 + 5、motherDay：母亲节活动
++ 6、端午節活動
+	+ [測試首頁](https://api.s.lang.live/v2/html/activity/dragon/index.html?HTTP_USER_UID=1000052&HTTP_USER_TOKEN=e99348993fc097a68f10c5f0f3b9a109&anchor_pfid=1000037)
+	+ [測試榜單頁面](https://api.s.lang.live/v2/html/activity/dragon/rank.html?HTTP_USER_UID=1001085&HTTP_USER_TOKEN=eb47539ba3bc14af42984201a1205897&anchor_pfid=11222333)
 + 6、Growth：新人成长活动
 + 7、degula：德古拉活动
+	+ [正式比賽結果頁面](https://tw.api.langlive.com/html/activity/dracula.html)
+	+ [正式比賽中投票頁面](https://tw.api.langlive.com/html/activity/degula.html)
 + 8、520love：520活动
+	+ [測試首頁](https://api.s.lang.live/v2/html/activity/confession_520_index/index.html)
+	+ [測試榜單頁面](https://api.s.lang.live/v2/html/activity/confession_520_list/list.html)
 + 9、Broker：王牌经纪人活动(已经取消)
+	+ [測試總榜頁面](https://api.s.lang.live/v2/html/activity/broke/totalList.html?anchor_pfid=1000054&HTTP_USER_UID=1024317&HTTP_USER_TOKEN=9907fd6462e52fc064f24d0c947bbcd4&broke_pfid=1024317&date=2017-06-14)
+	+ [測試主播頁面](https://api.s.lang.live/v2/html/activity/broke/anchor.html?anchor_pfid=1000054&HTTP_USER_UID=1024317&HTTP_USER_TOKEN=9907fd6462e52fc064f24d0c947bbcd4&broke_pfid=1024317)
+	+ [測試個人頁面](https://api.s.lang.live/v2/html/activity/broke/personal.html?anchor_pfid=1000054&HTTP_USER_UID=1024317&HTTP_USER_TOKEN=9907fd6462e52fc064f24d0c947bbcd4&broke_pfid=1024317)
++ 10、傳說對決活動
+	+ [測試主播頁面](http://api.s.lang.live/html/activity/legendpk/detail.html)
+	+ [測試積分頁面](http://api.s.lang.live/html/activity/legendpk/list.html)
++ 白浪哥得個人動態
+	+ [正式分享頁面](https://tw.api.langlive.com/v2/html/sns/dynamic_share.html?sns_id=DID-1000817-530133&from=timeline&isappinstalled=1)
 
 
 ### 二、js介绍以及如何使用
