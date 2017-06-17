@@ -36,12 +36,18 @@
 	+ [測試總榜頁面](https://api.s.lang.live/v2/html/activity/broke/totalList.html?anchor_pfid=1000054&HTTP_USER_UID=1024317&HTTP_USER_TOKEN=9907fd6462e52fc064f24d0c947bbcd4&broke_pfid=1024317&date=2017-06-14)
 	+ [測試主播頁面](https://api.s.lang.live/v2/html/activity/broke/anchor.html?anchor_pfid=1000054&HTTP_USER_UID=1024317&HTTP_USER_TOKEN=9907fd6462e52fc064f24d0c947bbcd4&broke_pfid=1024317)
 	+ [測試個人頁面](https://api.s.lang.live/v2/html/activity/broke/personal.html?anchor_pfid=1000054&HTTP_USER_UID=1024317&HTTP_USER_TOKEN=9907fd6462e52fc064f24d0c947bbcd4&broke_pfid=1024317)
-+ 10、傳說對決活動
++ 10、傳說對決活動：2017-06-25
 	+ [測試主播頁面](http://api.s.lang.live/html/activity/legendpk/detail.html)
 	+ [測試積分頁面](http://api.s.lang.live/html/activity/legendpk/list.html)
-+ 白浪哥得個人動態
++ 11、白浪哥得個人動態
 	+ [正式分享頁面](https://tw.api.langlive.com/v2/html/sns/dynamic_share.html?sns_id=DID-1000817-530133&from=timeline&isappinstalled=1)
-
++ 12、環球之旅：2017-06-17
+	+ [環球之旅測試首頁](https://api.s.lang.live/v2/html/activity/travel/anchor.html?HTTP_USER_UID=1000244&HTTP_USER_TOKEN=56855bd7eed0e7dc4aba8fd53b51ff95)
++ 13、西門町浪起來：2017-06-17
+	+ [西門町測試首頁](https://api.s.lang.live/v2/html/activity/together/index.html)
++ 14、週週向上2：2017-06-18
+	+ [測試預告頁面](https://api.s.lang.live/v2/html/activity/weekweekup/trailer.html)
+	+ [測試榜單頁面](https://api.s.lang.live/v2/html/activity/weekweekup/index.html)
 
 ### 二、js介绍以及如何使用
 + 1、html/js/publicVersion.js（封装好的JS方法）
