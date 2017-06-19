@@ -323,7 +323,29 @@
 	
 	iOS  H5调用发布动态详情
 	className:LANGPostViewController
-	param:{postId:"sns_id"}//必填参数	
+	param:{postId:"sns_id"}//必填参数
+
+	//---------------------------------
+
+	// 調起發佈動態
+	function releaseAlert(content){
+		if(isiOS==true){
+			window.webkit.messageHandlers.langWeb2App_openActivity.postMessage({body:'{"content":"'+content+'","className":"LANGGraffitiWallBuilderViewController"}'});
+		} else{
+		 	javascriptinterface.langWeb2App_openActivity('com.lang.lang.ui.activity.sns.SnsPublishActivity','{"content":"'+content+'"}');
+		}
+	}
+
+
+	//-----------------------
+	// 調起發佈詳情頁面,今日詳情頁
+	function releaseDetial(sns_id){
+		if(isiOS==true){
+			window.webkit.messageHandlers.langWeb2App_openActivity.postMessage({body:'{"postId":"'+sns_id+'","className":"LANGPostViewController"}'});
+		} else{
+		 	javascriptinterface.langWeb2App_openActivity('com.lang.lang.ui.activity.SnsDetailActivity','{"sns_id":"'+sns_id+'"}');
+		}
+	}
 
 ```
 
