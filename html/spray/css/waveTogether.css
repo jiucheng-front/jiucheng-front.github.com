@@ -242,13 +242,11 @@ section:before,
 }
 .user-msg{
   height: 2rem;
-  overflow: hidden;
   position: relative;
-  overflow: hidden;
-  text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
 }
 .has-img p{
   text-indent: 2em;
