@@ -185,7 +185,7 @@
 			$(".change-date").eq(index).nextAll().addClass('gray-bg');
 			$(".change-date").eq(index).prevAll().addClass('choice-date');
 		}
-		
+
 	}
 	changeDate();
 	// 重新选择之前的日期查看榜单
@@ -198,7 +198,7 @@
 			$.post(domain+'v2/html/broke/get_broke_ranked_info', {"broke_pfid":pfid, "date":thisTime},
 				function(DATA) {
 					if(DATA.ret_code=="0"){
-						// 
+						//
 						var nowTodaBroker=DATA.broke_today_ranked;
 						printToday(nowTodaBroker);
 					}
@@ -247,5 +247,9 @@
 	} else {
 		javascriptinterface.langWeb2App_topback("1");
 	}
+
+// 测试
+
+
 
 // }();
