@@ -71,7 +71,7 @@ var getOption={
 	urlStr:"v2/html/broke/get_broke_ranked_info",
 	ajaxData:null		
 }
-Ajax(getOption,function(data){
+nativeAjax(getOption,function(data){
 	// 成功函数
 	console.log(data);
 },function(error){
