@@ -48,6 +48,8 @@
 + 14、週週向上2：2017-06-18
 	+ [測試預告頁面](https://api.s.lang.live/v2/html/activity/weekweekup/trailer.html)
 	+ [測試榜單頁面](https://api.s.lang.live/v2/html/activity/weekweekup/index.html)
++ 15、德古拉第二期：2017-06-25
+	+ [測試地址](https://api.s.lang.live/v2/html/activity/draculasecond/index.html)
 
 ### 二、js介绍以及如何使用
 + 1、html/js/publicVersion.js（封装好的JS方法）
