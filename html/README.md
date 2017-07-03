@@ -48,6 +48,10 @@
 + 14、週週向上2：2017-06-18
 	+ [測試預告頁面](https://api.s.lang.live/v2/html/activity/weekweekup/trailer.html)
 	+ [測試榜單頁面](https://api.s.lang.live/v2/html/activity/weekweekup/index.html)
++ 15、才艺热推：2017-06-27
+	+ [测试地址](https://api.s.lang.live/v2/html/talent/index.html)
++ 16、星座达人秀：2017-07-3
+	+ [测试地址](https://api.s.lang.live/v2/html/activity/constellation/rank.html)
 + 15、德古拉第二期：2017-06-25
 	+ [測試地址](https://api.s.lang.live/v2/html/activity/draculasecond/index.html)
 
