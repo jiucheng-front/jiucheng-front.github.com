@@ -359,7 +359,7 @@
 
 
 
-### 注：其他封裝
+## 注：其他常用封裝
 #### 一、ajax的封裝:public/Ajax/Ajax.js
 
 ```javascript
@@ -593,7 +593,64 @@
 + 2、application/json;charset=utf-8；
 	+ 此時的請求頭是：JSON.stringify(data)系列化之後的JSON格式，需要后台配合
 
-### 二、自定义弹出框的封装
+### 二、关于DOM的常用封装
+
+```javascript
+
+	//1、ClassName切换,是否含有指定class
+	function hasClass(elem,cls){
+	    return elem.className.match(new RegExp('(\\s|^)'+cls+'(\\s|$)'));
+	}
+	// 2、没有就追加指定class
+	function addClass(elem,cls){
+	    if(!hasClass(elem,cls)){
+	        elem.className+=" "+cls;
+	    }
+	}
+	// 3、有就移除指定class
+	function removeClass(elem,cls){
+	    if(hasClass(elem,cls)){
+	        var reg=new RegExp('(\\s|^)'+cls+'(\\s|$)');
+	        elem.className=elem.className.replace(reg,"");
+	    }
+	}
+	
+	
+	// 3、获取DOM
+	// 3.1 
+	window.$=HTMLElement.prototype.$=function(selector){
+		return (this==window?document:this).querySelectorAll(selector);
+	}
+	// id=>$("#id")[0];
+	//className=>$(".class")   (array)
+
+	// 3.2
+	function getEleId(id){
+	    return document.getElementById(id);
+	}
+	// 5、追加HTML
+	function pushHtml(id,html){
+	    return document.getElementById(id).innerHTML=html;
+	}
+	
+	// 4、封装綁定事件
+	function on(type,selector,callback){
+	    document.addEventListener(type,function(e){
+	        e.preventDefault();
+	        e.stopPropagation();
+	        if(selector==e.target.tagName.toLowerCase()||selector==e.target.className||selector==e.target.id){
+	            callback(e);
+	        }
+	    })
+	}
+
+
+```
+
+
+
+
+### 三、自定义弹出框的封装
 + 如何使用：
 	+ 1、分别引入public/prompt_box/prompt_box.css和public/prompt_box/prompt_box.js
 	+ 2、html底部放入一下HTML片段
