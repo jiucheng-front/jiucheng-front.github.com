@@ -93,11 +93,11 @@
 ```javascript
 	
 	//1、点击上传按钮调用客户端的方法，弹出选择文件还是截屏还是摄像头
-		if(isiOS==true){
-              window.webkit.messageHandlers.langWeb2App_camera.postMessage({body:'{"needupload":"1","cropImg":"0","supportCamera":"0"}'});
-           }else{
-               javascriptinterface.langWeb2App_camera("1","0");
-        }
+	if(isiOS==true){
+          window.webkit.messageHandlers.langWeb2App_camera.postMessage({body:'{"needupload":"1","cropImg":"0","supportCamera":"0"}'});
+       }else{
+           javascriptinterface.langWeb2App_camera("1","0");
+    }
 	//2、客户端通过如下方法返回以及上传的img的url，如果用得到自己定义变量或者函数接收并操作
 	var loadingSrc=null; 
 	function langApp2Web_camerartn(imgUrl) {
