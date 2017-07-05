@@ -637,20 +637,25 @@
 	}
 	
 	// 4、封装綁定事件
-	function on(type,selector,callback){
-	    document.addEventListener(type,function(e){
-	        e.preventDefault();
-	        e.stopPropagation();
-	        if(selector==e.target.tagName.toLowerCase()||selector==e.target.className||selector==e.target.id){
-	            callback(e);
-	        }
-	    })
+	function on(el,type,handle){
+		if(el.addEventListener){
+			el.addEventListener(type,handle,false);
+		}
 	}
 	//比如：
-	on("click",'#ruleBtn',function(){
+	var btn=document.getElementById("ruleBtn");
+	on(btn,"click",function(){
 		console.log(this);
 	});
+	
+	var imgs=document.getElementsByClassName("user-img");
+	for(var i=0;i<imgs.length;i++){
+		on(imgs[i],'click',function(){
+	        console.log(this);
+	    });
+	}
 
+	
 	// 三、返回頂部通用的方法
 	  function backTop(btnId) {
 	      var btn = document.getElementById(btnId);
