@@ -358,6 +358,18 @@
 
 ```
 
+### 十、原生默认的表单提交代替JQ的trigger('submit');
+
+```javascript
+
+	btn.addEventListener('click',functioin(){
+		form.submit();
+	},false);
+	btn.onclick=function(){
+		form.submit();
+	}
+
+```
 
 
 
@@ -490,7 +502,7 @@
 ```
 
 
-### AJAX封装的智能版本
+### AJAX封装的智能版本(代替JQ的POST)
 
 ```javascript
 
@@ -656,7 +668,7 @@
 	    });
 	}
 	//4.2添加事件
-	function add(el, type, fn){
+	function addEvent(el, type, fn){
 	    el.listeners = el.listeners || {};
 	    var listeners = el.listeners[type] = el.listeners[type] || [];
 	    listeners.push(fn);
@@ -672,12 +684,37 @@
 	            el.attachEvent('on' + type,  listeners['_handler_']);
 	    }
 	}
-	add(btn,'click',function(){
+	addEvent(btn,'click',function(){
 		console.log(10);
 	})
 	//4.3 删除事件
+	function removeEvent(el, type, fn){
+		if(el.removeEventListener){
+			el.removeEventListener(type, fn, false);
+		}else if(el.detachEvent){
+			el.detachEvent('on' + type, el['e'+fn]);
+		}
+	}
 	
+
+	//4.4 自动执行事件
+	function autoEvent(el ,type){
+		try{
+			if(el.dispatchEvent){
+				var evt = document.createEvent('Event');
+				evt.initEvent(type,true,true);
+				el.dispatchEvent(evt);
+			}else if(el.fireEvent){
+				el.fireEvent('on'+type);
+			}
+		}catch(e){};
+	}
+	var btn=document.getElementById("ruleBtn");
+	aotoEvent(el,submit);
 	
+
+	
+
 	// 三、返回頂部通用的方法
 	  function backTop(btnId) {
 	      var btn = document.getElementById(btnId);
