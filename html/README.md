@@ -147,6 +147,14 @@
 		$(".jumpTo").trigger('submit');
 	});
 	
+	//如果跳轉到個人，需要先賦值再跳轉，
+	// 0613 跳轉到個人頁面
+	//如：https://api.s.lang.live/v2/html/activity/broke/totalList.html?anchor_pfid=1000054&HTTP_USER_UID=1024317&HTTP_USER_TOKEN=9907fd6462e52fc064f24d0c947bbcd4&broke_pfid=1024317&date=2017-06-14
+
+	$("#newPfid").val(pfid);
+	$("#jumpPersonal").trigger('submit');
+
+
 
 ```
 
@@ -311,6 +319,22 @@
 	     share_url_head + 'html/activity/disney2017/map_share.html?anchor_pfid='+anchor_id+'&pfid='+pfid
 	);
 	
+```
+
++ 20170718新增加分享到facebook,必須加上如下meta标签到head(内容变化)
+
+```javascript
+
+	<meta property="description" content="幫助主播收集星座卡牌，成為星座達人，獲得每日推薦吧~"/>
+    <meta property="og:app_id" content="1787229064893053"/>
+    <meta property="og:title" content="星座達人秀~火爆展開中~"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:description" content="幫助主播收集星座卡牌，成為星座達人，獲得每日推薦吧~"/>
+    <meta property="og:image" content="http://playback-langlive.ufile.ucloud.com.cn/241be4d7aaefb46963c1fec0fbf417a3"/>
+    <meta property="og:url" content="https://api.s.lang.live/v2/html/activity/constellation/rank.html" />
+
+
+
 ```
 
 
