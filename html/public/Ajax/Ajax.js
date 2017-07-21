@@ -26,6 +26,8 @@ function nativeAjax(option,success,error){
 			str+='&'+key+'='+data[key];
 		}
 		str=str.slice(1);
+	}else{
+		str=null;
 	}
 	xhrRequest.onreadystatechange=function(){
 		if(xhrRequest.readyState==4){
