@@ -1,0 +1,33 @@
+*{
+	margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 0;
+  box-sizing: border-box;
+  outline: 0;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+}
+.block{
+  display: block;
+  width: 100%;
+}
+/*header*/
+header{
+  position: relative;
+}
+header img{
+  display: block;
+  width: 100%;
+}
+#backPiratesShip{
+  display: block;
+  width: 2.73rem;
+  height: 1rem;
+  background-image: url(../images/back_piratesship.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  top: 1.2rem;
+}
