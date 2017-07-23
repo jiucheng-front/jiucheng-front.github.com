@@ -1,0 +1,141 @@
+*{
+	margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 0;
+  box-sizing: border-box;
+  outline: 0;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+}
+.block{
+  display: block;
+  width: 100%;
+}
+/*header*/
+header{
+  position: relative;
+}
+header img{
+  display: block;
+  width: 100%;
+}
+#ruleBtn,
+#jumpTo{
+  display: block;
+  height: 1rem;
+  top: 8.466667rem;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 10;
+}
+#ruleBtn{
+  width: 2.533333rem;
+  left: 0;
+  background-image: url(../images/chronicle_rulebg.png);
+}
+#jumpTo{
+  width: 2.733333rem;
+  right: 0;
+  background-image: url(../images/chronicle_rankingbg.png);
+}
+.header-info-bg{
+  width: 100%;
+  height: 1.4rem;
+  position: relative;
+  background-image: url(../images/chronicle_02.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.header-info{
+  width: 69%;
+  height: 1.4rem;
+  margin: 0 auto;
+  position: relative;
+}
+.header-info h3,
+.header-msg{
+  position: absolute;
+  
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+}
+.header-info h3{
+  left: 0;
+  height: 1.4rem;
+  line-height: 1.4rem;
+}
+.header-msg{
+  right: .2rem;
+  line-height: .45rem;
+  height: .9rem;
+}
+/*nchor-info-bg*/
+.anchor-info-bg{
+  width: 100%;
+  height: 4.533333rem;
+  background-image: url(../images/chronicle_03.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.anchor-info-bg:before{
+  display: table;
+  content: "";
+}
+.anchor-info-bg h3{
+  width: 3.066667rem;
+  margin: 0 auto;
+  margin-top: 1.386667rem;
+  text-align: center;
+  height: 0.96rem;
+  line-height: 0.96rem;
+  color: #fff;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.anchor-info-bg>img{
+  display: block;
+  width: 3.96rem;
+  position: absolute;
+  right: 0;
+  bottom: 0.2rem;
+  z-index: 10;
+}
+/*nchor-info*/
+.anchor-info{
+  width: 3.266667rem;
+  position: absolute;
+  left: 2.773333rem;
+  bottom: 0.2rem;
+  color: #fff;
+}
+.anchor-info h5{
+  font-size: 0.24rem;
+}
+.anchor-info p{
+  font-size: 0.32rem;
+}
+.anchor-info h2{
+  font-size: 0.426667rem;
+}
+.anchor-info span,
+.anchor-info b{
+  display: block;
+  height: 0.106667rem;
+}
+.anchor-info span{
+  width: 100%;
+  background: rgb(125,125,125);
+  position: relative;
+}
+.anchor-info b{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 35%;
+  background: rgb(255,255,0);
+}
