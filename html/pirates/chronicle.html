@@ -11,7 +11,7 @@
   <meta http-equiv="cleartype" content="on" />
   <script src="/html/js/flexible.js"></script>
   <link rel="stylesheet" href="/html/css/base.css">
-  <link rel="stylesheet" href="/html/pirates/css/chronicle.css?v=0">
+  <link rel="stylesheet" href="/html/pirates/css/chronicle.css?v=0012">
 </head>
 <body>
 	<!-- 头部信息 -->
@@ -34,15 +34,165 @@
 		<h3>主播暱稱暱稱暱稱暱稱暱稱</h3>
 		<div class="anchor-info">
 			<h5>達成獎勵</h5>
-			<span><b></b></span>
-			<p>白銀航海家</p>
-			<h2>2000浪花</h2>
+			<span><b id="getHow"></b></span>
+			<p id="getWhichLivel">白銀航海家</p>
+			<h2 id="getHowMuch">2000浪花</h2>
 		</div>
 		<img src="/html/pirates/images/chronicle_cat.png" alt="">
 	</div>
+  <div class="anchor-info-bgtwo">
+    <!-- 排名 -->
+    <ul class="ranking-bgcolor">
+      <li>總排名：<span id="totalRanking">122</span>名</li>
+      <li>今日排名：<span id="todayRanking">5</span>名</li>
+    </ul>
+    <!-- 禮物 -->
+    <ul class="anchor-gift">
+      <li>
+        <div class="anchor-msg">
+          <h3>收到</h3>
+          <p id="hadLeftCount">99999</p>
+        </div>
+      </li>
+      <li>
+        <div class="anchor-msg">
+          <h3>收到</h3>
+          <p id="hadRightCount">8888</p>
+        </div>
+      </li>
+    </ul>
+    <!-- 加成、家嗎、里程 -->
+    <ul class="anchor-three-list">
+      <li><b>粉絲團加成</b><span id="mileageOne">66666</span>km<i id="joinFans"></i></li>
+      <li><b>海賊團加碼</b><span id="mileageTwo">88888</span>km<i id="joinPirates"></i></li>
+      <li><b>總航行里程</b><span id="mileageThree">999999</span>km<i id="joinLists"></i></li>
+    </ul>
+  </div>
+  <div class="anchor-info-bgbottom"></div>
 	<!-- 贡献里程榜 -->
-	<div class="contribution-list"></div>
+  <div class="contribution-title-bg">
+    <h3>貢獻里程榜</h3>
+  </div>
+  <!-- 前三名 -->
+	<div class="contribution-list-bg">
+	  <ul id="contributionThree" class="contribution-three">
+	    <li>
+	      <div class="outer-bg">
+          <b>1</b>
+          <div class="anchor-img">
+            <img src="/html/pirates/images/user.png" alt="">
+          </div>
+	        <span>傭兵之王</span>
+	      </div>
+        <b>999999km</b>
+        <p>大大泡泡糖</p>
+	    </li>
+      <li>
+	      <div class="outer-bg">
+          <b>2</b>
+          <div class="anchor-img">
+            <img src="/html/pirates/images/user.png" alt="">
+          </div>
+          <i></i>
+	        <span>傳奇傭兵</span>
+	      </div>
+        <b>88888km</b>
+        <p>仿蘋果批發價格迫擊炮</p>
+	    </li>
+      <li>
+	      <div class="outer-bg">
+          <b>3</b>
+          <div class="anchor-img">
+            <img src="/html/pirates/images/user.png" alt="">
+          </div>
+	        <span>赤日傭兵</span>
+	      </div>
+        <b>666666km</b>
+        <p>佛擋殺佛定位后的撒旦的</p>
+	    </li>
+	  </ul>
+	</div>
+  <!-- 4-10名 start -->
+  <div class="chronicle-icon-topbg"></div>
+  <!-- 4-10名 -->
+  <div class="chronicle-contribution-listbg">
+    <ul id="contributionSeven" class="contribution-seven">
+      <li>
+        <b>4</b>
+        <div class="user-img">
+          <img src="/html/pirates/images/user.png" alt="">
+          <i></i>
+        </div>
+        <p>泡泡糖的米奇</p>
+        <span>111km</span>
+      </li>
+      <li>
+        <b>5</b>
+        <div class="user-img">
+          <img src="/html/pirates/images/user.png" alt="">
+          <i></i>
+        </div>
+        <p>小小泡泡糖的米奇</p>
+        <span>111km</span>
+      </li>
+      <li>
+        <b>6</b>
+        <div class="user-img">
+          <img src="/html/pirates/images/user.png" alt="">
+        </div>
+        <p>小小泡泡糖的米奇是的那老師</p>
+        <span>111km</span>
+      </li>
+      <li>
+        <b>7</b>
+        <div class="user-img">
+          <img src="/html/pirates/images/user.png" alt="">
+          <i></i>
+        </div>
+        <p>小小泡泡糖</p>
+        <span>111km</span>
+      </li>
+      <li class="me">
+        <b>8</b>
+        <div class="user-img">
+          <img src="/html/pirates/images/user.png" alt="">
+          <i></i>
+        </div>
+        <p>小小泡泡糖的米奇</p>
+        <span>111km</span>
+      </li>
+      <li>
+        <b>9</b>
+        <div class="user-img">
+          <img src="/html/pirates/images/user.png" alt="">
+        </div>
+        <p>小小泡泡糖的米奇</p>
+        <span>111km</span>
+      </li>
+      <li>
+        <b>10</b>
+        <div class="user-img">
+          <img src="/html/pirates/images/user.png" alt="">
+        </div>
+        <p>小小泡泡糖的米奇</p>
+        <span>111km</span>
+      </li>
+    </ul>
+  </div>
+  <!-- 4-10名 end-->
+  <div class="chronicle-icon-bottombg"></div>
 	<!-- 底部个人信息-->
+  <div class="anchor-self">
+    <div class="anchor-self-img">
+      <img src="/html/pirates/images/user.png" alt="" id="anchorSelfImg">
+    </div>
+    <div class="anchor-self-msg">
+      <h3 id="anchorSelfName">大大泡泡糖的你dksdskd</h3>
+      <p>貢獻里程<span id="anchorSelfCon">898999</span>km</p>
+    </div>
+    <b>排名<span id="anchorSelfRank">9999</span></b>
+    <i></i>
+  </div>
 	<!-- 主播信息 -->
 	<!-- 主播信息 -->
 
