@@ -138,7 +138,6 @@ header img{
   position: absolute;
   left: 0;
   top: 0;
-  width: 35%;
   background: rgb(255,255,0);
 }
 /*anchor-info-bgtwo*/
@@ -357,6 +356,7 @@ header img{
 	transform: translateX(-50%);
 	bottom: .2rem;
 	z-index: 15;
+  color: #fff;
 }
 .contribution-three li:nth-child(1) .outer-bg span{
 	background: #FACD89;
@@ -417,7 +417,7 @@ header img{
 	width: 2.67rem;
 	height: .75rem;
 	line-height: .75rem;
-	background: #3E6C90;
+	background: rgba(62,108,144,.6);
 	top: 40%;
 	transform: translateY(-50%);
 	z-index: 3;
@@ -465,9 +465,6 @@ header img{
 .contribution-seven li+li{
 	border-top: 1px dashed #818181;
 }
-.contribution-seven li:last-child{
-	padding-left: .3rem;
-}
 .contribution-seven li>b,
 .contribution-seven .user-img,
 .contribution-seven li>p,
@@ -494,7 +491,7 @@ header img{
 }
 .contribution-seven li>span{
 	display: block;
-	width: 3rem;
+	width: 2.8rem;
 	text-align: center;
 }
 .user-img>i{
@@ -518,12 +515,13 @@ header img{
 	height: 1.47rem;
 	margin: 0 auto;
 	position: fixed;
-	left: .16rem;
 	bottom: .27rem;
 	background-image: url(../images/chronicle_mebg.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+  	background-size: 100% 100%;
+  	background-repeat: no-repeat;
 	z-index: 25;
+	left: 50%;
+    transform: translateX(-50%);
 }
 .anchor-self i{
 	display: block;
@@ -588,25 +586,13 @@ header img{
 .anchor-self span{
 	padding: 0 .15rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/**/
+/*ruleBox*/
+.hide{
+	display: none;
+}
+#ruleBox{
+	display: none;
+}
+#ruleBox.rule-box{
+	display: block;
+}

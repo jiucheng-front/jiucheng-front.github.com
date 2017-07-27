@@ -1,33 +1,285 @@
-*{
-	margin: 0;
-  padding: 0;
-  list-style: none;
-  border: 0;
-  box-sizing: border-box;
-  outline: 0;
-  -webkit-tap-highlight-color: transparent;
-  cursor: pointer;
+body{
+  background-color: #4f87a6;
 }
-.block{
-  display: block;
-  width: 100%;
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: 0;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+}
+img{
+    display:block;
+    width:100%;
 }
 /*header*/
+body,
 header{
   position: relative;
 }
-header img{
-  display: block;
-  width: 100%;
+.back{
+  width:2.68rem;
+  height:0.893333rem;
+  position: fixed;
+  right:0;
+  top:1.146667rem;
+  z-index: 999;
 }
-#backPiratesShip{
+/* 报名区域 */
+.sigin-up{
+  background:url(../images/apply.jpg) no-repeat;
+  background-size: 100% 100% ;
+  width:100%;
+  height:6.026667rem;
+  position: relative;
+}
+.sigin-up p:nth-child(1){
+  color:#c69c6d;
+  font-size: 0.32rem;
+  padding-top: 0.74rem;
+  text-align: center;
+}
+.sigin-up p:nth-child(2){
+  color:#fff;
+  font-size: 0.4rem;
+  padding-top: 1.36rem;
+  text-align: center;
+  width:7.666667rem;
+  margin: 0 auto;
+}
+.sigin-up p:nth-child(3){
+  color:#fff4ab;
+  font-size:0.24rem;
+  padding-top: 0.4rem;
+  text-align: center;
+  width:7.666667rem;
+  margin: 0 auto;
+}
+.applyicon{
+  width:2.653333rem;
+  height:0.866667rem;
+  margin:0 auto;
   display: block;
-  width: 2.73rem;
-  height: 1rem;
-  background-image: url(../images/back_piratesship.png);
+  margin-top:0.68rem;
+}
+
+/* 提交影片区域 */
+.submit-film{
+  background: url(../images/submitfilm.jpg) no-repeat;
   background-size: 100% 100%;
-  background-repeat: no-repeat;
+  width:100%;
+  height:8.906667rem;
+  position: relative;
+}
+.score1,
+.score2,
+.score3{
+   width:7.44rem;
+   margin: 0 auto;
+   height:0.906667rem;
+}
+.score1 p:nth-child(1),
+.score2 p:nth-child(1),
+.score3 p:nth-child(1){
+   color:#6f4317;
+   font-size:0.36rem;
+   text-align: left;
+   line-height: 0.906667rem;
+   width:5.12rem;
+   float:left;
+   padding-left: 0.15rem;
+}
+.score1 p:nth-child(2),
+.score2 p:nth-child(2),
+.score3 p:nth-child(2){
+   color:#cb2315;
+   font-weight: bold;
+   font-size: 0.293333rem;
+   line-height: 0.906667rem;
+   text-align: left;
+   float:left;
+   width:1.4rem;
+}
+.score1 span,
+.score2 span,
+.score3 span{
+  width:0.546667rem;
+  height:0.4rem;
+  float:left;
+  margin-top:0.2rem;
+}
+.score1{
+  padding-top: 0.466667rem;
+}
+.score2{
+  margin-top:0.62rem;
+}
+.score3{
+  margin-top: 1.54rem;
+}
+.filmtext{
+  width:7.146667rem;
+  height:3.333333rem;
+  margin: 0 auto;
+  margin-top: 0.16rem;
+}
+.filmtext p{
+   color:#f0e3a3;
+   font-size: 0.32rem;
+   text-align: left;
+}
+.filmtext p:nth-child(5){
+  padding-top: 0.32rem;
+}
+.film{
+  width:2.746667rem;
+  height:0.88rem;
   position: absolute;
-  right: 0;
-  top: 1.2rem;
+  left:3.6rem;
+  bottom:1.986667rem;
+}
+/* 主播奖励文字部分 */
+.rewardtext{
+  background:url(../images/rewardbg.jpg) no-repeat;
+  background-size: 100% 100%;
+  height:7.72rem;
+}
+.rewarddetails{
+  width:7.84rem;
+  margin: 0 auto;
+  padding-top: 1.3rem;
+}
+.rewarddetails p{
+  color:#f0e3a3;
+  font-size: 0.32rem;
+  text-align: left;
+}
+.rewarddetails p b{
+  color:#901a03;
+  font-weight: normal;
+}
+.rewarddetails p:nth-child(3){
+  padding-bottom: 0.56rem;
+}
+.cut{
+  width:6.853333rem;
+  height:0.253333rem;
+  margin:0 auto;
+}
+.state{
+  width:7.84rem;
+  margin: 0 auto;
+  font-size: 0.32rem;
+  color:#f0e3a3;
+}
+.state p{
+  text-align: left;
+  padding-bottom: 0.16rem;
+}
+.state p:nth-child(1){
+  font-weight: bold;
+  text-align: center;
+}
+.state p:nth-child(3){
+  padding:0;
+}
+
+/* 榜单区域 */
+.moneyreward{
+  width:93.067%;
+  margin:0 auto;
+  background-color:#3e7da0;
+  border-radius:0.24rem;
+  color:#fde777;
+  font-size:0.4rem;
+  line-height: 1.32rem;
+  padding-top: 0.28rem;
+}
+.moneyreward li{
+  height:1.32rem;
+  width:100%;
+  margin: 0  0  0.4rem 0;
+}
+.moneyreward li i{
+  color:#fff;
+  float:left;
+  line-height: 1.32rem;
+  width:0.56rem;
+  text-align: right;
+}
+.moneyreward li span{
+  float: left;
+}
+.li .avatar{
+  height:1.16rem;
+  width:1.16rem;
+  border-radius:50%;
+
+}
+.D1 .avatar{ 
+  background: url(../images/jin.png) no-repeat;
+  background-size: 100% 100%;
+  width:1.573333rem;
+  height:1.386667rem;
+  position: relative;
+  float:left;
+margin:0;
+}
+.D2 .avatar{ 
+  background: url(../images/yin.png) no-repeat;
+  background-size: 100% 100%;
+  width:1.573333rem;
+  height:1.386667rem;
+  position: relative;
+  float:left;
+margin:0;
+}
+.D3 .avatar{ 
+  background: url(../images/tong.png) no-repeat;
+  background-size: 100% 100%;
+  width:1.573333rem;
+  height:1.386667rem;
+  position: relative;
+  float:left;
+margin:0;
+}
+.avatar{
+  float:left;
+  margin-left: 0.2rem;
+  margin-right:0.18rem;
+  width:1.16rem;
+  height:1.16rem;
+  border-radius: 50%;
+  background-color:#a6937c;
+}
+.avatar img{
+  width:1.16rem;
+  height:1.16rem;
+  border-radius: 50%;
+}
+.D1 .avatar img,
+.D2 .avatar img,
+.D3 .avatar img{
+  width:1.08rem;
+  height:1.08rem;
+  border-radius: 50%;
+  position: absolute;
+  left:0.253333rem;
+  top:0.15rem;
+}
+
+.team{
+  float:left;
+  width:3.6rem;
+  margin-left: 0.4rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+    white-space: nowrap; 
+}
+.team p{
+  line-height: 0.66rem;
 }

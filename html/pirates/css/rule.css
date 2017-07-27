@@ -1,0 +1,143 @@
+#ruleBox:before{
+  display: table;
+  content: "";
+}
+#ruleBox{
+    background-image: url(../images/publicity_bluebg.jpg);
+    padding-top: 1.8rem;
+    padding-bottom: .8rem;
+}
+.rule-bg{
+  width: 9.33rem;
+  margin: 0 auto;
+  background: #AD7325;
+  border: 4px solid #C3996B;
+  border-radius: .5rem;
+  position: relative;
+  padding-top: .7rem;
+  padding-bottom: .7rem;
+}
+.rule-title{
+  width: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: -.92rem;
+}
+.rule-title{
+  height: 1.31rem;
+  background-image: url(../images/rule_bg01.png);
+  position: absolute;
+}
+.rule-title h3{
+  width: 100%;
+  color: #C3996B;
+  text-align: center;
+  line-height: .87rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+/*rule-info*/
+.rule-info{
+  width: 8.2rem;
+  margin: 0 auto;
+}
+.rule-info>p,
+.rule-deep-bgone>p{
+  color: #F0E2A0;
+}
+.rule-info>p{
+  margin-top: .25rem;
+}
+.rule-deep-bgone{
+  margin-top: .25rem;
+  padding: .2rem;
+  background: #82511C;
+  border-radius: .4rem;
+  padding-bottom: .4rem;
+}
+.rule-deep-bgone>p{
+  margin-top: .15rem;
+}
+.rule-deep-bgone>p span{
+  color: #D84009;
+}
+.text-center{
+  padding-left: .5rem;
+}
+/*rule-lists*/
+.rule-lists{
+  width: 7.47rem;
+  margin: 0 auto;
+  margin-top: .25rem;
+}
+.rule-lists img{
+  display: block;
+  width: 100%;
+}
+.rule-expert{
+  display: block;
+  width: 7.71rem;
+  height: .51rem;
+  margin: 0 auto;
+  margin-top: .35rem;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: url(../images/rule_icon02.png);
+}
+/**/
+.rule-bg>hr{
+  width: 95%;
+  margin: 0 auto;
+  margin-top: .3rem;
+  border: 1px dashed #F0E2A0;
+}
+
+/*rule-line*/
+.rule-line{
+  display: block;
+  width: 6.85rem;
+  height: .25rem;
+  margin: 0 auto;
+  margin-top: .35rem;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: url(../images/rule_icon01.png);
+}
+.center{
+  text-align: center;
+  color: #F0E2A0;
+  margin-top: .1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/

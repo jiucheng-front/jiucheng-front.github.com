@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>海賊團爭奪戰</title>
+  <title>海賊の冒險總榜頁</title>
   <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
   <meta name="description" content="" />
   <meta name="HandheldFriendly" content="True" />
@@ -11,12 +11,20 @@
   <meta http-equiv="cleartype" content="on" />
   <script src="/html/js/flexible.js"></script>
   <link rel="stylesheet" href="/html/css/base.css">
-  <link rel="stylesheet" href="/html/pirates/css/ranking.css?v=0">
+  <link rel="stylesheet" href="/html/pirates/css/ranking.css?v=0727">
+  <link rel="stylesheet" href="/html/pirates/css/rule.css?v=0727">
+  <script>
+      var token = '<?=$token;?>';
+      // var pfid = '<?=$pfid;?>';
+      var pfid = 1000005;
+      var share_url_head = '<?=$share_url_head;?>';
+      var anchor_id='<?=$anchor_id;?>';
+  </script>
 </head>
 <body>
   <div id="content">
     <header>
-      <img src="/html/pirates/images/ranking_bg_01.jpg" alt="">
+      <img src="/html/pirates/images/ranking_bg_01.png" alt="">
       <span id="ruleBtn"></span>
   		<span id="jumpTo"></span>
     </header>
@@ -34,7 +42,7 @@
     <div class="reward-info-bg">
       <div class="reward-same-bg reward-info-one">
         <h3>主播日榜Top3</h3>
-        <p>次日活動熱門推薦位（三人隨機展示）</p>
+        <p>次日熱門活動推薦位</p>
         <p>小提示：主播未開播狀態下不會出現在推薦位中</p>
       </div>
       <div class="reward-same-bg reward-info-two">
@@ -73,183 +81,43 @@
       <!-- 日 -->
       <div class="ranking-lists-info selected">
         <ul class="ranking-user-list">
-          <li>
-            <b>01</b>
-            <div class="ranking-user-outer">
-              <div class="ranking-user-img">
-                <img src="/html/pirates/images/user.png" alt="">
-              </div>
-              <i></i>
-              <span>傭兵之王</span>
-            </div>
-            <p>管家婆驕傲拍的方式打算</p>
-            <span>賞金9999km</span>
-          </li>
-          <li>
-            <b>02</b>
-            <div class="ranking-user-outer">
-              <div class="ranking-user-img">
-                <img src="/html/pirates/images/user.png" alt="">
-              </div>
-              <span>傳奇傭兵</span>
-            </div>
-            <p>管家婆驕傲拍的方式打算</p>
-            <span>賞金9999km</span>
-          </li>
-          <li>
-            <b>03</b>
-            <div class="ranking-user-outer">
-              <div class="ranking-user-img">
-                <img src="/html/pirates/images/user.png" alt="">
-              </div>
-              <i></i>
-              <span>赤日傭兵</span>
-            </div>
-            <p>管家婆驕傲拍的方式打算</p>
-            <span>賞金9999km</span>
-          </li>
-          <li>
-            <b>04</b>
-            <div class="ranking-user-outer">
-              <div class="ranking-user-img">
-                <img src="/html/pirates/images/user.png" alt="">
-              </div>
-              <i></i>
-            </div>
-            <p>管家婆驕傲拍的方式打算</p>
-            <span>賞金9999km</span>
-          </li>
-          <li class="myself">
-            <b>05</b>
-            <div class="ranking-user-outer">
-              <div class="ranking-user-img">
-                <img src="/html/pirates/images/user.png" alt="">
-              </div>
-            </div>
-            <p>管家婆驕傲拍的方式打算</p>
-            <span>賞金9999km</span>
-          </li>
+          
         </ul>
         <!-- 主播個人信息 -->
         <div class="anchor-self">
           <div class="anchor-self-img">
-            <img src="/html/pirates/images/user.png" alt="" id="anchorSelfImg">
+            <img src="/html/pirates/images/defaultimg.png" alt="" id="anchorSelfImg">
           </div>
           <div class="anchor-self-msg">
-            <h3 id="anchorSelfName">大大泡泡糖的你dksdskd</h3>
-            <p>里程數：<span id="anchorSelfCon">898999</span>km</p>
+            <h3 id="anchorSelfName"></h3>
+            <p><span id="anchorSelfCon"></span></p>
           </div>
-          <b>排名<span id="anchorSelfRank">9999</span></b>
+          <b><span id="anchorSelfRank"></span></b>
           <i></i>
         </div>
       </div>
       <!-- 總 -->
       <div class="ranking-lists-info">
         <ul class="ranking-user-list">
-          <li>
-            <b>01</b>
-            <div class="ranking-user-outer">
-              <div class="ranking-user-img">
-                <img src="/html/pirates/images/user.png" alt="">
-              </div>
-              <i></i>
-              <span>傭兵之王</span>
-            </div>
-            <p>管家婆驕傲拍的方式打算</p>
-            <span>賞金9999km</span>
-          </li>
-          <li>
-            <b>02</b>
-            <div class="ranking-user-outer">
-              <div class="ranking-user-img">
-                <img src="/html/pirates/images/user.png" alt="">
-              </div>
-              <span>傳奇傭兵</span>
-            </div>
-            <p>管家婆驕傲拍的方式打算</p>
-            <span>賞金9999km</span>
-          </li>
-          <li>
-            <b>03</b>
-            <div class="ranking-user-outer">
-              <div class="ranking-user-img">
-                <img src="/html/pirates/images/user.png" alt="">
-              </div>
-              <i></i>
-              <span>赤日傭兵</span>
-            </div>
-            <p>管家婆驕傲拍的方式打算</p>
-            <span>賞金9999km</span>
-          </li>
-          <li>
-            <b>04</b>
-            <div class="ranking-user-outer">
-              <div class="ranking-user-img">
-                <img src="/html/pirates/images/user.png" alt="">
-              </div>
-              <i></i>
-            </div>
-            <p>管家婆驕傲拍的方式打算</p>
-            <span>賞金9999km</span>
-          </li>
-          <li>
-            <b>05</b>
-            <div class="ranking-user-outer">
-              <div class="ranking-user-img">
-                <img src="/html/pirates/images/user.png" alt="">
-              </div>
-            </div>
-            <p>管家婆驕傲拍的方式打算</p>
-            <span>賞金9999km</span>
-          </li>
-          <li>
-            <b>05</b>
-            <div class="ranking-user-outer">
-              <div class="ranking-user-img">
-                <img src="/html/pirates/images/user.png" alt="">
-              </div>
-            </div>
-            <p>管家婆驕傲拍的方式打算</p>
-            <span>賞金9999km</span>
-          </li>
-          <li class="myself">
-            <b>05</b>
-            <div class="ranking-user-outer">
-              <div class="ranking-user-img">
-                <img src="/html/pirates/images/user.png" alt="">
-              </div>
-            </div>
-            <p>管家婆驕傲拍的方式打算</p>
-            <span>賞金9999km</span>
-          </li>
-          <li>
-            <b>05</b>
-            <div class="ranking-user-outer">
-              <div class="ranking-user-img">
-                <img src="/html/pirates/images/user.png" alt="">
-              </div>
-            </div>
-            <p>管家婆驕傲拍的方式打算</p>
-            <span>賞金9999km</span>
-          </li>
+          
         </ul>
         <!-- 主播個人信息 -->
         <div class="anchor-self">
           <div class="anchor-self-img">
-            <img src="/html/pirates/images/user.png" alt="" id="anchorSelfImg">
+            <img src="/html/pirates/images/defaultimg.png" alt="" id="anchorSelfImg">
           </div>
           <div class="anchor-self-msg">
-            <h3 id="anchorSelfName">大大泡泡糖的你dksdskd</h3>
-            <p>總里程數：<span id="anchorSelfCon">898999</span>km</p>
+            <h3 id="anchorSelfName"></h3>
+            <p><span id="anchorSelfCon"></span></p>
           </div>
-          <b>排名<span id="anchorSelfRank">9999</span></b>
+          <b><span id="anchorSelfRank"></span></b>
           <i></i>
         </div>
       </div>
       <!-- 貢獻 -->
       <div class="ranking-lists-info">
-        <ul class="ranking-contri-list">
-          <li>
+        <ul class="ranking-contri-list" id="rankCon">
+          <!-- <li>
             <b>01</b>
             <div class="ranking-user-outer">
               <div class="ranking-user-img">
@@ -262,106 +130,18 @@
               <h3>分批交付怕三分大賽</h3>
               <p>貢獻里程：<span>9999999</span>m</p>
             </div>
-          </li>
-          <li class="myself">
-            <b>02</b>
-            <div class="ranking-user-outer">
-              <div class="ranking-user-img">
-                <img src="/html/pirates/images/user.png" alt="">
-              </div>
-              <span>海賊大副</span>
-            </div>
-            <div class="ranking-contribution-info">
-              <h3>建華大街紅旗譜唯品</h3>
-              <p>貢獻里程：<span>9999999</span>m</p>
-            </div>
-          </li>
-          <li>
-            <b>03</b>
-            <div class="ranking-user-outer">
-              <div class="ranking-user-img">
-                <img src="/html/pirates/images/user.png" alt="">
-              </div>
-              <i></i>
-              <span>海賊船員</span>
-            </div>
-            <div class="ranking-contribution-info">
-              <h3>過後額hi狗兒我會披薩店</h3>
-              <p>貢獻里程：<span>9999999</span>m</p>
-            </div>
-          </li>
-          <li>
-            <b>04</b>
-            <div class="ranking-user-outer">
-              <div class="ranking-user-img">
-                <img src="/html/pirates/images/user.png" alt="">
-              </div>
-              <i></i>
-            </div>
-            <div class="ranking-contribution-info">
-              <h3>去我陪up輕武器無法暗示法卡</h3>
-              <p>貢獻里程：<span>9999999</span>m</p>
-            </div>
-          </li>
-          <li>
-            <b>05</b>
-            <div class="ranking-user-outer">
-              <div class="ranking-user-img">
-                <img src="/html/pirates/images/user.png" alt="">
-              </div>
-            </div>
-            <div class="ranking-contribution-info">
-              <h3>普洱脾氣物品人情味</h3>
-              <p>貢獻里程：<span>9999999</span>m</p>
-            </div>
-          </li>
-          <li>
-            <b>05</b>
-            <div class="ranking-user-outer">
-              <div class="ranking-user-img">
-                <img src="/html/pirates/images/user.png" alt="">
-              </div>
-            </div>
-            <div class="ranking-contribution-info">
-              <h3>讓他強迫帕金森的鍵盤</h3>
-              <p>貢獻里程：<span>9999999</span>m</p>
-            </div>
-          </li>
-          <li>
-            <b>05</b>
-            <div class="ranking-user-outer">
-              <div class="ranking-user-img">
-                <img src="/html/pirates/images/user.png" alt="">
-              </div>
-            </div>
-            <div class="ranking-contribution-info">
-              <h3>公開的破甲弓大師傅</h3>
-              <p>貢獻里程：<span>9999999</span>m</p>
-            </div>
-          </li>
-          <li>
-            <b>05</b>
-            <div class="ranking-user-outer">
-              <div class="ranking-user-img">
-                <img src="/html/pirates/images/user.png" alt="">
-              </div>
-            </div>
-            <div class="ranking-contribution-info">
-              <h3>排氣污染破去拋棄我</h3>
-              <p>貢獻里程：<span>9999999</span>m</p>
-            </div>
-          </li>
+          </li> -->
         </ul>
         <!-- 主播個人信息 -->
-        <div class="anchor-self">
+        <div class="anchor-self" id="conMe">
           <div class="anchor-self-img">
-            <img src="/html/pirates/images/user.png" alt="" id="anchorSelfImg">
+            <img src="/html/pirates/images/defaultimg.png" alt="" id="anchorSelfImg">
           </div>
           <div class="anchor-self-msg">
-            <h3 id="anchorSelfName">大大泡泡糖的你dksdskd</h3>
-            <p>貢獻：<span id="anchorSelfCon">898999</span>km</p>
+            <h3 id="anchorSelfName"></h3>
+            <p><span id="anchorSelfCon"></span></p>
           </div>
-          <b>排名<span id="anchorSelfRank">9999</span></b>
+          <b><span id="anchorSelfRank"></span></b>
           <i></i>
         </div>
       </div>
@@ -370,16 +150,79 @@
   </div>
   <!-- 活動細則 -->
   <div id="ruleBox" class="">
-    <p>活動細則</p>
-    <p>活動細則</p>
-    <p>活動細則</p>
-    <p>活動細則</p>
-    <p>活動細則</p>
-    <p>活動細則</p>
-    <p>活動細則</p>
-    <p>活動細則</p>
-    <p>活動細則</p>
+    <div class="rule-bg">
+      <div class="rule-title">
+        <h3>7/28 11:00:00~8/11 17:59:59</h3>
+      </div>
+      <div class="rule-info">
+        <p>1、活動期間，根據主播航行里程數計算活動排名，航行里程可通過以下方式獲得:</p>
+        <!--深色背景1  -->
+        <div class="rule-deep-bgone">
+          <p>a）收集特定禮物<span>海賊旗</span>（增加里程0.09km/個）、<span>海賊船</span>（增加里程19.99km/個）</p>
+          <p>b）<span>粉絲團會員</span>可為主播獲得加碼里程20 km/個，每個粉絲團會員僅限增加一次</p>
+          <p>c）完成指定任務和進入<span>海賊團賞金榜</span>Top30，可獲得加碼里程數和高額現金獎勵</p>
+          <p class="text-center">•&nbsp;主播啟動海賊團且成員達到10人（+100km）</p>
+          <p class="text-center">•&nbsp;&nbsp;錄製活動宣傳影片並發佈到FB（+200km）</p>
+          <p class="text-center">-&nbsp;在活動頁面提交分享網址</p>
+          <p class="text-center">-&nbsp;需要審核通過後可增加里程數</p>
+          <p class="text-center">（審核時間可能會延遲，請耐心等待）</p>
+          <p class="text-center">•&nbsp;&nbsp;海賊團成員達到50人（+300km）</p>
+          <p class="text-center">•&nbsp;&nbsp;海賊團賞金榜Top30可獲得里程加碼和現金獎勵</p>
+          <!-- 深色背景2 -->
+          <div class="rule-lists">
+            <img src="/html/pirates/images/rule_01.png" alt="">
+          </div>
+          <span class="rule-expert"></span>
+        </div>
+      </div>
+      <hr>
+      <div class="rule-info">
+        <p>2.	主播航行里程達到指定距離時，主播可獲得對應航海家等級、熱門封面標籤和對應浪花獎勵。</p>
+      </div>
+      <div class="rule-lists">
+        <img src="/html/pirates/images/rule_02.png" alt="">
+      </div>
+      <div class="rule-info">
+        <p>3.	主播日榜根據主播當日獲得航行里程進行排名，Top3的主播可獲得次日熱門頁活動推薦位獎勵</p>
+        <p>4.	活動開始前的歷史粉絲團會員人數所貢獻的航行里程數，只計算在總榜中，不計入日榜。</p>
+        <p>5.	主播總榜根據主播獲得的總航行里程進行排名，排名前8的主播獲得海島旅遊及現金獎勵。</p>
+      </div>
+      <div class="rule-lists">
+        <img src="/html/pirates/images/rule_03.png" alt="">
+      </div>
+      <hr>
+      <div class="rule-info">
+        <p>6.	活動結束時，根據貢獻榜排名前10的用戶可獲得相應稱號和進場特效獎勵。</p>
+      </div>
+      <div class="rule-lists">
+        <img src="/html/pirates/images/rule_04.png" alt="">
+      </div>
+      <hr>
+      <div class="rule-info">
+        <p>7.	主播日榜獎勵次日發放，主播總榜獎勵活動結束後三個月內統一發放。</p>
+        <p>8.	活動所得的浪花獎勵，爲即時發放至用戶賬號，不得要求折現發放。</p>
+        <p>9.	本活動如因不可抗力之特殊原因無法執行時，浪Live官方有權決定取消、終止、修改或暫停本活動之權利。</p>
+        <p>10.	獲得海島游獎勵的用戶，行程報名依主播填寫的官方表單爲準。出團行程將委託專業旅行社辦理，一切安排依旅行社安排爲準。若因個人因素隨意更改出團梯次等，或脫團自由行等違反相關規定之行為，視爲自行放棄活動獎勵，與官方無涉，官方不負賠償、補償、或更換獎品之責任。</p>
+        <p>11.	依中華民國稅法規定，本活動獎勵屬競技競賽機會中獎，本公司將誠實申報且依各類所得扣繳率標準規定代為扣繳</p>
+        <p>中獎人若為中華民國境內居住之個人，其競技競賽機會中獎獎金或給與之所得，按給付全額扣取百分之十，但扣繳義務人每次應扣繳稅額不超過新臺幣二千元者，免予扣繳。</p>
+        <p>扣繳義務人對同一中獎人全年給付前項所得不超過新臺幣一千元者，得免依所得稅法第八十九條第三項規定，列單申報該管稽徵機關。</p>
+        <p>中獎人需於提供報稅用資料(身分證影本)後，始得領取獎項。</p>
+        <p>中獎人需自行負擔前述稅款，以及因該獎項所衍生之其他後續費用。</p>
+        <p>中獎人如為非中華民國境內居住之個人（即在中華民國境內居住未達183天之本國人及外國人），競技競賽機會中獎獎金或給與按給付全額扣取百分之二十後，始得領取獎項。</p>
+        <p>12.	根據浪Live服務條款，利用任何系統或工具，對本公司所提供的服務、伺服器或網路進行安擾、惡意攻擊或破壞、外掛程式、病毒程式、程式漏洞(Bug)或其他違反公平合理之方式參與本活動，浪Live官方有權立即終止或變更任一會員帳號之服務。就終止或更改會員使用本服務所可能產生之困擾、不便或損害，本公司對任何會員或第三人均不負任何責任。</p>
+      </div>
+      <i class="rule-line"></i>
+      <p class="center">活動最終解釋權歸浪Live官方所有</p>
+      <p class="center">浪Live官方並得依據實際狀況調整活動內容</p>
+      <p class="center">若您遇到任何問題，請來信service.tw@langlive.com</p>
+    </div>
   </div>
-  <script src="/html/pirates/js/ranking.js?v=01"></script>
+  <!-- 3 返回榜單頁-->
+  <form action="<?php echo DOMAIN ?>v2/html/activity/pirate/publicity.html" method="post" id="jumpRank">
+      <input type="hidden" name="HTTP_USER_TOKEN" class="access_token" value="<?=$token;?>"/>
+      <input type="hidden" name="HTTP_USER_UID" class="pfid" value="<?=$pfid;?>"/>
+      <input type="hidden" name="anchor_pfid" class="anchor_pfid" value="<?=$anchor_pfid;?>"/>
+  </form>
+  <script src="/html/pirates/js/ranking.js?v=0727"></script>
 </body>
 </html>

@@ -37,7 +37,7 @@ header img{
 #jumpTo {
     width: 2.733333rem;
     right: 0;
-    background-image: url(../images/chronicle_rankingbg.png);
+    background-image: url(../images/backpirates.png);
 }
 /*header-info-bg*/
 .header-info-bg{
@@ -238,7 +238,7 @@ header img{
 }
 .ranking-user-list li>p,
 .ranking-contri-list li>p{
-  width: 3.33rem;
+  width: 3rem;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -246,7 +246,7 @@ header img{
 }
 .ranking-user-list li>span,
 .ranking-contri-list li>span{
-  width: 2.4rem;
+  width: 2.8rem;
   margin-left: .35rem;
 }
 .ranking-user-outer{
@@ -355,12 +355,13 @@ header img{
     height: 1.47rem;
     margin: 0 auto;
     position: fixed;
-    left: .16rem;
     bottom: .27rem;
     background-image: url(../images/chronicle_mebg.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     z-index: 25;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .anchor-self-img {
     width: 1.15rem;

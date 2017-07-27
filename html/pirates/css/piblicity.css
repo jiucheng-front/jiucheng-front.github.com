@@ -68,6 +68,9 @@ header img{
   color: #8C6D2F;
   line-height: .58rem;
 }
+.publicity-info-list p span{
+  color: #D93F2F;
+}
 /*publicity-list*/
 .publicity-list{
   background-image: url(../images/publicity_bluebg.jpg);
@@ -98,7 +101,7 @@ header img{
   position: absolute;
   left: 0;
   top: 0;
-  background-image: url(../images/002.png);
+  background-image: url(../images/publicity_video.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -149,26 +152,8 @@ header img{
   white-space: nowrap;
   position: relative;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.publicity-info-list p a{
+  color: #D93F2F;
+  text-decoration: underline;
+}
 /**/
