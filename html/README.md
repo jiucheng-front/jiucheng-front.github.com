@@ -242,6 +242,7 @@
 				javascriptinterface.langWeb2App_openActivity('com.lang.lang.ui.activity.room.YunfanLiveActivity','{"pfid":"'+pfid+'","nickname":"'+nickname+'","live_id":"'+liveid+'","stream_direction":"'+direction+'","cdn_id":"'+cdn_id+'"}')
 			}
 	}
+	//direction:為0是竖屏，1是横屏
 	//2、点击头像到底该怎么跳转根据live_id是否为null，
 	//为null没有在直播，头像下面没有直播ICON，点击调用h5toHomepage(pfid,nickname)跳转个人主页
 	//live_id不为null,正在直播，头像下面有直播ICON，
