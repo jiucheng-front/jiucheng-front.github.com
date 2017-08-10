@@ -118,11 +118,10 @@
             });
 
 
-            var timer=null;
-            var canMove=true;
+
             function autoMove($el){
               var mtop=$el.css("marginTop").replace('px', '');
-              timer=setInterval(function(){
+              var timer=setInterval(function(){
                 mtop-=1;
                 // mtop<=-504&&mtop=0;
                 if(mtop<=-432){
@@ -130,16 +129,15 @@
                 }
                 $el.css("marginTop",mtop+"px");
               },10);
+              $el.data("timer", timer);
               console.log(mtop);
             }
 
             function allMoveDom(){
-              if(canMove){
-                $(".slotMachineContainer").each(function(){
-                    autoMove($(this));
-                  // console.log($(this).css("marginTop"));
-                });
-              }
+              $(".slotMachineContainer").each(function(){
+                  autoMove($(this));
+                // console.log($(this).css("marginTop"));
+              });
             }
             allMoveDom();
 
@@ -154,18 +152,19 @@
             }
             // 开始抽奖
             $("#slotMachineButton1").click(function() {
-              canMove=false;
+              // canMove=false;
+              $(".slotMachineContainer").each(function(){
+                  clearInterval($(this).eq(0).data().timer);
+                  // console.log($(this).css("marginTop"));
+              });
               // 清除自動滾動
-              clearInterval(timer);
-              timer=null;
-              allMoveDom();
 
 
-                // machine1.shuffle(3,resetTop);
-                // // machine2.shuffle(3,resetTop);
-                // // machine3.shuffle(3,resetTop);
-                //
-                //
+                machine1.shuffle(3,resetTop);
+                machine2.shuffle(3,resetTop);
+                machine3.shuffle(3,resetTop);
+
+
                 // setTimeout(function() {
                 //   machine2.shuffle(3, resetTop);
                 // }, 500);
