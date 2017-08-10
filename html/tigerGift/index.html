@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>模擬老虎機</title>
+    <script src="/html/js/flexible.js"></script>
+    <link rel="stylesheet" href="css/demo.css">
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.slotmachine-1.0.js"></script>
+</head>
+<body>
+    <div class="line">
+        <div class="content" style="text-align: center">
+            <div class="clear">
+                <div id="machine1" class="slotMachine">
+                    <div class="slot slot1"></div>
+                    <div class="slot slot2"></div>
+                    <div class="slot slot3"></div>
+                    <div class="slot slot4"></div>
+                    <div class="slot slot5"></div>
+                    <div class="slot slot6"></div>
+                    <div class="slot slot7"></div>
+                </div>
+                <div id="machine2" class="slotMachine">
+                    <div class="slot slot1"></div>
+                    <div class="slot slot2"></div>
+                    <div class="slot slot3"></div>
+                    <div class="slot slot4"></div>
+                    <div class="slot slot5"></div>
+                    <div class="slot slot6"></div>
+                    <div class="slot slot7"></div>
+                </div>
+                <div id="machine3" class="slotMachine">
+                    <div class="slot slot1"></div>
+                    <div class="slot slot2"></div>
+                    <div class="slot slot3"></div>
+                    <div class="slot slot4"></div>
+                    <div class="slot slot5"></div>
+                    <div class="slot slot6"></div>
+                    <div class="slot slot7"></div>
+                </div>
+                <div id="slotMachineButton1" class="slotMachineButton">GO!</div>
+            </div>
+            <!-- <div class="clear">
+                <div id="machine1Result" class="slotMachine noBorder" style="text-align:left"></div>
+                <div id="machine2Result" class="slotMachine noBorder" style="text-align:left"></div>
+                <div id="machine3Result" class="slotMachine noBorder" style="text-align:left"></div>
+                <div class="slotMachine noBorder"></div>
+            </div> -->
+        </div>
+    </div>
+    <script>
+        $(function() {
+          //第一个老虎机设置
+            // var machine1 = $("#machine1").slotMachine({
+            //     //初始化时显示第几张图案
+            //     active: 0,
+            //     //延迟
+            //     delay: 500,
+            //     auto:1000
+            // });
+            //
+            // var machine2 = $("#machine2").slotMachine({
+            //     active: 1,
+            //     delay: 500,
+            //     auto:1000
+            // });
+            //
+            // var machine3 = $("#machine3").slotMachine({
+            //     active: 2,
+            //     delay: 500,
+            //     auto:1000
+            // });
+
+            function onComplete($el, active) { //抽奖回调
+                switch ($el[0].id) {
+                    case 'machine1':
+                        $("#machine1Result").html("<span class='red'>" + active.index + "</span>");
+                        break;
+                    case 'machine2':
+                        $("#machine2Result").html("<span class='red'>" + active.index + "</span>");
+                        break;
+                    case 'machine3':
+                        $("#machine3Result").html("<span class='red'>" + active.index + "</span>");
+                        break;
+                }
+            }
+            //开始抽奖
+            // $("#slotMachineButton1").click(function() {
+            //     //调用第一个老虎机
+            //     machine1.shuffle(3, onComplete);
+            //     //500秒后调用第二个老虎机
+            //     setTimeout(function() {
+            //         machine2.shuffle(3, onComplete);
+            //     }, 500);
+            //     //1000秒后调用第三个老虎机
+            //     setTimeout(function() {
+            //         machine3.shuffle(3, onComplete);
+            //     }, 1000);
+            // })
+
+
+            var machine1 = $(".slotMachine").eq(0).slotMachine({
+                active: 0,
+                delay: 500
+            });
+
+            var machine2 = $(".slotMachine").eq(1).slotMachine({
+                active: 1,
+                delay: 500
+            });
+
+            var machine3 = $(".slotMachine").eq(2).slotMachine({
+                active: 2,
+                delay: 500
+            });
+
+
+            var timer=null;
+            var canMove=true;
+            function autoMove($el){
+              var mtop=$el.css("marginTop").replace('px', '');
+              timer=setInterval(function(){
+                mtop-=1;
+                // mtop<=-504&&mtop=0;
+                if(mtop<=-432){
+                  mtop=0;
+                }
+                $el.css("marginTop",mtop+"px");
+              },10);
+              console.log(mtop);
+            }
+
+            function allMoveDom(){
+              if(canMove){
+                $(".slotMachineContainer").each(function(){
+                    autoMove($(this));
+                  // console.log($(this).css("marginTop"));
+                });
+              }
+            }
+            allMoveDom();
+
+            function resetTop(){
+              var arr=["0rem","-1.33rem","-2.66rem","-3.99rem","-5.32rem","-6.65rem","-7.98rem"];
+              var n=Math.floor(Math.random()*7);
+              var value=arr[n];
+              console.log(value);
+              $(".slotMachineContainer").each(function(){
+                $(this).css("marginTop",value);
+              });
+            }
+            // 开始抽奖
+            $("#slotMachineButton1").click(function() {
+              canMove=false;
+              // 清除自動滾動
+              clearInterval(timer);
+              timer=null;
+              allMoveDom();
+
+
+                // machine1.shuffle(3,resetTop);
+                // // machine2.shuffle(3,resetTop);
+                // // machine3.shuffle(3,resetTop);
+                //
+                //
+                // setTimeout(function() {
+                //   machine2.shuffle(3, resetTop);
+                // }, 500);
+                // setTimeout(function() {
+                //   machine3.shuffle(3, resetTop);
+                // }, 1000);
+            })
+
+        });
+    </script>
+</body>
+</html>
