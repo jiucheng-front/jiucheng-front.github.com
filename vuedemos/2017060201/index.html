@@ -7,13 +7,29 @@
     <title>过滤器</title>
     <script src="../js/vue.2.3.2.js"></script>
     <!--<script src="../js/vue.1.0.2.js"></script>-->
-    <script src="../js/vue-resource.js"></script>
+    <!--<script src="../js/vue-resource.js"></script>-->
     <link rel="stylesheet" href="index.css">
+    <style>
+        .lists p{
+            margin: 15px 0;
+        }
+        .lists p button{
+            margin-left: 15px;
+            padding: 5px 15px;
+        }
+    </style>
 </head>
 <body>
     <div id="app">
         <p>2.0.已结取消了</p>
-        <p>{{msg| capitalize }}</p>
+        <p>{{msg }}</p>
+        <!--測試-->
+        <ul class="lists">
+            <li v-for="(list, index) in lists">
+                <p>{{list.name}}</p>
+                <p v-for="(item, innerIndex) in list.company"><span>{{item.one}}</span><button @click="deleteThis(index,innerIndex)">刪除</button></p>
+            </li>
+        </ul>
     </div>
 
     <!---->
@@ -22,9 +38,87 @@
             el:"#app",
                 data:{
                     someData:[],
-                    msg:"welcome"
+                    msg:"welcome",
+                    lists:[
+                        {
+                            name:"馬雲",
+                            company:[
+                                {
+                                    one:"馬雲1"
+                                },
+                                {
+                                    one:"馬雲2"
+                                },
+                                {
+                                    one:"馬雲3"
+                                }
+                            ]
+                        },
+                        {
+                            name:"王健林",
+                            company:[
+                                {
+                                    one:"王健林1"
+                                },
+                                {
+                                    one:"王健林2"
+                                },
+                                {
+                                    one:"王健林3"
+                                }
+                            ]
+                        },
+                        {
+                            name:"馬化騰",
+                            company:[
+                                {
+                                    one:"馬化騰1"
+                                },
+                                {
+                                    one:"馬化騰2"
+                                },
+                                {
+                                    one:"馬化騰3"
+                                }
+                            ]
+                        },
+                        {
+                            name:"董明珠",
+                            company:[
+                                {
+                                    one:"董明珠1"
+                                },
+                                {
+                                    one:"董明珠2"
+                                },
+                                {
+                                    one:"董明珠3"
+                                }
+                            ]
+                        },
+                        {
+                            name:"李彥宏",
+                            company:[
+                                {
+                                    one:"李彥宏1"
+                                },
+                                {
+                                    one:"李彥宏2"
+                                },
+                                {
+                                    one:"李彥宏3"
+                                }
+                            ]
+                        }
+                    ]
                 },
-                methods: {}
+                methods: {
+                    deleteThis:function(index,innerIndex){
+                        console.log(index);
+                        console.log(innerIndex);
+                        this.lists[index].company.splice(innerIndex,1);
+                    }
+                }
         });
     </script>
 </body>
