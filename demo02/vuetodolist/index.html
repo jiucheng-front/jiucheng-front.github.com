@@ -135,7 +135,7 @@
                 editTodo: function (item) {
                     this.beforeEditCache = item.text;
                     this.editedTodo = item;
-                    // console.log(this.beforeEditCache);
+                    console.log(this.beforeEditCache);
                 },
                 // 5、完成编辑
                 doneEdit: function (item) {
@@ -176,6 +176,8 @@
             directives: {
                 'todo-focus': function (el, binding) {
                     if (binding.value) {
+                        console.log(el);
+                        console.log(binding);
                         el.focus();
                     }
                 }
