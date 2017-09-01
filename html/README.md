@@ -55,6 +55,10 @@
 + 15、德古拉第二期：2017-06-25
 	+ [測試地址](https://api.s.lang.live/v2/html/activity/draculasecond/index.html)
 
+### 部分參數直接客戶端注入，无需服务端注入
++ git@103.72.146.18:root/langlive_h5.git仓库dev分支下appTest.html内
++ ![](./imgs/new_notes0901.png)
+
 ### 二、js介绍以及如何使用
 + 1、html/js/publicVersion.js（封装好的JS方法）
 	+ 1、h5进入个人主页
