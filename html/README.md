@@ -59,6 +59,71 @@
 + git@103.72.146.18:root/langlive_h5.git仓库dev分支下appTest.html内
 + ![](./imgs/new_notes0901.png)
 
+### 0906 部分參數直接客戶端方法取
+
+```javascript
+	// getBase.js
+	var u = navigator.userAgent,
+    app = navigator.appVersion,
+    isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),
+    getuseInfoJson,
+    pfidv,
+    tokenv,
+    tourist;
+	var domain=location.origin.indexOf('web-test')>6?'https://api.s.lang.live/':'https://tw.api.langlive.com/';
+	
+	//获取当前登陆的用户信息
+	if(isiOS==true){
+	    if(typeof window.webkit=="undefined"){
+	        pfidv='0'; //pfid
+	        tokenv='0'; // tocken
+	    }else {
+	        window.webkit.messageHandlers.langWeb2App_getCurUserInfo.postMessage({body:'{}'});
+	        function langApp2Web_getCurUserInfo(result){
+	            getuseInfoJson=JSON.parse(result);
+	            pfidv=getuseInfoJson.pfid;
+	            tokenv=getuseInfoJson.access_token;
+	        }
+	    }
+	}else{
+	    if(typeof javascriptinterface=="undefined"){
+	        pfidv='0';
+	        tokenv='0';
+	    }else {
+	        getuseInfoJson=JSON.parse(javascriptinterface.langWeb2App_getCurUserInfo());
+	        pfidv=getuseInfoJson.pfid;
+	        tokenv=getuseInfoJson.access_token;
+	        tourist=getuseInfoJson.tourist;
+	    }
+	}
+
+	//1、使用的時候需要判斷是否是遊客模式,比如：目前安卓有遊客模式，IOS還沒有！
+	
+	 $(".noticeList").on("click",".follow", function () {
+        var $this = $(this);
+		//遊客模式進入登錄界面
+        if(tokenv==""||pfidv==""||tourist==1){
+            if(isiOS==true){
+               
+            }else{
+                javascriptinterface.langWeb2App_LoginCheck("from h5 follow");//向客戶端傳遞一個信息提示告訴客戶來源
+            }
+		// 非遊客模式直接使用   
+        }else{
+            $this.addClass("followChanged");
+            var thisPfid = $this.attr('data-pfid');
+            follow(thisPfid);
+        }
+        
+    });
+	//2、如果是遊客模式登錄后還會進入當前頁面但是需要再次刷新一下頁面
+	 //客户端登陆后回调h5方法
+	function langApp2Web_loginFeedBack(result){
+	    window.location.reload();
+	}
+
+```
+
 ### 二、js介绍以及如何使用
 + 1、html/js/publicVersion.js（封装好的JS方法）
 	+ 1、h5进入个人主页
