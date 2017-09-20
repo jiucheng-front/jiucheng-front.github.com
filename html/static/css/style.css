@@ -1,0 +1,325 @@
+
+/**
+ * Created by songxia on 2016/09/09.
+*/
+/*我的钱包 strat*/
+.header {
+	width: 100%;
+	height: 0.44rem;
+	text-align: center;
+	font-size: 0.14rem;
+	line-height: 0.44rem;
+	color: #181A28;
+}
+.header > .btn-left {
+	display: inline-block;
+	margin-top: 0.15rem;
+	margin-left: 0.15rem;
+	border-color: transparent;
+	border-style: dashed;
+	width: 0.11rem;
+	height: 0.11rem;
+	border-width: 0.1rem;
+	display: block;
+	border: solid 0.02rem #9B9B9B;
+	border-top: none;
+	border-right: none;
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0.5);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.header > a.btn-right {
+	padding-right: 0.1rem;
+	color: #181A28;
+}
+.media-body {
+	margin-top: 0.2rem;
+	font-size: 0.16rem;
+	text-align: center;
+}
+.receive-body > div {
+    padding: 0.1rem 0;
+	color: #181A28;
+}
+.number {
+	color: #6BC4EA!important;
+}
+.number small {
+	color: #999999!important;
+	font-size: 0.16rem;
+}
+.number-small {
+	display: none;
+}
+.btn-exchange {
+    width: 80%;
+	height: 0.5rem;
+	margin: 1rem auto 0.2rem auto;
+	line-height: 0.5rem;
+	background: #ccc;
+	display: block;
+	border-radius: 30px;
+	color: #fff;
+}
+.exchange {
+	background: #7870CC;
+}
+.not-exchange {
+	text-align: left;
+	color: #ccc;
+	font-size: 0.14rem;
+}
+/*我的钱包 end*/
+/*paypal提现 strat*/
+.cash-body {
+	width: 86%;
+	margin:  0 auto;
+}
+.cash-input {
+	width: 93%;
+	height: 0.3rem;
+	padding: 0.05rem 0.1rem;
+	background: #EFEFEF;
+	border-radius: 4px;
+	font-size: 0.14rem;
+}
+.popover-bg {
+	width: 100%;
+	height: 100%;
+	z-index: 1300;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(10,10,10,.7);
+	display: none;
+}
+.popover-body {
+	display: none;
+	width: 2.23rem;
+	height: 2.2rem;
+	background: #FFFFFF;
+	border-radius: 10px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	z-index: 1500;
+}
+.popover-title {
+	height: 0.8rem;
+	line-height: 0.8rem;
+	text-align: center;
+	background: #7870CC;
+	color: #fff;
+	font-size: 0.14rem;
+	overflow: hidden;
+}
+.title-img {
+	position: absolute;;
+	left: 0;
+	top: 0.3rem;
+	display: block;
+}
+.title-close {
+	position: absolute;
+	right: 0.1rem;
+	top: 0.1rem;
+	display: block;
+}
+.popover-media {
+	padding: 0.2rem;
+	color: #6D6D6D;
+	font-size: 0.14rem;
+}
+.btn-wrap {
+	width: 100%;
+	border-top: #f2f2f2 solid 1px;
+	margin-top: 0.3rem;
+}
+.btn-wrap span{
+	display: inline-block;
+	width: 48.5%;
+	padding: 0.1rem 0;
+	text-align: center;
+
+}
+span.btn-cancel {
+
+}
+/*paypal提现 end*/
+
+/*浪币充值 strat*/
+.recharge-head {
+	width: 100%;
+	height: 1rem;
+	background: #9776da;
+	font-size: 0.14rem;
+	color: #fff;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	
+}
+.recharge-head h2 {
+	padding-top: 0.2rem;
+	font-size: 0.14rem;
+	line-height: 0.3rem;
+}
+.balance-number{
+	width: 100%;
+	padding: 0.05rem 0;
+	font-size: 0.18rem;
+	text-align: center;
+}
+.balance-number img {
+	width: 0.23rem;
+	height: 0.2rem;
+	vertical-align: middle;
+	margin-right: 0.05rem;
+}
+.btn-recharge {
+	width: 0.8rem;
+	height: 0.35rem;
+	background: #FFFFFF;
+	border-radius: 100px;
+	margin: 0.05rem  auto;
+}
+.btn-recharge img {
+	width: 0.36rem;
+	height: 0.14rem;
+	display: inline-block;
+	margin-top: 0.1rem;
+}
+.recharge-body {
+	width: 90%;
+	overflow: hidden;
+	margin: 0 auto;
+	height: 4rem;
+	overflow: scroll;
+	padding-top: 1rem;
+	margin-bottom: 0.5rem;
+	overflow-y:hidden;
+	overflow-x:hidden;
+}
+.recharge-body li{
+	padding: 0.16rem 0;
+	font-size: 0.14rem;
+	border-bottom: #f2f2f2 solid 1px;
+}
+.recharge-body li img {
+	width: 0.16rem;
+	height: 0.14rem;
+	display: inline-block;
+	margin-right: 0.05rem;
+}
+.recharge-body li span.number-zs {
+	display: inline-block;
+	color: #000000;
+}
+.recharge-body li a.money-number {
+	padding: 0.05rem 0.15rem;
+	display: inline-block;
+	color: #181A28;
+	border: 1px solid #7870CC;
+	color: #7870CC;
+	border-radius: 100px;
+	margin-top: -0.05rem;
+	width:0.4rem ;
+	text-align: center;
+}
+.recharge-body li a.money-number:active {
+	background: #7870CC;
+	color: #fff!important;
+}
+.bottom-text {
+	text-align: center;
+	color: #ccc;
+	font-size: 0.14rem;
+	margin: 0.2rem 0;
+	position:fixed;
+	background: white;
+	margin-bottom: 0;
+	bottom: 0;
+	padding: 0.1rem 0;
+}
+a.btn-service {
+	display: inline-block;
+	font-size: 14px;
+}
+
+/*浪币充值 end*/
+
+/*充值方式 strat*/
+.method-text {
+	color: #ccc;
+	font-size: 0.14rem;
+	text-align: center;
+	background: #fff;
+}
+/*.method-text span {*/
+	/*width: auto;*/
+	/*display: block;*/
+	/*background: #fff;*/
+	/*height: 0.5rem;*/
+	/*line-height: 0.5rem;*/
+/*}*/
+.method-text span:after {
+	width: 25%;
+	height: 0.1rem;
+	content: "";
+	position: absolute;
+	border-bottom: #f2f2f2 solid 1px;
+	right: 0;
+	top: 2.2rem;
+}
+.method-text span:before {
+	width: 25%;
+	height: 0.1rem;
+	content: "";
+	position: absolute;
+	border-bottom: #f2f2f2 solid 1px;
+	left: 0;
+	top: 2.2rem;
+}
+/*充值方式 end*/
+
+
+/*验证 strat*/
+.form-group {
+	width: 100%;
+	height: 0.3rem;
+	line-height: 0.3rem;
+	background: #EFEFEF;
+	border-radius: 4px;
+	margin-top: 0.2rem;
+}
+.form-select {
+	background: #EFEFEF;
+	width: 20%;
+	height: 0.3rem;
+	line-height: 0.3rem;
+	border-bottom-left-radius: 4px;
+	border-top-left-radius: 4px;
+}
+.form-select select {
+	background: #EFEFEF!important;
+	border: none;
+	padding: 0;
+	margin: 0;
+	color: #7870CC;
+}
+.checked-code {
+	width: 100%;
+	background: #EFEFEF!important;
+}
+.form-input {
+	border-left: #D8D8D8 solid 1px;
+	background: #EFEFEF;
+	width: 71%;
+	padding: 0.05rem  0 0.05rem 0.2rem;
+	margin-top: 0.04rem;
+}
+/*验证 end*/

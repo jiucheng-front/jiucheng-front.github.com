@@ -1,0 +1,203 @@
+
+/**
+ * Created by songxia on 2016/08/05.
+*/
+/*充值记录 strat*/
+.panel {
+	overflow: hidden;
+	margin-bottom: 0.1rem;
+	margin-top: 0.2rem;
+}
+.panel:first-child {
+	overflow: hidden;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+.panel:last-child {
+	overflow: hidden;
+	margin-bottom: 0;
+}
+.panel-header {
+	height: 0.3rem;
+	line-height: 0.3rem;
+}
+.panel-title {
+	font-size: 0.12rem;
+	position: relative;
+}
+.panel-nav {
+	padding-left: 0.15rem;
+	font-size: 0.12rem;
+	background: #7870cc;
+	color: #fff;
+	margin-top: 0.12rem;
+	margin-bottom: 0.12rem;
+}
+.panel-nav:first-child {
+	margin-top: 0;
+}
+.panel-body {
+	overflow: hidden;
+	/*margin-top: 0.15rem;*/
+	/*margin-bottom: 0.15rem;*/
+}
+.media-list ul {
+	margin: 0 auto;
+    padding:0;
+}
+.media-list ul li.media-cell {
+	width: 100%;
+	height: auto;
+	display: block;
+	overflow: hidden;
+	clear: both;
+	margin: 0 auto;
+	position:relative;
+	/*top:-0.2rem;*/
+}
+.media-list ul li.media-cell:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width:0;
+	top: 0;
+    bottom: 0;
+    z-index:0;
+    margin-left: 0.3rem;
+    border-left: 1px solid rgba(120,112,204,0.4);
+}
+.media-list ul li.media-cell:nth-child(1) {
+	margin-top: 0.05rem;
+	top:0;
+}
+
+.media-object {
+	margin-left: 0.15rem;
+}
+
+.media-object-data {
+	display: block;
+	width: 0.3rem;
+	height: 0.3rem;
+	border: 1px solid #7870cc;
+	border-radius: 25px;
+	color: #7870cc;
+	font-size: 0.12rem;
+	text-align: center;
+	line-height: 0.3rem;
+    position:relative;
+    z-index:9997;
+    background:#fff;
+}
+.media-content {
+	width: 75%;
+	margin-left: 0.1rem;
+	margin-top: 0.08rem;
+	-webkit-box-shadow: #666 0px 0px 10px;
+	-moz-box-shadow: #666 0px 0px 10px;
+	box-shadow: #666 0px 0px 10px;
+	border-radius: 3px;
+	padding: 0.1rem;
+	font-size: 0.12rem;
+	margin-bottom: 0.1rem;
+}
+.media-content h4{
+	color: #181A28;
+	font-size: 0.12rem;
+	display: inline-block;
+}
+.media-content-time {
+	color: #999;
+	font-size: 0.1rem;
+	display: block;
+	clear: both;
+	margin-top: 0.1rem;
+}
+.media-content-arriva {
+	color: #6BC4EA;
+	font-size: 0.1rem;
+	display: inline-block;
+	text-align: right;
+}
+
+.dashed {
+	font-style: normal;
+	display: block;
+	width: 0.01rem;
+	height:100%;
+	border-left: 1px dashed #7870cc;
+	margin: 0 auto;
+}
+.dashed-top {
+	font-style: normal;
+	display: block;
+	width: 0.01rem;
+	height: 0.1rem;
+	border-left: 1px dashed #7870cc;
+	margin: 0 auto;
+}
+
+
+.scroll-content {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;   
+    /*height: 4rem;*/
+    overflow: auto;
+}
+
+.scroll-preloader {
+	text-align: center;
+	height: 0.5rem;
+	width: 100%;
+	/*margin-top: -0.6rem;*/
+	font-size: 0.12rem;
+	display: inline-block;
+	color: #181A28;
+	position: absolute;
+}
+
+.preloader {
+	overflow: hidden;
+	display: inline-block;
+	width: 0.25rem;
+	height: 0.25rem;
+	-webkit-transform-origin: 50%;
+	transform-origin: 50%;
+	-webkit-animation: preloader-spin 1s steps(12, end) infinite;
+	animation: preloader-spin 1s steps(12, end) infinite;
+}
+
+.preloader:after {
+	display: block;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20viewBox%3D'0%200%20120%20120'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20xmlns%3Axlink%3D'http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink'%3E%3Cdefs%3E%3Cline%20id%3D'l'%20x1%3D'60'%20x2%3D'60'%20y1%3D'7'%20y2%3D'27'%20stroke%3D'%236c6c6c'%20stroke-width%3D'11'%20stroke-linecap%3D'round'%2F%3E%3C%2Fdefs%3E%3Cg%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(30%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(60%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(90%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(120%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(150%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.37'%20transform%3D'rotate(180%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.46'%20transform%3D'rotate(210%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.56'%20transform%3D'rotate(240%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.66'%20transform%3D'rotate(270%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.75'%20transform%3D'rotate(300%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.85'%20transform%3D'rotate(330%2060%2C60)'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+	background-position: 50%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+@-webkit-keyframes preloader-spin {
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+@keyframes preloader-spin {
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+.no-data {
+	font-size: 0.12rem;
+	color: #181A28;
+	text-align: center;
+	line-height: 5rem;
+}
+
+/*充值记录 end*/
