@@ -216,3 +216,117 @@ header>img,
     right: .4rem;
     top: -.96rem;
 }
+
+/******* 弹框***********/
+.mask_bg{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
+    left: 0;
+    top: 0;
+    z-index: 50;
+    display: none;
+}
+.wishing_mask{
+    width: 7.466667rem;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+#closeMask{
+    width: .64rem;
+    height: .64rem;
+    margin: 0 auto;
+    margin-top: .4rem;
+    background-image: url(../images/wishing_mask05.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.wishing_mask>img{
+    display: block;
+    width: 100%;
+}
+.wishing_maskbg{
+    background: #fff;
+    padding-bottom: .4rem;
+    border-bottom-left-radius: .2rem;
+    border-bottom-right-radius: .2rem;
+}
+.purple{
+    color: #5F004F;
+    text-align: center;
+}
+.mask_btns{
+    width: 5.466667rem;
+    margin: .3rem auto;
+    overflow: hidden;
+}
+.mask_btns li,
+#agreeNocount{
+    width: 2.4rem;
+    height: .826667rem;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.mask_btns li:nth-child(1){
+    float: left;
+    background-image: url(../images/wishing_mask03.png);
+}
+.mask_btns li:nth-child(2){
+    float: right;
+    background-image: url(../images/wishing_mask04.png);
+}
+/* 没有次数弹框 */
+.wishing_nocount{
+    padding: .6rem 0;
+}
+#agreeNocount{
+    margin: 0 auto;
+    margin-bottom: .3rem;
+    background-image: url(../images/wishing_mask06.png);
+}
+/* 许愿1次或者超级1次 */
+.one_gift>img{
+    display: block;
+    width: 2rem;
+    margin: 0 auto;
+}
+/* 许愿10次超级10次 */
+.ten_gifts ul{
+    width: 6.8rem;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: .15rem;
+}
+.ten_gifts ul li{
+    float: left;
+    width: 33.33%;
+    height: 2rem;
+}
+.ten_gifts ul li>img{
+    display: block;
+    width: 1rem;
+    margin: 0 auto;
+}
+.ten_gifts ul li p{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.ten_gifts ul li.additional{
+    width: 63%;
+    margin-left: 2%;
+    border: 1px solid #5F004F;
+    padding: .1rem .3rem;
+    border-radius: .1rem;
+}
+.ten_gifts ul li.additional h4{
+    color: #5F004F;
+}
+.ten_gifts ul li.additional img{
+    display: block;
+    width: 1.04rem;
+    margin: 0 auto;
+}
