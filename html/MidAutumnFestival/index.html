@@ -12,6 +12,7 @@
     <script src="/html/js/flexible.js"></script>
     <link rel="stylesheet" href="/html/MidAutumnFestival/css/common.css">
     <link rel="stylesheet" href="/html/MidAutumnFestival/css/rank.css?v=012">
+    <link rel="stylesheet" href="/html/MidAutumnFestival/css/rule.css">
     <script src="/html/static/js/getBase.js"></script>
     <script>
         // 接口参数
@@ -21,18 +22,24 @@
     </script>
 </head>
 <body>
-    <header class="clear">
+<div id="container">
+    <header class="header clear">
         <!-- 頭圖 -->
-        <img src="/html/MidAutumnFestival/images/header_01.jpg" alt="">
-        <img src="/html/MidAutumnFestival/images/header_02.jpg" alt="">
-        <!-- 活動時間 -->
-        <img src="/html/MidAutumnFestival/images/header_03.jpg" alt="">
+        <img src="/html/MidAutumnFestival/images/rank_top_01.jpg" alt="">
+        <img src="/html/MidAutumnFestival/images/rank_top_02.jpg" alt="">
     </header>
+    <div class="rank_gif">
+        <img src="/html/MidAutumnFestival/images/wishing_arrow.gif" alt="">
+    </div>
+    <!-- 活動時間 -->
+    <div class="same_img clear">
+        <img src="/html/MidAutumnFestival/images/rank_top_04.jpg" alt="">
+    </div>
     <!-- 活動規則 -->
     <div class="rule">
-        <img src="/html/MidAutumnFestival/images/header_04.jpg" alt="">
+        <img src="/html/MidAutumnFestival/images/rank_top_05.jpg" alt="">
         <ul class="rule_btn">
-            <li id="showRule"></li>
+            <li id="ruleDetial"></li>
             <li id="goWishing"></li>
         </ul>
     </div>
@@ -47,7 +54,7 @@
                 <li class="nav-btn on"><p>當紅主播<br>日榜</p><span></span></li>
                 <li class="nav-btn"><p>潛力新星<br>日榜</p><span></span></li>
                 <li class="nav-btn"><p>粉絲貢獻<br>日榜</p><span></span></li>
-                <li class="nav-btn"><p>總榜</p><span></span></li>
+                <li id="goTotal"><p>總榜</p><span></span></li>
             </ul>
         </div>
         <!-- 榜單列表 -->
@@ -62,7 +69,7 @@
                 </ul>
                 <!-- 当红用戶列表 -->
                 <ul class="user-list hot-lists">
-                    <li>
+                    <!-- <li>
                         <i></i>
                         <div class="user-img">
                             <div class="user-mask" data-liveid="1213132"></div>
@@ -71,9 +78,9 @@
                         </div>
                         <p class="user-name">九筒大戰幺鸡</p>
                         <p class="user-score">9999999</p>
-                        <b class="goTrouble"></b>
+                        <b class="goTrouble" data-anchorid="123132"></b>
                     </li>
-                    <li>
+                    <li id="dom">
                         <i></i>
                         <div class="user-img">
                             <div class="user-mask" data-liveid="1213132"></div>
@@ -82,7 +89,7 @@
                         </div>
                         <p class="user-name">yi九筒大戰幺鸡</p>
                         <p class="user-score">9999999</p>
-                        <b class="goTrouble"></b>
+                        <b class="goTrouble" data-anchorid="123132"></b>
                     </li>
                     <li>
                         <i></i>
@@ -92,7 +99,7 @@
                         </div>
                         <p class="user-name">八万+九筒大戰幺鸡</p>
                         <p class="user-score">9999999</p>
-                        <b class="goTrouble"></b>
+                        <b class="goTrouble" data-anchorid="123132"></b>
                     </li>
                     <li>
                         <span>4</span>
@@ -103,7 +110,7 @@
                         </div>
                         <p class="user-name">九筒大戰幺鸡</p>
                         <p class="user-score">9999999</p>
-                        <b class="goTrouble"></b>
+                        <b class="goTrouble" data-anchorid="123132"></b>
                     </li>
                      <li>
                         <span>5</span>
@@ -114,7 +121,7 @@
                         </div>
                         <p class="user-name">九筒大戰幺鸡</p>
                         <p class="user-score">9999999</p>
-                        <b class="goTrouble"></b>
+                        <b class="goTrouble" data-anchorid="123132"></b>
                     </li>
                      <li>
                         <span>6</span>
@@ -125,7 +132,7 @@
                         </div>
                         <p class="user-name">九筒大戰幺鸡</p>
                         <p class="user-score">9999999</p>
-                        <b class="goTrouble"></b>
+                        <b class="goTrouble" data-anchorid="123132"></b>
                     </li>
                     <li>
                         <span>7</span>
@@ -136,7 +143,7 @@
                         </div>
                         <p class="user-name">九筒大戰幺鸡</p>
                         <p class="user-score">9999999</p>
-                        <b class="goTrouble"></b>
+                        <b class="goTrouble" data-anchorid="123132"></b>
                     </li>
                     <li>
                         <span>8</span>
@@ -147,9 +154,11 @@
                         </div>
                         <p class="user-name">九筒大戰幺鸡</p>
                         <p class="user-score">9999999</p>
-                        <b class="goTrouble"></b>
-                    </li>
+                        <b class="goTrouble" data-anchorid="123132"></b>
+                    </li> -->
                 </ul>
+                <!-- 加载更多 -->
+                <span class="loadMore total-btn" data-index="0"></span>
             </div>
             <div class="rank-list">
                 <!-- 說明 -->
@@ -161,10 +170,10 @@
                 </ul>
                 <!-- 潜力用户列表 -->
                 <ul class="user-list new-lists">
-                    <li>
+                    <!-- <li>
                         <i></i>
                         <div class="user-img">
-                            <div class="user-mask" data-liveid="1213132"></div>
+                            <div class="user-mask"></div>
                             <img src="/html/MidAutumnFestival/images/avatar.png" alt="">
                             <i></i>
                         </div>
@@ -247,8 +256,10 @@
                         <p class="user-name">九筒大戰幺鸡</p>
                         <p class="user-score">9999999</p>
                         <b class="goTrouble"></b>
-                    </li>
+                    </li> -->
                 </ul>
+                <!-- 加载更多 -->
+                <span class="loadMore total-btn" data-index="1"></span>
             </div>
             <div class="rank-list">
                 <!-- 說明 -->
@@ -260,7 +271,7 @@
                 </ul>
                 <!-- 粉丝用户列表 -->
                 <ul class="user-list fans-lists">
-                    <li>
+                    <!-- <li>
                         <i></i>
                         <div class="user-img">
                             <div class="user-mask" data-liveid="1213132"></div>
@@ -346,144 +357,103 @@
                         <p class="user-name">九筒大戰幺鸡</p>
                         <p class="user-score">9999999</p>
                         <b class="goTrouble"></b>
-                    </li>
+                    </li> -->
                 </ul>
-            </div>
-            <div class="rank-list">
-                <!-- 說明 -->
-                <ul class="rank-same-title">
-                    <li>名次</li>
-                    <li>名字</li>
-                    <li>當日成長值</li>
-                    <li>操作</li>
-                </ul>
-                <!-- 总榜用户列表 -->
-                <ul class="user-list new-stars">
-                    <li>
-                        <i></i>
-                        <div class="user-img">
-                            <div class="user-mask" data-liveid="1213132"></div>
-                            <img src="/html/MidAutumnFestival/images/avatar.png" alt="">
-                            <i></i>
-                        </div>
-                        <p class="user-name">九筒大戰幺鸡</p>
-                        <p class="user-score">9999999</p>
-                        <b class="goTrouble"></b>
-                    </li>
-                    <li>
-                        <i></i>
-                        <div class="user-img">
-                            <div class="user-mask" data-liveid="1213132"></div>
-                            <img src="/html/MidAutumnFestival/images/avatar.png" alt="">
-                            <i></i>
-                        </div>
-                        <p class="user-name">yi九筒大戰幺鸡</p>
-                        <p class="user-score">9999999</p>
-                        <b class="goTrouble"></b>
-                    </li>
-                    <li>
-                        <i></i>
-                        <div class="user-img">
-                            <div class="user-mask" data-liveid="null"></div>
-                            <img src="/html/MidAutumnFestival/images/avatar.png" alt="">
-                        </div>
-                        <p class="user-name">八万+九筒大戰幺鸡</p>
-                        <p class="user-score">9999999</p>
-                        <b class="goTrouble"></b>
-                    </li>
-                    <li>
-                        <span>4</span>
-                        <div class="user-img">
-                            <div class="user-mask" data-liveid="1213132"></div>
-                            <img src="/html/MidAutumnFestival/images/avatar.png" alt="">
-                            <i></i>
-                        </div>
-                        <p class="user-name">九筒大戰幺鸡</p>
-                        <p class="user-score">9999999</p>
-                        <b class="goTrouble"></b>
-                    </li>
-                        <li>
-                        <span>5</span>
-                        <div class="user-img">
-                            <div class="user-mask" data-liveid="1213132"></div>
-                            <img src="/html/MidAutumnFestival/images/avatar.png" alt="">
-                            <i></i>
-                        </div>
-                        <p class="user-name">九筒大戰幺鸡</p>
-                        <p class="user-score">9999999</p>
-                        <b class="goTrouble"></b>
-                    </li>
-                        <li>
-                        <span>6</span>
-                        <div class="user-img">
-                            <div class="user-mask" data-liveid="1213132"></div>
-                            <img src="/html/MidAutumnFestival/images/avatar.png" alt="">
-                            <i></i>
-                        </div>
-                        <p class="user-name">九筒大戰幺鸡</p>
-                        <p class="user-score">9999999</p>
-                        <b class="goTrouble"></b>
-                    </li>
-                    <li>
-                        <span>7</span>
-                        <div class="user-img">
-                            <div class="user-mask" data-liveid="1213132"></div>
-                            <img src="/html/MidAutumnFestival/images/avatar.png" alt="">
-                            <i></i>
-                        </div>
-                        <p class="user-name">九筒大戰幺鸡</p>
-                        <p class="user-score">9999999</p>
-                        <b class="goTrouble"></b>
-                    </li>
-                    <li>
-                        <span>8</span>
-                        <div class="user-img">
-                            <div class="user-mask" data-liveid="1213132"></div>
-                            <img src="/html/MidAutumnFestival/images/avatar.png" alt="">
-                            <i></i>
-                        </div>
-                        <p class="user-name">九筒大戰幺鸡</p>
-                        <p class="user-score">9999999</p>
-                        <b class="goTrouble"></b>
-                    </li>
-                </ul>
+                <!-- 加载更多 -->
+                <span class="loadMore total-btn" data-index="2"></span>
             </div>
         </div>
     </div>
     <!-- 小熊 -->
     <div class="same_img clear">
         <img src="/html/MidAutumnFestival/images/content_bg_02.jpg" alt="">
+        
+        <span id="backTop" class="back-top"></span>
     </div>
     <!-- 底部主播 -->
     <footer class="footer">
-        <!-- 头像 -->
-        <div class="footer-user-img">
-            <img src="/html/MidAutumnFestival/images/avatar.png" alt="">
-        </div>
-        <!-- 名字 -->
-        <div class="footer-user-msg">
-            <p>聋子听哑巴说瞎子看见九筒战幺鸡</p>
-            <p><span></span>月桂树等级：<b>lv50+9999</b></p>
-        </div>
-        <!-- level -->
-        <div class="footer-level">
-            <h3>Top<br>500</h3>
+        <div id="footerUser">
+            <!-- 头像 -->
+            <div class="footer-user-img">
+                <img src="/html/MidAutumnFestival/images/avatar.png" alt="">
+            </div>
+            <!-- 名字 -->
+            <div class="footer-user-msg">
+                <p>聋子听哑巴说瞎子看见九筒战幺鸡</p>
+                <p><span></span>月桂树等级：<b>lv50+9999</b></p>
+            </div>
+            <!-- level -->
+            <div class="footer-level">
+                <h3>Top<br>500</h3>
+            </div>
         </div>
         <!-- 皇冠 -->
         <div class="crown"></div>
     </footer>
+</div>
+<!-- 活动细则 -->
+<div class="page_rule" id="rulePage">
+    <header id="head">
+        <!--关闭-->
+        <div id="closeRule" class="btnClose"></div>
+        <img src="/html/MidAutumnFestival/images/ruleHead.jpg">
+    </header>
+    <div class="tap">
+        <!--主播规则按钮-->
+        <div class="tapBtn" id="tabAnchor" data-id="1"></div>
+        <!--粉丝规则按钮-->
+        <div class="tapBtn" id="tabFans" data-id="2"></div>
+    </div>
+    <!--主播-->
+    <div class="ruleListAnchor" id="ruleListAnchor">
+        <img src="/html/MidAutumnFestival/images/rule_1_1.jpg">
+        <img src="/html/MidAutumnFestival/images/rule_1_2.jpg">
+        <img src="/html/MidAutumnFestival/images/rule_1_3.jpg">
+        <img src="/html/MidAutumnFestival/images/rule_1_4.jpg">
+        <img src="/html/MidAutumnFestival/images/rule_1_5.jpg">
+        <img src="/html/MidAutumnFestival/images/rule_1_6.jpg">
+        <img src="/html/MidAutumnFestival/images/rule_1_7.jpg">
+        <img src="/html/MidAutumnFestival/images/rule_1_8.jpg">
+    </div>
+    <!--粉丝-->
+    <div class="ruleListFans" id="ruleListFans">
+        <img src="/html/MidAutumnFestival/images/rule_2_1.jpg">
+        <img src="/html/MidAutumnFestival/images/rule_2_2.jpg">
+        <img src="/html/MidAutumnFestival/images/rule_2_3.jpg">
+        <img src="/html/MidAutumnFestival/images/rule_2_4.jpg">
+        <img src="/html/MidAutumnFestival/images/rule_2_5.jpg">
+        <img src="/html/MidAutumnFestival/images/rule_2_6.jpg">
+        <img src="/html/MidAutumnFestival/images/rule_2_7.jpg">
+        <img src="/html/MidAutumnFestival/images/rule_2_8.jpg">
+        <img src="/html/MidAutumnFestival/images/rule_2_9.jpg">
+        <img src="/html/MidAutumnFestival/images/rule_2_10.jpg">
+    </div>
+    <!--底部-->
+    <div class="ruleBottom">
+        <div class="gif">
+            <img id="gif" src="/html/MidAutumnFestival/images/s-q.gif">
+        </div>
+        <img src="/html/MidAutumnFestival/images/d-b.jpg">
+    </div>
+</div>
       <!-- 1 前往許願 -->
-    <form action="<?php echo DOMAIN ?>v2/html/vipfans/rights.html" method="post" id="jumpWishing">
+    <form action="<?php echo DOMAIN ?>html/MidAutumnFestival/wishing.html" method="post" id="jumpWishing">
         <input type="hidden" name="HTTP_USER_TOKEN" class="access_token" value="<?=$token;?>"/>
         <input type="hidden" name="HTTP_USER_UID" class="pfid" value="<?=$pfid;?>"/>
         <input type="hidden" name="anchor_pfid" class="anchor_pfid" value="<?=$anchor_pfid;?>"/>
     </form>
       <!-- 2 去搗亂 -->
-    <form action="<?php echo DOMAIN ?>v2/html/vipfans/rights.html" method="post" id="jumpTrouble">
+    <form action="<?php echo DOMAIN ?>html/MidAutumnFestival/trouble.html" method="post" id="jumpTrouble">
         <input type="hidden" name="HTTP_USER_TOKEN" class="access_token" value="<?=$token;?>"/>
         <input type="hidden" name="HTTP_USER_UID" class="pfid" value="<?=$pfid;?>"/>
-        <input type="hidden" name="anchor_pfid" class="anchor_pfid" value="<?=$anchor_pfid;?>"/>
+        <input id="troubleFormAnchorid" type="hidden" name="anchor_pfid" class="anchor_pfid" value="<?=$anchor_pfid;?>"/>
     </form>
-    <script src="/html/MidAutumnFestival/js/rank.js"></script>
+    <!-- 3 去總榜 -->
+    <form action="<?php echo DOMAIN ?>html/MidAutumnFestival/total.html" method="post" id="jumopTotal">
+        <input type="hidden" name="HTTP_USER_TOKEN" class="access_token" value="<?=$token;?>"/>
+        <input type="hidden" name="HTTP_USER_UID" class="pfid" value="<?=$pfid;?>"/>
+        <input id="troubleFormAnchorid" type="hidden" name="anchor_pfid" class="anchor_pfid" value="<?=$anchor_pfid;?>"/>
+    </form>
+    <script src="/html/MidAutumnFestival/js/rank.js?v=001"></script>
 </body>
 </html>
