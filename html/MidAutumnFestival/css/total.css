@@ -1,10 +1,13 @@
-header img{
+.header img{
     display: block;
     float: left;
     width: 100%;
 }
 
 /* same_img */
+.same_img{
+    position: relative;
+}
 .same_img img{
     display: block;
     width: 100%;
@@ -153,6 +156,7 @@ header img{
     display: none;
     color: #A496B4;
     border-top: 1px solid #FFE587;
+    position: relative;
 }
 .rank-list.show{
     display: block;
@@ -467,3 +471,27 @@ header img{
     right: .4rem;
     top: -.96rem;
 }
+/* 加载更多，返回顶部 */
+.total-btn,
+.back-top{
+    display: block;
+    position: absolute;
+    width: 2rem;
+    height: .666667rem;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: 10;
+}
+.total-btn{
+    background-image: url(../images/same_btn01.png);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -1.1rem;
+}
+.back-top{
+    background-image: url(../images/same_btn02.png);
+    right: .4rem;
+    top: .4rem;
+}
+
+

@@ -12,6 +12,7 @@
     <script src="/html/js/flexible.js"></script>
     <link rel="stylesheet" href="/html/MidAutumnFestival/css/common.css">
     <link rel="stylesheet" href="/html/MidAutumnFestival/css/total.css?v=0">
+    <link rel="stylesheet" href="/html/MidAutumnFestival/css/rule.css">
     <script src="/html/static/js/getBase.js"></script>
     <script>
         // 接口参数
@@ -21,7 +22,8 @@
     </script>
 </head>
 <body>
-    <header class="clear">
+<div id="container">
+    <header class="header clear">
         <!-- 頭圖 -->
         <img src="/html/MidAutumnFestival/images/rank_top_01.jpg" alt="">
     </header>
@@ -102,7 +104,7 @@
                         <p class="user-score">9999999</p>
                         <b class="goTrouble" data-anchorid="123132"></b>
                     </li>
-                     <li>
+                        <li>
                         <span>5</span>
                         <div class="user-img">
                             <div class="user-mask" data-liveid="1213132"></div>
@@ -113,7 +115,7 @@
                         <p class="user-score">9999999</p>
                         <b class="goTrouble" data-anchorid="123132"></b>
                     </li>
-                     <li>
+                        <li>
                         <span>6</span>
                         <div class="user-img">
                             <div class="user-mask" data-liveid="1213132"></div>
@@ -147,6 +149,8 @@
                         <b class="goTrouble" data-anchorid="123132"></b>
                     </li>
                 </ul>
+                <!-- 加载更多 -->
+                <span class="loadMore total-btn" data-index="0"></span>
             </div>
             <div class="rank-list">
                 <!-- 說明 -->
@@ -246,6 +250,8 @@
                         <b class="goTrouble"></b>
                     </li>
                 </ul>
+                <!-- 加载更多 -->
+                <span class="loadMore total-btn" data-index="1"></span>
             </div>
             <div class="rank-list">
                 <!-- 說明 -->
@@ -345,12 +351,15 @@
                         <b class="goTrouble"></b>
                     </li>
                 </ul>
+                <!-- 加载更多 -->
+                <span class="loadMore total-btn" data-index="2"></span>
             </div>
         </div>
     </div>
     <!-- 小熊 -->
     <div class="same_img clear">
         <img src="/html/MidAutumnFestival/images/content_bg_02.jpg" alt="">
+        <span id="backTop" class="back-top"></span>
     </div>
     <!-- 底部主播 -->
     <div class="footer">
@@ -365,13 +374,59 @@
         </div>
         <!-- level -->
         <div class="footer-remaining">
-            <p>剩餘蟲子數量：9999個</p>
-            <p>剩餘破壞值：99999</p>
+            <p>剩餘蟲子數量：<span id="remainCount">9999</span>個</p>
+            <p>剩餘破壞值：<span id="remainValue">99999</span> </p>
         </div>
         <!-- ICON -->
         <div class="cattle"></div>
         <div class="fork"></div>
     </div>
+</div>
+<!-- 活动细则 -->
+<div class="page_rule" id="rulePage">
+    <header id="head">
+        <!--关闭-->
+        <div id="closeRule" class="btnClose"></div>
+        <img src="/html/MidAutumnFestival/images/ruleHead.jpg">
+    </header>
+    <div class="tap">
+        <!--主播规则按钮-->
+        <div class="tapBtn" id="tabAnchor" data-id="1"></div>
+        <!--粉丝规则按钮-->
+        <div class="tapBtn" id="tabFans" data-id="2"></div>
+    </div>
+    <!--主播-->
+    <div class="ruleListAnchor" id="ruleListAnchor">
+        <img src="/html/MidAutumnFestival/images/rule_1_1.jpg">
+        <img src="/html/MidAutumnFestival/images/rule_1_2.jpg">
+        <img src="/html/MidAutumnFestival/images/rule_1_3.jpg">
+        <img src="/html/MidAutumnFestival/images/rule_1_4.jpg">
+        <img src="/html/MidAutumnFestival/images/rule_1_5.jpg">
+        <img src="/html/MidAutumnFestival/images/rule_1_6.jpg">
+        <img src="/html/MidAutumnFestival/images/rule_1_7.jpg">
+        <img src="/html/MidAutumnFestival/images/rule_1_8.jpg">
+    </div>
+    <!--粉丝-->
+    <div class="ruleListFans" id="ruleListFans">
+        <img src="/html/MidAutumnFestival/images/rule_2_1.jpg">
+        <img src="/html/MidAutumnFestival/images/rule_2_2.jpg">
+        <img src="/html/MidAutumnFestival/images/rule_2_3.jpg">
+        <img src="/html/MidAutumnFestival/images/rule_2_4.jpg">
+        <img src="/html/MidAutumnFestival/images/rule_2_5.jpg">
+        <img src="/html/MidAutumnFestival/images/rule_2_6.jpg">
+        <img src="/html/MidAutumnFestival/images/rule_2_7.jpg">
+        <img src="/html/MidAutumnFestival/images/rule_2_8.jpg">
+        <img src="/html/MidAutumnFestival/images/rule_2_9.jpg">
+        <img src="/html/MidAutumnFestival/images/rule_2_10.jpg">
+    </div>
+    <!--底部-->
+    <div class="ruleBottom">
+        <div class="gif">
+            <img id="gif" src="/html/MidAutumnFestival/images/s-q.gif">
+        </div>
+        <img src="/html/MidAutumnFestival/images/d-b.jpg">
+    </div>
+</div>
     <!-- 1 前往許願 -->
     <form action="<?php echo DOMAIN ?>html/MidAutumnFestival/wishing.html" method="post" id="jumpWishing">
         <input type="hidden" name="HTTP_USER_TOKEN" class="access_token" value="<?=$token;?>"/>
@@ -385,11 +440,11 @@
         <input id="troubleFormAnchorid" type="hidden" name="anchor_pfid" class="anchor_pfid" value="<?=$anchor_pfid;?>"/>
     </form>
     <!-- 3 去總榜 -->
-    <form action="<?php echo DOMAIN ?>html/MidAutumnFestival/total.html" method="post" id="jumopTotal">
+    <form action="<?php echo DOMAIN ?>html/MidAutumnFestival/index.html" method="post" id="jumpToday">
         <input type="hidden" name="HTTP_USER_TOKEN" class="access_token" value="<?=$token;?>"/>
         <input type="hidden" name="HTTP_USER_UID" class="pfid" value="<?=$pfid;?>"/>
         <input id="troubleFormAnchorid" type="hidden" name="anchor_pfid" class="anchor_pfid" value="<?=$anchor_pfid;?>"/>
     </form>
-    <script src="/html/MidAutumnFestival/js/total.js"></script>
+    <script src="/html/MidAutumnFestival/js/total.js?v=0"></script>
 </body>
 </html>
