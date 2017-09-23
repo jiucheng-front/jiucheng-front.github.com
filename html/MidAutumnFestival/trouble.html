@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <meta charset="utf-8" />
-        <title>中秋節搗亂</title>
-        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
-        <meta name="description" content="" />
-        <meta name="HandheldFriendly" content="True" />
-        <meta name="MobileOptimized" content="320" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta http-equiv="cleartype" content="on" />
-        <script src="/html/js/flexible.js"></script>
-        <link rel="stylesheet" href="/html/MidAutumnFestival/css/common.css">
-        <link rel="stylesheet" href="/html/MidAutumnFestival/css/trouble.css?v=012">
-        <link rel="stylesheet" href="/html/MidAutumnFestival/css/rule.css">
-        <script src="/html/static/js/getBase.js"></script>
-        <script>
-            // 接口参数
-            var pfid= '<?=isset($_REQUEST["HTTP_USER_UID"])?$_REQUEST["HTTP_USER_UID"]:0; ?>';
-            var token= '<?=isset($_REQUEST["HTTP_USER_TOKEN"])?$_REQUEST["HTTP_USER_TOKEN"]:0; ?>';
-            var anchor_pfid = '<?=isset($_REQUEST["anchor_pfid"])?$_REQUEST["anchor_pfid"]:0; ?>';
-        </script>
+    <meta charset="utf-8" />
+    <title>中秋節搗亂</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <meta name="description" content="" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="cleartype" content="on" />
+    <script src="/html/js/flexible.js"></script>
+    <link rel="stylesheet" href="/html/MidAutumnFestival/css/common.css">
+    <link rel="stylesheet" href="/html/MidAutumnFestival/css/trouble.css?v=0123">
+    <link rel="stylesheet" href="/html/MidAutumnFestival/css/rule.css">
+    <script src="/html/static/js/getBase.js"></script>
+    <script>
+        // 接口参数
+        var pfid= '<?=isset($_REQUEST["HTTP_USER_UID"])?$_REQUEST["HTTP_USER_UID"]:0; ?>';
+        var token= '<?=isset($_REQUEST["HTTP_USER_TOKEN"])?$_REQUEST["HTTP_USER_TOKEN"]:0; ?>';
+        var anchor_pfid = '<?=isset($_REQUEST["anchor_pfid"])?$_REQUEST["anchor_pfid"]:0; ?>';
+    </script>
 </head>
 <body>
 <div id="container">
@@ -185,7 +185,7 @@
     </div>
     <!-- 破壞值的彈出框 -->
     <div id="breakDialog" class="break_mask">
-        <div class="break_dialog">
+        <div id="animateDialog">
             <img src="/html/MidAutumnFestival/images/trouble_mask01.png" alt="">
             <div class="dialog_info">
                 <div class="dialogTip" id="dialogTip">

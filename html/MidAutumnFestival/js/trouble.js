@@ -16,18 +16,23 @@
             this.btnsBox=this.getDom("btnsBox");
             this.closeDialog=this.getDom("closeDialog");
             this.breakDialog=this.getDom("breakDialog");
-            
+            // 弹出动画DOM
+            this.animateDialog=this.getDom("animateDialog");
             //2 綁定事件------------------------
             //2.1、給所有的破壞按鈕綁定事件（先請求接口再顯示彈出框）
             this.bind(this.btnsBox,"click",function(e){
                 var target=e.srcElement||e.target;
                 if(target.nodeName.toLowerCase() == 'li'){
+                    _this.animateDialog.className="bounceInDown";
                     _this.showDialog(_this.breakDialog);
                 }
             });
             // 2.2、隱藏彈出框
             this.bind(this.closeDialog,"click",function(){
-                _this.hideDialog(_this.breakDialog);
+                _this.animateDialog.className="bounceOutDown";
+                setTimeout(function(){
+                    _this.hideDialog(_this.breakDialog);
+                },300);
             });
             // 2.3 阻止默认滚动事件
             this.bind(_this.breakDialog,"touchmove",function(e){
