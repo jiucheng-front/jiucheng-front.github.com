@@ -45,7 +45,9 @@
         // 5 ajax
         this.$Ajax=function(option,success,error){
             // 定义domain,方便环境切换
-            var domain=window.origin;
+            // var domain=window.origin;
+            var domain='https://' + window.location.host;
+            // var domain='http://' + window.location.host;
             var url=domain+option.urlStr;
             var type=option.ajaxType;
             var data=option.ajaxData;
