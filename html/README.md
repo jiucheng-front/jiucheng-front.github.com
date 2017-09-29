@@ -3,124 +3,26 @@
 + git commit -m '这次提交的注释内容'
 + git pull --rebase	//push之前先pull防止有人在你之前push
 + git push 提交/如果还是不慎需要合并
-+ 注意如果不慎进入合并冲突界面步骤：Insert>Esc>:wq>Enter
++ 注意如果进入shell命令冲突界面解决步骤：Insert>Esc>:wq>Enter
 
-
-### 一、活动介绍
-+ 0、陽光手機禮物
-	+ [測試首頁](https://api.s.lang.live/v2/html/activity/dragon/rank.html?HTTP_USER_UID=1001085&HTTP_USER_TOKEN=eb47539ba3bc14af42984201a1205897&anchor_pfid=11222333)
-+ 1、my/fillInfo.html是上传照片的功能，调用客户端
-	+ [上傳資料測試首頁](https://api.s.lang.live/html/my/fillInfo.html)
-+ 2、magic是相框礼物页面
-	+ [正式首頁](https://tw.api.langlive.com/v2/html/activity/magic/index.html?HTTP_USER_UID=1007128&HTTP_USER_TOKEN=a63c9dcd20b29a5da09eda89be913a1e&anchor_pfid=1007128 "首頁")
-	+ [正式總榜頁面](https://tw.api.langlive.com/v2/html/activity/magic/total.html)
-+ 3、Disney迪士尼活动
-	+ [測試首頁](https://api.s.lang.live/html/activity/disney2017/map.html?anchor_pfid=1000054)
-+ 4、anchorGrowTree成长树活动
-	+ [測試首頁](https://api.s.lang.live/html/anchor_grow_tree.html?anchor_pfid=1024189)
-+ 5、motherDay：母亲节活动
-	+ [測試開始頁面](https://api.s.lang.live/v2/html/activity/mothers_day/index_start.html)
-	+ [測試首頁](https://api.s.lang.live/v2/html/activity/mothers_day/index.html?HTTP_USER_UID=1009998&HTTP_USER_TOKEN=cfd6c635508cceea7fce23828442fa14&anchor_pfid=1009998)
-+ 6、端午節活動
-	+ [測試首頁](https://api.s.lang.live/v2/html/activity/dragon/index.html?HTTP_USER_UID=1000052&HTTP_USER_TOKEN=e99348993fc097a68f10c5f0f3b9a109&anchor_pfid=1000037)
-	+ [測試榜單頁面](https://api.s.lang.live/v2/html/activity/dragon/rank.html?HTTP_USER_UID=1001085&HTTP_USER_TOKEN=eb47539ba3bc14af42984201a1205897&anchor_pfid=11222333)
-+ 6、Growth：新人成长活动
-	+ [測試首頁](https://api.s.lang.live/html/activity/growth.html)
-+ 7、degula：德古拉活动
-	+ [正式比賽結果頁面](https://tw.api.langlive.com/html/activity/dracula.html)
-	+ [正式比賽中投票頁面](https://tw.api.langlive.com/html/activity/degula.html)
-+ 8、520love：520活动
-	+ [測試首頁](https://api.s.lang.live/v2/html/activity/confession_520_index/index.html)
-	+ [測試榜單頁面](https://api.s.lang.live/v2/html/activity/confession_520_list/list.html)
-+ 9、Broker：王牌经纪人活动(已经取消)
-	+ [測試總榜頁面](https://api.s.lang.live/v2/html/activity/broke/totalList.html?anchor_pfid=1000054&HTTP_USER_UID=1024317&HTTP_USER_TOKEN=9907fd6462e52fc064f24d0c947bbcd4&broke_pfid=1024317&date=2017-06-14)
-	+ [測試主播頁面](https://api.s.lang.live/v2/html/activity/broke/anchor.html?anchor_pfid=1000054&HTTP_USER_UID=1024317&HTTP_USER_TOKEN=9907fd6462e52fc064f24d0c947bbcd4&broke_pfid=1024317)
-	+ [測試個人頁面](https://api.s.lang.live/v2/html/activity/broke/personal.html?anchor_pfid=1000054&HTTP_USER_UID=1024317&HTTP_USER_TOKEN=9907fd6462e52fc064f24d0c947bbcd4&broke_pfid=1024317)
-+ 10、傳說對決活動：2017-06-25
-	+ [測試主播頁面](http://api.s.lang.live/html/activity/legendpk/detail.html)
-	+ [測試積分頁面](http://api.s.lang.live/html/activity/legendpk/list.html)
-+ 11、白浪哥得個人動態
-	+ [正式分享頁面](https://tw.api.langlive.com/v2/html/sns/dynamic_share.html?sns_id=DID-1000817-530133&from=timeline&isappinstalled=1)
-+ 12、環球之旅：2017-06-17
-	+ [環球之旅測試首頁](https://api.s.lang.live/v2/html/activity/travel/anchor.html?HTTP_USER_UID=1000244&HTTP_USER_TOKEN=56855bd7eed0e7dc4aba8fd53b51ff95)
-+ 13、西門町浪起來：2017-06-17
-	+ [西門町測試首頁](https://api.s.lang.live/v2/html/activity/together/index.html)
-+ 14、週週向上2：2017-06-18
-	+ [測試預告頁面](https://api.s.lang.live/v2/html/activity/weekweekup/trailer.html)
-	+ [測試榜單頁面](https://api.s.lang.live/v2/html/activity/weekweekup/index.html)
-+ 15、才艺热推：2017-06-27
-	+ [测试地址](https://api.s.lang.live/v2/html/talent/index.html)
-+ 16、星座达人秀：2017-07-3
-	+ [测试地址](https://api.s.lang.live/v2/html/activity/constellation/rank.html)
-+ 15、德古拉第二期：2017-06-25
-	+ [測試地址](https://api.s.lang.live/v2/html/activity/draculasecond/index.html)
-
-### 部分參數直接客戶端注入，无需服务端注入
-+ git@103.72.146.18:root/langlive_h5.git仓库dev分支下appTest.html内
-+ ![](./imgs/new_notes0901.png)
-
-### 0906 部分參數直接客戶端方法取
-
+### 一、合并代码
 ```javascript
-	// getBase.js
-	var u = navigator.userAgent,
-    app = navigator.appVersion,
-    isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),
-    getuseInfoJson,
-    pfidv,
-    tokenv,
-    tourist;
-	var domain=location.origin.indexOf('web-test')>6?'https://api.s.lang.live/':'https://tw.api.langlive.com/';
 	
-	//获取当前登陆的用户信息
-	if(isiOS==true){
-	    if(typeof window.webkit=="undefined"){
-	        pfidv='0'; //pfid
-	        tokenv='0'; // tocken
-	    }else {
-	        window.webkit.messageHandlers.langWeb2App_getCurUserInfo.postMessage({body:'{}'});
-	        function langApp2Web_getCurUserInfo(result){
-	            getuseInfoJson=JSON.parse(result);
-	            pfidv=getuseInfoJson.pfid;
-	            tokenv=getuseInfoJson.access_token;
-	        }
-	    }
-	}else{
-	    if(typeof javascriptinterface=="undefined"){
-	        pfidv='0';
-	        tokenv='0';
-	    }else {
-	        getuseInfoJson=JSON.parse(javascriptinterface.langWeb2App_getCurUserInfo());
-	        pfidv=getuseInfoJson.pfid;
-	        tokenv=getuseInfoJson.access_token;
-	        tourist=getuseInfoJson.tourist;
-	    }
-	}
+	//git checkout branchName folderName
+	//git checkout branchName path
+	//一、如：以下都是在主分支master上执行的命令
+	//1 把dev 分支上app文件夹下所有的文件合并到主分支master上.
+	git checkout dev app
+	//2 部分文件更新需要合并，如单独合并app/css/index.css到master主分支上.
+	git checkout dev app/css/index.css
+	//3 部分文件夹更新需要合并dev分支上app的js文件夹下有多个JS文件都更新了.
+	git checkout dev app/js
+	//合并过来的文件或者文件夹在主分支master上都是默认add过的，
+	//然后需要在master分支上commit,再push即可完成合并更新！
 
-	//1、使用的時候需要判斷是否是遊客模式,比如：目前安卓有遊客模式，IOS還沒有！
-	
-	 $(".noticeList").on("click",".follow", function () {
-        var $this = $(this);
-		//遊客模式進入登錄界面
-        if(tokenv==""||pfidv==""||tourist==1){
-            if(isiOS==true){
-               
-            }else{
-                javascriptinterface.langWeb2App_LoginCheck("from h5 follow");//向客戶端傳遞一個信息提示告訴客戶來源
-            }
-		// 非遊客模式直接使用   
-        }else{
-            $this.addClass("followChanged");
-            var thisPfid = $this.attr('data-pfid');
-            follow(thisPfid);
-        }
-        
-    });
-	//2、如果是遊客模式登錄后還會進入當前頁面但是需要再次刷新一下頁面
-	 //客户端登陆后回调h5方法
-	function langApp2Web_loginFeedBack(result){
-	    window.location.reload();
-	}
+	//二、 如果需要把master上指定文件或者文件夹合并到dev，先切换到dev:
+	git checkout dev
+	// 其它同上
 
 ```
 
@@ -135,10 +37,11 @@
 
 ```javascript
 
-	var token = '<?=$token;?>';
-	var pfid = '<?=$pfid;?>';
-	var share_url_head = '<?=$share_url_head;?>';
-	var anchor_id='<?=$anchor_id;?>';
+	var token = '<?=isset($_REQUEST["HTTP_USER_TOKEN"])?$_REQUEST["HTTP_USER_TOKEN"]:""?>';
+	var pfid = '<?=isset($_REQUEST["HTTP_USER_UID"])?$_REQUEST["HTTP_USER_UID"]:0?>';
+	var share_url_head='<?= DOMAIN_H5;?>';
+	var anchor_id='<?=isset($_REQUEST["anchor_pfid"])?$_REQUEST["anchor_pfid"]:0?>';
+	var domain='<?= DOMAIN_API;?>';
 	
 ```
 
@@ -198,16 +101,43 @@
 ```
 
 ### 五、页面之间的跳转
++ 1、目前跳转form表单的domain后端不注入，可以JS动态替换
 
-+ 1、form表单提交形式,如：magic
+```javascript
+	
+	//如：替换方法
+	function resetFormAction(option){
+		// console.log(option);
+		var domain=window.location.origin+"/";
+		for(var key in option){
+			document.getElementById(key).action=domain+option[key];
+		}
+	}
+	option={
+		"key":"value"(可以多组)
+    }
+	key:表单元素ID(string)
+	value:url片段(string可带参数)
+
+	//使用
+	var option={
+        "jumopTotal":"v2/html/activity/midautumn/total.html",
+        "jumpWishing":"v2/html/activity/midautumn/wishing.html?key=jumpTrouble",
+        "jumpTrouble":"v2/html/activity/midautumn/trouble.html"
+    }
+    resetFormAction(option);
+
+```
+
++ 2、form表单提交形式,如：magic
 
 ```javascript
 	
 	//html code
 	//<!-- 跳转到总榜 -->
-    <form action="<?php echo DOMAIN ?>v2/html/activity/magic/total.html" method="post" class="jumpTo">
-        <input type="hidden" name="HTTP_USER_TOKEN" class="access_token" value="<?=$token;?>">
-        <input type="hidden" name="HTTP_USER_UID" class="pfid" value="<?=$pfid;?>">
+    <form action="<?php echo DOMAIN_H5 ?>v2/html/activity/magic/total.html" method="post" class="jumpTo">
+        <input type="hidden" name="HTTP_USER_TOKEN" class="access_token" value='<?=isset($_REQUEST["HTTP_USER_TOKEN"])?$_REQUEST["HTTP_USER_TOKEN"]:0; ?>'>
+        <input type="hidden" name="HTTP_USER_UID" class="pfid" value='<?=isset($_REQUEST["HTTP_USER_UID"])?$_REQUEST["HTTP_USER_UID"]:0; ?>';>
     </form>
 	
 	//js code
@@ -223,25 +153,31 @@
 	$("#newPfid").val(pfid);
 	$("#jumpPersonal").trigger('submit');
 
-
-
 ```
 
-+ 上面格式和参数都正确后页面打开如下，才能正确跳转，否则：reset_code:20 缺少参数
-+ ![](./imgs/page_jump.png)
-
-+ 2、按钮直接跳转，需要用户信息拼接在url后面，如：520love
++ 3 获取URL指定参数的值
 
 ```javascript
-
-	$('.all-btn').on('click',function (e) {
-        //跳转到個人魅力值页面
-        e.preventDefault();
-        window.location.href=domain+'v2/html/activity/magic/total.html?HTTP_USER_UID='+pfid+'&HTTP_USER_TOKEN='+token+'&anchor_pfid='+anchor_pfid;
-    })
 	
+	function getUrlParameter(strParame){
+		var args = new Object();
+        var query = location.search.substring(1);
+        var pairs = query.split("&");
+        for(var i = 0; i < pairs.length; i++) {
+            var pos = pairs[i].indexOf('=');
+            if (pos == -1) continue;
+            var argname = pairs[i].substring(0,pos);
+            var value = pairs[i].substring(pos+1);
+            value = decodeURIComponent(value);
+            args[argname] = value;
+        }
+        return args[strParame];
+	}
+	//使用如下图
 
 ```
+
++ ![](./imgs/UrlParam.png)
 
 ### 六、关于追踪(即关注)
 
