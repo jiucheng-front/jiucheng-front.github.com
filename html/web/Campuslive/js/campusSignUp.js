@@ -1,5 +1,6 @@
 console.log("Campus");
 var isNotAjax=true;
+var loadingSrc;
 function langApp2Web_camerartn(imgUrl) {
     $("img[data-src='imgSrc']").attr('src', imgUrl).removeAttr("data-src").on("load",function(){
         loadingSrc=imgUrl;
@@ -73,3 +74,43 @@ function canSelected(){
         $("#mask").hide();
     });
 }
+
+// 7 agree submit
+$("#submit").click(function(e){
+    var reg=/^[\u0391-\uFFE5]+$/;
+    var userName=$("#userName").val();
+    var schoolName=$("#schoolName").val();
+    var userFaculty=$("#userFaculty").val();
+    var appDate=$("#appDate").val();
+    // 
+    var defaultImg='<img src="/html/web/Campuslive/images/default_09.jpg" alt="">';
+    // form validata about all params
+    if(loadingSrc!=""&&schoolName!=""&&appDate!=""&&(userFaculty!=""&&reg.test(userFaculty))&&(userName!=""&&reg.test(userName))){
+        // submit 
+        $.post(domain+'v2/activity/school/set_singup_info', 
+        // $.post('https://api-dev.langlive.com/v2/activity/school/set_singup_info', 
+            {
+                "HTTP_USER_UID":pfid, 
+                "image":loadingSrc,
+                "name": userName,
+                "school":schoolName,
+                "department":userFaculty,
+                "birthday":appDate
+            },
+            function(data) {
+                if(data.ret_code=="0"){
+                    $(".img_mask").empty().append($defaultImg);
+                    $("#userName").val('');
+                    $("#schoolName").val('');
+                    $("#userFaculty").val('');
+                    $("#appDate").val('');
+                    promptObj.init("提交成功！");
+                }
+            },
+            "json"
+        );
+    //params are incorrect and failed for submit
+    }else{
+        promptObj.init("填寫完整且名字和院系必須是中文喔~");
+    }
+});
