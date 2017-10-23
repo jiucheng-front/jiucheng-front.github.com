@@ -35,3 +35,8 @@
 .footer p+p{
 	margin-top: 5px;
 }
+.qr{
+	max-width: 260px;
+	width: 100%;
+	margin: 0 auto;
+}
