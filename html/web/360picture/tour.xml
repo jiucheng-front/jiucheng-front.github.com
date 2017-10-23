@@ -75,30 +75,6 @@
 
 
 	
-	<scene name="scene_car" title="car" onstart="" thumburl="panos/car.tiles/thumb.jpg" lat="" lng="" heading="">
-
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/car.tiles/preview.jpg" />
-
-		<image>
-			<cube url="panos/car.tiles/pano_%s.jpg" />
-		</image>
-
-	</scene>
-
-	<scene name="scene_china" title="china" onstart="" thumburl="panos/china.tiles/thumb.jpg" lat="" lng="" heading="">
-
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/china.tiles/preview.jpg" />
-
-		<image>
-			<cube url="panos/china.tiles/pano_%s.jpg" />
-		</image>
-
-	</scene>
-
 	<scene name="scene_ke" title="ke" onstart="" thumburl="panos/ke.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
@@ -119,18 +95,6 @@
 
 		<image>
 			<cube url="panos/qian.tiles/pano_%s.jpg" />
-		</image>
-
-	</scene>
-
-	<scene name="scene_qian2" title="qian2" onstart="" thumburl="panos/qian2.tiles/thumb.jpg" lat="" lng="" heading="">
-
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/qian2.tiles/preview.jpg" />
-
-		<image>
-			<cube url="panos/qian2.tiles/pano_%s.jpg" />
 		</image>
 
 	</scene>
