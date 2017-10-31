@@ -5,7 +5,7 @@
  require.config({
  	paths:{
  		"jQuery":["jquery-2.2.3.min","jquery-1.11.3"],
- 		"willRotate":"list/willRotate.min"
+ 		"willRotate":"list/app.min"
  	},
  	shim:{
  		"willRotate":["jQuery"]

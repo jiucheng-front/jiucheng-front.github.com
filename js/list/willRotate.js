@@ -141,4 +141,18 @@
      $(document).bind("contextmenu",function(e){
          return false;
      });
+     //5、禁止F12，ctrl+shift+i
+     $(document).on("keydown",function(){
+        var e=window.event||arguments[0];
+        if(e.keyCode==123){
+            // alert("小样你想干嘛？");
+            return false;
+        }else if((e.ctrlKey)&&(e.shiftKey)&&(e.keyCode==73)){
+            // alert("还是不给你看。。");
+            return false;
+        }else if((e.ctrlKey)&&(e.keyCode==85)){
+            // alert("还是算了吧……^_^");
+            return false;
+        }
+     });
  });
