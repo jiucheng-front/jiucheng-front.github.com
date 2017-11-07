@@ -100,6 +100,20 @@
 
 ```
 
+### 四、1 ： APP內部浏览器直接关闭网页(不管跳转了几层！)
+
+``` javascript
+
+	// 直接调用客户端方法关闭网页，没有参数直接调用
+    if(isiOS==true){
+        window.webkit.messageHandlers.langWeb2App_close.postMessage({body:'{}'});
+    } else {
+        javascriptinterface.langWeb2App_close();
+    }
+
+```
+
+
 ### 五、页面之间的跳转
 + 1、目前跳转form表单的domain后端不注入，可以JS动态替换
 
