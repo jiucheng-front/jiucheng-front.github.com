@@ -32,122 +32,7 @@ function getRandomColor(){
         +Math.floor(Math.random()*255)+')';
 }
 /*************更换主题*************/
-    //获取每个li并绑定事件
-var li=$("#colors li");
-//console.log(li);
-li[0].onclick=changeClass0;
-li[1].onclick=changeClass1;
-li[2].onclick=changeClass2;
-li[3].onclick=changeClass3;
-li[4].onclick=changeClass4;
-li[5].onclick=changeClass5;
-var b=$('#colors li b');
-//获取每个li下的b元素，添加或者删除className来改变背景图片，注意：利用选择器的优先级
-//每个事件中同时改变网页内容中其他带背景色的位置
-//console.log(b);
-function changeClass0(){
-    b[0].className='selected';
-    b[1].className="";
-    b[2].className="";
-    b[3].className="";
-    b[4].className="";
-    b[5].className="";
-    $('.nav')[0].style.backgroundColor='#4261A4';
-    $('.left h5')[0].style.backgroundColor='#4261A4';
-    $('.newMessage h5')[0].style.backgroundColor='#4261A4';
-    $('.left')[0].style.borderColor='#4261A4';
-    var h6=$('.left h6');
-    for(var i=0;i<h6.length;i++){
-        $('.left h6')[i].style.borderBottomColor='#4261A4';
-    }
-    $('.newMessage')[0].style.borderColor='#4261A4';
-}
-function changeClass1(){
-    b[0].className="";
-    b[1].className='selected';
-    b[2].className="";
-    b[3].className="";
-    b[4].className="";
-    b[5].className="";
-    $('.nav')[0].style.backgroundColor='#AFD400';
-    $('.left h5')[0].style.backgroundColor='#AFD400';
-    $('.newMessage h5')[0].style.backgroundColor='#AFD400';
-    $('.left')[0].style.borderColor='#AFD400';
-    var h6=$('.left h6');
-    for(var i=0;i<h6.length;i++){
-        $('.left h6')[i].style.borderBottomColor='#AFD400';
-    }
-    $('.newMessage')[0].style.borderColor='#AFD400';
-}
-function changeClass2(){
-    b[0].className="";
-    b[1].className="";
-    b[2].className='selected';
-    b[3].className="";
-    b[4].className="";
-    b[5].className="";
-    $('.nav')[0].style.backgroundColor='#FBA90D';
-    $('.left h5')[0].style.backgroundColor='#FBA90D';
-    $('.newMessage h5')[0].style.backgroundColor='#FBA90D';
-    $('.left')[0].style.borderColor='#FBA90D';
-    //h6有四个
-    var h6=$('.left h6');
-    for(var i=0;i<h6.length;i++){
-        $('.left h6')[i].style.borderBottomColor='#FBA90D';
-    }
-    $('.newMessage')[0].style.borderColor='#FBA90D';
-}
-function changeClass3(){
-    b[0].className="";
-    b[1].className="";
-    b[2].className="";
-    b[3].className='selected';
-    b[4].className="";
-    b[5].className="";
-    $('.nav')[0].style.backgroundColor='#27C2D1';
-    $('.left h5')[0].style.backgroundColor='#27C2D1';
-    $('.newMessage h5')[0].style.backgroundColor='#27C2D1';
-    $('.left')[0].style.borderColor='#27C2D1';
-    var h6=$('.left h6');
-    for(var i=0;i<h6.length;i++){
-        $('.left h6')[i].style.borderBottomColor='#27C2D1';
-    }
-    $('.newMessage')[0].style.borderColor='#27C2D1';
-}
-function changeClass4(){
-    b[0].className="";
-    b[1].className="";
-    b[2].className="";
-    b[3].className="";
-    b[4].className='selected';
-    b[5].className="";
-    $('.nav')[0].style.backgroundColor='#E11556';
-    $('.left h5')[0].style.backgroundColor='#E11556';
-    $('.newMessage h5')[0].style.backgroundColor='#E11556';
-    $('.left')[0].style.borderColor='#E11556';
-    var h6=$('.left h6');
-    for(var i=0;i<h6.length;i++){
-        $('.left h6')[i].style.borderBottomColor='#E11556';
-    }
-    $('.newMessage')[0].style.borderColor='#E11556';
-}function changeClass5(){
-    //b[0].className="";
-    //b[1].className="";
-    //b[2].className="";
-    //b[3].className="";
-    //b[4].className="";
-    b[0].className=b[1].className=b[2].className=b[3].className=b[4].className="";
-    b[5].className='selected';
-    $('.nav')[0].style.backgroundColor='#BA3AD9';
-    $('.left h5')[0].style.backgroundColor='#BA3AD9';
-    $('.newMessage h5')[0].style.backgroundColor='#BA3AD9';
-    $('.left')[0].style.borderColor='#BA3AD9';
-    var h6=$('.left h6');
-    for(var i=0;i<h6.length;i++){
-        $('.left h6')[i].style.borderBottomColor='#BA3AD9';
-    }
-    $('.newMessage')[0].style.borderColor='#BA3AD9';
-}
+
 /********主导航的下拉选项******/
 var li_lists=$('.nav ul li');
 //console.log(li_lists);
@@ -160,4 +45,9 @@ function showProducts(){
 }
 function hideProducts(){
     this.$('.products')[0].style.display="none";
+}
+
+
+window.onload = function(){
+    Color.init();
 }
