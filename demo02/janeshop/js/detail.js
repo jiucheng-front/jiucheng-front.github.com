@@ -228,16 +228,23 @@ var fiveLis=$("#products_fen li");
 for(var i=0;i<fiveLis.length;i++){
     //鼠标悬停绑定
     fiveLis[i].onmouseover=function(){
-        this.parentNode.className=this.parentNode.className+" "+this.id;
+        var className = this.parentNode.className;
+        if(className.indexOf("click")==-1){
+            this.parentNode.className=this.parentNode.className+this.id;
+        }
     };
     //鼠标移除一起绑定
     fiveLis[i].onmouseout=function(){
         this.parentNode.className=this.parentNode.className.replace(/star[0-5]/,"");
     };
     fiveLis[i].onclick=function(){
-        alert("感谢您的评分！");
-        this.parentNode.className="click"+this.id.replace(/[a-z]+/,"");
-
+        var className = this.parentNode.className;
+        if(className.indexOf("click")==-1){
+            alert("感谢您的评分！");
+            this.parentNode.className="click"+this.id.replace(/[a-z]+/,"");
+        }else{
+            alert("抱歉，您已经评过分了！");
+        }
     }
 }
 
