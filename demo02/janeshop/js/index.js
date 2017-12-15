@@ -46,8 +46,3 @@ function showProducts(){
 function hideProducts(){
     this.$('.products')[0].style.display="none";
 }
-
-
-window.onload = function(){
-    Color.init();
-}

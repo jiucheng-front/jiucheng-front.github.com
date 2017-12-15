@@ -126,5 +126,8 @@ var adv={//........广告轮播对象
 	},
 }//adv的结束
 window.onload=function(){
+	//
+	Color.init();
+	//
 	adv.init();
 }

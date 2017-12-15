@@ -13,7 +13,6 @@ var Color = {
         for(var i = 0 ; i < length ; i++ ){
             this.colorBtns[i].addEventListener("click",this.addSelected);
         }
-        console.log(this);
     },
     addSelected(){
         if(this.className.indexOf("selected")==-1){
