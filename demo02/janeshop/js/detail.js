@@ -223,21 +223,53 @@ function showDiv(){
     this.className="redbg";
 }
 /**********评分**********/
-    //获取所有的LI
-var fiveLis=$("#products_fen li");
-for(var i=0;i<fiveLis.length;i++){
-    //鼠标悬停绑定
-    fiveLis[i].onmouseover=function(){
+//获取所有的LI
+// var fiveLis=$("#products_fen li");
+// for(var i=0;i<fiveLis.length;i++){
+//     //鼠标悬停绑定
+//     fiveLis[i].onmouseover=function(){
+//         var className = this.parentNode.className;
+//         if(className.indexOf("click")==-1){
+//             this.parentNode.className=this.parentNode.className+this.id;
+//         }
+//     };
+//     //鼠标移除一起绑定
+//     fiveLis[i].onmouseout=function(){
+//         this.parentNode.className=this.parentNode.className.replace(/star[0-5]/,"");
+//     };
+//     fiveLis[i].onclick=function(){
+//         var className = this.parentNode.className;
+//         if(className.indexOf("click")==-1){
+//             alert("感谢您的评分！");
+//             this.parentNode.className="click"+this.id.replace(/[a-z]+/,"");
+//         }else{
+//             alert("抱歉，您已经评过分了！");
+//         }
+//     }
+// }
+
+
+// 2017-12-15 
+var Score={
+    scoreLists:$("#products_fen li"),
+    init:function(){
+        var length = this.scoreLists.length;
+        for(var i=0;i<length;i++){
+            this.scoreLists[i].addEventListener("mouseover",this.overAddClass);
+            this.scoreLists[i].addEventListener("mouseout",this.overRemoveClass);
+            this.scoreLists[i].addEventListener("click",this.clickAddClass);
+        }
+    },
+    overAddClass(){
         var className = this.parentNode.className;
         if(className.indexOf("click")==-1){
-            this.parentNode.className=this.parentNode.className+this.id;
+            this.parentNode.className=this.id;
         }
-    };
-    //鼠标移除一起绑定
-    fiveLis[i].onmouseout=function(){
+    },
+    overRemoveClass(){
         this.parentNode.className=this.parentNode.className.replace(/star[0-5]/,"");
-    };
-    fiveLis[i].onclick=function(){
+    },
+    clickAddClass(){
         var className = this.parentNode.className;
         if(className.indexOf("click")==-1){
             alert("感谢您的评分！");
@@ -248,7 +280,9 @@ for(var i=0;i<fiveLis.length;i++){
     }
 }
 
-
+window.onload=function(){
+    Score.init();
+}
 
 
 
