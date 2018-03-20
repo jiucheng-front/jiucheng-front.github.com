@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Facebook登录~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
     <script>
         // This is called with the results from from FB.getLoginStatus().
         function statusChangeCallback(response) {
@@ -81,7 +82,7 @@
             });
         }
     </script>
-
+    <!--           默认facebook登录样式以及逻辑                -->
     <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
     <div id="status"></div>
 
@@ -94,10 +95,10 @@
 
     <!--自定义Facebook-->
     <!--
-  Below we include the Login Button social plugin. This button uses
-  the JavaScript SDK to present a graphical Login button that triggers
-  the FB.login() function when clicked.
--->
+    Below we include the Login Button social plugin. This button uses
+    the JavaScript SDK to present a graphical Login button that triggers
+    the FB.login() function when clicked.
+    -->
     <button id="logina" type="button">FaceBook登录</button>
     <button type="button" id="signout">退出</button>
     <script>
@@ -120,7 +121,7 @@
     <hr>
     <hr>
     <hr>
-    <!--Google登录-->
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Google登录~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
     <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
     <script>
         function onSignIn(googleUser) {
@@ -200,7 +201,7 @@
     <hr>
     <hr>
     <hr>
-
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~linkedin登录~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
     <script type="in/Login"></script>
     <button id="ling" type="button" onclick="lingOut()">领英注销</button>
     <script type="text/javascript" src="//platform.linkedin.com/in.js">
@@ -259,6 +260,7 @@
     <hr>
     <hr>
     <hr>
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Twitter登录~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
     <button type="button" onclick="twitter()">Twitter登录</button>
     <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
     <script>
