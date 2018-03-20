@@ -5,7 +5,8 @@
     <title>Facebook Login JavaScript Example</title>
     <meta charset="UTF-8">
     <meta name="google-signin-scope" content="profile email">
-    <meta name="google-signin-client_id" content="86333437381-8v8fite2o500at8m9f88lvnpdddmtt7a.apps.googleusercontent.com">
+    <!-- <meta name="google-signin-client_id" content="86333437381-8v8fite2o500at8m9f88lvnpdddmtt7a.apps.googleusercontent.com"> -->
+    <meta name="google-signin-client_id" content="872288871717-prdg0vk6d8vs59s2g6m3v2edvh1a7iep.apps.googleusercontent.com">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <style type="text/css" media="screen">
         hr {
@@ -148,28 +149,34 @@
         <button id="customBtn" type="button">Google登录</button>
     </div>
     <div id="name"></div>
-    <button type="button" onclick="signOut();">Sign out</button>
+    <button type="button" onclick="signOut()">Sign out</button>
 
-    <script src="https://apis.google.com/js/api:client.js"></script>
+    <script src="https://apis.google.com/js/api:client.js?onload=onLoadCallback" async defer></script>
     <script>
+        // now
+        var auth2;
         var googleUser = {};
-        var startApp = function () {
-            gapi.load('auth2', function () {
-                // Retrieve the singleton for the GoogleAuth library and set up the client.
-                auth2 = gapi.auth2.init({
-                    client_id: '86333437381-8v8fite2o500at8m9f88lvnpdddmtt7a.apps.googleusercontent.com',
-                    cookiepolicy: 'single_host_origin',
-                    // 可以请求除了默认的'profile' and 'email'之外的数据
-                    scope: 'profile'
-                });
-                attachSignin(document.getElementById('customBtn'));
-            });
-        };
+        var auth3;
 
-        function attachSignin(element) {
+        window.onLoadCallback = function () {
+            gapi.load('auth2', function () {
+                auth2 = gapi.auth2.init({
+                    client_id: '872288871717-prdg0vk6d8vs59s2g6m3v2edvh1a7iep.apps.googleusercontent.com',
+                    cookiepolicy: 'single_host_origin',
+                    // Request scopes in addition to 'profile' and 'email'
+                    scope: 'profile email'
+                });
+
+                auth3 = true;
+                startApp();
+            })
+        }
+
+        var startApp = function () {
+            element = document.getElementById('customBtn');
             auth2.attachClickHandler(element, {},
                 function (googleUser) {
-                    console.log(googleUser);
+                    console.log(googleUser,"\n4");
                     var profile = auth2.currentUser.get().getBasicProfile();
                     console.log('ID: ' + profile.getId());
                     console.log('Full Name: ' + profile.getName());
@@ -178,12 +185,51 @@
                     console.log('Image URL: ' + profile.getImageUrl());
                     console.log('Email: ' + profile.getEmail());
                     document.getElementById('name').innerText = "Signed in: " + googleUser.getBasicProfile().getName();
+                    // document.getElementById('name').innerText = "Signed in: " + googleUser.getBasicProfile().getName();
+                    // angular.element(document.getElementById('status')).scope().googleLogin(googleUser.getAuthResponse().id_token);
                 },
                 function (error) {
-                    console.log(JSON.stringify(error, undefined, 2));
+                    console.log(JSON.stringify(error, undefined, 2),"\n5");
+                    // alert(JSON.stringify(error, undefined, 2));
                 });
-        }
-        startApp();
+        };
+
+        if (auth3)
+            startApp();
+        // old
+        // var googleUser = {};
+        // var startApp = function () {
+        //     gapi.load('auth2', function () {
+        //         // Retrieve the singleton for the GoogleAuth library and set up the client.
+        //         auth2 = gapi.auth2.init({
+        //             // client_id: '86333437381-8v8fite2o500at8m9f88lvnpdddmtt7a.apps.googleusercontent.com',
+        //             client_id: '872288871717-prdg0vk6d8vs59s2g6m3v2edvh1a7iep.apps.googleusercontent.com',
+        //             cookiepolicy: 'single_host_origin',
+        //             // 可以请求除了默认的'profile' and 'email'之外的数据
+        //             scope: 'profile'
+        //         });
+        //         attachSignin(document.getElementById('customBtn'));
+        //     });
+        // };
+
+        // function attachSignin(element) {
+        //     auth2.attachClickHandler(element, {},
+        //         function (googleUser) {
+        //             console.log(googleUser);
+        //             var profile = auth2.currentUser.get().getBasicProfile();
+        //             console.log('ID: ' + profile.getId());
+        //             console.log('Full Name: ' + profile.getName());
+        //             console.log('Given Name: ' + profile.getGivenName());
+        //             console.log('Family Name: ' + profile.getFamilyName());
+        //             console.log('Image URL: ' + profile.getImageUrl());
+        //             console.log('Email: ' + profile.getEmail());
+        //             document.getElementById('name').innerText = "Signed in: " + googleUser.getBasicProfile().getName();
+        //         },
+        //         function (error) {
+        //             console.log(JSON.stringify(error, undefined, 2));
+        //         });
+        // }
+        // startApp();
 
         //注销
         function signOut() {
