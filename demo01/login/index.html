@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Facebook Login JavaScript Example</title>
+    <title>Test login Example</title>
     <meta charset="UTF-8">
     <meta name="google-signin-scope" content="profile email">
     <!-- <meta name="google-signin-client_id" content="86333437381-8v8fite2o500at8m9f88lvnpdddmtt7a.apps.googleusercontent.com"> -->
@@ -78,12 +78,13 @@
         function testAPI() {
             console.log('Welcome!  Fetching your information.... ');
             FB.api('/me', function (response) {
-                console.log('Successful login for: ' + response.name);
+                console.log('Successful user info: ' + response);
                 document.getElementById('status').innerHTML =
                     'Thanks for logging in, ' + response.name + '!';
             });
         }
     </script>
+    <h2>Facebook login</h2>
     <!--           默认facebook登录样式以及逻辑                -->
     <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
     <div id="status"></div>
@@ -111,6 +112,7 @@
         };
         document.getElementById('signout').onclick = function () {
             FB.logout(function (response) {
+                console.log(response)
                 //FB.Auth.setAuthResponse(null, 'unknown');
                 console.log("Person is now logged out");
             });
@@ -124,6 +126,7 @@
     <hr>
     <hr>
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Google登录~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <h2>Google login</h2>
     <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
     <script>
         function onSignIn(googleUser) {
@@ -147,10 +150,10 @@
     <hr>
     <!-- In the callback, you would hide the gSignInWrapper element on a successful sign in -->
     <div id="gSignInWrapper">
-        <button id="customBtn" type="button">Google登录</button>
+        <button id="customBtn" type="button">Google Sign in</button>
     </div>
     <div id="name"></div>
-    <button type="button" onclick="signOut()">Sign out</button>
+    <button type="button" onclick="signOut()">Google Sign out</button>
 
     <script src="https://apis.google.com/js/api:client.js?onload=onLoadCallback" async defer></script>
     <script>
@@ -191,64 +194,29 @@
                     // angular.element(document.getElementById('status')).scope().googleLogin(googleUser.getAuthResponse().id_token);
                 },
                 function (error) {
-                    console.log(error, "\n5");
-                    // alert(JSON.stringify(error, undefined, 2));
+                    console.log(error);
                 });
         };
 
         if (auth3)
             startApp();
-        // old
-        // var googleUser = {};
-        // var startApp = function () {
-        //     gapi.load('auth2', function () {
-        //         // Retrieve the singleton for the GoogleAuth library and set up the client.
-        //         auth2 = gapi.auth2.init({
-        //             // client_id: '86333437381-8v8fite2o500at8m9f88lvnpdddmtt7a.apps.googleusercontent.com',
-        //             client_id: '872288871717-prdg0vk6d8vs59s2g6m3v2edvh1a7iep.apps.googleusercontent.com',
-        //             cookiepolicy: 'single_host_origin',
-        //             // 可以请求除了默认的'profile' and 'email'之外的数据
-        //             scope: 'profile'
-        //         });
-        //         attachSignin(document.getElementById('customBtn'));
-        //     });
-        // };
 
-        // function attachSignin(element) {
-        //     auth2.attachClickHandler(element, {},
-        //         function (googleUser) {
-        //             console.log(googleUser);
-        //             var profile = auth2.currentUser.get().getBasicProfile();
-        //             console.log('ID: ' + profile.getId());
-        //             console.log('Full Name: ' + profile.getName());
-        //             console.log('Given Name: ' + profile.getGivenName());
-        //             console.log('Family Name: ' + profile.getFamilyName());
-        //             console.log('Image URL: ' + profile.getImageUrl());
-        //             console.log('Email: ' + profile.getEmail());
-        //             document.getElementById('name').innerText = "Signed in: " + googleUser.getBasicProfile().getName();
-        //         },
-        //         function (error) {
-        //             console.log(JSON.stringify(error, undefined, 2));
-        //         });
-        // }
-        // startApp();
-
-        //注销
+        //sign out
         function signOut() {
             var auth2 = gapi.auth2.getAuthInstance();
+            console.log("out!")
             auth2.signOut().then(function () {
                 console.log('User signed out.');
             });
         }
     </script>
 
-
     <hr>
     <hr>
     <hr>
     <hr>
-    <!-- ------- -->
-    <script type="text/javascript">
+    <!-- test with apikey- -->
+    <!-- <script type="text/javascript">
         function handleClientLoad() {
             // Loads the client library and the auth2 library together for efficiency.
             // Loading the auth2 library is optional here since `gapi.client.init` function will load
@@ -306,7 +274,7 @@
     <script async defer src="https://apis.google.com/js/api.js" onload="this.onload=function(){};handleClientLoad()" onreadystatechange="if (this.readyState === 'complete') this.onload()">
     </script>
     <button id="signin-button" onclick="handleSignInClick()">Sign In</button>
-    <button id="signout-button" onclick="handleSignOutClick()">Sign Out</button>
+    <button id="signout-button" onclick="handleSignOutClick()">Sign Out</button> -->
     <hr>
     <hr>
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~linkedin登录~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
