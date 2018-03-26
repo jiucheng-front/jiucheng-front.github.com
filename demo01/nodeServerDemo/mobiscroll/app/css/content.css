@@ -1,0 +1,218 @@
+/*
+* @Author: wangjianfei
+* @Date:   2017-05-05 10:18:56
+* @Last Modified by:   wangjianfei
+* @Last Modified time: 2017-05-05 18:05:35
+*/
+*{
+	margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 0;
+    box-sizing: border-box;
+    outline: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* title */
+.title{
+	line-height: 0.7rem;
+	background: #fbfbfb;
+	text-align: center;
+	color: #7870CC;
+}
+/* need-msg */
+.need-msg{
+	width: 90%;
+	margin: 0 auto;
+	/* margin-top: 0.266667rem; */
+}
+.user-list:after,
+.user-list:before{
+	display: table;
+	content: "";
+	clear: both;
+}
+.look{
+	float: right;
+	width: 3.146667rem;
+	text-align: center;
+	background-color:#7870CC;
+	color: #fff;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	border-radius: 0.16rem;
+	cursor: pointer;
+}
+.look span{
+	padding-right: .5rem;
+	background-image: url(../images/ic_jiantou_nor@2x.png);
+	background-position: right center;
+	background-size: 15% 90%;
+	background-repeat: no-repeat;
+}
+.same-height{
+	height: 0.8rem;
+	line-height: 0.8rem;
+	border-radius: 0.16rem;
+}
+.user-list{
+	margin-top: 4%;
+}
+.user-list input,
+.user-list textarea{
+	color: #999;
+}
+/*  */
+.left-msg{
+	float: left;
+	font-size: 0.453333rem;
+	line-height: .8rem;
+}
+.right-msg{
+	float: right;
+	width: 6.666667rem;
+	overflow: hidden;
+	position: relative;
+}
+.user-date input,
+.user-time input{
+	font-size: 0.32rem;
+	float: left;
+	line-height: 0.8rem;
+	width: 2.0rem;
+	cursor: pointer;
+}
+.user-date,
+.user-time{
+	width: 3.2rem;
+	height: .8rem;
+	line-height: .8rem;
+	border: 1px solid #979797;
+	border-radius:4px;
+	font-size: 0.32rem;
+	padding-left: 0.266667rem;
+	overflow: hidden;
+	cursor: pointer;
+}
+.user-date img,
+.user-time img{
+	float: left;
+	width: 0.346667rem;
+	height: 0.346667rem;
+	margin-top: 0.2rem;
+}
+.user-date{
+	float: left;
+}
+.user-time{
+	float: right;
+
+}
+/* add-more */
+.add-more{
+	width: 6.666667rem;
+	text-align: center;
+	background-color: #7870CC;
+	border-radius: 6px;
+	height: 0.8rem;
+	color: #fff;
+	display: table-cell;
+ 	vertical-align:middle;
+ 	cursor: pointer;
+}
+.add-more span{
+	padding-left: .5rem;
+	background-image: url(../images/more.png);
+	background-position: left center;
+	background-size: 12% 90%;
+	background-repeat: no-repeat;
+}
+.add-more img{
+	width: 0.373333rem;
+	height: 0.373333rem;
+	/* vertical-align: middle; */
+	/* margin-top: .16rem; */
+}
+/* user-content */
+.user-content{
+	width: 100%;
+	line-height: 0.8rem;
+	padding-left: 0.266667rem;
+    border: 1px solid #979797;
+    border-radius: 4px;
+    font-size: 0.32rem;
+}
+/* user-talent */
+.user-talent{
+	width: 100%;
+	height: 1.866667rem;
+	border: 1px solid #979797;
+    border-radius: 4px;
+    font-size: 0.32rem;
+    padding: 0.2rem;
+}
+/* user-picture */
+.user-picture{
+	width: 2.56rem;
+	height: 3.413333rem;
+	position: relative;
+}
+.user-picture img{
+    width: auto;
+    height: 100%;
+    position: absolute;
+    left: -100%;
+    top: -100%;
+    right: -100%;
+    bottom: -100%;
+    margin: auto;
+    cursor: pointer;
+}
+/* submit */
+.submit{
+	width: 8.4rem;
+	margin: 0 auto;
+	margin-top: 4%;
+	height: 1.333333rem;
+	background-color: #7870CC;
+	border-radius: 100px;
+	text-align: center;
+	color: #fff;
+	cursor: pointer;
+	line-height: 1.333333rem;
+	font-size: 0.453333rem;
+}
+/* rule-msg */
+.rule-msg{
+	width: 8.0rem;
+	margin: 0 auto;
+	margin-top: 4%;
+	color: #999;
+	font-family: PingFangSC-Light;
+	letter-spacing: 0;
+	padding-bottom: .5rem;
+}
+.rule-msg p span{
+	color: #7870CC;
+}
+/* time-mask */
+.time-mask{
+	position: fixed;
+	background: rgba(24,26,40,0.70);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: none;
+}
+.time-inner{
+	width: 8.0rem;
+	height: 7.466667rem;
+	position: absolute;
+	background: #FFFFFF;
+	border-radius: 10px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
