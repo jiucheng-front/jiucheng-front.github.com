@@ -1,1 +1,0 @@
-document.writeln("<script src=\"/templets/temp_new/js-npx/swtew.js\"></script>");
