@@ -315,13 +315,17 @@
                     }
                 // 7.2去捣乱
                 }else if(target.className=="goTrouble"){
-                    var troubleForm=document.getElementById("jumpTrouble");
-                    var troubleFormAnchorid=document.getElementById("troubleFormAnchorid");
-                    var anchor_pfid=target.getAttribute("data-anchorid");
-                    troubleFormAnchorid.value=anchor_pfid;
-                    console.log(troubleForm.action);
-                    troubleForm.action=window.origin+"/html/MidAutumnFestival/trouble.html";
-                    troubleForm.submit();
+                    // --------------正式需要提交表单
+                    // var troubleForm=document.getElementById("jumpTrouble");
+                    // var troubleFormAnchorid=document.getElementById("troubleFormAnchorid");
+                    // var anchor_pfid=target.getAttribute("data-anchorid");
+                    // troubleFormAnchorid.value=anchor_pfid;
+                    // console.log(troubleForm.action);
+                    // troubleForm.action=window.origin+"/html/MidAutumnFestival/trouble.html";
+                    // troubleForm.submit();
+
+                    // demo------------------简繁跳转
+                    window.location.href = "https://wjf444128852.github.io/html/MidAutumnFestival/trouble.html"
                 }
             }
             this.bind(this.contentBox,"click",_this.jumpWhere);
