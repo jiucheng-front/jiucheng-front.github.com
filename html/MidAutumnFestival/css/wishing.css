@@ -1,0 +1,332 @@
+.same{
+    position: relative;
+}
+.same:after{
+    display: table;
+    content: "";
+    clear: both;
+}
+header>img,
+.same>img,
+.wishing_rule>img{
+    display: block;
+    width: 100%;
+    float: left;
+}
+.wishing_rule{
+    position: relative;
+    overflow: hidden;
+}
+.wishing_rulebtns{
+    width: 8.4rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    overflow: hidden;
+}
+.wishing_rulebtns li{
+    width: 48%;
+    height: 1.2rem;
+}
+.wishing_rulebtns li:nth-child(1){
+    float: left;
+}
+.wishing_rulebtns li:nth-child(2){
+    float: right;
+}
+/* wishing_tree_title */
+.wishing_tree_title{
+    position: relative;
+}
+.tree_mask,
+.wishing_tree_title span,
+.wishing_btns{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.wishing_tree_title span{
+    display: block;
+    width: .666667rem;
+    height: .933333rem;
+    background-image: url(../images/wishing_arrow.gif);
+    position: absolute;
+    top:.133333rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+.tree_mask{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/wish_light.gif);
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+/* wishing_btns */
+.wishing_btns{
+    width: 100%;
+    height: 2.666667rem;
+    background-image: url(../images/wishing_bg_06.jpg);
+    position: relative;
+}
+.wishing_btnlist{
+    width: 9rem;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.wishing_btnlist li{
+    width: 2rem;
+    height: 2rem;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    float: left;
+}
+.wishing_btnlist li+li{
+    margin-left: .333333rem;
+}
+.wishing_btnlist li:nth-child(1){
+    background-image: url(../images/wishing_btn01.png);
+}
+.wishing_btnlist li:nth-child(2){
+    background-image: url(../images/wishing_btn02.png);
+}
+.wishing_btnlist li:nth-child(3){
+    background-image: url(../images/wishing_btn03.png);
+}
+.wishing_btnlist li:nth-child(4){
+    background-image: url(../images/wishing_btn04.png);
+}
+
+
+/* wishing_footer */
+.wishing_footer{
+    width: 100%;
+    height: 3.413333rem;
+    background-image: url(../images/wishing_bg_07.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.wishing_footer .same{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.wishing_user{
+    width: 100%;
+    height: 1.92rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.footer{
+    width: 100%;
+    height: 1.933333rem;
+    position: relative;
+    background-image: url(../images/footer_bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.footer-user-img{
+    width: 1.4rem;
+    height: 1.4rem;
+    overflow: hidden;
+    left: .3rem;
+    border-radius: 50%;
+    border:2px solid #371066;
+    background: #371066;
+}
+.footer-user-img img{
+    width: auto;
+    height: 100%;
+    position: absolute;
+    left: -100%;
+    top: -100%;
+    right: -100%;
+    bottom: -100%;
+    margin: auto;
+    border-radius: 50%;
+}
+.footer-user-img,
+.footer-user-msg,
+.footer-remaining{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #371066;
+}
+.footer-user-msg p{
+    /* font-size: .426667rem; */
+    position: relative;
+    
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.footer-user-msg p+p{
+    padding-left: .5rem;
+}
+.footer-user-msg p span{
+    display: block;
+    width: .4rem;
+    height: .426667rem;
+    background-image: url(../images/wishing_icon_02.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.footer-user-msg{
+    width: 3.5rem;
+    left: 1.8rem;
+}
+.footer-user-msg b{
+    font-weight: 100;
+}
+.footer-remaining{
+    right: .4rem;
+}
+/* cattle */
+.cattle,
+.fork{
+    position: absolute;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: 10;
+}
+.cattle{
+    width: 1.36rem;
+    height: .853333rem;
+    background-image: url(../images/wishing_icon_03.png);
+    left: .4rem;
+    top: -.826667rem;
+}
+.fork{
+    width: 1.066667rem;
+    height: 1.066667rem;
+    background-image: url(../images/wishing_icon_04.png);
+    right: .4rem;
+    top: -.96rem;
+}
+
+/******* 弹框***********/
+.mask_bg{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
+    left: 0;
+    top: 0;
+    z-index: 50;
+    display: none;
+}
+.wishing_mask{
+    width: 7.466667rem;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+#closeMask{
+    width: .64rem;
+    height: .64rem;
+    margin: 0 auto;
+    margin-top: .4rem;
+    background-image: url(../images/wishing_mask05.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.wishing_mask>img{
+    display: block;
+    width: 100%;
+}
+.wishing_maskbg{
+    background: #fff;
+    padding-bottom: .4rem;
+    border-bottom-left-radius: .2rem;
+    border-bottom-right-radius: .2rem;
+}
+.purple{
+    color: #5F004F;
+    text-align: center;
+}
+.mask_btns{
+    width: 5.466667rem;
+    margin: .3rem auto;
+    overflow: hidden;
+}
+.mask_btns li,
+#agreeNocount{
+    width: 2.4rem;
+    height: .826667rem;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.mask_btns li:nth-child(1){
+    float: left;
+    background-image: url(../images/wishing_mask03.png);
+}
+.mask_btns li:nth-child(2){
+    float: right;
+    background-image: url(../images/wishing_mask04.png);
+}
+/* 没有次数弹框 */
+.wishing_nocount{
+    padding: .6rem 0;
+}
+#agreeNocount{
+    margin: 0 auto;
+    margin-bottom: .3rem;
+    background-image: url(../images/wishing_mask06.png);
+}
+/* 许愿1次或者超级1次 */
+.one_gift>img{
+    display: block;
+    width: 2rem;
+    margin: 0 auto;
+}
+/* 许愿10次超级10次 */
+.ten_gifts ul{
+    width: 6.8rem;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: .15rem;
+}
+.ten_gifts ul li{
+    float: left;
+    width: 33.33%;
+    height: 2rem;
+}
+.ten_gifts ul li>img{
+    display: block;
+    width: 1rem;
+    margin: 0 auto;
+}
+.ten_gifts ul li p{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.ten_gifts ul li.additional{
+    width: 63%;
+    margin-left: 2%;
+    border: 1px solid #5F004F;
+    padding: .1rem .3rem;
+    border-radius: .1rem;
+}
+.ten_gifts ul li.additional h4{
+    color: #5F004F;
+}
+.ten_gifts ul li.additional img{
+    display: block;
+    width: 1.04rem;
+    margin: 0 auto;
+}

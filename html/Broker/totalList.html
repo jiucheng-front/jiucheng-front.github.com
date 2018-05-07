@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+	    <title>王牌經紀人總榜</title>
+	    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+	    <meta name="description" content="" />
+	    <meta name="HandheldFriendly" content="True" />
+	    <meta name="MobileOptimized" content="320" />
+	    <meta name="format-detection" content="telephone=no" />
+	    <meta http-equiv="cleartype" content="on" />
+	    <script src="/html/js/flexible.js"></script>
+	    <link rel="stylesheet" href="/html/css/base.css">
+	    <link rel="stylesheet" href="/html/Broker/css/total_list.css?value=0611">
+	    <script>
+	    	var token = '<?=$token;?>';
+	        var pfid = '<?=$pfid;?>';
+	        var share_url_head = '<?=$share_url_head;?>';
+	        var anchor_pfid='<?=$anchor_pfid;?>';
+	    </script>
+    </head>
+    <body>
+    	<img src="/html/Broker/images/top.png" alt="" class="backTop">
+    	<div id="container">
+            <header>
+                <img src="/html/Broker/images/top_0609.jpg" alt="" class="block">
+                <!-- <div id="go_total"></div> -->
+                <div id="rule-btn"></div>
+                <!-- 0609 -->
+                <div class="same-msg">
+                    <p>積分日榜Top50，可獲得次日王牌經紀人稱號和對應人氣卡獎勵</p>
+                </div>
+            </header>
+            <div class="borker-bg"></div>
+            <div class="total-list-box">
+                <div class="total-header">
+                    <ul class="flex_parent">
+                        <li class="anchor-tabbtn selected">經紀人日榜</li>
+                        <li class="anchor-tabbtn">經紀人總榜</li>
+                    </ul>
+                </div>
+                <div class="total-body">
+                    <div class="total-body-list">
+                        <!-- 今日 -->
+                        <div class="toggle-list hadSelected">
+                            <!--12號備用-->
+                            <!--<ul class="date-list">
+                                <li data-time="2017-06-12" class="change-date">
+                                    <p>12</p>
+                                    <span>六月</span>
+                                </li>
+                                <li data-time="2017-06-13" class="change-date">
+                                    <p>13</p>
+                                    <span>六月</span>
+                                </li>
+                                <li data-time="2017-06-14" class="change-date">
+                                    <p>14</p>
+                                    <span>六月</span>
+                                </li>
+                                <li data-time="2017-06-15" class="change-date">
+                                    <p>15</p>
+                                    <span>六月</span>
+                                </li>
+                                <li data-time="2017-06-16" class="change-date">
+                                    <p>16</p>
+                                    <span>六月</span>
+                                </li>
+                                <li data-time="2017-06-17" class="change-date">
+                                    <p>17</p>
+                                    <span>六月</span>
+                                </li>
+                                <li data-time="2017-06-18" class="change-date">
+                                    <p>18</p>
+                                    <span>六月</span>
+                                </li>
+                                <li data-time="2017-06-19" class="change-date">
+                                    <p>19</p>
+                                    <span>六月</span>
+                                </li>
+                                <li data-time="2017-06-20" class="change-date">
+                                    <p>20</p>
+                                    <span>六月</span>
+                                </li>
+                                <li data-time="2017-06-21" class="change-date">
+                                    <p>21</p>
+                                    <span>六月</span>
+                                </li>
+                                <li data-time="2017-06-22" class="change-date">
+                                    <p>22</p>
+                                    <span>六月</span>
+                                </li>
+                                <li data-time="2017-06-23" class="change-date">
+                                    <p>23</p>
+                                    <span>六月</span>
+                                </li>
+                                <li data-time="2017-06-24" class="change-date">
+                                    <p>24</p>
+                                    <span>六月</span>
+                                </li>
+                                <li data-time="2017-06-25" class="change-date">
+                                    <p>25</p>
+                                    <span>六月</span>
+                                </li>
+                            </ul>-->
+                            <ul class="date-list">
+                                <li data-time="2017-06-08" class="change-date">
+                                    <p>8</p>
+                                    <span>六月</span>
+                                </li>
+                                <li data-time="2017-06-09" class="change-date">
+                                    <p>9</p>
+                                    <span>六月</span>
+                                </li>
+                                <li data-time="2017-06-10" class="change-date">
+                                    <p>10</p>
+                                    <span>六月</span>
+                                </li>
+                                <li data-time="2017-06-11" class="change-date">
+                                    <p>11</p>
+                                    <span>六月</span>
+                                </li>
+                                <li data-time="2017-06-12" class="change-date">
+                                    <p>12</p>
+                                    <span>六月</span>
+                                </li>
+                                <li data-time="2017-06-13" class="change-date">
+                                    <p>13</p>
+                                    <span>六月</span>
+                                </li>
+                                <li data-time="2017-06-14" class="change-date">
+                                    <p>14</p>
+                                    <span>六月</span>
+                                </li>
+                                <li data-time="2017-06-15" class="change-date">
+                                    <p>15</p>
+                                    <span>六月</span>
+                                </li>
+                                <li data-time="2017-06-16" class="change-date">
+                                    <p>16</p>
+                                    <span>六月</span>
+                                </li>
+                                <li data-time="2017-06-17" class="change-date">
+                                    <p>17</p>
+                                    <span>六月</span>
+                                </li>
+                                <li data-time="2017-06-18" class="change-date">
+                                    <p>18</p>
+                                    <span>六月</span>
+                                </li>
+                                <li data-time="2017-06-19" class="change-date">
+                                    <p>19</p>
+                                    <span>六月</span>
+                                </li>
+                                <li data-time="2017-06-20" class="change-date">
+                                    <p>20</p>
+                                    <span>六月</span>
+                                </li>
+                                <li data-time="2017-06-21" class="change-date">
+                                    <p>21</p>
+                                    <span>六月</span>
+                                </li>
+                            </ul>
+                            <ul class="tab-title">
+                                <li>經紀人</li>
+                                <li>旗下藝人</li>
+                                <li>獲得積分</li>
+                            </ul>
+                            <!-- 50個列表 -->
+                            <ul id="totalTodayLists" class="same-lists">
+                            
+                            </ul>
+                            <!-- 查看更多 -->
+                            <div id="seeMore"></div>
+                        </div>
+                        <!-- 總榜 -->
+                        <div class="toggle-list">
+                            <ul class="tab-title">
+                                <li>經紀人</li>
+                                <li>旗下藝人</li>
+                                <li>獲得積分</li>
+                            </ul>
+                            <!-- 50個列表 -->
+                            <ul id="totalLists" class="same-lists">
+                                
+                            </ul>
+                            <!-- 查看更多 -->
+                            <div id="lookMore"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="total-footer"></div>
+            </div>
+            <!-- 活动奖励 -->
+            <div class="footer">
+                <div class="reward-title"></div>
+                <div class="reward-content">
+                    <ul>
+                        <li>積分日榜排名</li>
+                        <li>活動稱號</li>
+                        <li>道具獎勵</li>
+                        <li>Top1</li>
+                        <li>王牌經紀人</li>
+                        <li>30分鐘熱推卡</li>
+                        <li>Top2-10</li>
+                        <li>金牌經紀人</li>
+                        <li>5萬人氣卡*4</li>
+                        <li>Top11-20</li>
+                        <li>銀牌經紀人</li>
+                        <li>5萬人氣卡*2</li>
+                        <li>Top21-50</li>
+                        <li>銅牌經紀人</li>
+                        <li>5萬人氣卡*1</li>
+                    </ul>
+                    <p>*注：建議王牌經紀人將推薦卡、人氣卡贈送給鑽石總收益低於100萬的主播使用，幫助新主播成長，道具卡使用後即時生效</p>
+                </div>
+                <div class="home-msg">
+                    <p>活动最终解释权归浪live官方所有</p>
+                    <p>浪live官方并得以实际状况调整活动内容</p>
+                </div>
+            </div>
+            <!-- 用户自己 -->
+            <div class="user-info">
+                <div class="user-img">
+                    <img id="anchorBottomImg" src="/html/Broker/images/defaultimg.png" alt="" class="headImg">
+                </div>
+                <div class="user-msg">
+                    <h3 id="anchorBottomName">Broznnsdsdsadsdrwrw</h3>
+                    <p>旗下藝人：<span id="anchorArtistsNum">0</span>人</p>
+                    <p>總積分：<span id="anchorTotalScore">0</span></p>
+                </div>
+                <div class="user-artistbtn" id="artistBtn"></div>
+            </div>
+        </div>
+        <!--活動細則 -->
+        <div class="detial-rule-mask" id="detialRuleMask">
+            <span id="detialRuleClose"></span>
+            <h2>浪Live王牌經紀人</h2>
+            <p>活動期間：2017/6/12 11:00:00 ~ 2017/6/25 23:59:59</p>
+            <p>活動規則：</p>
+            <p>1. 活動期間，主播每日鑽石收益達到對應目標時，即可獲得對應主主播等級和FaceU特效（有效期一天）:</p>
+            <ul class="detial-box">
+                <li>每日鑽石收益</li>
+                <li>主播等級</li>
+                <li>FaceU特效</li>
+                <li>15,000</li>
+                <li>潛力之星</li>
+                <li>-</li>
+                <li>30,000</li>
+                <li>希望之星</li>
+                <li>-</li>
+                <li>50,000</li>
+                <li>明日之星</li>
+                <li>明日之星</li>
+                <li>100,000</li>
+                <li>人氣之星</li>
+                <li>人氣之星</li>
+                <li>200,000</li>
+                <li>超級巨星</li>
+                <li>超級巨星</li>
+            </ul>
+            <p>2. 活動期間，主播今日經紀人貢獻榜前10的用戶可獲得對應積分，主播當日鑽石收益越高，經紀人可獲得的積分越多:</p>
+            <table class="detial-content">
+                <tbody>
+                    <tr class="detial-rule-font">
+                        <td rowspan="2">主播鑽石日榜排名</td>
+                        <td colspan="5">獲得對應積分</td>
+                    </tr>
+                    <tr class="detial-rule-font">
+                        <td>達到1.5萬鑽石</td>
+                        <td>達到3萬鑽石</td>
+                        <td>達到5萬鑽石</td>
+                        <td>達到10萬鑽石</td>
+                        <td>達到20萬鑽石</td>
+                    </tr>
+                    <tr>
+                        <td>Top1</td>
+                        <td>5</td>
+                        <td>7</td>
+                        <td>9</td>
+                        <td>12</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>Top2</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>7</td>
+                        <td>10</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>Top3</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>8</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Top4</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>6</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>Top5</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>4</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Top6</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>3</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Top7</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Top8</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Top9</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Top10</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>3. 經紀人每天獲得的積分可用於次日開啓對應寶箱，獲得浪花或道具獎勵。</p>
+            <ul class="detial-content-two">
+                <li class="detial-rule-font">禮盒種類</li>
+                <li class="detial-rule-font">所需積分</li>
+                <li>小禮盒</li>
+                <li>30</li>
+                <li>中禮盒</li>
+                <li>50</li>
+                <li>大禮盒</li>
+                <li>100</li>
+            </ul>
+            <p>4. 經紀人日榜Top50的用戶，次日可獲得對應稱號（有效期24小時）和道具獎勵（有效期24小時）。</p>
+            <ul class="detial-box">
+                <li>經紀人日榜排名</li>
+                <li>活動稱號</li>
+                <li>道具獎勵</li>
+                <li>Top1</li>
+                <li>王牌經紀人</li>
+                <li>30分鐘熱推卡</li>
+                <li>Top2-10</li>
+                <li>金牌經紀人</li>
+                <li>大人氣卡*4</li>
+                <li>Top11-20</li>
+                <li>銀牌經紀人</li>
+                <li>大人氣卡*2</li>
+                <li>Top21-50</li>
+                <li>銅牌經紀人</li>
+                <li>大人氣卡*1</li>
+            </ul>
+            <p>5. 經紀人總榜Top10的用戶，將在活動結束後獲得對應稱號；Top 1的用戶更可獲得王牌經紀人專屬禮物（有效期15天）。</p>
+            <ul class="detial-box">
+                <li>積分總榜排名</li>
+                <li>活動稱號</li>
+                <li>專屬禮物</li>
+                <li>Top1</li>
+                <li>王牌經紀人Top1</li>
+                <li>有</li>
+                <li>Top2</li>
+                <li>王牌經紀人Top2</li>
+                <li>-</li>
+                <li>Top3</li>
+                <li>王牌經紀人Top3</li>
+                <li>-</li>
+                <li>Top4</li>
+                <li>王牌經紀人Top4</li>
+                <li>-</li>
+                <li>Top5</li>
+                <li>王牌經紀人Top5</li>
+                <li>-</li>
+                <li>Top6</li>
+                <li>王牌經紀人Top6</li>
+                <li>-</li>
+                <li>Top7</li>
+                <li>王牌經紀人Top7</li>
+                <li>-</li>
+                <li>Top8</li>
+                <li>王牌經紀人Top8</li>
+                <li>-</li>
+                <li>Top9</li>
+                <li>王牌經紀人Top9</li>
+                <li>-</li>
+                <li>Top10</li>
+                <li>王牌經紀人Top10</li>
+                <li>-</li>
+            </ul>
+            <!--0611-->
+            <ul class="detial-box">
+                <li>積分總榜排名</li>
+                <li>活動稱號(15天)</li>
+                <li>專屬禮物(15天)</li>
+                <li>Top1</li>
+                <li>王牌經紀人</li>
+                <li>有</li>
+                <li>Top2~10</li>
+                <li>王牌經紀人10</li>
+                <li>-</li>
+            </ul>
+            <p>注：推薦卡和人氣卡使用時效為24小時，建議王牌經紀人贈送給鑽石收益較低的主播， Ta們成長需要您的幫助！</p>
+            <h5>活動最終解釋權歸浪Live官方所有，<br>浪Live官方並得依實際狀況調整活動內容</h5>
+            <h3 class="detial-rule-font">活動細則</h3>
+            <p>1. 主播等級爲根據活動期間主播每日鑽石收益計算的相應活動等級，僅在活動頁面顯示</p>
+            <p>2. 主播等級可解鎖相應的Face特效，主播等級及Face特效有效期爲一天。</p>
+            <p>3. 經紀人日榜每日23:59:59結算最終積分，次日可根據積分打開對應禮盒。</p>
+            <p>4. 經紀人日榜稱號有效期爲1天，每日經紀人日榜積分結算後發放。</p>
+            <p>5. 經紀人總榜稱號及專屬禮物有效期爲30天，活動結束後發放。</p>
+            <p>6. 依中華民國稅法規定，本活動獎勵屬競技競賽機會中獎，本公司將誠實申報且依各類所得扣繳率標準規定代為扣繳。</p>
+            <p>中獎人若為中華民國境內居住之個人，其競技競賽機會中獎獎金或給與之所得，按給付全額扣取百分之十，但扣繳義務人每次應扣繳稅額不超過新臺幣二千元者，免予扣繳。扣繳義務人對同一中獎人全年給付前項所得不超過新臺幣一千元者，得免依所得稅法第八十九條第三項規定，列單申報該管稽徵機關。</p>
+            <p>中獎人需於提供報稅用資料(身分證影本)後，始得領取獎項。</p>
+            <p>中獎人需自行負擔前述稅款，以及因該獎項所衍生之其他後續費用。</p>
+            <p>中獎人如為非中華民國境內居住之個人（即在中華民國境內居住未達183天之本國人及外國人），競技競賽機會中獎獎金或給與按給付全額扣取百分之二十後，始得領取獎項。</p>
+            <p>7. 本活動如因不可抗力之特殊原因無法執行時，浪Live官方有權決定取消、終止、修改或暫停本活動之權利</p>
+            <p>8. 根據浪Live服務條款，利用任何系統或工具，對本公司所提供的服務、伺服器或網路進行安擾、惡意攻擊或破壞、外掛程式、病毒程式、程式漏洞(Bug)或其他違反公平合理之方式參與本活動，浪Live官方有權立即終止或變更任一會員帳號之服務。就終止或更改會員使用本服務所可能產生之困擾、不便或損害，本公司對任何會員或第三人均不負任何責任。</p>
+            <p>9. 浪Live官方擁有本活動最終解釋權，並保留隨時修改本活動細節或終止本活動之權利。</p>
+            <h5>若您遇有任何問題，請來信service.tw@langlive.com</h5>
+        </div>
+         <!-- 跳转到个人 -->
+        <form action="<?php echo DOMAIN ?>v2/html/activity/broke/personal.html" method="post" id="jumpPersonal">
+            <input type="hidden" name="HTTP_USER_TOKEN" class="access_token" value="<?=$token;?>">
+            <input type="hidden" name="HTTP_USER_UID" class="pfid" value="<?=$pfid;?>">
+        </form>
+    <!--  -->
+    <script src="/html/js/jquery-1.9.1.min.js"></script>
+    <script src="/html/admin/js/constant.js"></script>
+    <script src="/html/js/publicVersion.js?v=0"></script>
+    <!-- 假数据 -->
+    <script src="/html/Broker/js/totallistData.js?v=0609"></script>
+    <script src="/html/Broker/js/total_list.js?value=6901"></script>
+    </body>
+</html>

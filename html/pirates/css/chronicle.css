@@ -1,0 +1,598 @@
+*{
+	margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 0;
+  box-sizing: border-box;
+  outline: 0;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+}
+.block{
+  display: block;
+  width: 100%;
+}
+/*header*/
+header{
+  position: relative;
+}
+header img{
+  display: block;
+  width: 100%;
+}
+#ruleBtn,
+#jumpTo{
+  display: block;
+  height: 1rem;
+  top: 8.466667rem;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 10;
+}
+#ruleBtn{
+  width: 2.533333rem;
+  left: 0;
+  background-image: url(../images/chronicle_rulebg.png);
+}
+#jumpTo{
+  width: 2.733333rem;
+  right: 0;
+  background-image: url(../images/chronicle_rankingbg.png);
+}
+.header-info-bg{
+  width: 100%;
+  height: 1.4rem;
+  position: relative;
+  background-image: url(../images/chronicle_02.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.header-info{
+  width: 69%;
+  height: 1.4rem;
+  margin: 0 auto;
+  position: relative;
+}
+.header-info h3,
+.header-msg{
+  position: absolute;
+
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+}
+.header-info h3{
+  left: 4%;
+  height: 1.4rem;
+  line-height: 1.4rem;
+}
+.header-msg{
+  line-height: .45rem;
+  height: .9rem;
+	left: 35%;
+}
+/*nchor-info-bg*/
+.anchor-info-bg{
+  width: 100%;
+  height: 4.533333rem;
+  background-image: url(../images/chronicle_03.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.anchor-info-bgtwo:before,
+.anchor-info-bg:before{
+  display: table;
+  content: "";
+}
+.anchor-info-bg h3{
+  width: 3.066667rem;
+  margin: 0 auto;
+  margin-top: 1.386667rem;
+  text-align: center;
+  height: 0.96rem;
+  line-height: 0.96rem;
+  color: #fff;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+	position: relative;
+  z-index: 20;
+}
+.anchor-info-bg>img{
+  display: block;
+  width: 3.96rem;
+  position: absolute;
+  right: 0;
+  bottom: 0.2rem;
+  z-index: 10;
+}
+/*nchor-info*/
+.anchor-info{
+  width: 3.266667rem;
+  position: absolute;
+  left: 2.773333rem;
+  bottom: 0.2rem;
+  color: #fff;
+}
+.anchor-info h5{
+  font-size: 0.24rem;
+}
+.anchor-info p,
+.anchor-info h2{
+  font-size: 0.32rem;
+}
+.anchor-info span,
+.anchor-info b{
+  display: block;
+  height: 0.106667rem;
+}
+.anchor-info span{
+  width: 100%;
+  background: rgb(125,125,125);
+  position: relative;
+	margin: .1rem 0;
+}
+.anchor-info b{
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgb(255,255,0);
+}
+/*anchor-info-bgtwo*/
+.anchor-info-bgtwo{
+	width: 100%;
+	background-image: url(../images/chronicle_05.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.ranking-bgcolor{
+	width: 7.47rem;
+	height: .75rem;
+	background: #B28851;
+	border: 1px solid #D1C0A5;
+	margin:  0 auto;
+	margin-top: .27rem;
+	overflow: hidden;
+	border-radius: .4rem;
+}
+.ranking-bgcolor li{
+	width: 50%;
+	float: left;
+	color: #fff;
+	line-height: .75rem;
+	text-align: center;
+}
+.anchor-gift{
+	width: 7.36rem;
+	overflow: hidden;
+	margin: 0 auto;
+	margin-top: .33rem;
+}
+.anchor-gift li{
+	width: 50%;
+	float: left;
+	height: 2.19rem;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.anchor-gift li:nth-child(1){
+	background-image: url(../images/chronicle_giftbg01.png);
+}
+.anchor-gift li:nth-child(2){
+	background-image: url(../images/chronicle_giftbg02.png);
+}
+.anchor-msg{
+	color: #A45C1D;
+	position: absolute;
+	top: .8rem;
+	right: .4rem;
+}
+.anchor-msg h3,
+.anchor-msg p{
+	font-weight: 700;
+}
+/*anchor-three-list*/
+.anchor-three-list{
+	width: 7.2rem;
+	margin:  0 auto;
+	margin-top: .53rem;
+}
+.anchor-three-list li{
+	position: relative;
+}
+.anchor-three-list li:nth-child(1),
+.anchor-three-list li:nth-child(2){
+	height: .75rem;
+	line-height: .75rem;
+}
+.anchor-three-list li:nth-child(2){
+	margin-top: .27rem;
+}
+.anchor-three-list li:nth-child(3){
+	height: 1.47rem;
+	border-top: 1px solid #E1C188;
+	line-height: 1.47rem;
+	margin-top: .27rem;
+}
+.anchor-three-list li:nth-child(1) b,
+.anchor-three-list li:nth-child(1) span,
+.anchor-three-list li:nth-child(2) b,
+.anchor-three-list li:nth-child(2) span{
+	font-size: .37rem;
+}
+.anchor-three-list li:nth-child(1),
+.anchor-three-list li:nth-child(1) b,
+.anchor-three-list li:nth-child(1) span{
+	color: #019A7A;
+	font-weight: 700;
+}
+.anchor-three-list li:nth-child(2),
+.anchor-three-list li:nth-child(2) b,
+.anchor-three-list li:nth-child(2) span{
+	color: #B68401;
+	font-weight: 700;
+}
+.anchor-three-list li:nth-child(3),
+.anchor-three-list li:nth-child(3) b,
+.anchor-three-list li:nth-child(3) span{
+	color: #805806;
+	font-size: .48rem;
+	font-weight: 700;
+}
+.anchor-three-list li:nth-child(1) span,
+.anchor-three-list li:nth-child(2) span,
+.anchor-three-list li:nth-child(3) span{
+	margin-left: .24rem;
+	margin-right: .15rem;
+}
+.anchor-three-list li:nth-child(1) i,
+.anchor-three-list li:nth-child(2) i,
+.anchor-three-list li:nth-child(3) i{
+	display: block;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 0;
+	background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.anchor-three-list li:nth-child(1) i,
+.anchor-three-list li:nth-child(2) i{
+	width: 2.29rem;
+	height: .75rem;
+}
+.anchor-three-list li:nth-child(3) i{
+	width: 1rem;
+	height: 1rem;
+}
+.anchor-three-list li:nth-child(3) i{
+	background-image: url(../images/chronicle_listbg.png);
+	right: .3rem;
+}
+.anchor-three-list li:nth-child(1) i{
+	background-image: url(../images/chronicle_anbtn01.png);
+}
+.anchor-three-list li:nth-child(2) i{
+	background-image: url(../images/chronicle_anbtn02.png);
+}
+/*anchor-info-bgbottom*/
+.anchor-info-bgbottom{
+	width: 100%;
+	height: 1.71rem;
+	background-image: url(../images/chronicle_06.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+/*contribution-title-bg*/
+.contribution-title-bg{
+	width: 100%;
+	height: 1.57rem;
+	background-image: url(../images/chronicle_07.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.contribution-title-bg h3{
+	text-align: center;
+	color: #F6F4C7;
+	line-height: 1.57rem;
+}
+.contribution-list-bg{
+	width: 100%;
+	background-image: url(../images/chronicle_con01.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+/*contribution-three*/
+.contribution-three{
+	width: 3.07rem;
+	margin-left: .53rem;
+  padding: .6rem 0;
+}
+.outer-bg{
+	width: 1.95rem;
+	margin: 0 auto;
+	height: 1.95rem;
+	background-size: 100% 100%;
+  background-repeat: no-repeat;
+	position: relative;
+	z-index: 5;
+}
+.contribution-three li{
+	position: relative;
+}
+.contribution-three li>P{
+	text-align: center;
+	color: #F4E17A;
+	text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+.contribution-three li+li{
+	margin-top: .47rem;
+}
+.contribution-three li:nth-child(1) .outer-bg{
+	background-image: url(../images/chronicle_icon01.png);
+}
+.contribution-three li:nth-child(2) .outer-bg{
+	background-image: url(../images/chronicle_icon02.png);
+}
+.contribution-three li:nth-child(3) .outer-bg{
+	background-image: url(../images/chronicle_icon03.png);
+}
+
+
+.outer-bg span{
+	display: block;
+	width: 1.8rem;
+	text-align: center;
+	position: absolute;
+	border-radius: .25rem;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: .2rem;
+	z-index: 15;
+  color: #fff;
+}
+.contribution-three li:nth-child(1) .outer-bg span{
+	background: #FACD89;
+}
+.contribution-three li:nth-child(2) .outer-bg span{
+	background: #4D8FB5;
+}
+.contribution-three li:nth-child(3) .outer-bg span{
+	background: #C69C6D;
+}
+.anchor-img{
+	display: block;
+	z-index: 10;
+	width: 1.2rem;
+	height: 1.2rem;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	overflow: hidden;
+}
+.anchor-img>img,
+.user-img>img{
+	width: auto;
+	height: 100%;
+	position: absolute;
+	left: -100%;
+	top: -100%;
+	right: -100%;
+	bottom: -100%;
+	margin: auto;
+	border-radius: 50%;
+	cursor: pointer;
+	z-index: 10;
+}
+.outer-bg>b{
+	display: block;
+	position: absolute;
+	color: #fff;
+	top: 0;
+	left: -0.27rem;
+	font-weight: 100;
+}
+.outer-bg>i{
+	display: block;
+	width: .48rem;
+	height: .24rem;
+	position: absolute;
+	background-image: url(../images/chronicle_liveicon.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+	right: .1rem;
+	top: 0.5rem;
+	z-index: 15;
+}
+.contribution-three li>b{
+	position: absolute;
+	width: 2.67rem;
+	height: .75rem;
+	line-height: .75rem;
+	background: rgba(62,108,144,.6);
+	top: 40%;
+	transform: translateY(-50%);
+	z-index: 3;
+	text-align: right;
+	color: #F4E17A;
+	font-weight: 100;
+	right: -1.2rem;
+	padding-right: .2rem;
+	border-radius: .4rem;
+}
+/*chronicle-icon-topbg*/
+.chronicle-contribution-listbg,
+.chronicle-icon-topbg,
+.chronicle-icon-bottombg{
+	width: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.chronicle-icon-topbg{
+	height: .4rem;
+	background-image: url(../images/chronicle_con02.jpg);
+}
+.chronicle-icon-bottombg{
+	height: .4rem;
+	background-image: url(../images/chronicle_con04.jpg);
+}
+/*chronicle-contribution-listbg*/
+.chronicle-contribution-listbg{
+	background-image: url(../images/chronicle_con03.jpg);
+	padding-bottom: 2.5rem;
+}
+/*contribution-seven*/
+.contribution-seven{
+	width: 9.33rem;
+	margin: 0 auto;
+}
+.contribution-seven li{
+	overflow: hidden;
+	height: 1.8rem;
+	line-height: 1.8rem;
+	position: relative;
+	padding-left: .5rem;
+	color: #FDE777;
+}
+.contribution-seven li+li{
+	border-top: 1px dashed #818181;
+}
+.contribution-seven li>b,
+.contribution-seven .user-img,
+.contribution-seven li>p,
+.contribution-seven li>span{
+	float: left;
+	font-weight: 100;
+}
+
+.user-img{
+	width: 1.2rem;
+	height: 1.2rem;
+	position: relative;
+	overflow: hidden;
+	margin-top: 0.3rem;
+	margin-left: .27rem;
+}
+.contribution-seven li>p{
+	width: 3.5rem;
+	margin:0 .27rem;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	position: relative;
+}
+.contribution-seven li>span{
+	display: block;
+	width: 2.8rem;
+	text-align: center;
+}
+.user-img>i{
+	display: block;
+  width: .48rem;
+  height: .24rem;
+  position: absolute;
+  background-image: url(../images/chronicle_liveicon.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+	right: 0;
+	top: .1rem;
+	z-index: 15;
+}
+.contribution-seven li.me{
+	background: #276691;
+}
+/*anchor-self*/
+.anchor-self{
+	width: 9.68rem;
+	height: 1.47rem;
+	margin: 0 auto;
+	position: fixed;
+	bottom: .27rem;
+	background-image: url(../images/chronicle_mebg.png);
+  	background-size: 100% 100%;
+  	background-repeat: no-repeat;
+	z-index: 25;
+	left: 50%;
+    transform: translateX(-50%);
+}
+.anchor-self i{
+	display: block;
+	width: 1.33rem;
+	height: 2.13rem;
+	background-image: url(../images/chronicle_mm.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+	position: absolute;
+	bottom: 0;
+	right: .53rem;
+}
+.anchor-self-img{
+	width: 1.15rem;
+	height: 1.15rem;
+	position: absolute;
+  overflow: hidden;
+  margin-left: .27rem;
+}
+.anchor-self-msg{
+	width: 3.7rem;
+	position: absolute;
+	left: 1.8rem;
+	color: #fff;
+}
+.anchor-self-msg>h3{
+	font-size: .4rem;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	position: relative;
+}
+.anchor-self-msg>p{
+	font-size: .32rem;
+}
+.anchor-self-img,
+.anchor-self-msg,
+.anchor-self>b{
+	top: 50%;
+	transform: translateY(-50%);
+}
+.anchor-self-img>img{
+	width: auto;
+  height: 100%;
+  position: absolute;
+  left: -100%;
+  top: -100%;
+  right: -100%;
+  bottom: -100%;
+  margin: auto;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+}
+.anchor-self>b{
+	display: block;
+	position: absolute;
+	right: 2rem;
+	color: #fff;
+	font-weight: 100;
+}
+.anchor-self span{
+	padding: 0 .15rem;
+}
+/*ruleBox*/
+.hide{
+	display: none;
+}
+#ruleBox{
+	display: none;
+}
+#ruleBox.rule-box{
+	display: block;
+}

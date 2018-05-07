@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>入住申請</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <meta name="description" content="" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="cleartype" content="on" />
+    <link rel="stylesheet" href="/html/css/base.css">
+    <script src="/html/js/flexible.js"></script>
+    <link rel="stylesheet" href="/html/css/base.css">
+    <link rel="stylesheet" href="/html/joinUs/css/content.css?v=1">
+    <!-- 日期控件 -->
+    <script src="/html/js/jquery-1.11.1.min.js"></script>
+    <script src="/html/joinUs/mobiscroll/js/mobiscroll.core-2.5.2.js" type="text/javascript"></script>
+    <script src="/html/joinUs/mobiscroll/js/mobiscroll.core-2.5.2-zh.js" type="text/javascript"></script>
+    <script src="/html/joinUs/mobiscroll/js/mobiscroll.datetime-2.5.1.js" type="text/javascript"></script>
+    <script src="/html/joinUs/mobiscroll/js/mobiscroll.datetime-2.5.1-zh.js" type="text/javascript"></script>
+    <script src="/html/joinUs/mobiscroll/js/mobiscroll.android-ics-2.5.2.js" type="text/javascript"></script>
+    <link href="/html/joinUs/mobiscroll/css/mobiscroll.android-ics-2.5.2.css" rel="stylesheet" type="text/css" />
+    <link href="/html/joinUs/mobiscroll/css/mobiscroll.core-2.5.2.css" rel="stylesheet" type="text/css" />
+    <link href="/html/joinUs/mobiscroll/css/mobiscroll.animation-2.5.2.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+            $(function() {
+                var currYear = (new Date()).getFullYear();
+                var opt = {};
+                opt.date = {
+                    preset: 'date'
+                };
+                //opt.datetime = { preset : 'datetime', minDate: new Date(2012,3,10,9,22), maxDate: new Date(2014,7,30,15,44), stepMinute: 5  };
+                opt.datetime = {
+                    preset: 'datetime'
+                };
+                opt.time = {
+                    preset: 'time'
+                };
+                opt.default = {
+                    theme: 'android-ics light', //皮肤样式
+                    display: 'modal', //显示方式
+                    mode: 'scroller', //日期选择模式
+                    lang: 'zh',
+                    startYear: currYear - 10, //开始年份
+                    endYear: currYear + 50 //结束年份
+                };
+                $("#appDate").val('').scroller('destroy').scroller($.extend(opt['date'], opt['default']));
+                var optDateTime = $.extend(opt['datetime'], opt['default']);
+                var optTime = $.extend(opt['time'], opt['default']);
+            });
+        </script>
+</head>
+<body>
+    <p class="title">提交申請，可有機會出現在官方直播間推薦喔</p>
+    <div class="need-msg">
+        <!-- 查看 -->
+        <div class="user-list">
+            <div class="look"><span>查看當前排期</span></div>
+        </div>
+        <!-- 可播時段 -->
+        <div class="user-list">
+            <div class="left-msg">可播時段</div>
+            <div class="right-msg">
+                <div class="user-date" id="user-date">
+                    <input name="appDate" id="appDate" placeholder="請選擇日期" type="text">
+                    <img src="/html/joinUs/images/icon_date.png" alt="">
+                </div>
+                <div class="user-time" id="user-time">
+                    <input placeholder="請選擇時段" type="text">
+                    <img src="/html/joinUs/images/icon_time.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="user-list">
+            <div class="right-msg">
+                <div class="add-more"><span>添加更多備選時段</span></div>
+            </div>
+        </div>
+        <!-- 直播內容 -->
+        <div class="user-list">
+            <div class="left-msg">直播內容</div>
+            <div class="right-msg">
+                <input id="user-content" class="user-content" placeholder="請填寫您要表演的才藝" type="text" maxlength="30">
+            </div>
+        </div>
+        <!-- 才藝展示 -->
+        <div class="user-list">
+            <div class="left-msg">才藝展示</div>
+            <div class="right-msg">
+                <textarea placeholder="請填寫重播影片時間或才藝視頻展示網址" name="user-talent" id="user-talent" class="user-talent"></textarea>
+            </div>
+        </div>
+        <!-- 相關素材 -->
+        <div class="user-list">
+            <div class="left-msg">相關素材</div>
+            <div class="right-msg">
+                <div class="user-picture">
+                    <img src="/html/joinUs/images/user_img.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 提交 -->
+    <div class="submit" id="submit">提交</div>
+    <!-- 規則 -->
+    <div class="rule-msg">
+        <p>1.每週四為官方審核時間，週五19:00前公佈次週才藝主播推薦位排期；</p>
+        <p>2.若推薦成功，在推薦時間內，被推薦的主播沒有開播，則該主播的<span>下一週的申請將不被受理；</span></p>
+        <p>3.主播提交的相片素材須滿足以下條件：</p>
+        <p>a）需是正面半身照，平視角度，頭部及手臂完整；</p>
+        <p>b）相片尺寸≥960*1280，相片≥1M</p>
+    </div>
+    <!-- 点击选择时间段的弹出框 -->
+    <div class="time-mask">
+        <div class="time-inner"></div>
+    </div>
+    <!-- js -->
+    <script src="/html/joinUs/js/joinUs-content.js"></script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>許願</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+        <meta name="description" content="" />
+        <meta name="HandheldFriendly" content="True" />
+        <meta name="MobileOptimized" content="320" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta http-equiv="cleartype" content="on" />
+        <script src="/html/js/flexible.js"></script>
+        <link rel="stylesheet" href="/html/MidAutumnFestival/css/common.css">
+        <link rel="stylesheet" href="/html/MidAutumnFestival/css/wishing.css?v=0">
+        <script src="/html/static/js/getBase.js"></script>
+        <script>
+            // 接口参数
+            var pfid= '<?=isset($_REQUEST["HTTP_USER_UID"])?$_REQUEST["HTTP_USER_UID"]:0; ?>';
+            var token= '<?=isset($_REQUEST["HTTP_USER_TOKEN"])?$_REQUEST["HTTP_USER_TOKEN"]:0; ?>';
+            var anchor_pfid = '<?=isset($_REQUEST["anchor_pfid"])?$_REQUEST["anchor_pfid"]:0; ?>';
+        </script>
+</head>
+<body>
+    <!-- 頭圖 -->
+    <header class="clear">
+        <img src="/html/MidAutumnFestival/images/rank_top_01.jpg" alt="">
+    </header>
+    <!-- 規則文案 -->
+    <div class="wishing_rule">
+        <img src="/html/MidAutumnFestival/images/wishing_bg_02.jpg" alt="">
+        <ul class="wishing_rulebtns">
+            <li id="ruleDetial"></li>
+            <li id="goHome"></li>
+        </ul>
+    </div>
+    <!-- 許願樹 -->
+    <div class="wishing_tree_title same">
+        <img src="/html/MidAutumnFestival/images/wishing_bg_03.jpg" alt="">
+        <span></span>
+    </div>
+    <div class="wishing_tree_head same">
+        <img src="/html/MidAutumnFestival/images/wishing_bg_04.jpg" alt="">
+        <div class="tree_mask"></div>
+    </div>
+    <div class="same">
+        <img src="/html/MidAutumnFestival/images/wishing_bg_05.jpg" alt="">
+    </div>
+    <!-- 許願按鈕 -->
+    <div class="wishing_btns">
+        <ul class="wishing_btnlist" id="wishingBtns">
+            <li id="wishingOne"></li>
+            <li id="wishingTen"></li>
+            <li id="superOne"></li>
+            <li id="superTen"></li>
+        </ul>
+    </div>
+    <!-- 底部信息 -->
+    <div class="wishing_footer">
+        <div class="same">
+            <img src="/html/MidAutumnFestival/images/wishing_icon_01.png" alt="">
+        </div>
+        <!-- 主播信息 -->
+        <div class="wishing_user">
+            <div class="footer">
+                <!-- 头像 -->
+                <div class="footer-user-img">
+                    <img src="/html/MidAutumnFestival/images/avatar.png" alt="">
+                </div>
+                <!-- 名字 -->
+                <div class="footer-user-msg">
+                    <p>聋子听哑巴说瞎子看见九筒战幺鸡</p>
+                    <p><span></span>總破壞值：<b>999999</b></p>
+                </div>
+                <!-- level -->
+                <div class="footer-remaining">
+                    <p>剩餘蟲子數量：<span id="remainCount">9999</span>個</p>
+                    <p>剩餘破壞值：<span id="remainValue">99999</span> </p>
+                </div>
+                <!-- ICON -->
+                <div class="cattle"></div>
+                <div class="fork"></div>
+            </div>
+        </div>
+    </div>
+    <!-- 弹框 -->
+    <!-- 许愿1次或者超级许愿1次弹框 -->
+    <!-- <div id="oneWishingMask" class="mask_bg"></div> -->
+    <!-- 许愿10或者超级许愿10次弹框 -->
+    <!-- <div id="tenWishingMask" class="mask_bg"></div> -->
+    <!-- 没有次数弹框 -->
+    <div id="dialogMask" class="mask_bg">
+        <div class="wishing_mask">
+            <img src="/html/MidAutumnFestival/images/wishing_mask01.png" alt="">
+            <!-- 需要變動的 -->
+            <div class="wishing_maskbg" id="giftLists">
+                <!-- 1個禮物 -->
+                <!-- <div class="one_gift">
+                    <img src="/html/MidAutumnFestival/images/wishing_mask02.png" alt="">
+                    <p class="purple">阳光X999</p>
+                </div>
+                <ul class="mask_btns">
+                    <li id="maskOne"></li>
+                    <li id="maskTen"></li>
+                </ul>
+                <p class="purple">剩餘破壞值：999999</p> -->
+
+                <!-- 3沒有次數 -->
+                <!-- <div class="wishing_nocount">
+                    <p class="purple">抽獎次數不足，</p>
+                    <p class="purple">快去給主播的月桂樹搗亂吧！</p>
+                </div>
+                <div id="agreeNocount"></div>
+                <p class="purple">剩餘破壞值：0</p> -->
+
+                <!-- 10个 -->
+                <!-- <div class="ten_gifts">
+                    <ul>
+                        <li>
+                            <img src="/html/MidAutumnFestival/images/wishing_mask07.png" alt="">
+                            <p class="purple">阳光x999</p>
+                        </li>
+                        <li>
+                            <img src="/html/MidAutumnFestival/images/wishing_mask07.png" alt="">
+                            <p class="purple">阳光x999</p>
+                        </li>
+                        <li>
+                            <img src="/html/MidAutumnFestival/images/wishing_mask07.png" alt="">
+                            <p class="purple">阳光x999</p>
+                        </li>
+                        <li>
+                            <img src="/html/MidAutumnFestival/images/wishing_mask07.png" alt="">
+                            <p class="purple">阳光x999</p>
+                        </li>
+                        <li>
+                            <img src="/html/MidAutumnFestival/images/wishing_mask07.png" alt="">
+                            <p class="purple">阳光x999</p>
+                        </li>
+                        <li>
+                            <img src="/html/MidAutumnFestival/images/wishing_mask07.png" alt="">
+                            <p class="purple">阳光x999</p>
+                        </li>
+                        <li>
+                            <img src="/html/MidAutumnFestival/images/wishing_mask07.png" alt="">
+                            <p class="purple">阳光x999</p>
+                        </li>
+                        <li>
+                            <img src="/html/MidAutumnFestival/images/wishing_mask07.png" alt="">
+                            <p class="purple">阳光x999</p>
+                        </li>
+                        <li>
+                            <img src="/html/MidAutumnFestival/images/wishing_mask07.png" alt="">
+                            <p class="purple">阳光x999</p>
+                        </li>
+                        <li>
+                            <img src="/html/MidAutumnFestival/images/wishing_mask07.png" alt="">
+                            <p class="purple">阳光x999999</p>
+                        </li>
+                        <li class="additional">
+                            <h4>額外獲得</h4>
+                            <img src="/html/MidAutumnFestival/images/wishing_mask08.png" alt="">
+                            <p class="purple">阳光x999999</p>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="mask_btns">
+                    <li id="maskOne"></li>
+                    <li id="maskTen"></li>
+                </ul>
+                <p class="purple">剩餘破壞值：999999</p> -->
+            </div>
+            <div id="closeMask"></div>
+        </div>
+    </div>
+    <!-- 1 返回首頁 -->
+    <form action="<?php echo DOMAIN ?>html/MidAutumnFestival/index.html" method="post" id="jumopHome">
+        <input type="hidden" name="HTTP_USER_TOKEN" class="access_token" value="<?=$token;?>"/>
+        <input type="hidden" name="HTTP_USER_UID" class="pfid" value="<?=$pfid;?>"/>
+        <input id="troubleFormAnchorid" type="hidden" name="anchor_pfid" class="anchor_pfid" value="<?=$anchor_pfid;?>"/>
+    </form>
+    <script src="/html/MidAutumnFestival/js/wishing.js?v=012"></script>
+</body>
+</html>

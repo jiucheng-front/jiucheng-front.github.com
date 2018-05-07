@@ -1,0 +1,67 @@
+/*
+* @Author: wangjianfei
+* @Date:   2017-05-26 17:24:39
+* @Last Modified by:   wangjianfei
+* @Last Modified time: 2017-05-26 19:33:57
+*/
+*{
+	margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 0;
+    box-sizing: border-box;
+    outline: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+#prompt_box{
+	position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .5);
+    display: none;
+    z-index: 30;
+}
+.prompt_title{
+	text-align: center;
+    color: #565CB2;
+    margin-top: .5rem;
+    padding: 0 .4rem;
+}
+.prompt_mask p{
+    width: 100%;
+    height: 1rem;
+    color: #fff;
+    line-height: 1rem;
+    background: #565CB2;
+    padding-left: .3rem;
+    font-size: .4rem;
+}
+.prompt_mask{
+    width: 7.4rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: .1rem;
+    overflow: hidden;
+    padding-bottom: .6rem;
+}
+
+#prompt_btn{
+	display: block;
+	background: #565CB2;
+	color: #fff;
+	width: 1.5rem;
+	height: .8rem;
+	line-height: .8rem;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: .8rem;
+	border-radius: .1rem;
+    font-size: .3rem;
+    cursor: pointer;
+}
