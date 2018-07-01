@@ -36,11 +36,11 @@ body{
 	text-align: center;
 	text-transform: uppercase;
 }
-.parent li:hover{
+.parent li:hover,.parent li.active{
 	border: 2px solid #B7DEDF;
 	cursor: pointer;
 }
-.parent li a:hover{
+.parent li a:hover,.parent li.active a{
 	color:#CF5B56;
 }
 .parent li a.first{
