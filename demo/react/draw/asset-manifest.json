@@ -1,9 +1,9 @@
 {
   "main.css": "/demo/react/draw/static/css/main.7678a9d4.chunk.css",
-  "main.js": "/demo/react/draw/static/js/main.76ce4a02.chunk.js",
+  "main.js": "/demo/react/draw/static/js/main.75c9eca3.chunk.js",
   "static/js/1.04ada47c.chunk.js": "/demo/react/draw/static/js/1.04ada47c.chunk.js",
   "runtime~main.js": "/demo/react/draw/static/js/runtime~main.8e787ad1.js",
   "index.html": "/demo/react/draw/index.html",
-  "precache-manifest.b9d37fb1a3a761dfbe83cb7ec5d69c93.js": "/demo/react/draw/precache-manifest.b9d37fb1a3a761dfbe83cb7ec5d69c93.js",
+  "precache-manifest.ee91c4b5976f569fde67c34bd552e5be.js": "/demo/react/draw/precache-manifest.ee91c4b5976f569fde67c34bd552e5be.js",
   "service-worker.js": "/demo/react/draw/service-worker.js"
 }
