@@ -1,13 +1,9 @@
 {
-  "main.css": "public/static/css/main.438a25b1.chunk.css",
-  "main.js": "public/static/js/main.03851974.chunk.js",
-  "main.js.map": "public/static/js/main.03851974.chunk.js.map",
-  "static/js/1.17d2d5c8.chunk.js": "public/static/js/1.17d2d5c8.chunk.js",
-  "static/js/1.17d2d5c8.chunk.js.map": "public/static/js/1.17d2d5c8.chunk.js.map",
-  "runtime~main.js": "public/static/js/runtime~main.b15faf49.js",
-  "runtime~main.js.map": "public/static/js/runtime~main.b15faf49.js.map",
-  "static/css/main.438a25b1.chunk.css.map": "public/static/css/main.438a25b1.chunk.css.map",
-  "index.html": "public/index.html",
-  "precache-manifest.d3983eab19abf0a2583afb817c6956a3.js": "public/precache-manifest.d3983eab19abf0a2583afb817c6956a3.js",
-  "service-worker.js": "public/service-worker.js"
+  "main.css": "/demo/react/draw/static/css/main.7678a9d4.chunk.css",
+  "main.js": "/demo/react/draw/static/js/main.76ce4a02.chunk.js",
+  "static/js/1.04ada47c.chunk.js": "/demo/react/draw/static/js/1.04ada47c.chunk.js",
+  "runtime~main.js": "/demo/react/draw/static/js/runtime~main.8e787ad1.js",
+  "index.html": "/demo/react/draw/index.html",
+  "precache-manifest.b9d37fb1a3a761dfbe83cb7ec5d69c93.js": "/demo/react/draw/precache-manifest.b9d37fb1a3a761dfbe83cb7ec5d69c93.js",
+  "service-worker.js": "/demo/react/draw/service-worker.js"
 }
