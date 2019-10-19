@@ -1,0 +1,521 @@
+.header img{
+    display: block;
+    float: left;
+    width: 100%;
+}
+.hide{
+    display: none;
+}
+/* rank_gif */
+.rank_gif{
+    width: 100%;
+    height: 1.2rem;
+    background-image: url(../images/rank_top_03.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.rank_gif>img{
+    display: block;
+    width: .8rem;
+    height: .933333rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+/* same_img */
+.same_img{
+    position: relative;
+}
+.same_img img{
+    display: block;
+    width: 100%;
+    float: left;
+}
+/* rule */
+.rule{
+    position: relative;
+}
+.rule img{
+    display: block;
+    width: 100%;
+}
+.rule_btn{
+    width: 8.6rem;
+    height: 1.2rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    overflow: hidden;
+}
+.rule_btn li{
+    width: 4.133333rem;
+    height: 1.2rem;
+}
+.rule_btn li:nth-child(1){
+    float: left;
+}
+.rule_btn li:nth-child(2){
+    float: right;
+}
+/* nav_bg */
+.nav_bg{
+    width: 100%;
+    height: 1.25rem;
+    background-image: url(../images/rank_02.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.nav_bg ul{
+    width: 9.733333rem;
+    margin: 0 auto;
+}
+
+.nav_bg ul li{
+    float: left;
+    color: #A496B4;
+    position: relative;
+    width: 2.28rem;
+    height: 1.25rem;
+    border-top: 1px solid #A496B4;
+    border-left: 1px solid #A496B4;
+    border-right: 1px solid #A496B4;
+}
+.nav_bg ul li p{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.nav_bg ul li+li{
+    margin-left: .2rem;
+}
+.nav_bg ul li.on{
+    border-top-width: 4px;
+}
+.nav_bg ul li.on span{
+    display: block;
+    width:100%;
+    height: 4px;
+    background: #1E1130;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    z-index: 20;
+}
+
+.nav_bg ul li:nth-child(1).on{
+    border-color: #FFE587;
+    color: #FFE587;
+}
+.nav_bg ul li:nth-child(2).on{
+    border-color: #FE7040;
+    color: #FE7040;
+}
+.nav_bg ul li:nth-child(3).on{
+    border-color: #FF878D;
+    color: #FF878D;
+}
+.nav_bg ul li:nth-child(4).on{
+    border-color: #FFE587;
+    color: #FFE587;
+}
+/* content-box */
+.content-box{
+    width: 100%;
+    min-height: 2rem;
+    background-image: url(../images/content_bg_01.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.rank-same-title{
+    width: 100%;
+    overflow: hidden;
+    padding: .4rem 0;
+}
+.rank-same-title li{
+    float: left;
+    text-align: center;
+    color: #A496B4;
+    position: relative;
+    height: .5rem;
+    line-height: .5rem;
+}
+.rank-same-title li+li:before{
+    display: table;
+    content: "";
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    background: #A496B4;
+    left: 0;
+    top: 0;
+}
+.rank-same-title li:nth-child(1),
+.rank-same-title li:nth-child(4){
+    width: 2rem;
+}
+.rank-same-title li:nth-child(2){
+    width: 3.5rem;
+}
+.rank-same-title li:nth-child(3){
+    width: 2.5rem;
+}
+/* rank-list */
+.rank-list{
+    width: 100%;
+    display: none;
+    color: #A496B4;
+    border-top: 1px solid #FFE587;
+    position: relative;
+}
+.rank-list.show{
+    display: block;
+}
+
+.rank-list:nth-child(1){
+    border-color:#FFE587;
+}
+.rank-list:nth-child(2){
+    border-color:#FE7040;
+}
+.rank-list:nth-child(3){
+    border-color:#FF878D;
+}
+.rank-list:nth-child(4){
+    border-color:#FFE587;
+}
+/* user-list */
+.user-list li{
+    width: 100%;
+    height: 1.9rem;
+    background-image: url(../images/rank_todaybg4.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.user-list li>span,
+.user-list li>i,
+.user-list li>p,
+.user-list li>b{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.user-list li>span,
+.user-list li>i{
+    display: block;
+    width: .933333rem;
+    text-align: center;
+    color: #A496B4;
+    left: .4rem;
+}
+.user-list li>i{
+    height: .466667rem;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.user-list li>p{
+    width: 2.3rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.user-name{
+    left: 3rem;
+}
+.user-score{
+    left: 5.4rem;
+    text-align: center;
+}
+.user-list li>b{
+    display: block;
+    width: 1.706667rem;
+    height: .8rem;
+    background-image: url(../images/trouble.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    right: .4rem;
+}
+/* user-img */
+.user-img{
+    width: 1.2rem;
+    height: 1.2rem;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 1.666667rem;
+    transform: translateY(-50%);
+}
+.user-img>img{
+    width: auto;
+    height: 100%;
+    position: absolute;
+    left: -100%;
+    top: -100%;
+    right: -100%;
+    bottom: -100%;
+    margin: auto;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    border: 2px solid #A698B6;
+}
+.user-img>i{
+    display: block;
+    width: .346667rem;
+    height: .346667rem;
+    background-image: url(../images/icon_living.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 15;
+    right: 0;
+    bottom: 0;
+}
+.user-mask{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 15;
+}
+/* 第三名 */
+
+.user-list li:nth-child(3)>i{
+    background-image: url(../images/icon_3.png);
+}
+.user-list li:nth-child(3) .user-img>img{
+    border-color: #EFEEF0;
+}
+.user-list li:nth-child(3)>p{
+    color: #EFEEF0;
+}
+/* ***********今日用户********** */
+/* 前3背景圖 */
+.hot-lists li:nth-child(1){
+    background-image: url(../images/rank_todaybg1.png);
+}
+.hot-lists li:nth-child(2){
+    background-image: url(../images/rank_todaybg2.png);
+}
+.hot-lists li:nth-child(3){
+    background-image: url(../images/rank_todaybg3.png);
+}
+/* 前2名次ICON */
+.hot-lists li:nth-child(1)>i{
+    background-image: url(../images/icon_1.png);
+}
+.hot-lists li:nth-child(2)>i{
+    background-image: url(../images/icon_2.png);
+}
+/* 前2頭像邊框 */
+.hot-lists li:nth-child(1) .user-img>img{
+    border-color: #F7D984;
+}
+.hot-lists li:nth-child(2) .user-img>img{
+    border-color: #FFF2C3;
+}
+/* 前2名字顏色 */
+.hot-lists li:nth-child(1)>p{
+    color: #F7D984;
+}
+.hot-lists li:nth-child(2)>p{
+    color: #FFF2C3;
+}
+/* **********潜力新星********** */
+/* 前3背景圖 */
+.new-lists li:nth-child(1){
+    background-image: url(../images/rank_newbg1.png);
+}
+.new-lists li:nth-child(2){
+    background-image: url(../images/rank_newbg2.png);
+}
+.new-lists li:nth-child(3){
+    background-image: url(../images/rank_newbg3.png);
+}
+/* 前2名次ICON */
+.new-lists li:nth-child(1)>i{
+    background-image: url(../images/icon_4.png);
+}
+.new-lists li:nth-child(2)>i{
+    background-image: url(../images/icon_5.png);
+}
+/* 前2頭像邊框 */
+.new-lists li:nth-child(1) .user-img>img{
+    border-color: #FE6E38;
+}
+.new-lists li:nth-child(2) .user-img>img{
+    border-color: #FF9F79;
+}
+/* 前2名字顏色 */
+.new-lists li:nth-child(1)>p{
+    color: #FE6E38;
+}
+.new-lists li:nth-child(2)>p{
+    color: #FF9F79;
+}
+/* **********粉丝贡献********** */
+/* 前3背景圖 */
+.fans-lists li:nth-child(1){
+    background-image: url(../images/rank_fansbg1.png);
+}
+.fans-lists li:nth-child(2){
+    background-image: url(../images/rank_fansbg2.png);
+}
+.fans-lists li:nth-child(3){
+    background-image: url(../images/rank_fansbg3.png);
+}
+/* 前2名次ICON */
+.fans-lists li:nth-child(1)>i{
+    background-image: url(../images/icon_6.png);
+}
+.fans-lists li:nth-child(2)>i{
+    background-image: url(../images/icon_7.png);
+}
+/* 前2頭像邊框 */
+.fans-lists li:nth-child(1) .user-img>img{
+    border-color: #FF878D;
+}
+.fans-lists li:nth-child(2) .user-img>img{
+    border-color: #FFBCBD;
+}
+/* 前2名字顏色 */
+.fans-lists li:nth-child(1)>p{
+    color: #FF878D;
+}
+.fans-lists li:nth-child(2)>p{
+    color: #FFBCBD;
+}
+
+
+
+/* footer */
+.footer{
+    width: 100%;
+    height: 1.933333rem;
+    position: relative;
+    background-image: url(../images/footer_bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-top: -.4rem;
+}
+#footerUser{
+    width: 100%;
+    height: 1.933333rem;
+    position: relative;
+}
+.footer-user-img{
+    width: 1.4rem;
+    height: 1.4rem;
+    overflow: hidden;
+    left: .533333rem;
+    border-radius: 50%;
+    border:2px solid #371066;
+    background: #371066;
+}
+.footer-user-img img{
+    width: auto;
+    height: 100%;
+    position: absolute;
+    left: -100%;
+    top: -100%;
+    right: -100%;
+    bottom: -100%;
+    margin: auto;
+    border-radius: 50%;
+}
+.footer-user-img,
+.footer-user-msg,
+.footer-level{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #371066;
+}
+.footer-user-msg p{
+    font-size: .426667rem;
+    position: relative;
+    width: 5.466667rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.footer-user-msg p+p{
+    padding-left: .5rem;
+}
+.footer-user-msg p span{
+    display: block;
+    width: .466667rem;
+    height: .413333rem;
+    background-image: url(../images/footer_icon02.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.footer-user-msg{
+    left: 2.133333rem;
+}
+.footer-level{
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 50%;
+    background: #371066;
+    right: .533333rem;
+}
+.footer-level h3{
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: #D2BB74;
+    text-align: center;
+}
+.crown{
+    width: 1.36rem;
+    height: .733333rem;
+    background-image: url(../images/footer_icon.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: .466667rem;
+    top: -.666667rem;
+    z-index: 25;
+}
+.footer-user-msg b{
+    font-weight: 100;
+}
+/* 加载更多，返回顶部 */
+.total-btn,
+.back-top{
+    display: block;
+    position: absolute;
+    width: 2rem;
+    height: .666667rem;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: 10;
+}
+.total-btn{
+    background-image: url(../images/same_btn01.png);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -1.1rem;
+    display: none;
+}
+.back-top{
+    background-image: url(../images/same_btn02.png);
+    right: .4rem;
+    top: .4rem;
+}
